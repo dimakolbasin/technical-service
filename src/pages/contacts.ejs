@@ -1,0 +1,57 @@
+<% const contactPage = lang.pages.contacts; %>
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title"><%= contactPage.heading %></h1>
+      <p class="section__lead"><%= contactPage.lead %></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid grid--2">
+    <% if (contactPage.cards) { %>
+      <% contactPage.cards.forEach((card) => { %>
+        <div class="card">
+          <h3 class="card__title"><%= card.title %></h3>
+          <ul class="list">
+            <% card.items.forEach((item) => { %>
+              <li class="list__item">
+                <strong><%= item.label %>:</strong>
+                <% if (item.label.toLowerCase().includes("мессенджеры") || item.label.toLowerCase().includes("messenger")) { %>
+                  <a href="tel:+995591172329"><%= item.value || "+995 591 172 329" %></a>
+                  <div class="messenger-row">
+                    <!-- TODO: заменить на иконку Telegram из серии «Social media logos | Lineal Color» (flaticon.com/packs/social-media-logos-3) -->
+                    <a class="card__icon card__icon--placeholder" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
+                    <!-- TODO: заменить на иконку WhatsApp из серии «Social media logos | Lineal Color» -->
+                    <a class="card__icon card__icon--placeholder" href="https://wa.me/995591172329" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+                    <!-- TODO: заменить на иконку Viber из серии «Social media logos | Lineal Color» -->
+                    <a class="card__icon card__icon--placeholder" href="viber://chat?number=+995591172329" aria-label="Viber">VB</a>
+                  </div>
+                <% } else if (item.href) { %>
+                  <a href="<%= item.href %>" target="<%= item.href.startsWith('http') ? '_blank' : '_self' %>" rel="<%= item.href.startsWith('http') ? 'noopener' : '' %>"><%= item.value %></a>
+                <% } else if (item.label.toLowerCase().includes("телефон") || item.label.toLowerCase().includes("phone")) { %>
+                  <a href="tel:<%= item.value.replace(/[^+0-9]/g, '') %>"><%= item.value %></a>
+                <% } else if (item.label.toLowerCase().includes("email")) { %>
+                  <a href="mailto:<%= item.value %>"><%= item.value %></a>
+                <% } else { %>
+                  <span><%= item.value %></span>
+                <% } %>
+              </li>
+            <% }); %>
+          </ul>
+          <% if (card.note) { %><p class="card__text"><%= card.note %></p><% } %>
+        </div>
+      <% }); %>
+    <% } %>
+
+    <% if (contactPage.cta) { %>
+      <div class="card card--elevated">
+        <h3 class="card__title"><%= contactPage.cta.title %></h3>
+        <p class="card__text"><%= contactPage.cta.text %></p>
+        <a class="button button--primary" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener"><%= contactPage.cta.button %></a>
+      </div>
+    <% } %>
+  </div>
+</section>

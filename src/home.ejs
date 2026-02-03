@@ -1,0 +1,185 @@
+<section class="section hero section--surface">
+  <div class="container hero__layout">
+    <div class="hero__content">
+      <span class="badge badge--accent"><%= lang.home.badge %></span>
+      <h1 class="hero__title"><%= lang.home.title %></h1>
+      <p class="hero__lead"><%= lang.home.lead %></p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="tel:<%= site.phoneLink %>"><%= lang.home.ctaPrimary %></a>
+        <a class="button button--secondary" href="mailto:<%= site.email %>"><%= lang.home.ctaSecondary %></a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <div class="card card--elevated hero__card">
+        <span class="card__icon card__icon--placeholder" aria-hidden="true">🛈</span>
+        <p class="card__text"><%= lang.home.heroCardText %> <!-- TODO: заменить на иконку из серии «Appliance Repair | Color lineal-color» (flaticon.com/packs/appliance-repair-15346687) --></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title"><%= lang.home.services.title %></h2>
+      <p class="section__lead"><%= lang.home.services.lead %></p>
+    </div>
+    <div class="grid grid--3">
+      <% lang.home.services.items.forEach((item) => { const highlight = item.highlight ? " card--elevated" : ""; %>
+        <article class="card<%= highlight %>">
+          <span class="card__icon card__icon--placeholder" aria-hidden="true">🛈</span> <!-- TODO: заменить на иконку из серии «Appliance Repair | Color lineal-color» (flaticon.com/packs/appliance-repair-15346687) -->
+          <h3 class="card__title"><%= item.title %></h3>
+          <p class="card__text"><%= item.text %></p>
+          <a class="card__link" href="<%= lang.paths[lang.home.services.linkKey] %>"><%= lang.home.services.linkLabel %> <%= item.title %></a>
+        </article>
+        <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">
+        <%= lang.home.benefits.title %>
+      </h2>
+      <p class="section__lead">
+        <%= lang.home.benefits.lead %>
+      </p>
+    </div>
+    <div class="grid grid--3">
+      <% lang.home.benefits.items.forEach((item)=> { %>
+        <div class="card">
+          <h3 class="card__title">
+            <%= item.title %>
+          </h3>
+          <p class="card__text">
+            <%= item.text %>
+          </p>
+        </div>
+        <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">
+        <%= lang.home.steps.title %>
+      </h2>
+      <p class="section__lead">
+        <%= lang.home.steps.lead %>
+      </p>
+    </div>
+    <div class="steps">
+      <% lang.home.steps.items.forEach((item, index) => { %>
+        <div class="steps__item">
+          <div class="steps__index"><%= index + 1 %></div>
+          <p class="steps__text"><%= item %></p>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title"><%= lang.home.prices.title %></h2>
+      <p class="section__lead"><%= lang.home.prices.lead %></p>
+    </div>
+    <ul class="price-list">
+      <% lang.home.prices.items.forEach((item) => { %>
+        <li class="price-list__item">
+          <strong><%= item.label %></strong>
+          <span><%= item.value %></span>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title"><%= lang.home.faq.title %></h2>
+      <p class="section__lead"><%= lang.home.faq.lead %></p>
+    </div>
+    <% lang.home.faq.items.forEach((item) => { %>
+      <details class="faq">
+        <summary class="faq__summary"><%= item.question %></summary>
+        <div class="faq__content"><%= item.answer %></div>
+      </details>
+    <% }) %>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title"><%= lang.home.contact.title %></h2>
+      <p class="section__lead"><%= lang.home.contact.lead %></p>
+    </div>
+    <div class="contact-card">
+      <div>
+        <ul class="list">
+          <% lang.home.contact.list.forEach((item) => { 
+               const labelLower = item.label.toLowerCase();
+          %>
+            <li class="list__item">
+              <strong><%= item.label %>:</strong>
+              <% if (labelLower.includes("телефон") || labelLower.includes("phone") || labelLower.includes("ტელ")) { %>
+                <a href="tel:<%= site.phoneLink %>"><%= site.phone %></a>
+              <% } else if (labelLower.includes("мессенджеры") || labelLower.includes("messenger")) { %>
+                <div class="messenger-row">
+                  <!-- TODO: заменить на иконку Telegram из серии «Social media logos | Lineal Color» (flaticon.com/packs/social-media-logos-3) -->
+                  <a class="card__icon card__icon--placeholder" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
+                  <!-- TODO: заменить на иконку WhatsApp из серии «Social media logos | Lineal Color» -->
+                  <a class="card__icon card__icon--placeholder" href="https://wa.me/995591172329" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+                  <!-- TODO: заменить на иконку Viber из серии «Social media logos | Lineal Color» -->
+                  <a class="card__icon card__icon--placeholder" href="viber://chat?number=+995591172329" aria-label="Viber">VB</a>
+                </div>
+              <% } else if (labelLower.includes("email") || labelLower.includes("почта")) { %>
+                <a href="mailto:<%= site.email %>"><%= site.email %></a>
+              <% } else { %>
+                <span><%= item.value %></span>
+              <% } %>
+            </li>
+            <% }) %>
+        </ul>
+      </div>
+      <form class="form" action="https://formsubmit.co/dimankolbasin@yandex.ru" method="POST" autocomplete="off">
+        <!-- dummy field to discourage Chrome autofill -->
+        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1" role="presentation" aria-label=" " style="position:absolute;left:-9999px;opacity:0;height:0;width:0;border:0;padding:0;">
+        <div class="form__row">
+          <label class="form__label" for="name"><%= lang.home.contact.form.nameLabel %></label>
+          <input class="form__input" type="text" id="name" name="name" placeholder="<%= lang.home.contact.form.namePlaceholder %>" autocomplete="off" aria-autocomplete="none">
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="phone"><%= lang.home.contact.form.phoneLabel %></label>
+          <div class="form__phone-group">
+            <span class="form__prefix">+995</span>
+            <input
+              autocomplete="off"
+              class="form__input form__input--phone"
+              type="number"
+              id="phone"
+              name="phone"
+              placeholder="<%= lang.home.contact.form.phonePlaceholder %>" inputmode="tel" required
+              oninvalid="this.setCustomValidity('<%= lang.home.contact.form.phoneRequired %>')"
+              oninput="this.setCustomValidity('')">
+          </div>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="message"><%= lang.home.contact.form.descriptionLabel %></label>
+          <textarea class="form__input" id="message" name="message" rows="3" placeholder="<%= lang.home.contact.form.descriptionPlaceholder %>" autocomplete="off" aria-autocomplete="none"></textarea>
+        </div>
+        <div class="form__actions">
+          <button class="button button--primary" type="submit"><%= lang.home.contact.form.submit %></button>
+          <a class="button button--ghost" href="<%= lang.paths[lang.home.contact.form.linkKey] %>"><%= lang.home.contact.form.linkLabel %></a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

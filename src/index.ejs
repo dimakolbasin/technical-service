@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batumi Repair Service — redirect</title>
+  <meta name="description" content="Redirecting to your localized page.">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="canonical" href="<%= site.baseUrl %>/ru/">
+  <link rel="alternate" hreflang="ru" href="<%= site.baseUrl %>/ru/">
+  <link rel="alternate" hreflang="en" href="<%= site.baseUrl %>/en/">
+  <link rel="alternate" hreflang="ka" href="<%= site.baseUrl %>/ka/">
+  <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl %>/ru/">
+  <script>
+    (function() {
+      const supportedLangs = { ru: '/ru/', en: '/en/', ka: '/ka/' };
+      const getCookie = (name) => {
+        const pair = document.cookie.split('; ').find((row) => row.startsWith(name + '='));
+        return pair ? decodeURIComponent(pair.split('=')[1]) : null;
+      };
+      const cookieLang = getCookie('preferred_lang');
+      const navLang = (navigator.language || navigator.userLanguage || '').toLowerCase().split('-')[0];
+      const lang = cookieLang || navLang;
+      const target = supportedLangs[lang] || '/ru/';
+      if (location.pathname !== target) {
+        window.location.replace(target);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <noscript>
+    <p>Выберите язык:</p>
+    <ul>
+      <li><a href="/ru/">Русский</a></li>
+      <li><a href="/en/">English</a></li>
+      <li><a href="/ka/">ქართული</a></li>
+    </ul>
+  </noscript>
+</body>
+</html>

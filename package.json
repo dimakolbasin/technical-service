@@ -1,0 +1,19 @@
+{
+  "name": "technical-service",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && eleventy",
+    "watch": "eleventy --watch",
+    "serve": "node ./node_modules/live-server/live-server.js dist --watch=dist",
+    "dev": "npm run clean && concurrently -k -n ELEVENTY,SERVER \"npm:watch\" \"wait-on dist/index.html && npm run serve\""
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "rimraf": "^5.0.5",
+    "wait-on": "^7.2.0"
+  }
+}

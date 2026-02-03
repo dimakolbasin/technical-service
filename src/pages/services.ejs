@@ -1,0 +1,32 @@
+<% const servicesPage = lang.pages.services; %>
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title"><%= servicesPage.heading %></h1>
+      <p class="section__lead"><%= servicesPage.lead %></p>
+    </div>
+  </div>
+</section>
+
+<% if (servicesPage.sections) { %>
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--2">
+        <% servicesPage.sections.forEach((block) => { %>
+          <div class="card">
+            <h3 class="card__title"><%= block.title %></h3>
+            <% if (block.lead) { %><p class="card__text"><%= block.lead %></p><% } %>
+            <% if (block.items) { %>
+              <ul class="list">
+                <% block.items.forEach((item) => { %>
+                  <li class="list__item">• <span><%= item %></span></li>
+                <% }); %>
+              </ul>
+            <% } %>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+<% } %>

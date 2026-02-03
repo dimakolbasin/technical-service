@@ -1,0 +1,38 @@
+<% const aboutPage = lang.pages.about; %>
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title"><%= aboutPage.heading %></h1>
+      <p class="section__lead"><%= aboutPage.lead %></p>
+    </div>
+    <% if (aboutPage.text) { %>
+      <div class="card">
+        <p class="card__text"><%= aboutPage.text %></p>
+      </div>
+    <% } %>
+  </div>
+</section>
+
+<% if (aboutPage.pillars) { %>
+  <section class="section">
+    <div class="container grid grid--3">
+      <% aboutPage.pillars.forEach((pillar) => { %>
+        <div class="card">
+          <h3 class="card__title"><%= pillar.title %></h3>
+          <p class="card__text"><%= pillar.text %></p>
+        </div>
+      <% }); %>
+    </div>
+  </section>
+<% } %>
+
+<% if (aboutPage.callout) { %>
+  <section class="section section--surface">
+    <div class="container">
+      <div class="card card--elevated">
+        <p class="card__text"><%= aboutPage.callout %></p>
+      </div>
+    </div>
+  </section>
+<% } %>

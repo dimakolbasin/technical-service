@@ -1,0 +1,1486 @@
+{
+  "languages": [
+    {
+      "code": "ru",
+      "label": "Русский",
+      "labelShort": "RU",
+      "menu": "Меню",
+      "navLabel": "Основная навигация",
+      "langLabel": "Сменить язык",
+      "hours": "Ежедневно 9:00–20:00",
+      "cta": "Позвонить",
+      "paths": {
+        "home": "/ru/",
+        "services": "/ru/services/",
+        "prices": "/ru/prices/",
+        "contacts": "/ru/contacts/",
+        "faq": "/ru/faq/",
+        "about": "/ru/about/"
+      },
+      "nav": [
+        {
+          "key": "home",
+          "label": "Главная"
+        },
+        {
+          "key": "services",
+          "label": "Услуги"
+        },
+        {
+          "key": "prices",
+          "label": "Цены"
+        },
+        {
+          "key": "contacts",
+          "label": "Контакты"
+        },
+        {
+          "key": "faq",
+          "label": "FAQ"
+        },
+        {
+          "key": "about",
+          "label": "О нас"
+        }
+      ],
+      "footer": {
+        "contactsTitle": "Контакты",
+        "areasTitle": "Обслуживаем районы",
+        "langsTitle": "Языки",
+        "phoneLabel": "Телефон",
+        "emailLabel": "Почта",
+        "areas": "Батуми"
+      },
+      "home": {
+        "metaTitle": "Ремонт бытовой техники в Батуми — выезд и гарантия",
+        "metaDescription": "Сервис ремонта бытовой техники в Батуми. Выезд по городу, диагностика, прозрачные цены и гарантия на работы.",
+        "badge": "Батуми",
+        "title": "Ремонт бытовой техники с выездом по Батуми",
+        "lead": "Диагностика на месте, прозрачные цены, гарантия на работы и запчасти. Работаем быстро и аккуратно.",
+        "ctaPrimary": "Позвонить",
+        "ctaSecondary": "Написать",
+        "heroCardIcon": "icon-tools.svg",
+        "heroCardText": "Выезд по городу, ремонт в удобное время и гарантия до 6 месяцев.",
+        "services": {
+          "title": "Что ремонтируем",
+          "lead": "Основные категории техники, с которыми работаем каждый день.",
+        "linkLabel": "Подробнее:",
+          "linkKey": "services",
+          "items": [
+            {
+              "title": "Стиральные машины",
+              "text": "Не сливает, не греет, шумит или вибрирует.",
+              "icon": "icon-tools.svg",
+              "highlight": true
+            },
+            {
+              "title": "Холодильники",
+              "text": "Не морозит, течёт, не выключается.",
+              "icon": "icon-shield.svg"
+            },
+            {
+              "title": "Кондиционеры",
+              "text": "Не охлаждает, пахнет, плохо дует.",
+              "icon": "icon-call.svg"
+            }
+          ]
+        },
+        "benefits": {
+          "title": "Почему нам доверяют",
+          "lead": "Мы работаем по понятным правилам и держим сервисный уровень.",
+          "items": [
+            {
+              "title": "Выезд в день обращения",
+              "text": "Согласуем удобное время и приедем по району."
+            },
+            {
+              "title": "Гарантия на работы",
+              "text": "Честные условия и фиксация в заказ-наряде."
+            },
+            {
+              "title": "Прозрачные цены",
+              "text": "Сначала диагностика, затем согласование стоимости."
+            }
+          ]
+        },
+        "steps": {
+          "title": "Как работаем",
+          "lead": "Четыре шага от заявки до готовой техники.",
+          "items": [
+            "Заявка по телефону или в мессенджере.",
+            "Диагностика на месте и согласование стоимости.",
+            "Ремонт и тестирование техники.",
+            "Гарантия и рекомендации по уходу."
+          ]
+        },
+        "prices": {
+          "title": "Примерные цены",
+          "lead": "Окончательная стоимость зависит от модели и деталей.",
+          "items": [
+            {
+              "label": "Диагностика",
+              "value": "от 30 GEL"
+            },
+            {
+              "label": "Ремонт стиральной машины",
+              "value": "от 80 GEL"
+            },
+            {
+              "label": "Ремонт холодильника",
+              "value": "от 90 GEL"
+            },
+            {
+              "label": "Обслуживание кондиционера",
+              "value": "от 70 GEL"
+            }
+          ]
+        },
+        "faq": {
+          "title": "FAQ",
+          "lead": "Короткие ответы на популярные вопросы.",
+          "items": [
+            {
+              "question": "Сколько занимает ремонт?",
+              "answer": "Чаще всего 1–2 дня, сложные случаи — по согласованию."
+            },
+            {
+              "question": "Вы работаете с запчастями клиента?",
+              "answer": "Да, но сначала проверим совместимость и состояние."
+            },
+            {
+              "question": "Есть ли гарантия?",
+              "answer": "Да, фиксируем срок гарантии в заказ-наряде."
+            }
+          ]
+        },
+        "contact": {
+          "title": "Связаться с нами",
+          "lead": "Оставьте заявку, и мы перезвоним в течение дня.",
+          "list": [
+            {
+              "label": "Телефон",
+              "value": "+995 591 172 329"
+            },
+            {
+              "label": "Мессенджеры",
+              "value": ""
+            },
+            {
+              "label": "Часы",
+              "value": "9:00–20:00 без выходных"
+            },
+            {
+              "label": "Районы",
+              "value": "Батуми"
+            }
+          ],
+          "form": {
+            "nameLabel": "Имя",
+            "namePlaceholder": "Как к вам обращаться",
+            "phoneLabel": "Телефон",
+            "phonePlaceholder": "555112233",
+            "phoneRequired": "Заполните это поле",
+            "descriptionLabel": "Кратко о проблеме (необязательно)",
+            "descriptionPlaceholder": "Например: стиралка LG, не сливает воду",
+            "submit": "Оставить заявку",
+            "linkLabel": "Контакты",
+            "linkKey": "contacts"
+          }
+        }
+      },
+      "pages": {
+        "services": {
+          "title": "Услуги ремонта — Batumi Repair Service",
+          "lead": "Описание услуг и типовых неисправностей.",
+          "heading": "Услуги ремонта",
+          "sections": [
+            {
+              "title": "Общие работы",
+              "items": [
+                "Выезд и диагностика техники.",
+                "Консультация по уходу и выбору запчастей.",
+                "Согласование сметы перед ремонтом."
+              ]
+            },
+            {
+              "title": "Стиральные машины",
+              "items": [
+                "Замена подшипников, амортизаторов, крестовины, манжеты люка.",
+                "Ремонт/замена насоса, клапана, ТЭНа, модуля управления.",
+                "Чистка сливной системы, устранение протечек и вибраций."
+              ]
+            },
+            {
+              "title": "Посудомоечные машины",
+              "items": [
+                "Замена циркуляционного и сливного насосов.",
+                "Чистка фильтров, устранение протечек.",
+                "Ремонт нагрева и электроники."
+              ]
+            },
+            {
+              "title": "Холодильники и кондиционеры",
+              "items": [
+                "Обслуживание и чистка внутренних блоков и дренажа.",
+                "Диагностика утечек, работа с датчиками и платами.",
+                "Чистка, дезинфекция и профилактика запахов."
+              ]
+            },
+            {
+              "title": "Варочные поверхности, плиты, духовые шкафы",
+              "items": [
+                "Газ: форсунки, утечки, электроподжиг, газ-контроль.",
+                "Электро: конфорки, сенсорные панели, модули управления.",
+                "Духовки: ТЭНы, термостаты, вентиляторы конвекции."
+              ]
+            }
+          ]
+        },
+        "prices": {
+          "title": "Цены — Batumi Repair Service",
+          "lead": "Прозрачный прайс и условия работы.",
+          "heading": "Цены",
+          "sections": [
+            {
+              "title": "Общие услуги",
+              "lead": "То, с чего начинается почти любой заказ.",
+              "groups": [
+                {
+                  "title": "Диагностика",
+                  "items": [
+                    { "label": "Выезд мастера + диагностика", "value": "бесплатно" }
+                  ]
+                },
+                {
+                  "title": "Выезд",
+                  "items": [
+                    { "label": "Срочный выезд (день в день)", "value": "+20 GEL" }
+                  ]
+                },
+                {
+                  "title": "Мелкие работы",
+                  "items": [
+                    { "label": "Проверка подключения", "value": "60 GEL" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Чистка и обслуживание кондиционеров",
+              "items": [
+                { "label": "Чистка фильтров внутреннего блока", "value": "≈ 80–100 GEL" },
+                { "label": "Комплексная полная чистка (внутренний блок + дренаж + фильтры)", "value": "≈ 100–200 GEL" },
+                { "label": "Антибактериальная обработка (дезинфекция)", "value": "≈ 120 GEL" },
+                { "label": "Промывание дренажной системы", "value": "≈ 90 GEL" },
+                { "label": "Чистка вентилятора и внешнего корпуса", "value": "≈ 110 GEL" },
+                { "label": "Простая частичная чистка", "value": "≈ 60 GEL" }
+              ],
+              "note": "Часто мастера предлагают комплекс, где всё включено за 150–200 GEL (фильтры, испаритель, дренаж, антибактерия)."
+            },
+            {
+              "title": "Прайс на ремонт стиральных машин",
+              "lead": "Разделено по типу работ — так понятнее.",
+              "groups": [
+                {
+                  "title": "Механика",
+                  "items": [
+                    { "label": "Замена подшипников", "value": "от 300–450 GEL" },
+                    { "label": "Замена амортизаторов", "value": "от 100–150 GEL" },
+                    { "label": "Замена крестовины", "value": "от 80–100 GEL" },
+                    { "label": "Замена манжеты люка", "value": "от 100–130 GEL" }
+                  ]
+                },
+                {
+                  "title": "Слив / набор воды",
+                  "items": [
+                    { "label": "Замена сливного насоса", "value": "от 90–120 GEL" },
+                    { "label": "Чистка сливной системы", "value": "от 70 GEL" },
+                    { "label": "Замена заливного клапана", "value": "от 120 GEL" },
+                    { "label": "Устранение засора", "value": "50 GEL" }
+                  ]
+                },
+                {
+                  "title": "Электрика и управление",
+                  "items": [
+                    { "label": "Замена ТЭНа", "value": "от 90–120 GEL" },
+                    { "label": "Ремонт / замена модуля управления", "value": "от 150–250 GEL" },
+                    { "label": "Замена датчиков (уровня, температуры)", "value": "от 60–80 GEL" },
+                    { "label": "Устранение ошибок на дисплее", "value": "от 60–80 GEL" }
+                  ]
+                },
+                {
+                  "title": "Прочее",
+                  "items": [
+                    { "label": "Устранение протечек", "value": "от 60–100 GEL" },
+                    { "label": "Замена ремня", "value": "от 80–100 GEL" },
+                    { "label": "Посторонние шумы, вибрации", "value": "от 60–90 GEL" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Прайс на ремонт посудомоечных машин",
+              "groups": [
+                {
+                  "title": "Вода и слив",
+                  "items": [
+                    { "label": "Замена циркуляционного насоса", "value": "от 300–480 GEL" },
+                    { "label": "Замена сливного насоса", "value": "от 150–200 GEL" },
+                    { "label": "Чистка фильтров и системы", "value": "от 100 GEL" },
+                    { "label": "Устранение протечек", "value": "от 100–150 GEL" }
+                  ]
+                },
+                {
+                  "title": "Нагрев и электрика",
+                  "items": [
+                    { "label": "Замена ТЭНа", "value": "от 170–250 GEL" },
+                    { "label": "Замена датчиков", "value": "от 140–200 GEL" },
+                    { "label": "Ремонт модуля управления", "value": "от 180–300 GEL" }
+                  ]
+                },
+                {
+                  "title": "Механика",
+                  "items": [
+                    { "label": "Замена уплотнителей двери", "value": "от 140–200 GEL" },
+                    { "label": "Ремонт / замена замка двери", "value": "от 140–200 GEL" },
+                    { "label": "Устранение проблем с распылителями", "value": "от 140–200 GEL" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Варочные поверхности (газ / электро)",
+              "groups": [
+                {
+                  "title": "Газовые",
+                  "items": [
+                    { "label": "Замена форсунок", "value": "от 50–80 GEL" },
+                    { "label": "Замена блока электроподжига", "value": "от 130–150 GEL" },
+                    { "label": "Устранение утечки газа", "value": "от 60–100 GEL" },
+                    { "label": "Регулировка пламени", "value": "от 50–80 GEL" }
+                  ]
+                },
+                {
+                  "title": "Электрические",
+                  "items": [
+                    { "label": "Замена конфорки", "value": "от 100–180 GEL" },
+                    { "label": "Ремонт сенсорной панели", "value": "от 150–250 GEL" },
+                    { "label": "Замена блока управления", "value": "от 270–330 GEL" },
+                    { "label": "Устранение ошибок", "value": "от 60–80 GEL" }
+                  ]
+                }
+              ],
+              "note": "Работы выполняются с соблюдением техники безопасности."
+            },
+            {
+              "title": "Газовые и электрические плиты",
+              "groups": [
+                {
+                  "title": "Общее",
+                  "items": [
+                    { "label": "Замена ТЭНа духовки", "value": "от 100–150 GEL" },
+                    { "label": "Замена термостата", "value": "от 100–150 GEL" },
+                    { "label": "Замена переключателей", "value": "от 80–100 GEL" },
+                    { "label": "Ремонт подсветки духовки", "value": "от 30 GEL" }
+                  ]
+                },
+                {
+                  "title": "Газ",
+                  "items": [
+                    { "label": "Замена газ-контроля", "value": "от 100–180 GEL" },
+                    { "label": "Замена блока управления", "value": "от 270–330 GEL" },
+                    { "label": "Регулировка подачи газа", "value": "от 50–80 GEL" },
+                    { "label": "Замена блока электроподжига", "value": "от 130–150 GEL" }
+                  ]
+                },
+                {
+                  "title": "Электрика",
+                  "items": [
+                    { "label": "Ремонт электропроводки", "value": "от 70–90 GEL" },
+                    { "label": "Замена силового кабеля", "value": "от 70–90 GEL" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Духовые шкафы",
+              "items": [
+                { "label": "Замена ТЭНа (верх/низ/гриль)", "value": "от 130–150 GEL" },
+                { "label": "Замена вентилятора конвекции", "value": "от 130–150 GEL" },
+                { "label": "Ремонт платы управления", "value": "от 150–170 GEL" },
+                { "label": "Замена термостата", "value": "от 100–150 GEL" },
+                { "label": "Неравномерный нагрев", "value": "от 80–120 GEL" }
+              ]
+            }
+          ],
+          "importantNotes": [
+            "Окончательная стоимость определяется после диагностики.",
+            "Запчасти оплачиваются отдельно.",
+            "Гарантия на работу и запчасти.",
+            "Срок ремонта — от 30 минут."
+          ],
+          "contactCard": {
+            "title": "Мои контакты",
+            "items": [
+              { "label": "Телефон / мессенджеры", "value": "+995 (591) 172 329", "href": "tel:+995591172329" },
+              { "label": "Telegram", "value": "@MasterBatumi_Maksim", "href": "https://t.me/MasterBatumi_Maksim" },
+              { "label": "WhatsApp", "value": "Написать", "href": "https://wa.me/995591172329" },
+              { "label": "Viber", "value": "Открыть чат", "href": "viber://chat?number=+995591172329" },
+              { "label": "Facebook", "value": "Maksim Kolbasin", "href": "https://www.facebook.com/profile.php?id=61587124962215" },
+              { "label": "Email", "value": "maksimkolbasin68084@gmail.com", "href": "mailto:maksimkolbasin68084@gmail.com" }
+            ]
+          }
+        },
+        "contacts": {
+          "title": "Контакты — Batumi Repair Service",
+          "lead": "Свяжитесь с нами удобным способом.",
+          "heading": "Контакты",
+          "cards": [
+            {
+              "title": "Основные контакты",
+              "items": [
+                { "label": "Телефон / мессенджеры", "value": "+995 591 172 329", "href": "tel:+995591172329" },
+                { "label": "Email", "value": "maksimkolbasin68084@gmail.com", "href": "mailto:maksimkolbasin68084@gmail.com" },
+                { "label": "Telegram", "value": "@MasterBatumi_Maksim", "href": "https://t.me/MasterBatumi_Maksim" },
+                { "label": "WhatsApp", "value": "Написать", "href": "https://wa.me/995591172329" },
+                { "label": "Viber", "value": "Открыть чат", "href": "viber://chat?number=+995591172329" },
+                { "label": "Facebook", "value": "Maksim Kolbasin", "href": "https://www.facebook.com/profile.php?id=61587124962215" }
+              ]
+            },
+            {
+              "title": "Режим работы и зона",
+              "items": [
+                { "label": "График", "value": "9:00–20:00 без выходных" },
+                { "label": "Обслуживаем", "value": "Батуми" }
+              ],
+              "note": "Срочные выезды +20 GEL, если нужно приехать в тот же день."
+            }
+          ],
+          "cta": {
+            "title": "Нужен быстрый ответ?",
+            "text": "Опишите проблему и модель техники — сразу скажу ориентир по цене и времени.",
+            "button": "Написать в Telegram"
+          }
+        },
+        "faq": {
+          "title": "FAQ — Batumi Repair Service",
+          "lead": "Ответы на частые вопросы.",
+          "heading": "FAQ",
+          "items": [
+            {
+              "question": "Сколько занимает ремонт?",
+              "answer": "Обычно 1–2 дня. Срочный мелкий ремонт могу сделать в день обращения, если есть запчасти."
+            },
+            {
+              "question": "Работаете с запчастями клиента?",
+              "answer": "Да, но сперва проверю совместимость и состояние, чтобы не потерять гарантию."
+            },
+            {
+              "question": "Даете гарантию?",
+              "answer": "Да, фиксирую срок в заказ-наряде: 1–6 месяцев в зависимости от работ и запчастей."
+            },
+            {
+              "question": "Как узнать итоговую цену?",
+              "answer": "После диагностики. Предварительные диапазоны есть в прайсе, но итог зависит от модели и состояния узла."
+            },
+            {
+              "question": "Можно ли безнал?",
+              "answer": "Да, переводом на карту или через банк, уточняйте при заказе."
+            }
+          ]
+        },
+        "about": {
+          "title": "О нас — Batumi Repair Service",
+          "lead": "Коротко о сервисе и принципах работы.",
+          "heading": "О нас",
+          "text": "Я — Максим, частный мастер по ремонту бытовой техники в Батуми. Работаю сам: отвечаю на звонки, диагностирую, чиню и отвечаю за результат.",
+          "pillars": [
+            { "title": "Прозрачность", "text": "Согласовываю цену до ремонта, фиксирую в заказ-наряде." },
+            { "title": "Чистота и аккуратность", "text": "Работаю в защите, убираю после себя, не оставляю мусор." },
+            { "title": "Гарантия", "text": "Даётся на работы и детали, срок зависит от узла (обычно 1–6 месяцев)." }
+          ],
+          "callout": "Если нужен совет по выбору техники или профилактике — пишите, помогу бесплатно."
+        }
+      },
+      "rootButtonClass": "button--primary"
+    },
+    {
+      "code": "en",
+      "label": "English",
+      "labelShort": "EN",
+      "menu": "Menu",
+      "navLabel": "Main navigation",
+      "langLabel": "Change language",
+      "hours": "Daily 9:00–20:00",
+      "cta": "Call now",
+      "paths": {
+        "home": "/en/",
+        "services": "/en/services/",
+        "prices": "/en/prices/",
+        "contacts": "/en/contacts/",
+        "faq": "/en/faq/",
+        "about": "/en/about/"
+      },
+      "nav": [
+        {
+          "key": "home",
+          "label": "Home"
+        },
+        {
+          "key": "services",
+          "label": "Services"
+        },
+        {
+          "key": "prices",
+          "label": "Prices"
+        },
+        {
+          "key": "contacts",
+          "label": "Contacts"
+        },
+        {
+          "key": "faq",
+          "label": "FAQ"
+        },
+        {
+          "key": "about",
+          "label": "About"
+        }
+      ],
+      "footer": {
+        "contactsTitle": "Contacts",
+        "areasTitle": "Service areas",
+        "langsTitle": "Languages",
+        "phoneLabel": "Phone",
+        "emailLabel": "Email",
+        "areas": "Batumi"
+      },
+      "home": {
+        "metaTitle": "Home Appliance Repair in Batumi — On-site Service",
+        "metaDescription": "Home appliance repair service in Batumi. On-site diagnostics, transparent pricing, and warranty on repairs.",
+        "badge": "Batumi",
+        "title": "Home appliance repair with on-site service in Batumi",
+        "lead": "On-site diagnostics, clear pricing, and warranty on repairs and parts.",
+        "ctaPrimary": "Call now",
+        "ctaSecondary": "Message us",
+        "heroCardIcon": "icon-tools.svg",
+        "heroCardText": "City-wide visits, flexible scheduling, and up to 6 months warranty.",
+        "services": {
+          "title": "What we repair",
+          "lead": "Most common appliances we handle every day.",
+        "linkLabel": "Learn more:",
+          "linkKey": "services",
+          "items": [
+            {
+              "title": "Washing machines",
+              "text": "No drain, no heat, loud noise, heavy vibration.",
+              "icon": "icon-tools.svg",
+              "highlight": true
+            },
+            {
+              "title": "Refrigerators",
+              "text": "Not cooling, leaking, running nonstop.",
+              "icon": "icon-shield.svg"
+            },
+            {
+              "title": "Air conditioners",
+              "text": "Weak cooling, bad smell, poor airflow.",
+              "icon": "icon-call.svg"
+            }
+          ]
+        },
+        "benefits": {
+          "title": "Why clients trust us",
+          "lead": "Clear process, clean work, and a service-first approach.",
+          "items": [
+            {
+              "title": "Same-day visit",
+              "text": "We agree on a convenient time and come to your location."
+            },
+            {
+              "title": "Warranty included",
+              "text": "We document warranty terms in the work order."
+            },
+            {
+              "title": "Transparent pricing",
+              "text": "Diagnostics first, repair cost approval second."
+            }
+          ]
+        },
+        "steps": {
+          "title": "How it works",
+          "lead": "Four steps from request to working appliance.",
+          "items": [
+            "Call us or send a message.",
+            "On-site diagnostics and cost approval.",
+            "Repair and testing.",
+            "Warranty and care recommendations."
+          ]
+        },
+        "prices": {
+          "title": "Price examples",
+          "lead": "Final cost depends on model and spare parts.",
+          "items": [
+            {
+              "label": "Diagnostics",
+              "value": "from 30 GEL"
+            },
+            {
+              "label": "Washing machine repair",
+              "value": "from 80 GEL"
+            },
+            {
+              "label": "Refrigerator repair",
+              "value": "from 90 GEL"
+            },
+            {
+              "label": "Air conditioner service",
+              "value": "from 70 GEL"
+            }
+          ]
+        },
+        "faq": {
+          "title": "FAQ",
+          "lead": "Short answers to common questions.",
+          "items": [
+            {
+              "question": "How long does repair take?",
+              "answer": "Usually 1–2 days, complex cases by agreement."
+            },
+            {
+              "question": "Can you use my spare parts?",
+              "answer": "Yes, after checking compatibility and condition."
+            },
+            {
+              "question": "Do you provide a warranty?",
+              "answer": "Yes, the warranty term is listed in the work order."
+            }
+          ]
+        },
+        "contact": {
+          "title": "Contact us",
+          "lead": "Leave a request and we will call you back.",
+          "list": [
+            {
+              "label": "Phone",
+              "value": "+995 591 172 329"
+            },
+            {
+              "label": "Messengers",
+              "value": "WhatsApp / Telegram"
+            },
+            {
+              "label": "Hours",
+              "value": "9:00–20:00 daily"
+            },
+            {
+              "label": "Areas",
+              "value": "Batumi"
+            }
+          ],
+          "form": {
+            "nameLabel": "Name",
+            "namePlaceholder": "Your name",
+            "phoneLabel": "Phone",
+            "phonePlaceholder": "555112233",
+            "phoneRequired": "Please fill out this field",
+            "descriptionLabel": "Short issue description (optional)",
+            "descriptionPlaceholder": "e.g. LG washer, not draining",
+            "submit": "Send request",
+            "linkLabel": "Contacts",
+            "linkKey": "contacts"
+          }
+        }
+      },
+      "pages": {
+        "services": {
+          "title": "Repair services — Batumi Repair Service",
+          "lead": "Overview of services and common issues.",
+          "heading": "Repair services",
+          "sections": [
+            {
+              "title": "General work",
+              "items": [
+                "Call-out and appliance diagnostics.",
+                "Advice on care and parts choice.",
+                "Price agreed before repair starts."
+              ]
+            },
+            {
+              "title": "Washing machines",
+              "items": [
+                "Bearings, dampers, spider, door seal replacement.",
+                "Pump, inlet valve, heater, control board repair/replacement.",
+                "Drain cleaning, leak fixing, vibration issues."
+              ]
+            },
+            {
+              "title": "Dishwashers",
+              "items": [
+                "Circulation and drain pump replacement.",
+                "Filter cleaning, leak fixing.",
+                "Heating and electronics repair."
+              ]
+            },
+            {
+              "title": "Fridges and air conditioners",
+              "items": [
+                "Cleaning indoor units and drainage.",
+                "Checking leaks, sensors, and boards.",
+                "Cleaning, disinfection, odor prevention."
+              ]
+            },
+            {
+              "title": "Cooktops, stoves, ovens",
+              "items": [
+                "Gas: jets, leaks, igniter, flame control.",
+                "Electric: burners, touch panels, control modules.",
+                "Ovens: heaters, thermostats, convection fans."
+              ]
+            }
+          ]
+        },
+        "prices": {
+          "title": "Prices — Batumi Repair Service",
+          "lead": "Clear pricing and conditions.",
+          "heading": "Prices",
+          "sections": [
+            {
+              "title": "General services",
+              "lead": "What we usually start with.",
+              "groups": [
+                {
+                  "title": "Diagnostics",
+                  "items": [
+                    { "label": "Call-out + diagnostics", "value": "free" }
+                  ]
+                },
+                {
+                  "title": "Visit",
+                  "items": [
+                    { "label": "Urgent same-day visit", "value": "+20 GEL" }
+                  ]
+                },
+                {
+                  "title": "Minor works",
+                  "items": [
+                    { "label": "Connection check", "value": "60 GEL" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "AC cleaning & service",
+              "items": [
+                { "label": "Indoor filter cleaning", "value": "≈ 80–100 GEL" },
+                { "label": "Full cleaning (indoor + drain + filters)", "value": "≈ 100–200 GEL" },
+                { "label": "Antibacterial treatment", "value": "≈ 120 GEL" },
+                { "label": "Drain flushing", "value": "≈ 90 GEL" },
+                { "label": "Fan and casing cleaning", "value": "≈ 110 GEL" },
+                { "label": "Basic partial cleaning", "value": "≈ 60 GEL" }
+              ],
+              "note": "Often a full combo is offered for 150–200 GEL (filters, evaporator, drain, antibacterial)."
+            },
+            {
+              "title": "Washing machines",
+              "lead": "Grouped by type of work.",
+              "groups": [
+                {
+                  "title": "Mechanics",
+                  "items": [
+                    { "label": "Bearing replacement", "value": "from 300–450 GEL" },
+                    { "label": "Shock absorbers", "value": "from 100–150 GEL" },
+                    { "label": "Drum spider", "value": "from 80–100 GEL" },
+                    { "label": "Door seal", "value": "from 100–130 GEL" }
+                  ]
+                },
+                {
+                  "title": "Water in/out",
+                  "items": [
+                    { "label": "Drain pump replacement", "value": "from 90–120 GEL" },
+                    { "label": "Drain system cleaning", "value": "from 70 GEL" },
+                    { "label": "Inlet valve replacement", "value": "from 120 GEL" },
+                    { "label": "Clog removal", "value": "50 GEL" }
+                  ]
+                },
+                {
+                  "title": "Electrics & control",
+                  "items": [
+                    { "label": "Heater (TEN) replacement", "value": "from 90–120 GEL" },
+                    { "label": "Control board repair/replacement", "value": "from 150–250 GEL" },
+                    { "label": "Sensors (level/temperature)", "value": "from 60–80 GEL" },
+                    { "label": "Error clearing", "value": "from 60–80 GEL" }
+                  ]
+                },
+                {
+                  "title": "Other",
+                  "items": [
+                    { "label": "Leak fixing", "value": "from 60–100 GEL" },
+                    { "label": "Belt replacement", "value": "from 80–100 GEL" },
+                    { "label": "Noise / vibration", "value": "from 60–90 GEL" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Dishwashers",
+              "groups": [
+                {
+                  "title": "Water & drain",
+                  "items": [
+                    { "label": "Circulation pump replacement", "value": "from 300–480 GEL" },
+                    { "label": "Drain pump replacement", "value": "from 150–200 GEL" },
+                    { "label": "Filter/system cleaning", "value": "from 100 GEL" },
+                    { "label": "Leak fixing", "value": "from 100–150 GEL" }
+                  ]
+                },
+                {
+                  "title": "Heating & electrics",
+                  "items": [
+                    { "label": "Heater replacement", "value": "from 170–250 GEL" },
+                    { "label": "Sensor replacement", "value": "from 140–200 GEL" },
+                    { "label": "Control board repair", "value": "from 180–300 GEL" }
+                  ]
+                },
+                {
+                  "title": "Mechanics",
+                  "items": [
+                    { "label": "Door gasket replacement", "value": "from 140–200 GEL" },
+                    { "label": "Door lock repair/replacement", "value": "from 140–200 GEL" },
+                    { "label": "Sprayer issues", "value": "from 140–200 GEL" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Cooktops (gas / electric)",
+              "groups": [
+                {
+                  "title": "Gas",
+                  "items": [
+                    { "label": "Nozzle replacement", "value": "from 50–80 GEL" },
+                    { "label": "Ignition block", "value": "from 130–150 GEL" },
+                    { "label": "Gas leak fix", "value": "from 60–100 GEL" },
+                    { "label": "Flame adjustment", "value": "from 50–80 GEL" }
+                  ]
+                },
+                {
+                  "title": "Electric",
+                  "items": [
+                    { "label": "Heating zone replacement", "value": "from 100–180 GEL" },
+                    { "label": "Touch panel repair", "value": "from 150–250 GEL" },
+                    { "label": "Control board replacement", "value": "from 270–330 GEL" },
+                    { "label": "Error fixing", "value": "from 60–80 GEL" }
+                  ]
+                }
+              ],
+              "note": "Work is done with safety rules observed."
+            },
+            {
+              "title": "Gas & electric stoves",
+              "groups": [
+                {
+                  "title": "Common",
+                  "items": [
+                    { "label": "Oven heater replacement", "value": "from 100–150 GEL" },
+                    { "label": "Thermostat replacement", "value": "from 100–150 GEL" },
+                    { "label": "Switch replacement", "value": "from 80–100 GEL" },
+                    { "label": "Oven light repair", "value": "from 30 GEL" }
+                  ]
+                },
+                {
+                  "title": "Gas",
+                  "items": [
+                    { "label": "Gas control replacement", "value": "from 100–180 GEL" },
+                    { "label": "Control board replacement", "value": "from 270–330 GEL" },
+                    { "label": "Gas flow adjustment", "value": "from 50–80 GEL" },
+                    { "label": "Ignition block replacement", "value": "from 130–150 GEL" }
+                  ]
+                },
+                {
+                  "title": "Electrics",
+                  "items": [
+                    { "label": "Wiring repair", "value": "from 70–90 GEL" },
+                    { "label": "Power cable replacement", "value": "from 70–90 GEL" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Ovens",
+              "items": [
+                { "label": "Heater (top/bottom/grill)", "value": "from 130–150 GEL" },
+                { "label": "Convection fan replacement", "value": "from 130–150 GEL" },
+                { "label": "Control board repair", "value": "from 150–170 GEL" },
+                { "label": "Thermostat replacement", "value": "from 100–150 GEL" },
+                { "label": "Uneven heating fix", "value": "from 80–120 GEL" }
+              ]
+            }
+          ],
+          "importantNotes": [
+            "Final cost is set after diagnostics.",
+            "Parts are paid separately.",
+            "Warranty covers labor and parts.",
+            "Repair time — from 30 minutes."
+          ],
+          "contactCard": {
+            "title": "My contacts",
+            "items": [
+              { "label": "Phone / messengers", "value": "+995 (591) 172 329", "href": "tel:+995591172329" },
+              { "label": "Telegram", "value": "@MasterBatumi_Maksim", "href": "https://t.me/MasterBatumi_Maksim" },
+              { "label": "WhatsApp", "value": "Message", "href": "https://wa.me/995591172329" },
+              { "label": "Viber", "value": "Open chat", "href": "viber://chat?number=+995591172329" },
+              { "label": "Facebook", "value": "Profile", "href": "https://www.facebook.com/profile.php?id=61587124962215" },
+              { "label": "Email", "value": "maksimkolbasin68084@gmail.com", "href": "mailto:maksimkolbasin68084@gmail.com" }
+            ]
+          }
+        },
+        "contacts": {
+          "title": "Contacts — Batumi Repair Service",
+          "lead": "Reach us in the most convenient way.",
+          "heading": "Contacts",
+          "cards": [
+            {
+              "title": "Main contacts",
+              "items": [
+                { "label": "Phone / messengers", "value": "+995 591 172 329", "href": "tel:+995591172329" },
+                { "label": "Email", "value": "maksimkolbasin68084@gmail.com", "href": "mailto:maksimkolbasin68084@gmail.com" },
+                { "label": "Telegram", "value": "@MasterBatumi_Maksim", "href": "https://t.me/MasterBatumi_Maksim" },
+                { "label": "WhatsApp", "value": "Message", "href": "https://wa.me/995591172329" },
+                { "label": "Viber", "value": "Open chat", "href": "viber://chat?number=+995591172329" },
+                { "label": "Facebook", "value": "facebook.com/profile.php?id=61587124962215", "href": "https://www.facebook.com/profile.php?id=61587124962215" }
+              ]
+            },
+            {
+              "title": "Schedule & area",
+              "items": [
+                { "label": "Hours", "value": "9:00–20:00 daily" },
+                { "label": "Service area", "value": "Batumi" }
+              ],
+              "note": "Urgent same-day visit +20 GEL if needed."
+            }
+          ],
+          "cta": {
+            "title": "Need a quick reply?",
+            "text": "Describe the issue and model — I'll give a price/time estimate right away.",
+            "button": "Message on Telegram"
+          }
+        },
+        "faq": {
+          "title": "FAQ — Batumi Repair Service",
+          "lead": "Answers to common questions.",
+          "heading": "FAQ",
+          "items": [
+            { "question": "How long does repair take?", "answer": "Usually 1–2 days. Minor urgent jobs can be same-day if parts are available." },
+            { "question": "Can you use my spare parts?", "answer": "Yes, after checking compatibility and condition to keep the warranty valid." },
+            { "question": "Do you provide a warranty?", "answer": "Yes, term is written in the work order: 1–6 months depending on parts and work." },
+            { "question": "How to know the final price?", "answer": "After diagnostics. Ranges are in the price list, but the exact cost depends on model and condition." },
+            { "question": "Do you take cashless?", "answer": "Yes, bank transfer/card transfer—ask when placing the order." }
+          ]
+        },
+        "about": {
+          "title": "About us — Batumi Repair Service",
+          "lead": "A short story about the service and our approach.",
+          "heading": "About us",
+          "text": "I’m Maksim, an independent appliance repair technician in Batumi. I answer the calls, diagnose, repair, and take full responsibility for the result.",
+          "pillars": [
+            { "title": "Transparency", "text": "Price agreed before repair and fixed in the work order." },
+            { "title": "Clean and careful", "text": "Work with protection, tidy up after, no mess left behind." },
+            { "title": "Warranty", "text": "Covers work and parts; term depends on the unit (typically 1–6 months)." }
+          ],
+          "callout": "Need advice on choosing appliances or maintenance? Message me, I’ll help for free."
+        }
+      },
+      "rootButtonClass": "button--ghost"
+    },
+    {
+      "code": "ka",
+      "label": "ქართული",
+      "labelShort": "KA",
+      "menu": "მენიუ",
+      "navLabel": "მთავარი ნავიგაცია",
+      "langLabel": "ენის შეცვლა",
+      "hours": "ყოველდღე 9:00–20:00",
+      "cta": "დარეკეთ",
+      "paths": {
+        "home": "/ka/",
+        "services": "/ka/services/",
+        "prices": "/ka/prices/",
+        "contacts": "/ka/contacts/",
+        "faq": "/ka/faq/",
+        "about": "/ka/about/"
+      },
+      "nav": [
+        {
+          "key": "home",
+          "label": "მთავარი"
+        },
+        {
+          "key": "services",
+          "label": "სერვისები"
+        },
+        {
+          "key": "prices",
+          "label": "ფასები"
+        },
+        {
+          "key": "contacts",
+          "label": "კონტაქტი"
+        },
+        {
+          "key": "faq",
+          "label": "ხშირი კითხვები"
+        },
+        {
+          "key": "about",
+          "label": "ჩვენს შესახებ"
+        }
+      ],
+      "footer": {
+        "contactsTitle": "კონტაქტი",
+        "areasTitle": "მომსახურების ზონა",
+        "langsTitle": "ენები",
+        "phoneLabel": "ტელეფონი",
+        "emailLabel": "ფოსტა",
+        "areas": "ბათუმი"
+      },
+      "home": {
+        "metaTitle": "საოჯახო ტექნიკის შეკეთება ბათუმში — ადგილზე მომსახურება",
+        "metaDescription": "საოჯახო ტექნიკის შეკეთება ბათუმში. ადგილზე დიაგნოსტიკა, გამჭვირვალე ფასები და გარანტია.",
+        "badge": "ბათუმი",
+        "title": "საოჯახო ტექნიკის შეკეთება ადგილზე მომსახურებით ბათუმში",
+        "lead": "ადგილზე დიაგნოსტიკა, გამჭვირვალე ფასები და გარანტია სამუშაოზე და ნაწილებზე.",
+        "ctaPrimary": "დარეკეთ",
+        "ctaSecondary": "მოგვწერეთ",
+        "heroCardIcon": "icon-tools.svg",
+        "heroCardText": "ქალაქში ადგილზე მომსახურება და 6 თვემდე გარანტია.",
+        "services": {
+          "title": "რას ვაკეთებთ",
+          "lead": "ყველაზე ხშირი ტექნიკა, რომელსაც ვემსახურებით.",
+        "linkLabel": "დეტალურად:",
+          "linkKey": "services",
+          "items": [
+            {
+              "title": "სარეცხი მანქანები",
+              "text": "არ წურავს, არ ათბობს, ხმაურობს ან ვიბრირებს.",
+              "icon": "icon-tools.svg",
+              "highlight": true
+            },
+            {
+              "title": "მაცივრები",
+              "text": "არ აცივებს, წვეთავს ან არ ითიშება.",
+              "icon": "icon-shield.svg"
+            },
+            {
+              "title": "კონდიციონერები",
+              "text": "სუსტია გაგრილება, სუნი აქვს ან ცუდად უბერავს.",
+              "icon": "icon-call.svg"
+            }
+          ]
+        },
+        "benefits": {
+          "title": "რატომ გვენდობიან",
+          "lead": "გავლებულად ვმუშაობთ და ვიცავთ მომსახურების დონეს.",
+          "items": [
+            {
+              "title": "მომსახურება იმავე დღეს",
+              "text": "დროის შეთანხმება და ადგილზე მისვლა უბანში."
+            },
+            {
+              "title": "გარანტია სამუშაოზე",
+              "text": "პირობები ფიქსირდება სამუშაო ბარათში."
+            },
+            {
+              "title": "გამჭვირვალე ფასები",
+              "text": "ჯერ დიაგნოსტიკა, შემდეგ ღირებულების შეთანხმება."
+            }
+          ]
+        },
+        "steps": {
+          "title": "როგორ ვმუშაობთ",
+          "lead": "ოთხი ნაბიჯი განაცხადიდან დასრულებულ რემონტამდე.",
+          "items": [
+            "დარეკვა ან შეტყობინება.",
+            "ადგილზე დიაგნოსტიკა და ღირებულების შეთანხმება.",
+            "რემონტი და ტესტირება.",
+            "გარანტია და მოვლის რეკომენდაციები."
+          ]
+        },
+        "prices": {
+          "title": "ფასების მაგალითები",
+          "lead": "საბოლოო ფასი დამოკიდებულია მოდელსა და დეტალებზე.",
+          "items": [
+            {
+              "label": "დიაგნოსტიკა",
+              "value": "30 GEL-დან"
+            },
+            {
+              "label": "სარეცხი მანქანის რემონტი",
+              "value": "80 GEL-დან"
+            },
+            {
+              "label": "მაცივრის რემონტი",
+              "value": "90 GEL-დან"
+            },
+            {
+              "label": "კონდიციონერის მომსახურება",
+              "value": "70 GEL-დან"
+            }
+          ]
+        },
+        "faq": {
+          "title": "ხშირი კითხვები",
+          "lead": "კომფორტული პასუხები ყველაზე პოპულარულ შეკითხვებზე.",
+          "items": [
+            {
+              "question": "რამდენ ხანს გრძელდება რემონტი?",
+              "answer": "ხშირად 1–2 დღე, რთულ შემთხვევებში შეთანხმებით."
+            },
+            {
+              "question": "შეიძლება ჩემი დეტალების გამოყენება?",
+              "answer": "დიახ, მაგრამ წინასწარ შევამოწმებთ შესაბამისობას და მდგომარეობას."
+            },
+            {
+              "question": "გარანტია გაქვთ?",
+              "answer": "დიახ, გარანტიის ვადა აღნიშნულია სამუშაო ბარათში."
+            }
+          ]
+        },
+        "contact": {
+          "title": "კონტაქტი",
+          "lead": "დატოვეთ განაცხადი და დაგირეკავთ დღის განმავლობაში.",
+          "list": [
+            {
+              "label": "ტელეფონი",
+              "value": "+995 591 172 329"
+            },
+            {
+              "label": "მესენჯერები",
+              "value": "WhatsApp / Telegram"
+            },
+            {
+              "label": "საათი",
+              "value": "9:00–20:00 ყოველდღე"
+            },
+            {
+              "label": "რაიონები",
+              "value": "ბათუმი"
+            }
+          ],
+          "form": {
+            "nameLabel": "სახელი",
+            "namePlaceholder": "თქვენი სახელი",
+            "phoneLabel": "ტელეფონი",
+            "phonePlaceholder": "555112233",
+            "phoneRequired": "შეავსეთ ეს ველი",
+            "descriptionLabel": "პრობლემის მოკლე აღწერა (არასავალდებულო)",
+            "descriptionPlaceholder": "მაგ: სარეცხი მანქანა LG, წყალს არ სენს",
+            "submit": "განაცხადის გაგზავნა",
+            "linkLabel": "კონტაქტი",
+            "linkKey": "contacts"
+          }
+        }
+      },
+      "pages": {
+        "services": {
+          "title": "სერვისები — Batumi Repair Service",
+          "lead": "მომსახურებების და ხშირი პრობლემების მიმოხილვა.",
+          "heading": "სერვისები",
+          "sections": [
+            {
+              "title": "ზოგადი სამუშაოები",
+              "items": [
+                "გამოძახება და დიაგნოსტიკა.",
+                "რჩევები მოვლაზე და სათადარიგო ნაწილების არჩევაზე.",
+                "ღირებულების შეთანხმება სამუშაოს დაწყებამდე."
+              ]
+            },
+            {
+              "title": "სარეცხი მანქანები",
+              "items": [
+                "ტარების, ამორტიზატორების, ჯვრის, მანჟეტის შეცვლა.",
+                "ტუმბო, შემვსები სარქველი, ტენი, მართვის პლატა — შეკეთება/შეცვლა.",
+                "სანიაღვრე სისტემის წმენდა, გაჟონვის და ვიბრაციის მოხსნა."
+              ]
+            },
+            {
+              "title": "ჭურჭლის სარეცხი მანქანები",
+              "items": [
+                "ცირკულაციის და სანიაღვრე ტუმბოს შეცვლა.",
+                "ფილტრების წმენდა, გაჟონვის გამოსწორება.",
+                "გათბობის და ელექტრონიკის შეკეთება."
+              ]
+            },
+            {
+              "title": "მაცივრები და კონდიციონერები",
+              "items": [
+                "შიდა ბლოკის და დრენაჟის წმენდა.",
+                "გაჟონვების, სენსორებისა და პლატების შემოწმება.",
+                "დეზინფექცია და სუნების პრევენცია."
+              ]
+            },
+            {
+              "title": "ზედაპირები, გაზქურები, ღუმელები",
+              "items": [
+                "გაზი: ჟიკლიოები, გაჟონვები, ანთება, ალის რეგულირება.",
+                "ელექტრო: ქურები, სენსორი პანელი, მართვის მოდული.",
+                "ღუმელები: ტენები, თერმოსტატი, კონვექციის ვენტილატორი."
+              ]
+            }
+          ]
+        },
+        "prices": {
+          "title": "ფასები — Batumi Repair Service",
+          "lead": "გამჭვირვალე ფასები და პირობები.",
+          "heading": "ფასები",
+          "sections": [
+            {
+              "title": "ზოგადი მომსახურება",
+              "lead": "რაც თითქმის ყოველთვის იწყებს შეკვეთას.",
+              "groups": [
+                {
+                  "title": "დიაგნოსტიკა",
+                  "items": [
+                    { "label": "გამოძახება + დიაგნოსტიკა", "value": "უფასო" }
+                  ]
+                },
+                {
+                  "title": "გამოძახება",
+                  "items": [
+                    { "label": "სასწრაფო same-day გამოძახება", "value": "+20 GEL" }
+                  ]
+                },
+                {
+                  "title": "წვრილი სამუშაოები",
+                  "items": [
+                    { "label": "დაკავშირების შემოწმება", "value": "60 GEL" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "კონდიციონერების წმენდა",
+              "items": [
+                { "label": "შიდა ფილტრების წმენდა", "value": "≈ 80–100 GEL" },
+                { "label": "სრული წმენდა (შიდა ბლოკი + დრენაჟი + ფილტრები)", "value": "≈ 100–200 GEL" },
+                { "label": "ანტიბაქტერიული დამუშავება", "value": "≈ 120 GEL" },
+                { "label": "დრენაჟის გაწმენდა", "value": "≈ 90 GEL" },
+                { "label": "ვენტილატორის და კორპუსის წმენდა", "value": "≈ 110 GEL" },
+                { "label": "ნაწილობრივი წმენდა", "value": "≈ 60 GEL" }
+              ],
+              "note": "ხშირად გთავაზობენ სრულ კომპლექსს 150–200 GEL-ში (ფილტრები, აორთქლებელი, დრენაჟი, ანტიბაქტერია)."
+            },
+            {
+              "title": "სარეცხი მანქანები",
+              "lead": "დაჯგუფებულია სამუშაოს ტიპებით.",
+              "groups": [
+                {
+                  "title": "მექანიკა",
+                  "items": [
+                    { "label": "ტარების შეცვლა", "value": "300–450 GEL-დან" },
+                    { "label": "ამორტიზატორები", "value": "100–150 GEL-დან" },
+                    { "label": "ჯვარი", "value": "80–100 GEL-დან" },
+                    { "label": "კარის მანჟეტი", "value": "100–130 GEL-დან" }
+                  ]
+                },
+                {
+                  "title": "წყალი / სანიაღვრე",
+                  "items": [
+                    { "label": "სანიაღვრე ტუმბო", "value": "90–120 GEL-დან" },
+                    { "label": "სანიაღვრე სისტემის წმენდა", "value": "70 GEL-დან" },
+                    { "label": "შემვსები სარქველი", "value": "120 GEL-დან" },
+                    { "label": "გადასასვლელის მოხსნა", "value": "50 GEL" }
+                  ]
+                },
+                {
+                  "title": "ელექტრიკა და მართვა",
+                  "items": [
+                    { "label": "ტენის (TEN) შეცვლა", "value": "90–120 GEL-დან" },
+                    { "label": "მართვის პლატა — შეკეთება/შეცვლა", "value": "150–250 GEL-დან" },
+                    { "label": "სენსორები (დონის/ტემპ.)", "value": "60–80 GEL-დან" },
+                    { "label": "შეცდომების მოხსნა", "value": "60–80 GEL-დან" }
+                  ]
+                },
+                {
+                  "title": "სხვა",
+                  "items": [
+                    { "label": "გაჟონვების გამოსწორება", "value": "60–100 GEL-დან" },
+                    { "label": "ქამრის შეცვლა", "value": "80–100 GEL-დან" },
+                    { "label": "ხმაური / ვიბრაცია", "value": "60–90 GEL-დან" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "ჭურჭლის სარეცხი მანქანები",
+              "groups": [
+                {
+                  "title": "წყალი და სანიაღვრე",
+                  "items": [
+                    { "label": "ცირკულაციის ტუმბო", "value": "300–480 GEL-დან" },
+                    { "label": "სანიაღვრე ტუმბო", "value": "150–200 GEL-დან" },
+                    { "label": "ფილტრები/სისტემის წმენდა", "value": "100 GEL-დან" },
+                    { "label": "გაჟონვის გამოსწორება", "value": "100–150 GEL-დან" }
+                  ]
+                },
+                {
+                  "title": "გათბობა და ელექტრიკა",
+                  "items": [
+                    { "label": "ტენის შეცვლა", "value": "170–250 GEL-დან" },
+                    { "label": "სენსორების შეცვლა", "value": "140–200 GEL-დან" },
+                    { "label": "მართვის პლატა", "value": "180–300 GEL-დან" }
+                  ]
+                },
+                {
+                  "title": "მექანიკა",
+                  "items": [
+                    { "label": "კარის რეზინის შეცვლა", "value": "140–200 GEL-დან" },
+                    { "label": "კარის საკეტის რემონტი/შეცვლა", "value": "140–200 GEL-დან" },
+                    { "label": "სპრეერების პრობლემები", "value": "140–200 GEL-დან" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "ზედაპირები (გაზ / ელექტრო)",
+              "groups": [
+                {
+                  "title": "გაზი",
+                  "items": [
+                    { "label": "ჟიკლიოების შეცვლა", "value": "50–80 GEL-დან" },
+                    { "label": "აელქტროპადჟიგის ბლოკი", "value": "130–150 GEL-დან" },
+                    { "label": "გაზის გაჟონვის გამოსწორება", "value": "60–100 GEL-დან" },
+                    { "label": "ალის რეგულირება", "value": "50–80 GEL-დან" }
+                  ]
+                },
+                {
+                  "title": "ელექტრო",
+                  "items": [
+                    { "label": "კონფორკის შეცვლა", "value": "100–180 GEL-დან" },
+                    { "label": "სენსორი პანელის რემონტი", "value": "150–250 GEL-დან" },
+                    { "label": "მართვის ბლოკის შეცვლა", "value": "270–330 GEL-დან" },
+                    { "label": "შეცდომების გამოსწორება", "value": "60–80 GEL-დან" }
+                  ]
+                }
+              ],
+              "note": "ყველა სამუშაო უსაფრთხოების წესების დაცვით."
+            },
+            {
+              "title": "გაზის და ელექტრო გაზქურები",
+              "groups": [
+                {
+                  "title": "საერთო",
+                  "items": [
+                    { "label": "ღუმელის ტენის შეცვლა", "value": "100–150 GEL-დან" },
+                    { "label": "თერმოსტატის შეცვლა", "value": "100–150 GEL-დან" },
+                    { "label": "გადამრთველების შეცვლა", "value": "80–100 GEL-დან" },
+                    { "label": "ღუმელის განათება", "value": "30 GEL-დან" }
+                  ]
+                },
+                {
+                  "title": "გაზი",
+                  "items": [
+                    { "label": "გაზ-კონტროლის შეცვლა", "value": "100–180 GEL-დან" },
+                    { "label": "მართვის ბლოკი", "value": "270–330 GEL-დან" },
+                    { "label": "გაზის მიწოდების რეგულირება", "value": "50–80 GEL-დან" },
+                    { "label": "აელქტროპადჟიგის ბლოკი", "value": "130–150 GEL-დან" }
+                  ]
+                },
+                {
+                  "title": "ელექტრიკა",
+                  "items": [
+                    { "label": "გაყვანილობის რემონტი", "value": "70–90 GEL-დან" },
+                    { "label": "კვების კაბელის შეცვლა", "value": "70–90 GEL-დან" }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "ღუმელები",
+              "items": [
+                { "label": "ტენი (ზედა/ქვედა/გრილი)", "value": "130–150 GEL-დან" },
+                { "label": "კონვექციის ვენტილატორი", "value": "130–150 GEL-დან" },
+                { "label": "მართვის პლატა", "value": "150–170 GEL-დან" },
+                { "label": "თერმოსტატი", "value": "100–150 GEL-დან" },
+                { "label": "არათანაბარი გაცხელება", "value": "80–120 GEL-დან" }
+              ]
+            }
+          ],
+          "importantNotes": [
+            "საბოლოო ღირებულება — დიაგნოსტიკის შემდეგ.",
+            "სათადარიგო ნაწილები იხდება ცალკე.",
+            "გარანტია ვრცელდება სამუშაოზე და დეტალებზე.",
+            "რემონტის დრო — 30 წუთიდან."
+          ],
+          "contactCard": {
+            "title": "ჩემი კონტაქტები",
+            "items": [
+              { "label": "ტელეფონი / მესენჯერები", "value": "+995 (591) 172 329", "href": "tel:+995591172329" },
+              { "label": "Telegram", "value": "@MasterBatumi_Maksim", "href": "https://t.me/MasterBatumi_Maksim" },
+              { "label": "WhatsApp", "value": "დაწერე", "href": "https://wa.me/995591172329" },
+              { "label": "Viber", "value": "чатის გახსნა", "href": "viber://chat?number=+995591172329" },
+              { "label": "Facebook", "value": "პროფილი", "href": "https://www.facebook.com/profile.php?id=61587124962215" },
+              { "label": "Email", "value": "maksimkolbasin68084@gmail.com", "href": "mailto:maksimkolbasin68084@gmail.com" }
+            ]
+          }
+        },
+        "contacts": {
+          "title": "კონტაქტი — Batumi Repair Service",
+          "lead": "დაგვიკავშირდით თქვენთვის მოსახერხებლად.",
+          "heading": "კონტაქტი",
+          "cards": [
+            {
+              "title": "ძირითადი კონტაქტები",
+              "items": [
+                { "label": "ტელეფონი / მესენჯერები", "value": "+995 591 172 329", "href": "tel:+995591172329" },
+                { "label": "Email", "value": "maksimkolbasin68084@gmail.com", "href": "mailto:maksimkolbasin68084@gmail.com" },
+                { "label": "Telegram", "value": "@MasterBatumi_Maksim", "href": "https://t.me/MasterBatumi_Maksim" },
+                { "label": "WhatsApp", "value": "დაწერე", "href": "https://wa.me/995591172329" },
+                { "label": "Viber", "value": "чатის გახსნა", "href": "viber://chat?number=+995591172329" },
+                { "label": "Facebook", "value": "facebook.com/profile.php?id=61587124962215", "href": "https://www.facebook.com/profile.php?id=61587124962215" }
+              ]
+            },
+            {
+              "title": "გრაფიკი და ზონა",
+              "items": [
+                { "label": "საათი", "value": "9:00–20:00 ყოველდღე" },
+                { "label": "ზონა", "value": "ბათუმი" }
+              ],
+              "note": "სასწრაფო same-day გამოძახება +20 GEL თუ საჭიროა."
+            }
+          ],
+          "cta": {
+            "title": "სწრაფი პასუხი გინდა?",
+            "text": "მოგვწერე მოდელი და პრობლემა — გეტყვით ფასისა და დროის დიაპაზონს.",
+            "button": "წერე Telegram-ში"
+          }
+        },
+        "faq": {
+          "title": "ხშირი კითხვები — Batumi Repair Service",
+          "lead": "პოპულარულ კითხვებზე პასუხები.",
+          "heading": "ხშირი კითხვები",
+          "items": [
+            { "question": "რამდენ ხანს გრძელდება რემონტი?", "answer": "ჩვეულებრივ 1–2 დღე. მცირე სასწრაფო სამუშაოები იმავე დღეს, თუ დეტალი არის." },
+            { "question": "მომეწოდებით თუ ჩემი დეტალებით?", "answer": "დიახ, თუ თავსებადობა და მდგომარეობა შევამოწმეთ — რომ გარანტია შევინარჩუნოთ." },
+            { "question": "გაქვთ გარანტია?", "answer": "დიახ, ვადა აღინიშნება სამუშაო ბარათში: 1–6 თვე, დეტალზე და სამუშაოზე დამოკიდებული." },
+            { "question": "როგორ გავიგო საბოლოო ფასი?", "answer": "დიაგნოსტიკის შემდეგ. დიაპაზონები ფასებშია, მაგრამ ზუსტი ფასი მოდელზე და მდგომარეობაზეა დამოკიდებული." },
+            { "question": "შეიძლება გადარიცხვა?", "answer": "დიახ, ბანკით/ბარათით — შეკვეთისას შეგვითანხმეთ." }
+          ]
+        },
+        "about": {
+          "title": "ჩვენს შესახებ — Batumi Repair Service",
+          "lead": "მოკლედ ჩვენს სერვისზე და მიდგომაზე.",
+          "heading": "ჩვენს შესახებ",
+          "text": "მე ვარ მაკსიმი, დამოუკიდებელი საყოფაცხოვრებო ტექნიკის ოსტატი ბათუმში. თავად ვპასუხობ ზარებზე, ვაკეთებ დიაგნოსტიკას და რემონტს — და პასუხისმგებელი ვარ შედეგზე.",
+          "pillars": [
+            { "title": "გამჭვირვალობა", "text": "ფასი შეთანხმებულია რემონტამდე და ფიქსირდება სამუშაო ბარათში." },
+            { "title": "სისუფთავე და აკურატულობა", "text": "ვმუშაობ დაცვით, ვასუფთავებ ადგილს, არაფერს ვტოვებ უწესრიგოდ." },
+            { "title": "გარანტია", "text": "გავრცელდება როგორც სამუშაოზე, ასევე დეტალებზე; ვადა ჩვეულებრივ 1–6 თვეა." }
+          ],
+          "callout": "ტექნიკის არჩევაზე თუ პროფილაქტიკაზე რჩევა გჭირდება — მომწერე, უფასოდ დაგეხმარები."
+        }
+      },
+      "rootButtonClass": "button--secondary"
+    }
+  ]
+}
