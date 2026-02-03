@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="<%= lang.code %>">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#2a7f98">
-  <title><%= title %></title>
+  <title>
+    <%= title %>
+  </title>
   <meta name="description" content="<%= description %>">
   <link rel="preload" href="/assets/fonts/Noto-Sans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/styles.css" as="style">
@@ -14,29 +17,24 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any">
   <link rel="canonical" href="<%= pageKey ? site.baseUrl + lang.paths[pageKey] : site.baseUrl + '/' %>">
   <% if (pageKey) { %>
-    <% i18n.languages.forEach((locale) => { %>
+    <% i18n.languages.forEach((locale)=> { %>
       <link rel="alternate" hreflang="<%= locale.code %>" href="<%= site.baseUrl + locale.paths[pageKey] %>">
-    <% }); %>
-    <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl + i18n.languages[0].paths[pageKey] %>">
-  <% } %>
-  <% if (pageKey) { %>
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="<%= site.baseUrl + lang.paths[pageKey] %>">
-  <meta property="og:title" content="<%= title %>">
-  <meta property="og:description" content="<%= description %>">
-  <meta property="og:site_name" content="<%= site.name %>">
-  <meta property="og:locale" content="<%= lang.code %>">
-  <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/icon-tools.png">
-  <% } %>
-  <% if (pageKey) { 
-    const pageUrl = site.baseUrl + lang.paths[pageKey];
-    const sameAs = [
-      "https://t.me/MasterBatumi_Maksim",
-      "https://wa.me/995591172329",
-      "https://www.facebook.com/profile.php?id=61587124962215"
-    ];
-  %>
-  <script type="application/ld+json">
+      <% }); %>
+        <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl + i18n.languages[0].paths[pageKey] %>">
+        <% } %>
+          <% if (pageKey) { %>
+            <meta property="og:type" content="website">
+            <meta property="og:url" content="<%= site.baseUrl + lang.paths[pageKey] %>">
+            <meta property="og:title" content="<%= title %>">
+            <meta property="og:description" content="<%= description %>">
+            <meta property="og:site_name" content="<%= site.name %>">
+            <meta property="og:locale" content="<%= lang.code %>">
+            <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/icon-tools.png">
+            <% } %>
+              <% if (pageKey) { const pageUrl=site.baseUrl + lang.paths[pageKey]; const
+                sameAs=[ "https://t.me/MasterBatumi_Maksim" , "https://wa.me/995591172329"
+                , "https://www.facebook.com/profile.php?id=61587124962215" ]; %>
+                <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
@@ -64,7 +62,7 @@
       "sameAs": <%= JSON.stringify(sameAs) %>
     }
   </script>
-  <script type="application/ld+json">
+                <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -84,83 +82,119 @@
       ]
     }
   </script>
-  <% } %>
+                <% } %>
 </head>
+
 <body class="page">
-<header class="site-header">
-  <div class="container site-header__row">
-    <a class="site-header__brand" href="<%= lang.paths.home %>">
-      <span><%= site.name %></span>
+  <header class="site-header">
+    <div class="container site-header__row">
+      <a class="site-header__brand" href="<%= lang.paths.home %>">
+        <img src="/assets/icons/icon-tools.png" alt="" class="site-header__logo" width="32" height="32">
+        <span>
+          <%= site.name %>
+        </span>
+      </a>
+      <div class="site-header__contact">
+        <a class="site-header__phone" href="tel:<%= site.phoneLink %>">
+          <%= site.phone %>
+        </a>
+        <span>
+          <%= lang.hours %>
+        </span>
+      </div>
+      <div class="site-header__langs" aria-label="<%= lang.langLabel %>">
+        <% i18n.languages.forEach((locale)=> {
+          const activeClass = locale.code === lang.code ? " site-header__lang--active" : "";
+          %>
+          <a class="site-header__lang<%= activeClass %>" href="<%= locale.paths[pageKey] %>"
+            data-lang="<%= locale.code %>">
+            <%= locale.labelShort %>
+          </a>
+          <% }); %>
+      </div>
+    </div>
+  </header>
+
+  <details class="site-nav" open>
+    <summary class="site-nav__toggle">
+      <%= lang.menu %>
+    </summary>
+    <nav class="container site-nav__panel" aria-label="<%= lang.navLabel %>">
+      <ul class="site-nav__list">
+        <% lang.nav.forEach((item)=> {
+          const navActive = item.key === pageKey ? " site-nav__link--active" : "";
+          %>
+          <li><a class="site-nav__link<%= navActive %>" href="<%= lang.paths[item.key] %>">
+              <%= item.label %>
+            </a></li>
+          <% }); %>
+      </ul>
+    </nav>
+  </details>
+
+  <main class="main">
+    <%- content %>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <p class="site-footer__title">
+          <%= lang.footer.contactsTitle %>
+        </p>
+        <p class="site-footer__text">
+          <%= lang.footer.phoneLabel %>: <a href="tel:<%= site.phoneLink %>">
+              <%= site.phone %>
+            </a>
+        </p>
+        <p class="site-footer__text">
+          <%= lang.footer.emailLabel %>: <a href="mailto:<%= site.email %>">
+              <%= site.email %>
+            </a>
+        </p>
+      </div>
+      <div>
+        <p class="site-footer__title">
+          <%= lang.footer.areasTitle %>
+        </p>
+        <p class="site-footer__text">
+          <%= lang.footer.areas %>
+        </p>
+      </div>
+      <div>
+        <p class="site-footer__title">
+          <%= lang.footer.langsTitle %>
+        </p>
+        <p class="site-footer__text"><a href="/ru/">Русский</a> · <a href="/ka/">ქართული</a> · <a
+            href="/en/">English</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cta-bar">
+    <a class="button button--primary" href="tel:<%= site.phoneLink %>">
+      <%= lang.cta %>
     </a>
-    <div class="site-header__contact">
-      <a class="site-header__phone" href="tel:<%= site.phoneLink %>"><%= site.phone %></a>
-      <span><%= lang.hours %></span>
-    </div>
-    <div class="site-header__langs" aria-label="<%= lang.langLabel %>">
-      <% i18n.languages.forEach((locale) => { 
-           const activeClass = locale.code === lang.code ? " site-header__lang--active" : ""; 
-      %>
-        <a class="site-header__lang<%= activeClass %>" href="<%= locale.paths[pageKey] %>" data-lang="<%= locale.code %>"><%= locale.labelShort %></a>
-      <% }); %>
-    </div>
+    <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>"
+      target="_blank" rel="noopener">
+      <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+      <%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
+    </a>
   </div>
-</header>
-
-<details class="site-nav" open>
-  <summary class="site-nav__toggle"><%= lang.menu %></summary>
-  <nav class="container site-nav__panel" aria-label="<%= lang.navLabel %>">
-    <ul class="site-nav__list">
-      <% lang.nav.forEach((item) => { 
-           const navActive = item.key === pageKey ? " site-nav__link--active" : ""; 
-      %>
-        <li><a class="site-nav__link<%= navActive %>" href="<%= lang.paths[item.key] %>"><%= item.label %></a></li>
-      <% }); %>
-    </ul>
-  </nav>
-</details>
-
-<main class="main">
-  <%- content %>
-</main>
-
-<footer class="site-footer">
-  <div class="container site-footer__grid">
-    <div>
-      <p class="site-footer__title"><%= lang.footer.contactsTitle %></p>
-      <p class="site-footer__text"><%= lang.footer.phoneLabel %>: <a href="tel:<%= site.phoneLink %>"><%= site.phone %></a></p>
-      <p class="site-footer__text"><%= lang.footer.emailLabel %>: <a href="mailto:<%= site.email %>"><%= site.email %></a></p>
-    </div>
-    <div>
-      <p class="site-footer__title"><%= lang.footer.areasTitle %></p>
-      <p class="site-footer__text"><%= lang.footer.areas %></p>
-    </div>
-    <div>
-      <p class="site-footer__title"><%= lang.footer.langsTitle %></p>
-      <p class="site-footer__text"><a href="/ru/">Русский</a> · <a href="/ka/">ქართული</a> · <a href="/en/">English</a></p>
-    </div>
-  </div>
-</footer>
-
-<div class="cta-bar">
-  <a class="button button--primary" href="tel:<%= site.phoneLink %>"><%= lang.cta %></a>
-  <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
-    <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
-    <%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
-  </a>
-</div>
-<script>
-  (function() {
-    const setPrefLang = (code) => {
-      document.cookie = "preferred_lang=" + encodeURIComponent(code) + ";path=/;max-age=" + 60 * 60 * 24 * 30 + ";samesite=lax";
-    };
-    const links = document.querySelectorAll('.site-header__lang');
-    links.forEach((link) => {
-      link.addEventListener('click', (e) => {
-        const code = link.dataset.lang || link.textContent.trim().toLowerCase();
-        if (code) setPrefLang(code);
+  <script>
+    (function () {
+      const setPrefLang = (code) => {
+        document.cookie = "preferred_lang=" + encodeURIComponent(code) + ";path=/;max-age=" + 60 * 60 * 24 * 30 + ";samesite=lax";
+      };
+      const links = document.querySelectorAll('.site-header__lang');
+      links.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const code = link.dataset.lang || link.textContent.trim().toLowerCase();
+          if (code) setPrefLang(code);
+        });
       });
-    });
-  })();
-</script>
+    })();
+  </script>
 </body>
+
 </html>

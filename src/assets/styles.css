@@ -182,7 +182,6 @@ button {
   background: var(--c-surface);
   font-size: 14px;
 }
-/* TODO: replace placeholder icons with a single-series set from flaticon.com */
 
 .card__icon--social {
   border: none;
@@ -302,6 +301,19 @@ button {
   gap: 10px;
   font-weight: 700;
   flex-shrink: 0;
+  text-decoration: none;
+  color: var(--c-text);
+}
+
+.site-header__logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.site-header__brand:hover .site-header__logo {
+  transform: scale(1.05);
 }
 
 .site-header__contact {
@@ -512,7 +524,7 @@ button {
   background: var(--c-surface);
 }
 
-.faq + .faq {
+.faq+.faq {
   margin-top: 12px;
 }
 
