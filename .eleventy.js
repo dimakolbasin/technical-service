@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });

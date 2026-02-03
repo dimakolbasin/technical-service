@@ -33,9 +33,8 @@
             <meta property="og:locale" content="<%= lang.code %>">
             <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
             <% } %>
-              <% if (pageKey) { const pageUrl=site.baseUrl + lang.paths[pageKey]; const
-                sameAs=[ "https://t.me/MasterBatumi_Maksim" , "https://wa.me/995591172329"
-                , "https://www.facebook.com/profile.php?id=61587124962215" ]; %>
+              <% if (pageKey) { const pageUrl=site.baseUrl + lang.paths[pageKey]; const sameAs=[ site.telegram
+                , "https://wa.me/" + site.phone.replace(/[^0-9]/g, '' ) , site.facebook ]; %>
                 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -97,7 +96,7 @@
         </span>
       </a>
       <div class="site-header__contact">
-        <a class="site-header__phone" href="tel:<%= site.phoneLink %>">
+        <a class="site-header__phone" href="tel:<%= site.phone %>">
           <%= site.phone %>
         </a>
         <span>
@@ -145,7 +144,7 @@
           <%= lang.footer.contactsTitle %>
         </p>
         <p class="site-footer__text">
-          <%= lang.footer.phoneLabel %>: <a href="tel:<%= site.phoneLink %>">
+          <%= lang.footer.phoneLabel %>: <a href="tel:<%= site.phone %>">
               <%= site.phone %>
             </a>
         </p>
@@ -174,11 +173,11 @@
   </footer>
 
   <div class="cta-bar">
-    <a class="button button--primary" href="tel:<%= site.phoneLink %>">
+    <a class="button button--primary" href="tel:<%= site.phone %>">
       <%= lang.cta %>
     </a>
-    <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>"
-      target="_blank" rel="noopener">
+    <a class="button button--secondary" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>" target="_blank"
+      rel="noopener">
       <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
       <%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
     </a>

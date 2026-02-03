@@ -17,15 +17,15 @@
         </div>
         <% } %>
           <div class="hero__actions">
-            <a class="button button--primary" href="tel:<%= site.phoneLink %>">
+            <a class="button button--primary" href="tel:<%= site.phone %>">
               <%= lang.home.ctaPrimary %>
             </a>
-            <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>"
+            <a class="button button--secondary" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>"
               target="_blank" rel="noopener">
               <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
               <%= lang.home.ctaSecondary %>
             </a>
-            <a class="button button--ghost" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">
+            <a class="button button--ghost" href="<%= site.telegram %>" target="_blank" rel="noopener">
               <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
               Telegram
             </a>
@@ -49,7 +49,7 @@
       <p class="card__text">
         <%= lang.home.contact.lead %>
       </p>
-      <form class="form" action="https://formsubmit.co/maksimkolbasin68084@gmail.com" method="POST" autocomplete="off">
+      <form class="form" action="https://formsubmit.co/<%= site.formSubmitEmail %>" method="POST" autocomplete="off">
         <!-- dummy field to discourage Chrome autofill -->
         <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1"
           role="presentation" aria-label=" "
@@ -78,7 +78,7 @@
           <button class="button button--primary" type="submit">
             <%= lang.home.contact.form.submit %>
           </button>
-          <a class="button button--ghost" href="tel:<%= site.phoneLink %>">
+          <a class="button button--ghost" href="tel:<%= site.phone %>">
             <%= lang.home.ctaPrimary %>
           </a>
         </div>
@@ -294,18 +294,18 @@
                   </strong>
                   <% if (labelLower.includes("телефон") || labelLower.includes("phone") || labelLower.includes("ტელ")) {
                     %>
-                    <a href="tel:<%= site.phoneLink %>">
+                    <a href="tel:<%= site.phone %>">
                       <%= site.phone %>
                     </a>
                     <% } else if (labelLower.includes("мессенджеры") || labelLower.includes("messenger")) { %>
                       <div class="messenger-row">
-                        <a class="card__icon card__icon--social" href="https://t.me/MasterBatumi_Maksim" target="_blank"
+                        <a class="card__icon card__icon--social" href="<%= site.telegram %>" target="_blank"
                           rel="noopener" aria-label="Telegram">
                           <img src="/assets/icons/social/tg.png" alt="Telegram">
                         </a>
                         <a class="card__icon card__icon--social"
-                          href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank"
-                          rel="noopener" aria-label="WhatsApp">
+                          href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener"
+                          aria-label="WhatsApp">
                           <img src="/assets/icons/social/wh.png" alt="WhatsApp">
                         </a>
                         <% if (site.facebook) { %>
@@ -336,12 +336,11 @@
               <%= lang.home.contact.lead %>
             </p>
             <div class="messenger-row">
-              <a class="button button--secondary" href="https://t.me/MasterBatumi_Maksim" target="_blank"
-                rel="noopener">
+              <a class="button button--secondary" href="<%= site.telegram %>" target="_blank" rel="noopener">
                 <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
                 Telegram
               </a>
-              <a class="button button--ghost" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>"
+              <a class="button button--ghost" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>"
                 target="_blank" rel="noopener">
                 <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
                 WhatsApp

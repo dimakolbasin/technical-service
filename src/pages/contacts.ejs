@@ -29,28 +29,32 @@
                   </strong>
                   <% if (item.label.toLowerCase().includes("мессенджеры") ||
                     item.label.toLowerCase().includes("messenger")) { %>
-                    <a href="tel:+995591172329">
-                      <%= item.value || "+995 591 172 329" %>
+                    <a href="tel:<%= site.phone %>">
+                      <%= site.phone %>
                     </a>
-                    <% } else if (item.href) { %>
-                      <a href="<%= item.href %>" target="<%= item.href.startsWith('http') ? '_blank' : '_self' %>"
-                        rel="<%= item.href.startsWith('http') ? 'noopener' : '' %>">
+                    <% } else if (item.label.toLowerCase().includes("whatsapp")) { %>
+                      <a href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
                         <%= item.value %>
                       </a>
-                      <% } else if (item.label.toLowerCase().includes("телефон") ||
-                        item.label.toLowerCase().includes("phone")) { %>
-                        <a href="tel:<%= item.value.replace(/[^+0-9]/g, '') %>">
+                      <% } else if (item.href) { %>
+                        <a href="<%= item.href %>" target="<%= item.href.startsWith('http') ? '_blank' : '_self' %>"
+                          rel="<%= item.href.startsWith('http') ? 'noopener' : '' %>">
                           <%= item.value %>
                         </a>
-                        <% } else if (item.label.toLowerCase().includes("email")) { %>
-                          <a href="mailto:<%= item.value %>">
-                            <%= item.value %>
+                        <% } else if (item.label.toLowerCase().includes("телефон") ||
+                          item.label.toLowerCase().includes("phone")) { %>
+                          <a href="tel:<%= site.phone %>">
+                            <%= site.phone %>
                           </a>
-                          <% } else { %>
-                            <span>
+                          <% } else if (item.label.toLowerCase().includes("email")) { %>
+                            <a href="mailto:<%= item.value %>">
                               <%= item.value %>
-                            </span>
-                            <% } %>
+                            </a>
+                            <% } else { %>
+                              <span>
+                                <%= item.value %>
+                              </span>
+                              <% } %>
                 </li>
                 <% }); %>
             </ul>
@@ -72,12 +76,11 @@
                     <%= lang.home.contact.lead %>
                   </p>
                   <div class="messenger-row">
-                    <a class="button button--secondary" href="https://t.me/MasterBatumi_Maksim" target="_blank"
-                      rel="noopener">
+                    <a class="button button--secondary" href="<%= site.telegram %>" target="_blank" rel="noopener">
                       <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
                       Telegram
                     </a>
-                    <a class="button button--ghost" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>"
+                    <a class="button button--ghost" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>"
                       target="_blank" rel="noopener">
                       <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
                       WhatsApp

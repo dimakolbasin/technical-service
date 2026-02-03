@@ -151,11 +151,9 @@
           "list": [
             {
               "label": "Телефон",
-              "value": "+995 591 172 329"
             },
             {
               "label": "Мессенджеры",
-              "value": ""
             },
             {
               "label": "Часы",
@@ -585,18 +583,15 @@
             "items": [
               {
                 "label": "Телефон / мессенджеры",
-                "value": "+995 (591) 172 329",
-                "href": "tel:+995591172329"
               },
               {
                 "label": "Telegram",
                 "value": "@MasterBatumi_Maksim",
-                "href": "https://t.me/MasterBatumi_Maksim"
+                "href": ""
               },
               {
                 "label": "WhatsApp",
                 "value": "Написать",
-                "href": "https://wa.me/995591172329"
               },
               {
                 "label": "Facebook",
@@ -621,8 +616,6 @@
               "items": [
                 {
                   "label": "Телефон / мессенджеры",
-                  "value": "+995 591 172 329",
-                  "href": "tel:+995591172329"
                 },
                 {
                   "label": "Email",
@@ -632,12 +625,11 @@
                 {
                   "label": "Telegram",
                   "value": "@MasterBatumi_Maksim",
-                  "href": "https://t.me/MasterBatumi_Maksim"
+                  "href": ""
                 },
                 {
                   "label": "WhatsApp",
                   "value": "Написать",
-                  "href": "https://wa.me/995591172329"
                 },
                 {
                   "label": "Facebook",
@@ -849,7 +841,6 @@
           "list": [
             {
               "label": "Phone",
-              "value": "+995 591 172 329"
             },
             {
               "label": "Messengers",
@@ -1283,18 +1274,15 @@
             "items": [
               {
                 "label": "Phone / messengers",
-                "value": "+995 (591) 172 329",
-                "href": "tel:+995591172329"
               },
               {
                 "label": "Telegram",
                 "value": "@MasterBatumi_Maksim",
-                "href": "https://t.me/MasterBatumi_Maksim"
+                "href": ""
               },
               {
                 "label": "WhatsApp",
                 "value": "Message",
-                "href": "https://wa.me/995591172329"
               },
               {
                 "label": "Facebook",
@@ -1319,8 +1307,6 @@
               "items": [
                 {
                   "label": "Phone / messengers",
-                  "value": "+995 591 172 329",
-                  "href": "tel:+995591172329"
                 },
                 {
                   "label": "Email",
@@ -1330,12 +1316,11 @@
                 {
                   "label": "Telegram",
                   "value": "@MasterBatumi_Maksim",
-                  "href": "https://t.me/MasterBatumi_Maksim"
+                  "href": ""
                 },
                 {
                   "label": "WhatsApp",
                   "value": "Message",
-                  "href": "https://wa.me/995591172329"
                 },
                 {
                   "label": "Facebook",
@@ -1547,7 +1532,6 @@
           "list": [
             {
               "label": "ტელეფონი",
-              "value": "+995 591 172 329"
             },
             {
               "label": "მესენჯერები",
@@ -1981,18 +1965,15 @@
             "items": [
               {
                 "label": "ტელეფონი / მესენჯერები",
-                "value": "+995 (591) 172 329",
-                "href": "tel:+995591172329"
               },
               {
                 "label": "Telegram",
                 "value": "@MasterBatumi_Maksim",
-                "href": "https://t.me/MasterBatumi_Maksim"
+                "href": ""
               },
               {
                 "label": "WhatsApp",
                 "value": "დაწერე",
-                "href": "https://wa.me/995591172329"
               },
               {
                 "label": "Facebook",
@@ -2017,8 +1998,6 @@
               "items": [
                 {
                   "label": "ტელეფონი / მესენჯერები",
-                  "value": "+995 591 172 329",
-                  "href": "tel:+995591172329"
                 },
                 {
                   "label": "Email",
@@ -2028,12 +2007,11 @@
                 {
                   "label": "Telegram",
                   "value": "@MasterBatumi_Maksim",
-                  "href": "https://t.me/MasterBatumi_Maksim"
+                  "href": ""
                 },
                 {
                   "label": "WhatsApp",
                   "value": "დაწერე",
-                  "href": "https://wa.me/995591172329"
                 },
                 {
                   "label": "Facebook",
