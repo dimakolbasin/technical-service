@@ -62,17 +62,20 @@
               "title": "Стиральные машины",
               "text": "Не сливает, не греет, шумит или вибрирует.",
               "icon": "icon-tools.png",
+              "serviceIcon": "wash-machine.png",
               "highlight": true
             },
             {
               "title": "Холодильники",
               "text": "Не морозит, течёт, не выключается.",
-              "icon": "icon-shield.svg"
+              "icon": "icon-shield.svg",
+              "serviceIcon": "fridge.png"
             },
             {
               "title": "Кондиционеры",
               "text": "Не охлаждает, пахнет, плохо дует.",
-              "icon": "icon-call.svg"
+              "icon": "icon-call.svg",
+              "serviceIcon": "air.png"
             }
           ],
           "ctaToPrices": "Смотреть цены"
@@ -151,24 +154,28 @@
           "list": [
             {
               "label": "Телефон",
+              "type": "phone"
             },
             {
               "label": "Мессенджеры",
+              "type": "messengers"
             },
             {
               "label": "Часы",
-              "value": "9:00–20:00 без выходных"
+              "value": "9:00–20:00 без выходных",
+              "type": "hours"
             },
             {
               "label": "Районы",
-              "value": "Батуми"
+              "value": "Батуми",
+              "type": "area"
             }
           ],
           "form": {
             "nameLabel": "Имя (необязательно)",
             "namePlaceholder": "Как к вам обращаться",
             "phoneLabel": "Телефон",
-            "phonePlaceholder": "555112233",
+            "phonePlaceholder": "Ваш номер",
             "phoneRequired": "Заполните это поле",
             "descriptionLabel": "Модель/проблема (необязательно)",
             "descriptionPlaceholder": "Например: стиралка LG, не сливает воду",
@@ -583,25 +590,25 @@
             "items": [
               {
                 "label": "Телефон / мессенджеры",
+                "type": "phone"
               },
               {
                 "label": "Telegram",
                 "value": "@MasterBatumi_Maksim",
-                "href": ""
+                "type": "telegram"
               },
               {
                 "label": "WhatsApp",
                 "value": "Написать",
+                "type": "whatsapp"
               },
               {
                 "label": "Facebook",
-                "value": "Maksim Kolbasin",
-                "href": "https://www.facebook.com/profile.php?id=61587124962215"
+                "type": "facebook"
               },
               {
                 "label": "Email",
-                "value": "maksimkolbasin68084@gmail.com",
-                "href": "mailto:maksimkolbasin68084@gmail.com"
+                "type": "email"
               }
             ]
           }
@@ -616,25 +623,24 @@
               "items": [
                 {
                   "label": "Телефон / мессенджеры",
+                  "type": "phone"
                 },
                 {
                   "label": "Email",
-                  "value": "maksimkolbasin68084@gmail.com",
-                  "href": "mailto:maksimkolbasin68084@gmail.com"
+                  "type": "email"
                 },
                 {
                   "label": "Telegram",
-                  "value": "@MasterBatumi_Maksim",
-                  "href": ""
+                  "type": "telegram"
                 },
                 {
                   "label": "WhatsApp",
                   "value": "Написать",
+                  "type": "whatsapp"
                 },
                 {
                   "label": "Facebook",
-                  "value": "Maksim Kolbasin",
-                  "href": "https://www.facebook.com/profile.php?id=61587124962215"
+                  "type": "facebook"
                 }
               ]
             },
@@ -643,11 +649,13 @@
               "items": [
                 {
                   "label": "График",
-                  "value": "9:00–20:00 без выходных"
+                  "value": "9:00–20:00 без выходных",
+                  "type": "hours"
                 },
                 {
                   "label": "Обслуживаем",
-                  "value": "Батуми"
+                  "value": "Батуми",
+                  "type": "area"
                 }
               ],
               "note": "Выезд и диагностика 20 GEL"
@@ -752,17 +760,20 @@
               "title": "Washing machines",
               "text": "No drain, no heat, loud noise, heavy vibration.",
               "icon": "icon-tools.png",
+              "serviceIcon": "wash-machine.png",
               "highlight": true
             },
             {
               "title": "Refrigerators",
               "text": "Not cooling, leaking, running nonstop.",
-              "icon": "icon-shield.svg"
+              "icon": "icon-shield.svg",
+              "serviceIcon": "fridge.png"
             },
             {
               "title": "Air conditioners",
               "text": "Weak cooling, bad smell, poor airflow.",
-              "icon": "icon-call.svg"
+              "icon": "icon-call.svg",
+              "serviceIcon": "air.png"
             }
           ],
           "ctaToPrices": "See prices"
@@ -841,25 +852,29 @@
           "list": [
             {
               "label": "Phone",
+              "type": "phone"
             },
             {
               "label": "Messengers",
-              "value": "WhatsApp / Telegram"
+              "value": "WhatsApp / Telegram",
+              "type": "messengers"
             },
             {
               "label": "Hours",
-              "value": "9:00–20:00 daily"
+              "value": "9:00–20:00 daily",
+              "type": "hours"
             },
             {
               "label": "Areas",
-              "value": "Batumi"
+              "value": "Batumi",
+              "type": "area"
             }
           ],
           "form": {
             "nameLabel": "Name (optional)",
             "namePlaceholder": "Your name",
             "phoneLabel": "Phone",
-            "phonePlaceholder": "555112233",
+            "phonePlaceholder": "Your number",
             "phoneRequired": "Please fill out this field",
             "descriptionLabel": "Model / issue (optional)",
             "descriptionPlaceholder": "e.g. LG washer, not draining",
@@ -1274,25 +1289,24 @@
             "items": [
               {
                 "label": "Phone / messengers",
+                "type": "phone"
               },
               {
                 "label": "Telegram",
-                "value": "@MasterBatumi_Maksim",
-                "href": ""
+                "type": "telegram"
               },
               {
                 "label": "WhatsApp",
                 "value": "Message",
+                "type": "whatsapp"
               },
               {
                 "label": "Facebook",
-                "value": "Profile",
-                "href": "https://www.facebook.com/profile.php?id=61587124962215"
+                "type": "facebook"
               },
               {
                 "label": "Email",
-                "value": "maksimkolbasin68084@gmail.com",
-                "href": "mailto:maksimkolbasin68084@gmail.com"
+                "type": "email"
               }
             ]
           }
@@ -1307,25 +1321,24 @@
               "items": [
                 {
                   "label": "Phone / messengers",
+                  "type": "phone"
                 },
                 {
                   "label": "Email",
-                  "value": "maksimkolbasin68084@gmail.com",
-                  "href": "mailto:maksimkolbasin68084@gmail.com"
+                  "type": "email"
                 },
                 {
                   "label": "Telegram",
-                  "value": "@MasterBatumi_Maksim",
-                  "href": ""
+                  "type": "telegram"
                 },
                 {
                   "label": "WhatsApp",
                   "value": "Message",
+                  "type": "whatsapp"
                 },
                 {
                   "label": "Facebook",
-                  "value": "facebook.com/profile.php?id=61587124962215",
-                  "href": "https://www.facebook.com/profile.php?id=61587124962215"
+                  "type": "facebook"
                 }
               ]
             },
@@ -1334,11 +1347,13 @@
               "items": [
                 {
                   "label": "Hours",
-                  "value": "9:00–20:00 daily"
+                  "value": "9:00–20:00 daily",
+                  "type": "hours"
                 },
                 {
                   "label": "Service area",
-                  "value": "Batumi"
+                  "value": "Batumi",
+                  "type": "area"
                 }
               ],
               "note": "Call-out and diagnostics 20 GEL"
@@ -1443,17 +1458,20 @@
               "title": "სარეცხი მანქანები",
               "text": "არ წურავს, არ ათბობს, ხმაურობს ან ვიბრირებს.",
               "icon": "icon-tools.png",
+              "serviceIcon": "wash-machine.png",
               "highlight": true
             },
             {
               "title": "მაცივრები",
               "text": "არ აცივებს, წვეთავს ან არ ითიშება.",
-              "icon": "icon-shield.svg"
+              "icon": "icon-shield.svg",
+              "serviceIcon": "fridge.png"
             },
             {
               "title": "კონდიციონერები",
               "text": "სუსტია გაგრილება, სუნი აქვს ან ცუდად უბერავს.",
-              "icon": "icon-call.svg"
+              "icon": "icon-call.svg",
+              "serviceIcon": "air.png"
             }
           ],
           "ctaToPrices": "ფასების ნახვა"
@@ -1532,25 +1550,29 @@
           "list": [
             {
               "label": "ტელეფონი",
+              "type": "phone"
             },
             {
               "label": "მესენჯერები",
-              "value": "WhatsApp / Telegram"
+              "value": "WhatsApp / Telegram",
+              "type": "messengers"
             },
             {
               "label": "საათი",
-              "value": "9:00–20:00 ყოველდღე"
+              "value": "9:00–20:00 ყოველდღე",
+              "type": "hours"
             },
             {
               "label": "რაიონები",
-              "value": "ბათუმი"
+              "value": "ბათუმი",
+              "type": "area"
             }
           ],
           "form": {
             "nameLabel": "სახელი (არასავალდებულო)",
             "namePlaceholder": "თქვენი სახელი",
             "phoneLabel": "ტელეფონი",
-            "phonePlaceholder": "555112233",
+            "phonePlaceholder": "თქვენი ნომერი",
             "phoneRequired": "შეავსეთ ეს ველი",
             "descriptionLabel": "მოდელი/პრობლემა (არასავალდ.)",
             "descriptionPlaceholder": "მაგ: სარეცხი მანქანა LG, წყალს არ სენს",
@@ -1965,25 +1987,24 @@
             "items": [
               {
                 "label": "ტელეფონი / მესენჯერები",
+                "type": "phone"
               },
               {
                 "label": "Telegram",
-                "value": "@MasterBatumi_Maksim",
-                "href": ""
+                "type": "telegram"
               },
               {
                 "label": "WhatsApp",
                 "value": "დაწერე",
+                "type": "whatsapp"
               },
               {
                 "label": "Facebook",
-                "value": "პროფილი",
-                "href": "https://www.facebook.com/profile.php?id=61587124962215"
+                "type": "facebook"
               },
               {
                 "label": "Email",
-                "value": "maksimkolbasin68084@gmail.com",
-                "href": "mailto:maksimkolbasin68084@gmail.com"
+                "type": "email"
               }
             ]
           }
@@ -1998,25 +2019,24 @@
               "items": [
                 {
                   "label": "ტელეფონი / მესენჯერები",
+                  "type": "phone"
                 },
                 {
                   "label": "Email",
-                  "value": "maksimkolbasin68084@gmail.com",
-                  "href": "mailto:maksimkolbasin68084@gmail.com"
+                  "type": "email"
                 },
                 {
                   "label": "Telegram",
-                  "value": "@MasterBatumi_Maksim",
-                  "href": ""
+                  "type": "telegram"
                 },
                 {
                   "label": "WhatsApp",
                   "value": "დაწერე",
+                  "type": "whatsapp"
                 },
                 {
                   "label": "Facebook",
-                  "value": "facebook.com/profile.php?id=61587124962215",
-                  "href": "https://www.facebook.com/profile.php?id=61587124962215"
+                  "type": "facebook"
                 }
               ]
             },
@@ -2025,11 +2045,13 @@
               "items": [
                 {
                   "label": "საათი",
-                  "value": "9:00–20:00 ყოველდღე"
+                  "value": "9:00–20:00 ყოველდღე",
+                  "type": "hours"
                 },
                 {
                   "label": "ზონა",
-                  "value": "ბათუმი"
+                  "value": "ბათუმი",
+                  "type": "area"
                 }
               ],
               "note": "გამოძახება და დიაგნოსტიკა 20 GEL"
