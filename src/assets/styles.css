@@ -165,8 +165,11 @@ button {
 }
 
 .card__icon {
-  width: 36px;
-  height: 36px;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--c-primary);
 }
 
@@ -180,6 +183,19 @@ button {
   font-size: 14px;
 }
 /* TODO: replace placeholder icons with a single-series set from flaticon.com */
+
+.card__icon--social {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.card__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
 .card__title {
   margin: 0;
@@ -236,6 +252,13 @@ button {
 
 .button:active {
   transform: translateY(0);
+}
+
+.button__icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: inline-block;
 }
 
 .badge {

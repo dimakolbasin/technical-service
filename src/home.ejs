@@ -13,11 +13,19 @@
       <% } %>
       <div class="hero__actions">
         <a class="button button--primary" href="tel:<%= site.phoneLink %>"><%= lang.home.ctaPrimary %></a>
-        <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener"><%= lang.home.ctaSecondary %></a>
-        <a class="button button--ghost" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">Telegram</a>
-        <a class="button button--ghost" href="viber://chat?number=<%= site.phoneLink %>">Viber</a>
+        <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
+          <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+          <%= lang.home.ctaSecondary %>
+        </a>
+        <a class="button button--ghost" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">
+          <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
+          Telegram
+        </a>
         <% if (site.facebook) { %>
-          <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">Facebook</a>
+          <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
+            <img class="button__icon" src="/assets/icons/social/fb.png" alt="">
+            Facebook
+          </a>
         <% } %>
       </div>
       <% if (lang.home.heroNote) { %>
@@ -70,9 +78,24 @@
       <% } %>
     </div>
     <div class="grid grid--3">
-      <% lang.home.services.items.forEach((item) => { const highlight = item.highlight ? " card--elevated" : ""; %>
+      <% lang.home.services.items.forEach((item) => { 
+           const highlight = item.highlight ? " card--elevated" : ""; 
+           const t = (item.title || "").toLowerCase();
+           const iconFile =
+             t.includes("стир") || t.includes("wash") || t.includes("სარეცხ") ? "wash-machine.png" :
+             t.includes("холод") || t.includes("fridge") || t.includes("refriger") || t.includes("მაცივ") ? "fridge.png" :
+             t.includes("конди") || t.includes("air") || t.includes("conditioner") || t.includes("ac") || t.includes("კონდ") ? "air.png" :
+             null;
+           const iconSrc = iconFile ? `/assets/icons/services/${iconFile}` : null;
+      %>
         <article class="card<%= highlight %>">
-          <span class="card__icon card__icon--placeholder" aria-hidden="true">🛈</span> <!-- TODO: заменить на иконку из серии «Appliance Repair | Color lineal-color» (flaticon.com/packs/appliance-repair-15346687) -->
+          <% if (iconSrc) { %>
+            <span class="card__icon" aria-hidden="true">
+              <img src="<%= iconSrc %>" alt="">
+            </span>
+          <% } else { %>
+            <span class="card__icon card__icon--placeholder" aria-hidden="true">🛈</span>
+          <% } %>
           <h3 class="card__title"><%= item.title %></h3>
           <p class="card__text"><%= item.text %></p>
           <a class="card__link" href="#prices"><%= lang.home.services.linkLabel %> <%= item.title %></a>
@@ -202,15 +225,16 @@
                 <a href="tel:<%= site.phoneLink %>"><%= site.phone %></a>
               <% } else if (labelLower.includes("мессенджеры") || labelLower.includes("messenger")) { %>
                 <div class="messenger-row">
-                  <!-- TODO: заменить на иконку Telegram из серии «Social media logos | Lineal Color» (flaticon.com/packs/social-media-logos-3) -->
-                  <a class="card__icon card__icon--placeholder" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
-                  <!-- TODO: заменить на иконку WhatsApp из серии «Social media logos | Lineal Color» -->
-                  <a class="card__icon card__icon--placeholder" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
-                  <!-- TODO: заменить на иконку Viber из серии «Social media logos | Lineal Color» -->
-                  <a class="card__icon card__icon--placeholder" href="viber://chat?number=<%= site.phoneLink %>" aria-label="Viber">VB</a>
-                  <!-- TODO: заменить на иконку Facebook из серии «Social media logos | Lineal Color» -->
+                  <a class="card__icon card__icon--social" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">
+                    <img src="/assets/icons/social/tg.png" alt="Telegram">
+                  </a>
+                  <a class="card__icon card__icon--social" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <img src="/assets/icons/social/wh.png" alt="WhatsApp">
+                  </a>
                   <% if (site.facebook) { %>
-                    <a class="card__icon card__icon--placeholder" href="<%= site.facebook %>" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+                    <a class="card__icon card__icon--social" href="<%= site.facebook %>" target="_blank" rel="noopener" aria-label="Facebook">
+                      <img src="/assets/icons/social/fb.png" alt="Facebook">
+                    </a>
                   <% } %>
                 </div>
               <% } else if (labelLower.includes("email") || labelLower.includes("почта")) { %>
@@ -226,11 +250,19 @@
         <h3 class="card__title"><%= lang.home.contact.title %></h3>
         <p class="card__text"><%= lang.home.contact.lead %></p>
         <div class="messenger-row">
-          <a class="button button--secondary" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">Telegram</a>
-          <a class="button button--ghost" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="button button--ghost" href="viber://chat?number=<%= site.phoneLink %>">Viber</a>
+          <a class="button button--secondary" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">
+            <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
+            Telegram
+          </a>
+          <a class="button button--ghost" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
+            <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+            WhatsApp
+          </a>
           <% if (site.facebook) { %>
-            <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">Facebook</a>
+            <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
+              <img class="button__icon" src="/assets/icons/social/fb.png" alt="">
+              Facebook
+            </a>
           <% } %>
         </div>
       </div>

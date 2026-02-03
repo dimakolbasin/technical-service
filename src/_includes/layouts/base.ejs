@@ -11,6 +11,7 @@
   <link rel="preload" href="/assets/fonts/Noto-Sans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/styles.css" as="style">
   <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any">
   <link rel="canonical" href="<%= pageKey ? site.baseUrl + lang.paths[pageKey] : site.baseUrl + '/' %>">
   <% if (pageKey) { %>
     <% i18n.languages.forEach((locale) => { %>
@@ -25,7 +26,7 @@
   <meta property="og:description" content="<%= description %>">
   <meta property="og:site_name" content="<%= site.name %>">
   <meta property="og:locale" content="<%= lang.code %>">
-  <meta property="og:image" content="<%= site.baseUrl %>/assets/img/icon-tools.svg"><!-- TODO: заменить на брендовый OG image одной серии с остальными иконками -->
+  <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/icon-tools.png">
   <% } %>
   <% if (pageKey) { 
     const pageUrl = site.baseUrl + lang.paths[pageKey];
@@ -43,7 +44,7 @@
       "url": "<%= pageUrl %>",
       "telephone": "<%= site.phone %>",
       "description": "<%= description %>",
-      "image": "<%= site.baseUrl %>/assets/img/icon-tools.svg",
+      "image": "<%= site.baseUrl %>/assets/icons/icon-tools.svg",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Batumi",
@@ -142,7 +143,10 @@
 
 <div class="cta-bar">
   <a class="button button--primary" href="tel:<%= site.phoneLink %>"><%= lang.cta %></a>
-  <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener"><%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %></a>
+  <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
+    <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+    <%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
+  </a>
 </div>
 <script>
   (function() {

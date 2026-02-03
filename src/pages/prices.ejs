@@ -96,12 +96,12 @@
               <% if (lower.includes("мессенджеры") || lower.includes("messenger")) { %>
                 <a href="tel:+995591172329"><%= item.value || "+995 591 172 329" %></a>
                 <div class="messenger-row">
-                  <!-- TODO: заменить на иконку Telegram из серии «Social media logos | Lineal Color» (flaticon.com/packs/social-media-logos-3) -->
-                  <a class="card__icon card__icon--placeholder" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
-                  <!-- TODO: заменить на иконку WhatsApp из серии «Social media logos | Lineal Color» -->
-                  <a class="card__icon card__icon--placeholder" href="https://wa.me/995591172329" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
-                  <!-- TODO: заменить на иконку Viber из серии «Social media logos | Lineal Color» -->
-                  <a class="card__icon card__icon--placeholder" href="viber://chat?number=+995591172329" aria-label="Viber">VB</a>
+                  <a class="card__icon card__icon--social" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">
+                    <img src="/assets/icons/social/tg.png" alt="Telegram">
+                  </a>
+                  <a class="card__icon card__icon--social" href="https://wa.me/995591172329" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <img src="/assets/icons/social/wh.png" alt="WhatsApp">
+                  </a>
                 </div>
               <% } else if (item.href) { %>
                 <a href="<%= item.href %>" target="<%= item.href.startsWith('http') ? '_blank' : '_self' %>" rel="<%= item.href.startsWith('http') ? 'noopener' : '' %>"><%= item.value %></a>
