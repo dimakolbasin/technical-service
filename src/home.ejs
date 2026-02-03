@@ -205,9 +205,13 @@
                   <!-- TODO: заменить на иконку Telegram из серии «Social media logos | Lineal Color» (flaticon.com/packs/social-media-logos-3) -->
                   <a class="card__icon card__icon--placeholder" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
                   <!-- TODO: заменить на иконку WhatsApp из серии «Social media logos | Lineal Color» -->
-          <a class="card__icon card__icon--placeholder" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
-          <!-- TODO: заменить на иконку Viber из серии «Social media logos | Lineal Color» -->
-          <a class="card__icon card__icon--placeholder" href="viber://chat?number=<%= site.phoneLink %>" aria-label="Viber">VB</a>
+                  <a class="card__icon card__icon--placeholder" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+                  <!-- TODO: заменить на иконку Viber из серии «Social media logos | Lineal Color» -->
+                  <a class="card__icon card__icon--placeholder" href="viber://chat?number=<%= site.phoneLink %>" aria-label="Viber">VB</a>
+                  <!-- TODO: заменить на иконку Facebook из серии «Social media logos | Lineal Color» -->
+                  <% if (site.facebook) { %>
+                    <a class="card__icon card__icon--placeholder" href="<%= site.facebook %>" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+                  <% } %>
                 </div>
               <% } else if (labelLower.includes("email") || labelLower.includes("почта")) { %>
                 <a href="mailto:<%= site.email %>"><%= site.email %></a>
