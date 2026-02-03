@@ -142,6 +142,7 @@
 
 <div class="cta-bar">
   <a class="button button--primary" href="tel:<%= site.phoneLink %>"><%= lang.cta %></a>
+  <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener"><%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %></a>
 </div>
 <script>
   (function() {

@@ -4,16 +4,56 @@
       <span class="badge badge--accent"><%= lang.home.badge %></span>
       <h1 class="hero__title"><%= lang.home.title %></h1>
       <p class="hero__lead"><%= lang.home.lead %></p>
+      <% if (lang.home.chips) { %>
+        <div class="hero__chips">
+          <% lang.home.chips.forEach((chip) => { %>
+            <span class="badge badge--outline"><%= chip %></span>
+          <% }) %>
+        </div>
+      <% } %>
       <div class="hero__actions">
         <a class="button button--primary" href="tel:<%= site.phoneLink %>"><%= lang.home.ctaPrimary %></a>
-        <a class="button button--secondary" href="mailto:<%= site.email %>"><%= lang.home.ctaSecondary %></a>
+        <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener"><%= lang.home.ctaSecondary %></a>
+        <a class="button button--ghost" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">Telegram</a>
+        <a class="button button--ghost" href="viber://chat?number=<%= site.phoneLink %>">Viber</a>
+        <% if (site.facebook) { %>
+          <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">Facebook</a>
+        <% } %>
       </div>
+      <% if (lang.home.heroNote) { %>
+        <p class="hero__note"><%= lang.home.heroNote %></p>
+      <% } %>
     </div>
-    <div class="hero__media">
-      <div class="card card--elevated hero__card">
-        <span class="card__icon card__icon--placeholder" aria-hidden="true">🛈</span>
-        <p class="card__text"><%= lang.home.heroCardText %> <!-- TODO: заменить на иконку из серии «Appliance Repair | Color lineal-color» (flaticon.com/packs/appliance-repair-15346687) --></p>
-      </div>
+    <div class="card card--elevated hero__form">
+      <h2 class="card__title"><%= lang.home.contact.title %></h2>
+      <p class="card__text"><%= lang.home.contact.lead %></p>
+      <form class="form" action="https://formsubmit.co/maksimkolbasin68084@gmail.com" method="POST" autocomplete="off">
+        <!-- dummy field to discourage Chrome autofill -->
+        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1" role="presentation" aria-label=" " style="position:absolute;left:-9999px;opacity:0;height:0;width:0;border:0;padding:0;">
+        <div class="form__row">
+          <label class="form__label" for="phone-hero"><%= lang.home.contact.form.phoneLabel %></label>
+          <div class="form__phone-group">
+            <span class="form__prefix">+995</span>
+            <input
+              autocomplete="off"
+              class="form__input form__input--phone"
+              type="tel"
+              id="phone-hero"
+              name="phone"
+              placeholder="<%= lang.home.contact.form.phonePlaceholder %>" inputmode="tel" required
+              oninvalid="this.setCustomValidity('<%= lang.home.contact.form.phoneRequired %>')"
+              oninput="this.setCustomValidity('')">
+          </div>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="message-hero"><%= lang.home.contact.form.descriptionLabel %></label>
+          <textarea class="form__input" id="message-hero" name="message" rows="3" placeholder="<%= lang.home.contact.form.descriptionPlaceholder %>" autocomplete="off" aria-autocomplete="none"></textarea>
+        </div>
+        <div class="form__actions">
+          <button class="button button--primary" type="submit"><%= lang.home.contact.form.submit %></button>
+          <a class="button button--ghost" href="tel:<%= site.phoneLink %>"><%= lang.home.ctaPrimary %></a>
+        </div>
+      </form>
     </div>
   </div>
 </section>
@@ -23,6 +63,11 @@
     <div class="section__header">
       <h2 class="section__title"><%= lang.home.services.title %></h2>
       <p class="section__lead"><%= lang.home.services.lead %></p>
+      <% if (lang.home.services.ctaToPrices) { %>
+        <div class="section__actions">
+          <a class="button button--ghost" href="#prices"><%= lang.home.services.ctaToPrices %></a>
+        </div>
+      <% } %>
     </div>
     <div class="grid grid--3">
       <% lang.home.services.items.forEach((item) => { const highlight = item.highlight ? " card--elevated" : ""; %>
@@ -30,10 +75,27 @@
           <span class="card__icon card__icon--placeholder" aria-hidden="true">🛈</span> <!-- TODO: заменить на иконку из серии «Appliance Repair | Color lineal-color» (flaticon.com/packs/appliance-repair-15346687) -->
           <h3 class="card__title"><%= item.title %></h3>
           <p class="card__text"><%= item.text %></p>
-          <a class="card__link" href="<%= lang.paths[lang.home.services.linkKey] %>"><%= lang.home.services.linkLabel %> <%= item.title %></a>
+          <a class="card__link" href="#prices"><%= lang.home.services.linkLabel %> <%= item.title %></a>
         </article>
         <% }) %>
     </div>
+  </div>
+</section>
+
+<section class="section section--surface" id="prices">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title"><%= lang.home.prices.title %></h2>
+      <p class="section__lead"><%= lang.home.prices.lead %></p>
+    </div>
+    <ul class="price-list">
+      <% lang.home.prices.items.forEach((item) => { %>
+        <li class="price-list__item">
+          <strong><%= item.label %></strong>
+          <span><%= item.value %></span>
+        </li>
+      <% }) %>
+    </ul>
   </div>
 </section>
 
@@ -83,22 +145,29 @@
   </div>
 </section>
 
+<% if (lang.home.aboutSnippet) { %>
 <section class="section section--surface">
   <div class="container">
     <div class="section__header">
-      <h2 class="section__title"><%= lang.home.prices.title %></h2>
-      <p class="section__lead"><%= lang.home.prices.lead %></p>
+      <h2 class="section__title"><%= lang.home.aboutSnippet.title %></h2>
+      <p class="section__lead"><%= lang.home.aboutSnippet.lead %></p>
     </div>
-    <ul class="price-list">
-      <% lang.home.prices.items.forEach((item) => { %>
-        <li class="price-list__item">
-          <strong><%= item.label %></strong>
-          <span><%= item.value %></span>
-        </li>
-      <% }) %>
-    </ul>
+    <% if (lang.home.aboutSnippet.pillars) { %>
+      <div class="grid grid--3">
+        <% lang.home.aboutSnippet.pillars.forEach((pillar) => { %>
+          <div class="card">
+            <h3 class="card__title"><%= pillar.title %></h3>
+            <p class="card__text"><%= pillar.text %></p>
+          </div>
+        <% }) %>
+      </div>
+    <% } %>
+    <div class="section__actions">
+      <a class="button button--ghost" href="<%= lang.paths.about %>"><%= lang.pages.about.heading %></a>
+    </div>
   </div>
 </section>
+<% } %>
 
 <section class="section">
   <div class="container">
@@ -136,9 +205,9 @@
                   <!-- TODO: заменить на иконку Telegram из серии «Social media logos | Lineal Color» (flaticon.com/packs/social-media-logos-3) -->
                   <a class="card__icon card__icon--placeholder" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
                   <!-- TODO: заменить на иконку WhatsApp из серии «Social media logos | Lineal Color» -->
-                  <a class="card__icon card__icon--placeholder" href="https://wa.me/995591172329" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
-                  <!-- TODO: заменить на иконку Viber из серии «Social media logos | Lineal Color» -->
-                  <a class="card__icon card__icon--placeholder" href="viber://chat?number=+995591172329" aria-label="Viber">VB</a>
+          <a class="card__icon card__icon--placeholder" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+          <!-- TODO: заменить на иконку Viber из серии «Social media logos | Lineal Color» -->
+          <a class="card__icon card__icon--placeholder" href="viber://chat?number=<%= site.phoneLink %>" aria-label="Viber">VB</a>
                 </div>
               <% } else if (labelLower.includes("email") || labelLower.includes("почта")) { %>
                 <a href="mailto:<%= site.email %>"><%= site.email %></a>
@@ -149,37 +218,18 @@
             <% }) %>
         </ul>
       </div>
-      <form class="form" action="https://formsubmit.co/maksimkolbasin68084@gmail.com" method="POST" autocomplete="off">
-        <!-- dummy field to discourage Chrome autofill -->
-        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1" role="presentation" aria-label=" " style="position:absolute;left:-9999px;opacity:0;height:0;width:0;border:0;padding:0;">
-        <div class="form__row">
-          <label class="form__label" for="name"><%= lang.home.contact.form.nameLabel %></label>
-          <input class="form__input" type="text" id="name" name="name" placeholder="<%= lang.home.contact.form.namePlaceholder %>" autocomplete="off" aria-autocomplete="none">
+      <div class="card card--elevated">
+        <h3 class="card__title"><%= lang.home.contact.title %></h3>
+        <p class="card__text"><%= lang.home.contact.lead %></p>
+        <div class="messenger-row">
+          <a class="button button--secondary" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">Telegram</a>
+          <a class="button button--ghost" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="button button--ghost" href="viber://chat?number=<%= site.phoneLink %>">Viber</a>
+          <% if (site.facebook) { %>
+            <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">Facebook</a>
+          <% } %>
         </div>
-        <div class="form__row">
-          <label class="form__label" for="phone"><%= lang.home.contact.form.phoneLabel %></label>
-          <div class="form__phone-group">
-            <span class="form__prefix">+995</span>
-            <input
-              autocomplete="off"
-              class="form__input form__input--phone"
-              type="number"
-              id="phone"
-              name="phone"
-              placeholder="<%= lang.home.contact.form.phonePlaceholder %>" inputmode="tel" required
-              oninvalid="this.setCustomValidity('<%= lang.home.contact.form.phoneRequired %>')"
-              oninput="this.setCustomValidity('')">
-          </div>
-        </div>
-        <div class="form__row">
-          <label class="form__label" for="message"><%= lang.home.contact.form.descriptionLabel %></label>
-          <textarea class="form__input" id="message" name="message" rows="3" placeholder="<%= lang.home.contact.form.descriptionPlaceholder %>" autocomplete="off" aria-autocomplete="none"></textarea>
-        </div>
-        <div class="form__actions">
-          <button class="button button--primary" type="submit"><%= lang.home.contact.form.submit %></button>
-          <a class="button button--ghost" href="<%= lang.paths[lang.home.contact.form.linkKey] %>"><%= lang.home.contact.form.linkLabel %></a>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
 </section>
