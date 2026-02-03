@@ -468,15 +468,18 @@ button {
 }
 
 .price-list__item {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 16px;
+  align-items: baseline;
   padding-bottom: 8px;
   border-bottom: 1px dashed var(--c-border);
 }
 
 .price-list__item span {
   color: var(--c-muted);
+  text-align: right;
+  white-space: nowrap;
 }
 
 .faq {

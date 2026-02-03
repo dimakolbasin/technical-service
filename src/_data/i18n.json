@@ -14,8 +14,7 @@
         "services": "/ru/services/",
         "prices": "/ru/prices/",
         "contacts": "/ru/contacts/",
-        "faq": "/ru/faq/",
-        "about": "/ru/about/"
+        "faq": "/ru/faq/"
       },
       "nav": [
         {
@@ -112,7 +111,7 @@
           "items": [
             {
               "label": "Диагностика",
-              "value": "от 30 GEL"
+              "value": "20 GEL"
             },
             {
               "label": "Ремонт стиральной машины",
@@ -186,25 +185,7 @@
           "Безнал и наличные",
           "Аккуратно работаю"
         ],
-        "heroNote": "Выезд сегодня +20 GEL",
-        "aboutSnippet": {
-          "title": "О нас",
-          "lead": "Я — Максим, частный мастер по ремонту бытовой техники в Батуми. Работаю сам: отвечаю на звонки, диагностирую, чиню и отвечаю за результат.",
-          "pillars": [
-            {
-              "title": "Прозрачность",
-              "text": "Согласовываю цену до ремонта, фиксирую в заказ-наряде."
-            },
-            {
-              "title": "Чистота и аккуратность",
-              "text": "Работаю в защите, убираю после себя, не оставляю мусор."
-            },
-            {
-              "title": "Гарантия",
-              "text": "Даётся на работы и детали, срок зависит от узла (обычно 1–6 месяцев)."
-            }
-          ]
-        }
+        "heroNote": "Выезд и диагностика 20 GEL"
       },
       "pages": {
         "services": {
@@ -268,16 +249,7 @@
                   "items": [
                     {
                       "label": "Выезд мастера + диагностика",
-                      "value": "бесплатно"
-                    }
-                  ]
-                },
-                {
-                  "title": "Выезд",
-                  "items": [
-                    {
-                      "label": "Срочный выезд (день в день)",
-                      "value": "+20 GEL"
+                      "value": "20 GEL"
                     }
                   ]
                 },
@@ -731,27 +703,6 @@
               "answer": "Да, переводом на карту или через банк, уточняйте при заказе."
             }
           ]
-        },
-        "about": {
-          "title": "О нас — Tech Fix",
-          "lead": "Коротко о сервисе и принципах работы.",
-          "heading": "О нас",
-          "text": "Я — Максим, частный мастер по ремонту бытовой техники в Батуми. Работаю сам: отвечаю на звонки, диагностирую, чиню и отвечаю за результат.",
-          "pillars": [
-            {
-              "title": "Прозрачность",
-              "text": "Согласовываю цену до ремонта, фиксирую в заказ-наряде."
-            },
-            {
-              "title": "Чистота и аккуратность",
-              "text": "Работаю в защите, убираю после себя, не оставляю мусор."
-            },
-            {
-              "title": "Гарантия",
-              "text": "Даётся на работы и детали, срок зависит от узла (обычно 1–6 месяцев)."
-            }
-          ],
-          "callout": "Если нужен совет по выбору техники или профилактике — пишите, помогу бесплатно."
         }
       },
       "rootButtonClass": "button--primary",
@@ -771,8 +722,7 @@
         "services": "/en/services/",
         "prices": "/en/prices/",
         "contacts": "/en/contacts/",
-        "faq": "/en/faq/",
-        "about": "/en/about/"
+        "faq": "/en/faq/"
       },
       "nav": [
         {
@@ -869,7 +819,7 @@
           "items": [
             {
               "label": "Diagnostics",
-              "value": "from 30 GEL"
+              "value": "20 GEL"
             },
             {
               "label": "Washing machine repair",
@@ -943,25 +893,7 @@
           "Cash / cashless",
           "Clean work"
         ],
-        "heroNote": "Same-day visit +20 GEL",
-        "aboutSnippet": {
-          "title": "About us",
-          "lead": "I’m Maksim, an independent appliance repair technician in Batumi. I answer the calls, diagnose, repair, and take full responsibility for the result.",
-          "pillars": [
-            {
-              "title": "Transparency",
-              "text": "Price agreed before repair and fixed in the work order."
-            },
-            {
-              "title": "Clean and careful",
-              "text": "Work with protection, tidy up after, no mess left behind."
-            },
-            {
-              "title": "Warranty",
-              "text": "Covers work and parts; term depends on the unit (typically 1–6 months)."
-            }
-          ]
-        }
+        "heroNote": "Выезд и диагностика 20 GEL"
       },
       "pages": {
         "services": {
@@ -1025,16 +957,7 @@
                   "items": [
                     {
                       "label": "Call-out + diagnostics",
-                      "value": "free"
-                    }
-                  ]
-                },
-                {
-                  "title": "Visit",
-                  "items": [
-                    {
-                      "label": "Urgent same-day visit",
-                      "value": "+20 GEL"
+                      "value": "20 GEL"
                     }
                   ]
                 },
@@ -1488,27 +1411,6 @@
               "answer": "Yes, bank transfer/card transfer—ask when placing the order."
             }
           ]
-        },
-        "about": {
-          "title": "About us — Tech Fix",
-          "lead": "A short story about the service and our approach.",
-          "heading": "About us",
-          "text": "I’m Maksim, an independent appliance repair technician in Batumi. I answer the calls, diagnose, repair, and take full responsibility for the result.",
-          "pillars": [
-            {
-              "title": "Transparency",
-              "text": "Price agreed before repair and fixed in the work order."
-            },
-            {
-              "title": "Clean and careful",
-              "text": "Work with protection, tidy up after, no mess left behind."
-            },
-            {
-              "title": "Warranty",
-              "text": "Covers work and parts; term depends on the unit (typically 1–6 months)."
-            }
-          ],
-          "callout": "Need advice on choosing appliances or maintenance? Message me, I’ll help for free."
         }
       },
       "rootButtonClass": "button--ghost",
@@ -1528,8 +1430,7 @@
         "services": "/ka/services/",
         "prices": "/ka/prices/",
         "contacts": "/ka/contacts/",
-        "faq": "/ka/faq/",
-        "about": "/ka/about/"
+        "faq": "/ka/faq/"
       },
       "nav": [
         {
@@ -1626,7 +1527,7 @@
           "items": [
             {
               "label": "დიაგნოსტიკა",
-              "value": "30 GEL-დან"
+              "value": "20 GEL"
             },
             {
               "label": "სარეცხი მანქანის რემონტი",
@@ -1700,25 +1601,7 @@
           "ნაღდი / უნაღდო",
           "სუფთად ვმუშაობ"
         ],
-        "heroNote": "დღევანდელი გამოძახება +20 GEL",
-        "aboutSnippet": {
-          "title": "ჩვენს შესახებ",
-          "lead": "მე ვარ მაკსიმი, დამოუკიდებელი საყოფაცხოვრებო ტექნიკის ოსტატი ბათუმში. თავად ვპასუხობ ზარებზე, ვაკეთებ დიაგნოსტიკას და რემონტს — და პასუხისმგებელი ვარ შედეგზე.",
-          "pillars": [
-            {
-              "title": "გამჭვირვალობა",
-              "text": "ფასი შეთანხმებულია რემონტამდე და ფიქსირდება სამუშაო ბარათში."
-            },
-            {
-              "title": "სისუფთავე და აკურატულობა",
-              "text": "ვმუშაობ დაცვით, ვასუფთავებ ადგილს, არაფერს ვტოვებ უწესრიგოდ."
-            },
-            {
-              "title": "გარანტია",
-              "text": "გავრცელდება როგორც სამუშაოზე, ასევე დეტალებზე; ვადა ჩვეულებრივ 1–6 თვეა."
-            }
-          ]
-        }
+        "heroNote": "Выезд и диагностика 20 GEL"
       },
       "pages": {
         "services": {
@@ -1782,16 +1665,7 @@
                   "items": [
                     {
                       "label": "გამოძახება + დიაგნოსტიკა",
-                      "value": "უფასო"
-                    }
-                  ]
-                },
-                {
-                  "title": "გამოძახება",
-                  "items": [
-                    {
-                      "label": "სასწრაფო same-day გამოძახება",
-                      "value": "+20 GEL"
+                      "value": "20 GEL"
                     }
                   ]
                 },
@@ -2245,27 +2119,6 @@
               "answer": "დიახ, ბანკით/ბარათით — შეკვეთისას შეგვითანხმეთ."
             }
           ]
-        },
-        "about": {
-          "title": "ჩვენს შესახებ — Tech Fix",
-          "lead": "მოკლედ ჩვენს სერვისზე და მიდგომაზე.",
-          "heading": "ჩვენს შესახებ",
-          "text": "მე ვარ მაკსიმი, დამოუკიდებელი საყოფაცხოვრებო ტექნიკის ოსტატი ბათუმში. თავად ვპასუხობ ზარებზე, ვაკეთებ დიაგნოსტიკას და რემონტს — და პასუხისმგებელი ვარ შედეგზე.",
-          "pillars": [
-            {
-              "title": "გამჭვირვალობა",
-              "text": "ფასი შეთანხმებულია რემონტამდე და ფიქსირდება სამუშაო ბარათში."
-            },
-            {
-              "title": "სისუფთავე და აკურატულობა",
-              "text": "ვმუშაობ დაცვით, ვასუფთავებ ადგილს, არაფერს ვტოვებ უწესრიგოდ."
-            },
-            {
-              "title": "გარანტია",
-              "text": "გავრცელდება როგორც სამუშაოზე, ასევე დეტალებზე; ვადა ჩვეულებრივ 1–6 თვეა."
-            }
-          ],
-          "callout": "ტექნიკის არჩევაზე თუ პროფილაქტიკაზე რჩევა გჭირდება — მომწერე, უფასოდ დაგეხმარები."
         }
       },
       "rootButtonClass": "button--secondary",
