@@ -50,7 +50,7 @@
         "lead": "Диагностика на месте, прозрачные цены, гарантия на работы и запчасти. Работаем быстро и аккуратно.",
         "ctaPrimary": "Позвонить",
         "ctaSecondary": "Написать в WhatsApp",
-        "heroCardIcon": "icon-tools.svg",
+        "heroCardIcon": "icon-tools.png",
         "heroCardText": "Выезд по городу, ремонт в удобное время и гарантия до 6 месяцев.",
         "services": {
           "title": "Что ремонтируем",
@@ -61,7 +61,7 @@
             {
               "title": "Стиральные машины",
               "text": "Не сливает, не греет, шумит или вибрирует.",
-              "icon": "icon-tools.svg",
+              "icon": "icon-tools.png",
               "highlight": true
             },
             {
@@ -748,7 +748,7 @@
         "lead": "On-site diagnostics, clear pricing, and warranty on repairs and parts.",
         "ctaPrimary": "Call now",
         "ctaSecondary": "Message on WhatsApp",
-        "heroCardIcon": "icon-tools.svg",
+        "heroCardIcon": "icon-tools.png",
         "heroCardText": "City-wide visits, flexible scheduling, and up to 6 months warranty.",
         "services": {
           "title": "What we repair",
@@ -759,7 +759,7 @@
             {
               "title": "Washing machines",
               "text": "No drain, no heat, loud noise, heavy vibration.",
-              "icon": "icon-tools.svg",
+              "icon": "icon-tools.png",
               "highlight": true
             },
             {
@@ -1446,7 +1446,7 @@
         "lead": "ადგილზე დიაგნოსტიკა, გამჭვირვალე ფასები და გარანტია სამუშაოზე და ნაწილებზე.",
         "ctaPrimary": "დარეკეთ",
         "ctaSecondary": "WhatsApp-ზე დაწერე",
-        "heroCardIcon": "icon-tools.svg",
+        "heroCardIcon": "icon-tools.png",
         "heroCardText": "ქალაქში ადგილზე მომსახურება და 6 თვემდე გარანტია.",
         "services": {
           "title": "რას ვაკეთებთ",
@@ -1457,7 +1457,7 @@
             {
               "title": "სარეცხი მანქანები",
               "text": "არ წურავს, არ ათბობს, ხმაურობს ან ვიბრირებს.",
-              "icon": "icon-tools.svg",
+              "icon": "icon-tools.png",
               "highlight": true
             },
             {

@@ -14,7 +14,9 @@
   <link rel="preload" href="/assets/fonts/Noto-Sans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/styles.css" as="style">
   <link rel="stylesheet" href="/assets/styles.css">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/icon-tools.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-tools.png">
   <link rel="canonical" href="<%= pageKey ? site.baseUrl + lang.paths[pageKey] : site.baseUrl + '/' %>">
   <% if (pageKey) { %>
     <% i18n.languages.forEach((locale)=> { %>
@@ -29,7 +31,7 @@
             <meta property="og:description" content="<%= description %>">
             <meta property="og:site_name" content="<%= site.name %>">
             <meta property="og:locale" content="<%= lang.code %>">
-            <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/icon-tools.png">
+            <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
             <% } %>
               <% if (pageKey) { const pageUrl=site.baseUrl + lang.paths[pageKey]; const
                 sameAs=[ "https://t.me/MasterBatumi_Maksim" , "https://wa.me/995591172329"
@@ -42,7 +44,7 @@
       "url": "<%= pageUrl %>",
       "telephone": "<%= site.phone %>",
       "description": "<%= description %>",
-      "image": "<%= site.baseUrl %>/assets/icons/icon-tools.svg",
+      "image": "<%= site.baseUrl %>/assets/icons/meta-pic.webp",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Batumi",

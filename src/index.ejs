@@ -1,19 +1,22 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Fix — redirect</title>
   <meta name="description" content="Redirecting to your localized page.">
   <meta name="robots" content="noindex, nofollow, noarchive">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/icon-tools.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-tools.png">
   <link rel="canonical" href="<%= site.baseUrl %>/ru/">
   <link rel="alternate" hreflang="ru" href="<%= site.baseUrl %>/ru/">
   <link rel="alternate" hreflang="en" href="<%= site.baseUrl %>/en/">
   <link rel="alternate" hreflang="ka" href="<%= site.baseUrl %>/ka/">
   <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl %>/ru/">
   <script>
-    (function() {
+    (function () {
       const supportedLangs = { ru: '/ru/', en: '/en/', ka: '/ka/' };
       const getCookie = (name) => {
         const pair = document.cookie.split('; ').find((row) => row.startsWith(name + '='));
@@ -29,6 +32,7 @@
     })();
   </script>
 </head>
+
 <body>
   <noscript>
     <p>Выберите язык:</p>
@@ -39,4 +43,5 @@
     </ul>
   </noscript>
 </body>
+
 </html>
