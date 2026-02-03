@@ -580,6 +580,7 @@ button {
   border: 1px solid var(--c-border);
   font: inherit;
   background: #ffffff;
+  resize: none;
 }
 
 .form__input:focus-visible {

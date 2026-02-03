@@ -133,7 +133,7 @@
           "items": [
             {
               "question": "Сколько занимает ремонт?",
-              "answer": "Чаще всего 1–2 дня, сложные случаи — по согласованию."
+              "answer": "От 30 минут, сложные случаи — по согласованию."
             },
             {
               "question": "Вы работаете с запчастями клиента?",
@@ -141,7 +141,7 @@
             },
             {
               "question": "Есть ли гарантия?",
-              "answer": "Да, фиксируем срок гарантии в заказ-наряде."
+              "answer": "Да, срок зависит от типа ремонта"
             }
           ]
         },
@@ -674,7 +674,7 @@
           "items": [
             {
               "question": "Сколько занимает ремонт?",
-              "answer": "Обычно 1–2 дня. Срочный мелкий ремонт могу сделать в день обращения, если есть запчасти."
+              "answer": "От 30 минут. Срочный мелкий ремонт могу сделать в день обращения, если есть запчасти."
             },
             {
               "question": "Работаете с запчастями клиента?",
@@ -831,7 +831,7 @@
           "items": [
             {
               "question": "How long does repair take?",
-              "answer": "Usually 1–2 days, complex cases by agreement."
+              "answer": "From 30 minutes, complex cases by agreement."
             },
             {
               "question": "Can you use my spare parts?",
@@ -839,7 +839,7 @@
             },
             {
               "question": "Do you provide a warranty?",
-              "answer": "Yes, the warranty term is listed in the work order."
+              "answer": "Yes, the term depends on the type of repair"
             }
           ]
         },
@@ -1372,7 +1372,7 @@
           "items": [
             {
               "question": "How long does repair take?",
-              "answer": "Usually 1–2 days. Minor urgent jobs can be same-day if parts are available."
+              "answer": "From 30 minutes. Minor urgent jobs can be same-day if parts are available."
             },
             {
               "question": "Can you use my spare parts?",
@@ -1529,7 +1529,7 @@
           "items": [
             {
               "question": "რამდენ ხანს გრძელდება რემონტი?",
-              "answer": "ხშირად 1–2 დღე, რთულ შემთხვევებში შეთანხმებით."
+              "answer": "30 წუთიდან, რთულ შემთხვევებში შეთანხმებით."
             },
             {
               "question": "შეიძლება ჩემი დეტალების გამოყენება?",
@@ -1537,7 +1537,7 @@
             },
             {
               "question": "გარანტია გაქვთ?",
-              "answer": "დიახ, გარანტიის ვადა აღნიშნულია სამუშაო ბარათში."
+              "answer": "დიახ, ვადა დამოკიდებულია რემონტის ტიპზე"
             }
           ]
         },
@@ -2070,7 +2070,7 @@
           "items": [
             {
               "question": "რამდენ ხანს გრძელდება რემონტი?",
-              "answer": "ჩვეულებრივ 1–2 დღე. მცირე სასწრაფო სამუშაოები იმავე დღეს, თუ დეტალი არის."
+              "answer": "30 წუთიდან. მცირე სასწრაფო სამუშაოები იმავე დღეს, თუ დეტალი არის."
             },
             {
               "question": "მომეწოდებით თუ ჩემი დეტალებით?",

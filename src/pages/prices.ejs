@@ -1,121 +1,157 @@
-<% const page = lang.pages.prices; %>
+<% const page=lang.pages.prices; %>
 
-<section class="section section--surface">
-  <div class="container">
-    <div class="section__header">
-      <h1 class="section__title"><%= page.heading %></h1>
-      <p class="section__lead"><%= page.lead %></p>
-    </div>
-  </div>
-</section>
-
-<% if (page.sections && page.sections.length) { %>
-  <% page.sections.forEach((section) => { %>
-    <section class="section">
-      <div class="container">
-        <div class="section__header">
-          <h2 class="section__title"><%= section.title %></h2>
-          <% if (section.lead) { %>
-            <p class="section__lead"><%= section.lead %></p>
-          <% } %>
-        </div>
-
-        <% if (section.items) { %>
-          <ul class="price-list">
-            <% section.items.forEach((item) => { %>
-              <li class="price-list__item">
-                <strong><%= item.label %></strong>
-                <span><%= item.value %></span>
-              </li>
-            <% }); %>
-          </ul>
-        <% } %>
-
-        <% if (section.groups) { %>
-          <div class="grid grid--2">
-            <% section.groups.forEach((group) => { %>
-              <div class="card">
-                <h3 class="card__title"><%= group.title %></h3>
-                <% if (group.lead) { %><p class="card__text"><%= group.lead %></p><% } %>
-                <ul class="price-list">
-                  <% group.items.forEach((item) => { %>
-                    <li class="price-list__item">
-                      <strong><%= item.label %></strong>
-                      <span><%= item.value %></span>
-                    </li>
-                  <% }); %>
-                </ul>
-              </div>
-            <% }); %>
-          </div>
-        <% } %>
-
-        <% if (section.note) { %>
-          <div class="card card--elevated">
-            <p class="card__text"><%= section.note %></p>
-          </div>
-        <% } %>
-      </div>
-    </section>
-  <% }); %>
-<% } else { %>
-  <section class="section">
-    <div class="container">
-      <div class="card">
-        <p class="card__text"><%= page.lead %></p>
-      </div>
-    </div>
-  </section>
-<% } %>
-
-<% if (page.importantNotes && page.importantNotes.length) { %>
   <section class="section section--surface">
     <div class="container">
-      <div class="card">
-        <h3 class="card__title">Важно</h3>
-        <ul class="list">
-          <% page.importantNotes.forEach((note) => { %>
-            <li class="list__item">• <span><%= note %></span></li>
-          <% }); %>
-        </ul>
+      <div class="section__header">
+        <h1 class="section__title">
+          <%= page.heading %>
+        </h1>
+        <p class="section__lead">
+          <%= page.lead %>
+        </p>
       </div>
     </div>
   </section>
-<% } %>
 
-<% if (page.contactCard) { %>
-  <section class="section">
-    <div class="container">
-      <div class="card card--elevated">
-        <h3 class="card__title"><%= page.contactCard.title %></h3>
-        <ul class="list">
-          <% page.contactCard.items.forEach((item) => { %>
-            <li class="list__item">
-              <strong><%= item.label %>:</strong>
-              <% const lower = item.label.toLowerCase(); %>
-              <% if (lower.includes("мессенджеры") || lower.includes("messenger")) { %>
-                <a href="tel:+995591172329"><%= item.value || "+995 591 172 329" %></a>
-                <div class="messenger-row">
-                  <a class="card__icon card__icon--social" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">
-                    <img src="/assets/icons/social/tg.png" alt="Telegram">
-                  </a>
-                  <a class="card__icon card__icon--social" href="https://wa.me/995591172329" target="_blank" rel="noopener" aria-label="WhatsApp">
-                    <img src="/assets/icons/social/wh.png" alt="WhatsApp">
-                  </a>
-                </div>
-              <% } else if (item.href) { %>
-                <a href="<%= item.href %>" target="<%= item.href.startsWith('http') ? '_blank' : '_self' %>" rel="<%= item.href.startsWith('http') ? 'noopener' : '' %>"><%= item.value %></a>
-              <% } else if (lower.includes("телефон") || lower.includes("phone")) { %>
-                <a href="tel:<%= item.value.replace(/[^+0-9]/g, '') %>"><%= item.value %></a>
-              <% } else if (lower.includes("email")) { %>
-                <a href="mailto:<%= item.value %>"><%= item.value %></a>
-              <% } else { %>
-                <span><%= item.value %></span>
+  <% if (page.sections && page.sections.length) { %>
+    <% page.sections.forEach((section)=> { %>
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">
+              <%= section.title %>
+            </h2>
+            <% if (section.lead) { %>
+              <p class="section__lead">
+                <%= section.lead %>
+              </p>
               <% } %>
-            </li>
-          <% }); %>
-        </ul>
-      </div>
-    </div>
-  </section>
-<% } %>
+          </div>
+
+          <% if (section.items) { %>
+            <ul class="price-list">
+              <% section.items.forEach((item)=> { %>
+                <li class="price-list__item">
+                  <strong>
+                    <%= item.label %>
+                  </strong>
+                  <span>
+                    <%= item.value %>
+                  </span>
+                </li>
+                <% }); %>
+            </ul>
+            <% } %>
+
+              <% if (section.groups) { %>
+                <div class="grid grid--2">
+                  <% section.groups.forEach((group)=> { %>
+                    <div class="card">
+                      <h3 class="card__title">
+                        <%= group.title %>
+                      </h3>
+                      <% if (group.lead) { %>
+                        <p class="card__text">
+                          <%= group.lead %>
+                        </p>
+                        <% } %>
+                          <ul class="price-list">
+                            <% group.items.forEach((item)=> { %>
+                              <li class="price-list__item">
+                                <strong>
+                                  <%= item.label %>
+                                </strong>
+                                <span>
+                                  <%= item.value %>
+                                </span>
+                              </li>
+                              <% }); %>
+                          </ul>
+                    </div>
+                    <% }); %>
+                </div>
+                <% } %>
+
+                  <% if (section.note) { %>
+                    <div class="card card--elevated">
+                      <p class="card__text">
+                        <%= section.note %>
+                      </p>
+                    </div>
+                    <% } %>
+        </div>
+      </section>
+      <% }); %>
+        <% } else { %>
+          <section class="section">
+            <div class="container">
+              <div class="card">
+                <p class="card__text">
+                  <%= page.lead %>
+                </p>
+              </div>
+            </div>
+          </section>
+          <% } %>
+
+            <% if (page.importantNotes && page.importantNotes.length) { %>
+              <section class="section section--surface">
+                <div class="container">
+                  <div class="card">
+                    <h3 class="card__title">Важно</h3>
+                    <ul class="list">
+                      <% page.importantNotes.forEach((note)=> { %>
+                        <li class="list__item">• <span>
+                            <%= note %>
+                          </span></li>
+                        <% }); %>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <% } %>
+
+                <% if (page.contactCard) { %>
+                  <section class="section">
+                    <div class="container">
+                      <div class="card card--elevated">
+                        <h3 class="card__title">
+                          <%= page.contactCard.title %>
+                        </h3>
+                        <ul class="list">
+                          <% page.contactCard.items.forEach((item)=> { %>
+                            <li class="list__item">
+                              <strong>
+                                <%= item.label %>:
+                              </strong>
+                              <% const lower=item.label.toLowerCase(); %>
+                                <% if (lower.includes("мессенджеры") || lower.includes("messenger")) { %>
+                                  <a href="tel:+995591172329">
+                                    <%= item.value || "+995 591 172 329" %>
+                                  </a>
+                                  <% } else if (item.href) { %>
+                                    <a href="<%= item.href %>"
+                                      target="<%= item.href.startsWith('http') ? '_blank' : '_self' %>"
+                                      rel="<%= item.href.startsWith('http') ? 'noopener' : '' %>">
+                                      <%= item.value %>
+                                    </a>
+                                    <% } else if (lower.includes("телефон") || lower.includes("phone")) { %>
+                                      <a href="tel:<%= item.value.replace(/[^+0-9]/g, '') %>">
+                                        <%= item.value %>
+                                      </a>
+                                      <% } else if (lower.includes("email")) { %>
+                                        <a href="mailto:<%= item.value %>">
+                                          <%= item.value %>
+                                        </a>
+                                        <% } else { %>
+                                          <span>
+                                            <%= item.value %>
+                                          </span>
+                                          <% } %>
+                            </li>
+                            <% }); %>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+                  <% } %>

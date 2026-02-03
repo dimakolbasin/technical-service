@@ -66,16 +66,29 @@
               <% if (contactPage.cta) { %>
                 <div class="card card--elevated">
                   <h3 class="card__title">
-                    <%= contactPage.cta.title %>
+                    <%= lang.home.contact.title %>
                   </h3>
                   <p class="card__text">
-                    <%= contactPage.cta.text %>
+                    <%= lang.home.contact.lead %>
                   </p>
-                  <a class="button button--primary" href="https://t.me/MasterBatumi_Maksim" target="_blank"
-                    rel="noopener">
-                    <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
-                    <%= contactPage.cta.button %>
-                  </a>
+                  <div class="messenger-row">
+                    <a class="button button--secondary" href="https://t.me/MasterBatumi_Maksim" target="_blank"
+                      rel="noopener">
+                      <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
+                      Telegram
+                    </a>
+                    <a class="button button--ghost" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>"
+                      target="_blank" rel="noopener">
+                      <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+                      WhatsApp
+                    </a>
+                    <% if (site.facebook) { %>
+                      <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
+                        <img class="button__icon" src="/assets/icons/social/fb.png" alt="">
+                        Facebook
+                      </a>
+                      <% } %>
+                  </div>
                 </div>
                 <% } %>
     </div>
