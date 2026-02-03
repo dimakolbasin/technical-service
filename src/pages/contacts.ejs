@@ -1,60 +1,82 @@
-<% const contactPage = lang.pages.contacts; %>
+<% const contactPage=lang.pages.contacts; %>
 
-<section class="section section--surface">
-  <div class="container">
-    <div class="section__header">
-      <h1 class="section__title"><%= contactPage.heading %></h1>
-      <p class="section__lead"><%= contactPage.lead %></p>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid grid--2">
-    <% if (contactPage.cards) { %>
-      <% contactPage.cards.forEach((card) => { %>
-        <div class="card">
-          <h3 class="card__title"><%= card.title %></h3>
-          <ul class="list">
-            <% card.items.forEach((item) => { %>
-              <li class="list__item">
-                <strong><%= item.label %>:</strong>
-                <% if (item.label.toLowerCase().includes("мессенджеры") || item.label.toLowerCase().includes("messenger")) { %>
-                  <a href="tel:+995591172329"><%= item.value || "+995 591 172 329" %></a>
-                  <div class="messenger-row">
-                    <a class="card__icon card__icon--social" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">
-                      <img src="/assets/icons/social/tg.png" alt="Telegram">
-                    </a>
-                    <a class="card__icon card__icon--social" href="https://wa.me/995591172329" target="_blank" rel="noopener" aria-label="WhatsApp">
-                      <img src="/assets/icons/social/wh.png" alt="WhatsApp">
-                    </a>
-                  </div>
-                <% } else if (item.href) { %>
-                  <a href="<%= item.href %>" target="<%= item.href.startsWith('http') ? '_blank' : '_self' %>" rel="<%= item.href.startsWith('http') ? 'noopener' : '' %>"><%= item.value %></a>
-                <% } else if (item.label.toLowerCase().includes("телефон") || item.label.toLowerCase().includes("phone")) { %>
-                  <a href="tel:<%= item.value.replace(/[^+0-9]/g, '') %>"><%= item.value %></a>
-                <% } else if (item.label.toLowerCase().includes("email")) { %>
-                  <a href="mailto:<%= item.value %>"><%= item.value %></a>
-                <% } else { %>
-                  <span><%= item.value %></span>
-                <% } %>
-              </li>
-            <% }); %>
-          </ul>
-          <% if (card.note) { %><p class="card__text"><%= card.note %></p><% } %>
-        </div>
-      <% }); %>
-    <% } %>
-
-    <% if (contactPage.cta) { %>
-      <div class="card card--elevated">
-        <h3 class="card__title"><%= contactPage.cta.title %></h3>
-        <p class="card__text"><%= contactPage.cta.text %></p>
-        <a class="button button--primary" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">
-          <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
-          <%= contactPage.cta.button %>
-        </a>
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__header">
+        <h1 class="section__title">
+          <%= contactPage.heading %>
+        </h1>
+        <p class="section__lead">
+          <%= contactPage.lead %>
+        </p>
       </div>
-    <% } %>
-  </div>
-</section>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid--2">
+      <% if (contactPage.cards) { %>
+        <% contactPage.cards.forEach((card)=> { %>
+          <div class="card">
+            <h3 class="card__title">
+              <%= card.title %>
+            </h3>
+            <ul class="list">
+              <% card.items.forEach((item)=> { %>
+                <li class="list__item">
+                  <strong>
+                    <%= item.label %>:
+                  </strong>
+                  <% if (item.label.toLowerCase().includes("мессенджеры") ||
+                    item.label.toLowerCase().includes("messenger")) { %>
+                    <a href="tel:+995591172329">
+                      <%= item.value || "+995 591 172 329" %>
+                    </a>
+                    <% } else if (item.href) { %>
+                      <a href="<%= item.href %>" target="<%= item.href.startsWith('http') ? '_blank' : '_self' %>"
+                        rel="<%= item.href.startsWith('http') ? 'noopener' : '' %>">
+                        <%= item.value %>
+                      </a>
+                      <% } else if (item.label.toLowerCase().includes("телефон") ||
+                        item.label.toLowerCase().includes("phone")) { %>
+                        <a href="tel:<%= item.value.replace(/[^+0-9]/g, '') %>">
+                          <%= item.value %>
+                        </a>
+                        <% } else if (item.label.toLowerCase().includes("email")) { %>
+                          <a href="mailto:<%= item.value %>">
+                            <%= item.value %>
+                          </a>
+                          <% } else { %>
+                            <span>
+                              <%= item.value %>
+                            </span>
+                            <% } %>
+                </li>
+                <% }); %>
+            </ul>
+            <% if (card.note) { %>
+              <p class="card__text">
+                <%= card.note %>
+              </p>
+              <% } %>
+          </div>
+          <% }); %>
+            <% } %>
+
+              <% if (contactPage.cta) { %>
+                <div class="card card--elevated">
+                  <h3 class="card__title">
+                    <%= contactPage.cta.title %>
+                  </h3>
+                  <p class="card__text">
+                    <%= contactPage.cta.text %>
+                  </p>
+                  <a class="button button--primary" href="https://t.me/MasterBatumi_Maksim" target="_blank"
+                    rel="noopener">
+                    <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
+                    <%= contactPage.cta.button %>
+                  </a>
+                </div>
+                <% } %>
+    </div>
+  </section>

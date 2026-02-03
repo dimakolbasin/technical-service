@@ -658,7 +658,7 @@
                   "value": "Батуми"
                 }
               ],
-              "note": "Срочные выезды +20 GEL, если нужно приехать в тот же день."
+              "note": "Выезд и диагностика 20 GEL"
             }
           ],
           "cta": {
@@ -883,7 +883,7 @@
           "Cash / cashless",
           "Clean work"
         ],
-        "heroNote": "Выезд и диагностика 20 GEL"
+        "heroNote": "Call-out and diagnostics 20 GEL"
       },
       "pages": {
         "services": {
@@ -1356,7 +1356,7 @@
                   "value": "Batumi"
                 }
               ],
-              "note": "Urgent same-day visit +20 GEL if needed."
+              "note": "Call-out and diagnostics 20 GEL"
             }
           ],
           "cta": {
@@ -1581,7 +1581,7 @@
           "ნაღდი / უნაღდო",
           "სუფთად ვმუშაობ"
         ],
-        "heroNote": "Выезд и диагностика 20 GEL"
+        "heroNote": "გამოძახება და დიაგნოსტიკა 20 GEL"
       },
       "pages": {
         "services": {
@@ -2054,7 +2054,7 @@
                   "value": "ბათუმი"
                 }
               ],
-              "note": "სასწრაფო same-day გამოძახება +20 GEL თუ საჭიროა."
+              "note": "გამოძახება და დიაგნოსტიკა 20 GEL"
             }
           ],
           "cta": {

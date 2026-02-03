@@ -1,65 +1,89 @@
 <section class="section hero section--surface">
   <div class="container hero__layout">
     <div class="hero__content">
-      <span class="badge badge--accent"><%= lang.home.badge %></span>
-      <h1 class="hero__title"><%= lang.home.title %></h1>
-      <p class="hero__lead"><%= lang.home.lead %></p>
+      <span class="badge badge--accent">
+        <%= lang.home.badge %>
+      </span>
+      <h1 class="hero__title">
+        <%= lang.home.title %>
+      </h1>
+      <p class="hero__lead">
+        <%= lang.home.lead %>
+      </p>
       <% if (lang.home.chips) { %>
         <div class="hero__chips">
-          <% lang.home.chips.forEach((chip) => { %>
-            <span class="badge badge--outline"><%= chip %></span>
-          <% }) %>
+          <% lang.home.chips.forEach((chip)=> { %>
+            <span class="badge badge--outline">
+              <%= chip %>
+            </span>
+            <% }) %>
         </div>
-      <% } %>
-      <div class="hero__actions">
-        <a class="button button--primary" href="tel:<%= site.phoneLink %>"><%= lang.home.ctaPrimary %></a>
-        <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
-          <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
-          <%= lang.home.ctaSecondary %>
-        </a>
-        <a class="button button--ghost" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">
-          <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
-          Telegram
-        </a>
-        <% if (site.facebook) { %>
-          <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
-            <img class="button__icon" src="/assets/icons/social/fb.png" alt="">
-            Facebook
-          </a>
         <% } %>
-      </div>
-      <% if (lang.home.heroNote) { %>
-        <p class="hero__note"><%= lang.home.heroNote %></p>
-      <% } %>
+          <div class="hero__actions">
+            <a class="button button--primary" href="tel:<%= site.phoneLink %>">
+              <%= lang.home.ctaPrimary %>
+            </a>
+            <a class="button button--secondary" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>"
+              target="_blank" rel="noopener">
+              <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+              <%= lang.home.ctaSecondary %>
+            </a>
+            <a class="button button--ghost" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">
+              <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
+              Telegram
+            </a>
+            <% if (site.facebook) { %>
+              <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
+                <img class="button__icon" src="/assets/icons/social/fb.png" alt="">
+                Facebook
+              </a>
+              <% } %>
+          </div>
+          <% if (lang.home.heroNote) { %>
+            <p class="hero__note">
+              <%= lang.home.heroNote %>
+            </p>
+            <% } %>
     </div>
     <div class="card card--elevated hero__form">
-      <h2 class="card__title"><%= lang.home.contact.title %></h2>
-      <p class="card__text"><%= lang.home.contact.lead %></p>
+      <h2 class="card__title">
+        <%= lang.home.contact.title %>
+      </h2>
+      <p class="card__text">
+        <%= lang.home.contact.lead %>
+      </p>
       <form class="form" action="https://formsubmit.co/maksimkolbasin68084@gmail.com" method="POST" autocomplete="off">
         <!-- dummy field to discourage Chrome autofill -->
-        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1" role="presentation" aria-label=" " style="position:absolute;left:-9999px;opacity:0;height:0;width:0;border:0;padding:0;">
+        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1"
+          role="presentation" aria-label=" "
+          style="position:absolute;left:-9999px;opacity:0;height:0;width:0;border:0;padding:0;">
         <div class="form__row">
-          <label class="form__label" for="phone-hero"><%= lang.home.contact.form.phoneLabel %></label>
+          <label class="form__label" for="phone-hero">
+            <%= lang.home.contact.form.phoneLabel %>
+          </label>
           <div class="form__phone-group">
             <span class="form__prefix">+995</span>
-            <input
-              autocomplete="off"
-              class="form__input form__input--phone"
-              type="tel"
-              id="phone-hero"
-              name="phone"
+            <input autocomplete="off" class="form__input form__input--phone" type="tel" id="phone-hero" name="phone"
               placeholder="<%= lang.home.contact.form.phonePlaceholder %>" inputmode="tel" required
               oninvalid="this.setCustomValidity('<%= lang.home.contact.form.phoneRequired %>')"
               oninput="this.setCustomValidity('')">
           </div>
         </div>
         <div class="form__row">
-          <label class="form__label" for="message-hero"><%= lang.home.contact.form.descriptionLabel %></label>
-          <textarea class="form__input" id="message-hero" name="message" rows="3" placeholder="<%= lang.home.contact.form.descriptionPlaceholder %>" autocomplete="off" aria-autocomplete="none"></textarea>
+          <label class="form__label" for="message-hero">
+            <%= lang.home.contact.form.descriptionLabel %>
+          </label>
+          <textarea class="form__input" id="message-hero" name="message" rows="3"
+            placeholder="<%= lang.home.contact.form.descriptionPlaceholder %>" autocomplete="off"
+            aria-autocomplete="none"></textarea>
         </div>
         <div class="form__actions">
-          <button class="button button--primary" type="submit"><%= lang.home.contact.form.submit %></button>
-          <a class="button button--ghost" href="tel:<%= site.phoneLink %>"><%= lang.home.ctaPrimary %></a>
+          <button class="button button--primary" type="submit">
+            <%= lang.home.contact.form.submit %>
+          </button>
+          <a class="button button--ghost" href="tel:<%= site.phoneLink %>">
+            <%= lang.home.ctaPrimary %>
+          </a>
         </div>
       </form>
     </div>
@@ -69,36 +93,50 @@
 <section class="section">
   <div class="container">
     <div class="section__header">
-      <h2 class="section__title"><%= lang.home.services.title %></h2>
-      <p class="section__lead"><%= lang.home.services.lead %></p>
+      <h2 class="section__title">
+        <%= lang.home.services.title %>
+      </h2>
+      <p class="section__lead">
+        <%= lang.home.services.lead %>
+      </p>
       <% if (lang.home.services.ctaToPrices) { %>
         <div class="section__actions">
-          <a class="button button--ghost" href="#prices"><%= lang.home.services.ctaToPrices %></a>
+          <a class="button button--ghost" href="<%= lang.paths.prices %>">
+            <%= lang.home.services.ctaToPrices %>
+          </a>
         </div>
-      <% } %>
+        <% } %>
     </div>
     <div class="grid grid--3">
-      <% lang.home.services.items.forEach((item) => { 
-           const highlight = item.highlight ? " card--elevated" : ""; 
-           const t = (item.title || "").toLowerCase();
-           const iconFile =
-             t.includes("стир") || t.includes("wash") || t.includes("სარეცხ") ? "wash-machine.png" :
-             t.includes("холод") || t.includes("fridge") || t.includes("refriger") || t.includes("მაცივ") ? "fridge.png" :
-             t.includes("конди") || t.includes("air") || t.includes("conditioner") || t.includes("ac") || t.includes("კონდ") ? "air.png" :
-             null;
-           const iconSrc = iconFile ? `/assets/icons/services/${iconFile}` : null;
-      %>
+      <% lang.home.services.items.forEach((item)=> {
+        const highlight = item.highlight ? " card--elevated" : "";
+        const t = (item.title || "").toLowerCase();
+        const iconFile =
+        t.includes("стир") || t.includes("wash") || t.includes("სარეცხ") ? "wash-machine.png" :
+        t.includes("холод") || t.includes("fridge") || t.includes("refriger") || t.includes("მაცივ") ? "fridge.png" :
+        t.includes("конди") || t.includes("air") || t.includes("conditioner") || t.includes("ac") || t.includes("კონდ")
+        ? "air.png" :
+        null;
+        const iconSrc = iconFile ? `/assets/icons/services/${iconFile}` : null;
+        %>
         <article class="card<%= highlight %>">
           <% if (iconSrc) { %>
             <span class="card__icon" aria-hidden="true">
               <img src="<%= iconSrc %>" alt="">
             </span>
-          <% } else { %>
-            <span class="card__icon card__icon--placeholder" aria-hidden="true">🛈</span>
-          <% } %>
-          <h3 class="card__title"><%= item.title %></h3>
-          <p class="card__text"><%= item.text %></p>
-          <a class="card__link" href="#prices"><%= lang.home.services.linkLabel %> <%= item.title %></a>
+            <% } else { %>
+              <span class="card__icon card__icon--placeholder" aria-hidden="true">🛈</span>
+              <% } %>
+                <h3 class="card__title">
+                  <%= item.title %>
+                </h3>
+                <p class="card__text">
+                  <%= item.text %>
+                </p>
+                <a class="card__link" href="#prices">
+                  <%= lang.home.services.linkLabel %>
+                    <%= item.title %>
+                </a>
         </article>
         <% }) %>
     </div>
@@ -108,16 +146,24 @@
 <section class="section section--surface" id="prices">
   <div class="container">
     <div class="section__header">
-      <h2 class="section__title"><%= lang.home.prices.title %></h2>
-      <p class="section__lead"><%= lang.home.prices.lead %></p>
+      <h2 class="section__title">
+        <%= lang.home.prices.title %>
+      </h2>
+      <p class="section__lead">
+        <%= lang.home.prices.lead %>
+      </p>
     </div>
     <ul class="price-list">
-      <% lang.home.prices.items.forEach((item) => { %>
+      <% lang.home.prices.items.forEach((item)=> { %>
         <li class="price-list__item">
-          <strong><%= item.label %></strong>
-          <span><%= item.value %></span>
+          <strong>
+            <%= item.label %>
+          </strong>
+          <span>
+            <%= item.value %>
+          </span>
         </li>
-      <% }) %>
+        <% }) %>
     </ul>
   </div>
 </section>
@@ -158,114 +204,159 @@
       </p>
     </div>
     <div class="steps">
-      <% lang.home.steps.items.forEach((item, index) => { %>
+      <% lang.home.steps.items.forEach((item, index)=> { %>
         <div class="steps__item">
-          <div class="steps__index"><%= index + 1 %></div>
-          <p class="steps__text"><%= item %></p>
+          <div class="steps__index">
+            <%= index + 1 %>
+          </div>
+          <p class="steps__text">
+            <%= item %>
+          </p>
         </div>
-      <% }) %>
+        <% }) %>
     </div>
   </div>
 </section>
 
 <% if (lang.home.aboutSnippet) { %>
-<section class="section section--surface">
-  <div class="container">
-    <div class="section__header">
-      <h2 class="section__title"><%= lang.home.aboutSnippet.title %></h2>
-      <p class="section__lead"><%= lang.home.aboutSnippet.lead %></p>
-    </div>
-    <% if (lang.home.aboutSnippet.pillars) { %>
-      <div class="grid grid--3">
-        <% lang.home.aboutSnippet.pillars.forEach((pillar) => { %>
-          <div class="card">
-            <h3 class="card__title"><%= pillar.title %></h3>
-            <p class="card__text"><%= pillar.text %></p>
-          </div>
-        <% }) %>
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">
+          <%= lang.home.aboutSnippet.title %>
+        </h2>
+        <p class="section__lead">
+          <%= lang.home.aboutSnippet.lead %>
+        </p>
       </div>
-    <% } %>
-    <div class="section__actions">
-      <a class="button button--ghost" href="<%= lang.paths.about %>"><%= lang.pages.about.heading %></a>
-    </div>
-  </div>
-</section>
-<% } %>
-
-<section class="section">
-  <div class="container">
-    <div class="section__header">
-      <h2 class="section__title"><%= lang.home.faq.title %></h2>
-      <p class="section__lead"><%= lang.home.faq.lead %></p>
-    </div>
-    <% lang.home.faq.items.forEach((item) => { %>
-      <details class="faq">
-        <summary class="faq__summary"><%= item.question %></summary>
-        <div class="faq__content"><%= item.answer %></div>
-      </details>
-    <% }) %>
-  </div>
-</section>
-
-<section class="section section--surface">
-  <div class="container">
-    <div class="section__header">
-      <h2 class="section__title"><%= lang.home.contact.title %></h2>
-      <p class="section__lead"><%= lang.home.contact.lead %></p>
-    </div>
-    <div class="contact-card">
-      <div>
-        <ul class="list">
-          <% lang.home.contact.list.forEach((item) => { 
-               const labelLower = item.label.toLowerCase();
-          %>
-            <li class="list__item">
-              <strong><%= item.label %>:</strong>
-              <% if (labelLower.includes("телефон") || labelLower.includes("phone") || labelLower.includes("ტელ")) { %>
-                <a href="tel:<%= site.phoneLink %>"><%= site.phone %></a>
-              <% } else if (labelLower.includes("мессенджеры") || labelLower.includes("messenger")) { %>
-                <div class="messenger-row">
-                  <a class="card__icon card__icon--social" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener" aria-label="Telegram">
-                    <img src="/assets/icons/social/tg.png" alt="Telegram">
-                  </a>
-                  <a class="card__icon card__icon--social" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener" aria-label="WhatsApp">
-                    <img src="/assets/icons/social/wh.png" alt="WhatsApp">
-                  </a>
-                  <% if (site.facebook) { %>
-                    <a class="card__icon card__icon--social" href="<%= site.facebook %>" target="_blank" rel="noopener" aria-label="Facebook">
-                      <img src="/assets/icons/social/fb.png" alt="Facebook">
-                    </a>
-                  <% } %>
-                </div>
-              <% } else if (labelLower.includes("email") || labelLower.includes("почта")) { %>
-                <a href="mailto:<%= site.email %>"><%= site.email %></a>
-              <% } else { %>
-                <span><%= item.value %></span>
-              <% } %>
-            </li>
+      <% if (lang.home.aboutSnippet.pillars) { %>
+        <div class="grid grid--3">
+          <% lang.home.aboutSnippet.pillars.forEach((pillar)=> { %>
+            <div class="card">
+              <h3 class="card__title">
+                <%= pillar.title %>
+              </h3>
+              <p class="card__text">
+                <%= pillar.text %>
+              </p>
+            </div>
             <% }) %>
-        </ul>
-      </div>
-      <div class="card card--elevated">
-        <h3 class="card__title"><%= lang.home.contact.title %></h3>
-        <p class="card__text"><%= lang.home.contact.lead %></p>
-        <div class="messenger-row">
-          <a class="button button--secondary" href="https://t.me/MasterBatumi_Maksim" target="_blank" rel="noopener">
-            <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
-            Telegram
-          </a>
-          <a class="button button--ghost" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
-            <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
-            WhatsApp
-          </a>
-          <% if (site.facebook) { %>
-            <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
-              <img class="button__icon" src="/assets/icons/social/fb.png" alt="">
-              Facebook
+        </div>
+        <% } %>
+          <div class="section__actions">
+            <a class="button button--ghost" href="<%= lang.paths.about %>">
+              <%= lang.pages.about.heading %>
             </a>
-          <% } %>
+          </div>
+    </div>
+  </section>
+  <% } %>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">
+            <%= lang.home.faq.title %>
+          </h2>
+          <p class="section__lead">
+            <%= lang.home.faq.lead %>
+          </p>
+        </div>
+        <% lang.home.faq.items.forEach((item)=> { %>
+          <details class="faq">
+            <summary class="faq__summary">
+              <%= item.question %>
+            </summary>
+            <div class="faq__content">
+              <%= item.answer %>
+            </div>
+          </details>
+          <% }) %>
+      </div>
+    </section>
+
+    <section class="section section--surface">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">
+            <%= lang.home.contact.title %>
+          </h2>
+          <p class="section__lead">
+            <%= lang.home.contact.lead %>
+          </p>
+        </div>
+        <div class="contact-card">
+          <div>
+            <ul class="list">
+              <% lang.home.contact.list.forEach((item)=> {
+                const labelLower = item.label.toLowerCase();
+                %>
+                <li class="list__item">
+                  <strong>
+                    <%= item.label %>:
+                  </strong>
+                  <% if (labelLower.includes("телефон") || labelLower.includes("phone") || labelLower.includes("ტელ")) {
+                    %>
+                    <a href="tel:<%= site.phoneLink %>">
+                      <%= site.phone %>
+                    </a>
+                    <% } else if (labelLower.includes("мессенджеры") || labelLower.includes("messenger")) { %>
+                      <div class="messenger-row">
+                        <a class="card__icon card__icon--social" href="https://t.me/MasterBatumi_Maksim" target="_blank"
+                          rel="noopener" aria-label="Telegram">
+                          <img src="/assets/icons/social/tg.png" alt="Telegram">
+                        </a>
+                        <a class="card__icon card__icon--social"
+                          href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>" target="_blank"
+                          rel="noopener" aria-label="WhatsApp">
+                          <img src="/assets/icons/social/wh.png" alt="WhatsApp">
+                        </a>
+                        <% if (site.facebook) { %>
+                          <a class="card__icon card__icon--social" href="<%= site.facebook %>" target="_blank"
+                            rel="noopener" aria-label="Facebook">
+                            <img src="/assets/icons/social/fb.png" alt="Facebook">
+                          </a>
+                          <% } %>
+                      </div>
+                      <% } else if (labelLower.includes("email") || labelLower.includes("почта")) { %>
+                        <a href="mailto:<%= site.email %>">
+                          <%= site.email %>
+                        </a>
+                        <% } else { %>
+                          <span>
+                            <%= item.value %>
+                          </span>
+                          <% } %>
+                </li>
+                <% }) %>
+            </ul>
+          </div>
+          <div class="card card--elevated">
+            <h3 class="card__title">
+              <%= lang.home.contact.title %>
+            </h3>
+            <p class="card__text">
+              <%= lang.home.contact.lead %>
+            </p>
+            <div class="messenger-row">
+              <a class="button button--secondary" href="https://t.me/MasterBatumi_Maksim" target="_blank"
+                rel="noopener">
+                <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
+                Telegram
+              </a>
+              <a class="button button--ghost" href="https://wa.me/<%= site.phoneLink.replace(/[^0-9]/g, '') %>"
+                target="_blank" rel="noopener">
+                <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+                WhatsApp
+              </a>
+              <% if (site.facebook) { %>
+                <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
+                  <img class="button__icon" src="/assets/icons/social/fb.png" alt="">
+                  Facebook
+                </a>
+                <% } %>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
