@@ -58,18 +58,18 @@
           "linkKey": "services",
           "items": [
             {
-              "title": "Стиральные машины",
-              "text": "Не сливает, не греет, шумит или вибрирует.",
+              "title": "Стиральные и посудомоечные машины",
+              "text": "Не сливает, не греет, шумит или течёт.",
               "icon": "icon-tools.png",
               "serviceIcon": "wash-machine.png",
               "highlight": true
             },
-	            {
-	              "title": "Газовые и электрические плиты",
-	              "text": "Не зажигается, не греет, выбивает автомат.",
-	              "icon": "icon-shield.svg",
-	              "serviceIcon": "stove.png"
-	            },
+            {
+              "title": "Газовые и электрические плиты",
+              "text": "Не зажигается, не греет, выбивает автомат.",
+              "icon": "icon-shield.svg",
+              "serviceIcon": "stove.png"
+            },
             {
               "title": "Кондиционеры",
               "text": "Не охлаждает, пахнет, плохо дует.",
@@ -116,13 +116,13 @@
               "value": "20 GEL"
             },
             {
-              "label": "Ремонт стиральной машины",
+              "label": "Ремонт стиральной и посудомоечной машины",
               "value": "от 80 GEL"
             },
-	            {
-	              "label": "Ремонт плиты",
-	              "value": "от 90 GEL"
-	            },
+            {
+              "label": "Ремонт плиты",
+              "value": "от 90 GEL"
+            },
             {
               "label": "Обслуживание кондиционера",
               "value": "от 70 GEL"
@@ -207,29 +207,24 @@
               ]
             },
             {
-              "title": "Стиральные машины",
+              "title": "Стиральные и посудомоечные машины",
               "items": [
                 "Замена подшипников, амортизаторов, крестовины, манжеты люка.",
                 "Ремонт/замена насоса, клапана, ТЭНа, модуля управления.",
-                "Чистка сливной системы, устранение протечек и вибраций."
+                "Чистка сливной системы, устранение протечек и вибраций.",
+                "Посудомойки: циркуляционный и сливной насосы.",
+                "Посудомойки: чистка фильтров, устранение протечек.",
+                "Посудомойки: ремонт нагрева и электроники."
               ]
             },
             {
-              "title": "Посудомоечные машины",
+              "title": "Кондиционеры",
               "items": [
-                "Замена циркуляционного и сливного насосов.",
-                "Чистка фильтров, устранение протечек.",
-                "Ремонт нагрева и электроники."
+                "Обслуживание и чистка внутренних блоков и дренажа.",
+                "Диагностика утечек, работа с датчиками и платами.",
+                "Чистка, дезинфекция и профилактика запахов."
               ]
             },
-	            {
-	              "title": "Кондиционеры",
-	              "items": [
-	                "Обслуживание и чистка внутренних блоков и дренажа.",
-	                "Диагностика утечек, работа с датчиками и платами.",
-	                "Чистка, дезинфекция и профилактика запахов."
-	              ]
-	            },
             {
               "title": "Варочные поверхности, плиты, духовые шкафы",
               "items": [
@@ -300,7 +295,7 @@
               "note": "Часто мастера предлагают комплекс, где всё включено за 150–200 GEL (фильтры, испаритель, дренаж, антибактерия)."
             },
             {
-              "title": "Прайс на ремонт стиральных машин",
+              "title": "Прайс на ремонт стиральных и посудомоечных машин",
               "lead": "Разделено по типу работ — так понятнее.",
               "groups": [
                 {
@@ -382,14 +377,9 @@
                       "value": "от 60–90 GEL"
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "title": "Прайс на ремонт посудомоечных машин",
-              "groups": [
+                },
                 {
-                  "title": "Вода и слив",
+                  "title": "Посудомойки — вода и слив",
                   "items": [
                     {
                       "label": "Замена циркуляционного насоса",
@@ -410,7 +400,7 @@
                   ]
                 },
                 {
-                  "title": "Нагрев и электрика",
+                  "title": "Посудомойки — нагрев и электрика",
                   "items": [
                     {
                       "label": "Замена ТЭНа",
@@ -427,7 +417,7 @@
                   ]
                 },
                 {
-                  "title": "Механика",
+                  "title": "Посудомойки — механика",
                   "items": [
                     {
                       "label": "Замена уплотнителей двери",
@@ -729,18 +719,18 @@
           "linkKey": "services",
           "items": [
             {
-              "title": "Washing machines",
-              "text": "No drain, no heat, loud noise, heavy vibration.",
+              "title": "Washing machines and dishwashers",
+              "text": "Not draining, not heating, noisy, or leaking.",
               "icon": "icon-tools.png",
               "serviceIcon": "wash-machine.png",
               "highlight": true
             },
-	            {
-	              "title": "Gas and electric stoves",
-	              "text": "No ignition, no heat, breaker trips.",
-	              "icon": "icon-shield.svg",
-	              "serviceIcon": "stove.png"
-	            },
+            {
+              "title": "Gas and electric stoves",
+              "text": "No ignition, no heat, breaker trips.",
+              "icon": "icon-shield.svg",
+              "serviceIcon": "stove.png"
+            },
             {
               "title": "Air conditioners",
               "text": "Weak cooling, bad smell, poor airflow.",
@@ -787,13 +777,13 @@
               "value": "20 GEL"
             },
             {
-              "label": "Washing machine repair",
+              "label": "Washing machine / dishwasher repair",
               "value": "from 80 GEL"
             },
-	            {
-	              "label": "Stove repair",
-	              "value": "from 90 GEL"
-	            },
+            {
+              "label": "Stove repair",
+              "value": "from 90 GEL"
+            },
             {
               "label": "Air conditioner service",
               "value": "from 70 GEL"
@@ -879,29 +869,23 @@
               ]
             },
             {
-              "title": "Washing machines",
+              "title": "Washing machines and dishwashers",
               "items": [
                 "Bearings, dampers, spider, door seal replacement.",
                 "Pump, inlet valve, heater, control board repair/replacement.",
-                "Drain cleaning, leak fixing, vibration issues."
+                "Drain cleaning, leak fixing, vibration issues.",
+                "Dishwashers: circulation/drain pumps, filter cleaning, leak fixing.",
+                "Dishwashers: heating and electronics repair."
               ]
             },
             {
-              "title": "Dishwashers",
+              "title": "Air conditioners",
               "items": [
-                "Circulation and drain pump replacement.",
-                "Filter cleaning, leak fixing.",
-                "Heating and electronics repair."
+                "Cleaning indoor units and drainage.",
+                "Checking leaks, sensors, and boards.",
+                "Cleaning, disinfection, odor prevention."
               ]
             },
-	            {
-	              "title": "Air conditioners",
-	              "items": [
-	                "Cleaning indoor units and drainage.",
-	                "Checking leaks, sensors, and boards.",
-	                "Cleaning, disinfection, odor prevention."
-	              ]
-	            },
             {
               "title": "Cooktops, stoves, ovens",
               "items": [
@@ -972,7 +956,7 @@
               "note": "Often a full combo is offered for 150–200 GEL (filters, evaporator, drain, antibacterial)."
             },
             {
-              "title": "Washing machines",
+              "title": "Washing machines and dishwashers",
               "lead": "Grouped by type of work.",
               "groups": [
                 {
@@ -1054,14 +1038,9 @@
                       "value": "from 60–90 GEL"
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "title": "Dishwashers",
-              "groups": [
+                },
                 {
-                  "title": "Water & drain",
+                  "title": "Dishwashers — water & drain",
                   "items": [
                     {
                       "label": "Circulation pump replacement",
@@ -1082,7 +1061,7 @@
                   ]
                 },
                 {
-                  "title": "Heating & electrics",
+                  "title": "Dishwashers — heating & electrics",
                   "items": [
                     {
                       "label": "Heater replacement",
@@ -1099,7 +1078,7 @@
                   ]
                 },
                 {
-                  "title": "Mechanics",
+                  "title": "Dishwashers — mechanics",
                   "items": [
                     {
                       "label": "Door gasket replacement",
@@ -1400,18 +1379,18 @@
           "linkKey": "services",
           "items": [
             {
-              "title": "სარეცხი მანქანები",
-              "text": "არ წურავს, არ ათბობს, ხმაურობს ან ვიბრირებს.",
+              "title": "სარეცხი და ჭურჭლის სარეცხი მანქანები",
+              "text": "არ წურავს, არ ათბობს, ხმაურობს ან ჟონავს.",
               "icon": "icon-tools.png",
               "serviceIcon": "wash-machine.png",
               "highlight": true
             },
-	            {
-	              "title": "გაზის და ელექტრო გაზქურები",
-	              "text": "არ ინთება, არ ათბობს, ავტომატს თიშავს.",
-	              "icon": "icon-shield.svg",
-	              "serviceIcon": "stove.png"
-	            },
+            {
+              "title": "გაზის და ელექტრო გაზქურები",
+              "text": "არ ინთება, არ ათბობს, ავტომატს თიშავს.",
+              "icon": "icon-shield.svg",
+              "serviceIcon": "stove.png"
+            },
             {
               "title": "კონდიციონერები",
               "text": "სუსტია გაგრილება, სუნი აქვს ან ცუდად უბერავს.",
@@ -1458,13 +1437,13 @@
               "value": "20 GEL"
             },
             {
-              "label": "სარეცხი მანქანის რემონტი",
+              "label": "სარეცხი და ჭურჭლის სარეცხი მანქანის რემონტი",
               "value": "80 GEL-დან"
             },
-	            {
-	              "label": "გაზქურის რემონტი",
-	              "value": "90 GEL-დან"
-	            },
+            {
+              "label": "გაზქურის რემონტი",
+              "value": "90 GEL-დან"
+            },
             {
               "label": "კონდიციონერის მომსახურება",
               "value": "70 GEL-დან"
@@ -1550,29 +1529,23 @@
               ]
             },
             {
-              "title": "სარეცხი მანქანები",
+              "title": "სარეცხი და ჭურჭლის სარეცხი მანქანები",
               "items": [
                 "ტარების, ამორტიზატორების, ჯვრის, მანჟეტის შეცვლა.",
                 "ტუმბო, შემვსები სარქველი, ტენი, მართვის პლატა — შეკეთება/შეცვლა.",
-                "სანიაღვრე სისტემის წმენდა, გაჟონვის და ვიბრაციის მოხსნა."
+                "სანიაღვრე სისტემის წმენდა, გაჟონვის და ვიბრაციის მოხსნა.",
+                "ჭურჭლის სარეცხი: ცირკულაციის/სანიაღვრე ტუმბო, ფილტრების წმენდა, გაჟონვა.",
+                "ჭურჭლის სარეცხი: გათბობა და ელექტრონიკა."
               ]
             },
             {
-              "title": "ჭურჭლის სარეცხი მანქანები",
+              "title": "კონდიციონერები",
               "items": [
-                "ცირკულაციის და სანიაღვრე ტუმბოს შეცვლა.",
-                "ფილტრების წმენდა, გაჟონვის გამოსწორება.",
-                "გათბობის და ელექტრონიკის შეკეთება."
+                "შიდა ბლოკის და დრენაჟის წმენდა.",
+                "გაჟონვების, სენსორებისა და პლატების შემოწმება.",
+                "დეზინფექცია და სუნების პრევენცია."
               ]
             },
-	            {
-	              "title": "კონდიციონერები",
-	              "items": [
-	                "შიდა ბლოკის და დრენაჟის წმენდა.",
-	                "გაჟონვების, სენსორებისა და პლატების შემოწმება.",
-	                "დეზინფექცია და სუნების პრევენცია."
-	              ]
-	            },
             {
               "title": "ზედაპირები, გაზქურები, ღუმელები",
               "items": [
@@ -1643,7 +1616,7 @@
               "note": "ხშირად გთავაზობენ სრულ კომპლექსს 150–200 GEL-ში (ფილტრები, აორთქლებელი, დრენაჟი, ანტიბაქტერია)."
             },
             {
-              "title": "სარეცხი მანქანები",
+              "title": "სარეცხი და ჭურჭლის სარეცხი მანქანები",
               "lead": "დაჯგუფებულია სამუშაოს ტიპებით.",
               "groups": [
                 {
@@ -1725,14 +1698,9 @@
                       "value": "60–90 GEL-დან"
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "title": "ჭურჭლის სარეცხი მანქანები",
-              "groups": [
+                },
                 {
-                  "title": "წყალი და სანიაღვრე",
+                  "title": "ჭურჭლის სარეცხი — წყალი და სანიაღვრე",
                   "items": [
                     {
                       "label": "ცირკულაციის ტუმბო",
@@ -1753,7 +1721,7 @@
                   ]
                 },
                 {
-                  "title": "გათბობა და ელექტრიკა",
+                  "title": "ჭურჭლის სარეცხი — გათბობა და ელექტრიკა",
                   "items": [
                     {
                       "label": "ტენის შეცვლა",
@@ -1770,7 +1738,7 @@
                   ]
                 },
                 {
-                  "title": "მექანიკა",
+                  "title": "ჭურჭლის სარეცხი — მექანიკა",
                   "items": [
                     {
                       "label": "კარის რეზინის შეცვლა",
