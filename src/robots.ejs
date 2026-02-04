@@ -1,0 +1,10 @@
+---
+permalink: robots.txt
+eleventyExcludeFromCollections: true
+layout: null
+---
+<% const baseUrl = (site.baseUrl || '').replace(/\/$/, ''); %>
+User-agent: *
+Disallow:
+
+Sitemap: <%= baseUrl %>/sitemap.xml
