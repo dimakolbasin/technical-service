@@ -58,11 +58,38 @@
             <%= lang.home.contact.form.phoneLabel %>
           </label>
           <div class="form__phone-group">
-            <span class="form__prefix">+995</span>
+            <span class="form__prefix">+</span>
             <input autocomplete="off" class="form__input form__input--phone" type="tel" id="phone-hero" name="phone"
               placeholder="<%= lang.home.contact.form.phonePlaceholder %>" inputmode="tel" required
               oninvalid="this.setCustomValidity('<%= lang.home.contact.form.phoneRequired %>')"
               oninput="this.setCustomValidity('')">
+            <div class="form__contact-methods" role="group" aria-label="Preferred contact methods">
+              <span class="form__contact-methods-note">
+                <%= lang.home.contact.form.preferredContactLabel %>
+              </span>
+
+            <input class="form__contact-method-input" type="checkbox" id="preferred-contact-call"
+               name="preferredContact[]" value="call">
+            <label class="form__contact-method" for="preferred-contact-call" title="Call">
+              <img class="button__icon" src="/assets/icons/social/call.png" alt="" width="24" height="24">
+              <span class="visually-hidden">Call</span>
+            </label>
+
+              <input class="form__contact-method-input" type="checkbox" id="preferred-contact-tg"
+                name="preferredContact[]" value="telegram">
+              <label class="form__contact-method" for="preferred-contact-tg" title="Telegram">
+                <img class="button__icon" src="/assets/icons/social/tg.png" alt="" width="24" height="24">
+                <span class="visually-hidden">Telegram</span>
+              </label>
+
+              <input class="form__contact-method-input" type="checkbox" id="preferred-contact-wh"
+                name="preferredContact[]" value="whatsapp">
+              <label class="form__contact-method" for="preferred-contact-wh" title="WhatsApp">
+                <img class="button__icon" src="/assets/icons/social/wh.png" alt="" width="24" height="24">
+                <span class="visually-hidden">WhatsApp</span>
+              </label>
+
+            </div>
           </div>
         </div>
         <div class="form__row">

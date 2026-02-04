@@ -178,6 +178,7 @@
             "phoneRequired": "Заполните это поле",
             "descriptionLabel": "Модель/проблема (необязательно)",
             "descriptionPlaceholder": "Например: стиралка LG, не сливает воду",
+            "preferredContactLabel": "Можно выбрать предпочитаемый способ связи",
             "submit": "Оставить заявку",
             "linkLabel": "Контакты",
             "linkKey": "contacts"
@@ -849,6 +850,7 @@
             "phoneRequired": "Please fill out this field",
             "descriptionLabel": "Model / issue (optional)",
             "descriptionPlaceholder": "e.g. LG washer, not draining",
+            "preferredContactLabel": "You can choose a preferred contact method",
             "submit": "Send request",
             "linkLabel": "Contacts",
             "linkKey": "contacts"
@@ -1519,6 +1521,7 @@
             "phoneRequired": "შეავსეთ ეს ველი",
             "descriptionLabel": "მოდელი/პრობლემა (არასავალდ.)",
             "descriptionPlaceholder": "მაგ: სარეცხი მანქანა LG, წყალს არ სენს",
+            "preferredContactLabel": "შეგიძლიათ აირჩიოთ სასურველი საკონტაქტო გზა",
             "submit": "განაცხადის გაგზავნა",
             "linkLabel": "კონტაქტი",
             "linkKey": "contacts"

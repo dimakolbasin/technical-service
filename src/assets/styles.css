@@ -596,6 +596,76 @@ button {
   gap: 8px;
 }
 
+.form__contact-methods {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.form__contact-method-input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.form__contact-method {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--c-border);
+  background: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.form__contact-method:hover {
+  transform: translateY(-1px);
+}
+
+.form__contact-method:active {
+  transform: translateY(0);
+}
+
+.form__contact-method-input:focus-visible + .form__contact-method {
+  outline: none;
+  border-color: var(--c-primary);
+  box-shadow: 0 0 0 3px rgba(42, 127, 152, 0.18);
+}
+
+.form__contact-method-input:checked + .form__contact-method {
+  border-color: var(--c-primary);
+  background: rgba(42, 127, 152, 0.08);
+  box-shadow: 0 0 0 3px rgba(42, 127, 152, 0.12);
+}
+
+.form__contact-methods-note {
+  flex-basis: 100%;
+  align-self: center;
+  color: var(--c-muted);
+  font-size: 0.95rem;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .form__prefix {
   padding: 10px 12px;
   border-radius: 8px;
