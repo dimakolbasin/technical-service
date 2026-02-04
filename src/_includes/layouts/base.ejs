@@ -181,12 +181,13 @@
   <div class="cta-bar">
     <a class="button button--primary" href="tel:<%= site.phone %>">
       <%= lang.cta %>
-    </a>
-    <a class="button button--secondary" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
-      <img class="button__icon" src="/assets/icons/social/wh.png" alt="" width="24" height="24">
-      <%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
-    </a>
-  </div>
+	    </a>
+	    <a class="button button--secondary" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
+	      <img class="button__icon" src="/assets/icons/social/wh.png"
+	        alt="<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>" width="24" height="24">
+	      <%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
+	    </a>
+	  </div>
   <script>
     (function () {
       const setPrefLang = (code) => {
