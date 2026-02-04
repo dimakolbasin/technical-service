@@ -50,16 +50,16 @@
       </p>
       <form class="form" action="https://formsubmit.co/<%= site.email %>" method="POST" autocomplete="off">
         <!-- dummy field to discourage Chrome autofill -->
-        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1"
-          role="presentation" aria-label=" "
-          style="position:absolute;left:-9999px;opacity:0;height:0;width:0;border:0;padding:0;">
+<!--        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1"-->
+<!--          role="presentation" aria-label=" "-->
+<!--          style="position:absolute;left:-9999px;opacity:0;height:0;width:0;border:0;padding:0;">-->
         <div class="form__row">
           <label class="form__label" for="phone-hero">
             <%= lang.home.contact.form.phoneLabel %>
           </label>
           <div class="form__phone-group">
             <span class="form__prefix">+</span>
-            <input autocomplete="off" class="form__input form__input--phone" type="tel" id="phone-hero" name="phone"
+            <input autocomplete="off" class="form__input form__input--phone" type="number" id="phone-hero" name="phone"
               placeholder="<%= lang.home.contact.form.phonePlaceholder %>" inputmode="tel" required
               oninvalid="this.setCustomValidity('<%= lang.home.contact.form.phoneRequired %>')"
               oninput="this.setCustomValidity('')">
