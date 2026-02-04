@@ -13,8 +13,7 @@
         "home": "/ru/",
         "services": "/ru/services/",
         "prices": "/ru/prices/",
-        "contacts": "/ru/contacts/",
-        "faq": "/ru/faq/"
+        "contacts": "/ru/contacts/"
       },
       "nav": [
         {
@@ -666,33 +665,6 @@
             "text": "Опишите проблему и модель техники — сразу скажу ориентир по цене и времени.",
             "button": "Написать в Telegram"
           }
-        },
-        "faq": {
-          "title": "FAQ — Tech Fix",
-          "lead": "Ответы на частые вопросы.",
-          "heading": "FAQ",
-          "items": [
-            {
-              "question": "Сколько занимает ремонт?",
-              "answer": "От 30 минут. Срочный мелкий ремонт могу сделать в день обращения, если есть запчасти."
-            },
-            {
-              "question": "Работаете с запчастями клиента?",
-              "answer": "Да, но сперва проверю совместимость и состояние, чтобы не потерять гарантию."
-            },
-            {
-              "question": "Даете гарантию?",
-              "answer": "Да, фиксирую срок в заказ-наряде: 1–6 месяцев в зависимости от работ и запчастей."
-            },
-            {
-              "question": "Как узнать итоговую цену?",
-              "answer": "После диагностики. Предварительные диапазоны есть в прайсе, но итог зависит от модели и состояния узла."
-            },
-            {
-              "question": "Можно ли безнал?",
-              "answer": "Да, переводом на карту или через банк, уточняйте при заказе."
-            }
-          ]
         }
       },
       "rootButtonClass": "button--primary",
@@ -711,8 +683,7 @@
         "home": "/en/",
         "services": "/en/services/",
         "prices": "/en/prices/",
-        "contacts": "/en/contacts/",
-        "faq": "/en/faq/"
+        "contacts": "/en/contacts/"
       },
       "nav": [
         {
@@ -1364,33 +1335,6 @@
             "text": "Describe the issue and model — I'll give a price/time estimate right away.",
             "button": "Message on Telegram"
           }
-        },
-        "faq": {
-          "title": "FAQ — Tech Fix",
-          "lead": "Answers to common questions.",
-          "heading": "FAQ",
-          "items": [
-            {
-              "question": "How long does repair take?",
-              "answer": "From 30 minutes. Minor urgent jobs can be same-day if parts are available."
-            },
-            {
-              "question": "Can you use my spare parts?",
-              "answer": "Yes, after checking compatibility and condition to keep the warranty valid."
-            },
-            {
-              "question": "Do you provide a warranty?",
-              "answer": "Yes, term is written in the work order: 1–6 months depending on parts and work."
-            },
-            {
-              "question": "How to know the final price?",
-              "answer": "After diagnostics. Ranges are in the price list, but the exact cost depends on model and condition."
-            },
-            {
-              "question": "Do you take cashless?",
-              "answer": "Yes, bank transfer/card transfer—ask when placing the order."
-            }
-          ]
         }
       },
       "rootButtonClass": "button--ghost",
@@ -1409,8 +1353,7 @@
         "home": "/ka/",
         "services": "/ka/services/",
         "prices": "/ka/prices/",
-        "contacts": "/ka/contacts/",
-        "faq": "/ka/faq/"
+        "contacts": "/ka/contacts/"
       },
       "nav": [
         {
@@ -2062,33 +2005,6 @@
             "text": "მოგვწერე მოდელი და პრობლემა — გეტყვით ფასისა და დროის დიაპაზონს.",
             "button": "წერე Telegram-ში"
           }
-        },
-        "faq": {
-          "title": "ხშირი კითხვები — Tech Fix",
-          "lead": "პოპულარულ კითხვებზე პასუხები.",
-          "heading": "ხშირი კითხვები",
-          "items": [
-            {
-              "question": "რამდენ ხანს გრძელდება რემონტი?",
-              "answer": "30 წუთიდან. მცირე სასწრაფო სამუშაოები იმავე დღეს, თუ დეტალი არის."
-            },
-            {
-              "question": "მომეწოდებით თუ ჩემი დეტალებით?",
-              "answer": "დიახ, თუ თავსებადობა და მდგომარეობა შევამოწმეთ — რომ გარანტია შევინარჩუნოთ."
-            },
-            {
-              "question": "გაქვთ გარანტია?",
-              "answer": "დიახ, ვადა აღინიშნება სამუშაო ბარათში: 1–6 თვე, დეტალზე და სამუშაოზე დამოკიდებული."
-            },
-            {
-              "question": "როგორ გავიგო საბოლოო ფასი?",
-              "answer": "დიაგნოსტიკის შემდეგ. დიაპაზონები ფასებშია, მაგრამ ზუსტი ფასი მოდელზე და მდგომარეობაზეა დამოკიდებული."
-            },
-            {
-              "question": "შეიძლება გადარიცხვა?",
-              "answer": "დიახ, ბანკით/ბარათით — შეკვეთისას შეგვითანხმეთ."
-            }
-          ]
         }
       },
       "rootButtonClass": "button--secondary",

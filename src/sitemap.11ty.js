@@ -1,12 +1,9 @@
 const buildUrls = (site, languages) => {
   const urls = new Set();
 
-  // root redirect page (optional but keeps domain discoverable)
-  urls.add(site.baseUrl + "/");
-
   languages.forEach((lang) => {
     urls.add(site.baseUrl + lang.paths.home);
-    ["services", "prices", "contacts", "faq", "about"].forEach((key) => {
+    ["services", "prices", "contacts", "about"].forEach((key) => {
       if (lang.paths[key]) urls.add(site.baseUrl + lang.paths[key]);
     });
   });

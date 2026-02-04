@@ -34,57 +34,60 @@
             <meta property="og:locale" content="<%= lang.code %>">
             <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
             <% } %>
-              <% if (pageKey) { const pageUrl=site.baseUrl + lang.paths[pageKey]; const sameAs=[ site.telegram
-                , "https://wa.me/" + site.phone.replace(/[^0-9]/g, '' ) , site.facebook ]; %>
-                <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "<%= site.name %>",
-      "url": "<%= pageUrl %>",
-      "telephone": "<%= site.phone %>",
-      "description": "<%= description %>",
-      "image": "<%= site.baseUrl %>/assets/icons/meta-pic.webp",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Batumi",
-        "addressCountry": "GE"
-      },
-      "areaServed": "Batumi",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
-          ],
-          "opens": "09:00",
-          "closes": "20:00"
-        }
-      ],
-      "sameAs": <%= JSON.stringify(sameAs) %>
-    }
-  </script>
-                <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "<%= i18n.languages.find(l => l.code === lang.code).nav[0].label || 'Home' %>",
-          "item": "<%= site.baseUrl + lang.paths.home %>"
-        }<% if (pageKey && pageKey !== 'home') { %>,
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "<%= title %>",
-          "item": "<%= pageUrl %>"
-        }<% } %>
-      ]
-    }
-  </script>
-                <% } %>
+	              <% if (pageKey) {
+	                const pageUrl = site.baseUrl + lang.paths[pageKey];
+	                const waNumber = site.phone.replace(/[^0-9]/g, '');
+	                const sameAs = [site.telegram, `https://wa.me/${waNumber}`, site.facebook].filter(Boolean);
+
+	                const localBusiness = {
+	                  "@context": "https://schema.org",
+	                  "@type": "LocalBusiness",
+	                  "name": site.name,
+	                  "url": pageUrl,
+	                  "telephone": site.phone,
+	                  "description": description,
+	                  "image": `${site.baseUrl}/assets/icons/meta-pic.webp`,
+	                  "address": {
+	                    "@type": "PostalAddress",
+	                    "addressLocality": "Batumi",
+	                    "addressCountry": "GE"
+	                  },
+	                  "areaServed": "Batumi",
+	                  "openingHoursSpecification": [
+	                    {
+	                      "@type": "OpeningHoursSpecification",
+	                      "dayOfWeek": [
+	                        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+	                      ],
+	                      "opens": "09:00",
+	                      "closes": "20:00"
+	                    }
+	                  ],
+	                  "sameAs": sameAs
+	                };
+
+	                const breadcrumbs = {
+	                  "@context": "https://schema.org",
+	                  "@type": "BreadcrumbList",
+	                  "itemListElement": [
+	                    {
+	                      "@type": "ListItem",
+	                      "position": 1,
+	                      "name": (i18n.languages.find(l => l.code === lang.code)?.nav?.[0]?.label) || "Home",
+	                      "item": site.baseUrl + lang.paths.home
+	                    },
+	                    ...(pageKey && pageKey !== "home" ? [{
+	                      "@type": "ListItem",
+	                      "position": 2,
+	                      "name": title,
+	                      "item": pageUrl
+	                    }] : [])
+	                  ]
+	                };
+	                %>
+	                <script type="application/ld+json"><%- JSON.stringify(localBusiness) %></script>
+	                <script type="application/ld+json"><%- JSON.stringify(breadcrumbs) %></script>
+	                <% } %>
 </head>
 
 <body class="page">
