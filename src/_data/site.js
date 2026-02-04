@@ -10,5 +10,6 @@ module.exports = {
     email: process.env.SITE_EMAIL,
     baseUrl: process.env.SITE_BASE_URL,
     facebook: process.env.SITE_FACEBOOK,
-    telegram: process.env.SITE_TELEGRAM
+    telegram: process.env.SITE_TELEGRAM,
+    web3formsAccessKey: process.env.WEB3FORMS_ACCESS_KEY
 };

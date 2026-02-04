@@ -48,11 +48,19 @@
       <p class="card__text">
         <%= lang.home.contact.lead %>
       </p>
-      <form class="form" action="https://formsubmit.co/<%= site.email %>" method="POST" autocomplete="off">
+      <form class="form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+        <input type="hidden" name="access_key" value="<%= site.web3formsAccessKey %>">
         <!-- dummy field to discourage Chrome autofill -->
-<!--        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1"-->
-<!--          role="presentation" aria-label=" "-->
-<!--          style="position:absolute;left:-9999px;opacity:0;height:0;width:0;border:0;padding:0;">-->
+<!--        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1"
+          role="presentation" aria-label=" "
+          style="position:absolute;left:-9999px;opacity:0;height:0;width:0;border:0;padding:0;">-->
+        <div class="form__row">
+          <label class="form__label" for="name-hero">
+            <%= lang.home.contact.form.nameLabel %>
+          </label>
+          <input autocomplete="off" class="form__input" type="text" id="name-hero" name="name"
+            placeholder="<%= lang.home.contact.form.namePlaceholder %>">
+        </div>
         <div class="form__row">
           <label class="form__label" for="phone-hero">
             <%= lang.home.contact.form.phoneLabel %>
