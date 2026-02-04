@@ -186,7 +186,7 @@
         },
         "chips": [
           "Батуми",
-          "RU / EN / KA",
+          "RU / EN / GE",
           "Безнал и наличные",
           "Аккуратно работаю"
         ],
@@ -848,7 +848,7 @@
         },
         "chips": [
           "Batumi",
-          "RU / EN / KA",
+          "RU / EN / GE",
           "Cash / cashless",
           "Clean work"
         ],
@@ -1324,7 +1324,7 @@
     {
       "code": "ka",
       "label": "ქართული",
-      "labelShort": "KA",
+      "labelShort": "GE",
       "menu": "მენიუ",
       "navLabel": "მთავარი ნავიგაცია",
       "langLabel": "ენის შეცვლა",
@@ -1508,7 +1508,7 @@
         },
         "chips": [
           "ბათუმი",
-          "RU / EN / KA",
+          "RU / EN / GE",
           "ნაღდი / უნაღდო",
           "სუფთად ვმუშაობ"
         ],
