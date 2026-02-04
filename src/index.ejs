@@ -1,16 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="<%= i18n.languages[0].code %>">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Fix — redirect</title>
-  <meta name="description" content="Redirecting to your localized page.">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#2a7f98">
+  <% const defaultLang = i18n.languages[0]; %>
+  <title><%= defaultLang.home.metaTitle %></title>
+  <meta name="description" content="<%= defaultLang.home.metaDescription %>">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/assets/icons/icon-tools.png" type="image/png">
   <link rel="apple-touch-icon" href="/assets/icons/icon-tools.png">
-  <% const defaultLang = i18n.languages[0]; %>
+  <link rel="manifest" href="/manifest.json">
   <link rel="canonical" href="<%= site.baseUrl + defaultLang.paths.home %>">
   <link rel="alternate" hreflang="ru" href="<%= site.baseUrl %>/ru/">
   <link rel="alternate" hreflang="en" href="<%= site.baseUrl %>/en/">
