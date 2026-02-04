@@ -59,7 +59,7 @@
           </label>
           <div class="form__phone-group">
             <span class="form__prefix">+</span>
-            <input autocomplete="off" class="form__input form__input--phone" type="number" id="phone-hero" name="phone"
+            <input autocomplete="off" class="form__input form__input--phone" type="number" min="0" id="phone-hero" name="phone"
               placeholder="<%= lang.home.contact.form.phonePlaceholder %>" inputmode="tel" required
               oninvalid="this.setCustomValidity('<%= lang.home.contact.form.phoneRequired %>')"
               oninput="this.setCustomValidity('')">
