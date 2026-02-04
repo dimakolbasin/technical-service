@@ -64,12 +64,12 @@
               "serviceIcon": "wash-machine.png",
               "highlight": true
             },
-            {
-              "title": "Холодильники",
-              "text": "Не морозит, течёт, не выключается.",
-              "icon": "icon-shield.svg",
-              "serviceIcon": "fridge.png"
-            },
+	            {
+	              "title": "Газовые и электрические плиты",
+	              "text": "Не зажигается, не греет, выбивает автомат.",
+	              "icon": "icon-shield.svg",
+	              "serviceIcon": "stove.png"
+	            },
             {
               "title": "Кондиционеры",
               "text": "Не охлаждает, пахнет, плохо дует.",
@@ -119,10 +119,10 @@
               "label": "Ремонт стиральной машины",
               "value": "от 80 GEL"
             },
-            {
-              "label": "Ремонт холодильника",
-              "value": "от 90 GEL"
-            },
+	            {
+	              "label": "Ремонт плиты",
+	              "value": "от 90 GEL"
+	            },
             {
               "label": "Обслуживание кондиционера",
               "value": "от 70 GEL"
@@ -222,14 +222,14 @@
                 "Ремонт нагрева и электроники."
               ]
             },
-            {
-              "title": "Холодильники и кондиционеры",
-              "items": [
-                "Обслуживание и чистка внутренних блоков и дренажа.",
-                "Диагностика утечек, работа с датчиками и платами.",
-                "Чистка, дезинфекция и профилактика запахов."
-              ]
-            },
+	            {
+	              "title": "Кондиционеры",
+	              "items": [
+	                "Обслуживание и чистка внутренних блоков и дренажа.",
+	                "Диагностика утечек, работа с датчиками и платами.",
+	                "Чистка, дезинфекция и профилактика запахов."
+	              ]
+	            },
             {
               "title": "Варочные поверхности, плиты, духовые шкафы",
               "items": [
@@ -735,12 +735,12 @@
               "serviceIcon": "wash-machine.png",
               "highlight": true
             },
-            {
-              "title": "Refrigerators",
-              "text": "Not cooling, leaking, running nonstop.",
-              "icon": "icon-shield.svg",
-              "serviceIcon": "fridge.png"
-            },
+	            {
+	              "title": "Gas and electric stoves",
+	              "text": "No ignition, no heat, breaker trips.",
+	              "icon": "icon-shield.svg",
+	              "serviceIcon": "stove.png"
+	            },
             {
               "title": "Air conditioners",
               "text": "Weak cooling, bad smell, poor airflow.",
@@ -790,10 +790,10 @@
               "label": "Washing machine repair",
               "value": "from 80 GEL"
             },
-            {
-              "label": "Refrigerator repair",
-              "value": "from 90 GEL"
-            },
+	            {
+	              "label": "Stove repair",
+	              "value": "from 90 GEL"
+	            },
             {
               "label": "Air conditioner service",
               "value": "from 70 GEL"
@@ -894,14 +894,14 @@
                 "Heating and electronics repair."
               ]
             },
-            {
-              "title": "Fridges and air conditioners",
-              "items": [
-                "Cleaning indoor units and drainage.",
-                "Checking leaks, sensors, and boards.",
-                "Cleaning, disinfection, odor prevention."
-              ]
-            },
+	            {
+	              "title": "Air conditioners",
+	              "items": [
+	                "Cleaning indoor units and drainage.",
+	                "Checking leaks, sensors, and boards.",
+	                "Cleaning, disinfection, odor prevention."
+	              ]
+	            },
             {
               "title": "Cooktops, stoves, ovens",
               "items": [
@@ -1406,12 +1406,12 @@
               "serviceIcon": "wash-machine.png",
               "highlight": true
             },
-            {
-              "title": "მაცივრები",
-              "text": "არ აცივებს, წვეთავს ან არ ითიშება.",
-              "icon": "icon-shield.svg",
-              "serviceIcon": "fridge.png"
-            },
+	            {
+	              "title": "გაზის და ელექტრო გაზქურები",
+	              "text": "არ ინთება, არ ათბობს, ავტომატს თიშავს.",
+	              "icon": "icon-shield.svg",
+	              "serviceIcon": "stove.png"
+	            },
             {
               "title": "კონდიციონერები",
               "text": "სუსტია გაგრილება, სუნი აქვს ან ცუდად უბერავს.",
@@ -1461,10 +1461,10 @@
               "label": "სარეცხი მანქანის რემონტი",
               "value": "80 GEL-დან"
             },
-            {
-              "label": "მაცივრის რემონტი",
-              "value": "90 GEL-დან"
-            },
+	            {
+	              "label": "გაზქურის რემონტი",
+	              "value": "90 GEL-დან"
+	            },
             {
               "label": "კონდიციონერის მომსახურება",
               "value": "70 GEL-დან"
@@ -1565,14 +1565,14 @@
                 "გათბობის და ელექტრონიკის შეკეთება."
               ]
             },
-            {
-              "title": "მაცივრები და კონდიციონერები",
-              "items": [
-                "შიდა ბლოკის და დრენაჟის წმენდა.",
-                "გაჟონვების, სენსორებისა და პლატების შემოწმება.",
-                "დეზინფექცია და სუნების პრევენცია."
-              ]
-            },
+	            {
+	              "title": "კონდიციონერები",
+	              "items": [
+	                "შიდა ბლოკის და დრენაჟის წმენდა.",
+	                "გაჟონვების, სენსორებისა და პლატების შემოწმება.",
+	                "დეზინფექცია და სუნების პრევენცია."
+	              ]
+	            },
             {
               "title": "ზედაპირები, გაზქურები, ღუმელები",
               "items": [
