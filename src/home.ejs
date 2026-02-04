@@ -239,41 +239,43 @@
             </a>
           </div>
     </div>
-  </section>
-  <% } %>
+		  </section>
+		  <% } %>
 
-    <section class="section">
-      <div class="container">
-        <div class="section__header">
-          <h2 class="section__title">
-            <%= lang.home.faq.title %>
-          </h2>
-          <p class="section__lead">
-            <%= lang.home.faq.lead %>
-          </p>
-        </div>
-        <% lang.home.faq.items.forEach((item)=> { %>
-          <details class="faq">
-            <summary class="faq__summary">
-              <%= item.question %>
-            </summary>
-            <div class="faq__content">
-              <%= item.answer %>
-            </div>
-          </details>
-          <% }) %>
-      </div>
-    </section>
+		    <% if (lang.home.faq && lang.home.faq.items && lang.home.faq.items.length) { %>
+		      <section class="section">
+		        <div class="container">
+		          <div class="section__header">
+		            <h2 class="section__title">
+		              <%= lang.home.faq.title %>
+		            </h2>
+		            <p class="section__lead">
+		              <%= lang.home.faq.lead %>
+		            </p>
+		          </div>
+		          <% lang.home.faq.items.forEach((item)=> { %>
+		            <details class="faq">
+		              <summary class="faq__summary">
+		                <%= item.question %>
+		              </summary>
+		              <div class="faq__content">
+		                <%= item.answer %>
+		              </div>
+		            </details>
+		            <% }) %>
+		        </div>
+		      </section>
+		      <% } %>
 
-    <section class="section section--surface">
-      <div class="container">
-        <div class="section__header">
-          <h2 class="section__title">
-            <%= lang.home.contact.title %>
-          </h2>
-          <p class="section__lead">
-            <%= lang.home.contact.lead %>
-          </p>
+		    <section class="section section--surface">
+		      <div class="container">
+		        <div class="section__header">
+                  <h2 class="section__title">
+                      <%= lang.home.contact.title %>
+                  </h2>
+                  <p class="section__lead">
+                      <%= lang.home.contact.lead %>
+                  </p>
         </div>
         <div class="contact-card">
           <div>
@@ -345,5 +347,5 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+	      </div>
+	    </section>
