@@ -27,6 +27,8 @@
       const lang = cookieLang || navLang;
       const target = supportedLangs[lang] || '/ru/';
       if (location.pathname !== target) {
+        const code = supportedLangs[lang] ? lang : 'ru';
+        document.cookie = "preferred_lang=" + encodeURIComponent(code) + ";path=/;max-age=" + 60 * 60 * 24 * 30 + ";samesite=lax";
         window.location.replace(target);
       }
     })();
