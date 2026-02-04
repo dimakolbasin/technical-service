@@ -1,0 +1,44 @@
+---
+layout: layouts/base.ejs
+title: 404 - Page Not Found
+description: Page not found
+robots: noindex, nofollow, noarchive
+permalink: 404.html
+eleventyExcludeFromCollections: true
+pageKey: false
+lang:
+  code: "en"
+  langLabel: "English"
+  navLabel: "Navigation"
+  menu: "Menu"
+  hours: "09:00 - 20:00"
+  cta: "Call Now"
+  footer:
+    contactsTitle: "Contacts"
+    phoneLabel: "Phone"
+    emailLabel: "Email"
+    areasTitle: "Service Areas"
+    areas: "Batumi and nearby areas"
+    langsTitle: "Languages"
+  nav:
+    - { key: "home", label: "Home" }
+  paths:
+    home: "/"
+---
+
+<section class="section section--surface"
+    style="min-height: 60vh; display: flex; align-items: center; text-align: center;">
+    <div class="container">
+        <div class="section__header" style="margin-left: auto; margin-right: auto;">
+            <h1 class="section__title" style="font-size: 3rem; color: var(--c-primary);">404</h1>
+            <p class="section__lead">
+                Page not found / Страница не найдена / გვერდი არ მოიძებნა
+            </p>
+        </div>
+        <div class="section__actions" style="justify-content: center;">
+            <a class="button button--primary" href="/">
+                Go Home / На главную
+            </a>
+        </div>
+    </div>
+</section>

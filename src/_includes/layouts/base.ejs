@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="<%= typeof robots !== 'undefined' && robots ? robots : 'index, follow' %>">
   <meta name="theme-color" content="#2a7f98">
   <title>
     <%= title %>
@@ -17,6 +17,7 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/assets/icons/icon-tools.png" type="image/png">
   <link rel="apple-touch-icon" href="/assets/icons/icon-tools.png">
+  <link rel="manifest" href="/manifest.json">
   <link rel="canonical" href="<%= pageKey ? site.baseUrl + lang.paths[pageKey] : site.baseUrl + '/' %>">
   <% if (pageKey) { %>
     <% i18n.languages.forEach((locale)=> { %>
@@ -90,7 +91,7 @@
   <header class="site-header">
     <div class="container site-header__row">
       <a class="site-header__brand" href="<%= lang.paths.home %>">
-        <img src="/assets/icons/icon-tools.png" alt="" class="site-header__logo" width="32" height="32">
+        <img src="/assets/icons/icon-tools.png" alt="Tech Fix Logo" class="site-header__logo" width="32" height="32">
         <span>
           <%= site.name %>
         </span>
@@ -102,17 +103,19 @@
         <span>
           <%= lang.hours %>
         </span>
-      </div>
-      <div class="site-header__langs" aria-label="<%= lang.langLabel %>">
-        <% i18n.languages.forEach((locale)=> {
-          const activeClass = locale.code === lang.code ? " site-header__lang--active" : "";
-          %>
-          <a class="site-header__lang<%= activeClass %>" href="<%= locale.paths[pageKey] %>"
-            data-lang="<%= locale.code %>">
-            <%= locale.labelShort %>
-          </a>
-          <% }); %>
-      </div>
+	      </div>
+	      <div class="site-header__langs" aria-label="<%= lang.langLabel %>">
+	        <% i18n.languages.forEach((locale)=> {
+	          const activeClass = locale.code === lang.code ? " site-header__lang--active" : "";
+	          const targetKey = pageKey || "home";
+	          const href = (locale.paths && locale.paths[targetKey]) || locale.paths.home || "/";
+	          %>
+	          <a class="site-header__lang<%= activeClass %>" href="<%= href %>"
+	            data-lang="<%= locale.code %>">
+	            <%= locale.labelShort %>
+	          </a>
+	          <% }); %>
+	      </div>
     </div>
   </header>
 
@@ -177,7 +180,7 @@
       <%= lang.cta %>
     </a>
     <a class="button button--secondary" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
-      <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+      <img class="button__icon" src="/assets/icons/social/wh.png" alt="" width="24" height="24">
       <%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
     </a>
   </div>

@@ -27,42 +27,41 @@
                   <strong>
                     <%= item.label %>:
                   </strong>
-                  <% const type = item.type;
-                    const waNumber = site.phone.replace(/[^0-9]/g, '');
-                    const value = item.value || "";
-                    if (type === "phone") { %>
-                    <a href="tel:<%= site.phone %>">
-                      <%= site.phone %>
-                    </a>
-                  <% } else if (type === "telegram") { %>
-                    <% const href = item.href || site.telegram; %>
-                    <a href="<%= href %>" target="_blank" rel="noopener">
-                      <%= value || href %>
-                    </a>
-                  <% } else if (type === "whatsapp") { %>
-                    <a href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener">
-                      <%= value || site.phone %>
-                    </a>
-                  <% } else if (type === "facebook") { %>
-                    <% const href = item.href || site.facebook; %>
-                    <a href="<%= href %>" target="_blank" rel="noopener">
-                      <%= value || href %>
-                    </a>
-                  <% } else if (type === "email") { %>
-                    <% const emailValue = value || site.email; %>
-                    <a href="mailto:<%= emailValue %>">
-                      <%= emailValue %>
-                    </a>
-                  <% } else if (item.href) { %>
-                    <a href="<%= item.href %>" target="<%= item.href.startsWith('http') ? '_blank' : '_self' %>"
-                      rel="<%= item.href.startsWith('http') ? 'noopener' : '' %>">
-                      <%= value %>
-                    </a>
-                  <% } else { %>
-                    <span>
-                      <%= value %>
-                    </span>
-                  <% } %>
+                    <% const type = item.type; const waNumber = site.phone.replace(/[^0-9]/g, ''); const value = item.value
+                            || ""; if (type === "phone" ) { %>
+                        <a href="tel:<%= site.phone %>">
+                            <%= site.phone %>
+                        </a>
+                    <% } else if (type === "telegram" ) { %>
+                        <% const href = item.href || site.telegram; %>
+                        <a href="<%= href %>" target="_blank" rel="noopener">
+                            <%= value || href %>
+                        </a>
+                    <% } else if (type === "whatsapp" ) { %>
+                        <a href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener">
+                            <%= value || site.phone %>
+                        </a>
+                    <% } else if (type === "facebook" ) { %>
+                        <% const href = item.href || site.facebook; %>
+                        <a href="<%= href %>" target="_blank" rel="noopener">
+                            <%= value || href %>
+                        </a>
+                    <% } else if (type === "email" ) { %>
+                        <% const emailValue = value || site.email; %>
+                        <a href="mailto:<%= emailValue %>">
+                            <%= emailValue %>
+                        </a>
+                    <% } else if (item.href) { %>
+                        <a href="<%= item.href %>"
+                           target="<%= item.href.startsWith('http') ? '_blank' : '_self' %>"
+                           rel="<%= item.href.startsWith('http') ? 'noopener' : '' %>">
+                            <%= value %>
+                        </a>
+                    <% } else { %>
+                        <span>
+                            <%= value %>
+                        </span>
+                    <% } %>
                 </li>
                 <% }); %>
             </ul>
@@ -85,17 +84,18 @@
                   </p>
                   <div class="messenger-row">
                     <a class="button button--secondary" href="<%= site.telegram %>" target="_blank" rel="noopener">
-                      <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
+                      <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram" width="24" height="24">
                       Telegram
                     </a>
-                    <a class="button button--ghost" href="https://wa.me/<%= site.phone %>"
-                      target="_blank" rel="noopener">
-                      <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+                    <a class="button button--ghost" href="https://wa.me/<%= site.phone %>" target="_blank"
+                      rel="noopener">
+                      <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp" width="24" height="24">
                       WhatsApp
                     </a>
                     <% if (site.facebook) { %>
                       <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
-                        <img class="button__icon" src="/assets/icons/social/fb.png" alt="">
+                        <img class="button__icon" src="/assets/icons/social/fb.png" alt="Facebook" width="24"
+                          height="24">
                         Facebook
                       </a>
                       <% } %>

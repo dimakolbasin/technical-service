@@ -20,18 +20,17 @@
             <a class="button button--primary" href="tel:<%= site.phone %>">
               <%= lang.home.ctaPrimary %>
             </a>
-            <a class="button button--secondary" href="https://wa.me/<%= site.phone %>"
-              target="_blank" rel="noopener">
-              <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+            <a class="button button--secondary" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
+              <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp" width="24" height="24">
               <%= lang.home.ctaSecondary %>
             </a>
             <a class="button button--ghost" href="<%= site.telegram %>" target="_blank" rel="noopener">
-              <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
+              <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram" width="24" height="24">
               Telegram
             </a>
             <% if (site.facebook) { %>
               <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
-                <img class="button__icon" src="/assets/icons/social/fb.png" alt="">
+                <img class="button__icon" src="/assets/icons/social/fb.png" alt="Facebook" width="24" height="24">
                 Facebook
               </a>
               <% } %>
@@ -113,7 +112,7 @@
         <article class="card<%= highlight %>">
           <% if (iconSrc) { %>
             <span class="card__icon" aria-hidden="true">
-              <img src="<%= iconSrc %>" alt="">
+              <img src="<%= iconSrc %>" alt="<%= item.title %> icon" width="24" height="24">
             </span>
             <% } else { %>
               <span class="card__icon card__icon--placeholder" aria-hidden="true">🛈</span>
@@ -287,41 +286,41 @@
                   <strong>
                     <%= item.label %>:
                   </strong>
-                  <% if (type === "phone") { %>
+                  <% if (type==="phone" ) { %>
                     <a href="tel:<%= site.phone %>">
                       <%= site.phone %>
                     </a>
-                  <% } else if (type === "messengers") { %>
-                    <div class="messenger-row">
-                      <a class="card__icon card__icon--social" href="<%= site.telegram %>" target="_blank"
-                        rel="noopener" aria-label="Telegram">
-                        <img src="/assets/icons/social/tg.png" alt="Telegram">
-                      </a>
-                      <a class="card__icon card__icon--social" href="https://wa.me/<%= waNumber %>" target="_blank"
-                        rel="noopener" aria-label="WhatsApp">
-                        <img src="/assets/icons/social/wh.png" alt="WhatsApp">
-                      </a>
-                      <% if (site.facebook) { %>
-                        <a class="card__icon card__icon--social" href="<%= site.facebook %>" target="_blank"
-                          rel="noopener" aria-label="Facebook">
-                          <img src="/assets/icons/social/fb.png" alt="Facebook">
+                    <% } else if (type==="messengers" ) { %>
+                      <div class="messenger-row">
+                        <a class="card__icon card__icon--social" href="<%= site.telegram %>" target="_blank"
+                          rel="noopener" aria-label="Telegram">
+                          <img src="/assets/icons/social/tg.png" alt="Telegram" width="24" height="24">
                         </a>
-                      <% } %>
-                    </div>
-                  <% } else if (type === "email") { %>
-                    <a href="mailto:<%= site.email %>">
-                      <%= site.email %>
-                    </a>
-                  <% } else { %>
-                    <span>
-                      <%= item.value %>
-                    </span>
-                  <% } %>
+                        <a class="card__icon card__icon--social" href="https://wa.me/<%= waNumber %>" target="_blank"
+                          rel="noopener" aria-label="WhatsApp">
+                          <img src="/assets/icons/social/wh.png" alt="WhatsApp" width="24" height="24">
+                        </a>
+                        <% if (site.facebook) { %>
+                          <a class="card__icon card__icon--social" href="<%= site.facebook %>" target="_blank"
+                            rel="noopener" aria-label="Facebook">
+                            <img src="/assets/icons/social/fb.png" alt="Facebook" width="24" height="24">
+                          </a>
+                          <% } %>
+                      </div>
+                      <% } else if (type==="email" ) { %>
+                        <a href="mailto:<%= site.email %>">
+                          <%= site.email %>
+                        </a>
+                        <% } else { %>
+                          <span>
+                            <%= item.value %>
+                          </span>
+                          <% } %>
                 </li>
                 <% }) %>
             </ul>
           </div>
-          <div class="card card--elevated keklol">
+          <div class="card card--elevated">
             <h3 class="card__title">
               <%= lang.home.contact.title %>
             </h3>
@@ -330,17 +329,16 @@
             </p>
             <div class="messenger-row">
               <a class="button button--secondary" href="<%= site.telegram %>" target="_blank" rel="noopener">
-                <img class="button__icon" src="/assets/icons/social/tg.png" alt="">
+                <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram" width="24" height="24">
                 Telegram
               </a>
-              <a class="button button--ghost" href="https://wa.me/<%= site.phone %>"
-                target="_blank" rel="noopener">
-                <img class="button__icon" src="/assets/icons/social/wh.png" alt="">
+              <a class="button button--ghost" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
+                <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp" width="24" height="24">
                 WhatsApp
               </a>
               <% if (site.facebook) { %>
                 <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
-                  <img class="button__icon" src="/assets/icons/social/fb.png" alt="">
+                  <img class="button__icon" src="/assets/icons/social/fb.png" alt="Facebook" width="24" height="24">
                   Facebook
                 </a>
                 <% } %>
