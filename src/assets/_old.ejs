@@ -26,10 +26,28 @@
   <meta property="og:site_name" content="<%= site.name %>">
   <meta property="og:locale" content="<%= defaultLang.code %>">
   <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="<%= defaultLang.home.metaTitle %>">
-  <meta name="twitter:description" content="<%= defaultLang.home.metaDescription %>">
-  <meta name="twitter:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
+<!--  <meta name="twitter:card" content="summary_large_image">-->
+<!--  <meta name="twitter:title" content="<%= defaultLang.home.metaTitle %>">-->
+<!--  <meta name="twitter:description" content="<%= defaultLang.home.metaDescription %>">-->
+<!--  <meta name="twitter:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">-->
+  <script>
+    (function () {
+      const supportedLangs = { ru: '/ru/', en: '/en/', ka: '/ka/' };
+      const getCookie = (name) => {
+        const pair = document.cookie.split('; ').find((row) => row.startsWith(name + '='));
+        return pair ? decodeURIComponent(pair.split('=')[1]) : null;
+      };
+      const cookieLang = getCookie('preferred_lang');
+      const navLang = (navigator.language || navigator.userLanguage || '').toLowerCase().split('-')[0];
+      const lang = cookieLang || navLang;
+      const target = supportedLangs[lang] || '/ru/';
+      if (location.pathname !== target) {
+        const code = supportedLangs[lang] ? lang : 'ru';
+        document.cookie = "preferred_lang=" + encodeURIComponent(code) + ";path=/;max-age=" + 60 * 60 * 24 * 30 + ";samesite=lax";
+        window.location.replace(target);
+      }
+    })();
+  </script>
 </head>
 
 <body>
