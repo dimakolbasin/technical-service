@@ -37,7 +37,9 @@ export async function onRequest(context) {
 function redirect(path, lang, status = 302, isHttps = true) {
   const headers = new Headers({
     Location: path,
-    "Cache-Control": "no-store",
+    // "Cache-Control": "no-store",
+    // "Cache-Control": "no-cache",
+    "Cache-Control": "public, max-age=300",
     Vary: "Accept-Language, Cookie",
   });
 
