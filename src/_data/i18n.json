@@ -579,7 +579,7 @@
             "title": "Мои контакты",
             "items": [
               {
-                "label": "Телефон / мессенджеры",
+                "label": "Телефон",
                 "type": "phone"
               },
               {
@@ -612,7 +612,7 @@
               "title": "Основные контакты",
               "items": [
                 {
-                  "label": "Телефон / мессенджеры",
+                  "label": "Телефон",
                   "type": "phone"
                 },
                 {
@@ -1240,7 +1240,7 @@
             "title": "My contacts",
             "items": [
               {
-                "label": "Phone / messengers",
+                "label": "Phone",
                 "type": "phone"
               },
               {
@@ -1272,7 +1272,7 @@
               "title": "Main contacts",
               "items": [
                 {
-                  "label": "Phone / messengers",
+                  "label": "Phone",
                   "type": "phone"
                 },
                 {
@@ -1900,7 +1900,7 @@
             "title": "ჩემი კონტაქტები",
             "items": [
               {
-                "label": "ტელეფონი / მესენჯერები",
+                "label": "ტელეფონი",
                 "type": "phone"
               },
               {
@@ -1932,7 +1932,7 @@
               "title": "ძირითადი კონტაქტები",
               "items": [
                 {
-                  "label": "ტელეფონი / მესენჯერები",
+                  "label": "ტელეფონი",
                   "type": "phone"
                 },
                 {
