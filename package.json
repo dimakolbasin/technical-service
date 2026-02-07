@@ -7,14 +7,16 @@
     "build": "npm run clean && eleventy",
     "watch": "eleventy --watch",
     "serve": "node ./node_modules/live-server/live-server.js dist --watch=dist",
-    "dev": "npm run clean && concurrently -k -n ELEVENTY,SERVER \"npm:watch\" \"wait-on dist/index.html && npm run serve\""
+    "dev": "npm run clean && concurrently -k -n ELEVENTY,SERVER \"npm:watch\" \"wait-on dist/index.html && npm run serve\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "concurrently": "^8.2.2",
+    "dotenv": "^17.2.3",
+    "husky": "^9.1.0",
     "live-server": "^1.2.2",
     "rimraf": "^5.0.5",
-    "dotenv": "^17.2.3",
     "wait-on": "^7.2.0"
   },
   "dependencies": {}

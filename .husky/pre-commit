@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+set -euo pipefail
+
+required_email="dimakolbasin98@gmail.com"
+current_email="$(git config user.email || true)"
+
+if [ -z "$current_email" ]; then
+  echo "ERROR: git user.email is not set. Run 'git config user.email \"$required_email\"'."
+  exit 1
+fi
+
+if [ "$current_email" != "$required_email" ]; then
+  echo "ERROR: git user.email must be \"$required_email\" but it is currently \"$current_email\"."
+  echo "Set it via: git config user.email \"$required_email\""
+  exit 1
+fi
