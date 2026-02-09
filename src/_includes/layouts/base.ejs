@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0>
   <meta name="format-detection" content="telephone=no">
   <meta name="robots" content="<%= typeof robots !== 'undefined' && robots ? robots : 'index, follow' %>">
   <meta name="theme-color" content="#2a7f98">
@@ -66,6 +66,30 @@
 	                  "sameAs": sameAs
 	                };
 
+	                const servicePageKeys = [
+	                  "washing-machines",
+	                  "dishwashers",
+	                  "hobs",
+	                  "ovens",
+	                  "ac-cleaning"
+	                ];
+	                const isServicePage = servicePageKeys.includes(pageKey);
+	                const serviceSchema = isServicePage ? {
+	                  "@context": "https://schema.org",
+	                  "@type": "Service",
+	                  "name": title,
+	                  "serviceType": title,
+	                  "provider": {
+	                    "@type": "LocalBusiness",
+	                    "name": site.name,
+	                    "telephone": site.phone,
+	                    "url": site.baseUrl
+	                  },
+	                  "areaServed": "Batumi",
+	                  "url": pageUrl,
+	                  "description": description
+	                } : null;
+
 	                const breadcrumbs = {
 	                  "@context": "https://schema.org",
 	                  "@type": "BreadcrumbList",
@@ -87,6 +111,9 @@
 	                %>
 	                <script type="application/ld+json"><%- JSON.stringify(localBusiness) %></script>
 	                <script type="application/ld+json"><%- JSON.stringify(breadcrumbs) %></script>
+	                <% if (serviceSchema) { %>
+	                  <script type="application/ld+json"><%- JSON.stringify(serviceSchema) %></script>
+	                <% } %>
 	                <% } %>
 </head>
 

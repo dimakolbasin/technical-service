@@ -1,0 +1,105 @@
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title">
+        <%= page.heading %>
+      </h1>
+      <p class="section__lead">
+        <%= page.lead %>
+      </p>
+    </div>
+  </div>
+</section>
+
+<% if (page.sections && page.sections.length) { %>
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--2">
+        <% page.sections.forEach((block) => { %>
+          <div class="card">
+            <h3 class="card__title"><%= block.title %></h3>
+            <% if (block.lead) { %>
+              <p class="card__text"><%= block.lead %></p>
+            <% } %>
+            <% if (block.items) { %>
+              <ul class="list">
+                <% block.items.forEach((item) => { %>
+                  <li class="list__item">• <span><%= item %></span></li>
+                <% }); %>
+              </ul>
+            <% } %>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+<% } %>
+
+<% if (page.price && page.price.items && page.price.items.length) { %>
+  <section class="section section--surface" id="price">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= page.price.title %></h2>
+        <% if (page.price.lead) { %>
+          <p class="section__lead"><%= page.price.lead %></p>
+        <% } %>
+      </div>
+      <ul class="price-list">
+        <% page.price.items.forEach((item) => { %>
+          <li class="price-list__item">
+            <strong><%= item.label %></strong>
+            <span><%= item.value %></span>
+          </li>
+        <% }); %>
+      </ul>
+      <% if (page.price.note) { %>
+        <div class="card card--elevated">
+          <p class="card__text"><%= page.price.note %></p>
+        </div>
+      <% } %>
+    </div>
+  </section>
+<% } %>
+
+<% if (page.faq && page.faq.items && page.faq.items.length) { %>
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= page.faq.title %></h2>
+        <% if (page.faq.lead) { %>
+          <p class="section__lead"><%= page.faq.lead %></p>
+        <% } %>
+      </div>
+      <% page.faq.items.forEach((item) => { %>
+        <details class="faq">
+          <summary class="faq__summary"><%= item.question %></summary>
+          <div class="faq__content"><%= item.answer %></div>
+        </details>
+      <% }); %>
+    </div>
+  </section>
+<% } %>
+
+<% if (page.cta) { %>
+  <section class="section section--surface">
+    <div class="container">
+      <div class="card card--elevated">
+        <h3 class="card__title"><%= page.cta.title %></h3>
+        <p class="card__text"><%= page.cta.text %></p>
+        <div class="section__actions">
+          <a class="button button--primary" href="tel:<%= site.phone %>">
+            <%= page.cta.button || lang.cta %>
+          </a>
+          <a class="button button--secondary" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
+            <%= lang.ctaMessage || "WhatsApp" %>
+          </a>
+          <% if (site.telegram) { %>
+            <a class="button button--ghost" href="<%= site.telegram %>" target="_blank" rel="noopener">
+              Telegram
+            </a>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </section>
+<% } %>

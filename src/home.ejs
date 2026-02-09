@@ -165,6 +165,38 @@
   </div>
 </section>
 
+<% if (lang.serviceFocus) { %>
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">
+          <%= lang.serviceFocus.title %>
+        </h2>
+        <p class="section__lead">
+          <%= lang.serviceFocus.lead %>
+        </p>
+      </div>
+      <div class="grid grid--3">
+        <% lang.serviceFocus.items.forEach((item)=> { %>
+          <article class="card">
+            <h3 class="card__title">
+              <%= item.title %>
+            </h3>
+            <% if (item.text) { %>
+              <p class="card__text">
+                <%= item.text %>
+              </p>
+            <% } %>
+            <a class="card__link" href="<%= lang.paths[item.key] %>">
+              <%= lang.serviceFocus.linkLabel %>
+            </a>
+          </article>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+<% } %>
+
 <section class="section section--surface" id="prices">
   <div class="container">
     <div class="section__header">

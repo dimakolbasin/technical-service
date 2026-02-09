@@ -12,6 +12,11 @@
       "paths": {
         "home": "/ru/",
         "services": "/ru/services/",
+        "washing-machines": "/ru/services/washing-machines/",
+        "dishwashers": "/ru/services/dishwashers/",
+        "hobs": "/ru/services/hobs/",
+        "ovens": "/ru/services/ovens/",
+        "ac-cleaning": "/ru/services/ac-cleaning/",
         "prices": "/ru/prices/",
         "contacts": "/ru/contacts/"
       },
@@ -192,6 +197,38 @@
         ],
         "heroNote": "Выезд и диагностика 20 GEL"
       },
+      "serviceFocus": {
+        "title": "Популярные услуги",
+        "lead": "Ищете конкретную услугу? Выберите нужный тип ремонта.",
+        "linkLabel": "Подробнее",
+        "items": [
+          {
+            "key": "washing-machines",
+            "title": "Ремонт стиральных машин",
+            "text": "Не сливает, не отжимает, шумит или течёт."
+          },
+          {
+            "key": "dishwashers",
+            "title": "Ремонт посудомоечных машин",
+            "text": "Не моет, не греет, остаётся вода, протечки."
+          },
+          {
+            "key": "hobs",
+            "title": "Ремонт варочных поверхностей",
+            "text": "Не включается, не греет конфорка, ошибки."
+          },
+          {
+            "key": "ovens",
+            "title": "Ремонт духовых шкафов",
+            "text": "Не греет, не держит температуру, не включается."
+          },
+          {
+            "key": "ac-cleaning",
+            "title": "Чистка кондиционеров",
+            "text": "Запах, слабое охлаждение, протечки."
+          }
+        ]
+      },
       "pages": {
         "services": {
           "title": "Услуги ремонта — Tech Fix",
@@ -234,6 +271,371 @@
               ]
             }
           ]
+        },
+        "washing-machines": {
+          "title": "Ремонт стиральных машин в Батуми — выезд и гарантия",
+          "lead": "Диагностика на месте, честная цена и ремонт основных узлов. Работаем по Батуми.",
+          "heading": "Ремонт стиральных машин в Батуми",
+          "sections": [
+            {
+              "title": "Типовые проблемы",
+              "items": [
+                "Не сливает или не отжимает.",
+                "Не греет воду / ошибка ТЭНа.",
+                "Шум, вибрация или течь.",
+                "Не включается / ошибки по модулю."
+              ]
+            },
+            {
+              "title": "Что входит в ремонт",
+              "items": [
+                "Диагностика и согласование цены.",
+                "Замена насоса, ТЭНа, манжеты, ремня, подшипников.",
+                "Ремонт/замена платы управления.",
+                "Тестирование после ремонта."
+              ]
+            },
+            {
+              "title": "Сроки и гарантия",
+              "items": [
+                "Большинство работ — 1–2 часа.",
+                "Гарантия на работы и запчасти.",
+                "Выезд в удобное время по Батуми."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Диагностика",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Ремонт стиральной машины",
+                "value": "от 80 GEL"
+              },
+              {
+                "label": "Замена узлов и запчастей",
+                "value": "по согласованию"
+              }
+            ],
+            "note": "Точная стоимость после диагностики и согласования."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Сколько занимает ремонт?",
+                "answer": "Чаще всего 1–2 часа, сложные случаи — по согласованию."
+              },
+              {
+                "question": "Можно ли починить на месте?",
+                "answer": "Да, большинство работ делаем на выезде."
+              },
+              {
+                "question": "Вы работаете с запчастями клиента?",
+                "answer": "Да, после проверки совместимости и состояния."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужен ремонт стиральной машины?",
+            "text": "Опишите проблему — подскажем ориентир по цене и срокам.",
+            "button": "Позвонить"
+          }
+        },
+        "dishwashers": {
+          "title": "Ремонт посудомоечных машин в Батуми — выезд и гарантия",
+          "lead": "Выезд по Батуми, диагностика и ремонт посудомоек. Устраняем протечки, проблемы со сливом и нагревом.",
+          "heading": "Ремонт посудомоечных машин в Батуми",
+          "sections": [
+            {
+              "title": "Типовые проблемы",
+              "items": [
+                "Не моет или не сушит.",
+                "Не греет воду.",
+                "Остаётся вода, не сливает.",
+                "Протечки или запах."
+              ]
+            },
+            {
+              "title": "Что делаем",
+              "items": [
+                "Чистка фильтров и системы.",
+                "Ремонт/замена насоса, ТЭНа, датчиков.",
+                "Устранение протечек и засоров.",
+                "Тестирование после ремонта."
+              ]
+            },
+            {
+              "title": "Сроки и гарантия",
+              "items": [
+                "1–2 часа на месте.",
+                "Гарантия на работы и запчасти.",
+                "Выезд по Батуми."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Диагностика",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Ремонт посудомойки",
+                "value": "от 100 GEL"
+              },
+              {
+                "label": "Чистка системы и фильтров",
+                "value": "от 100 GEL"
+              }
+            ],
+            "note": "Точная стоимость зависит от модели и деталей."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Почему остаётся вода после цикла?",
+                "answer": "Часто причина в засоре или неисправности насоса."
+              },
+              {
+                "question": "Нужна ли регулярная чистка?",
+                "answer": "Да, это снижает риск протечек и запахов."
+              },
+              {
+                "question": "Сколько стоит ремонт?",
+                "answer": "Оценим после диагностики и согласуем."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужен ремонт посудомоечной машины?",
+            "text": "Опишите проблему — быстро сориентируем по цене.",
+            "button": "Позвонить"
+          }
+        },
+        "hobs": {
+          "title": "Ремонт варочных поверхностей в Батуми — газ/электро",
+          "lead": "Ремонт газовых и электрических варочных поверхностей. Диагностика и выезд по Батуми.",
+          "heading": "Ремонт варочных поверхностей в Батуми",
+          "sections": [
+            {
+              "title": "Типовые проблемы",
+              "items": [
+                "Конфорка не греет или греет слабо.",
+                "Панель не включается.",
+                "Ошибки сенсора или индикаторов.",
+                "Запах газа, пламя нестабильно."
+              ]
+            },
+            {
+              "title": "Что входит в ремонт",
+              "items": [
+                "Диагностика и проверка безопасности.",
+                "Ремонт/замена конфорок, модулей, сенсоров.",
+                "Настройка газ-контроля, устранение утечек.",
+                "Тестирование работы."
+              ]
+            },
+            {
+              "title": "Сроки и гарантия",
+              "items": [
+                "Большинство работ — 1–2 часа.",
+                "Гарантия на работы и запчасти.",
+                "Выезд по Батуми."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Диагностика",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Ремонт варочной поверхности",
+                "value": "от 90 GEL"
+              },
+              {
+                "label": "Сложные работы",
+                "value": "по согласованию"
+              }
+            ],
+            "note": "Точная стоимость зависит от типа поверхности и поломки."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Можно ли отремонтировать газовую поверхность на месте?",
+                "answer": "Да, большинство работ выполняем на выезде."
+              },
+              {
+                "question": "Что делать при запахе газа?",
+                "answer": "Выключите газ и свяжитесь с мастером как можно быстрее."
+              },
+              {
+                "question": "Сколько стоит ремонт?",
+                "answer": "Оценим после диагностики и согласуем."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужен ремонт варочной поверхности?",
+            "text": "Опишите поломку — подскажем цену и сроки.",
+            "button": "Позвонить"
+          }
+        },
+        "ovens": {
+          "title": "Ремонт духовых шкафов в Батуми — выезд и гарантия",
+          "lead": "Если духовка не греет или не держит температуру — восстановим работу на месте.",
+          "heading": "Ремонт духовых шкафов в Батуми",
+          "sections": [
+            {
+              "title": "Типовые проблемы",
+              "items": [
+                "Не греет или не включается.",
+                "Не держит температуру.",
+                "Не работает конвекция.",
+                "Ошибки по датчикам/термостату."
+              ]
+            },
+            {
+              "title": "Что входит в ремонт",
+              "items": [
+                "Диагностика и согласование стоимости.",
+                "Замена ТЭНа, термостата, датчиков.",
+                "Ремонт управления и проводки.",
+                "Тестирование после ремонта."
+              ]
+            },
+            {
+              "title": "Сроки и гарантия",
+              "items": [
+                "Большинство работ — 1–2 часа.",
+                "Гарантия на работы и запчасти.",
+                "Выезд по Батуми."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Диагностика",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Ремонт духовки",
+                "value": "от 90 GEL"
+              },
+              {
+                "label": "Замена узлов",
+                "value": "по согласованию"
+              }
+            ],
+            "note": "Точная стоимость зависит от модели и деталей."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Почему духовка не греет?",
+                "answer": "Часто причина в ТЭНе или термостате."
+              },
+              {
+                "question": "Можно ли починить в день обращения?",
+                "answer": "Да, если не требуется редкая запчасть."
+              },
+              {
+                "question": "Есть ли гарантия?",
+                "answer": "Да, на работы и запчасти."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужен ремонт духовки?",
+            "text": "Опишите проблему — подскажем решение.",
+            "button": "Позвонить"
+          }
+        },
+        "ac-cleaning": {
+          "title": "Чистка кондиционеров в Батуми — обслуживание и дезинфекция",
+          "lead": "Профилактическая чистка, удаление запахов и восстановление нормального охлаждения.",
+          "heading": "Чистка кондиционеров в Батуми",
+          "sections": [
+            {
+              "title": "Когда нужна чистка",
+              "items": [
+                "Появился запах.",
+                "Слабое охлаждение.",
+                "Течёт вода.",
+                "Повышенный шум."
+              ]
+            },
+            {
+              "title": "Что входит в обслуживание",
+              "items": [
+                "Чистка фильтров и внутреннего блока.",
+                "Промывка дренажа.",
+                "Антибактериальная обработка.",
+                "Проверка работы и рекомендации."
+              ]
+            },
+            {
+              "title": "Сроки и гарантия",
+              "items": [
+                "Чистка обычно 1–2 часа.",
+                "Рекомендации по регулярности.",
+                "Выезд по Батуми."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Базовая чистка",
+                "value": "от 70 GEL"
+              },
+              {
+                "label": "Комплексная чистка",
+                "value": "от 100 GEL"
+              },
+              {
+                "label": "Антибактериальная обработка",
+                "value": "от 120 GEL"
+              }
+            ],
+            "note": "Стоимость зависит от состояния и доступа."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Как часто нужна чистка?",
+                "answer": "Обычно 1–2 раза в год."
+              },
+              {
+                "question": "Почему появляется запах?",
+                "answer": "Часто из-за загрязнений и влаги в системе."
+              },
+              {
+                "question": "Сколько времени занимает?",
+                "answer": "Обычно 1–2 часа."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужна чистка кондиционера?",
+            "text": "Запишем на удобное время и приедем по Батуми.",
+            "button": "Позвонить"
+          }
         },
         "prices": {
           "title": "Цены — Tech Fix",
@@ -673,6 +1075,11 @@
       "paths": {
         "home": "/en/",
         "services": "/en/services/",
+        "washing-machines": "/en/services/washing-machines/",
+        "dishwashers": "/en/services/dishwashers/",
+        "hobs": "/en/services/hobs/",
+        "ovens": "/en/services/ovens/",
+        "ac-cleaning": "/en/services/ac-cleaning/",
         "prices": "/en/prices/",
         "contacts": "/en/contacts/"
       },
@@ -854,6 +1261,38 @@
         ],
         "heroNote": "Call-out and diagnostics 20 GEL"
       },
+      "serviceFocus": {
+        "title": "Popular services",
+        "lead": "Looking for a specific service? Choose the exact type of repair.",
+        "linkLabel": "Learn more",
+        "items": [
+          {
+            "key": "washing-machines",
+            "title": "Washing machine repair",
+            "text": "Not draining, not spinning, noisy, or leaking."
+          },
+          {
+            "key": "dishwashers",
+            "title": "Dishwasher repair",
+            "text": "Not washing, no heat, water left inside."
+          },
+          {
+            "key": "hobs",
+            "title": "Cooktop repair",
+            "text": "No power, burner not heating, sensor errors."
+          },
+          {
+            "key": "ovens",
+            "title": "Oven repair",
+            "text": "Not heating, unstable temperature, no power."
+          },
+          {
+            "key": "ac-cleaning",
+            "title": "Air conditioner cleaning",
+            "text": "Bad smell, weak cooling, leaks."
+          }
+        ]
+      },
       "pages": {
         "services": {
           "title": "Repair services — Tech Fix",
@@ -895,6 +1334,371 @@
               ]
             }
           ]
+        },
+        "washing-machines": {
+          "title": "Washing Machine Repair in Batumi — On-site Service",
+          "lead": "On-site diagnostics, clear pricing, and repair of key components across Batumi.",
+          "heading": "Washing machine repair in Batumi",
+          "sections": [
+            {
+              "title": "Common issues",
+              "items": [
+                "Not draining or not spinning.",
+                "No heating / heater error.",
+                "Noise, vibration, or leaks.",
+                "Won't start / control board errors."
+              ]
+            },
+            {
+              "title": "What we do",
+              "items": [
+                "Diagnostics and price approval.",
+                "Pump, heater, seal, belt, bearings replacement.",
+                "Control board repair/replacement.",
+                "Testing after repair."
+              ]
+            },
+            {
+              "title": "Timing & warranty",
+              "items": [
+                "Most jobs take 1–2 hours.",
+                "Warranty on work and parts.",
+                "On-site visit across Batumi."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guidance",
+            "items": [
+              {
+                "label": "Diagnostics",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Washing machine repair",
+                "value": "from 80 GEL"
+              },
+              {
+                "label": "Parts replacement",
+                "value": "by agreement"
+              }
+            ],
+            "note": "Final cost after diagnostics and approval."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "How long does repair take?",
+                "answer": "Usually 1–2 hours, complex cases by agreement."
+              },
+              {
+                "question": "Can you fix it on-site?",
+                "answer": "Yes, most jobs are done at your location."
+              },
+              {
+                "question": "Do you work with client-provided parts?",
+                "answer": "Yes, after compatibility check."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need washing machine repair?",
+            "text": "Describe the issue — we will estimate time and cost.",
+            "button": "Call now"
+          }
+        },
+        "dishwashers": {
+          "title": "Dishwasher Repair in Batumi — On-site Service",
+          "lead": "On-site diagnostics and dishwasher repair. We fix leaks, drainage and heating issues.",
+          "heading": "Dishwasher repair in Batumi",
+          "sections": [
+            {
+              "title": "Common issues",
+              "items": [
+                "Not washing or not drying.",
+                "No heating.",
+                "Water left inside / not draining.",
+                "Leaks or bad smell."
+              ]
+            },
+            {
+              "title": "What we do",
+              "items": [
+                "Filter and system cleaning.",
+                "Pump, heater, sensor repair/replacement.",
+                "Leak and blockage fixes.",
+                "Testing after repair."
+              ]
+            },
+            {
+              "title": "Timing & warranty",
+              "items": [
+                "Usually 1–2 hours on-site.",
+                "Warranty on work and parts.",
+                "Service across Batumi."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guidance",
+            "items": [
+              {
+                "label": "Diagnostics",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Dishwasher repair",
+                "value": "from 100 GEL"
+              },
+              {
+                "label": "System cleaning",
+                "value": "from 100 GEL"
+              }
+            ],
+            "note": "Final cost depends on model and parts."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Why is water left after the cycle?",
+                "answer": "Often caused by a blockage or pump issue."
+              },
+              {
+                "question": "Do I need regular cleaning?",
+                "answer": "Yes, it helps prevent leaks and odors."
+              },
+              {
+                "question": "How much does repair cost?",
+                "answer": "We confirm the price after diagnostics."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need dishwasher repair?",
+            "text": "Tell us the issue and we will estimate the price.",
+            "button": "Call now"
+          }
+        },
+        "hobs": {
+          "title": "Cooktop Repair in Batumi — Gas & Electric",
+          "lead": "Repair of gas and electric cooktops with on-site diagnostics in Batumi.",
+          "heading": "Cooktop repair in Batumi",
+          "sections": [
+            {
+              "title": "Common issues",
+              "items": [
+                "Burner not heating or heating weakly.",
+                "Panel not powering on.",
+                "Sensor or indicator errors.",
+                "Gas smell or unstable flame."
+              ]
+            },
+            {
+              "title": "What we do",
+              "items": [
+                "Diagnostics and safety check.",
+                "Cooktop, module, and sensor repair/replacement.",
+                "Gas control tuning and leak fixes.",
+                "Testing after repair."
+              ]
+            },
+            {
+              "title": "Timing & warranty",
+              "items": [
+                "Most jobs take 1–2 hours.",
+                "Warranty on work and parts.",
+                "Service across Batumi."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guidance",
+            "items": [
+              {
+                "label": "Diagnostics",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Cooktop repair",
+                "value": "from 90 GEL"
+              },
+              {
+                "label": "Complex work",
+                "value": "by agreement"
+              }
+            ],
+            "note": "Final cost depends on type of cooktop and issue."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Can you repair a gas cooktop on-site?",
+                "answer": "Yes, most jobs are done at your location."
+              },
+              {
+                "question": "What if I smell gas?",
+                "answer": "Turn off the gas and contact us immediately."
+              },
+              {
+                "question": "How much does repair cost?",
+                "answer": "We confirm the price after diagnostics."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need cooktop repair?",
+            "text": "Describe the issue and we will estimate time and cost.",
+            "button": "Call now"
+          }
+        },
+        "ovens": {
+          "title": "Oven Repair in Batumi — On-site Service",
+          "lead": "If your oven does not heat or keeps unstable temperature, we can fix it on-site.",
+          "heading": "Oven repair in Batumi",
+          "sections": [
+            {
+              "title": "Common issues",
+              "items": [
+                "Not heating or not turning on.",
+                "Unstable temperature.",
+                "Convection not working.",
+                "Thermostat or sensor errors."
+              ]
+            },
+            {
+              "title": "What we do",
+              "items": [
+                "Diagnostics and price approval.",
+                "Heater, thermostat, sensor replacement.",
+                "Control and wiring repair.",
+                "Testing after repair."
+              ]
+            },
+            {
+              "title": "Timing & warranty",
+              "items": [
+                "Most jobs take 1–2 hours.",
+                "Warranty on work and parts.",
+                "Service across Batumi."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guidance",
+            "items": [
+              {
+                "label": "Diagnostics",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Oven repair",
+                "value": "from 90 GEL"
+              },
+              {
+                "label": "Parts replacement",
+                "value": "by agreement"
+              }
+            ],
+            "note": "Final cost depends on model and parts."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Why is my oven not heating?",
+                "answer": "Often the issue is the heater or thermostat."
+              },
+              {
+                "question": "Can you fix it the same day?",
+                "answer": "Yes, if no rare parts are needed."
+              },
+              {
+                "question": "Do you provide a warranty?",
+                "answer": "Yes, on work and parts."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need oven repair?",
+            "text": "Tell us the issue and we will suggest a solution.",
+            "button": "Call now"
+          }
+        },
+        "ac-cleaning": {
+          "title": "Air Conditioner Cleaning in Batumi — Service & Disinfection",
+          "lead": "Preventive cleaning, odor removal, and restoring normal cooling.",
+          "heading": "Air conditioner cleaning in Batumi",
+          "sections": [
+            {
+              "title": "When cleaning is needed",
+              "items": [
+                "Bad smell appears.",
+                "Weak cooling.",
+                "Water leaks.",
+                "Increased noise."
+              ]
+            },
+            {
+              "title": "What the service includes",
+              "items": [
+                "Filter and indoor unit cleaning.",
+                "Drain flushing.",
+                "Antibacterial treatment.",
+                "Function check and recommendations."
+              ]
+            },
+            {
+              "title": "Timing & warranty",
+              "items": [
+                "Cleaning usually takes 1–2 hours.",
+                "Care recommendations provided.",
+                "Service across Batumi."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guidance",
+            "items": [
+              {
+                "label": "Basic cleaning",
+                "value": "from 70 GEL"
+              },
+              {
+                "label": "Full cleaning",
+                "value": "from 100 GEL"
+              },
+              {
+                "label": "Antibacterial treatment",
+                "value": "from 120 GEL"
+              }
+            ],
+            "note": "Final price depends on condition and access."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "How often do I need cleaning?",
+                "answer": "Usually 1–2 times per year."
+              },
+              {
+                "question": "Why does bad smell appear?",
+                "answer": "Often due to dirt and moisture inside."
+              },
+              {
+                "question": "How long does it take?",
+                "answer": "Usually 1–2 hours."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need air conditioner cleaning?",
+            "text": "We will schedule a convenient time and come to you.",
+            "button": "Call now"
+          }
         },
         "prices": {
           "title": "Prices — Tech Fix",
@@ -1333,6 +2137,11 @@
       "paths": {
         "home": "/ka/",
         "services": "/ka/services/",
+        "washing-machines": "/ka/services/washing-machines/",
+        "dishwashers": "/ka/services/dishwashers/",
+        "hobs": "/ka/services/hobs/",
+        "ovens": "/ka/services/ovens/",
+        "ac-cleaning": "/ka/services/ac-cleaning/",
         "prices": "/ka/prices/",
         "contacts": "/ka/contacts/"
       },
@@ -1514,6 +2323,38 @@
         ],
         "heroNote": "გამოძახება და დიაგნოსტიკა 20 GEL"
       },
+      "serviceFocus": {
+        "title": "პოპულარული სერვისები",
+        "lead": "გჭირდებათ კონკრეტული სერვისი? აირჩიეთ ზუსტი მიმართულება.",
+        "linkLabel": "დაწვრილებით",
+        "items": [
+          {
+            "key": "washing-machines",
+            "title": "სარეცხი მანქანების რემონტი",
+            "text": "წყალს არ უშვებს, არ წურავს, ხმაურობს ან ჟონავს."
+          },
+          {
+            "key": "dishwashers",
+            "title": "ჭურჭლის სარეცხი მანქანების რემონტი",
+            "text": "არ რეცხავს, არ ათბობს, წყალი რჩება, ჟონვა."
+          },
+          {
+            "key": "hobs",
+            "title": "ქურის ზედაპირების რემონტი",
+            "text": "არ ირთვება, კონფორა არ თბება, სენსორის შეცდომა."
+          },
+          {
+            "key": "ovens",
+            "title": "ღუმლების რემონტი",
+            "text": "არ თბება, ტემპერატურა არ სტაბილურია, არ ირთვება."
+          },
+          {
+            "key": "ac-cleaning",
+            "title": "კონდიციონერების წმენდა",
+            "text": "სუნი, სუსტი გაგრილება, წყლის გაჟონვა."
+          }
+        ]
+      },
       "pages": {
         "services": {
           "title": "სერვისები — Tech Fix",
@@ -1555,6 +2396,371 @@
               ]
             }
           ]
+        },
+        "washing-machines": {
+          "title": "სარეცხი მანქანების რემონტი ბათუმში — ადგილზე მომსახურება",
+          "lead": "ადგილზე დიაგნოსტიკა, გამჭვირვალე ფასი და ძირითადი კვანძების რემონტი. მომსახურება ბათუმში.",
+          "heading": "სარეცხი მანქანების რემონტი ბათუმში",
+          "sections": [
+            {
+              "title": "ხშირი პრობლემები",
+              "items": [
+                "წყალს არ უშვებს ან არ წურავს.",
+                "არ ათბობს წყალს / ტენ-ის შეცდომა.",
+                "ხმაური, ვიბრაცია ან ჟონვა.",
+                "არ ირთვება / მოდულის შეცდომები."
+              ]
+            },
+            {
+              "title": "რას ვაკეთებთ",
+              "items": [
+                "დიაგნოსტიკა და ფასის შეთანხმება.",
+                "ტუმბოს, ტენის, მანჟეტის, რემენის, საკისრების შეცვლა.",
+                "მართვის დაფის რემონტი/შეცვლა.",
+                "შემოწმება რემონტის შემდეგ."
+              ]
+            },
+            {
+              "title": "ვადები და გარანტია",
+              "items": [
+                "უმეტესობა 1–2 საათი.",
+                "გარანტია სამუშაოზე და ნაწილებზე.",
+                "გამოძახება ბათუმში."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასის ორიენტირი",
+            "items": [
+              {
+                "label": "დიაგნოსტიკა",
+                "value": "20 GEL"
+              },
+              {
+                "label": "სარეცხი მანქანის რემონტი",
+                "value": "80 GEL-დან"
+              },
+              {
+                "label": "ნაწილების შეცვლა",
+                "value": "შეთანხმებით"
+              }
+            ],
+            "note": "ზუსტი ფასი დიაგნოსტიკის შემდეგ."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "რამდენ ხანს გრძელდება რემონტი?",
+                "answer": "უმეტესად 1–2 საათი, რთული შემთხვევები — შეთანხმებით."
+              },
+              {
+                "question": "შეძლებთ ადგილზე შეკეთებას?",
+                "answer": "დიახ, უმეტესობას ადგილზე ვაკეთებთ."
+              },
+              {
+                "question": "კლიენტის ნაწილებს იყენებთ?",
+                "answer": "დიახ, შესაბამისობის შემოწმების შემდეგ."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ სარეცხი მანქანის რემონტი?",
+            "text": "აღწერეთ პრობლემა — შევთანხმდებით ფასზე და ვადებზე.",
+            "button": "დარეკვა"
+          }
+        },
+        "dishwashers": {
+          "title": "ჭურჭლის სარეცხი მანქანების რემონტი ბათუმში — ადგილზე მომსახურება",
+          "lead": "ადგილზე დიაგნოსტიკა და რემონტი. ვაგვარებთ გაჟონვას, გადინებას და გათბობას.",
+          "heading": "ჭურჭლის სარეცხი მანქანების რემონტი ბათუმში",
+          "sections": [
+            {
+              "title": "ხშირი პრობლემები",
+              "items": [
+                "არ რეცხავს ან არ აშრობს.",
+                "არ ათბობს წყალს.",
+                "წყალი რჩება / არ იწმინდება.",
+                "გაჟონვა ან სუნი."
+              ]
+            },
+            {
+              "title": "რას ვაკეთებთ",
+              "items": [
+                "ფილტრებისა და სისტემის წმენდა.",
+                "ტუმბოს, ტენის, სენსორების რემონტი/შეცვლა.",
+                "გაჟონვის და დახშობის მოცილება.",
+                "შემოწმება რემონტის შემდეგ."
+              ]
+            },
+            {
+              "title": "ვადები და გარანტია",
+              "items": [
+                "ჩვეულებრივ 1–2 საათი.",
+                "გარანტია სამუშაოზე და ნაწილებზე.",
+                "მომსახურება ბათუმში."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასის ორიენტირი",
+            "items": [
+              {
+                "label": "დიაგნოსტიკა",
+                "value": "20 GEL"
+              },
+              {
+                "label": "ჭურჭლის სარეცხი მანქანის რემონტი",
+                "value": "100 GEL-დან"
+              },
+              {
+                "label": "სისტემის წმენდა",
+                "value": "100 GEL-დან"
+              }
+            ],
+            "note": "ფასი დამოკიდებულია მოდელზე და ნაწილებზე."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "რატომ რჩება წყალი ციკლის შემდეგ?",
+                "answer": "ხშირად მიზეზი ბლოკირება ან ტუმბოს პრობლემაა."
+              },
+              {
+                "question": "საჭიროა რეგულარული წმენდა?",
+                "answer": "დიახ, ეს ამცირებს გაჟონვას და სუნს."
+              },
+              {
+                "question": "რამდენია რემონტის ფასი?",
+                "answer": "ფასს ვადასტურებთ დიაგნოსტიკის შემდეგ."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ ჭურჭლის სარეცხი მანქანის რემონტი?",
+            "text": "აღწერეთ პრობლემა — სწრაფად შევთანხმდებით ფასზე.",
+            "button": "დარეკვა"
+          }
+        },
+        "hobs": {
+          "title": "ქურის ზედაპირების რემონტი ბათუმში — გაზი/ელექტრო",
+          "lead": "გაზისა და ელექტრო ქურის ზედაპირების რემონტი ადგილზე დიაგნოსტიკით.",
+          "heading": "ქურის ზედაპირების რემონტი ბათუმში",
+          "sections": [
+            {
+              "title": "ხშირი პრობლემები",
+              "items": [
+                "კონფორა არ თბება ან სუსტად თბება.",
+                "პანელი არ ირთვება.",
+                "სენსორის ან ინდიკატორების შეცდომები.",
+                "გაზის სუნი ან არასტაბილური ალი."
+              ]
+            },
+            {
+              "title": "რას ვაკეთებთ",
+              "items": [
+                "დიაგნოსტიკა და უსაფრთხოების შემოწმება.",
+                "კონფორების, მოდულების, სენსორების რემონტი/შეცვლა.",
+                "გაზ-კონტროლის მორგება და გაჟონვის მოცილება.",
+                "შემოწმება რემონტის შემდეგ."
+              ]
+            },
+            {
+              "title": "ვადები და გარანტია",
+              "items": [
+                "უმეტესობა 1–2 საათი.",
+                "გარანტია სამუშაოზე და ნაწილებზე.",
+                "მომსახურება ბათუმში."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასის ორიენტირი",
+            "items": [
+              {
+                "label": "დიაგნოსტიკა",
+                "value": "20 GEL"
+              },
+              {
+                "label": "ქურის ზედაპირის რემონტი",
+                "value": "90 GEL-დან"
+              },
+              {
+                "label": "რთული სამუშაოები",
+                "value": "შეთანხმებით"
+              }
+            ],
+            "note": "ფასი დამოკიდებულია ტიპზე და პრობლემაზე."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "შეიძლება გაზის ქურის ადგილზე შეკეთება?",
+                "answer": "დიახ, უმეტესობა ადგილზე კეთდება."
+              },
+              {
+                "question": "რა ვქნა თუ გაზის სუნს ვგრძნობ?",
+                "answer": "გამორთეთ გაზი და დაგვიკავშირდით."
+              },
+              {
+                "question": "რამდენია რემონტის ფასი?",
+                "answer": "ფასს ვადასტურებთ დიაგნოსტიკის შემდეგ."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ ქურის ზედაპირის რემონტი?",
+            "text": "აღწერეთ პრობლემა — შევთანხმდებით ფასზე და ვადებზე.",
+            "button": "დარეკვა"
+          }
+        },
+        "ovens": {
+          "title": "ღუმლების რემონტი ბათუმში — ადგილზე მომსახურება",
+          "lead": "თუ ღუმელი არ თბება ან ტემპერატურა არ სტაბილურია — შევაკეთებთ ადგილზე.",
+          "heading": "ღუმლების რემონტი ბათუმში",
+          "sections": [
+            {
+              "title": "ხშირი პრობლემები",
+              "items": [
+                "არ თბება ან არ ირთვება.",
+                "ტემპერატურა არ სტაბილურია.",
+                "კონვექცია არ მუშაობს.",
+                "სენსორის/თერმოსტატის შეცდომა."
+              ]
+            },
+            {
+              "title": "რას ვაკეთებთ",
+              "items": [
+                "დიაგნოსტიკა და ფასის შეთანხმება.",
+                "ტენის, თერმოსტატის, სენსორის შეცვლა.",
+                "მართვის და ელექტრიკის რემონტი.",
+                "შემოწმება რემონტის შემდეგ."
+              ]
+            },
+            {
+              "title": "ვადები და გარანტია",
+              "items": [
+                "უმეტესობა 1–2 საათი.",
+                "გარანტია სამუშაოზე და ნაწილებზე.",
+                "მომსახურება ბათუმში."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასის ორიენტირი",
+            "items": [
+              {
+                "label": "დიაგნოსტიკა",
+                "value": "20 GEL"
+              },
+              {
+                "label": "ღუმლის რემონტი",
+                "value": "90 GEL-დან"
+              },
+              {
+                "label": "ნაწილების შეცვლა",
+                "value": "შეთანხმებით"
+              }
+            ],
+            "note": "ფასი დამოკიდებულია მოდელზე და ნაწილებზე."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "რატომ არ თბება ღუმელი?",
+                "answer": "ხშირად პრობლემა ტენში ან თერმოსტატშია."
+              },
+              {
+                "question": "შეიძლება იმავე დღეს რემონტი?",
+                "answer": "დიახ, თუ იშვიათი ნაწილი არ არის საჭირო."
+              },
+              {
+                "question": "არის თუ არა გარანტია?",
+                "answer": "დიახ, სამუშაოზე და ნაწილებზე."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ ღუმლის რემონტი?",
+            "text": "აღწერეთ პრობლემა — შემოგთავაზებთ გამოსავალს.",
+            "button": "დარეკვა"
+          }
+        },
+        "ac-cleaning": {
+          "title": "კონდიციონერების წმენდა ბათუმში — მომსახურება და დეზინფექცია",
+          "lead": "პროფილაქტიკური წმენდა, სუნის მოხსნა და ნორმალური გაგრილების აღდგენა.",
+          "heading": "კონდიციონერების წმენდა ბათუმში",
+          "sections": [
+            {
+              "title": "როდის არის საჭირო წმენდა",
+              "items": [
+                "სუნი ჩნდება.",
+                "სუსტი გაგრილება.",
+                "წყლის გაჟონვა.",
+                "გაზრდილი ხმაური."
+              ]
+            },
+            {
+              "title": "რა შედის მომსახურებაში",
+              "items": [
+                "ფილტრებისა და შიდა ბლოკის წმენდა.",
+                "დრენაჟის გაწმენდა.",
+                "ანტიბაქტერიული დამუშავება.",
+                "მუშაობის შემოწმება და რეკომენდაციები."
+              ]
+            },
+            {
+              "title": "ვადები და გარანტია",
+              "items": [
+                "ჩვეულებრივ 1–2 საათი.",
+                "მოვლის რეკომენდაციები.",
+                "მომსახურება ბათუმში."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასის ორიენტირი",
+            "items": [
+              {
+                "label": "ბაზისური წმენდა",
+                "value": "70 GEL-დან"
+              },
+              {
+                "label": "კომპლექსური წმენდა",
+                "value": "100 GEL-დან"
+              },
+              {
+                "label": "ანტიბაქტერიული დამუშავება",
+                "value": "120 GEL-დან"
+              }
+            ],
+            "note": "ფასი დამოკიდებულია მდგომარეობაზე და ხელმისაწვდომობაზე."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "რამდენად ხშირადაა საჭირო წმენდა?",
+                "answer": "ჩვეულებრივ წელიწადში 1–2-ჯერ."
+              },
+              {
+                "question": "რატომ ჩნდება სუნი?",
+                "answer": "ხშირად მიზეზი ჭუჭყი და ტენიანობაა."
+              },
+              {
+                "question": "რამდენ ხანს გრძელდება მომსახურება?",
+                "answer": "ჩვეულებრივ 1–2 საათი."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ კონდიციონერის წმენდა?",
+            "text": "დავგეგმავთ მოსახერხებელ დროს და მოვალთ ადგილზე.",
+            "button": "დარეკვა"
+          }
         },
         "prices": {
           "title": "ფასები — Tech Fix",

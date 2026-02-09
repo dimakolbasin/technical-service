@@ -1,9 +1,21 @@
 const buildUrls = (site, languages) => {
   const urls = new Set();
 
+  const pageKeys = [
+    "services",
+    "prices",
+    "contacts",
+    "about",
+    "washing-machines",
+    "dishwashers",
+    "hobs",
+    "ovens",
+    "ac-cleaning",
+  ];
+
   languages.forEach((lang) => {
     urls.add(site.baseUrl + lang.paths.home);
-    ["services", "prices", "contacts", "about"].forEach((key) => {
+    pageKeys.forEach((key) => {
       if (lang.paths[key]) urls.add(site.baseUrl + lang.paths[key]);
     });
   });
