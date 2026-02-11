@@ -1,11 +1,27 @@
 export async function onRequest(context) {
     function isSearchBot(request) {
         const ua = (request.headers.get("User-Agent") || "").toLowerCase();
+        const yandexTokens = [
+            "yandexbot",
+            "yandexmobilebot",
+            "yandeximages",
+            "yandexvideo",
+            "yandexnews",
+            "yandexblogs",
+            "yandexmedia",
+            "yandexdirect",
+            "yandexcatalog",
+            "yandexmarket",
+            "yandexaccessibilitybot",
+            "yandexfavicons"
+        ];
+        const isYandexBot = yandexTokens.some((token) => ua.includes(token)) ||
+            (ua.includes("yandex") && (ua.includes("bot") || ua.includes("spider")));
 
         // Major bots (add more if needed)
         return (
             ua.includes("googlebot") ||
-            ua.includes("yandexbot") ||
+            isYandexBot ||
             ua.includes("bingbot") ||
             ua.includes("duckduckbot") ||
             ua.includes("baiduspider") ||
