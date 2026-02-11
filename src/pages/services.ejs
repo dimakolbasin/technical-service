@@ -24,7 +24,7 @@
               <p class="card__text"><%= item.text %></p>
             <% } %>
             <a class="card__link" href="<%= lang.paths[item.key] %>">
-              <%= lang.serviceFocus.linkLabel %>
+              <%= lang.serviceFocus.linkLabel %> — <%= item.title %>
             </a>
           </article>
         <% }) %>
