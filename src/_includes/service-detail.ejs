@@ -80,6 +80,32 @@
   </section>
 <% } %>
 
+<% if (page.related && page.related.items && page.related.items.length) { %>
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= page.related.title %></h2>
+        <% if (page.related.lead) { %>
+          <p class="section__lead"><%= page.related.lead %></p>
+        <% } %>
+      </div>
+      <div class="grid grid--3">
+        <% page.related.items.forEach((item)=> { %>
+          <article class="card">
+            <h3 class="card__title"><%= item.title %></h3>
+            <% if (item.text) { %>
+              <p class="card__text"><%= item.text %></p>
+            <% } %>
+            <a class="card__link" href="<%= lang.paths[item.key] %>">
+              <%= item.linkLabel || page.related.linkLabel || lang.home?.guides?.linkLabel || "Подробнее" %>
+            </a>
+          </article>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+<% } %>
+
 <% if (page.cta) { %>
   <section class="section section--surface">
     <div class="container">

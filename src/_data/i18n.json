@@ -21,7 +21,10 @@
         "contacts": "/ru/contacts/",
         "washing-machine-not-draining": "/ru/articles/washing-machine-not-draining/",
         "dishwasher-not-draining": "/ru/articles/dishwasher-not-draining/",
-        "oven-not-heating": "/ru/articles/oven-not-heating/"
+        "oven-not-heating": "/ru/articles/oven-not-heating/",
+        "hob-not-turning-on": "/ru/articles/hob-not-turning-on/",
+        "ac-not-cooling": "/ru/articles/ac-not-cooling/",
+        "ac-cleaning-importance": "/ru/articles/ac-cleaning-importance/"
       },
       "nav": [
         {
@@ -252,6 +255,21 @@
               "title": "Духовка не греет",
               "text": "Типовые причины и варианты ремонта.",
               "key": "oven-not-heating"
+            },
+            {
+              "title": "Варочная поверхность не включается",
+              "text": "Основные причины и когда нужен мастер.",
+              "key": "hob-not-turning-on"
+            },
+            {
+              "title": "Кондиционер не охлаждает",
+              "text": "Причины слабого охлаждения и обслуживание.",
+              "key": "ac-not-cooling"
+            },
+            {
+              "title": "Почему важна чистка кондиционера",
+              "text": "Влажный климат и частота обслуживания.",
+              "key": "ac-cleaning-importance"
             }
           ]
         }
@@ -378,6 +396,21 @@
                 "title": "Духовка не греет",
                 "text": "Типовые причины и варианты ремонта.",
                 "key": "oven-not-heating"
+              },
+              {
+                "title": "Варочная поверхность не включается",
+                "text": "Причины и варианты ремонта.",
+                "key": "hob-not-turning-on"
+              },
+              {
+                "title": "Кондиционер не охлаждает",
+                "text": "Когда нужна чистка и сервис.",
+                "key": "ac-not-cooling"
+              },
+              {
+                "title": "Почему важна чистка кондиционера",
+                "text": "Климат, частота и польза обслуживания.",
+                "key": "ac-cleaning-importance"
               }
             ]
           }
@@ -461,6 +494,19 @@
             "title": "Нужен ремонт стиральной машины?",
             "text": "Опишите проблему — подскажем ориентир по цене и срокам.",
             "button": "Позвонить"
+          },
+          "related": {
+            "title": "Полезные материалы по теме",
+            "lead": "Короткие статьи с причинами, симптомами и советами.",
+            "items": [
+              {
+                "title": "Стиральная машина не сливает воду",
+                "text": "Причины и что можно проверить.",
+                "key": "washing-machine-not-draining",
+                "linkLabel": "Читать"
+              }
+            ],
+            "linkLabel": "Читать"
           }
         },
         "dishwashers": {
@@ -542,6 +588,19 @@
             "title": "Нужен ремонт посудомоечной машины?",
             "text": "Опишите проблему — быстро сориентируем по цене.",
             "button": "Позвонить"
+          },
+          "related": {
+            "title": "Полезные материалы по теме",
+            "lead": "Короткие статьи с причинами, симптомами и советами.",
+            "items": [
+              {
+                "title": "Посудомойка не сливает воду",
+                "text": "Типовые причины и диагностика.",
+                "key": "dishwasher-not-draining",
+                "linkLabel": "Читать"
+              }
+            ],
+            "linkLabel": "Читать"
           }
         },
         "hobs": {
@@ -623,6 +682,19 @@
             "title": "Нужен ремонт варочной поверхности?",
             "text": "Опишите поломку — подскажем цену и сроки.",
             "button": "Позвонить"
+          },
+          "related": {
+            "title": "Полезные материалы по теме",
+            "lead": "Короткие статьи с причинами, симптомами и советами.",
+            "items": [
+              {
+                "title": "Варочная поверхность не включается",
+                "text": "Причины и варианты ремонта.",
+                "key": "hob-not-turning-on",
+                "linkLabel": "Читать"
+              }
+            ],
+            "linkLabel": "Читать"
           }
         },
         "ovens": {
@@ -704,6 +776,19 @@
             "title": "Нужен ремонт духовки?",
             "text": "Опишите проблему — подскажем решение.",
             "button": "Позвонить"
+          },
+          "related": {
+            "title": "Полезные материалы по теме",
+            "lead": "Короткие статьи с причинами, симптомами и советами.",
+            "items": [
+              {
+                "title": "Духовка не греет",
+                "text": "Типовые проблемы и решения.",
+                "key": "oven-not-heating",
+                "linkLabel": "Читать"
+              }
+            ],
+            "linkLabel": "Читать"
           }
         },
         "ac-cleaning": {
@@ -785,6 +870,25 @@
             "title": "Нужна чистка кондиционера?",
             "text": "Запишем на удобное время и приедем по Батуми.",
             "button": "Позвонить"
+          },
+          "related": {
+            "title": "Полезные материалы по теме",
+            "lead": "Короткие статьи с причинами, симптомами и советами.",
+            "items": [
+              {
+                "title": "Кондиционер не охлаждает",
+                "text": "Причины слабого охлаждения.",
+                "key": "ac-not-cooling",
+                "linkLabel": "Читать"
+              },
+              {
+                "title": "Почему важна чистка кондиционера",
+                "text": "Влажный климат и регулярность обслуживания.",
+                "key": "ac-cleaning-importance",
+                "linkLabel": "Читать"
+              }
+            ],
+            "linkLabel": "Читать"
           }
         },
         "prices": {
@@ -1275,6 +1379,22 @@
             "title": "Нужна помощь со стиральной машиной?",
             "text": "Опишите симптом — подскажем решение и сроки.",
             "button": "Позвонить"
+          },
+          "related": {
+            "title": "Связанные услуги",
+            "items": [
+              {
+                "key": "washing-machines",
+                "title": "Ремонт стиральных машин",
+                "text": "Выезд, диагностика и гарантия."
+              },
+              {
+                "key": "prices",
+                "title": "Цены",
+                "text": "Прозрачный прайс и условия работы."
+              }
+            ],
+            "linkLabel": "Смотреть"
           }
         },
         "dishwasher-not-draining": {
@@ -1343,6 +1463,22 @@
             "title": "Нужна помощь с посудомойкой?",
             "text": "Опишите симптом — сориентируем по цене и срокам.",
             "button": "Позвонить"
+          },
+          "related": {
+            "title": "Связанные услуги",
+            "items": [
+              {
+                "key": "dishwashers",
+                "title": "Ремонт посудомоечных машин",
+                "text": "Диагностика и ремонт по Батуми."
+              },
+              {
+                "key": "prices",
+                "title": "Цены",
+                "text": "Прозрачный прайс и условия."
+              }
+            ],
+            "linkLabel": "Смотреть"
           }
         },
         "oven-not-heating": {
@@ -1411,6 +1547,275 @@
             "title": "Нужен ремонт духовки?",
             "text": "Опишите проблему — подскажем решение.",
             "button": "Позвонить"
+          },
+          "related": {
+            "title": "Связанные услуги",
+            "items": [
+              {
+                "key": "ovens",
+                "title": "Ремонт духовых шкафов",
+                "text": "Диагностика и ремонт на месте."
+              },
+              {
+                "key": "prices",
+                "title": "Цены",
+                "text": "Прайс и условия работы."
+              }
+            ],
+            "linkLabel": "Смотреть"
+          }
+        },
+        "hob-not-turning-on": {
+          "title": "Варочная поверхность не включается — причины и ремонт в Батуми",
+          "lead": "Основные причины, что можно проверить и когда нужен мастер в Батуми.",
+          "heading": "Варочная поверхность не включается в Батуми",
+          "sections": [
+            {
+              "title": "Основные причины",
+              "items": [
+                "Нет питания или отключен автомат.",
+                "Сработала блокировка панели (Child Lock).",
+                "Неисправна сенсорная панель или модуль управления.",
+                "Проблема с силовым блоком или кабелем питания."
+              ]
+            },
+            {
+              "title": "Что можно проверить самостоятельно",
+              "items": [
+                "Проверить автомат и розетку.",
+                "Снять блокировку панели (значок замка).",
+                "Протереть сенсорную панель от влаги и загрязнений.",
+                "Проверить, не перегревается ли поверхность."
+              ]
+            },
+            {
+              "title": "Когда нужен мастер",
+              "items": [
+                "Панель не реагирует после проверок.",
+                "Есть ошибки или запах гари.",
+                "Поверхность выключается сама."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Диагностика",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Ремонт варочной поверхности",
+                "value": "от 90 GEL"
+              },
+              {
+                "label": "Ремонт электроники",
+                "value": "от 150 GEL"
+              }
+            ],
+            "note": "Точная стоимость после диагностики."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Можно ли пользоваться, если не включается одна конфорка?",
+                "answer": "Причина может быть в конфорке или модуле, лучше провести диагностику."
+              },
+              {
+                "question": "Сколько занимает ремонт?",
+                "answer": "Обычно 1–2 часа после диагностики."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужен ремонт варочной поверхности?",
+            "text": "Опишите проблему — подскажем решение и сроки.",
+            "button": "Позвонить"
+          },
+          "related": {
+            "title": "Связанные услуги",
+            "items": [
+              {
+                "key": "hobs",
+                "title": "Ремонт варочных поверхностей",
+                "text": "Газ и электро, выезд по городу."
+              },
+              {
+                "key": "prices",
+                "title": "Цены",
+                "text": "Прозрачный прайс и условия."
+              }
+            ],
+            "linkLabel": "Смотреть"
+          }
+        },
+        "ac-not-cooling": {
+          "title": "Кондиционер не охлаждает — причины и обслуживание в Батуми",
+          "lead": "Причины слабого охлаждения, что можно проверить и когда нужен мастер.",
+          "heading": "Кондиционер не охлаждает в Батуми",
+          "sections": [
+            {
+              "title": "Основные причины",
+              "items": [
+                "Загрязнены фильтры или испаритель.",
+                "Недостаток хладагента (утечка).",
+                "Неисправен вентилятор или компрессор.",
+                "Неверный режим или сбой датчиков температуры."
+              ]
+            },
+            {
+              "title": "Что можно проверить самостоятельно",
+              "items": [
+                "Очистить фильтры.",
+                "Проверить режим охлаждения и температуру.",
+                "Убедиться, что наружный блок не забит и не перекрыт."
+              ]
+            },
+            {
+              "title": "Когда нужен мастер",
+              "items": [
+                "Охлаждение не восстановилось после чистки.",
+                "Появились ошибки или протечки.",
+                "Сильный шум, запах или вибрации."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Базовая чистка",
+                "value": "от 70 GEL"
+              },
+              {
+                "label": "Комплексная чистка",
+                "value": "от 100 GEL"
+              },
+              {
+                "label": "Диагностика утечки",
+                "value": "по согласованию"
+              }
+            ],
+            "note": "Стоимость зависит от состояния и доступа."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Как часто нужна чистка?",
+                "answer": "Обычно 1–2 раза в год."
+              },
+              {
+                "question": "Можно ли просто добавить фреон?",
+                "answer": "Сначала нужно найти и устранить утечку."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужно обслуживание кондиционера?",
+            "text": "Опишите проблему — подскажем решение и сроки.",
+            "button": "Позвонить"
+          },
+          "related": {
+            "title": "Связанные услуги",
+            "items": [
+              {
+                "key": "ac-cleaning",
+                "title": "Чистка кондиционеров",
+                "text": "Обслуживание и дезинфекция."
+              },
+              {
+                "key": "prices",
+                "title": "Цены",
+                "text": "Прайс и условия работы."
+              }
+            ],
+            "linkLabel": "Смотреть"
+          }
+        },
+        "ac-cleaning-importance": {
+          "title": "Почему важно регулярно чистить кондиционер в Батуми",
+          "lead": "Влажный морской климат ускоряет загрязнение фильтров, снижает охлаждение и увеличивает расход энергии.",
+          "heading": "Чистка кондиционера в Батуми: зачем и как часто",
+          "sections": [
+            {
+              "title": "Почему в приморском климате загрязнение быстрее",
+              "items": [
+                "Высокая влажность ускоряет образование налёта и запахов.",
+                "Соль и пыль с воздуха оседают на фильтрах и теплообменнике.",
+                "Летняя нагрузка увеличивает количество конденсата."
+              ]
+            },
+            {
+              "title": "Что даёт регулярная чистка",
+              "items": [
+                "Стабильное охлаждение без перегрева.",
+                "Меньше неприятных запахов.",
+                "Экономия электроэнергии и снижение нагрузки на компрессор.",
+                "Продление срока службы техники."
+              ]
+            },
+            {
+              "title": "Как часто чистить",
+              "items": [
+                "Фильтры — раз в 1–2 месяца в сезон.",
+                "Полное обслуживание — 1–2 раза в год.",
+                "При слабом охлаждении или запахе — раньше планового срока."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Базовая чистка",
+                "value": "от 70 GEL"
+              },
+              {
+                "label": "Комплексная чистка",
+                "value": "от 100 GEL"
+              },
+              {
+                "label": "Антибактериальная обработка",
+                "value": "от 120 GEL"
+              }
+            ],
+            "note": "Стоимость зависит от состояния и доступа."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Можно ли чистить кондиционер самостоятельно?",
+                "answer": "Фильтры можно промывать, но полноценную чистку лучше делать у специалиста."
+              },
+              {
+                "question": "Что будет, если не чистить?",
+                "answer": "Снижается охлаждение, растёт расход энергии и появляется запах."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужна чистка кондиционера?",
+            "text": "Запишем на удобное время и приедем по Батуми.",
+            "button": "Позвонить"
+          },
+          "related": {
+            "title": "Связанные услуги",
+            "items": [
+              {
+                "key": "ac-cleaning",
+                "title": "Чистка кондиционеров",
+                "text": "Обслуживание и дезинфекция."
+              },
+              {
+                "key": "prices",
+                "title": "Цены",
+                "text": "Прозрачный прайс и условия."
+              }
+            ],
+            "linkLabel": "Смотреть"
           }
         }
       },
@@ -1448,7 +1853,10 @@
         "contacts": "/en/contacts/",
         "washing-machine-not-draining": "/en/articles/washing-machine-not-draining/",
         "dishwasher-not-draining": "/en/articles/dishwasher-not-draining/",
-        "oven-not-heating": "/en/articles/oven-not-heating/"
+        "oven-not-heating": "/en/articles/oven-not-heating/",
+        "hob-not-turning-on": "/en/articles/hob-not-turning-on/",
+        "ac-not-cooling": "/en/articles/ac-not-cooling/",
+        "ac-cleaning-importance": "/en/articles/ac-cleaning-importance/"
       },
       "nav": [
         {
@@ -1680,6 +2088,21 @@
               "title": "Oven not heating",
               "text": "Typical causes and what to do next.",
               "key": "oven-not-heating"
+            },
+            {
+              "title": "Cooktop not turning on",
+              "text": "Causes and when to call a technician.",
+              "key": "hob-not-turning-on"
+            },
+            {
+              "title": "Air conditioner not cooling",
+              "text": "Weak cooling causes and service.",
+              "key": "ac-not-cooling"
+            },
+            {
+              "title": "Why AC cleaning matters",
+              "text": "Humid climate and service frequency.",
+              "key": "ac-cleaning-importance"
             }
           ]
         }
@@ -1805,6 +2228,21 @@
                 "title": "Oven not heating",
                 "text": "Typical causes and what to do next.",
                 "key": "oven-not-heating"
+              },
+              {
+                "title": "Cooktop not turning on",
+                "text": "Common causes and repair options.",
+                "key": "hob-not-turning-on"
+              },
+              {
+                "title": "Air conditioner not cooling",
+                "text": "When cleaning or service is needed.",
+                "key": "ac-not-cooling"
+              },
+              {
+                "title": "Why AC cleaning matters",
+                "text": "Climate impact and service frequency.",
+                "key": "ac-cleaning-importance"
               }
             ]
           }
@@ -1888,6 +2326,19 @@
             "title": "Need washing machine repair?",
             "text": "Describe the issue — we will estimate time and cost.",
             "button": "Call now"
+          },
+          "related": {
+            "title": "Related guides",
+            "lead": "Short articles with causes, symptoms, and tips.",
+            "items": [
+              {
+                "title": "Washing machine not draining",
+                "text": "Causes and quick checks.",
+                "key": "washing-machine-not-draining",
+                "linkLabel": "Read"
+              }
+            ],
+            "linkLabel": "Read"
           }
         },
         "dishwashers": {
@@ -1969,6 +2420,19 @@
             "title": "Need dishwasher repair?",
             "text": "Tell us the issue and we will estimate the price.",
             "button": "Call now"
+          },
+          "related": {
+            "title": "Related guides",
+            "lead": "Short articles with causes, symptoms, and tips.",
+            "items": [
+              {
+                "title": "Dishwasher not draining",
+                "text": "Common reasons and diagnostics.",
+                "key": "dishwasher-not-draining",
+                "linkLabel": "Read"
+              }
+            ],
+            "linkLabel": "Read"
           }
         },
         "hobs": {
@@ -2050,6 +2514,19 @@
             "title": "Need cooktop repair?",
             "text": "Describe the issue and we will estimate time and cost.",
             "button": "Call now"
+          },
+          "related": {
+            "title": "Related guides",
+            "lead": "Short articles with causes, symptoms, and tips.",
+            "items": [
+              {
+                "title": "Cooktop not turning on",
+                "text": "Causes and repair options.",
+                "key": "hob-not-turning-on",
+                "linkLabel": "Read"
+              }
+            ],
+            "linkLabel": "Read"
           }
         },
         "ovens": {
@@ -2131,6 +2608,19 @@
             "title": "Need oven repair?",
             "text": "Tell us the issue and we will suggest a solution.",
             "button": "Call now"
+          },
+          "related": {
+            "title": "Related guides",
+            "lead": "Short articles with causes, symptoms, and tips.",
+            "items": [
+              {
+                "title": "Oven not heating",
+                "text": "Typical problems and fixes.",
+                "key": "oven-not-heating",
+                "linkLabel": "Read"
+              }
+            ],
+            "linkLabel": "Read"
           }
         },
         "ac-cleaning": {
@@ -2212,6 +2702,25 @@
             "title": "Need air conditioner cleaning?",
             "text": "We will schedule a convenient time and come to you.",
             "button": "Call now"
+          },
+          "related": {
+            "title": "Related guides",
+            "lead": "Short articles with causes, symptoms, and tips.",
+            "items": [
+              {
+                "title": "Air conditioner not cooling",
+                "text": "Weak cooling causes.",
+                "key": "ac-not-cooling",
+                "linkLabel": "Read"
+              },
+              {
+                "title": "Why AC cleaning matters",
+                "text": "Humid climate and service frequency.",
+                "key": "ac-cleaning-importance",
+                "linkLabel": "Read"
+              }
+            ],
+            "linkLabel": "Read"
           }
         },
         "prices": {
@@ -2701,6 +3210,22 @@
             "title": "Need help with a washing machine?",
             "text": "Describe the issue — we’ll suggest options and timing.",
             "button": "Call now"
+          },
+          "related": {
+            "title": "Related services",
+            "items": [
+              {
+                "key": "washing-machines",
+                "title": "Washing machine repair",
+                "text": "On-site diagnostics and warranty."
+              },
+              {
+                "key": "prices",
+                "title": "Prices",
+                "text": "Transparent pricing and terms."
+              }
+            ],
+            "linkLabel": "Open"
           }
         },
         "dishwasher-not-draining": {
@@ -2769,6 +3294,22 @@
             "title": "Need help with a dishwasher?",
             "text": "Describe the issue — we’ll estimate timing and cost.",
             "button": "Call now"
+          },
+          "related": {
+            "title": "Related services",
+            "items": [
+              {
+                "key": "dishwashers",
+                "title": "Dishwasher repair",
+                "text": "Diagnostics and repair in Batumi."
+              },
+              {
+                "key": "prices",
+                "title": "Prices",
+                "text": "Pricing and service terms."
+              }
+            ],
+            "linkLabel": "Open"
           }
         },
         "oven-not-heating": {
@@ -2837,6 +3378,275 @@
             "title": "Need oven repair?",
             "text": "Describe the issue — we’ll suggest the next step.",
             "button": "Call now"
+          },
+          "related": {
+            "title": "Related services",
+            "items": [
+              {
+                "key": "ovens",
+                "title": "Oven repair",
+                "text": "On-site diagnostics and repair."
+              },
+              {
+                "key": "prices",
+                "title": "Prices",
+                "text": "Pricing and service terms."
+              }
+            ],
+            "linkLabel": "Open"
+          }
+        },
+        "hob-not-turning-on": {
+          "title": "Cooktop not turning on — causes and repair in Batumi",
+          "lead": "Common reasons, quick checks, and when to call a technician in Batumi.",
+          "heading": "Cooktop not turning on in Batumi",
+          "sections": [
+            {
+              "title": "Common causes",
+              "items": [
+                "No power or breaker is off.",
+                "Control lock (Child Lock) is enabled.",
+                "Touch panel or control module failure.",
+                "Power unit or cable issue."
+              ]
+            },
+            {
+              "title": "What you can check",
+              "items": [
+                "Check the breaker and outlet.",
+                "Disable control lock (lock icon).",
+                "Wipe the touch panel from moisture and dirt.",
+                "Make sure the cooktop is not overheated."
+              ]
+            },
+            {
+              "title": "When to call a technician",
+              "items": [
+                "Panel does not respond after checks.",
+                "Errors appear or burning smell.",
+                "Cooktop turns off by itself."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guide",
+            "items": [
+              {
+                "label": "Diagnostics",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Cooktop repair",
+                "value": "from 90 GEL"
+              },
+              {
+                "label": "Control repair",
+                "value": "from 150 GEL"
+              }
+            ],
+            "note": "Final price after diagnostics."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Can I use it if one zone does not turn on?",
+                "answer": "Often it is a zone or module issue, diagnostics are recommended."
+              },
+              {
+                "question": "How long does repair take?",
+                "answer": "Typically 1–2 hours after diagnostics."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need cooktop repair?",
+            "text": "Describe the issue — we will suggest the best option and timing.",
+            "button": "Call now"
+          },
+          "related": {
+            "title": "Related services",
+            "items": [
+              {
+                "key": "hobs",
+                "title": "Cooktop repair",
+                "text": "Gas and electric cooktops."
+              },
+              {
+                "key": "prices",
+                "title": "Prices",
+                "text": "Transparent pricing and terms."
+              }
+            ],
+            "linkLabel": "Open"
+          }
+        },
+        "ac-not-cooling": {
+          "title": "Air conditioner not cooling — causes and service in Batumi",
+          "lead": "Why cooling is weak, what to check, and when to call a technician.",
+          "heading": "Air conditioner not cooling in Batumi",
+          "sections": [
+            {
+              "title": "Common causes",
+              "items": [
+                "Dirty filters or evaporator.",
+                "Low refrigerant (leak).",
+                "Fan or compressor issues.",
+                "Wrong mode or sensor errors."
+              ]
+            },
+            {
+              "title": "What you can check",
+              "items": [
+                "Clean the filters.",
+                "Check cooling mode and temperature.",
+                "Make sure the outdoor unit is not blocked."
+              ]
+            },
+            {
+              "title": "When to call a technician",
+              "items": [
+                "No improvement after cleaning.",
+                "Errors or leaks appear.",
+                "Strong noise, smell, or vibration."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guide",
+            "items": [
+              {
+                "label": "Basic cleaning",
+                "value": "from 70 GEL"
+              },
+              {
+                "label": "Full cleaning",
+                "value": "from 100 GEL"
+              },
+              {
+                "label": "Leak diagnostics",
+                "value": "by agreement"
+              }
+            ],
+            "note": "Cost depends on condition and access."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "How often should I clean it?",
+                "answer": "Usually 1–2 times per year."
+              },
+              {
+                "question": "Can I just add refrigerant?",
+                "answer": "First the leak must be found and fixed."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need AC service?",
+            "text": "Describe the issue — we will suggest the next steps.",
+            "button": "Call now"
+          },
+          "related": {
+            "title": "Related services",
+            "items": [
+              {
+                "key": "ac-cleaning",
+                "title": "Air conditioner cleaning",
+                "text": "Service and disinfection."
+              },
+              {
+                "key": "prices",
+                "title": "Prices",
+                "text": "Pricing and service terms."
+              }
+            ],
+            "linkLabel": "Open"
+          }
+        },
+        "ac-cleaning-importance": {
+          "title": "Why regular AC cleaning matters in Batumi",
+          "lead": "Humid seaside climate clogs filters faster, weakens cooling, and increases energy use.",
+          "heading": "AC cleaning in Batumi: why and how often",
+          "sections": [
+            {
+              "title": "Why seaside climate speeds up buildup",
+              "items": [
+                "High humidity accelerates buildup and odors.",
+                "Salt and dust settle on filters and the coil.",
+                "Heavy summer use increases condensate."
+              ]
+            },
+            {
+              "title": "Benefits of regular cleaning",
+              "items": [
+                "Stable cooling without overheating.",
+                "Fewer odors.",
+                "Lower energy use and reduced compressor load.",
+                "Longer equipment life."
+              ]
+            },
+            {
+              "title": "How often to clean",
+              "items": [
+                "Filters — every 1–2 months in season.",
+                "Full service — 1–2 times a year.",
+                "If cooling is weak or there is odor — earlier."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guide",
+            "items": [
+              {
+                "label": "Basic cleaning",
+                "value": "from 70 GEL"
+              },
+              {
+                "label": "Full cleaning",
+                "value": "from 100 GEL"
+              },
+              {
+                "label": "Antibacterial treatment",
+                "value": "from 120 GEL"
+              }
+            ],
+            "note": "Cost depends on condition and access."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Can I clean it myself?",
+                "answer": "You can rinse filters, but full cleaning is best done by a technician."
+              },
+              {
+                "question": "What happens if I skip cleaning?",
+                "answer": "Cooling weakens, energy use goes up, and odors appear."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need AC cleaning?",
+            "text": "We can schedule a convenient time in Batumi.",
+            "button": "Call now"
+          },
+          "related": {
+            "title": "Related services",
+            "items": [
+              {
+                "key": "ac-cleaning",
+                "title": "Air conditioner cleaning",
+                "text": "Service and disinfection."
+              },
+              {
+                "key": "prices",
+                "title": "Prices",
+                "text": "Transparent pricing and terms."
+              }
+            ],
+            "linkLabel": "Open"
           }
         }
       },
@@ -2874,7 +3684,10 @@
         "contacts": "/ka/contacts/",
         "washing-machine-not-draining": "/ka/articles/washing-machine-not-draining/",
         "dishwasher-not-draining": "/ka/articles/dishwasher-not-draining/",
-        "oven-not-heating": "/ka/articles/oven-not-heating/"
+        "oven-not-heating": "/ka/articles/oven-not-heating/",
+        "hob-not-turning-on": "/ka/articles/hob-not-turning-on/",
+        "ac-not-cooling": "/ka/articles/ac-not-cooling/",
+        "ac-cleaning-importance": "/ka/articles/ac-cleaning-importance/"
       },
       "nav": [
         {
@@ -3106,6 +3919,21 @@
               "title": "ღუმელი არ ათბობს",
               "text": "ტიპური მიზეზები და რა უნდა გააკეთოთ.",
               "key": "oven-not-heating"
+            },
+            {
+              "title": "ქურის ზედაპირი არ ირთვება",
+              "text": "მიზეზები და როდის არის საჭირო ოსტატი.",
+              "key": "hob-not-turning-on"
+            },
+            {
+              "title": "კონდიციონერი არ აცივებს",
+              "text": "სუსტი გაგრილების მიზეზები და მომსახურება.",
+              "key": "ac-not-cooling"
+            },
+            {
+              "title": "რატომ არის მნიშვნელოვანი კონდიციონერის წმენდა",
+              "text": "კლიმატი და მომსახურების სიხშირე.",
+              "key": "ac-cleaning-importance"
             }
           ]
         }
@@ -3231,6 +4059,21 @@
                 "title": "ღუმელი არ ათბობს",
                 "text": "ტიპური მიზეზები და რა უნდა გააკეთოთ.",
                 "key": "oven-not-heating"
+              },
+              {
+                "title": "ქურის ზედაპირი არ ირთვება",
+                "text": "მიზეზები და რემონტის ვარიანტები.",
+                "key": "hob-not-turning-on"
+              },
+              {
+                "title": "კონდიციონერი არ აცივებს",
+                "text": "როდის არის საჭირო წმენდა და სერვისი.",
+                "key": "ac-not-cooling"
+              },
+              {
+                "title": "რატომ არის მნიშვნელოვანი კონდიციონერის წმენდა",
+                "text": "კლიმატი და მომსახურების სიხშირე.",
+                "key": "ac-cleaning-importance"
               }
             ]
           }
@@ -3314,6 +4157,19 @@
             "title": "გჭირდებათ სარეცხი მანქანის რემონტი?",
             "text": "აღწერეთ პრობლემა — შევთანხმდებით ფასზე და ვადებზე.",
             "button": "დარეკვა"
+          },
+          "related": {
+            "title": "თემასთან დაკავშირებული სტატიები",
+            "lead": "მოკლე სტატიები მიზეზებით, სიმპტომებით და რჩევებით.",
+            "items": [
+              {
+                "title": "სარეცხი მანქანა არ იცლის წყალს",
+                "text": "მიზეზები და სწრაფი შემოწმებები.",
+                "key": "washing-machine-not-draining",
+                "linkLabel": "წაკითხვა"
+              }
+            ],
+            "linkLabel": "წაკითხვა"
           }
         },
         "dishwashers": {
@@ -3395,6 +4251,19 @@
             "title": "გჭირდებათ ჭურჭლის სარეცხი მანქანის რემონტი?",
             "text": "აღწერეთ პრობლემა — სწრაფად შევთანხმდებით ფასზე.",
             "button": "დარეკვა"
+          },
+          "related": {
+            "title": "თემასთან დაკავშირებული სტატიები",
+            "lead": "მოკლე სტატიები მიზეზებით, სიმპტომებით და რჩევებით.",
+            "items": [
+              {
+                "title": "ჭურჭლის სარეცხი მანქანა არ იცლის წყალს",
+                "text": "ხშირი მიზეზები და დიაგნოსტიკა.",
+                "key": "dishwasher-not-draining",
+                "linkLabel": "წაკითხვა"
+              }
+            ],
+            "linkLabel": "წაკითხვა"
           }
         },
         "hobs": {
@@ -3476,6 +4345,19 @@
             "title": "გჭირდებათ ქურის ზედაპირის რემონტი?",
             "text": "აღწერეთ პრობლემა — შევთანხმდებით ფასზე და ვადებზე.",
             "button": "დარეკვა"
+          },
+          "related": {
+            "title": "თემასთან დაკავშირებული სტატიები",
+            "lead": "მოკლე სტატიები მიზეზებით, სიმპტომებით და რჩევებით.",
+            "items": [
+              {
+                "title": "ქურის ზედაპირი არ ირთვება",
+                "text": "მიზეზები და რემონტის ვარიანტები.",
+                "key": "hob-not-turning-on",
+                "linkLabel": "წაკითხვა"
+              }
+            ],
+            "linkLabel": "წაკითხვა"
           }
         },
         "ovens": {
@@ -3557,6 +4439,19 @@
             "title": "გჭირდებათ ღუმლის რემონტი?",
             "text": "აღწერეთ პრობლემა — შემოგთავაზებთ გამოსავალს.",
             "button": "დარეკვა"
+          },
+          "related": {
+            "title": "თემასთან დაკავშირებული სტატიები",
+            "lead": "მოკლე სტატიები მიზეზებით, სიმპტომებით და რჩევებით.",
+            "items": [
+              {
+                "title": "ღუმელი არ ათბობს",
+                "text": "ტიპური პრობლემები და გადაწყვეტილებები.",
+                "key": "oven-not-heating",
+                "linkLabel": "წაკითხვა"
+              }
+            ],
+            "linkLabel": "წაკითხვა"
           }
         },
         "ac-cleaning": {
@@ -3638,6 +4533,25 @@
             "title": "გჭირდებათ კონდიციონერის წმენდა?",
             "text": "დავგეგმავთ მოსახერხებელ დროს და მოვალთ ადგილზე.",
             "button": "დარეკვა"
+          },
+          "related": {
+            "title": "თემასთან დაკავშირებული სტატიები",
+            "lead": "მოკლე სტატიები მიზეზებით, სიმპტომებით და რჩევებით.",
+            "items": [
+              {
+                "title": "კონდიციონერი არ აცივებს",
+                "text": "სუსტი გაგრილების მიზეზები.",
+                "key": "ac-not-cooling",
+                "linkLabel": "წაკითხვა"
+              },
+              {
+                "title": "რატომ არის მნიშვნელოვანი კონდიციონერის წმენდა",
+                "text": "კლიმატი და მომსახურების სიხშირე.",
+                "key": "ac-cleaning-importance",
+                "linkLabel": "წაკითხვა"
+              }
+            ],
+            "linkLabel": "წაკითხვა"
           }
         },
         "prices": {
@@ -4127,6 +5041,22 @@
             "title": "გჭირდებათ სარეცხი მანქანის შეკეთება?",
             "text": "აღწერეთ პრობლემა — მოგცემთ რეკომენდაციას და ვადას.",
             "button": "დარეკეთ"
+          },
+          "related": {
+            "title": "დაკავშირებული სერვისები",
+            "items": [
+              {
+                "key": "washing-machines",
+                "title": "სარეცხი მანქანის რემონტი",
+                "text": "დიაგნოსტიკა და გარანტია."
+              },
+              {
+                "key": "prices",
+                "title": "ფასები",
+                "text": "გამჭვირვალე ფასები და პირობები."
+              }
+            ],
+            "linkLabel": "ნახვა"
           }
         },
         "dishwasher-not-draining": {
@@ -4195,6 +5125,22 @@
             "title": "გჭირდებათ დახმარება ჭურჭლის სარეცხთან?",
             "text": "აღწერეთ პრობლემა — შეგირჩევთ გადაწყვეტილებას.",
             "button": "დარეკეთ"
+          },
+          "related": {
+            "title": "დაკავშირებული სერვისები",
+            "items": [
+              {
+                "key": "dishwashers",
+                "title": "ჭურჭლის სარეცხი მანქანის რემონტი",
+                "text": "დიაგნოსტიკა და რემონტი ბათუმში."
+              },
+              {
+                "key": "prices",
+                "title": "ფასები",
+                "text": "ფასები და პირობები."
+              }
+            ],
+            "linkLabel": "ნახვა"
           }
         },
         "oven-not-heating": {
@@ -4263,6 +5209,275 @@
             "title": "გჭირდებათ ღუმელის რემონტი?",
             "text": "აღწერეთ პრობლემა — მოგცემთ რეკომენდაციას.",
             "button": "დარეკეთ"
+          },
+          "related": {
+            "title": "დაკავშირებული სერვისები",
+            "items": [
+              {
+                "key": "ovens",
+                "title": "ღუმელის რემონტი",
+                "text": "დიაგნოსტიკა და რემონტი ადგილზე."
+              },
+              {
+                "key": "prices",
+                "title": "ფასები",
+                "text": "ფასები და პირობები."
+              }
+            ],
+            "linkLabel": "ნახვა"
+          }
+        },
+        "hob-not-turning-on": {
+          "title": "ქურის ზედაპირი არ ირთვება — მიზეზები და რემონტი ბათუმში",
+          "lead": "ძირითადი მიზეზები, რას შეამოწმებთ და როდის არის საჭირო ოსტატი ბათუმში.",
+          "heading": "ქურის ზედაპირი არ ირთვება ბათუმში",
+          "sections": [
+            {
+              "title": "ძირითადი მიზეზები",
+              "items": [
+                "კვება არ არის ან ავტომატი გამორთულია.",
+                "ჩართულია პანელის ბლოკირება (Child Lock).",
+                "სენსორული პანელის ან მართვის მოდულის პრობლემა.",
+                "ძალის ბლოკის ან კვების კაბელის პრობლემა."
+              ]
+            },
+            {
+              "title": "რისი შემოწმება შეგიძლიათ",
+              "items": [
+                "შეამოწმეთ ავტომატი და როზეტი.",
+                "გამორთეთ პანელის ბლოკირება (ჩაკეტვის ნიშანი).",
+                "გაასუფთავეთ სენსორული პანელი ტენიანობისგან.",
+                "შეამოწმეთ, ხომ არ გადახურდა ზედაპირი."
+              ]
+            },
+            {
+              "title": "როდის არის საჭირო ოსტატი",
+              "items": [
+                "შემოწმებების შემდეგაც არ რეაგირებს.",
+                "ჩნდება შეცდომები ან დაწვის სუნი.",
+                "თავად ითიშება მუშაობისას."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასების ორიენტირები",
+            "items": [
+              {
+                "label": "დიაგნოსტიკა",
+                "value": "20 GEL"
+              },
+              {
+                "label": "ქურის ზედაპირის რემონტი",
+                "value": "90 GEL-დან"
+              },
+              {
+                "label": "მართვის რემონტი",
+                "value": "150 GEL-დან"
+              }
+            ],
+            "note": "საბოლოო ფასი დიაგნოსტიკის შემდეგ."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "შეიძლება თუ არა გამოყენება, თუ ერთი ზონა არ ირთვება?",
+                "answer": "ხშირად მიზეზი ზონაში ან მოდულშია და საჭიროა დიაგნოსტიკა."
+              },
+              {
+                "question": "რამდენ ხანს გრძელდება რემონტი?",
+                "answer": "ჩვეულებრივ 1–2 საათი დიაგნოსტიკის შემდეგ."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ ქურის ზედაპირის რემონტი?",
+            "text": "აღწერეთ პრობლემა — გირჩევთ სწორ გადაწყვეტილებას და ვადას.",
+            "button": "დარეკეთ"
+          },
+          "related": {
+            "title": "დაკავშირებული სერვისები",
+            "items": [
+              {
+                "key": "hobs",
+                "title": "ქურის ზედაპირების რემონტი",
+                "text": "გაზი და ელექტრო ზედაპირები."
+              },
+              {
+                "key": "prices",
+                "title": "ფასები",
+                "text": "გამჭვირვალე ფასები და პირობები."
+              }
+            ],
+            "linkLabel": "ნახვა"
+          }
+        },
+        "ac-not-cooling": {
+          "title": "კონდიციონერი არ აცივებს — მიზეზები და მომსახურება ბათუმში",
+          "lead": "სუსტი გაგრილების მიზეზები, რას შეამოწმებთ და როდის არის საჭირო ოსტატი.",
+          "heading": "კონდიციონერი არ აცივებს ბათუმში",
+          "sections": [
+            {
+              "title": "ძირითადი მიზეზები",
+              "items": [
+                "დაბინძურებულია ფილტრები ან აორთქლავი.",
+                "ფრეონის დეფიციტი (გაჟონვა).",
+                "ვენტილატორის ან კომპრესორის პრობლემა.",
+                "არასწორი რეჟიმი ან სენსორების შეცდომები."
+              ]
+            },
+            {
+              "title": "რისი შემოწმება შეგიძლიათ",
+              "items": [
+                "გაასუფთავეთ ფილტრები.",
+                "შეამოწმეთ გაგრილების რეჟიმი და ტემპერატურა.",
+                "დარწმუნდით, რომ გარე ბლოკი არ არის დაბლოკილი."
+              ]
+            },
+            {
+              "title": "როდის არის საჭირო ოსტატი",
+              "items": [
+                "წმენდის შემდეგაც არ ცივდება.",
+                "ჩნდება შეცდომები ან გაჟონვა.",
+                "ძლიერი ხმაური, სუნი ან ვიბრაცია."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასების ორიენტირები",
+            "items": [
+              {
+                "label": "ბაზისური წმენდა",
+                "value": "70 GEL-დან"
+              },
+              {
+                "label": "კომპლექსური წმენდა",
+                "value": "100 GEL-დან"
+              },
+              {
+                "label": "გაჟონვის დიაგნოსტიკა",
+                "value": "შეთანხმებით"
+              }
+            ],
+            "note": "ფასი დამოკიდებულია მდგომარეობასა და ხელმისაწვდომობაზე."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "რამდენჯერ არის საჭირო წმენდა?",
+                "answer": "ჩვეულებრივ წელიწადში 1–2-ჯერ."
+              },
+              {
+                "question": "შეიძლება თუ არა უბრალოდ ფრეონის დამატება?",
+                "answer": "პირველ რიგში უნდა ვიპოვოთ და მოვაშოროთ გაჟონვა."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ კონდიციონერის მომსახურება?",
+            "text": "აღწერეთ პრობლემა — გირჩევთ შემდეგ ნაბიჯებს.",
+            "button": "დარეკეთ"
+          },
+          "related": {
+            "title": "დაკავშირებული სერვისები",
+            "items": [
+              {
+                "key": "ac-cleaning",
+                "title": "კონდიციონერის წმენდა",
+                "text": "მომსახურება და დეზინფექცია."
+              },
+              {
+                "key": "prices",
+                "title": "ფასები",
+                "text": "ფასები და პირობები."
+              }
+            ],
+            "linkLabel": "ნახვა"
+          }
+        },
+        "ac-cleaning-importance": {
+          "title": "რატომ არის მნიშვნელოვანი კონდიციონერის რეგულარული წმენდა ბათუმში",
+          "lead": "ნესტიანი ზღვის კლიმატი აჩქარებს დაბინძურებას, ასუსტებს გაგრილებას და ზრდის ენერგომოხმარებას.",
+          "heading": "კონდიციონერის წმენდა ბათუმში: რატომ და რამდენად ხშირად",
+          "sections": [
+            {
+              "title": "რატომ იბინძურება უფრო სწრაფად",
+              "items": [
+                "მაღალი ტენიანობა აჩქარებს ნადებს და სუნს.",
+                "მარილი და მტვერი გროვდება ფილტრებზე და კოილზე.",
+                "ზაფხულის დატვირთვა ზრდის კონდენსატის რაოდენობას."
+              ]
+            },
+            {
+              "title": "რა სარგებელი აქვს რეგულარულ წმენდას",
+              "items": [
+                "სტაბილური გაგრილება გადახურების გარეშე.",
+                "ნაკლები უსიამოვნო სუნი.",
+                "ენერგომოხმარების შემცირება და კომპრესორის დაზოგვა.",
+                "ტექნიკის ხანგრძლივი მუშაობა."
+              ]
+            },
+            {
+              "title": "რამდენად ხშირად უნდა გაიწმინდოს",
+              "items": [
+                "ფილტრები — სეზონზე ყოველ 1–2 თვეში.",
+                "სრული მომსახურება — წელიწადში 1–2-ჯერ.",
+                "სუსტი გაგრილების ან სუნისას — ადრე."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასების ორიენტირები",
+            "items": [
+              {
+                "label": "ბაზისური წმენდა",
+                "value": "70 GEL-დან"
+              },
+              {
+                "label": "კომპლექსური წმენდა",
+                "value": "100 GEL-დან"
+              },
+              {
+                "label": "ანტიბაქტერიული დამუშავება",
+                "value": "120 GEL-დან"
+              }
+            ],
+            "note": "ფასი დამოკიდებულია მდგომარეობასა და ხელმისაწვდომობაზე."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "შეიძლება თუ არა თვითონ წმენდა?",
+                "answer": "ფილტრების წმენდა შესაძლებელია, სრულ მომსახურებას კი სპეციალისტი სჭირდება."
+              },
+              {
+                "question": "რა მოხდება თუ არ გავწმენდ?",
+                "answer": "დასუსტდება გაგრილება, გაიზრდება ენერგომოხმარება და გაჩნდება სუნი."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ კონდიციონერის წმენდა?",
+            "text": "დავგეგმავთ მოსვლას თქვენთვის მოსახერხებელ დროს.",
+            "button": "დარეკეთ"
+          },
+          "related": {
+            "title": "დაკავშირებული სერვისები",
+            "items": [
+              {
+                "key": "ac-cleaning",
+                "title": "კონდიციონერის წმენდა",
+                "text": "მომსახურება და დეზინფექცია."
+              },
+              {
+                "key": "prices",
+                "title": "ფასები",
+                "text": "გამჭვირვალე ფასები და პირობები."
+              }
+            ],
+            "linkLabel": "ნახვა"
           }
         }
       },

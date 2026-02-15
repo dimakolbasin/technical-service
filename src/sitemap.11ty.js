@@ -14,6 +14,9 @@ const buildUrls = (site, languages) => {
     "washing-machine-not-draining",
     "dishwasher-not-draining",
     "oven-not-heating",
+    "hob-not-turning-on",
+    "ac-not-cooling",
+    "ac-cleaning-importance",
   ];
 
   languages.forEach((lang) => {
