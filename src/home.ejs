@@ -7,6 +7,11 @@
       <p class="hero__lead">
         <%= lang.home.lead %>
       </p>
+      <% if (lang.home.areaNote) { %>
+        <p class="hero__lead">
+          <%= lang.home.areaNote %>
+        </p>
+      <% } %>
       <% if (lang.home.chips) { %>
         <div class="hero__chips">
           <% lang.home.chips.forEach((chip)=> { %>
@@ -163,6 +168,50 @@
     </div>
   </div>
 </section>
+
+<% if (lang.home.brands) { %>
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= lang.home.brands.title %></h2>
+        <% if (lang.home.brands.lead) { %>
+          <p class="section__lead"><%= lang.home.brands.lead %></p>
+        <% } %>
+      </div>
+      <div class="badge-row">
+        <% lang.home.brands.items.forEach((brand)=> { %>
+          <span class="badge badge--outline"><%= brand %></span>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+<% } %>
+
+<% if (lang.home.guides) { %>
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= lang.home.guides.title %></h2>
+        <% if (lang.home.guides.lead) { %>
+          <p class="section__lead"><%= lang.home.guides.lead %></p>
+        <% } %>
+      </div>
+      <div class="grid grid--3">
+        <% lang.home.guides.items.forEach((item)=> { %>
+          <article class="card">
+            <h3 class="card__title"><%= item.title %></h3>
+            <% if (item.text) { %>
+              <p class="card__text"><%= item.text %></p>
+            <% } %>
+            <a class="card__link" href="<%= lang.paths[item.key] %>">
+              <%= item.linkLabel || lang.home.guides.linkLabel %>
+            </a>
+          </article>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+<% } %>
 
 <% if (lang.serviceFocus) { %>
   <section class="section">

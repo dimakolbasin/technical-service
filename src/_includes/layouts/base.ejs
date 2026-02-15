@@ -37,7 +37,28 @@
 	              <% if (pageKey) {
 	                const pageUrl = site.baseUrl + lang.paths[pageKey];
 	                const waNumber = site.phone.replace(/[^0-9]/g, '');
+	                const address = site.address || {};
+	                const addressLocality = address.locality || "Batumi";
+	                const addressCountry = address.country || "GE";
+	                const areaServed = Array.isArray(lang.areasList) && lang.areasList.length ? lang.areasList : "Batumi";
+	                const hasMap = [site.googleMaps, site.yandexMaps].filter(Boolean);
+	                const priceRange = site.priceRange || "GEL 20+";
 	                const sameAs = [site.telegram, `https://wa.me/${waNumber}`, site.facebook].filter(Boolean);
+	                const pageFaq = pageKey === "home"
+	                  ? (lang.home && lang.home.faq ? lang.home.faq : null)
+	                  : (lang.pages && lang.pages[pageKey] ? lang.pages[pageKey].faq : null);
+	                const faqSchema = pageFaq && Array.isArray(pageFaq.items) && pageFaq.items.length ? {
+	                  "@context": "https://schema.org",
+	                  "@type": "FAQPage",
+	                  "mainEntity": pageFaq.items.map((item) => ({
+	                    "@type": "Question",
+	                    "name": item.question,
+	                    "acceptedAnswer": {
+	                      "@type": "Answer",
+	                      "text": item.answer
+	                    }
+	                  }))
+	                } : null;
 
 	                const localBusiness = {
 	                  "@context": "https://schema.org",
@@ -49,10 +70,15 @@
 	                  "image": `${site.baseUrl}/assets/icons/meta-pic.webp`,
 	                  "address": {
 	                    "@type": "PostalAddress",
-	                    "addressLocality": "Batumi",
-	                    "addressCountry": "GE"
+	                    "streetAddress": address.street,
+	                    "postalCode": address.postalCode,
+	                    "addressLocality": addressLocality,
+	                    "addressRegion": address.region,
+	                    "addressCountry": addressCountry
 	                  },
-	                  "areaServed": "Batumi",
+	                  "areaServed": areaServed,
+	                  "hasMap": hasMap.length ? hasMap : undefined,
+	                  "priceRange": priceRange,
 	                  "openingHoursSpecification": [
 	                    {
 	                      "@type": "OpeningHoursSpecification",
@@ -85,7 +111,7 @@
 	                    "telephone": site.phone,
 	                    "url": site.baseUrl
 	                  },
-	                  "areaServed": "Batumi",
+	                  "areaServed": areaServed,
 	                  "url": pageUrl,
 	                  "description": description
 	                } : null;
@@ -113,6 +139,9 @@
 	                <script type="application/ld+json"><%- JSON.stringify(breadcrumbs) %></script>
 	                <% if (serviceSchema) { %>
 	                  <script type="application/ld+json"><%- JSON.stringify(serviceSchema) %></script>
+	                <% } %>
+	                <% if (faqSchema) { %>
+	                  <script type="application/ld+json"><%- JSON.stringify(faqSchema) %></script>
 	                <% } %>
 	                <% } %>
 </head>

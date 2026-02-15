@@ -18,7 +18,10 @@
         "ovens": "/ru/services/ovens/",
         "ac-cleaning": "/ru/services/ac-cleaning/",
         "prices": "/ru/prices/",
-        "contacts": "/ru/contacts/"
+        "contacts": "/ru/contacts/",
+        "washing-machine-not-draining": "/ru/articles/washing-machine-not-draining/",
+        "dishwasher-not-draining": "/ru/articles/dishwasher-not-draining/",
+        "oven-not-heating": "/ru/articles/oven-not-heating/"
       },
       "nav": [
         {
@@ -44,14 +47,14 @@
         "langsTitle": "Языки",
         "phoneLabel": "Телефон",
         "emailLabel": "Почта",
-        "areas": "Батуми"
+        "areas": "Батуми: Старый Батуми, Руставели, Химшиашвили, Багратиони, Агмашенебели, Джавахишвили, Тамар, Бони-Городок"
       },
       "home": {
-        "metaTitle": "Ремонт бытовой техники в Батуми — выезд и гарантия",
-        "metaDescription": "Сервис ремонта бытовой техники в Батуми. Выезд по городу, диагностика, прозрачные цены и гарантия на работы.",
+        "metaTitle": "Ремонт бытовой техники в Батуми — выезд, диагностика, гарантия",
+        "metaDescription": "Ремонт бытовой техники в Батуми. Выезд по районам, диагностика, прозрачные цены и гарантия на работы.",
         "badge": "Батуми",
-        "title": "Ремонт бытовой техники с выездом по Батуми",
-        "lead": "Диагностика на месте, прозрачные цены, гарантия на работы и запчасти. Работаем быстро и аккуратно.",
+        "title": "Ремонт бытовой техники в Батуми",
+        "lead": "Ремонт бытовой техники в Батуми: диагностика на месте, прозрачные цены, гарантия на работы и запчасти.",
         "ctaPrimary": "Позвонить",
         "ctaSecondary": "Написать в WhatsApp",
         "heroCardIcon": "icon-tools.png",
@@ -161,6 +164,11 @@
               "type": "phone"
             },
             {
+              "label": "Адрес",
+              "value": "Шериф Химшиашвили 57, Батуми, 6000",
+              "type": "address"
+            },
+            {
               "label": "Мессенджеры",
               "type": "messengers"
             },
@@ -171,7 +179,7 @@
             },
             {
               "label": "Районы",
-              "value": "Батуми",
+              "value": "Старый Батуми, Руставели, Химшиашвили, Багратиони, Агмашенебели, Джавахишвили, Тамар, Бони-Городок",
               "type": "area"
             }
           ],
@@ -195,7 +203,58 @@
           "Безнал и наличные",
           "Аккуратно работаю"
         ],
-        "heroNote": "Выезд и диагностика 20 GEL"
+        "heroNote": "Выезд и диагностика 20 GEL",
+        "areaNote": "Обслуживаем районы Батуми: Старый Батуми, Руставели, Химшиашвили, Багратиони, Агмашенебели, Джавахишвили, Тамар, Бони-Городок.",
+        "brands": {
+          "title": "Марки, с которыми работаем",
+          "lead": "Популярные бренды бытовой техники, которые ремонтируем.",
+          "items": [
+            "LG",
+            "Samsung",
+            "Bosch",
+            "Siemens",
+            "Electrolux",
+            "Beko",
+            "Whirlpool",
+            "Indesit",
+            "Ariston",
+            "Candy",
+            "Gorenje",
+            "Miele",
+            "Haier",
+            "Hotpoint",
+            "Zanussi",
+            "AEG",
+            "Panasonic",
+            "Sharp",
+            "Hisense",
+            "Atlant",
+            "Vestel",
+            "Toshiba"
+          ]
+        },
+        "guides": {
+          "title": "Полезные материалы",
+          "lead": "Короткие статьи о частых неисправностях и решениях.",
+          "linkLabel": "Подробнее",
+          "items": [
+            {
+              "title": "Стиральная машина не сливает воду",
+              "text": "Причины, что проверить и когда нужен мастер.",
+              "key": "washing-machine-not-draining"
+            },
+            {
+              "title": "Посудомойка не сливает воду",
+              "text": "Коротко о причинах, диагностике и ремонте.",
+              "key": "dishwasher-not-draining"
+            },
+            {
+              "title": "Духовка не греет",
+              "text": "Типовые причины и варианты ремонта.",
+              "key": "oven-not-heating"
+            }
+          ]
+        }
       },
       "serviceFocus": {
         "title": "Популярные услуги",
@@ -231,9 +290,9 @@
       },
       "pages": {
         "services": {
-          "title": "Услуги ремонта — Tech Fix",
-          "lead": "Описание услуг и типовых неисправностей.",
-          "heading": "Услуги ремонта",
+          "title": "Ремонт бытовой техники в Батуми — услуги и цены",
+          "lead": "Ремонт бытовой техники в Батуми: выезд, диагностика, гарантия. Ниже — список услуг и типовых неисправностей.",
+          "heading": "Ремонт бытовой техники в Батуми",
           "sections": [
             {
               "title": "Общие работы",
@@ -270,7 +329,58 @@
                 "Духовки: ТЭНы, термостаты, вентиляторы конвекции."
               ]
             }
-          ]
+          ],
+          "areaNote": "Обслуживаем районы Батуми: Старый Батуми, Руставели, Химшиашвили, Багратиони, Агмашенебели, Джавахишвили, Тамар, Бони-Городок.",
+          "brands": {
+            "title": "Марки бытовой техники, которые ремонтируем",
+            "lead": "Работаем с основными брендами на рынке.",
+            "items": [
+              "LG",
+              "Samsung",
+              "Bosch",
+              "Siemens",
+              "Electrolux",
+              "Beko",
+              "Whirlpool",
+              "Indesit",
+              "Ariston",
+              "Candy",
+              "Gorenje",
+              "Miele",
+              "Haier",
+              "Hotpoint",
+              "Zanussi",
+              "AEG",
+              "Panasonic",
+              "Sharp",
+              "Hisense",
+              "Atlant",
+              "Vestel",
+              "Toshiba"
+            ]
+          },
+          "guides": {
+            "title": "Полезные материалы",
+            "lead": "Если хотите разобраться в симптомах до выезда мастера.",
+            "linkLabel": "Читать",
+            "items": [
+              {
+                "title": "Стиральная машина не сливает воду",
+                "text": "Причины, что проверить и когда нужен мастер.",
+                "key": "washing-machine-not-draining"
+              },
+              {
+                "title": "Посудомойка не сливает воду",
+                "text": "Коротко о причинах, диагностике и ремонте.",
+                "key": "dishwasher-not-draining"
+              },
+              {
+                "title": "Духовка не греет",
+                "text": "Типовые причины и варианты ремонта.",
+                "key": "oven-not-heating"
+              }
+            ]
+          }
         },
         "washing-machines": {
           "title": "Ремонт стиральных машин в Батуми — выезд и гарантия",
@@ -301,6 +411,14 @@
                 "Большинство работ — 1–2 часа.",
                 "Гарантия на работы и запчасти.",
                 "Выезд в удобное время по Батуми."
+              ]
+            },
+            {
+              "title": "Примеры работ",
+              "items": [
+                "Замена сливного насоса и чистка системы (не сливает воду).",
+                "Замена подшипников и манжеты люка.",
+                "Ремонт модуля управления после скачка напряжения."
               ]
             }
           ],
@@ -375,6 +493,14 @@
                 "Гарантия на работы и запчасти.",
                 "Выезд по Батуми."
               ]
+            },
+            {
+              "title": "Примеры работ",
+              "items": [
+                "Устранение протечек и замена уплотнителей.",
+                "Чистка фильтров и замена циркуляционного насоса.",
+                "Ремонт нагрева и датчиков температуры."
+              ]
             }
           ],
           "price": {
@@ -447,6 +573,14 @@
                 "Большинство работ — 1–2 часа.",
                 "Гарантия на работы и запчасти.",
                 "Выезд по Батуми."
+              ]
+            },
+            {
+              "title": "Примеры работ",
+              "items": [
+                "Замена конфорки на электрической панели.",
+                "Настройка газ-контроля и замена термопары.",
+                "Ремонт сенсорной панели управления."
               ]
             }
           ],
@@ -521,6 +655,14 @@
                 "Гарантия на работы и запчасти.",
                 "Выезд по Батуми."
               ]
+            },
+            {
+              "title": "Примеры работ",
+              "items": [
+                "Замена ТЭНа и диагностика питания.",
+                "Ремонт термостата и датчиков.",
+                "Восстановление конвекции (вентилятор)."
+              ]
             }
           ],
           "price": {
@@ -593,6 +735,14 @@
                 "Чистка обычно 1–2 часа.",
                 "Рекомендации по регулярности.",
                 "Выезд по Батуми."
+              ]
+            },
+            {
+              "title": "Примеры работ",
+              "items": [
+                "Комплексная чистка внутреннего блока и дренажа.",
+                "Удаление запахов и антибактериальная обработка.",
+                "Восстановление нормального охлаждения после чистки."
               ]
             }
           ],
@@ -1058,10 +1208,224 @@
             "text": "Опишите проблему и модель техники — сразу скажу ориентир по цене и времени.",
             "button": "Написать в Telegram"
           }
+        },
+        "washing-machine-not-draining": {
+          "title": "Стиральная машина не сливает воду — причины и ремонт в Батуми",
+          "lead": "Разбираем частые причины, что можно проверить самому и когда нужен мастер в Батуми.",
+          "heading": "Стиральная машина не сливает воду в Батуми",
+          "sections": [
+            {
+              "title": "Основные причины",
+              "items": [
+                "Засор фильтра или сливного шланга.",
+                "Неисправен сливной насос.",
+                "Перегиб или неправильное положение шланга.",
+                "Сбой модуля управления или датчика уровня."
+              ]
+            },
+            {
+              "title": "Что можно проверить самостоятельно",
+              "items": [
+                "Очистить фильтр и проверить сливной шланг.",
+                "Запустить повторный цикл слива.",
+                "Проверить, нет ли посторонних предметов в фильтре."
+              ]
+            },
+            {
+              "title": "Когда нужен мастер",
+              "items": [
+                "Вода остаётся в баке после слива.",
+                "Насос шумит, но вода не уходит.",
+                "Появляются ошибки или техника не запускается."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Диагностика",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Чистка сливной системы",
+                "value": "от 70 GEL"
+              },
+              {
+                "label": "Замена сливного насоса",
+                "value": "от 90 GEL"
+              }
+            ],
+            "note": "Точная стоимость после диагностики и согласования."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Можно ли пользоваться машиной до ремонта?",
+                "answer": "Лучше остановить работу, чтобы избежать протечек и повреждений."
+              },
+              {
+                "question": "Сколько занимает ремонт?",
+                "answer": "Чаще всего 1–2 часа после диагностики."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужна помощь со стиральной машиной?",
+            "text": "Опишите симптом — подскажем решение и сроки.",
+            "button": "Позвонить"
+          }
+        },
+        "dishwasher-not-draining": {
+          "title": "Посудомойка не сливает воду — причины и ремонт в Батуми",
+          "lead": "Коротко о причинах, проверках и когда лучше вызвать мастера.",
+          "heading": "Посудомойка не сливает воду в Батуми",
+          "sections": [
+            {
+              "title": "Основные причины",
+              "items": [
+                "Засор фильтров или сливной системы.",
+                "Неисправность сливного насоса.",
+                "Засор шланга или сифона.",
+                "Проблемы с электроникой."
+              ]
+            },
+            {
+              "title": "Что можно проверить самостоятельно",
+              "items": [
+                "Очистить фильтры и сетки.",
+                "Проверить сливной шланг на перегибы.",
+                "Запустить короткий цикл слива."
+              ]
+            },
+            {
+              "title": "Когда нужен мастер",
+              "items": [
+                "Вода остаётся в камере после завершения программы.",
+                "Посудомойка шумит, но вода не уходит.",
+                "Ошибки на дисплее."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Диагностика",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Чистка системы и фильтров",
+                "value": "от 100 GEL"
+              },
+              {
+                "label": "Замена сливного насоса",
+                "value": "от 100 GEL"
+              }
+            ],
+            "note": "Стоимость зависит от модели и деталей."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Нужна ли регулярная чистка?",
+                "answer": "Да, это снижает риск засоров и протечек."
+              },
+              {
+                "question": "Можно ли устранить засор самому?",
+                "answer": "Иногда да, но при повторении проблемы лучше вызвать мастера."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужна помощь с посудомойкой?",
+            "text": "Опишите симптом — сориентируем по цене и срокам.",
+            "button": "Позвонить"
+          }
+        },
+        "oven-not-heating": {
+          "title": "Духовка не греет — причины и ремонт в Батуми",
+          "lead": "Типовые причины, быстрые проверки и признаки поломки.",
+          "heading": "Духовка не греет в Батуми",
+          "sections": [
+            {
+              "title": "Основные причины",
+              "items": [
+                "Неисправен ТЭН.",
+                "Сломан термостат или датчик температуры.",
+                "Проблемы с переключателем режимов.",
+                "Сбой модуля управления."
+              ]
+            },
+            {
+              "title": "Что можно проверить самостоятельно",
+              "items": [
+                "Проверить питание и автомат в щитке.",
+                "Убедиться, что выбран правильный режим.",
+                "Дать духовке прогреться 10–15 минут."
+              ]
+            },
+            {
+              "title": "Когда нужен мастер",
+              "items": [
+                "Духовка не греет вообще или греет слабо.",
+                "Появился запах гари или искрение.",
+                "Есть ошибки на дисплее."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Ориентиры по цене",
+            "items": [
+              {
+                "label": "Диагностика",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Замена ТЭНа",
+                "value": "от 90 GEL"
+              },
+              {
+                "label": "Ремонт управления",
+                "value": "от 150 GEL"
+              }
+            ],
+            "note": "Точная стоимость после диагностики."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Почему духовка долго греется?",
+                "answer": "Часто причина в ТЭНе или термостате."
+              },
+              {
+                "question": "Можно ли починить в день обращения?",
+                "answer": "Да, если не нужна редкая запчасть."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Нужен ремонт духовки?",
+            "text": "Опишите проблему — подскажем решение.",
+            "button": "Позвонить"
+          }
         }
       },
       "rootButtonClass": "button--primary",
-      "ctaMessage": "WhatsApp"
+      "ctaMessage": "WhatsApp",
+      "areasList": [
+        "Старый Батуми",
+        "Руставели",
+        "Химшиашвили",
+        "Багратиони",
+        "Агмашенебели",
+        "Джавахишвили",
+        "Тамар",
+        "Бони-Городок"
+      ]
     },
     {
       "code": "en",
@@ -1081,7 +1445,10 @@
         "ovens": "/en/services/ovens/",
         "ac-cleaning": "/en/services/ac-cleaning/",
         "prices": "/en/prices/",
-        "contacts": "/en/contacts/"
+        "contacts": "/en/contacts/",
+        "washing-machine-not-draining": "/en/articles/washing-machine-not-draining/",
+        "dishwasher-not-draining": "/en/articles/dishwasher-not-draining/",
+        "oven-not-heating": "/en/articles/oven-not-heating/"
       },
       "nav": [
         {
@@ -1107,13 +1474,13 @@
         "langsTitle": "Languages",
         "phoneLabel": "Phone",
         "emailLabel": "Email",
-        "areas": "Batumi"
+        "areas": "Batumi: Old Batumi, Rustaveli, Khimshiashvili, Bagrationi, Aghmashenebeli, Javakhishvili, Tamar, Boni-Gorodok"
       },
       "home": {
         "metaTitle": "Home Appliance Repair in Batumi — On-site Service",
         "metaDescription": "Home appliance repair service in Batumi. On-site diagnostics, transparent pricing, and warranty on repairs.",
         "badge": "Batumi",
-        "title": "Home appliance repair with on-site service in Batumi",
+        "title": "Home appliance repair in Batumi",
         "lead": "On-site diagnostics, clear pricing, and warranty on repairs and parts.",
         "ctaPrimary": "Call now",
         "ctaSecondary": "Message on WhatsApp",
@@ -1224,6 +1591,11 @@
               "type": "phone"
             },
             {
+              "label": "Address",
+              "value": "57 Sherif Khimshiashvili St., Batumi 6000",
+              "type": "address"
+            },
+            {
               "label": "Messengers",
               "value": "WhatsApp / Telegram",
               "type": "messengers"
@@ -1235,7 +1607,7 @@
             },
             {
               "label": "Areas",
-              "value": "Batumi",
+              "value": "Old Batumi, Rustaveli, Khimshiashvili, Bagrationi, Aghmashenebeli, Javakhishvili, Tamar, Boni-Gorodok",
               "type": "area"
             }
           ],
@@ -1259,7 +1631,58 @@
           "Cash / cashless",
           "Clean work"
         ],
-        "heroNote": "Call-out and diagnostics 20 GEL"
+        "heroNote": "Call-out and diagnostics 20 GEL",
+        "areaNote": "Service areas in Batumi: Old Batumi, Rustaveli, Khimshiashvili, Bagrationi, Aghmashenebeli, Javakhishvili, Tamar, Boni-Gorodok.",
+        "brands": {
+          "title": "Brands we repair",
+          "lead": "Popular home appliance brands we work with.",
+          "items": [
+            "LG",
+            "Samsung",
+            "Bosch",
+            "Siemens",
+            "Electrolux",
+            "Beko",
+            "Whirlpool",
+            "Indesit",
+            "Ariston",
+            "Candy",
+            "Gorenje",
+            "Miele",
+            "Haier",
+            "Hotpoint",
+            "Zanussi",
+            "AEG",
+            "Panasonic",
+            "Sharp",
+            "Hisense",
+            "Atlant",
+            "Vestel",
+            "Toshiba"
+          ]
+        },
+        "guides": {
+          "title": "Helpful guides",
+          "lead": "Short articles about common issues and fixes.",
+          "linkLabel": "Read more",
+          "items": [
+            {
+              "title": "Washing machine not draining",
+              "text": "Causes, quick checks, and when to call a technician.",
+              "key": "washing-machine-not-draining"
+            },
+            {
+              "title": "Dishwasher not draining",
+              "text": "Common reasons and repair options.",
+              "key": "dishwasher-not-draining"
+            },
+            {
+              "title": "Oven not heating",
+              "text": "Typical causes and what to do next.",
+              "key": "oven-not-heating"
+            }
+          ]
+        }
       },
       "serviceFocus": {
         "title": "Popular services",
@@ -1295,9 +1718,9 @@
       },
       "pages": {
         "services": {
-          "title": "Repair services — Tech Fix",
-          "lead": "Overview of services and common issues.",
-          "heading": "Repair services",
+          "title": "Home appliance repair in Batumi — services and pricing",
+          "lead": "Home appliance repair in Batumi: on-site diagnostics, clear pricing, and warranty.",
+          "heading": "Home appliance repair in Batumi",
           "sections": [
             {
               "title": "General work",
@@ -1333,7 +1756,58 @@
                 "Ovens: heaters, thermostats, convection fans."
               ]
             }
-          ]
+          ],
+          "areaNote": "Service areas in Batumi: Old Batumi, Rustaveli, Khimshiashvili, Bagrationi, Aghmashenebeli, Javakhishvili, Tamar, Boni-Gorodok.",
+          "brands": {
+            "title": "Brands we repair",
+            "lead": "We work with most common appliance brands.",
+            "items": [
+              "LG",
+              "Samsung",
+              "Bosch",
+              "Siemens",
+              "Electrolux",
+              "Beko",
+              "Whirlpool",
+              "Indesit",
+              "Ariston",
+              "Candy",
+              "Gorenje",
+              "Miele",
+              "Haier",
+              "Hotpoint",
+              "Zanussi",
+              "AEG",
+              "Panasonic",
+              "Sharp",
+              "Hisense",
+              "Atlant",
+              "Vestel",
+              "Toshiba"
+            ]
+          },
+          "guides": {
+            "title": "Helpful guides",
+            "lead": "Quick tips before calling a technician.",
+            "linkLabel": "Read",
+            "items": [
+              {
+                "title": "Washing machine not draining",
+                "text": "Causes, quick checks, and when to call a technician.",
+                "key": "washing-machine-not-draining"
+              },
+              {
+                "title": "Dishwasher not draining",
+                "text": "Common reasons and repair options.",
+                "key": "dishwasher-not-draining"
+              },
+              {
+                "title": "Oven not heating",
+                "text": "Typical causes and what to do next.",
+                "key": "oven-not-heating"
+              }
+            ]
+          }
         },
         "washing-machines": {
           "title": "Washing Machine Repair in Batumi — On-site Service",
@@ -1364,6 +1838,14 @@
                 "Most jobs take 1–2 hours.",
                 "Warranty on work and parts.",
                 "On-site visit across Batumi."
+              ]
+            },
+            {
+              "title": "Case examples",
+              "items": [
+                "Drain pump replacement and system cleaning.",
+                "Bearing and door seal replacement.",
+                "Control board repair after power surge."
               ]
             }
           ],
@@ -1438,6 +1920,14 @@
                 "Warranty on work and parts.",
                 "Service across Batumi."
               ]
+            },
+            {
+              "title": "Case examples",
+              "items": [
+                "Leak fix and seal replacement.",
+                "Filter cleaning and circulation pump replacement.",
+                "Heating and temperature sensor repair."
+              ]
             }
           ],
           "price": {
@@ -1510,6 +2000,14 @@
                 "Most jobs take 1–2 hours.",
                 "Warranty on work and parts.",
                 "Service across Batumi."
+              ]
+            },
+            {
+              "title": "Case examples",
+              "items": [
+                "Electric hob element replacement.",
+                "Gas control adjustment and thermocouple replacement.",
+                "Touch control panel repair."
               ]
             }
           ],
@@ -1584,6 +2082,14 @@
                 "Warranty on work and parts.",
                 "Service across Batumi."
               ]
+            },
+            {
+              "title": "Case examples",
+              "items": [
+                "Heating element replacement and power diagnostics.",
+                "Thermostat and sensor repair.",
+                "Convection fan repair."
+              ]
             }
           ],
           "price": {
@@ -1656,6 +2162,14 @@
                 "Cleaning usually takes 1–2 hours.",
                 "Care recommendations provided.",
                 "Service across Batumi."
+              ]
+            },
+            {
+              "title": "Case examples",
+              "items": [
+                "Full indoor unit and drain cleaning.",
+                "Odor removal and antibacterial treatment.",
+                "Cooling restoration after service."
               ]
             }
           ],
@@ -2120,10 +2634,224 @@
             "text": "Describe the issue and model — I'll give a price/time estimate right away.",
             "button": "Message on Telegram"
           }
+        },
+        "washing-machine-not-draining": {
+          "title": "Washing machine not draining — causes and repair in Batumi",
+          "lead": "Common causes, quick checks, and when to call a technician in Batumi.",
+          "heading": "Washing machine not draining in Batumi",
+          "sections": [
+            {
+              "title": "Common causes",
+              "items": [
+                "Clogged filter or drain hose.",
+                "Drain pump failure.",
+                "Kinked or mispositioned hose.",
+                "Control board or level sensor issue."
+              ]
+            },
+            {
+              "title": "What you can check",
+              "items": [
+                "Clean the filter and check the drain hose.",
+                "Run a drain/spin cycle again.",
+                "Remove debris from the filter."
+              ]
+            },
+            {
+              "title": "When to call a technician",
+              "items": [
+                "Water stays in the drum after the cycle.",
+                "Pump is noisy but water does not drain.",
+                "Error codes appear or unit won’t start."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guide",
+            "items": [
+              {
+                "label": "Diagnostics",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Drain system cleaning",
+                "value": "from 70 GEL"
+              },
+              {
+                "label": "Drain pump replacement",
+                "value": "from 90 GEL"
+              }
+            ],
+            "note": "Final price after diagnostics and approval."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Can I keep using it?",
+                "answer": "Better to stop to avoid leaks and damage."
+              },
+              {
+                "question": "How long does repair take?",
+                "answer": "Typically 1–2 hours after diagnostics."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need help with a washing machine?",
+            "text": "Describe the issue — we’ll suggest options and timing.",
+            "button": "Call now"
+          }
+        },
+        "dishwasher-not-draining": {
+          "title": "Dishwasher not draining — causes and repair in Batumi",
+          "lead": "Common reasons, quick checks, and when to call a technician.",
+          "heading": "Dishwasher not draining in Batumi",
+          "sections": [
+            {
+              "title": "Common causes",
+              "items": [
+                "Clogged filters or drain system.",
+                "Drain pump failure.",
+                "Blocked hose or siphon.",
+                "Electronics issues."
+              ]
+            },
+            {
+              "title": "What you can check",
+              "items": [
+                "Clean filters and mesh screens.",
+                "Check the drain hose for kinks.",
+                "Run a short drain cycle."
+              ]
+            },
+            {
+              "title": "When to call a technician",
+              "items": [
+                "Water remains after the cycle.",
+                "Unit is noisy but does not drain.",
+                "Error codes appear."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guide",
+            "items": [
+              {
+                "label": "Diagnostics",
+                "value": "20 GEL"
+              },
+              {
+                "label": "System & filter cleaning",
+                "value": "from 100 GEL"
+              },
+              {
+                "label": "Drain pump replacement",
+                "value": "from 100 GEL"
+              }
+            ],
+            "note": "Cost depends on model and parts."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Is regular cleaning necessary?",
+                "answer": "Yes, it helps prevent clogs and leaks."
+              },
+              {
+                "question": "Can I fix a clog myself?",
+                "answer": "Sometimes, but repeated issues need a technician."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need help with a dishwasher?",
+            "text": "Describe the issue — we’ll estimate timing and cost.",
+            "button": "Call now"
+          }
+        },
+        "oven-not-heating": {
+          "title": "Oven not heating — causes and repair in Batumi",
+          "lead": "Typical causes, quick checks, and repair options.",
+          "heading": "Oven not heating in Batumi",
+          "sections": [
+            {
+              "title": "Common causes",
+              "items": [
+                "Heating element failure.",
+                "Thermostat or temperature sensor issues.",
+                "Mode selector switch problems.",
+                "Control board failure."
+              ]
+            },
+            {
+              "title": "What you can check",
+              "items": [
+                "Check power and breaker.",
+                "Make sure the correct mode is selected.",
+                "Let the oven preheat for 10–15 minutes."
+              ]
+            },
+            {
+              "title": "When to call a technician",
+              "items": [
+                "Oven does not heat or heats weakly.",
+                "Burning smell or sparking.",
+                "Error codes appear."
+              ]
+            }
+          ],
+          "price": {
+            "title": "Price guide",
+            "items": [
+              {
+                "label": "Diagnostics",
+                "value": "20 GEL"
+              },
+              {
+                "label": "Heating element replacement",
+                "value": "from 90 GEL"
+              },
+              {
+                "label": "Control repair",
+                "value": "from 150 GEL"
+              }
+            ],
+            "note": "Final price after diagnostics."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "Why does it heat slowly?",
+                "answer": "Often due to the element or thermostat."
+              },
+              {
+                "question": "Can it be fixed the same day?",
+                "answer": "Yes, if no rare parts are needed."
+              }
+            ]
+          },
+          "cta": {
+            "title": "Need oven repair?",
+            "text": "Describe the issue — we’ll suggest the next step.",
+            "button": "Call now"
+          }
         }
       },
       "rootButtonClass": "button--ghost",
-      "ctaMessage": "WhatsApp"
+      "ctaMessage": "WhatsApp",
+      "areasList": [
+        "Old Batumi",
+        "Rustaveli",
+        "Khimshiashvili",
+        "Bagrationi",
+        "Aghmashenebeli",
+        "Javakhishvili",
+        "Tamar",
+        "Boni-Gorodok"
+      ]
     },
     {
       "code": "ka",
@@ -2143,7 +2871,10 @@
         "ovens": "/ka/services/ovens/",
         "ac-cleaning": "/ka/services/ac-cleaning/",
         "prices": "/ka/prices/",
-        "contacts": "/ka/contacts/"
+        "contacts": "/ka/contacts/",
+        "washing-machine-not-draining": "/ka/articles/washing-machine-not-draining/",
+        "dishwasher-not-draining": "/ka/articles/dishwasher-not-draining/",
+        "oven-not-heating": "/ka/articles/oven-not-heating/"
       },
       "nav": [
         {
@@ -2169,13 +2900,13 @@
         "langsTitle": "ენები",
         "phoneLabel": "ტელეფონი",
         "emailLabel": "ფოსტა",
-        "areas": "ბათუმი"
+        "areas": "ბათუმი: ძველი ბათუმი, რუსთაველი, ხიმშიაშვილი, ბაგრატიონი, აღმაშენებელი, ჯავახიშვილი, თამარი, ბონი-გოროდოკი"
       },
       "home": {
         "metaTitle": "საოჯახო ტექნიკის შეკეთება ბათუმში — ადგილზე მომსახურება",
         "metaDescription": "საოჯახო ტექნიკის შეკეთება ბათუმში. ადგილზე დიაგნოსტიკა, გამჭვირვალე ფასები და გარანტია.",
         "badge": "ბათუმი",
-        "title": "საოჯახო ტექნიკის შეკეთება ადგილზე მომსახურებით ბათუმში",
+        "title": "საოჯახო ტექნიკის შეკეთება ბათუმში",
         "lead": "ადგილზე დიაგნოსტიკა, გამჭვირვალე ფასები და გარანტია სამუშაოზე და ნაწილებზე.",
         "ctaPrimary": "დარეკეთ",
         "ctaSecondary": "WhatsApp-ზე დაწერე",
@@ -2286,6 +3017,11 @@
               "type": "phone"
             },
             {
+              "label": "მისამართი",
+              "value": "შერიფ ხიმშიაშვილის ქ. 57, ბათუმი 6000",
+              "type": "address"
+            },
+            {
               "label": "მესენჯერები",
               "value": "WhatsApp / Telegram",
               "type": "messengers"
@@ -2297,7 +3033,7 @@
             },
             {
               "label": "რაიონები",
-              "value": "ბათუმი",
+              "value": "ძველი ბათუმი, რუსთაველი, ხიმშიაშვილი, ბაგრატიონი, აღმაშენებელი, ჯავახიშვილი, თამარი, ბონი-გოროდოკი",
               "type": "area"
             }
           ],
@@ -2321,7 +3057,58 @@
           "ნაღდი / უნაღდო",
           "სუფთად ვმუშაობ"
         ],
-        "heroNote": "გამოძახება და დიაგნოსტიკა 20 GEL"
+        "heroNote": "გამოძახება და დიაგნოსტიკა 20 GEL",
+        "areaNote": "ვემსახურებით ბათუმის უბნებს: ძველი ბათუმი, რუსთაველი, ხიმშიაშვილი, ბაგრატიონი, აღმაშენებელი, ჯავახიშვილი, თამარი, ბონი-გოროდოკი.",
+        "brands": {
+          "title": "ბრენდები, რომელთანაც ვმუშაობთ",
+          "lead": "პოპულარული საყოფაცხოვრებო ტექნიკის ბრენდები.",
+          "items": [
+            "LG",
+            "Samsung",
+            "Bosch",
+            "Siemens",
+            "Electrolux",
+            "Beko",
+            "Whirlpool",
+            "Indesit",
+            "Ariston",
+            "Candy",
+            "Gorenje",
+            "Miele",
+            "Haier",
+            "Hotpoint",
+            "Zanussi",
+            "AEG",
+            "Panasonic",
+            "Sharp",
+            "Hisense",
+            "Atlant",
+            "Vestel",
+            "Toshiba"
+          ]
+        },
+        "guides": {
+          "title": "სასარგებლო სტატიები",
+          "lead": "ხშირი პრობლემები და მოკლე რჩევები.",
+          "linkLabel": "ვრცლად",
+          "items": [
+            {
+              "title": "სარეცხი მანქანა არ იცლის წყალს",
+              "text": "მიზეზები, რას შეამოწმოთ და როდის არის საჭირო ოსტატი.",
+              "key": "washing-machine-not-draining"
+            },
+            {
+              "title": "ჭურჭლის სარეცხი მანქანა არ იცლის წყალს",
+              "text": "ხშირი მიზეზები და შესაძლო შეკეთება.",
+              "key": "dishwasher-not-draining"
+            },
+            {
+              "title": "ღუმელი არ ათბობს",
+              "text": "ტიპური მიზეზები და რა უნდა გააკეთოთ.",
+              "key": "oven-not-heating"
+            }
+          ]
+        }
       },
       "serviceFocus": {
         "title": "პოპულარული სერვისები",
@@ -2357,9 +3144,9 @@
       },
       "pages": {
         "services": {
-          "title": "სერვისები — Tech Fix",
-          "lead": "მომსახურებების და ხშირი პრობლემების მიმოხილვა.",
-          "heading": "სერვისები",
+          "title": "საოჯახო ტექნიკის შეკეთება ბათუმში — სერვისები და ფასები",
+          "lead": "საოჯახო ტექნიკის შეკეთება ბათუმში: ადგილზე დიაგნოსტიკა, გამჭვირვალე ფასები და გარანტია.",
+          "heading": "საოჯახო ტექნიკის შეკეთება ბათუმში",
           "sections": [
             {
               "title": "ზოგადი სამუშაოები",
@@ -2395,7 +3182,58 @@
                 "ღუმელები: ტენები, თერმოსტატი, კონვექციის ვენტილატორი."
               ]
             }
-          ]
+          ],
+          "areaNote": "ვემსახურებით ბათუმის უბნებს: ძველი ბათუმი, რუსთაველი, ხიმშიაშვილი, ბაგრატიონი, აღმაშენებელი, ჯავახიშვილი, თამარი, ბონი-გოროდოკი.",
+          "brands": {
+            "title": "ბრენდები, რომელთანაც ვმუშაობთ",
+            "lead": "ვემსახურებით ყველაზე გავრცელებულ ბრენდებს.",
+            "items": [
+              "LG",
+              "Samsung",
+              "Bosch",
+              "Siemens",
+              "Electrolux",
+              "Beko",
+              "Whirlpool",
+              "Indesit",
+              "Ariston",
+              "Candy",
+              "Gorenje",
+              "Miele",
+              "Haier",
+              "Hotpoint",
+              "Zanussi",
+              "AEG",
+              "Panasonic",
+              "Sharp",
+              "Hisense",
+              "Atlant",
+              "Vestel",
+              "Toshiba"
+            ]
+          },
+          "guides": {
+            "title": "სასარგებლო სტატიები",
+            "lead": "სწრაფი რჩევები ოსტატის გამოძახებამდე.",
+            "linkLabel": "წაკითხვა",
+            "items": [
+              {
+                "title": "სარეცხი მანქანა არ იცლის წყალს",
+                "text": "მიზეზები, რას შეამოწმოთ და როდის არის საჭირო ოსტატი.",
+                "key": "washing-machine-not-draining"
+              },
+              {
+                "title": "ჭურჭლის სარეცხი მანქანა არ იცლის წყალს",
+                "text": "ხშირი მიზეზები და შესაძლო შეკეთება.",
+                "key": "dishwasher-not-draining"
+              },
+              {
+                "title": "ღუმელი არ ათბობს",
+                "text": "ტიპური მიზეზები და რა უნდა გააკეთოთ.",
+                "key": "oven-not-heating"
+              }
+            ]
+          }
         },
         "washing-machines": {
           "title": "სარეცხი მანქანების რემონტი ბათუმში — ადგილზე მომსახურება",
@@ -2426,6 +3264,14 @@
                 "უმეტესობა 1–2 საათი.",
                 "გარანტია სამუშაოზე და ნაწილებზე.",
                 "გამოძახება ბათუმში."
+              ]
+            },
+            {
+              "title": "სამუშაოების მაგალითები",
+              "items": [
+                "სანიაღვრე ტუმბოს შეცვლა და სისტემის წმენდა.",
+                "ბალანსირების/მანჟეტის შეცვლა.",
+                "კონტროლის ბლოკის შეკეთება ძაბვის ნახტომის შემდეგ."
               ]
             }
           ],
@@ -2500,6 +3346,14 @@
                 "გარანტია სამუშაოზე და ნაწილებზე.",
                 "მომსახურება ბათუმში."
               ]
+            },
+            {
+              "title": "სამუშაოების მაგალითები",
+              "items": [
+                "ჟონვის აღმოფხვრა და ბეჭდების შეცვლა.",
+                "ფილტრების წმენდა და ცირკულაციის ტუმბოს შეცვლა.",
+                "გათბობის და სენსორების რემონტი."
+              ]
             }
           ],
           "price": {
@@ -2572,6 +3426,14 @@
                 "უმეტესობა 1–2 საათი.",
                 "გარანტია სამუშაოზე და ნაწილებზე.",
                 "მომსახურება ბათუმში."
+              ]
+            },
+            {
+              "title": "სამუშაოების მაგალითები",
+              "items": [
+                "ელექტრო კონფორის შეცვლა.",
+                "გაზ-კონტროლის დაყენება და თერმოწყვილის შეცვლა.",
+                "სენსორული პანელის შეკეთება."
               ]
             }
           ],
@@ -2646,6 +3508,14 @@
                 "გარანტია სამუშაოზე და ნაწილებზე.",
                 "მომსახურება ბათუმში."
               ]
+            },
+            {
+              "title": "სამუშაოების მაგალითები",
+              "items": [
+                "ТЭН-ის შეცვლა და კვების დიაგნოსტიკა.",
+                "თერმოსტატის და სენსორების რემონტი.",
+                "კონვექციის ვენტილატორის შეკეთება."
+              ]
             }
           ],
           "price": {
@@ -2718,6 +3588,14 @@
                 "ჩვეულებრივ 1–2 საათი.",
                 "მოვლის რეკომენდაციები.",
                 "მომსახურება ბათუმში."
+              ]
+            },
+            {
+              "title": "სამუშაოების მაგალითები",
+              "items": [
+                "შიდა ბლოკისა და დრენაჟის სრული წმენდა.",
+                "სუნის მოცილება და ანტიბაქტერიული დამუშავება.",
+                "გაგრილების აღდგენა მომსახურების შემდეგ."
               ]
             }
           ],
@@ -3182,10 +4060,224 @@
             "text": "მოგვწერე მოდელი და პრობლემა — გეტყვით ფასისა და დროის დიაპაზონს.",
             "button": "წერე Telegram-ში"
           }
+        },
+        "washing-machine-not-draining": {
+          "title": "სარეცხი მანქანა არ იცლის წყალს — მიზეზები და შეკეთება ბათუმში",
+          "lead": "ხშირი მიზეზები, რას შეამოწმოთ და როდის არის საჭირო ოსტატი ბათუმში.",
+          "heading": "სარეცხი მანქანა არ იცლის წყალს ბათუმში",
+          "sections": [
+            {
+              "title": "ძირითადი მიზეზები",
+              "items": [
+                "ფილტრის ან სანიაღვრე შლანგის გაჭედვა.",
+                "სანიაღვრე ტუმბოს გაუმართაობა.",
+                "შლანგის გადახრა ან არასწორი მდებარეობა.",
+                "კონტროლის ბლოკის ან დონის სენსორის პრობლემა."
+              ]
+            },
+            {
+              "title": "რისი შემოწმება შეგიძლიათ",
+              "items": [
+                "ფილტრის გაწმენდა და შლანგის შემოწმება.",
+                "სანიაღვრე რეჟიმის ხელახლა ჩართვა.",
+                "ფილტრში ნაგვის ამოღება."
+              ]
+            },
+            {
+              "title": "როდის არის საჭირო ოსტატი",
+              "items": [
+                "წყალი რჩება ავზში ციკლის შემდეგ.",
+                "ტუმბო ხმაურობს, მაგრამ წყალი არ იცლება.",
+                "ჩნდება შეცდომები ან არ იწყება მუშაობა."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასების ორიენტირები",
+            "items": [
+              {
+                "label": "დიაგნოსტიკა",
+                "value": "20 GEL"
+              },
+              {
+                "label": "სანიაღვრე სისტემის წმენდა",
+                "value": "70 GEL-დან"
+              },
+              {
+                "label": "სანიაღვრე ტუმბოს შეცვლა",
+                "value": "90 GEL-დან"
+              }
+            ],
+            "note": "საბოლოო ფასი დიაგნოსტიკის შემდეგ."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "შეიძლება თუ არა გამოყენება რემონტამდე?",
+                "answer": "სჯობს შეწყვიტოთ, რომ არ დაზიანდეს ტექნიკა."
+              },
+              {
+                "question": "რამდენ ხანს გრძელდება რემონტი?",
+                "answer": "ხშირად 1–2 საათი დიაგნოსტიკის შემდეგ."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ სარეცხი მანქანის შეკეთება?",
+            "text": "აღწერეთ პრობლემა — მოგცემთ რეკომენდაციას და ვადას.",
+            "button": "დარეკეთ"
+          }
+        },
+        "dishwasher-not-draining": {
+          "title": "ჭურჭლის სარეცხი მანქანა არ იცლის წყალს — მიზეზები და შეკეთება ბათუმში",
+          "lead": "ხშირი მიზეზები, რა შეგიძლიათ შეამოწმოთ და როდის დავიძახოთ ოსტატი.",
+          "heading": "ჭურჭლის სარეცხი მანქანა არ იცლის წყალს ბათუმში",
+          "sections": [
+            {
+              "title": "ძირითადი მიზეზები",
+              "items": [
+                "ფილტრების ან სანიაღვრე სისტემის გაჭედვა.",
+                "სანიაღვრე ტუმბოს გაუმართაობა.",
+                "შლანგის ან სიფონის გაჭედვა.",
+                "ელექტრონიკის პრობლემა."
+              ]
+            },
+            {
+              "title": "რისი შემოწმება შეგიძლიათ",
+              "items": [
+                "ფილტრების გაწმენდა.",
+                "სანიაღვრე შლანგის შემოწმება.",
+                "მოკლე სანიაღვრე ციკლის გაშვება."
+              ]
+            },
+            {
+              "title": "როდის არის საჭირო ოსტატი",
+              "items": [
+                "წყალი რჩება კამერაში პროგრამის შემდეგ.",
+                "ხმაურობს, მაგრამ წყალი არ იცლება.",
+                "ჩნდება შეცდომები."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასების ორიენტირები",
+            "items": [
+              {
+                "label": "დიაგნოსტიკა",
+                "value": "20 GEL"
+              },
+              {
+                "label": "სისტემისა და ფილტრების წმენდა",
+                "value": "100 GEL-დან"
+              },
+              {
+                "label": "სანიაღვრე ტუმბოს შეცვლა",
+                "value": "100 GEL-დან"
+              }
+            ],
+            "note": "ფასი დამოკიდებულია მოდელზე და დეტალებზე."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "საჭიროა რეგულარული წმენდა?",
+                "answer": "დიახ, ეს ამცირებს გაჭედვის რისკს."
+              },
+              {
+                "question": "შემიძლია თვითონ გავასწორო?",
+                "answer": "ზოგჯერ კი, მაგრამ განმეორებებისას სჯობს ოსტატი."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ დახმარება ჭურჭლის სარეცხთან?",
+            "text": "აღწერეთ პრობლემა — შეგირჩევთ გადაწყვეტილებას.",
+            "button": "დარეკეთ"
+          }
+        },
+        "oven-not-heating": {
+          "title": "ღუმელი არ ათბობს — მიზეზები და შეკეთება ბათუმში",
+          "lead": "ტიპური მიზეზები და სწრაფი შემოწმებები.",
+          "heading": "ღუმელი არ ათბობს ბათუმში",
+          "sections": [
+            {
+              "title": "ძირითადი მიზეზები",
+              "items": [
+                "თბომწევი ელემენტის (ТЭН) გაუმართაობა.",
+                "თერმოსტატის ან ტემპერატურის სენსორის პრობლემა.",
+                "რეჟიმის გადამრთველის გაუმართაობა.",
+                "კონტროლის ბლოკის პრობლემა."
+              ]
+            },
+            {
+              "title": "რისი შემოწმება შეგიძლიათ",
+              "items": [
+                "შეამოწმეთ კვება და ავტომატი.",
+                "დარწმუნდით, რომ სწორ რეჟიმზეა.",
+                "გააცხელეთ 10–15 წუთი."
+              ]
+            },
+            {
+              "title": "როდის არის საჭირო ოსტატი",
+              "items": [
+                "ღუმელი საერთოდ არ ათბობს ან სუსტად ათბობს.",
+                "მოდის დაწვის სუნი ან ნაპერწკალი.",
+                "ჩნდება შეცდომები."
+              ]
+            }
+          ],
+          "price": {
+            "title": "ფასების ორიენტირები",
+            "items": [
+              {
+                "label": "დიაგნოსტიკა",
+                "value": "20 GEL"
+              },
+              {
+                "label": "ТЭН-ის შეცვლა",
+                "value": "90 GEL-დან"
+              },
+              {
+                "label": "მართვის რემონტი",
+                "value": "150 GEL-დან"
+              }
+            ],
+            "note": "საბოლოო ფასი დიაგნოსტიკის შემდეგ."
+          },
+          "faq": {
+            "title": "FAQ",
+            "items": [
+              {
+                "question": "რატომ თბება ნელა?",
+                "answer": "ხშირად მიზეზი ТЭН ან თერმოსტატია."
+              },
+              {
+                "question": "შესაძლებელია იმავე დღეს?",
+                "answer": "დიახ, თუ იშვიათი ნაწილი არ არის საჭირო."
+              }
+            ]
+          },
+          "cta": {
+            "title": "გჭირდებათ ღუმელის რემონტი?",
+            "text": "აღწერეთ პრობლემა — მოგცემთ რეკომენდაციას.",
+            "button": "დარეკეთ"
+          }
         }
       },
       "rootButtonClass": "button--secondary",
-      "ctaMessage": "WhatsApp"
+      "ctaMessage": "WhatsApp",
+      "areasList": [
+        "ძველი ბათუმი",
+        "რუსთაველი",
+        "ხიმშიაშვილი",
+        "ბაგრატიონი",
+        "აღმაშენებელი",
+        "ჯავახიშვილი",
+        "თამარი",
+        "ბონი-გოროდოკი"
+      ]
     }
   ]
 }

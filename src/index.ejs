@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="x-default">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,16 +9,16 @@
   <% const defaultLang = i18n.languages[0]; %>
   <title><%= defaultLang.home.metaTitle %></title>
   <meta name="description" content="<%= defaultLang.home.metaDescription %>">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, follow">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/assets/icons/icon-tools.png" type="image/png">
   <link rel="apple-touch-icon" href="/assets/icons/icon-tools.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="canonical" href="<%= site.baseUrl %>/">
+  <link rel="canonical" href="<%= site.baseUrl + defaultLang.paths.home %>">
   <link rel="alternate" hreflang="ru" href="<%= site.baseUrl %>/ru/">
   <link rel="alternate" hreflang="en" href="<%= site.baseUrl %>/en/">
   <link rel="alternate" hreflang="ka" href="<%= site.baseUrl %>/ka/">
-  <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl %>/">
+  <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl + defaultLang.paths.home %>">
   <meta property="og:type" content="website">
   <meta property="og:url" content="<%= site.baseUrl + defaultLang.paths.home %>">
   <meta property="og:title" content="<%= defaultLang.home.metaTitle %>">

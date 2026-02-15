@@ -5,6 +5,9 @@
     <div class="section__header">
       <h1 class="section__title"><%= servicesPage.heading %></h1>
       <p class="section__lead"><%= servicesPage.lead %></p>
+      <% if (servicesPage.areaNote) { %>
+        <p class="section__lead"><%= servicesPage.areaNote %></p>
+      <% } %>
     </div>
   </div>
 </section>
@@ -50,6 +53,50 @@
             <% } %>
           </div>
         <% }); %>
+      </div>
+    </div>
+  </section>
+<% } %>
+
+<% if (servicesPage.brands) { %>
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= servicesPage.brands.title %></h2>
+        <% if (servicesPage.brands.lead) { %>
+          <p class="section__lead"><%= servicesPage.brands.lead %></p>
+        <% } %>
+      </div>
+      <div class="badge-row">
+        <% servicesPage.brands.items.forEach((brand)=> { %>
+          <span class="badge badge--outline"><%= brand %></span>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+<% } %>
+
+<% if (servicesPage.guides) { %>
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= servicesPage.guides.title %></h2>
+        <% if (servicesPage.guides.lead) { %>
+          <p class="section__lead"><%= servicesPage.guides.lead %></p>
+        <% } %>
+      </div>
+      <div class="grid grid--3">
+        <% servicesPage.guides.items.forEach((item)=> { %>
+          <article class="card">
+            <h3 class="card__title"><%= item.title %></h3>
+            <% if (item.text) { %>
+              <p class="card__text"><%= item.text %></p>
+            <% } %>
+            <a class="card__link" href="<%= lang.paths[item.key] %>">
+              <%= item.linkLabel || servicesPage.guides.linkLabel %>
+            </a>
+          </article>
+        <% }) %>
       </div>
     </div>
   </section>
