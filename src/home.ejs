@@ -203,8 +203,9 @@
             <% if (item.text) { %>
               <p class="card__text"><%= item.text %></p>
             <% } %>
+            <% const guideLinkLabel = item.linkLabel || lang.home.guides.linkLabel; %>
             <a class="card__link" href="<%= lang.paths[item.key] %>">
-              <%= item.linkLabel || lang.home.guides.linkLabel %>
+              <%= guideLinkLabel %> — <%= item.title %>
             </a>
           </article>
         <% }) %>
