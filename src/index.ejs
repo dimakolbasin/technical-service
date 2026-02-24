@@ -6,30 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta name="theme-color" content="#2a7f98">
-  <% const defaultLang = i18n.languages[0]; %>
-  <title><%= defaultLang.home.metaTitle %></title>
-  <meta name="description" content="<%= defaultLang.home.metaDescription %>">
-  <meta name="robots" content="noindex, follow">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/assets/icons/icon-tools.png" type="image/png">
-  <link rel="apple-touch-icon" href="/assets/icons/icon-tools.png">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="canonical" href="<%= site.baseUrl + defaultLang.paths.home %>">
-  <link rel="alternate" hreflang="ru" href="<%= site.baseUrl %>/ru/">
-  <link rel="alternate" hreflang="en" href="<%= site.baseUrl %>/en/">
-  <link rel="alternate" hreflang="ka" href="<%= site.baseUrl %>/ka/">
-  <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl + defaultLang.paths.home %>">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="<%= site.baseUrl + defaultLang.paths.home %>">
-  <meta property="og:title" content="<%= defaultLang.home.metaTitle %>">
-  <meta property="og:description" content="<%= defaultLang.home.metaDescription %>">
-  <meta property="og:site_name" content="<%= site.name %>">
-  <meta property="og:locale" content="<%= defaultLang.code %>">
-  <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="<%= defaultLang.home.metaTitle %>">
-  <meta name="twitter:description" content="<%= defaultLang.home.metaDescription %>">
-  <meta name="twitter:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
+  <% const defaultLang=i18n.languages[0]; %>
+    <title>
+      <%= defaultLang.home.metaTitle %>
+    </title>
+    <meta name="description" content="<%= defaultLang.home.metaDescription %>">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/icons/icon-tools.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-tools.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="canonical" href="<%= site.baseUrl %>/">
+    <link rel="alternate" hreflang="ru" href="<%= site.baseUrl %>/ru/">
+    <link rel="alternate" hreflang="en" href="<%= site.baseUrl %>/en/">
+    <link rel="alternate" hreflang="ka" href="<%= site.baseUrl %>/ka/">
+    <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl %>/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= site.baseUrl %>/">
+    <meta property="og:title" content="<%= defaultLang.home.metaTitle %>">
+    <meta property="og:description" content="<%= defaultLang.home.metaDescription %>">
+    <meta property="og:site_name" content="<%= site.name %>">
+    <meta property="og:locale" content="<%= defaultLang.code %>">
+    <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= defaultLang.home.metaTitle %>">
+    <meta name="twitter:description" content="<%= defaultLang.home.metaDescription %>">
+    <meta name="twitter:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
 </head>
 
 <body>
