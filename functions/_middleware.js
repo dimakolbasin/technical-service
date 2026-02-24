@@ -59,10 +59,13 @@ export async function onRequest(context) {
         return redirect(`/${cookieMatch[1]}/`, cookieMatch[1], 302, url.protocol === "https:");
     }
 
-    // 5) Humans: Accept-Language header.
-    const accept = (request.headers.get("Accept-Language") || "").toLowerCase();
-    const chosen = pickLangFromAcceptLanguage(accept);
-    return redirect(`/${chosen}/`, chosen, 302, url.protocol === "https:");
+    // 5) Humans: Accept-Language header (временно отключено).
+    // const accept = (request.headers.get("Accept-Language") || "").toLowerCase();
+    // const chosen = pickLangFromAcceptLanguage(accept);
+    // return redirect(`/${chosen}/`, chosen, 302, url.protocol === "https:");
+
+    // Если нет куки, по умолчанию редиректим на "ru"
+    return redirect(`/ru/`, "ru", 302, url.protocol === "https:");
 }
 
 function pickLangFromAcceptLanguage(accept) {
