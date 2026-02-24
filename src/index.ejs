@@ -7,52 +7,130 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="theme-color" content="#2a7f98">
   <% const defaultLang=i18n.languages[0]; %>
-    <title>
-      <%= defaultLang.home.metaTitle %>
-    </title>
-    <meta name="description" content="<%= defaultLang.home.metaDescription %>">
+    <title>Ремонт бытовой техники в Батуми — Профессиональный сервис и выезд</title>
+    <meta name="description"
+      content="Надёжный ремонт стиральных машин, варочных панелей, духовок и кондиционеров в Батуми. Качественная диагностика и обслуживание вашей техники от опытного мастера.">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/assets/icons/icon-tools.png" type="image/png">
-    <link rel="apple-touch-icon" href="/assets/icons/icon-tools.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="canonical" href="<%= site.baseUrl %>/">
-    <link rel="alternate" hreflang="ru" href="<%= site.baseUrl %>/ru/">
-    <link rel="alternate" hreflang="en" href="<%= site.baseUrl %>/en/">
-    <link rel="alternate" hreflang="ka" href="<%= site.baseUrl %>/ka/">
-    <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl %>/">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" fetchpriority="high">
+    <link rel="icon" href="/assets/icons/icon-tools.png" type="image/png" fetchpriority="high">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-tools.png" fetchpriority="high">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= site.baseUrl %>/">
-    <meta property="og:title" content="<%= defaultLang.home.metaTitle %>">
-    <meta property="og:description" content="<%= defaultLang.home.metaDescription %>">
+    <meta property="og:title" content="Срочный ремонт бытовой техники в Батуми">
+    <meta property="og:description"
+      content="Профессиональное обслуживание и ремонт крупной бытовой техники. Гарантия качества, выезд по Батуми и честные цены.">
     <meta property="og:site_name" content="<%= site.name %>">
     <meta property="og:locale" content="<%= defaultLang.code %>">
     <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<%= defaultLang.home.metaTitle %>">
-    <meta name="twitter:description" content="<%= defaultLang.home.metaDescription %>">
+    <meta name="twitter:title" content="Срочный ремонт бытовой техники в Батуми">
+    <meta name="twitter:description"
+      content="Профессиональное обслуживание и ремонт крупной бытовой техники. Гарантия качества, выезд по Батуми и честные цены.">
     <meta name="twitter:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
+    <style>
+      :root {
+        --c-bg: #f5f7f9;
+        --c-text: #1d2329;
+        --c-primary: #2a7f98;
+        --shadow: 0 12px 26px rgba(29, 35, 41, 0.12);
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, sans-serif;
+        background: var(--c-bg);
+        color: var(--c-text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .language-selection {
+        max-width: 400px;
+        width: 100%;
+        background: #fff;
+        padding: 40px 24px;
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        text-align: center;
+        border: 1px solid #e2e7ee;
+      }
+
+      .language-selection__title {
+        font-size: 1.5rem;
+        margin: 0 0 24px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .language-selection__list {
+        list-style: none;
+        padding: 0;
+        margin: 24px 0 0;
+        display: grid;
+        gap: 12px;
+      }
+
+      .language-selection__item a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 56px;
+        background: #f0f2f5;
+        color: var(--c-text);
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.2s;
+        border: 1px solid transparent;
+      }
+
+      .language-selection__item a:hover {
+        background: var(--c-primary);
+        color: #fff;
+        border-color: var(--c-primary);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <link rel="canonical" href="<%= site.baseUrl %>/">
+    <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl %>/">
+    <link rel="alternate" hreflang="ru" href="<%= site.baseUrl %>/ru/">
+    <link rel="alternate" hreflang="en" href="<%= site.baseUrl %>/en/">
+    <link rel="alternate" hreflang="ka" href="<%= site.baseUrl %>/ka/">
+    <link rel="manifest" href="/manifest.json">
 </head>
 
-<body>
-  <main>
-    <section class="language-selection">
-      <p>Выберите удобный язык интерфейса, чтобы перейти к сервисам.</p>
-      <ul>
-        <li><a href="/ru/">Русский</a></li>
-        <li><a href="/en/">English</a></li>
-        <li><a href="/ka/">ქართული</a></li>
-      </ul>
-    </section>
+<body class="lang-page">
+  <main class="language-selection">
+    <h1 class="language-selection__title">
+      Ремонт бытовой техники в Батуми
+    </h1>
+    <p>Выберите удобный язык интерфейса:</p>
+    <ul class="language-selection__list">
+      <li class="language-selection__item">
+        <a href="/ru/">Русский</a>
+      </li>
+      <li class="language-selection__item">
+        <a href="/en/">English</a>
+      </li>
+      <li class="language-selection__item">
+        <a href="/ka/">ქართული</a>
+      </li>
+    </ul>
   </main>
 
   <noscript>
-    <p>Выберите язык:</p>
-    <ul>
-      <li><a href="/ru/">Русский</a></li>
-      <li><a href="/en/">English</a></li>
-      <li><a href="/ka/">ქართული</a></li>
-    </ul>
+    <div class="language-selection" style="margin-top: 20px;">
+      <p>Выберите язык:</p>
+      <ul class="language-selection__list">
+        <li class="language-selection__item"><a href="/ru/">Русский</a></li>
+        <li class="language-selection__item"><a href="/en/">English</a></li>
+        <li class="language-selection__item"><a href="/ka/">ქართული</a></li>
+      </ul>
+    </div>
   </noscript>
 </body>
 
