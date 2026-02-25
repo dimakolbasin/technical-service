@@ -429,11 +429,12 @@
 
                             <div class="expert-gallery">
                               <div class="expert-gallery__item">
-                                <img src="/assets/images/master-1.webp" draggable="false" alt="Appliance Repair Technician"
-                                  loading="lazy">
+                                <img src="/assets/images/master-1.webp" draggable="false"
+                                  alt="Appliance Repair Technician" loading="lazy">
                               </div>
                               <div class="expert-gallery__item">
-                                <img src="/assets/images/master-2.webp" draggable="false" alt="Appliance Repair process" loading="lazy">
+                                <img src="/assets/images/master-2.webp" draggable="false" alt="Appliance Repair process"
+                                  loading="lazy">
                               </div>
                             </div>
                       </div>
@@ -441,120 +442,194 @@
                   </section>
                   <% } %>
 
-                    <% if (lang.home.faq && lang.home.faq.items && lang.home.faq.items.length) { %>
-                      <section class="section">
+                    <% const reviewsTitle=lang.home.reviews?.title || "" ; const reviewsLead=lang.home.reviews?.lead
+                      || "" ; const reviewItems=lang.home.reviews?.items?.length ? lang.home.reviews.items.slice(0, 5) :
+                      []; %>
+                      <section class="section section--surface">
                         <div class="container">
                           <div class="section__header">
                             <h2 class="section__title">
-                              <%= lang.home.faq.title %>
+                              <%= reviewsTitle %>
                             </h2>
                             <p class="section__lead">
-                              <%= lang.home.faq.lead %>
+                              <%= reviewsLead %>
                             </p>
                           </div>
-                          <% lang.home.faq.items.forEach((item)=> { %>
-                            <details class="faq">
-                              <summary class="faq__summary">
-                                <%= item.question %>
-                              </summary>
-                              <div class="faq__content">
-                                <%= item.answer %>
-                              </div>
-                            </details>
-                            <% }) %>
+                          <div class="grid grid--3">
+                            <% reviewItems.forEach((item, index)=> { %>
+                              <article class="card review-card">
+                                <div class="review-card__head">
+                                  <img class="review-card__avatar" src="/assets/users/user-<%= index + 1 %>.png"
+                                    alt="Фото клиента <%= item.name %>" width="48" height="48" loading="lazy">
+                                  <div>
+                                    <p class="review-card__name">
+                                      <%= item.name %>
+                                    </p>
+                                    <p class="review-card__stars" aria-label="Рейтинг 5 из 5">★★★★★</p>
+                                  </div>
+                                </div>
+                                <p class="review-card__text">
+                                  <%= item.text %>
+                                </p>
+                              </article>
+                              <% }) %>
+                          </div>
                         </div>
-                      </section>
-                      <% } %>
 
-                        <section class="section section--surface">
+                        <% if (lang.home.reviewForm) { %>
+                          <div class="container" style="margin-top: 48px; max-width: 600px;">
+                            <div class="card card--elevated">
+                              <h3 class="card__title">
+                                <%= lang.home.reviewForm.title %>
+                              </h3>
+                              <p class="card__text">
+                                <%= lang.home.reviewForm.lead %>
+                              </p>
+                              <form class="form" action="https://api.web3forms.com/submit" method="POST"
+                                autocomplete="off">
+                                <input type="hidden" name="access_key" value="<%= site.web3formsAccessKey %>">
+                                <input type="hidden" name="subject" value="New Review from Site">
+                                <input type="hidden" name="from_name" value="Technic Service Reviews">
+
+                                <div class="form__row">
+                                  <label class="form__label" for="review-name">
+                                    <%= lang.home.reviewForm.nameLabel %>
+                                  </label>
+                                  <input autocomplete="off" class="form__input" type="text" id="review-name" name="name"
+                                    placeholder="<%= lang.home.reviewForm.namePlaceholder %>" required>
+                                </div>
+                                <div class="form__row">
+                                  <label class="form__label" for="review-text">
+                                    <%= lang.home.reviewForm.textLabel %>
+                                  </label>
+                                  <textarea class="form__input" id="review-text" name="message" rows="4"
+                                    placeholder="<%= lang.home.reviewForm.textPlaceholder %>" required></textarea>
+                                </div>
+                                <div class="form__actions">
+                                  <button class="button button--primary" type="submit">
+                                    <%= lang.home.reviewForm.submit %>
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <% } %>
+                      </section>
+
+                      <% if (lang.home.faq && lang.home.faq.items && lang.home.faq.items.length) { %>
+                        <section class="section">
                           <div class="container">
                             <div class="section__header">
                               <h2 class="section__title">
-                                <%= lang.home.contact.title %>
+                                <%= lang.home.faq.title %>
                               </h2>
                               <p class="section__lead">
-                                <%= lang.home.contact.lead %>
+                                <%= lang.home.faq.lead %>
                               </p>
                             </div>
-                            <div class="contact-card">
-                              <div>
-                                <ul class="list">
-                                  <% lang.home.contact.list.forEach((item)=> {
-                                    const type = item.type;
-                                    const waNumber = site.phone.replace(/[^0-9]/g, '');
-                                    %>
-                                    <li class="list__item">
-                                      <strong>
-                                        <%= item.label %>:
-                                      </strong>
-                                      <% if (type==="phone" ) { %>
-                                        <a href="tel:<%= site.phone %>">
-                                          <%= site.phone %>
-                                        </a>
-                                        <% } else if (type==="messengers" ) { %>
-                                          <div class="messenger-row">
-                                            <a class="card__icon card__icon--social" href="<%= site.telegram %>"
-                                              target="_blank" rel="noopener" aria-label="Telegram">
-                                              <img src="/assets/icons/social/tg.png" alt="Telegram" width="24"
-                                                height="24">
-                                            </a>
-                                            <a class="card__icon card__icon--social"
-                                              href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener"
-                                              aria-label="WhatsApp">
-                                              <img src="/assets/icons/social/wh.png" alt="WhatsApp" width="24"
-                                                height="24">
-                                            </a>
-                                            <% if (site.facebook) { %>
-                                              <a class="card__icon card__icon--social" href="<%= site.facebook %>"
-                                                target="_blank" rel="noopener" aria-label="Facebook">
-                                                <img src="/assets/icons/social/fb.png" alt="Facebook" width="24"
-                                                  height="24">
-                                              </a>
-                                              <% } %>
-                                          </div>
-                                          <% } else if (type==="email" ) { %>
-                                            <a href="mailto:<%= site.email %>">
-                                              <%= site.email %>
-                                            </a>
-                                            <% } else { %>
-                                              <span>
-                                                <%= item.value %>
-                                              </span>
-                                              <% } %>
-                                    </li>
-                                    <% }) %>
-                                </ul>
-                              </div>
-                              <div class="card card--elevated">
-                                <h3 class="card__title">
+                            <% lang.home.faq.items.forEach((item)=> { %>
+                              <details class="faq">
+                                <summary class="faq__summary">
+                                  <%= item.question %>
+                                </summary>
+                                <div class="faq__content">
+                                  <%= item.answer %>
+                                </div>
+                              </details>
+                              <% }) %>
+                          </div>
+                        </section>
+                        <% } %>
+
+                          <section class="section section--surface">
+                            <div class="container">
+                              <div class="section__header">
+                                <h2 class="section__title">
                                   <%= lang.home.contact.title %>
-                                </h3>
-                                <p class="card__text">
+                                </h2>
+                                <p class="section__lead">
                                   <%= lang.home.contact.lead %>
                                 </p>
-                                <div class="messenger-row">
-                                  <a class="button button--secondary" href="<%= site.telegram %>" target="_blank"
-                                    rel="noopener">
-                                    <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram"
-                                      width="24" height="24">
-                                    Telegram
-                                  </a>
-                                  <a class="button button--ghost" href="https://wa.me/<%= site.phone %>" target="_blank"
-                                    rel="noopener">
-                                    <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp"
-                                      width="24" height="24">
-                                    WhatsApp
-                                  </a>
-                                  <% if (site.facebook) { %>
-                                    <a class="button button--ghost" href="<%= site.facebook %>" target="_blank"
+                              </div>
+                              <div class="contact-card">
+                                <div>
+                                  <ul class="list">
+                                    <% lang.home.contact.list.forEach((item)=> {
+                                      const type = item.type;
+                                      const waNumber = site.phone.replace(/[^0-9]/g, '');
+                                      %>
+                                      <li class="list__item">
+                                        <strong>
+                                          <%= item.label %>:
+                                        </strong>
+                                        <% if (type==="phone" ) { %>
+                                          <a href="tel:<%= site.phone %>">
+                                            <%= site.phone %>
+                                          </a>
+                                          <% } else if (type==="messengers" ) { %>
+                                            <div class="messenger-row">
+                                              <a class="card__icon card__icon--social" href="<%= site.telegram %>"
+                                                target="_blank" rel="noopener" aria-label="Telegram">
+                                                <img src="/assets/icons/social/tg.png" alt="Telegram" width="24"
+                                                  height="24">
+                                              </a>
+                                              <a class="card__icon card__icon--social"
+                                                href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener"
+                                                aria-label="WhatsApp">
+                                                <img src="/assets/icons/social/wh.png" alt="WhatsApp" width="24"
+                                                  height="24">
+                                              </a>
+                                              <% if (site.facebook) { %>
+                                                <a class="card__icon card__icon--social" href="<%= site.facebook %>"
+                                                  target="_blank" rel="noopener" aria-label="Facebook">
+                                                  <img src="/assets/icons/social/fb.png" alt="Facebook" width="24"
+                                                    height="24">
+                                                </a>
+                                                <% } %>
+                                            </div>
+                                            <% } else if (type==="email" ) { %>
+                                              <a href="mailto:<%= site.email %>">
+                                                <%= site.email %>
+                                              </a>
+                                              <% } else { %>
+                                                <span>
+                                                  <%= item.value %>
+                                                </span>
+                                                <% } %>
+                                      </li>
+                                      <% }) %>
+                                  </ul>
+                                </div>
+                                <div class="card card--elevated">
+                                  <h3 class="card__title">
+                                    <%= lang.home.contact.title %>
+                                  </h3>
+                                  <p class="card__text">
+                                    <%= lang.home.contact.lead %>
+                                  </p>
+                                  <div class="messenger-row">
+                                    <a class="button button--secondary" href="<%= site.telegram %>" target="_blank"
                                       rel="noopener">
-                                      <img class="button__icon" src="/assets/icons/social/fb.png" alt="Facebook"
+                                      <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram"
                                         width="24" height="24">
-                                      Facebook
+                                      Telegram
                                     </a>
-                                    <% } %>
+                                    <a class="button button--ghost" href="https://wa.me/<%= site.phone %>"
+                                      target="_blank" rel="noopener">
+                                      <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp"
+                                        width="24" height="24">
+                                      WhatsApp
+                                    </a>
+                                    <% if (site.facebook) { %>
+                                      <a class="button button--ghost" href="<%= site.facebook %>" target="_blank"
+                                        rel="noopener">
+                                        <img class="button__icon" src="/assets/icons/social/fb.png" alt="Facebook"
+                                          width="24" height="24">
+                                        Facebook
+                                      </a>
+                                      <% } %>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </section>
+                          </section>

@@ -874,3 +874,7 @@ button {
   object-fit: cover;
   display: block;
 }
+
+.review-card__avatar {
+    object-fit: cover;
+}

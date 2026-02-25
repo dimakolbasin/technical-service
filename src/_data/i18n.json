@@ -392,6 +392,41 @@
             ],
             "outro": "Я использую только проверенные и <strong>оригинальные запчасти</strong>. Если вам нужен честный эксперт и <strong>срочный ремонт техники в Батуми</strong> — обращайтесь, я всегда на связи!"
           }
+        },
+        "reviews": {
+          "title": "Отзывы клиентов",
+          "lead": "Пять отзывов от клиентов о качестве ремонта.",
+          "items": [
+            {
+              "name": "Юлия Ф.",
+              "text": "Мастер приехал в тот же день, быстро устранил проблему со стиральной машиной. Всё работает отлично."
+            },
+            {
+              "name": "Андрей К.",
+              "text": "Очень вежливо, по делу и без навязывания лишнего ремонта. Стоимость озвучили заранее."
+            },
+            {
+              "name": "Марина С.",
+              "text": "Починили духовку за один визит. Понравился аккуратный подход и понятные объяснения."
+            },
+            {
+              "name": "Георгий Н.",
+              "text": "Хороший сервис: быстро ответили, приехали вовремя, сделали качественно."
+            },
+            {
+              "name": "Екатерина Л.",
+              "text": "Кондиционер снова охлаждает как новый. Спасибо за оперативность и профессионализм."
+            }
+          ]
+        },
+        "reviewForm": {
+          "title": "Оставить отзыв",
+          "lead": "Поделитесь вашим мнением о нашей работе.",
+          "nameLabel": "Ваше имя",
+          "namePlaceholder": "Имя",
+          "textLabel": "Ваш отзыв",
+          "textPlaceholder": "Напишите, что именно мы ремонтировали и ваши впечатления",
+          "submit": "Отправить отзыв"
         }
       },
       "serviceFocus": {
@@ -2344,6 +2379,41 @@
             ],
             "outro": "I strictly use tested and <strong>original spare parts</strong>. If you need an honest expert and <strong>urgent appliance repair in Batumi</strong>, feel free to contact me—I am always available!"
           }
+        },
+        "reviews": {
+          "title": "Customer Reviews",
+          "lead": "Five client reviews about the quality of the repair.",
+          "items": [
+            {
+              "name": "Julia F.",
+              "text": "The technician arrived on the same day and quickly fixed the problem with the washing machine. Everything works perfectly."
+            },
+            {
+              "name": "Andrew K.",
+              "text": "Very polite, to the point, and without imposing unnecessary repairs. The cost was stated in advance."
+            },
+            {
+              "name": "Marina S.",
+              "text": "Fixed the oven in one visit. I liked the careful approach and clear explanations."
+            },
+            {
+              "name": "George N.",
+              "text": "Good service: they answered quickly, arrived on time, and did a high-quality job."
+            },
+            {
+              "name": "Catherine L.",
+              "text": "The air conditioner cools like new again. Thank you for the promptness and professionalism."
+            }
+          ]
+        },
+        "reviewForm": {
+          "title": "Leave a Review",
+          "lead": "Share your opinion about our work.",
+          "nameLabel": "Your Name",
+          "namePlaceholder": "Name",
+          "textLabel": "Your Review",
+          "textPlaceholder": "Write what exactly we repaired and your impressions",
+          "submit": "Submit Review"
         }
       },
       "serviceFocus": {
@@ -4294,6 +4364,41 @@
             ],
             "outro": "ვიყენებ მხოლოდ <strong>ორიგინალ სათადარიგო ნაწილებს</strong>. თუ გჭირდებათ პატიოსანი ექსპერტი და <strong>სასწრაფო ტექნიკის შეკეთება ბათუმში</strong> — დამიკავშირდით!"
           }
+        },
+        "reviews": {
+          "title": "მომხმარებელთა გამოხმაურება",
+          "lead": "ხუთი მომხმარებლის გამოხმაურება შეკეთების ხარისხზე.",
+          "items": [
+            {
+              "name": "იულია ფ.",
+              "text": "ხელოსანი იმავე დღეს მოვიდა და სწრაფად გამოასწორა სარეცხი მანქანის პრობლემა. ყველაფერი იდეალურად მუშაობს."
+            },
+            {
+              "name": "ანდრეი კ.",
+              "text": "ძალიან ზრდილობიანი, პირდაპირ საქმეზე გადადის ზედმეტი მომსახურების თავსმოხვევის გარეშე. ფასი წინასწარ მითხრეს."
+            },
+            {
+              "name": "მარინა ს.",
+              "text": "ღუმელი ერთი ვიზიტით შეაკეთა. მომეწონა ფრთხილი მიდგომა და გასაგები ახსნა-განმარტება."
+            },
+            {
+              "name": "გიორგი ნ.",
+              "text": "კარგი სერვისი: სწრაფად მიპასუხეს, დროულად მოვიდნენ და ხარისხიანად გააკეთეს საქმე."
+            },
+            {
+              "name": "ეკატერინე ლ.",
+              "text": "კონდიციონერი ისევ ახალივით აგრილებს. მადლობა სისწრაფისა და პროფესიონალიზმისთვის."
+            }
+          ]
+        },
+        "reviewForm": {
+          "title": "გამოხმაურების დატოვება",
+          "lead": "გაგვიზიარეთ თქვენი აზრი ჩვენი მუშაობის შესახებ.",
+          "nameLabel": "თქვენი სახელი",
+          "namePlaceholder": "სახელი",
+          "textLabel": "თქვენი გამოხმაურება",
+          "textPlaceholder": "დაწერეთ კონკრეტულად რა შევაკეთეთ და როგორია თქვენი შთაბეჭდილებები",
+          "submit": "გამოხმაურების გაგზავნა"
         }
       },
       "serviceFocus": {
