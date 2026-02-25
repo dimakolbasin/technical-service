@@ -1,18 +1,18 @@
 require('dotenv').config();
 
 const rawPhone = process.env.SITE_PHONE || "";
-// Убираем всё, кроме цифр и плюса. Используем этот формат и для ссылок, и для отображения.
 const cleanPhone = rawPhone.replace(/[^0-9+]/g, '');
 const address = {
-    street: process.env.SITE_ADDRESS_STREET || "Шериф Химшиашвили 57",
-    postalCode: process.env.SITE_ADDRESS_POSTAL || "6000",
-    locality: process.env.SITE_ADDRESS_LOCALITY || "Batumi",
-    region: process.env.SITE_ADDRESS_REGION || "Adjara",
-    country: process.env.SITE_ADDRESS_COUNTRY || "GE"
+    street: process.env.SITE_ADDRESS_STREET,
+    postalCode: process.env.SITE_ADDRESS_POSTAL,
+    locality: process.env.SITE_ADDRESS_LOCALITY,
+    region: process.env.SITE_ADDRESS_REGION,
+    country: process.env.SITE_ADDRESS_COUNTRY
 };
-const googleMaps = process.env.SITE_GOOGLE_MAP || "https://maps.app.goo.gl/WdTtsJLnKg9YSYaXA";
-const yandexMaps = process.env.SITE_YANDEX_MAP || "https://yandex.com.ge/maps/-/CPUbbX7-";
-const priceRange = process.env.SITE_PRICE_RANGE || "GEL 20+";
+
+const googleMaps = process.env.SITE_GOOGLE_MAP;
+const yandexMaps = process.env.SITE_YANDEX_MAP;
+const priceRange = process.env.SITE_PRICE_RANGE;
 
 module.exports = {
     name: process.env.SITE_NAME,
