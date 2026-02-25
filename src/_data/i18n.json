@@ -53,7 +53,7 @@
         "areas": "Батуми: Старый Батуми, Руставели, Химшиашвили, Багратиони, Агмашенебели, Джавахишвили, Тамар, Бони-Городок"
       },
       "home": {
-        "metaTitle": "Ремонт бытовой техники в Батуми — выезд, диагностика, гарантия",
+        "metaTitle": "Ремонт бытовой техники в Батуми | Выезд, диагностика, гарантия",
         "metaDescription": "Ремонт бытовой техники в Батуми. Выезд по районам, диагностика, прозрачные цены и гарантия на работы.",
         "badge": "Батуми",
         "title": "Ремонт бытовой техники в Батуми",
@@ -73,19 +73,104 @@
               "text": "Не сливает, не греет, шумит или течёт.",
               "icon": "icon-tools.png",
               "serviceIcon": "wash-machine.png",
-              "highlight": true
+              "highlight": true,
+              "seoContent": {
+                "sections": [
+                  {
+                    "title": "1. Типовые неисправности:",
+                    "list": [
+                      "не сливает воду или не отжимает",
+                      "шумит, стучит или сильно вибрирует",
+                      "не включается или выдает код ошибки",
+                      "протекает или не нагревает воду"
+                    ]
+                  },
+                  {
+                    "title": "2. Что мы ремонтируем:",
+                    "list": [
+                      "замена подшипников, ТЭНа, помпы (насоса)",
+                      "ремонт модуля управления и электроники",
+                      "очистка фильтров и патрубков",
+                      "устранение протечек и замена уплотнителей"
+                    ]
+                  },
+                  {
+                    "title": "3. Как проходит ремонт:",
+                    "list": [
+                      "Бесплатная диагностика на месте (при согласии на ремонт)",
+                      "<strong>Срочный выезд</strong> мастера на дом",
+                      "Установка качественных и <strong>оригинальных запчастей</strong>",
+                      "Официальная гарантия на работу и комплектующие"
+                    ]
+                  }
+                ],
+                "summary": "Если вам нужен надежный <strong>мастер на час</strong> или <strong>срочный ремонт техники в Батуми</strong>, доверьте работу профессионалу. Ваш <strong>мaстер на дом в Батуми</strong>."
+              }
             },
             {
               "title": "Газовые и электрические плиты",
               "text": "Не зажигается, не греет, выбивает автомат.",
               "icon": "icon-shield.svg",
-              "serviceIcon": "stove.png"
+              "serviceIcon": "stove.png",
+              "seoContent": {
+                "sections": [
+                  {
+                    "title": "1. Типовые неисправности:",
+                    "list": [
+                      "не зажигается конфорка или тухнет газ",
+                      "не работает духовка или не держит температуру",
+                      "бьет током, выбивает пробки или автомат",
+                      "запах газа (нужен <strong>срочный выезд</strong>!)"
+                    ]
+                  },
+                  {
+                    "title": "2. Что мы ремонтируем:",
+                    "list": [
+                      "замена термопар, кранов и свечей розжига",
+                      "ремонт электроподжига, замена ТЭНов духовки",
+                      "настройка правильного горения конфорок",
+                      "восстановление контактов и переключателей"
+                    ]
+                  },
+                  {
+                    "title": "3. Почему стоит вызвать мастера:",
+                    "text": "Газовые и мощные электрические приборы — зона повышенной опасности. Самостоятельный ремонт строго запрещен. <strong>Ремонт на дому</strong> в Батуми производится с использованием качественных запчастей."
+                  }
+                ],
+                "summary": ""
+              }
             },
             {
               "title": "Кондиционеры",
               "text": "Не охлаждает, пахнет, плохо дует.",
               "icon": "icon-call.svg",
-              "serviceIcon": "air.png"
+              "serviceIcon": "air.png",
+              "seoContent": {
+                "sections": [
+                  {
+                    "title": "1. Типовые неисправности:",
+                    "list": [
+                      "слабо или совсем не охлаждает",
+                      "капает вода из внутреннего блока",
+                      "шумит, трещит или вибрирует внешний блок",
+                      "появился неприятный запах прелости"
+                    ]
+                  },
+                  {
+                    "title": "2. Что мы делаем:",
+                    "list": [
+                      "полная чистка (внутренний и внешний блоки)",
+                      "заправка и дозаправка фреоном",
+                      "устранение утечек хладагента",
+                      "ремонт плат управления и дренажной системы"
+                    ]
+                  },
+                  {
+                    "title": "3. Наши преимущества:",
+                    "text": "Обязательная гарантия на все выполненные работы. Мы работаем <strong>в Батуми</strong> и за городом, используем <strong>оригинальные запчасти</strong>. Ваш <strong>мастер на дом</strong> доступен для оперативного обслуживания!"
+                  }
+                ]
+              }
             }
           ],
           "ctaToPrices": "Смотреть цены"
@@ -144,6 +229,14 @@
           "title": "FAQ",
           "lead": "Короткие ответы на популярные вопросы.",
           "items": [
+            {
+              "question": "Делаете ли вы срочный выезд?",
+              "answer": "Да, для ситуаций, где важна скорость, возможен срочный выезд в Батуми (в течение часа, зависит от загруженности мастера)."
+            },
+            {
+              "question": "Сколько стоит ремонт?",
+              "answer": "Точная стоимость зависит от сложности поломки и стоимости запчастей. Мастер назовет точную цену после визуальной диагностики и разборки аппарата."
+            },
             {
               "question": "Сколько занимает ремонт?",
               "answer": "От 30 минут, сложные случаи — по согласованию."
@@ -272,6 +365,33 @@
               "key": "ac-cleaning-importance"
             }
           ]
+        },
+        "aboutMaster": {
+          "title": "О мастере",
+          "lead": "Надежный ремонт с гарантией от профессионала",
+          "content": {
+            "subtitle": "Профессиональный ремонт бытовой техники со стажем",
+            "intro": "Здравствуйте, меня зовут Максим! Я занимаюсь профессиональным ремонтом стиральных машин, духовок, кондиционеров и варочных панелей. Я специализируюсь как на простых механических поломках, так и на сложном компонентном ремонте электронных модулей управления.",
+            "sections": [
+              {
+                "title": "Мой опыт:",
+                "list": [
+                  "<strong>Ремонт техники мировых брендов:</strong> Bosch, Samsung, LG, Indesit, Beko, Midea, Gorenje, Electrolux и многих других.",
+                  "<strong>Сложные случаи:</strong> восстановление электроники после скачков напряжения, что часто актуально.",
+                  "Замена подшипников разборных и неразборных баков."
+                ]
+              },
+              {
+                "title": "Мои профессиональные принципы:",
+                "list": [
+                  "<strong>Честная диагностика:</strong> я всегда прямо говорю, есть ли смысл ремонтировать аппарат, или дешевле и надежнее купить новый.",
+                  "<strong>Прозрачная стоимость:</strong> вы узнаете ориентировочную или точную цену ремонта до его начала, без скрытых платежей.",
+                  "<strong>Без навязывания лишних услуг:</strong> я меняю только то, что действительно сломано. Моя репутация и ваши рекомендации для меня важнее сиюминутной выгоды."
+                ]
+              }
+            ],
+            "outro": "Я использую только проверенные и <strong>оригинальные запчасти</strong>. Если вам нужен честный эксперт и <strong>срочный ремонт техники в Батуми</strong> — обращайтесь, я всегда на связи!"
+          }
         }
       },
       "serviceFocus": {
@@ -1885,7 +2005,7 @@
         "areas": "Batumi: Old Batumi, Rustaveli, Khimshiashvili, Bagrationi, Aghmashenebeli, Javakhishvili, Tamar, Boni-Gorodok"
       },
       "home": {
-        "metaTitle": "Home Appliance Repair in Batumi — On-site Service",
+        "metaTitle": "Home Appliance Repair in Batumi | On-site Service",
         "metaDescription": "Home appliance repair service in Batumi. On-site diagnostics, transparent pricing, and warranty on repairs.",
         "badge": "Batumi",
         "title": "Home appliance repair in Batumi",
@@ -1905,19 +2025,103 @@
               "text": "Not draining, not heating, noisy, or leaking.",
               "icon": "icon-tools.png",
               "serviceIcon": "wash-machine.png",
-              "highlight": true
+              "highlight": true,
+              "seoContent": {
+                "sections": [
+                  {
+                    "title": "1. Typical malfunctions:",
+                    "list": [
+                      "does not drain water or does not spin",
+                      "makes noise, knocks, or vibrates heavily",
+                      "does not turn on or displays an error code",
+                      "leaks or does not heat the water"
+                    ]
+                  },
+                  {
+                    "title": "2. What we repair:",
+                    "list": [
+                      "replacement of bearings, heaters, and pumps",
+                      "repair of control modules and electronics",
+                      "cleaning of filters and pipes",
+                      "leak elimination and seal replacement"
+                    ]
+                  },
+                  {
+                    "title": "3. How the repair takes place:",
+                    "list": [
+                      "Free on-site diagnostics (if you agree to the repair)",
+                      "<strong>Urgent visit</strong> to your home",
+                      "Installation of high-quality and <strong>original spare parts</strong>",
+                      "Official warranty on work and components"
+                    ]
+                  }
+                ],
+                "summary": "If you need a reliable <strong>appliance technician</strong> or <strong>urgent appliance repair in Batumi</strong>, entrust the work to a professional. <strong>Home repair service in Batumi</strong>."
+              }
             },
             {
               "title": "Gas and electric stoves",
               "text": "No ignition, no heat, breaker trips.",
               "icon": "icon-shield.svg",
-              "serviceIcon": "stove.png"
+              "serviceIcon": "stove.png",
+              "seoContent": {
+                "sections": [
+                  {
+                    "title": "1. Typical malfunctions:",
+                    "list": [
+                      "burner does not ignite or gas goes out",
+                      "oven does not work or does not hold temperature",
+                      "shocks with electricity or triggers circuit breakers",
+                      "smell of gas (requires an <strong>urgent visit</strong>!)"
+                    ]
+                  },
+                  {
+                    "title": "2. What we repair:",
+                    "list": [
+                      "replacement of thermocouples, valves, and ignition plugs",
+                      "electric ignition repair, replacement of oven heaters",
+                      "adjustment of proper burner combustion",
+                      "restoration of contacts and switches"
+                    ]
+                  },
+                  {
+                    "title": "3. Why you should call a master:",
+                    "text": "Gas appliances are high-danger zones. Self-repair is strictly prohibited. <strong>Home repairs in Batumi</strong> are carried out using high-quality parts."
+                  }
+                ]
+              }
             },
             {
               "title": "Air conditioners",
               "text": "Weak cooling, bad smell, poor airflow.",
               "icon": "icon-call.svg",
-              "serviceIcon": "air.png"
+              "serviceIcon": "air.png",
+              "seoContent": {
+                "sections": [
+                  {
+                    "title": "1. Typical malfunctions:",
+                    "list": [
+                      "cools poorly or not at all",
+                      "water drips from the indoor unit",
+                      "outdoor unit makes noise, crackles, or vibrates",
+                      "unpleasant smell appears"
+                    ]
+                  },
+                  {
+                    "title": "2. What we do:",
+                    "list": [
+                      "full cleaning (indoor and outdoor units)",
+                      "filling and topping up with freon",
+                      "freon leak elimination",
+                      "repair of control boards and drainage systems"
+                    ]
+                  },
+                  {
+                    "title": "3. Our advantages:",
+                    "text": "Mandatory warranty for all work performed. We work <strong>in Batumi</strong> and outside the city, using <strong>original spare parts</strong>. Your <strong>home master</strong> is available for prompt service!"
+                  }
+                ]
+              }
             }
           ],
           "ctaToPrices": "See prices"
@@ -1976,6 +2180,14 @@
           "title": "FAQ",
           "lead": "Short answers to common questions.",
           "items": [
+            {
+              "question": "Do you make urgent visits?",
+              "answer": "Yes, for situations where speed is important, an urgent visit in Batumi is possible (usually within an hour, depending on availability)."
+            },
+            {
+              "question": "How much does the repair cost?",
+              "answer": "The exact cost depends on the complexity of the breakdown and the price of spare parts. The master will name the exact price after a visual diagnosis and disassembly."
+            },
             {
               "question": "How long does repair take?",
               "answer": "From 30 minutes, complex cases by agreement."
@@ -2105,6 +2317,33 @@
               "key": "ac-cleaning-importance"
             }
           ]
+        },
+        "aboutMaster": {
+          "title": "About the Master",
+          "lead": "Reliable repair with a warranty from a professional",
+          "content": {
+            "subtitle": "Professional Home Appliance Repair with Experience",
+            "intro": "Hello, my name is Maxim! I professionally repair washing machines, ovens, air conditioners, and hobs. I specialize in both simple mechanical breakdowns and complex component repairs of electronic control modules.",
+            "sections": [
+              {
+                "title": "My Experience:",
+                "list": [
+                  "<strong>Repair of global brands:</strong> Bosch, Samsung, LG, Indesit, Beko, Midea, Gorenje, Electrolux, and many others.",
+                  "<strong>Complex cases:</strong> restoring electronics after power surges, which is highly relevant here.",
+                  "Replacement of bearings in non-dismountable tubs."
+                ]
+              },
+              {
+                "title": "My Professional Principles:",
+                "list": [
+                  "<strong>Honest diagnostics:</strong> I always state directly whether it makes sense to repair the device, or if it is cheaper and more reliable to buy a new one.",
+                  "<strong>Transparent pricing:</strong> you will know the estimated or exact repair cost before it starts, with no hidden fees.",
+                  "<strong>No imposed services:</strong> I only change what is actually broken. My reputation and your recommendations are more important to me than short-term gain."
+                ]
+              }
+            ],
+            "outro": "I strictly use tested and <strong>original spare parts</strong>. If you need an honest expert and <strong>urgent appliance repair in Batumi</strong>, feel free to contact me—I am always available!"
+          }
         }
       },
       "serviceFocus": {
@@ -3716,7 +3955,7 @@
         "areas": "ბათუმი: ძველი ბათუმი, რუსთაველი, ხიმშიაშვილი, ბაგრატიონი, აღმაშენებელი, ჯავახიშვილი, თამარი, ბონი-გოროდოკი"
       },
       "home": {
-        "metaTitle": "საოჯახო ტექნიკის შეკეთება ბათუმში — ადგილზე მომსახურება",
+        "metaTitle": "საოჯახო ტექნიკის შეკეთება ბათუმში | ადგილზე მომსახურება",
         "metaDescription": "საოჯახო ტექნიკის შეკეთება ბათუმში. ადგილზე დიაგნოსტიკა, გამჭვირვალე ფასები და გარანტია.",
         "badge": "ბათუმი",
         "title": "საოჯახო ტექნიკის შეკეთება ბათუმში",
@@ -3736,19 +3975,103 @@
               "text": "არ წურავს, არ ათბობს, ხმაურობს ან ჟონავს.",
               "icon": "icon-tools.png",
               "serviceIcon": "wash-machine.png",
-              "highlight": true
+              "highlight": true,
+              "seoContent": {
+                "sections": [
+                  {
+                    "title": "1. ტიპიური გაუმართაობები:",
+                    "list": [
+                      "არ ასხამს წყალს ან არ წურავს",
+                      "ხმაურობს, აკაკუნებს ან ძლიერ ვიბრირებს",
+                      "არ ირთვება ან აჩვენებს შეცდომის კოდს",
+                      "ჟონავს ან არ აცხელებს წყალს"
+                    ]
+                  },
+                  {
+                    "title": "2. რას ვარემონტებთ:",
+                    "list": [
+                      "საკისრების, ტენის და ტუმბოს შეცვლა",
+                      "მართვის მოდულის და ელექტრონიკის შეკეთება",
+                      "ფილტრების და მილების გაწმენდა",
+                      "გაჟონვის აღმოფხვრა და შემამჭიდროვებლის შეცვლა"
+                    ]
+                  },
+                  {
+                    "title": "3. როგორ მიმდინარეობს შეკეთება:",
+                    "list": [
+                      "უფასო დიაგნოსტიკა ადგილზე (შეკეთებაზე თანხმობის შემთხვევაში)",
+                      "<strong>სასწრაფო გამოძახება</strong> ბინაზე",
+                      "ხარისხიანი და <strong>ორიგინალი სათადარიგო ნაწილების</strong> დაყენება",
+                      "ოფიციალური გარანტია შესრულებულ სამუშაოზე და ნაწილებზე"
+                    ]
+                  }
+                ],
+                "summary": "თუ გჭირდებათ საიმედო <strong>ხელოსანი სახლში</strong> ან <strong>სასწრაფო ტექნიკის შეკეთება ბათუმში</strong>, მიანდეთ საქმე პროფესიონალს."
+              }
             },
             {
               "title": "გაზის და ელექტრო გაზქურები",
               "text": "არ ინთება, არ ათბობს, ავტომატს თიშავს.",
               "icon": "icon-shield.svg",
-              "serviceIcon": "stove.png"
+              "serviceIcon": "stove.png",
+              "seoContent": {
+                "sections": [
+                  {
+                    "title": "1. ტიპიური გაუმართაობები:",
+                    "list": [
+                      "კომფორი არ ინთება ან გაზი ქრება",
+                      "ღუმელი არ მუშაობს ან ტემპერატურას არ ინარჩუნებს",
+                      "დენი არტყამს ან ავტომატს თიშავს",
+                      "გაზის სუნი (საჭიროებს <strong>სასწრაფო გამოძახებას</strong>!)"
+                    ]
+                  },
+                  {
+                    "title": "2. რას ვარემონტებთ:",
+                    "list": [
+                      "თერმოწყვილების, ონკანების და სანთლების შეცვლა",
+                      "ელექტრონული ანთების შეკეთება, ღუმელის ტენების შეცვლა",
+                      "კომფორების წვის დარეგულირება",
+                      "კონტაქტების და გადამრთველების აღდგენა"
+                    ]
+                  },
+                  {
+                    "title": "3. რატომ უნდა გამოიძახოთ ხელოსანი:",
+                    "text": "გაზის მოწყობილობები მაღალი რისკის ზონაა. <strong>შეკეთება სახლში</strong> ბათუმში ხორციელდება უსაფრთხოების ნორმების დაცვით."
+                  }
+                ]
+              }
             },
             {
               "title": "კონდიციონერები",
               "text": "სუსტია გაგრილება, სუნი აქვს ან ცუდად უბერავს.",
               "icon": "icon-call.svg",
-              "serviceIcon": "air.png"
+              "serviceIcon": "air.png",
+              "seoContent": {
+                "sections": [
+                  {
+                    "title": "1. ტიპიური გაუმართაობები:",
+                    "list": [
+                      "სუსტად ან საერთოდ არ აგრილებს",
+                      "შიდა ბლოკიდან წყალი წვეთავს",
+                      "გარე ბლოკი ხმაურობს ან ვიბრირებს",
+                      "გაჩნდა უსიამოვნო სუნი"
+                    ]
+                  },
+                  {
+                    "title": "2. რას ვაკეთებთ:",
+                    "list": [
+                      "სრული წმენდა (შიდა და გარე ბლოკები)",
+                      "ფრეონით გამართვა და დამატება",
+                      "ფრეონის გაჟონვის აღმოფხვრა",
+                      "მართვის პლატების და სადრენაჟო სისტემის შეკეთება"
+                    ]
+                  },
+                  {
+                    "title": "3. ჩვენი უპირატესობები:",
+                    "text": "სავალდებულო გარანტია ყველა შესრულებულ სამუშაოზე. ჩვენ ვმუშაობთ <strong>ბათუმში</strong> და იყენებთ <strong>ორიგინალ სათადარიგო ნაწილებს</strong>. თქვენი <strong>ხელოსანი გამოძახებით</strong> მზადაა ოპერატიული მომსახურებისთვის!"
+                  }
+                ]
+              }
             }
           ],
           "ctaToPrices": "ფასების ნახვა"
@@ -3807,6 +4130,14 @@
           "title": "ხშირი კითხვები",
           "lead": "კომფორტული პასუხები ყველაზე პოპულარულ შეკითხვებზე.",
           "items": [
+            {
+              "question": "აკეთებთ თუ არა სასწრაფო გამოძახებას?",
+              "answer": "დიახ, იმ სიტუაციებში, სადაც სისწრაფე მნიშვნელოვანია, შესაძლებელია სასწრაფო გამოძახება ბათუმში."
+            },
+            {
+              "question": "რა ღირს შეკეთება?",
+              "answer": "ზუსტი ღირებულება დამოკიდებულია დაზიანების სირთულესა და სათადარიგო ნაწილების ფასზე. ოსტატი ზუსტ ფასს დაგისახელებთ ვიზუალური დიაგნოსტიკის და აპარატის დაშლის შემდეგ."
+            },
             {
               "question": "რამდენ ხანს გრძელდება რემონტი?",
               "answer": "30 წუთიდან, რთულ შემთხვევებში შეთანხმებით."
@@ -3936,6 +4267,33 @@
               "key": "ac-cleaning-importance"
             }
           ]
+        },
+        "aboutMaster": {
+          "title": "ოსტატის შესახებ",
+          "lead": "საიმედო შეკეთება გარანტიით პროფესიონალისგან",
+          "content": {
+            "subtitle": "პროფესიონალური საყოფაცხოვრებო ტექნიკის შეკეთება დიდი გამოცდილებით",
+            "intro": "გამარჯობა, მე მქვია მაქსიმ! მე პროფესიონალურად ვარემონტებ სარეცხი მანქანებს, ელექტრო ღუმელებს, კონდიციონერებსა და ზედაპირებს. სპეციალიზებული ვარ როგორც მარტივ მექანიკურ დაზიანებებზე, ისე მართვის ელექტრონული მოდულების რთულ შეკეთებაზე.",
+            "sections": [
+              {
+                "title": "ჩემი გამოცდილება:",
+                "list": [
+                  "<strong>მსოფლიო ბრენდების ტექნიკის შეკეთება:</strong> Bosch, Samsung, LG, Indesit, Beko, Midea, Gorenje, Electrolux და მრავალი სხვა.",
+                  "<strong>რთული შემთხვევები:</strong> ელექტრონიკის აღდგენა ძაბვის ნახტომების შემდეგ.",
+                  "საკისრების შეცვლა (დაშლად და დაუშლელ ავზებში)."
+                ]
+              },
+              {
+                "title": "ჩემი პროფესიული პრინციპები:",
+                "list": [
+                  "<strong>პატიოსანი დიაგნოსტიკა:</strong> მე ყოველთვის პირდაპირ ვამბობ, ღირს თუ არა აპარატის შეკეთება, ან უფრო იაფი და საიმედო ხომ არ არის ახლის ყიდვა.",
+                  "<strong>გამჭვირვალე ფასები:</strong> თქვენ შეკეთების დაწყებამდე გაიგებთ მიახლოებით ან ზუსტ ფასს, ფარული გადასახადების გარეშე.",
+                  "<strong>არავითარი ზედმეტი მომსახურების თავსმოხვევა:</strong> ვცვლი მხოლოდ იმას, რაც მართლა გაფუჭებულია. ჩემი რეპუტაცია და თქვენი რეკომენდაციები ჩემთვის უფრო მნიშვნელოვანია, ვიდრე წუთიერი მოგება."
+                ]
+              }
+            ],
+            "outro": "ვიყენებ მხოლოდ <strong>ორიგინალ სათადარიგო ნაწილებს</strong>. თუ გჭირდებათ პატიოსანი ექსპერტი და <strong>სასწრაფო ტექნიკის შეკეთება ბათუმში</strong> — დამიკავშირდით!"
+          }
         }
       },
       "serviceFocus": {

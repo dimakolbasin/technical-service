@@ -11,40 +11,41 @@
         <p class="hero__lead">
           <%= lang.home.areaNote %>
         </p>
-      <% } %>
-      <% if (lang.home.chips) { %>
-        <div class="hero__chips">
-          <% lang.home.chips.forEach((chip)=> { %>
-            <span class="badge badge--outline">
-              <%= chip %>
-            </span>
-            <% }) %>
-        </div>
         <% } %>
-          <div class="hero__actions">
-            <a class="button button--primary" href="tel:<%= site.phone %>">
-              <%= lang.home.ctaPrimary %>
-            </a>
-            <a class="button button--secondary" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
-              <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp" width="24" height="24">
-              <%= lang.home.ctaSecondary %>
-            </a>
-            <a class="button button--ghost" href="<%= site.telegram %>" target="_blank" rel="noopener">
-              <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram" width="24" height="24">
-              Telegram
-            </a>
-            <% if (site.facebook) { %>
-              <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
-                <img class="button__icon" src="/assets/icons/social/fb.png" alt="Facebook" width="24" height="24">
-                Facebook
-              </a>
-              <% } %>
-          </div>
-          <% if (lang.home.heroNote) { %>
-            <p class="hero__note">
-              <%= lang.home.heroNote %>
-            </p>
+          <% if (lang.home.chips) { %>
+            <div class="hero__chips">
+              <% lang.home.chips.forEach((chip)=> { %>
+                <span class="badge badge--outline">
+                  <%= chip %>
+                </span>
+                <% }) %>
+            </div>
             <% } %>
+              <div class="hero__actions">
+                <a class="button button--primary" href="tel:<%= site.phone %>">
+                  <%= lang.home.ctaPrimary %>
+                </a>
+                <a class="button button--secondary" href="https://wa.me/<%= site.phone %>" target="_blank"
+                  rel="noopener">
+                  <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp" width="24" height="24">
+                  <%= lang.home.ctaSecondary %>
+                </a>
+                <a class="button button--ghost" href="<%= site.telegram %>" target="_blank" rel="noopener">
+                  <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram" width="24" height="24">
+                  Telegram
+                </a>
+                <% if (site.facebook) { %>
+                  <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
+                    <img class="button__icon" src="/assets/icons/social/fb.png" alt="Facebook" width="24" height="24">
+                    Facebook
+                  </a>
+                  <% } %>
+              </div>
+              <% if (lang.home.heroNote) { %>
+                <p class="hero__note">
+                  <%= lang.home.heroNote %>
+                </p>
+                <% } %>
     </div>
     <div class="card card--elevated hero__form">
       <h2 class="card__title">
@@ -56,7 +57,7 @@
       <form class="form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
         <input type="hidden" name="access_key" value="<%= site.web3formsAccessKey %>">
         <!-- dummy field to discourage Chrome autofill -->
-<!--        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1"
+        <!--        <input type="text" name="chrome_off" autocomplete="chrome-off" aria-hidden="true" tabindex="-1"
           role="presentation" aria-label=" "
           style="position:absolute;left:-9999px;opacity:0;height:0;width:0;border:0;padding:0;">-->
         <div class="form__row">
@@ -71,8 +72,8 @@
             <%= lang.home.contact.form.phoneLabel %>
           </label>
           <div class="form__phone-group">
-            <input autocomplete="off" class="form__input form__input--phone" type="number" min="0" id="phone-hero" name="phone"
-              placeholder="<%= lang.home.contact.form.phonePlaceholder %>" inputmode="tel" required
+            <input autocomplete="off" class="form__input form__input--phone" type="number" min="0" id="phone-hero"
+              name="phone" placeholder="<%= lang.home.contact.form.phonePlaceholder %>" inputmode="tel" required
               oninvalid="this.setCustomValidity('<%= lang.home.contact.form.phoneRequired %>')"
               oninput="this.setCustomValidity('')">
             <div class="form__contact-methods" role="group" aria-label="Preferred contact methods">
@@ -80,23 +81,23 @@
                 <%= lang.home.contact.form.preferredContactLabel %>
               </span>
 
-	            <input class="form__contact-method-input" type="checkbox" id="preferred-contact-call"
-	               name="preferredContact[]" value="call">
-	            <label class="form__contact-method" for="preferred-contact-call" title="Call">
-	              <img class="button__icon" src="/assets/icons/social/call.png" alt="Call" width="24" height="24">
-	            </label>
+              <input class="form__contact-method-input" type="checkbox" id="preferred-contact-call"
+                name="preferredContact[]" value="call">
+              <label class="form__contact-method" for="preferred-contact-call" title="Call">
+                <img class="button__icon" src="/assets/icons/social/call.png" alt="Call" width="24" height="24">
+              </label>
 
-	              <input class="form__contact-method-input" type="checkbox" id="preferred-contact-tg"
-	                name="preferredContact[]" value="telegram">
-	              <label class="form__contact-method" for="preferred-contact-tg" title="Telegram">
-	                <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram" width="24" height="24">
-	              </label>
+              <input class="form__contact-method-input" type="checkbox" id="preferred-contact-tg"
+                name="preferredContact[]" value="telegram">
+              <label class="form__contact-method" for="preferred-contact-tg" title="Telegram">
+                <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram" width="24" height="24">
+              </label>
 
-	              <input class="form__contact-method-input" type="checkbox" id="preferred-contact-wh"
-	                name="preferredContact[]" value="whatsapp">
-	              <label class="form__contact-method" for="preferred-contact-wh" title="WhatsApp">
-	                <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp" width="24" height="24">
-	              </label>
+              <input class="form__contact-method-input" type="checkbox" id="preferred-contact-wh"
+                name="preferredContact[]" value="whatsapp">
+              <label class="form__contact-method" for="preferred-contact-wh" title="WhatsApp">
+                <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp" width="24" height="24">
+              </label>
 
             </div>
           </div>
@@ -159,10 +160,37 @@
                 <p class="card__text">
                   <%= item.text %>
                 </p>
-                <a class="card__link" href="#prices">
-                  <%= lang.home.services.linkLabel %>
-                    <%= item.title %>
-                </a>
+                <% if (item.seoContent) { %>
+                  <details class="seo-accordion">
+                    <summary class="seo-accordion__summary">
+                      <%= lang.home.services.moreLabel || "Подробнее" %>
+                    </summary>
+                    <div class="seo-accordion__content">
+                      <% item.seoContent.sections.forEach(section=> { %>
+                        <h4>
+                          <%= section.title %>
+                        </h4>
+                        <% if (section.list) { %>
+                          <ul>
+                            <% section.list.forEach(li=> { %>
+                              <li><%- li %></li>
+                              <% }) %>
+                          </ul>
+                          <% } %>
+                            <% if (section.text) { %>
+                              <p><%- section.text %></p>
+                              <% } %>
+                                <% }) %>
+                                  <% if (item.seoContent.summary) { %>
+                                    <p><%- item.seoContent.summary %></p>
+                                    <% } %>
+                    </div>
+                  </details>
+                  <% } %>
+                    <a class="card__link" href="#prices" style="margin-top: 16px; display: inline-block;">
+                      <%= lang.home.services.linkLabel %>
+                        <%= item.title %>
+                    </a>
         </article>
         <% }) %>
     </div>
@@ -173,292 +201,360 @@
   <section class="section">
     <div class="container">
       <div class="section__header">
-        <h2 class="section__title"><%= lang.home.brands.title %></h2>
+        <h2 class="section__title">
+          <%= lang.home.brands.title %>
+        </h2>
         <% if (lang.home.brands.lead) { %>
-          <p class="section__lead"><%= lang.home.brands.lead %></p>
-        <% } %>
+          <p class="section__lead">
+            <%= lang.home.brands.lead %>
+          </p>
+          <% } %>
       </div>
       <div class="badge-row">
         <% lang.home.brands.items.forEach((brand)=> { %>
-          <span class="badge badge--outline"><%= brand %></span>
-        <% }) %>
-      </div>
-    </div>
-  </section>
-<% } %>
-
-<% if (lang.home.guides) { %>
-  <section class="section section--surface">
-    <div class="container">
-      <div class="section__header">
-        <h2 class="section__title"><%= lang.home.guides.title %></h2>
-        <% if (lang.home.guides.lead) { %>
-          <p class="section__lead"><%= lang.home.guides.lead %></p>
-        <% } %>
-      </div>
-      <div class="grid grid--3">
-        <% lang.home.guides.items.forEach((item)=> { %>
-          <article class="card">
-            <h3 class="card__title"><%= item.title %></h3>
-            <% if (item.text) { %>
-              <p class="card__text"><%= item.text %></p>
-            <% } %>
-            <% const guideLinkLabel = item.linkLabel || lang.home.guides.linkLabel; %>
-            <a class="card__link" href="<%= lang.paths[item.key] %>">
-              <%= guideLinkLabel %> — <%= item.title %>
-            </a>
-          </article>
-        <% }) %>
-      </div>
-    </div>
-  </section>
-<% } %>
-
-<% if (lang.serviceFocus) { %>
-  <section class="section">
-    <div class="container">
-      <div class="section__header">
-        <h2 class="section__title">
-          <%= lang.serviceFocus.title %>
-        </h2>
-        <p class="section__lead">
-          <%= lang.serviceFocus.lead %>
-        </p>
-      </div>
-      <div class="grid grid--3">
-        <% lang.serviceFocus.items.forEach((item)=> { %>
-          <article class="card">
-            <h3 class="card__title">
-              <%= item.title %>
-            </h3>
-            <% if (item.text) { %>
-              <p class="card__text">
-                <%= item.text %>
-              </p>
-            <% } %>
-            <a class="card__link" href="<%= lang.paths[item.key] %>">
-              <%= lang.serviceFocus.linkLabel %> — <%= item.title %>
-            </a>
-          </article>
-        <% }) %>
-      </div>
-    </div>
-  </section>
-<% } %>
-
-<section class="section section--surface" id="prices">
-  <div class="container">
-    <div class="section__header">
-      <h2 class="section__title">
-        <%= lang.home.prices.title %>
-      </h2>
-      <p class="section__lead">
-        <%= lang.home.prices.lead %>
-      </p>
-    </div>
-    <ul class="price-list">
-      <% lang.home.prices.items.forEach((item)=> { %>
-        <li class="price-list__item">
-          <strong>
-            <%= item.label %>
-          </strong>
-          <span>
-            <%= item.value %>
+          <span class="badge badge--outline">
+            <%= brand %>
           </span>
-        </li>
-        <% }) %>
-    </ul>
-  </div>
-</section>
-
-<section class="section section--surface">
-  <div class="container">
-    <div class="section__header">
-      <h2 class="section__title">
-        <%= lang.home.benefits.title %>
-      </h2>
-      <p class="section__lead">
-        <%= lang.home.benefits.lead %>
-      </p>
-    </div>
-    <div class="grid grid--3">
-      <% lang.home.benefits.items.forEach((item)=> { %>
-        <div class="card">
-          <h3 class="card__title">
-            <%= item.title %>
-          </h3>
-          <p class="card__text">
-            <%= item.text %>
-          </p>
-        </div>
-        <% }) %>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section__header">
-      <h2 class="section__title">
-        <%= lang.home.steps.title %>
-      </h2>
-      <p class="section__lead">
-        <%= lang.home.steps.lead %>
-      </p>
-    </div>
-    <div class="steps">
-      <% lang.home.steps.items.forEach((item, index)=> { %>
-        <div class="steps__item">
-          <div class="steps__index">
-            <%= index + 1 %>
-          </div>
-          <p class="steps__text">
-            <%= item %>
-          </p>
-        </div>
-        <% }) %>
-    </div>
-  </div>
-</section>
-
-<% if (lang.home.aboutSnippet) { %>
-  <section class="section section--surface">
-    <div class="container">
-      <div class="section__header">
-        <h2 class="section__title">
-          <%= lang.home.aboutSnippet.title %>
-        </h2>
-        <p class="section__lead">
-          <%= lang.home.aboutSnippet.lead %>
-        </p>
+          <% }) %>
       </div>
-      <% if (lang.home.aboutSnippet.pillars) { %>
-        <div class="grid grid--3">
-          <% lang.home.aboutSnippet.pillars.forEach((pillar)=> { %>
-            <div class="card">
-              <h3 class="card__title">
-                <%= pillar.title %>
-              </h3>
-              <p class="card__text">
-                <%= pillar.text %>
-              </p>
-            </div>
-            <% }) %>
-        </div>
-        <% } %>
-          <div class="section__actions">
-            <a class="button button--ghost" href="<%= lang.paths.about %>">
-              <%= lang.pages.about.heading %>
-            </a>
-          </div>
     </div>
-		  </section>
-		  <% } %>
+  </section>
+  <% } %>
 
-		    <% if (lang.home.faq && lang.home.faq.items && lang.home.faq.items.length) { %>
-		      <section class="section">
-		        <div class="container">
-		          <div class="section__header">
-		            <h2 class="section__title">
-		              <%= lang.home.faq.title %>
-		            </h2>
-		            <p class="section__lead">
-		              <%= lang.home.faq.lead %>
-		            </p>
-		          </div>
-		          <% lang.home.faq.items.forEach((item)=> { %>
-		            <details class="faq">
-		              <summary class="faq__summary">
-		                <%= item.question %>
-		              </summary>
-		              <div class="faq__content">
-		                <%= item.answer %>
-		              </div>
-		            </details>
-		            <% }) %>
-		        </div>
-		      </section>
-		      <% } %>
+    <% if (lang.home.guides) { %>
+      <section class="section section--surface">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">
+              <%= lang.home.guides.title %>
+            </h2>
+            <% if (lang.home.guides.lead) { %>
+              <p class="section__lead">
+                <%= lang.home.guides.lead %>
+              </p>
+              <% } %>
+          </div>
+          <div class="grid grid--3">
+            <% lang.home.guides.items.forEach((item)=> { %>
+              <article class="card">
+                <h3 class="card__title">
+                  <%= item.title %>
+                </h3>
+                <% if (item.text) { %>
+                  <p class="card__text">
+                    <%= item.text %>
+                  </p>
+                  <% } %>
+                    <% const guideLinkLabel=item.linkLabel || lang.home.guides.linkLabel; %>
+                      <a class="card__link" href="<%= lang.paths[item.key] %>">
+                        <%= guideLinkLabel %> — <%= item.title %>
+                      </a>
+              </article>
+              <% }) %>
+          </div>
+        </div>
+      </section>
+      <% } %>
 
-		    <section class="section section--surface">
-		      <div class="container">
-		        <div class="section__header">
+        <% if (lang.serviceFocus) { %>
+          <section class="section">
+            <div class="container">
+              <div class="section__header">
+                <h2 class="section__title">
+                  <%= lang.serviceFocus.title %>
+                </h2>
+                <p class="section__lead">
+                  <%= lang.serviceFocus.lead %>
+                </p>
+              </div>
+              <div class="grid grid--3">
+                <% lang.serviceFocus.items.forEach((item)=> { %>
+                  <article class="card">
+                    <h3 class="card__title">
+                      <%= item.title %>
+                    </h3>
+                    <% if (item.text) { %>
+                      <p class="card__text">
+                        <%= item.text %>
+                      </p>
+                      <% } %>
+                        <a class="card__link" href="<%= lang.paths[item.key] %>">
+                          <%= lang.serviceFocus.linkLabel %> — <%= item.title %>
+                        </a>
+                  </article>
+                  <% }) %>
+              </div>
+            </div>
+          </section>
+          <% } %>
+
+            <section class="section section--surface" id="prices">
+              <div class="container">
+                <div class="section__header">
                   <h2 class="section__title">
-                      <%= lang.home.contact.title %>
+                    <%= lang.home.prices.title %>
                   </h2>
                   <p class="section__lead">
-                      <%= lang.home.contact.lead %>
+                    <%= lang.home.prices.lead %>
                   </p>
-        </div>
-        <div class="contact-card">
-          <div>
-            <ul class="list">
-              <% lang.home.contact.list.forEach((item)=> {
-                const type = item.type;
-                const waNumber = site.phone.replace(/[^0-9]/g, '');
-                %>
-                <li class="list__item">
-                  <strong>
-                    <%= item.label %>:
-                  </strong>
-                  <% if (type==="phone" ) { %>
-                    <a href="tel:<%= site.phone %>">
-                      <%= site.phone %>
-                    </a>
-                    <% } else if (type==="messengers" ) { %>
-                      <div class="messenger-row">
-                        <a class="card__icon card__icon--social" href="<%= site.telegram %>" target="_blank"
-                          rel="noopener" aria-label="Telegram">
-                          <img src="/assets/icons/social/tg.png" alt="Telegram" width="24" height="24">
-                        </a>
-                        <a class="card__icon card__icon--social" href="https://wa.me/<%= waNumber %>" target="_blank"
-                          rel="noopener" aria-label="WhatsApp">
-                          <img src="/assets/icons/social/wh.png" alt="WhatsApp" width="24" height="24">
-                        </a>
-                        <% if (site.facebook) { %>
-                          <a class="card__icon card__icon--social" href="<%= site.facebook %>" target="_blank"
-                            rel="noopener" aria-label="Facebook">
-                            <img src="/assets/icons/social/fb.png" alt="Facebook" width="24" height="24">
-                          </a>
-                          <% } %>
+                </div>
+                <ul class="price-list">
+                  <% lang.home.prices.items.forEach((item)=> { %>
+                    <li class="price-list__item">
+                      <strong>
+                        <%= item.label %>
+                      </strong>
+                      <span>
+                        <%= item.value %>
+                      </span>
+                    </li>
+                    <% }) %>
+                </ul>
+              </div>
+            </section>
+
+            <section class="section section--surface">
+              <div class="container">
+                <div class="section__header">
+                  <h2 class="section__title">
+                    <%= lang.home.benefits.title %>
+                  </h2>
+                  <p class="section__lead">
+                    <%= lang.home.benefits.lead %>
+                  </p>
+                </div>
+                <div class="grid grid--3">
+                  <% lang.home.benefits.items.forEach((item)=> { %>
+                    <div class="card">
+                      <h3 class="card__title">
+                        <%= item.title %>
+                      </h3>
+                      <p class="card__text">
+                        <%= item.text %>
+                      </p>
+                    </div>
+                    <% }) %>
+                </div>
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="container">
+                <div class="section__header">
+                  <h2 class="section__title">
+                    <%= lang.home.steps.title %>
+                  </h2>
+                  <p class="section__lead">
+                    <%= lang.home.steps.lead %>
+                  </p>
+                </div>
+                <div class="steps">
+                  <% lang.home.steps.items.forEach((item, index)=> { %>
+                    <div class="steps__item">
+                      <div class="steps__index">
+                        <%= index + 1 %>
                       </div>
-                      <% } else if (type==="email" ) { %>
-                        <a href="mailto:<%= site.email %>">
-                          <%= site.email %>
+                      <p class="steps__text">
+                        <%= item %>
+                      </p>
+                    </div>
+                    <% }) %>
+                </div>
+              </div>
+            </section>
+
+            <% if (lang.home.aboutSnippet) { %>
+              <section class="section section--surface">
+                <div class="container">
+                  <div class="section__header">
+                    <h2 class="section__title">
+                      <%= lang.home.aboutSnippet.title %>
+                    </h2>
+                    <p class="section__lead">
+                      <%= lang.home.aboutSnippet.lead %>
+                    </p>
+                  </div>
+                  <% if (lang.home.aboutSnippet.pillars) { %>
+                    <div class="grid grid--3">
+                      <% lang.home.aboutSnippet.pillars.forEach((pillar)=> { %>
+                        <div class="card">
+                          <h3 class="card__title">
+                            <%= pillar.title %>
+                          </h3>
+                          <p class="card__text">
+                            <%= pillar.text %>
+                          </p>
+                        </div>
+                        <% }) %>
+                    </div>
+                    <% } %>
+                      <div class="section__actions">
+                        <a class="button button--ghost" href="<%= lang.paths.about %>">
+                          <%= lang.pages.about.heading %>
                         </a>
-                        <% } else { %>
-                          <span>
-                            <%= item.value %>
-                          </span>
-                          <% } %>
-                </li>
-                <% }) %>
-            </ul>
-          </div>
-          <div class="card card--elevated">
-            <h3 class="card__title">
-              <%= lang.home.contact.title %>
-            </h3>
-            <p class="card__text">
-              <%= lang.home.contact.lead %>
-            </p>
-            <div class="messenger-row">
-              <a class="button button--secondary" href="<%= site.telegram %>" target="_blank" rel="noopener">
-                <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram" width="24" height="24">
-                Telegram
-              </a>
-              <a class="button button--ghost" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
-                <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp" width="24" height="24">
-                WhatsApp
-              </a>
-              <% if (site.facebook) { %>
-                <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
-                  <img class="button__icon" src="/assets/icons/social/fb.png" alt="Facebook" width="24" height="24">
-                  Facebook
-                </a>
-                <% } %>
-            </div>
-          </div>
-        </div>
-	      </div>
-	    </section>
+                      </div>
+                </div>
+              </section>
+              <% } %>
+
+                <% if (lang.home.aboutMaster) { %>
+                  <section class="section">
+                    <div class="container">
+                      <div class="section__header">
+                        <h2 class="section__title">
+                          <%= lang.home.aboutMaster.title %>
+                        </h2>
+                        <p class="section__lead">
+                          <%= lang.home.aboutMaster.lead %>
+                        </p>
+                      </div>
+                      <div class="content-block content-block--expert">
+                        <h3>
+                          <%= lang.home.aboutMaster.content.subtitle %>
+                        </h3>
+                        <p><%- lang.home.aboutMaster.content.intro %></p>
+
+                        <% lang.home.aboutMaster.content.sections.forEach(section=> { %>
+                          <h4>
+                            <%= section.title %>
+                          </h4>
+                          <ul>
+                            <% section.list.forEach(li=> { %>
+                              <li><%- li %></li>
+                              <% }) %>
+                          </ul>
+                          <% }) %>
+
+                            <p><%- lang.home.aboutMaster.content.outro %></p>
+
+                            <div class="expert-gallery">
+                              <div class="expert-gallery__item">
+                                <img src="/assets/images/master-1.webp" draggable="false" alt="Appliance Repair Technician"
+                                  loading="lazy">
+                              </div>
+                              <div class="expert-gallery__item">
+                                <img src="/assets/images/master-2.webp" draggable="false" alt="Appliance Repair process" loading="lazy">
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  </section>
+                  <% } %>
+
+                    <% if (lang.home.faq && lang.home.faq.items && lang.home.faq.items.length) { %>
+                      <section class="section">
+                        <div class="container">
+                          <div class="section__header">
+                            <h2 class="section__title">
+                              <%= lang.home.faq.title %>
+                            </h2>
+                            <p class="section__lead">
+                              <%= lang.home.faq.lead %>
+                            </p>
+                          </div>
+                          <% lang.home.faq.items.forEach((item)=> { %>
+                            <details class="faq">
+                              <summary class="faq__summary">
+                                <%= item.question %>
+                              </summary>
+                              <div class="faq__content">
+                                <%= item.answer %>
+                              </div>
+                            </details>
+                            <% }) %>
+                        </div>
+                      </section>
+                      <% } %>
+
+                        <section class="section section--surface">
+                          <div class="container">
+                            <div class="section__header">
+                              <h2 class="section__title">
+                                <%= lang.home.contact.title %>
+                              </h2>
+                              <p class="section__lead">
+                                <%= lang.home.contact.lead %>
+                              </p>
+                            </div>
+                            <div class="contact-card">
+                              <div>
+                                <ul class="list">
+                                  <% lang.home.contact.list.forEach((item)=> {
+                                    const type = item.type;
+                                    const waNumber = site.phone.replace(/[^0-9]/g, '');
+                                    %>
+                                    <li class="list__item">
+                                      <strong>
+                                        <%= item.label %>:
+                                      </strong>
+                                      <% if (type==="phone" ) { %>
+                                        <a href="tel:<%= site.phone %>">
+                                          <%= site.phone %>
+                                        </a>
+                                        <% } else if (type==="messengers" ) { %>
+                                          <div class="messenger-row">
+                                            <a class="card__icon card__icon--social" href="<%= site.telegram %>"
+                                              target="_blank" rel="noopener" aria-label="Telegram">
+                                              <img src="/assets/icons/social/tg.png" alt="Telegram" width="24"
+                                                height="24">
+                                            </a>
+                                            <a class="card__icon card__icon--social"
+                                              href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener"
+                                              aria-label="WhatsApp">
+                                              <img src="/assets/icons/social/wh.png" alt="WhatsApp" width="24"
+                                                height="24">
+                                            </a>
+                                            <% if (site.facebook) { %>
+                                              <a class="card__icon card__icon--social" href="<%= site.facebook %>"
+                                                target="_blank" rel="noopener" aria-label="Facebook">
+                                                <img src="/assets/icons/social/fb.png" alt="Facebook" width="24"
+                                                  height="24">
+                                              </a>
+                                              <% } %>
+                                          </div>
+                                          <% } else if (type==="email" ) { %>
+                                            <a href="mailto:<%= site.email %>">
+                                              <%= site.email %>
+                                            </a>
+                                            <% } else { %>
+                                              <span>
+                                                <%= item.value %>
+                                              </span>
+                                              <% } %>
+                                    </li>
+                                    <% }) %>
+                                </ul>
+                              </div>
+                              <div class="card card--elevated">
+                                <h3 class="card__title">
+                                  <%= lang.home.contact.title %>
+                                </h3>
+                                <p class="card__text">
+                                  <%= lang.home.contact.lead %>
+                                </p>
+                                <div class="messenger-row">
+                                  <a class="button button--secondary" href="<%= site.telegram %>" target="_blank"
+                                    rel="noopener">
+                                    <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram"
+                                      width="24" height="24">
+                                    Telegram
+                                  </a>
+                                  <a class="button button--ghost" href="https://wa.me/<%= site.phone %>" target="_blank"
+                                    rel="noopener">
+                                    <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp"
+                                      width="24" height="24">
+                                    WhatsApp
+                                  </a>
+                                  <% if (site.facebook) { %>
+                                    <a class="button button--ghost" href="<%= site.facebook %>" target="_blank"
+                                      rel="noopener">
+                                      <img class="button__icon" src="/assets/icons/social/fb.png" alt="Facebook"
+                                        width="24" height="24">
+                                      Facebook
+                                    </a>
+                                    <% } %>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>

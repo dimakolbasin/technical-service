@@ -2,262 +2,273 @@
 <html lang="<%= lang.code %>">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="robots" content="<%= typeof robots !== 'undefined' && robots ? robots : 'index, follow' %>">
-  <meta name="theme-color" content="#2a7f98">
-  <title>
-    <%= title %>
-  </title>
-  <meta name="description" content="<%= description %>">
-  <!--<link rel="preload" href="/assets/fonts/Noto-Sans-regular.woff2" as="font" crossorigin="anonymous">-->
-  <link rel="preload" href="/assets/styles.css" as="style">
-  <link rel="stylesheet" href="/assets/styles.css">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/assets/icons/icon-tools.png" type="image/png">
-  <link rel="apple-touch-icon" href="/assets/icons/icon-tools.png">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="canonical" href="<%= pageKey ? site.baseUrl + lang.paths[pageKey] : site.baseUrl + '/' %>">
-  <% if (pageKey) { %>
-    <% i18n.languages.forEach((locale)=> { %>
-      <link rel="alternate" hreflang="<%= locale.code %>" href="<%= site.baseUrl + locale.paths[pageKey] %>">
-      <% }); %>
-        <link rel="alternate" hreflang="x-default" href="<%= site.baseUrl + i18n.languages[0].paths[pageKey] %>">
-        <% } %>
-          <% if (pageKey) { %>
-            <meta property="og:type" content="website">
-            <meta property="og:url" content="<%= site.baseUrl + lang.paths[pageKey] %>">
-            <meta property="og:title" content="<%= title %>">
-            <meta property="og:description" content="<%= description %>">
-            <meta property="og:site_name" content="<%= site.name %>">
-            <meta property="og:locale" content="<%= lang.code %>">
-            <meta property="og:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
-            <% } %>
-	              <% if (pageKey) {
-	                const pageUrl = site.baseUrl + lang.paths[pageKey];
-	                const waNumber = site.phone.replace(/[^0-9]/g, '');
-	                const address = site.address || {};
-	                const addressLocality = address.locality || "Batumi";
-	                const addressCountry = address.country || "GE";
-	                const areaServed = Array.isArray(lang.areasList) && lang.areasList.length ? lang.areasList : "Batumi";
-	                const hasMap = [site.googleMaps, site.yandexMaps].filter(Boolean);
-	                const priceRange = site.priceRange || "GEL 20+";
-	                const sameAs = [site.telegram, `https://wa.me/${waNumber}`, site.facebook].filter(Boolean);
-	                const pageFaq = pageKey === "home"
-	                  ? (lang.home && lang.home.faq ? lang.home.faq : null)
-	                  : (lang.pages && lang.pages[pageKey] ? lang.pages[pageKey].faq : null);
-	                const faqSchema = pageFaq && Array.isArray(pageFaq.items) && pageFaq.items.length ? {
-	                  "@context": "https://schema.org",
-	                  "@type": "FAQPage",
-	                  "mainEntity": pageFaq.items.map((item) => ({
-	                    "@type": "Question",
-	                    "name": item.question,
-	                    "acceptedAnswer": {
-	                      "@type": "Answer",
-	                      "text": item.answer
-	                    }
-	                  }))
-	                } : null;
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="robots" content="<%= typeof robots !== 'undefined' && robots ? robots : 'index, follow' %>">
+	<meta name="theme-color" content="#2a7f98">
+	<title>
+		<%= title %>
+	</title>
+	<meta name="description" content="<%= description %>">
+<!--	<link rel="preload" href="/assets/fonts/Noto-Sans-regular.woff2" as="font" type="font/woff2"-->
+<!--		crossorigin="anonymous">-->
+	<link rel="preload" href="/assets/styles.css" as="style">
+	<link rel="stylesheet" href="/assets/styles.css">
+	<link rel="manifest" href="/manifest.json" crossorigin="use-credentials" fetchpriority="low">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" fetchpriority="low">
+	<link rel="icon" href="/assets/icons/icon-tools.png" type="image/png" fetchpriority="low">
+	<link rel="apple-touch-icon" href="/assets/icons/icon-tools.png" fetchpriority="low">
+	<link rel="canonical" href="<%= pageKey ? site.baseUrl + lang.paths[pageKey] : site.baseUrl + '/' %>">
+	<% if (pageKey) { %>
+		<% i18n.languages.forEach((locale) => { %>
+			<link rel="alternate" hreflang="<%= locale.code %>" href="<%= site.baseUrl + locale.paths[pageKey] %>">
+		<% }); %>
+		<link rel="alternate" hreflang="x-default" href="<%= site.baseUrl + i18n.languages[0].paths[pageKey] %>">
+	<% } %>
+	<% if (pageKey) { %>
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="<%= site.baseUrl + lang.paths[pageKey] %>">
+		<meta property="og:title" content="<%= title %>">
+		<meta property="og:description" content="<%= description %>">
+		<meta property="og:site_name" content="<%= site.name %>">
+		<meta property="og:locale" content="<%= lang.code %>">
+		<meta property="og:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
+	<% } %>
+	<% if (pageKey) { %>
+		<%
+		const pageUrl = site.baseUrl + lang.paths[pageKey];
+		const waNumber = site.phone.replace(/[^0-9]/g, "");
+		const address = site.address || {};
+		const addressLocality = address.locality || "Batumi";
+		const addressCountry = address.country || "GE";
+		const areaServed = Array.isArray(lang.areasList) && lang.areasList.length ? lang.areasList : "Batumi";
+		const hasMap = [site.googleMaps, site.yandexMaps].filter(Boolean);
+		const priceRange = site.priceRange || "GEL 20+";
+		const sameAs = [site.telegram, `https://wa.me/${waNumber}`, site.facebook].filter(Boolean);
+		const pageFaq = pageKey === "home"
+			? (lang.home && lang.home.faq ? lang.home.faq : null)
+			: (lang.pages && lang.pages[pageKey] ? lang.pages[pageKey].faq : null);
+		const faqSchema = pageFaq && Array.isArray(pageFaq.items) && pageFaq.items.length
+			? {
+				"@context": "https://schema.org",
+				"@type": "FAQPage",
+				"mainEntity": pageFaq.items.map((item) => ({
+					"@type": "Question",
+					"name": item.question,
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": item.answer
+					}
+				}))
+			}
+			: null;
 
-	                const localBusiness = {
-	                  "@context": "https://schema.org",
-	                  "@type": "LocalBusiness",
-	                  "name": site.name,
-	                  "url": pageUrl,
-	                  "telephone": site.phone,
-	                  "description": description,
-	                  "image": `${site.baseUrl}/assets/icons/meta-pic.webp`,
-	                  "address": {
-	                    "@type": "PostalAddress",
-	                    "streetAddress": address.street,
-	                    "postalCode": address.postalCode,
-	                    "addressLocality": addressLocality,
-	                    "addressRegion": address.region,
-	                    "addressCountry": addressCountry
-	                  },
-	                  "areaServed": areaServed,
-	                  "hasMap": hasMap.length ? hasMap : undefined,
-	                  "priceRange": priceRange,
-	                  "openingHoursSpecification": [
-	                    {
-	                      "@type": "OpeningHoursSpecification",
-	                      "dayOfWeek": [
-	                        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-	                      ],
-	                      "opens": "09:00",
-	                      "closes": "20:00"
-	                    }
-	                  ],
-	                  "sameAs": sameAs
-	                };
+		const localBusiness = {
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": site.name,
+			"url": pageUrl,
+			"telephone": site.phone,
+			"description": description,
+			"image": `${site.baseUrl}/assets/icons/meta-pic.webp`,
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": address.street,
+				"postalCode": address.postalCode,
+				"addressLocality": addressLocality,
+				"addressRegion": address.region,
+				"addressCountry": addressCountry
+			},
+			"areaServed": areaServed,
+			"hasMap": hasMap.length ? hasMap : undefined,
+			"priceRange": priceRange,
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+					"opens": "09:00",
+					"closes": "20:00"
+				}
+			],
+			"sameAs": sameAs
+		};
 
-	                const servicePageKeys = [
-	                  "washing-machines",
-	                  "dishwashers",
-	                  "hobs",
-	                  "ovens",
-	                  "ac-cleaning"
-	                ];
-	                const isServicePage = servicePageKeys.includes(pageKey);
-	                const serviceSchema = isServicePage ? {
-	                  "@context": "https://schema.org",
-	                  "@type": "Service",
-	                  "name": title,
-	                  "serviceType": title,
-	                  "provider": {
-	                    "@type": "LocalBusiness",
-	                    "name": site.name,
-	                    "telephone": site.phone,
-	                    "url": site.baseUrl
-	                  },
-	                  "areaServed": areaServed,
-	                  "url": pageUrl,
-	                  "description": description
-	                } : null;
+		const servicePageKeys = ["washing-machines", "dishwashers", "hobs", "ovens", "ac-cleaning"];
+		const isServicePage = servicePageKeys.includes(pageKey);
+		const serviceSchema = isServicePage
+			? {
+				"@context": "https://schema.org",
+				"@type": "Service",
+				"name": title,
+				"serviceType": title,
+				"provider": {
+					"@type": "LocalBusiness",
+					"name": site.name,
+					"telephone": site.phone,
+					"url": site.baseUrl
+				},
+				"areaServed": areaServed,
+				"url": pageUrl,
+				"description": description
+			}
+			: null;
 
-	                const breadcrumbs = {
-	                  "@context": "https://schema.org",
-	                  "@type": "BreadcrumbList",
-	                  "itemListElement": [
-	                    {
-	                      "@type": "ListItem",
-	                      "position": 1,
-	                      "name": (i18n.languages.find(l => l.code === lang.code)?.nav?.[0]?.label) || "Home",
-	                      "item": site.baseUrl + lang.paths.home
-	                    },
-	                    ...(pageKey && pageKey !== "home" ? [{
-	                      "@type": "ListItem",
-	                      "position": 2,
-	                      "name": title,
-	                      "item": pageUrl
-	                    }] : [])
-	                  ]
-	                };
-	                %>
-	                <script type="application/ld+json"><%- JSON.stringify(localBusiness) %></script>
-	                <script type="application/ld+json"><%- JSON.stringify(breadcrumbs) %></script>
-	                <% if (serviceSchema) { %>
-	                  <script type="application/ld+json"><%- JSON.stringify(serviceSchema) %></script>
-	                <% } %>
-	                <% if (faqSchema) { %>
-	                  <script type="application/ld+json"><%- JSON.stringify(faqSchema) %></script>
-	                <% } %>
-	                <% } %>
+		const breadcrumbs = {
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": i18n.languages.find((l) => l.code === lang.code)?.nav?.[0]?.label || "Home",
+					"item": site.baseUrl + lang.paths.home
+				},
+				...(pageKey && pageKey !== "home"
+					? [
+						{
+							"@type": "ListItem",
+							"position": 2,
+							"name": title,
+							"item": pageUrl
+						}
+					]
+					: [])
+			]
+		};
+		%>
+		<script type="application/ld+json"><%- JSON.stringify(localBusiness) %></script>
+		<script type="application/ld+json"><%- JSON.stringify(breadcrumbs) %></script>
+		<% if (serviceSchema) { %>
+			<script type="application/ld+json"><%- JSON.stringify(serviceSchema) %></script>
+		<% } %>
+		<% if (faqSchema) { %>
+			<script type="application/ld+json"><%- JSON.stringify(faqSchema) %></script>
+		<% } %>
+	<% } %>
 </head>
 
 <body class="page">
-  <header class="site-header">
-    <div class="container site-header__row">
-      <a class="site-header__brand" href="<%= lang.paths.home %>">
-        <img src="/assets/icons/icon-tools.png" alt="Tech Fix Logo" class="site-header__logo" width="32" height="32">
-        <span>
-          <%= site.name %>
-        </span>
-      </a>
-      <div class="site-header__contact">
-        <a class="site-header__phone" href="tel:<%= site.phone %>">
-          <%= site.phone %>
-        </a>
-        <span>
-          <%= lang.hours %>
-        </span>
-	      </div>
-	      <div class="site-header__langs" aria-label="<%= lang.langLabel %>">
-	        <% i18n.languages.forEach((locale)=> {
-	          const activeClass = locale.code === lang.code ? " site-header__lang--active" : "";
-	          const targetKey = pageKey || "home";
-	          const href = (locale.paths && locale.paths[targetKey]) || locale.paths.home || "/";
-	          %>
-	          <a class="site-header__lang<%= activeClass %>" href="<%= href %>"
-	            data-lang="<%= locale.code %>">
-	            <%= locale.labelShort %>
-	          </a>
-	          <% }); %>
-	      </div>
-    </div>
-  </header>
+	<header class="site-header">
+		<div class="container site-header__row">
+			<a class="site-header__brand" href="<%= lang.paths.home %>">
+				<img src="/assets/icons/icon-tools.png" alt="Tech Fix Logo" class="site-header__logo" width="32"
+					height="32">
+				<span>
+					<%= site.name %>
+				</span>
+			</a>
+			<div class="site-header__contact">
+				<a class="site-header__phone" href="tel:<%= site.phone %>">
+					<%= site.phone %>
+				</a>
+				<span>
+					<%= lang.hours %>
+				</span>
+			</div>
+				<div class="site-header__langs" aria-label="<%= lang.langLabel %>">
+					<% i18n.languages.forEach((locale) => {
+					const activeClass = locale.code === lang.code ? " site-header__lang--active" : "";
+					const targetKey = pageKey || "home";
+					const href = (locale.paths && locale.paths[targetKey]) || locale.paths.home || "/";
+					%>
+					<a class="site-header__lang<%= activeClass %>" href="<%= href %>" data-lang="<%= locale.code %>">
+						<%= locale.labelShort %>
+					</a>
+					<% }); %>
+			</div>
+		</div>
+	</header>
 
-  <details class="site-nav" open>
-    <summary class="site-nav__toggle">
-      <%= lang.menu %>
-    </summary>
-    <nav class="container site-nav__panel" aria-label="<%= lang.navLabel %>">
-      <ul class="site-nav__list">
-        <% lang.nav.forEach((item)=> {
-          const navActive = item.key === pageKey ? " site-nav__link--active" : "";
-          %>
-          <li><a class="site-nav__link<%= navActive %>" href="<%= lang.paths[item.key] %>">
-              <%= item.label %>
-            </a></li>
-          <% }); %>
-      </ul>
-    </nav>
-  </details>
+	<details class="site-nav" open>
+		<summary class="site-nav__toggle">
+			<%= lang.menu %>
+		</summary>
+			<nav class="container site-nav__panel" aria-label="<%= lang.navLabel %>">
+				<ul class="site-nav__list">
+					<% lang.nav.forEach((item) => {
+						const navActive = item.key === pageKey ? " site-nav__link--active" : "";
+						%>
+					<li><a class="site-nav__link<%= navActive %>" href="<%= lang.paths[item.key] %>">
+							<%= item.label %>
+						</a></li>
+					<% }); %>
+			</ul>
+		</nav>
+	</details>
 
-  <main class="main">
-    <%- content %>
-  </main>
+	<main class="main">
+		<%- content %>
+	</main>
 
-  <footer class="site-footer">
-    <div class="container site-footer__grid">
-      <div>
-        <p class="site-footer__title">
-          <%= lang.footer.contactsTitle %>
-        </p>
-        <p class="site-footer__text">
-          <%= lang.footer.phoneLabel %>: <a href="tel:<%= site.phone %>">
-              <%= site.phone %>
-            </a>
-        </p>
-        <p class="site-footer__text">
-          <%= lang.footer.emailLabel %>: <a href="mailto:<%= site.email %>">
-              <%= site.email %>
-            </a>
-        </p>
-      </div>
-      <div>
-        <p class="site-footer__title">
-          <%= lang.footer.areasTitle %>
-        </p>
-        <p class="site-footer__text">
-          <%= lang.footer.areas %>
-        </p>
-      </div>
-      <div>
-        <p class="site-footer__title">
-          <%= lang.footer.langsTitle %>
-        </p>
-        <p class="site-footer__text"><a href="/ru/">Русский</a> · <a href="/ka/">ქართული</a> · <a
-            href="/en/">English</a></p>
-      </div>
-    </div>
-  </footer>
+	<footer class="site-footer">
+		<div class="container site-footer__grid">
+			<div>
+				<p class="site-footer__title">
+					<%= lang.footer.contactsTitle %>
+				</p>
+				<p class="site-footer__text">
+					<%= lang.footer.phoneLabel %>: <a href="tel:<%= site.phone %>">
+							<%= site.phone %>
+						</a>
+				</p>
+				<p class="site-footer__text">
+					<%= lang.footer.emailLabel %>: <a href="mailto:<%= site.email %>">
+							<%= site.email %>
+						</a>
+				</p>
+			</div>
+			<div>
+				<p class="site-footer__title">
+					<%= lang.footer.areasTitle %>
+				</p>
+				<p class="site-footer__text">
+					<%= lang.footer.areas %>
+				</p>
+			</div>
+				<div>
+					<p class="site-footer__title">
+						<%= lang.footer.langsTitle %>
+					</p>
+					<p class="site-footer__text">
+						<a href="/ru/">Русский</a> · <a href="/ka/">ქართული</a> · <a href="/en/">English</a>
+					</p>
+				</div>
+			</div>
+		</footer>
 
-  <div class="cta-bar">
-    <a class="button button--primary" href="tel:<%= site.phone %>">
-      <%= lang.cta %>
-	    </a>
-	    <a class="button button--secondary" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
-	      <img class="button__icon" src="/assets/icons/social/wh.png"
-	        alt="<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>" width="24" height="24">
-	      <%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
-	    </a>
-	  </div>
-  <script>
-    (function () {
-      const setPrefLang = (code) => {
-        document.cookie = "preferred_lang=" + encodeURIComponent(code) + ";path=/;max-age=" + 60 * 60 * 24 * 30 + ";samesite=lax";
-      };
-      const links = document.querySelectorAll('.site-header__lang');
-      links.forEach((link) => {
-        link.addEventListener('click', (e) => {
-          const code = link.dataset.lang || link.textContent.trim().toLowerCase();
-          if (code) setPrefLang(code);
-        });
-      });
-    })();
-  </script>
+	<div class="cta-bar">
+		<a class="button button--primary" href="tel:<%= site.phone %>">
+			<%= lang.cta %>
+		</a>
+		<a class="button button--secondary" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
+			<img class="button__icon" src="/assets/icons/social/wh.png"
+				alt="<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>" width="24" height="24">
+			<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
+		</a>
+	</div>
+	<script>
+		(function () {
+			const setPrefLang = (code) => {
+				document.cookie =
+					"preferred_lang=" +
+					encodeURIComponent(code) +
+					";path=/;max-age=" +
+					60 * 60 * 24 * 30 +
+					";samesite=lax";
+			};
+
+			const links = document.querySelectorAll(".site-header__lang");
+			links.forEach((link) => {
+				link.addEventListener("click", () => {
+					const code = link.dataset.lang || link.textContent.trim().toLowerCase();
+					if (code) {
+						setPrefLang(code);
+					}
+				});
+			});
+		})();
+	</script>
 </body>
 
 </html>
