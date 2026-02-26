@@ -116,7 +116,7 @@
           <a class="button button--primary" href="tel:<%= site.phone %>">
             <%= page.cta.button || lang.cta %>
           </a>
-          <a class="button button--secondary" href="https://wa.me/<%= site.phone %>" target="_blank" rel="noopener">
+          <a class="button button--secondary" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
             <%= lang.ctaMessage || "WhatsApp" %>
           </a>
           <% if (site.telegram) { %>
