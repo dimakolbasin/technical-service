@@ -18,9 +18,9 @@
       <% if (contactPage.cards) { %>
         <% contactPage.cards.forEach((card)=> { %>
           <div class="card">
-            <h3 class="card__title">
+            <h1 class="card__title">
               <%= card.title %>
-            </h3>
+            </h1>
             <ul class="list">
               <% card.items.forEach((item)=> { %>
                 <li class="list__item">
@@ -76,9 +76,9 @@
 
               <% if (contactPage.cta) { %>
                 <div class="card card--elevated">
-                  <h3 class="card__title">
+                  <h2 class="card__title">
                     <%= lang.home.contact.title %>
-                  </h3>
+                  </h2>
                   <p class="card__text">
                     <%= lang.home.contact.lead %>
                   </p>
