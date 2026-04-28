@@ -51,6 +51,9 @@
                 </p>
                 <% } %>
     </div>
+    <figure class="hero__media" aria-hidden="true">
+      <img src="/assets/images/hero-appliances.webp" alt="" width="1767" height="890" fetchpriority="high">
+    </figure>
   </div>
 </section>
 
@@ -71,14 +74,14 @@
         </div>
         <% } %>
     </div>
-    <div class="grid grid--3">
+    <div class="grid grid--3 service-grid">
       <% lang.home.services.items.forEach((item)=> {
         const highlight = item.highlight ? " card--elevated" : "";
         const iconFile = item.serviceIcon || null;
         const iconSrc = iconFile ? `/assets/icons/services/${iconFile}` : null;
         const serviceHref = item.linkKey && lang.paths[item.linkKey] ? lang.paths[item.linkKey] : lang.paths[lang.home.services.linkKey];
         %>
-        <article class="card<%= highlight %>">
+        <article class="card service-card<%= highlight %>">
           <% if (iconSrc) { %>
             <span class="card__icon" aria-hidden="true">
               <img src="<%= iconSrc %>" alt="<%= item.title %> icon" width="24" height="24">
@@ -103,7 +106,7 @@
 </section>
 
 <% if (lang.home.brands) { %>
-  <section class="section">
+  <section class="section section--brands">
     <div class="container">
       <div class="section__header">
         <h2 class="section__title">
@@ -141,7 +144,7 @@
           </div>
           <div class="grid grid--3">
             <% lang.home.guides.items.forEach((item)=> { %>
-              <article class="card">
+              <article class="card guide-card">
                 <h3 class="card__title">
                   <%= item.title %>
                 </h3>
@@ -161,7 +164,7 @@
       </section>
       <% } %>
 
-            <section class="section section--surface" id="prices">
+            <section class="section section--surface section--prices" id="prices">
               <div class="container">
                 <div class="section__header">
                   <h2 class="section__title">
@@ -171,22 +174,24 @@
                     <%= lang.home.prices.lead %>
                   </p>
                 </div>
-                <ul class="price-list">
-                  <% lang.home.prices.items.forEach((item)=> { %>
-                    <li class="price-list__item">
-                      <strong>
-                        <%= item.label %>
-                      </strong>
-                      <span>
-                        <%= item.value %>
-                      </span>
-                    </li>
-                    <% }) %>
-                </ul>
+                <div class="price-panel">
+                  <ul class="price-list">
+                    <% lang.home.prices.items.forEach((item)=> { %>
+                      <li class="price-list__item">
+                        <strong>
+                          <%= item.label %>
+                        </strong>
+                        <span>
+                          <%= item.value %>
+                        </span>
+                      </li>
+                      <% }) %>
+                  </ul>
+                </div>
               </div>
             </section>
 
-            <section class="section section--surface">
+            <section class="section section--surface section--benefits">
               <div class="container">
                 <div class="section__header">
                   <h2 class="section__title">
@@ -198,7 +203,7 @@
                 </div>
                 <div class="grid grid--3">
                   <% lang.home.benefits.items.forEach((item)=> { %>
-                    <div class="card">
+                    <div class="card benefit-card">
                       <h3 class="card__title">
                         <%= item.title %>
                       </h3>
@@ -211,7 +216,7 @@
               </div>
             </section>
 
-            <section class="section">
+            <section class="section section--steps">
               <div class="container">
                 <div class="section__header">
                   <h2 class="section__title">
@@ -236,36 +241,65 @@
               </div>
             </section>
 
-            <% if (lang.home.aboutSnippet) { %>
-              <section class="section section--surface">
+            <% const serviceStandard = lang.home.serviceStandard; %>
+            <% const serviceStandardContent = serviceStandard && serviceStandard.content ? serviceStandard.content : null; %>
+            <% const serviceStandardSections = serviceStandardContent && serviceStandardContent.sections ? serviceStandardContent.sections : []; %>
+            <% const serviceStandardFacts = serviceStandardSections.reduce((facts, section) => {
+              const firstItem = (section.list || [])[0];
+              if (firstItem) {
+                facts.push({ group: section.title, text: firstItem });
+              }
+              return facts;
+            }, []); %>
+            <% if (serviceStandardSections[1] && serviceStandardSections[1].list && serviceStandardSections[1].list[1]) {
+              serviceStandardFacts.push({ group: serviceStandardSections[1].title, text: serviceStandardSections[1].list[1] });
+            } %>
+            <% const visibleServiceStandardFacts = serviceStandardFacts.slice(0, 3); %>
+            <% if (serviceStandard && serviceStandardContent) { %>
+              <section class="section section--surface section--service-standard">
                 <div class="container">
-                  <div class="section__header">
-                    <h2 class="section__title">
-                      <%= lang.home.aboutSnippet.title %>
-                    </h2>
-                    <p class="section__lead">
-                      <%= lang.home.aboutSnippet.lead %>
-                    </p>
-                  </div>
-                  <% if (lang.home.aboutSnippet.pillars) { %>
-                    <div class="grid grid--3">
-                      <% lang.home.aboutSnippet.pillars.forEach((pillar)=> { %>
-                        <div class="card">
-                          <h3 class="card__title">
-                            <%= pillar.title %>
-                          </h3>
-                          <p class="card__text">
-                            <%= pillar.text %>
-                          </p>
-                        </div>
-                        <% }) %>
+                  <div class="service-standard">
+                    <div class="service-standard__media" aria-hidden="true">
+                      <img class="service-standard__photo service-standard__photo--main" src="/assets/images/service-work-1.webp" alt="" width="1024" height="682" loading="lazy">
+                      <img class="service-standard__photo service-standard__photo--detail" src="/assets/images/service-work-2.webp" alt="" width="1024" height="682" loading="lazy">
                     </div>
-                    <% } %>
+                    <div class="service-standard__content">
+                      <p class="service-standard__eyebrow">
+                        <%= serviceStandard.title %>
+                      </p>
+                      <h2 class="section__title">
+                        <%= serviceStandardContent.subtitle || serviceStandard.title %>
+                      </h2>
+                      <p class="section__lead">
+                        <%= serviceStandard.lead %>
+                      </p>
+                      <p class="service-standard__intro">
+                        <%= serviceStandardContent.intro %>
+                      </p>
+                      <% if (visibleServiceStandardFacts.length) { %>
+                        <div class="service-standard__facts">
+                          <% visibleServiceStandardFacts.forEach((fact)=> { %>
+                            <article class="service-standard__fact">
+                              <span class="service-standard__fact-label">
+                                <%= fact.group.replace(/:$/, "") %>
+                              </span>
+                              <p>
+                                <%- fact.text %>
+                              </p>
+                            </article>
+                            <% }) %>
+                        </div>
+                        <% } %>
                       <div class="section__actions">
-                        <a class="button button--ghost" href="<%= lang.paths.about %>">
-                          <%= lang.pages.about.heading %>
+                        <a class="button button--primary" href="tel:<%= site.phone %>">
+                          <%= lang.home.ctaPrimary %>
+                        </a>
+                        <a class="button button--ghost" href="<%= lang.paths.contacts %>">
+                          <%= lang.nav.find((item) => item.key === "contacts")?.label || "Contacts" %>
                         </a>
                       </div>
+                    </div>
+                  </div>
                 </div>
               </section>
               <% } %>
@@ -304,44 +338,6 @@
                           </div>
                         </div>
 
-                        <% if (lang.home.reviewForm) { %>
-                          <div class="container" style="margin-top: 48px; max-width: 600px;">
-                            <div class="card card--elevated">
-                              <h3 class="card__title">
-                                <%= lang.home.reviewForm.title %>
-                              </h3>
-                              <p class="card__text">
-                                <%= lang.home.reviewForm.lead %>
-                              </p>
-                              <form class="form" action="https://api.web3forms.com/submit" method="POST"
-                                autocomplete="off">
-                                <input type="hidden" name="access_key" value="<%= site.web3formsAccessKey %>">
-                                <input type="hidden" name="subject" value="New Review from Site">
-                                <input type="hidden" name="from_name" value="Technic Service Reviews">
-
-                                <div class="form__row">
-                                  <label class="form__label" for="review-name">
-                                    <%= lang.home.reviewForm.nameLabel %>
-                                  </label>
-                                  <input autocomplete="off" class="form__input" type="text" id="review-name" name="name"
-                                    placeholder="<%= lang.home.reviewForm.namePlaceholder %>" required>
-                                </div>
-                                <div class="form__row">
-                                  <label class="form__label" for="review-text">
-                                    <%= lang.home.reviewForm.textLabel %>
-                                  </label>
-                                  <textarea class="form__input" id="review-text" name="message" rows="4"
-                                    placeholder="<%= lang.home.reviewForm.textPlaceholder %>" required></textarea>
-                                </div>
-                                <div class="form__actions">
-                                  <button class="button button--primary" type="submit">
-                                    <%= lang.home.reviewForm.submit %>
-                                  </button>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                          <% } %>
                       </section>
 
                       <% if (lang.home.faq && lang.home.faq.items && lang.home.faq.items.length) { %>
@@ -368,71 +364,3 @@
                           </div>
                         </section>
                         <% } %>
-
-                          <section class="section section--surface">
-                            <div class="container">
-                              <div class="section__header">
-                                <h2 class="section__title">
-                                  <%= lang.home.contact.title %>
-                                </h2>
-                                <p class="section__lead">
-                                  <%= lang.home.contact.lead %>
-                                </p>
-                              </div>
-                              <div class="contact-card">
-                                <div>
-                                  <ul class="list">
-                                    <% lang.home.contact.list.forEach((item)=> {
-                                      const type = item.type;
-                                      const waNumber = site.phone.replace(/[^0-9]/g, '');
-                                      %>
-                                      <li class="list__item">
-                                        <strong>
-                                          <%= item.label %>:
-                                        </strong>
-                                        <% if (type==="phone" ) { %>
-                                          <a href="tel:<%= site.phone %>">
-                                            <%= site.phone %>
-                                          </a>
-                                          <% } else if (type==="messengers" ) { %>
-                                            <div class="messenger-row">
-                                              <a class="card__icon card__icon--social" href="<%= site.telegram %>"
-                                                target="_blank" rel="noopener" aria-label="Telegram">
-                                                <img src="/assets/icons/social/tg.png" alt="Telegram icon" width="24"
-                                                  height="24">
-                                              </a>
-                                              <a class="card__icon card__icon--social"
-                                                href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener"
-                                                aria-label="WhatsApp">
-                                                <img src="/assets/icons/social/wh-1.png" alt="WhatsApp icon" width="24"
-                                                  height="24">
-                                              </a>
-                                              <a class="card__icon card__icon--social" href="<%= site.viber %>"
-                                                target="_blank" rel="noopener" aria-label="Viber">
-                                                <img src="/assets/icons/social/viber.png" alt="Viber icon" width="24"
-                                                  height="24">
-                                              </a>
-                                              <% if (site.facebook) { %>
-                                                <a class="card__icon card__icon--social" href="<%= site.facebook %>"
-                                                  target="_blank" rel="noopener" aria-label="Facebook">
-                                                  <img src="/assets/icons/social/fb.png" alt="Facebook icon" width="24"
-                                                    height="24">
-                                                </a>
-                                                <% } %>
-                                            </div>
-                                            <% } else if (type==="email" ) { %>
-                                              <a href="mailto:<%= site.email %>">
-                                                <%= site.email %>
-                                              </a>
-                                              <% } else { %>
-                                                <span>
-                                                  <%= item.value %>
-                                                </span>
-                                                <% } %>
-                                      </li>
-                                      <% }) %>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </section>

@@ -45,12 +45,20 @@
         }
       ],
       "footer": {
+        "eyebrow": "Выездной сервис в Батуми",
+        "ctaTitle": "Оставьте заявку на ремонт",
+        "ctaLead": "Опишите технику и симптом поломки — мы свяжемся, согласуем удобное время и подскажем следующий шаг.",
         "contactsTitle": "Контакты",
         "areasTitle": "Обслуживаем районы",
+        "hoursTitle": "Часы",
         "langsTitle": "Языки",
         "phoneLabel": "Телефон",
         "emailLabel": "Почта",
-        "areas": "Батуми: Старый Батуми, Руставели, Химшиашвили, Багратиони, Агмашенебели, Джавахишвили, Тамар, Бони-Городок"
+        "callLabel": "Позвонить",
+        "messageLabel": "Написать",
+        "formTitle": "Быстрая заявка",
+        "areas": "Батуми: Старый Батуми, Руставели, Химшиашвили, Багратиони, Агмашенебели, Джавахишвили, Тамар, Бони-Городок",
+        "legalLine": "Ремонт бытовой техники в Батуми с диагностикой на месте."
       },
       "home": {
         "metaTitle": "Ремонт бытовой техники в Батуми | Выезд, диагностика, гарантия",
@@ -300,7 +308,7 @@
           "Батуми",
           "RU / EN / GE",
           "Безнал и наличные",
-          "Аккуратно работаю"
+          "Гарантия на работы"
         ],
         "heroNote": "Выезд и диагностика 20 GEL",
         "brands": {
@@ -368,31 +376,31 @@
             }
           ]
         },
-        "aboutMaster": {
-          "title": "О мастере",
-          "lead": "Надежный ремонт с гарантией от профессионала",
+        "serviceStandard": {
+          "title": "Стандарт сервиса",
+          "lead": "Диагностика, прозрачная цена и гарантия на выполненные работы",
           "content": {
-            "subtitle": "Профессиональный ремонт бытовой техники со стажем",
-            "intro": "Здравствуйте, меня зовут Максим! Я занимаюсь профессиональным ремонтом стиральных машин, духовок, кондиционеров и варочных панелей. Я специализируюсь как на простых механических поломках, так и на сложном компонентном ремонте электронных модулей управления.",
+            "subtitle": "Как работает выездной сервис по ремонту техники",
+            "intro": "Мы выстраиваем ремонт как понятный сервис: принимаем заявку, приезжаем на диагностику, объясняем причину поломки, согласуем стоимость и только после этого выполняем работу. Клиент заранее понимает, что будет сделано и за что он платит.",
             "sections": [
               {
-                "title": "Мой опыт:",
+                "title": "Диагностика и решение:",
                 "list": [
-                  "<strong>Ремонт техники мировых брендов:</strong> Bosch, Samsung, LG, Indesit, Beko, Midea, Gorenje, Electrolux и многих других.",
-                  "<strong>Сложные случаи:</strong> восстановление электроники после скачков напряжения, что часто актуально.",
-                  "Замена подшипников разборных и неразборных баков."
+                  "<strong>Проверяем технику на месте:</strong> стиральные машины, посудомойки, духовки, варочные панели и кондиционеры.",
+                  "<strong>Объясняем причину поломки:</strong> простыми словами показываем, что вышло из строя и какие есть варианты ремонта.",
+                  "Работаем с популярными брендами: Bosch, Samsung, LG, Indesit, Beko, Midea, Gorenje, Electrolux и другими."
                 ]
               },
               {
-                "title": "Мои профессиональные принципы:",
+                "title": "Прозрачный сервис:",
                 "list": [
-                  "<strong>Честная диагностика:</strong> я всегда прямо говорю, есть ли смысл ремонтировать аппарат, или дешевле и надежнее купить новый.",
-                  "<strong>Прозрачная стоимость:</strong> вы узнаете ориентировочную или точную цену ремонта до его начала, без скрытых платежей.",
-                  "<strong>Без навязывания лишних услуг:</strong> я меняю только то, что действительно сломано. Моя репутация и ваши рекомендации для меня важнее сиюминутной выгоды."
+                  "<strong>Цена до ремонта:</strong> стоимость согласуется заранее, без скрытых платежей и навязывания лишних работ.",
+                  "<strong>Гарантия на работы:</strong> после ремонта техника тестируется, а клиент получает понятные условия гарантии.",
+                  "<strong>Выездной формат:</strong> большинство задач решаем на месте, в удобное для клиента время."
                 ]
               }
             ],
-            "outro": "Я использую только проверенные и <strong>оригинальные запчасти</strong>. Если вам нужен честный эксперт и <strong>срочный ремонт техники в Батуми</strong> — обращайтесь, я всегда на связи!"
+            "outro": "Сервис подходит для планового ремонта и срочных заявок по Батуми: диагностика на месте, аккуратная работа и понятный результат."
           }
         },
         "reviews": {
@@ -420,15 +428,6 @@
               "text": "Кондиционер снова охлаждает как новый. Спасибо за оперативность и профессионализм."
             }
           ]
-        },
-        "reviewForm": {
-          "title": "Оставить отзыв",
-          "lead": "Поделитесь вашим мнением о нашей работе.",
-          "nameLabel": "Ваше имя",
-          "namePlaceholder": "Имя",
-          "textLabel": "Ваш отзыв",
-          "textPlaceholder": "Напишите, что именно мы ремонтировали и ваши впечатления",
-          "submit": "Отправить отзыв"
         }
       },
       "serviceFocus": {
@@ -2044,12 +2043,20 @@
         }
       ],
       "footer": {
+        "eyebrow": "Call-out service in Batumi",
+        "ctaTitle": "Request an appliance repair",
+        "ctaLead": "Describe the appliance and the issue — we will contact you, agree on a convenient time, and suggest the next step.",
         "contactsTitle": "Contacts",
         "areasTitle": "Service areas",
+        "hoursTitle": "Hours",
         "langsTitle": "Languages",
         "phoneLabel": "Phone",
         "emailLabel": "Email",
-        "areas": "Batumi: Old Batumi, Rustaveli, Khimshiashvili, Bagrationi, Aghmashenebeli, Javakhishvili, Tamar, Boni-Gorodok"
+        "callLabel": "Call",
+        "messageLabel": "Message",
+        "formTitle": "Quick request",
+        "areas": "Batumi: Old Batumi, Rustaveli, Khimshiashvili, Bagrationi, Aghmashenebeli, Javakhishvili, Tamar, Boni-Gorodok",
+        "legalLine": "Home appliance repair in Batumi with on-site diagnostics."
       },
       "home": {
         "metaTitle": "Home Appliance Repair in Batumi | On-site Service",
@@ -2299,7 +2306,7 @@
           "Batumi",
           "RU / EN / GE",
           "Cash / cashless",
-          "Clean work"
+          "Repair warranty"
         ],
         "heroNote": "Call-out and diagnostics 20 GEL",
         "brands": {
@@ -2367,31 +2374,31 @@
             }
           ]
         },
-        "aboutMaster": {
-          "title": "About the Master",
-          "lead": "Reliable repair with a warranty from a professional",
+        "serviceStandard": {
+          "title": "Service Standard",
+          "lead": "Diagnostics, clear pricing, and warranty on completed work",
           "content": {
-            "subtitle": "Professional Home Appliance Repair with Experience",
-            "intro": "Hello, my name is Maxim! I professionally repair washing machines, ovens, air conditioners, and hobs. I specialize in both simple mechanical breakdowns and complex component repairs of electronic control modules.",
+            "subtitle": "How the appliance repair call-out service works",
+            "intro": "We organize appliance repair as a clear service: we receive the request, arrive for diagnostics, explain the cause of the fault, agree on the price, and only then carry out the work. The customer knows in advance what will be done and what the cost covers.",
             "sections": [
               {
-                "title": "My Experience:",
+                "title": "Diagnostics and solution:",
                 "list": [
-                  "<strong>Repair of global brands:</strong> Bosch, Samsung, LG, Indesit, Beko, Midea, Gorenje, Electrolux, and many others.",
-                  "<strong>Complex cases:</strong> restoring electronics after power surges, which is highly relevant here.",
-                  "Replacement of bearings in non-dismountable tubs."
+                  "<strong>On-site appliance checks:</strong> washing machines, dishwashers, ovens, hobs, and air conditioners.",
+                  "<strong>Clear fault explanation:</strong> we show what failed and which repair options make sense.",
+                  "We work with popular brands: Bosch, Samsung, LG, Indesit, Beko, Midea, Gorenje, Electrolux, and others."
                 ]
               },
               {
-                "title": "My Professional Principles:",
+                "title": "Transparent service:",
                 "list": [
-                  "<strong>Honest diagnostics:</strong> I always state directly whether it makes sense to repair the device, or if it is cheaper and more reliable to buy a new one.",
-                  "<strong>Transparent pricing:</strong> you will know the estimated or exact repair cost before it starts, with no hidden fees.",
-                  "<strong>No imposed services:</strong> I only change what is actually broken. My reputation and your recommendations are more important to me than short-term gain."
+                  "<strong>Price before repair:</strong> the cost is agreed in advance, with no hidden fees or unnecessary work.",
+                  "<strong>Warranty on repairs:</strong> the appliance is tested after repair, and warranty terms are explained clearly.",
+                  "<strong>Call-out format:</strong> most tasks are handled on site at a convenient time for the customer."
                 ]
               }
             ],
-            "outro": "I strictly use tested and <strong>original spare parts</strong>. If you need an honest expert and <strong>urgent appliance repair in Batumi</strong>, feel free to contact me—I am always available!"
+            "outro": "The service is suitable for scheduled repairs and urgent requests in Batumi: on-site diagnostics, careful work, and a clear result."
           }
         },
         "reviews": {
@@ -2419,15 +2426,6 @@
               "text": "The air conditioner cools like new again. Thank you for the promptness and professionalism."
             }
           ]
-        },
-        "reviewForm": {
-          "title": "Leave a Review",
-          "lead": "Share your opinion about our work.",
-          "nameLabel": "Your Name",
-          "namePlaceholder": "Name",
-          "textLabel": "Your Review",
-          "textPlaceholder": "Write what exactly we repaired and your impressions",
-          "submit": "Submit Review"
         }
       },
       "serviceFocus": {
@@ -4041,12 +4039,20 @@
         }
       ],
       "footer": {
+        "eyebrow": "ადგილზე მომსახურება ბათუმში",
+        "ctaTitle": "დატოვეთ განაცხადი შეკეთებაზე",
+        "ctaLead": "აღწერეთ ტექნიკა და პრობლემა — დაგიკავშირდებით, შევათანხმებთ მოსახერხებელ დროს და გეტყვით შემდეგ ნაბიჯს.",
         "contactsTitle": "კონტაქტი",
         "areasTitle": "მომსახურების ზონა",
+        "hoursTitle": "საათი",
         "langsTitle": "ენები",
         "phoneLabel": "ტელეფონი",
         "emailLabel": "ფოსტა",
-        "areas": "ბათუმი: ძველი ბათუმი, რუსთაველი, ხიმშიაშვილი, ბაგრატიონი, აღმაშენებელი, ჯავახიშვილი, თამარი, ბონი-გოროდოკი"
+        "callLabel": "დარეკვა",
+        "messageLabel": "მოწერა",
+        "formTitle": "სწრაფი განაცხადი",
+        "areas": "ბათუმი: ძველი ბათუმი, რუსთაველი, ხიმშიაშვილი, ბაგრატიონი, აღმაშენებელი, ჯავახიშვილი, თამარი, ბონი-გოროდოკი",
+        "legalLine": "საყოფაცხოვრებო ტექნიკის შეკეთება ბათუმში ადგილზე დიაგნოსტიკით."
       },
       "home": {
         "metaTitle": "საოჯახო ტექნიკის შეკეთება ბათუმში | ადგილზე მომსახურება",
@@ -4296,7 +4302,7 @@
           "ბათუმი",
           "RU / EN / GE",
           "ნაღდი / უნაღდო",
-          "სუფთად ვმუშაობ"
+          "გარანტია სამუშაოზე"
         ],
         "heroNote": "გამოძახება და დიაგნოსტიკა 20 GEL",
         "brands": {
@@ -4364,31 +4370,31 @@
             }
           ]
         },
-        "aboutMaster": {
-          "title": "ოსტატის შესახებ",
-          "lead": "საიმედო შეკეთება გარანტიით პროფესიონალისგან",
+        "serviceStandard": {
+          "title": "სერვისის სტანდარტი",
+          "lead": "დიაგნოსტიკა, გამჭვირვალე ფასი და გარანტია შესრულებულ სამუშაოზე",
           "content": {
-            "subtitle": "პროფესიონალური საყოფაცხოვრებო ტექნიკის შეკეთება დიდი გამოცდილებით",
-            "intro": "გამარჯობა, მე მქვია მაქსიმ! მე პროფესიონალურად ვარემონტებ სარეცხი მანქანებს, ელექტრო ღუმელებს, კონდიციონერებსა და ზედაპირებს. სპეციალიზებული ვარ როგორც მარტივ მექანიკურ დაზიანებებზე, ისე მართვის ელექტრონული მოდულების რთულ შეკეთებაზე.",
+            "subtitle": "როგორ მუშაობს ტექნიკის შეკეთების გამოძახების სერვისი",
+            "intro": "ტექნიკის შეკეთებას ვაწყობთ როგორც გასაგებ სერვისს: ვიღებთ განაცხადს, მივდივართ დიაგნოსტიკაზე, ვხსნით დაზიანების მიზეზს, ვათანხმებთ ფასს და მხოლოდ ამის შემდეგ ვასრულებთ სამუშაოს. მომხმარებელმა წინასწარ იცის, რა გაკეთდება და რას იხდის.",
             "sections": [
               {
-                "title": "ჩემი გამოცდილება:",
+                "title": "დიაგნოსტიკა და გადაწყვეტა:",
                 "list": [
-                  "<strong>მსოფლიო ბრენდების ტექნიკის შეკეთება:</strong> Bosch, Samsung, LG, Indesit, Beko, Midea, Gorenje, Electrolux და მრავალი სხვა.",
-                  "<strong>რთული შემთხვევები:</strong> ელექტრონიკის აღდგენა ძაბვის ნახტომების შემდეგ.",
-                  "საკისრების შეცვლა (დაშლად და დაუშლელ ავზებში)."
+                  "<strong>ტექნიკის შემოწმება ადგილზე:</strong> სარეცხი მანქანები, ჭურჭლის სარეცხი მანქანები, ღუმელები, ქურის ზედაპირები და კონდიციონერები.",
+                  "<strong>დაზიანების გასაგები ახსნა:</strong> ვაჩვენებთ, რა გამოვიდა მწყობრიდან და რომელი შეკეთების ვარიანტია გონივრული.",
+                  "ვმუშაობთ პოპულარულ ბრენდებთან: Bosch, Samsung, LG, Indesit, Beko, Midea, Gorenje, Electrolux და სხვა."
                 ]
               },
               {
-                "title": "ჩემი პროფესიული პრინციპები:",
+                "title": "გამჭვირვალე სერვისი:",
                 "list": [
-                  "<strong>პატიოსანი დიაგნოსტიკა:</strong> მე ყოველთვის პირდაპირ ვამბობ, ღირს თუ არა აპარატის შეკეთება, ან უფრო იაფი და საიმედო ხომ არ არის ახლის ყიდვა.",
-                  "<strong>გამჭვირვალე ფასები:</strong> თქვენ შეკეთების დაწყებამდე გაიგებთ მიახლოებით ან ზუსტ ფასს, ფარული გადასახადების გარეშე.",
-                  "<strong>არავითარი ზედმეტი მომსახურების თავსმოხვევა:</strong> ვცვლი მხოლოდ იმას, რაც მართლა გაფუჭებულია. ჩემი რეპუტაცია და თქვენი რეკომენდაციები ჩემთვის უფრო მნიშვნელოვანია, ვიდრე წუთიერი მოგება."
+                  "<strong>ფასი შეკეთებამდე:</strong> ღირებულება წინასწარ თანხმდება, ფარული გადასახადებისა და ზედმეტი სამუშაოების გარეშე.",
+                  "<strong>გარანტია სამუშაოზე:</strong> შეკეთების შემდეგ ტექნიკა მოწმდება და გარანტიის პირობები გასაგებად აიხსნება.",
+                  "<strong>ადგილზე მომსახურება:</strong> ამოცანების დიდ ნაწილს ვასრულებთ ადგილზე, მომხმარებლისთვის მოსახერხებელ დროს."
                 ]
               }
             ],
-            "outro": "ვიყენებ მხოლოდ <strong>ორიგინალ სათადარიგო ნაწილებს</strong>. თუ გჭირდებათ პატიოსანი ექსპერტი და <strong>სასწრაფო ტექნიკის შეკეთება ბათუმში</strong> — დამიკავშირდით!"
+            "outro": "სერვისი შესაფერისია როგორც გეგმური შეკეთებისთვის, ისე სასწრაფო განაცხადებისთვის ბათუმში: ადგილზე დიაგნოსტიკა, სუფთა სამუშაო და გასაგები შედეგი."
           }
         },
         "reviews": {
@@ -4416,15 +4422,6 @@
               "text": "კონდიციონერი ისევ ახალივით აგრილებს. მადლობა სისწრაფისა და პროფესიონალიზმისთვის."
             }
           ]
-        },
-        "reviewForm": {
-          "title": "გამოხმაურების დატოვება",
-          "lead": "გაგვიზიარეთ თქვენი აზრი ჩვენი მუშაობის შესახებ.",
-          "nameLabel": "თქვენი სახელი",
-          "namePlaceholder": "სახელი",
-          "textLabel": "თქვენი გამოხმაურება",
-          "textPlaceholder": "დაწერეთ კონკრეტულად რა შევაკეთეთ და როგორია თქვენი შთაბეჭდილებები",
-          "submit": "გამოხმაურების გაგზავნა"
         }
       },
       "serviceFocus": {
