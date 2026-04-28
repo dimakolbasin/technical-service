@@ -205,14 +205,18 @@ const trackingPageType = !pageKey
 			</nav>
 			<div class="site-header__contact">
 				<a class="site-header__phone" href="tel:<%= site.phone %>" data-ga-contact-method="call" data-ga-location="header_phone">
-					<%= site.phone %>
+                    591 17 23 29
 				</a>
 				<span>
 					<%= lang.hours %>
 				</span>
 			</div>
 				<div class="site-header__langs" aria-label="<%= lang.langLabel %>">
-					<% i18n.languages.forEach((locale) => {
+					<%
+					const headerLangs = ["ru", "ka", "en"]
+						.map((code) => i18n.languages.find((locale) => locale.code === code))
+						.filter(Boolean);
+					headerLangs.forEach((locale) => {
 					const activeClass = locale.code === lang.code ? " site-header__lang--active" : "";
 					const targetKey = pageKey || "home";
 					const href = (locale.paths && locale.paths[targetKey]) || locale.paths.home || "/";
