@@ -1,0 +1,44 @@
+<%
+const phraseBlock = searchPhrases || null;
+const phraseGroups = phraseBlock && Array.isArray(phraseBlock.groups) ? phraseBlock.groups : [];
+const phraseItems = phraseBlock && Array.isArray(phraseBlock.items) ? phraseBlock.items : [];
+const shouldLinkItems = Boolean(linkItems);
+%>
+<% if (phraseBlock && (phraseGroups.length || phraseItems.length)) { %>
+  <section class="section section--surface search-phrases">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= phraseBlock.title %></h2>
+      </div>
+
+      <% if (phraseGroups.length) { %>
+        <div class="search-phrases__groups">
+          <% phraseGroups.forEach((group) => { %>
+            <article class="search-phrases__group">
+              <h3 class="search-phrases__group-title"><%= group.title %></h3>
+              <div class="search-phrases__chips">
+                <% (group.items || []).forEach((item) => { %>
+                  <% if (shouldLinkItems && item.key && lang.paths[item.key]) { %>
+                    <a class="search-phrases__chip" href="<%= lang.paths[item.key] %>"><%= item.text %></a>
+                  <% } else { %>
+                    <span class="search-phrases__chip"><%= item.text %></span>
+                  <% } %>
+                <% }); %>
+              </div>
+            </article>
+          <% }); %>
+        </div>
+      <% } else { %>
+        <div class="search-phrases__chips">
+          <% phraseItems.forEach((item) => { %>
+            <% if (shouldLinkItems && item.key && lang.paths[item.key]) { %>
+              <a class="search-phrases__chip" href="<%= lang.paths[item.key] %>"><%= item.text %></a>
+            <% } else { %>
+              <span class="search-phrases__chip"><%= item.text %></span>
+            <% } %>
+          <% }); %>
+        </div>
+      <% } %>
+    </div>
+  </section>
+<% } %>
