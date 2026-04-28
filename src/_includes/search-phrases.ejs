@@ -3,6 +3,8 @@ const phraseBlock = searchPhrases || null;
 const phraseGroups = phraseBlock && Array.isArray(phraseBlock.groups) ? phraseBlock.groups : [];
 const phraseItems = phraseBlock && Array.isArray(phraseBlock.items) ? phraseBlock.items : [];
 const shouldLinkItems = Boolean(linkItems);
+const trackingLocationValue = typeof trackingLocation !== "undefined" ? trackingLocation : "";
+const trackingContentTypeValue = typeof trackingContentType !== "undefined" ? trackingContentType : "search_phrase";
 %>
 <% if (phraseBlock && (phraseGroups.length || phraseItems.length)) { %>
   <section class="section section--surface search-phrases">
@@ -19,7 +21,7 @@ const shouldLinkItems = Boolean(linkItems);
               <div class="search-phrases__chips">
                 <% (group.items || []).forEach((item) => { %>
                   <% if (shouldLinkItems && item.key && lang.paths[item.key]) { %>
-                    <a class="search-phrases__chip" href="<%= lang.paths[item.key] %>"><%= item.text %></a>
+                    <a class="search-phrases__chip" href="<%= lang.paths[item.key] %>" data-ga-content-type="<%= trackingContentTypeValue %>" data-ga-destination-key="<%= item.key %>" data-ga-location="<%= trackingLocationValue %>"><%= item.text %></a>
                   <% } else { %>
                     <span class="search-phrases__chip"><%= item.text %></span>
                   <% } %>
@@ -32,7 +34,7 @@ const shouldLinkItems = Boolean(linkItems);
         <div class="search-phrases__chips">
           <% phraseItems.forEach((item) => { %>
             <% if (shouldLinkItems && item.key && lang.paths[item.key]) { %>
-              <a class="search-phrases__chip" href="<%= lang.paths[item.key] %>"><%= item.text %></a>
+              <a class="search-phrases__chip" href="<%= lang.paths[item.key] %>" data-ga-content-type="<%= trackingContentTypeValue %>" data-ga-destination-key="<%= item.key %>" data-ga-location="<%= trackingLocationValue %>"><%= item.text %></a>
             <% } else { %>
               <span class="search-phrases__chip"><%= item.text %></span>
             <% } %>

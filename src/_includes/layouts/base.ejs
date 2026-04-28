@@ -165,7 +165,24 @@
 	<% } %>
 </head>
 
-<body class="page <%= pageKey === 'home' ? 'page--home' : 'page--subpage' %>">
+<%
+const trackingServicePageKeys = ["washing-machines", "dishwashers", "hobs", "ovens", "ac-cleaning", "refrigerators", "dryers", "gas-boilers"];
+const trackingArticlePageKeys = ["washing-machine-not-draining", "dishwasher-not-draining", "oven-not-heating", "hob-not-turning-on", "ac-not-cooling", "ac-cleaning-importance"];
+const trackingPageType = !pageKey
+	? "error"
+	: trackingServicePageKeys.includes(pageKey)
+		? "service"
+		: trackingArticlePageKeys.includes(pageKey)
+			? "article"
+			: ["home", "services", "prices", "contacts", "privacy"].includes(pageKey)
+				? "core"
+				: "page";
+%>
+<body class="page <%= pageKey === 'home' ? 'page--home' : 'page--subpage' %>"
+	data-page-key="<%= pageKey || '' %>"
+	data-page-type="<%= trackingPageType %>"
+	data-page-language="<%= lang.code %>"
+	data-ga-tracking="<%= pageKey ? 'enabled' : 'disabled' %>">
 	<header class="site-header">
 		<div class="container site-header__row">
 			<a class="site-header__brand" href="<%= lang.paths.home %>">
@@ -187,7 +204,7 @@
 				</ul>
 			</nav>
 			<div class="site-header__contact">
-				<a class="site-header__phone" href="tel:<%= site.phone %>">
+				<a class="site-header__phone" href="tel:<%= site.phone %>" data-ga-contact-method="call" data-ga-location="header_phone">
 					<%= site.phone %>
 				</a>
 				<span>
@@ -200,7 +217,7 @@
 					const targetKey = pageKey || "home";
 					const href = (locale.paths && locale.paths[targetKey]) || locale.paths.home || "/";
 					%>
-					<a class="site-header__lang<%= activeClass %>" href="<%= href %>" data-lang="<%= locale.code %>">
+					<a class="site-header__lang<%= activeClass %>" href="<%= href %>" data-lang="<%= locale.code %>" data-ga-language-switch="header">
 						<%= locale.labelShort %>
 					</a>
 					<% }); %>
@@ -251,27 +268,27 @@
 						<%= footer.ctaLead || footerContact.lead %>
 					</p>
 					<div class="footer-actions">
-						<a class="button button--primary" href="tel:<%= site.phone %>">
+						<a class="button button--primary" href="tel:<%= site.phone %>" data-ga-contact-method="call" data-ga-location="footer_actions">
 							<img class="button__icon" src="/assets/icons/social/call.png" alt="" width="24" height="24">
 							<%= footer.callLabel || lang.cta %>
 						</a>
-						<a class="button button--ghost" href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener">
+						<a class="button button--ghost" href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener" data-ga-contact-method="whatsapp" data-ga-location="footer_actions">
 							<img class="button__icon" src="/assets/icons/social/wh-1.png" alt="" width="24" height="24">
 							<%= footer.messageLabel || lang.ctaMessage || "WhatsApp" %>
 						</a>
 					</div>
 					<div class="footer-social" aria-label="<%= footer.contactsTitle %>">
-						<a class="card__icon card__icon--social" href="<%= site.telegram %>" target="_blank" rel="noopener" aria-label="Telegram">
+						<a class="card__icon card__icon--social" href="<%= site.telegram %>" target="_blank" rel="noopener" aria-label="Telegram" data-ga-contact-method="telegram" data-ga-location="footer_social">
 							<img src="/assets/icons/social/tg.png" alt="" width="24" height="24">
 						</a>
-						<a class="card__icon card__icon--social" href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener" aria-label="WhatsApp">
+						<a class="card__icon card__icon--social" href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener" aria-label="WhatsApp" data-ga-contact-method="whatsapp" data-ga-location="footer_social">
 							<img src="/assets/icons/social/wh-1.png" alt="" width="24" height="24">
 						</a>
-						<a class="card__icon card__icon--social" href="<%= site.viber %>" target="_blank" rel="noopener" aria-label="Viber">
+						<a class="card__icon card__icon--social" href="<%= site.viber %>" target="_blank" rel="noopener" aria-label="Viber" data-ga-contact-method="viber" data-ga-location="footer_social">
 							<img src="/assets/icons/social/viber.png" alt="" width="24" height="24">
 						</a>
 						<% if (site.facebook) { %>
-							<a class="card__icon card__icon--social" href="<%= site.facebook %>" target="_blank" rel="noopener" aria-label="Facebook">
+							<a class="card__icon card__icon--social" href="<%= site.facebook %>" target="_blank" rel="noopener" aria-label="Facebook" data-ga-contact-method="facebook" data-ga-location="footer_social">
 								<img src="/assets/icons/social/fb.png" alt="" width="24" height="24">
 							</a>
 						<% } %>
@@ -279,7 +296,7 @@
 					<div class="footer-contact-grid">
 						<div class="footer-contact-item">
 							<span><%= footer.phoneLabel %></span>
-							<a href="tel:<%= site.phone %>"><%= site.phone %></a>
+							<a href="tel:<%= site.phone %>" data-ga-contact-method="call" data-ga-location="footer_contact_grid"><%= site.phone %></a>
 						</div>
 						<% if (footerHours) { %>
 							<div class="footer-contact-item">
@@ -309,7 +326,7 @@
 						<p class="footer-form-panel__text">
 							<%= footerContact.lead %>
 						</p>
-						<form class="form footer-form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+						<form class="form footer-form" id="lead-form-footer" name="lead-form-footer" action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
 							<input type="hidden" name="access_key" value="<%= site.web3formsAccessKey %>">
 							<input type="hidden" name="subject" value="New repair request from site footer">
 							<input type="hidden" name="from_name" value="Repair Service Request">
@@ -387,12 +404,12 @@
 					<%= footer.legalLine %>
 				</p>
 				<div class="footer-bottom__links">
-					<a href="mailto:<%= site.email %>"><%= site.email %></a>
+					<a href="mailto:<%= site.email %>" data-ga-contact-method="email" data-ga-location="footer_legal"><%= site.email %></a>
 					<span aria-hidden="true">/</span>
 					<a href="<%= privacyPath %>"><%= privacyLabel %></a>
-					<a href="/">Русский</a>
-					<a href="/ka/">ქართული</a>
-					<a href="/en/">English</a>
+					<a href="/" data-lang="ru" data-ga-language-switch="footer">Русский</a>
+					<a href="/ka/" data-lang="ka" data-ga-language-switch="footer">ქართული</a>
+					<a href="/en/" data-lang="en" data-ga-language-switch="footer">English</a>
 				</div>
 			</div>
 		</div>
@@ -405,20 +422,21 @@
 	</label>
 
 	<div class="cta-bar">
-		<a class="button button--primary cta-bar__button" href="tel:<%= site.phone %>" aria-label="<%= lang.cta %>">
+		<a class="button button--primary cta-bar__button" href="tel:<%= site.phone %>" aria-label="<%= lang.cta %>" data-ga-contact-method="call" data-ga-location="cta_bar">
 			<img class="button__icon" src="/assets/icons/social/call.png" alt="" width="24" height="24">
 		</a>
 			<a class="button button--ghost cta-bar__button" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>"
-				target="_blank" rel="noopener" aria-label="<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>">
+				target="_blank" rel="noopener" aria-label="<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>" data-ga-contact-method="whatsapp" data-ga-location="cta_bar">
 				<img class="button__icon" src="/assets/icons/social/wh-1.png" alt="" width="24" height="24">
 		</a>
-		<a class="button button--ghost cta-bar__button" href="<%= site.viber %>" target="_blank" rel="noopener" aria-label="Viber">
+		<a class="button button--ghost cta-bar__button" href="<%= site.viber %>" target="_blank" rel="noopener" aria-label="Viber" data-ga-contact-method="viber" data-ga-location="cta_bar">
 			<img class="button__icon" src="/assets/icons/social/viber.png" alt="" width="24" height="24">
 		</a>
-		<a class="button button--ghost cta-bar__button" href="<%= site.telegram %>" target="_blank" rel="noopener" aria-label="Telegram">
+		<a class="button button--ghost cta-bar__button" href="<%= site.telegram %>" target="_blank" rel="noopener" aria-label="Telegram" data-ga-contact-method="telegram" data-ga-location="cta_bar">
 			<img class="button__icon" src="/assets/icons/social/tg.png" alt="" width="24" height="24">
 		</a>
 	</div>
+	<script src="/assets/analytics.js"></script>
 	<script>
 		(function () {
 			const setPrefLang = (code) => {
@@ -430,10 +448,10 @@
 					";samesite=lax";
 			};
 
-			const links = document.querySelectorAll(".site-header__lang");
+			const links = document.querySelectorAll("[data-ga-language-switch]");
 			links.forEach((link) => {
 				link.addEventListener("click", () => {
-					const code = link.dataset.lang || link.textContent.trim().toLowerCase();
+					const code = link.dataset.lang || "";
 					if (code) {
 						setPrefLang(code);
 					}

@@ -92,8 +92,8 @@
           <p class="section__lead"><%= page.faq.lead %></p>
         <% } %>
       </div>
-      <% page.faq.items.forEach((item) => { %>
-        <details class="faq">
+      <% page.faq.items.forEach((item, index) => { %>
+        <details class="faq" data-ga-faq-scope="page" data-ga-faq-index="<%= index + 1 %>">
           <summary class="faq__summary"><%= item.question %></summary>
           <div class="faq__content"><%= item.answer %></div>
         </details>
@@ -118,7 +118,7 @@
             <% if (item.text) { %>
               <p class="card__text"><%= item.text %></p>
             <% } %>
-            <a class="card__link" href="<%= lang.paths[item.key] %>">
+            <a class="card__link" href="<%= lang.paths[item.key] %>" data-ga-content-type="related_link" data-ga-destination-key="<%= item.key %>" data-ga-location="page_related">
               <%= item.linkLabel || page.related.linkLabel || lang.home?.guides?.linkLabel || "Подробнее" %>
             </a>
           </article>
@@ -128,7 +128,7 @@
   </section>
 <% } %>
 
-<%- include("./search-phrases.ejs", { searchPhrases: page.searchPhrases, lang, linkItems: false }) %>
+<%- include("./search-phrases.ejs", { searchPhrases: page.searchPhrases, lang, linkItems: true, trackingLocation: "page_search_phrases", trackingContentType: "search_phrase" }) %>
 
 <% if (page.cta) { %>
   <section class="section section--surface">
@@ -137,19 +137,19 @@
         <h2 class="card__title"><%= page.cta.title %></h2>
         <p class="card__text"><%= page.cta.text %></p>
         <div class="section__actions">
-          <a class="button button--primary" href="tel:<%= site.phone %>">
+          <a class="button button--primary" href="tel:<%= site.phone %>" data-ga-contact-method="call" data-ga-location="page_cta">
             <%= page.cta.button || lang.cta %>
           </a>
-          <a class="button button--ghost" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
+          <a class="button button--ghost" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener" data-ga-contact-method="whatsapp" data-ga-location="page_cta">
             <img class="button__icon" src="/assets/icons/social/wh-1.png" alt="WhatsApp icon" width="24" height="24">
             <%= lang.ctaMessage || "WhatsApp" %>
           </a>
-          <a class="button button--ghost" href="<%= site.viber %>" target="_blank" rel="noopener">
+          <a class="button button--ghost" href="<%= site.viber %>" target="_blank" rel="noopener" data-ga-contact-method="viber" data-ga-location="page_cta">
             <img class="button__icon" src="/assets/icons/social/viber.png" alt="Viber icon" width="24" height="24">
             Viber
           </a>
           <% if (site.telegram) { %>
-            <a class="button button--ghost" href="<%= site.telegram %>" target="_blank" rel="noopener">
+            <a class="button button--ghost" href="<%= site.telegram %>" target="_blank" rel="noopener" data-ga-contact-method="telegram" data-ga-location="page_cta">
               <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram icon" width="24" height="24">
               Telegram
             </a>

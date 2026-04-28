@@ -26,7 +26,7 @@
             <% if (item.text) { %>
               <p class="card__text"><%= item.text %></p>
             <% } %>
-            <a class="card__link" href="<%= lang.paths[item.key] %>">
+            <a class="card__link" href="<%= lang.paths[item.key] %>" data-ga-content-type="service_focus_card" data-ga-destination-key="<%= item.key %>" data-ga-location="services_focus">
               <%= lang.serviceFocus.linkLabel %> — <%= item.title %>
             </a>
           </article>
@@ -92,7 +92,7 @@
             <% if (item.text) { %>
               <p class="card__text"><%= item.text %></p>
             <% } %>
-            <a class="card__link" href="<%= lang.paths[item.key] %>">
+            <a class="card__link" href="<%= lang.paths[item.key] %>" data-ga-content-type="guide_card" data-ga-destination-key="<%= item.key %>" data-ga-location="services_guides">
               <%= item.linkLabel || servicesPage.guides.linkLabel %>
             </a>
           </article>

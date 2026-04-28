@@ -29,30 +29,30 @@
                   </strong>
                     <% const type = item.type; const waNumber = site.phone.replace(/[^0-9]/g, ''); const value = item.value
                             || ""; if (type === "phone" ) { %>
-                        <a href="tel:<%= site.phone %>">
+                        <a href="tel:<%= site.phone %>" data-ga-contact-method="call" data-ga-location="contacts_cards">
                             <%= site.phone %>
                         </a>
                     <% } else if (type === "telegram" ) { %>
                         <% const href = item.href || site.telegram; %>
-                        <a href="<%= href %>" target="_blank" rel="noopener">
+                        <a href="<%= href %>" target="_blank" rel="noopener" data-ga-contact-method="telegram" data-ga-location="contacts_cards">
                             <%= value || href %>
                         </a>
                     <% } else if (type === "whatsapp" ) { %>
-                        <a href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener">
+                        <a href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener" data-ga-contact-method="whatsapp" data-ga-location="contacts_cards">
                             <%= value || site.phone %>
                         </a>
                     <% } else if (type === "viber" ) { %>
-                        <a href="<%= item.href || site.viber %>" target="_blank" rel="noopener">
+                        <a href="<%= item.href || site.viber %>" target="_blank" rel="noopener" data-ga-contact-method="viber" data-ga-location="contacts_cards">
                             <%= value || site.phone %>
                         </a>
                     <% } else if (type === "facebook" ) { %>
                         <% const href = item.href || site.facebook; %>
-                        <a href="<%= href %>" target="_blank" rel="noopener">
+                        <a href="<%= href %>" target="_blank" rel="noopener" data-ga-contact-method="facebook" data-ga-location="contacts_cards">
                             <%= value || href %>
                         </a>
                     <% } else if (type === "email" ) { %>
                         <% const emailValue = value || site.email; %>
-                        <a href="mailto:<%= emailValue %>">
+                        <a href="mailto:<%= emailValue %>" data-ga-contact-method="email" data-ga-location="contacts_cards">
                             <%= emailValue %>
                         </a>
                     <% } else if (item.href) { %>
@@ -87,21 +87,21 @@
                     <%= lang.home.contact.lead %>
                   </p>
                   <div class="messenger-row">
-                    <a class="button button--secondary" href="<%= site.telegram %>" target="_blank" rel="noopener">
+                    <a class="button button--secondary" href="<%= site.telegram %>" target="_blank" rel="noopener" data-ga-contact-method="telegram" data-ga-location="contacts_cta">
                       <img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram icon" width="24" height="24">
                       Telegram
                     </a>
                     <a class="button button--ghost" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>" target="_blank"
-                      rel="noopener">
+                      rel="noopener" data-ga-contact-method="whatsapp" data-ga-location="contacts_cta">
                       <img class="button__icon" src="/assets/icons/social/wh-1.png" alt="WhatsApp icon" width="24" height="24">
                       WhatsApp
                     </a>
-                    <a class="button button--ghost" href="<%= site.viber %>" target="_blank" rel="noopener">
+                    <a class="button button--ghost" href="<%= site.viber %>" target="_blank" rel="noopener" data-ga-contact-method="viber" data-ga-location="contacts_cta">
                       <img class="button__icon" src="/assets/icons/social/viber.png" alt="Viber icon" width="24" height="24">
                       Viber
                     </a>
                     <% if (site.facebook) { %>
-                      <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">
+                      <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener" data-ga-contact-method="facebook" data-ga-location="contacts_cta">
                         <img class="button__icon" src="/assets/icons/social/fb.png" alt="Facebook icon" width="24"
                           height="24">
                         Facebook
