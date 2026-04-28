@@ -78,8 +78,8 @@
       <% lang.home.services.items.forEach((item)=> {
         const highlight = item.highlight ? " card--elevated" : "";
         const iconFile = item.serviceIcon || null;
-        const iconSrc = iconFile ? `/assets/icons/services/${iconFile}` : null;
-        const serviceHref = item.linkKey && lang.paths[item.linkKey] ? lang.paths[item.linkKey] : lang.paths[lang.home.services.linkKey];
+        const iconSrc = iconFile ? `/assets/icons/services/${iconFile}` : (item.icon ? `/assets/icons/${item.icon}` : "/assets/icons/icon-tools.png");
+        const serviceHref = item.linkKey && lang.paths[item.linkKey] ? `${lang.paths[item.linkKey]}#price` : lang.paths[lang.home.services.linkKey];
         %>
         <article class="card service-card<%= highlight %>">
           <% if (iconSrc) { %>
@@ -128,6 +128,56 @@
     </div>
   </section>
   <% } %>
+
+            <section class="section section--surface section--benefits">
+              <div class="container">
+                <div class="section__header">
+                  <h2 class="section__title">
+                    <%= lang.home.benefits.title %>
+                  </h2>
+                  <p class="section__lead">
+                    <%= lang.home.benefits.lead %>
+                  </p>
+                </div>
+                <div class="grid grid--3">
+                  <% lang.home.benefits.items.forEach((item)=> { %>
+                    <div class="card benefit-card">
+                      <h3 class="card__title">
+                        <%= item.title %>
+                      </h3>
+                      <p class="card__text">
+                        <%= item.text %>
+                      </p>
+                    </div>
+                    <% }) %>
+                </div>
+              </div>
+            </section>
+
+            <section class="section section--steps">
+              <div class="container">
+                <div class="section__header">
+                  <h2 class="section__title">
+                    <%= lang.home.steps.title %>
+                  </h2>
+                  <p class="section__lead">
+                    <%= lang.home.steps.lead %>
+                  </p>
+                </div>
+                <div class="steps">
+                  <% lang.home.steps.items.forEach((item, index)=> { %>
+                    <div class="steps__item">
+                      <div class="steps__index">
+                        <%= index + 1 %>
+                      </div>
+                      <p class="steps__text">
+                        <%= item %>
+                      </p>
+                    </div>
+                    <% }) %>
+                </div>
+              </div>
+            </section>
 
     <% if (lang.home.guides) { %>
       <section class="section section--surface">
@@ -187,56 +237,6 @@
                       </li>
                       <% }) %>
                   </ul>
-                </div>
-              </div>
-            </section>
-
-            <section class="section section--surface section--benefits">
-              <div class="container">
-                <div class="section__header">
-                  <h2 class="section__title">
-                    <%= lang.home.benefits.title %>
-                  </h2>
-                  <p class="section__lead">
-                    <%= lang.home.benefits.lead %>
-                  </p>
-                </div>
-                <div class="grid grid--3">
-                  <% lang.home.benefits.items.forEach((item)=> { %>
-                    <div class="card benefit-card">
-                      <h3 class="card__title">
-                        <%= item.title %>
-                      </h3>
-                      <p class="card__text">
-                        <%= item.text %>
-                      </p>
-                    </div>
-                    <% }) %>
-                </div>
-              </div>
-            </section>
-
-            <section class="section section--steps">
-              <div class="container">
-                <div class="section__header">
-                  <h2 class="section__title">
-                    <%= lang.home.steps.title %>
-                  </h2>
-                  <p class="section__lead">
-                    <%= lang.home.steps.lead %>
-                  </p>
-                </div>
-                <div class="steps">
-                  <% lang.home.steps.items.forEach((item, index)=> { %>
-                    <div class="steps__item">
-                      <div class="steps__index">
-                        <%= index + 1 %>
-                      </div>
-                      <p class="steps__text">
-                        <%= item %>
-                      </p>
-                    </div>
-                    <% }) %>
                 </div>
               </div>
             </section>

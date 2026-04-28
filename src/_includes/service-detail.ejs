@@ -35,7 +35,7 @@
   </section>
 <% } %>
 
-<% if (page.price && page.price.items && page.price.items.length) { %>
+<% if (page.price && ((page.price.items && page.price.items.length) || (page.price.groups && page.price.groups.length))) { %>
   <section class="section section--surface" id="price">
     <div class="container">
       <div class="section__header">
@@ -44,14 +44,36 @@
           <p class="section__lead"><%= page.price.lead %></p>
         <% } %>
       </div>
-      <ul class="price-list">
-        <% page.price.items.forEach((item) => { %>
-          <li class="price-list__item">
-            <strong><%= item.label %></strong>
-            <span><%= item.value %></span>
-          </li>
-        <% }); %>
-      </ul>
+      <% if (page.price.items && page.price.items.length) { %>
+        <ul class="price-list">
+          <% page.price.items.forEach((item) => { %>
+            <li class="price-list__item">
+              <strong><%= item.label %></strong>
+              <span><%= item.value %></span>
+            </li>
+          <% }); %>
+        </ul>
+      <% } %>
+      <% if (page.price.groups && page.price.groups.length) { %>
+        <div class="price-groups">
+          <% page.price.groups.forEach((group) => { %>
+            <section class="price-group">
+              <h3 class="price-group__title"><%= group.title %></h3>
+              <% if (group.lead) { %>
+                <p class="card__text"><%= group.lead %></p>
+              <% } %>
+              <ul class="price-list">
+                <% group.items.forEach((item) => { %>
+                  <li class="price-list__item">
+                    <strong><%= item.label %></strong>
+                    <span><%= item.value %></span>
+                  </li>
+                <% }); %>
+              </ul>
+            </section>
+          <% }); %>
+        </div>
+      <% } %>
       <% if (page.price.note) { %>
         <div class="card card--elevated">
           <p class="card__text"><%= page.price.note %></p>
