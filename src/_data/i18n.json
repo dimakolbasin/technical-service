@@ -96,8 +96,8 @@
             {
               "title": "Посудомоечные машины",
               "text": "Не моет, не греет, остаётся вода, протечки.",
-              "serviceIcon": "wash-machine.png",
-              "linkKey": "dishwashers"
+              "linkKey": "dishwashers",
+              "icon": "icon-tools.png"
             },
             {
               "title": "Духовые шкафы",
@@ -108,8 +108,8 @@
             {
               "title": "Варочные панели",
               "text": "Газовые и электрические поверхности, конфорки и сенсоры.",
-              "serviceIcon": "stove.png",
-              "linkKey": "hobs"
+              "linkKey": "hobs",
+              "icon": "icon-tools.png"
             },
             {
               "title": "Кондиционеры",
@@ -2837,8 +2837,8 @@
             {
               "title": "Dishwashers",
               "text": "Poor washing, no heating, standing water or leaks.",
-              "serviceIcon": "wash-machine.png",
-              "linkKey": "dishwashers"
+              "linkKey": "dishwashers",
+              "icon": "icon-tools.png"
             },
             {
               "title": "Ovens",
@@ -2849,8 +2849,8 @@
             {
               "title": "Cooktops",
               "text": "Gas and electric hobs, burners and touch controls.",
-              "serviceIcon": "stove.png",
-              "linkKey": "hobs"
+              "linkKey": "hobs",
+              "icon": "icon-tools.png"
             },
             {
               "title": "Air conditioners",
@@ -5578,8 +5578,8 @@
             {
               "title": "ჭურჭლის სარეცხი მანქანები",
               "text": "ცუდად რეცხავს, არ აცხელებს, წყალი რჩება ან ჟონავს.",
-              "serviceIcon": "wash-machine.png",
-              "linkKey": "dishwashers"
+              "linkKey": "dishwashers",
+              "icon": "icon-tools.png"
             },
             {
               "title": "ღუმელები",
@@ -5590,8 +5590,8 @@
             {
               "title": "ქურები და ზედაპირები",
               "text": "გაზის და ელექტრო ზედაპირები, კონფორები და სენსორები.",
-              "serviceIcon": "stove.png",
-              "linkKey": "hobs"
+              "linkKey": "hobs",
+              "icon": "icon-tools.png"
             },
             {
               "title": "კონდიციონერები",

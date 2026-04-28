@@ -138,7 +138,7 @@
           <a class="button button--primary" href="tel:<%= site.phone %>">
             <%= page.cta.button || lang.cta %>
           </a>
-          <a class="button button--secondary" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
+          <a class="button button--ghost" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
             <img class="button__icon" src="/assets/icons/social/wh-1.png" alt="WhatsApp icon" width="24" height="24">
             <%= lang.ctaMessage || "WhatsApp" %>
           </a>

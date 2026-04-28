@@ -255,7 +255,7 @@
 							<img class="button__icon" src="/assets/icons/social/call.png" alt="" width="24" height="24">
 							<%= footer.callLabel || lang.cta %>
 						</a>
-						<a class="button button--secondary" href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener">
+						<a class="button button--ghost" href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener">
 							<img class="button__icon" src="/assets/icons/social/wh-1.png" alt="" width="24" height="24">
 							<%= footer.messageLabel || lang.ctaMessage || "WhatsApp" %>
 						</a>
@@ -408,7 +408,7 @@
 		<a class="button button--primary cta-bar__button" href="tel:<%= site.phone %>" aria-label="<%= lang.cta %>">
 			<img class="button__icon" src="/assets/icons/social/call.png" alt="" width="24" height="24">
 		</a>
-			<a class="button button--secondary cta-bar__button" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>"
+			<a class="button button--ghost cta-bar__button" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>"
 				target="_blank" rel="noopener" aria-label="<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>">
 				<img class="button__icon" src="/assets/icons/social/wh-1.png" alt="" width="24" height="24">
 		</a>
