@@ -1416,7 +1416,8 @@ a.search-phrases__chip:hover {
   color: var(--c-primary-hover);
   font-size: 1.35rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 28px;
+  padding-bottom: 2px;
 }
 
 .cookie-notice:hover .cookie-notice__close {
