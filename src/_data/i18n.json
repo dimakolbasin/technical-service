@@ -73,6 +73,7 @@
               "text": "Не сливает, не греет, шумит или течёт.",
               "icon": "icon-tools.png",
               "serviceIcon": "wash-machine.png",
+              "linkKey": "washing-machines",
               "highlight": true,
               "seoContent": {
                 "sections": [
@@ -112,6 +113,7 @@
               "text": "Не зажигается, не греет, выбивает автомат.",
               "icon": "icon-shield.svg",
               "serviceIcon": "stove.png",
+              "linkKey": "hobs",
               "seoContent": {
                 "sections": [
                   {
@@ -145,6 +147,7 @@
               "text": "Не охлаждает, пахнет, плохо дует.",
               "icon": "icon-call.svg",
               "serviceIcon": "air.png",
+              "linkKey": "ac-cleaning",
               "seoContent": {
                 "sections": [
                   {
@@ -300,7 +303,6 @@
           "Аккуратно работаю"
         ],
         "heroNote": "Выезд и диагностика 20 GEL",
-        "areaNote": "Обслуживаем районы Батуми: Старый Батуми, Руставели, Химшиашвили, Багратиони, Агмашенебели, Джавахишвили, Тамар, Бони-Городок.",
         "brands": {
           "title": "Марки, с которыми работаем",
           "lead": "Популярные бренды бытовой техники, которые ремонтируем.",
@@ -1404,6 +1406,11 @@
                 "type": "whatsapp"
               },
               {
+                "label": "Viber",
+                "value": "Написать",
+                "type": "viber"
+              },
+              {
                 "label": "Facebook",
                 "type": "facebook"
               },
@@ -1438,6 +1445,11 @@
                   "label": "WhatsApp",
                   "value": "Написать",
                   "type": "whatsapp"
+                },
+                {
+                  "label": "Viber",
+                  "value": "Написать",
+                  "type": "viber"
                 },
                 {
                   "label": "Facebook",
@@ -2060,6 +2072,7 @@
               "text": "Not draining, not heating, noisy, or leaking.",
               "icon": "icon-tools.png",
               "serviceIcon": "wash-machine.png",
+              "linkKey": "washing-machines",
               "highlight": true,
               "seoContent": {
                 "sections": [
@@ -2099,6 +2112,7 @@
               "text": "No ignition, no heat, breaker trips.",
               "icon": "icon-shield.svg",
               "serviceIcon": "stove.png",
+              "linkKey": "hobs",
               "seoContent": {
                 "sections": [
                   {
@@ -2131,6 +2145,7 @@
               "text": "Weak cooling, bad smell, poor airflow.",
               "icon": "icon-call.svg",
               "serviceIcon": "air.png",
+              "linkKey": "ac-cleaning",
               "seoContent": {
                 "sections": [
                   {
@@ -2252,7 +2267,7 @@
             },
             {
               "label": "Messengers",
-              "value": "WhatsApp / Telegram",
+              "value": "WhatsApp / Viber / Telegram",
               "type": "messengers"
             },
             {
@@ -2287,7 +2302,6 @@
           "Clean work"
         ],
         "heroNote": "Call-out and diagnostics 20 GEL",
-        "areaNote": "Service areas in Batumi: Old Batumi, Rustaveli, Khimshiashvili, Bagrationi, Aghmashenebeli, Javakhishvili, Tamar, Boni-Gorodok.",
         "brands": {
           "title": "Brands we repair",
           "lead": "Popular home appliance brands we work with.",
@@ -3389,6 +3403,11 @@
                 "type": "whatsapp"
               },
               {
+                "label": "Viber",
+                "value": "Message",
+                "type": "viber"
+              },
+              {
                 "label": "Facebook",
                 "type": "facebook"
               },
@@ -3423,6 +3442,11 @@
                   "label": "WhatsApp",
                   "value": "Message",
                   "type": "whatsapp"
+                },
+                {
+                  "label": "Viber",
+                  "value": "Message",
+                  "type": "viber"
                 },
                 {
                   "label": "Facebook",
@@ -4045,6 +4069,7 @@
               "text": "არ წურავს, არ ათბობს, ხმაურობს ან ჟონავს.",
               "icon": "icon-tools.png",
               "serviceIcon": "wash-machine.png",
+              "linkKey": "washing-machines",
               "highlight": true,
               "seoContent": {
                 "sections": [
@@ -4084,6 +4109,7 @@
               "text": "არ ინთება, არ ათბობს, ავტომატს თიშავს.",
               "icon": "icon-shield.svg",
               "serviceIcon": "stove.png",
+              "linkKey": "hobs",
               "seoContent": {
                 "sections": [
                   {
@@ -4116,6 +4142,7 @@
               "text": "სუსტია გაგრილება, სუნი აქვს ან ცუდად უბერავს.",
               "icon": "icon-call.svg",
               "serviceIcon": "air.png",
+              "linkKey": "ac-cleaning",
               "seoContent": {
                 "sections": [
                   {
@@ -4237,7 +4264,7 @@
             },
             {
               "label": "მესენჯერები",
-              "value": "WhatsApp / Telegram",
+              "value": "WhatsApp / Viber / Telegram",
               "type": "messengers"
             },
             {
@@ -4272,7 +4299,6 @@
           "სუფთად ვმუშაობ"
         ],
         "heroNote": "გამოძახება და დიაგნოსტიკა 20 GEL",
-        "areaNote": "ვემსახურებით ბათუმის უბნებს: ძველი ბათუმი, რუსთაველი, ხიმშიაშვილი, ბაგრატიონი, აღმაშენებელი, ჯავახიშვილი, თამარი, ბონი-გოროდოკი.",
         "brands": {
           "title": "ბრენდები, რომელთანაც ვმუშაობთ",
           "lead": "პოპულარული საყოფაცხოვრებო ტექნიკის ბრენდები.",
@@ -5374,6 +5400,11 @@
                 "type": "whatsapp"
               },
               {
+                "label": "Viber",
+                "value": "დაწერე",
+                "type": "viber"
+              },
+              {
                 "label": "Facebook",
                 "type": "facebook"
               },
@@ -5408,6 +5439,11 @@
                   "label": "WhatsApp",
                   "value": "დაწერე",
                   "type": "whatsapp"
+                },
+                {
+                  "label": "Viber",
+                  "value": "დაწერე",
+                  "type": "viber"
                 },
                 {
                   "label": "Facebook",

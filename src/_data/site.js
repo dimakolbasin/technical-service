@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const rawPhone = process.env.SITE_PHONE || "";
 const cleanPhone = rawPhone.replace(/[^0-9+]/g, '');
+const viber = process.env.SITE_VIBER || (cleanPhone ? `viber://chat?number=${encodeURIComponent(cleanPhone)}` : "");
 const address = {
     street: process.env.SITE_ADDRESS_STREET,
     postalCode: process.env.SITE_ADDRESS_POSTAL,
@@ -21,6 +22,7 @@ module.exports = {
     baseUrl: process.env.SITE_BASE_URL,
     facebook: process.env.SITE_FACEBOOK,
     telegram: process.env.SITE_TELEGRAM,
+    viber,
     web3formsAccessKey: process.env.WEB3FORMS_ACCESS_KEY,
     address,
     googleMaps,

@@ -41,6 +41,10 @@
                         <a href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener">
                             <%= value || site.phone %>
                         </a>
+                    <% } else if (type === "viber" ) { %>
+                        <a href="<%= item.href || site.viber %>" target="_blank" rel="noopener">
+                            <%= value || site.phone %>
+                        </a>
                     <% } else if (type === "facebook" ) { %>
                         <% const href = item.href || site.facebook; %>
                         <a href="<%= href %>" target="_blank" rel="noopener">
@@ -91,6 +95,10 @@
                       rel="noopener">
                       <img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp icon" width="24" height="24">
                       WhatsApp
+                    </a>
+                    <a class="button button--ghost" href="<%= site.viber %>" target="_blank" rel="noopener">
+                      <img class="button__icon" src="/assets/icons/social/viber.png" alt="Viber icon" width="24" height="24">
+                      Viber
                     </a>
                     <% if (site.facebook) { %>
                       <a class="button button--ghost" href="<%= site.facebook %>" target="_blank" rel="noopener">

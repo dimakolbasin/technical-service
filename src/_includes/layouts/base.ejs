@@ -11,10 +11,15 @@
 		<%= title %>
 	</title>
 	<meta name="description" content="<%= description %>">
-    <!--<link rel="preload" href="/assets/fonts/Noto-Sans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap">
+	</noscript>
 	<link rel="preload" href="/assets/styles.css" as="style">
 	<link rel="stylesheet" href="/assets/styles.css">
-	<link rel="manifest" href="/manifest.json" crossorigin="use-credentials" fetchpriority="low">
+    <!--<link rel="manifest" href="/manifest.json" crossorigin="use-credentials" fetchpriority="low">-->
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" fetchpriority="low">
 	<link rel="icon" href="/assets/icons/icon-tools.png" type="image/png" fetchpriority="low">
 	<link rel="apple-touch-icon" href="/assets/icons/icon-tools.png" fetchpriority="low">
@@ -145,6 +150,15 @@
 			<script type="application/ld+json"><%- JSON.stringify(faqSchema) %></script>
 		<% } %>
 	<% } %>
+
+    <script>
+        window.addEventListener('load', function () {
+            const link = document.createElement('link')
+            link.rel = 'manifest'
+            link.href = '/manifest.json'
+            document.head.appendChild(link)
+        })
+    </script>
 </head>
 
 <body class="page">
@@ -202,29 +216,30 @@
 
 	<footer class="site-footer">
 		<div class="container site-footer__grid">
-			<div>
-				<p class="site-footer__title">
-					<%= lang.footer.contactsTitle %>
-				</p>
-				<p class="site-footer__text">
-					<%= lang.footer.phoneLabel %>: <a href="tel:<%= site.phone %>">
+			<div class="site-footer__meta">
+				<div>
+					<p class="site-footer__title">
+						<%= lang.footer.contactsTitle %>
+					</p>
+					<p class="site-footer__text">
+						<a href="tel:<%= site.phone %>">
 							<%= site.phone %>
 						</a>
-				</p>
-				<p class="site-footer__text">
-					<%= lang.footer.emailLabel %>: <a href="mailto:<%= site.email %>">
+					</p>
+					<p class="site-footer__text">
+						<a href="mailto:<%= site.email %>">
 							<%= site.email %>
 						</a>
-				</p>
-			</div>
-			<div>
-				<p class="site-footer__title">
-					<%= lang.footer.areasTitle %>
-				</p>
-				<p class="site-footer__text">
-					<%= lang.footer.areas %>
-				</p>
-			</div>
+					</p>
+				</div>
+				<div>
+					<p class="site-footer__title">
+						<%= lang.footer.areasTitle %>
+					</p>
+					<p class="site-footer__text">
+						<%= lang.footer.areas %>
+					</p>
+				</div>
 				<div>
 					<p class="site-footer__title">
 						<%= lang.footer.langsTitle %>
@@ -234,6 +249,80 @@
 					</p>
 				</div>
 			</div>
+			<% if (lang.home && lang.home.contact) { %>
+				<div class="card card--elevated site-footer__form">
+					<h2 class="card__title">
+						<%= lang.home.contact.title %>
+					</h2>
+					<p class="card__text">
+						<%= lang.home.contact.lead %>
+					</p>
+					<form class="form" action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+						<input type="hidden" name="access_key" value="<%= site.web3formsAccessKey %>">
+						<div class="form__row">
+							<label class="form__label" for="name-footer">
+								<%= lang.home.contact.form.nameLabel %>
+							</label>
+							<input autocomplete="off" class="form__input" type="text" id="name-footer" name="name"
+								placeholder="<%= lang.home.contact.form.namePlaceholder %>">
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="phone-footer">
+								<%= lang.home.contact.form.phoneLabel %>
+							</label>
+							<div class="form__phone-group">
+								<input autocomplete="off" class="form__input form__input--phone" type="number" min="0"
+									id="phone-footer" name="phone" placeholder="<%= lang.home.contact.form.phonePlaceholder %>"
+									inputmode="tel" required
+									oninvalid="this.setCustomValidity('<%= lang.home.contact.form.phoneRequired %>')"
+									oninput="this.setCustomValidity('')">
+								<div class="form__contact-methods" role="group" aria-label="Preferred contact methods">
+									<span class="form__contact-methods-note">
+										<%= lang.home.contact.form.preferredContactLabel %>
+									</span>
+									<input class="form__contact-method-input" type="checkbox" id="preferred-contact-footer-call"
+										name="preferredContact[]" value="call">
+									<label class="form__contact-method" for="preferred-contact-footer-call" title="Call">
+										<img class="button__icon" src="/assets/icons/social/call.png" alt="Call" width="24" height="24">
+									</label>
+									<input class="form__contact-method-input" type="checkbox" id="preferred-contact-footer-tg"
+										name="preferredContact[]" value="telegram">
+									<label class="form__contact-method" for="preferred-contact-footer-tg" title="Telegram">
+										<img class="button__icon" src="/assets/icons/social/tg.png" alt="Telegram icon" width="24"
+											height="24">
+									</label>
+									<input class="form__contact-method-input" type="checkbox" id="preferred-contact-footer-wh"
+										name="preferredContact[]" value="whatsapp">
+									<label class="form__contact-method" for="preferred-contact-footer-wh" title="WhatsApp">
+										<img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp icon" width="24"
+											height="24">
+									</label>
+									<input class="form__contact-method-input" type="checkbox" id="preferred-contact-footer-viber"
+										name="preferredContact[]" value="viber">
+									<label class="form__contact-method" for="preferred-contact-footer-viber" title="Viber">
+										<img class="button__icon" src="/assets/icons/social/viber.png" alt="Viber icon" width="24"
+											height="24">
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="message-footer">
+								<%= lang.home.contact.form.descriptionLabel %>
+							</label>
+							<textarea class="form__input" id="message-footer" name="message" rows="3"
+								placeholder="<%= lang.home.contact.form.descriptionPlaceholder %>" autocomplete="off"
+								aria-autocomplete="none"></textarea>
+						</div>
+						<div class="form__actions">
+							<button class="button button--primary" type="submit">
+								<%= lang.home.contact.form.submit %>
+							</button>
+						</div>
+					</form>
+				</div>
+			<% } %>
+		</div>
 		</footer>
 
 	<div class="cta-bar">
@@ -244,6 +333,11 @@
 				<img class="button__icon" src="/assets/icons/social/wh.png"
 					alt="WhatsApp icon" width="24" height="24">
 			<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
+		</a>
+		<a class="button button--ghost" href="<%= site.viber %>" target="_blank" rel="noopener">
+			<img class="button__icon" src="/assets/icons/social/viber.png"
+				alt="Viber icon" width="24" height="24">
+			Viber
 		</a>
 	</div>
 	<script>

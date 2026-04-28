@@ -164,6 +164,10 @@
                                 <a href="https://wa.me/<%= waNumber %>" target="_blank" rel="noopener">
                                   <%= value || site.phone %>
                                 </a>
+                              <% } else if (type === "viber") { %>
+                                <a href="<%= item.href || site.viber %>" target="_blank" rel="noopener">
+                                  <%= value || site.phone %>
+                                </a>
                               <% } else if (type === "facebook") { %>
                                 <% const href = item.href || site.facebook; %>
                                 <a href="<%= href %>" target="_blank" rel="noopener">
