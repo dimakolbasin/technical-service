@@ -731,6 +731,13 @@ button {
   z-index: 10;
 }
 
+.cta-bar__button {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  flex: 0 0 48px;
+}
+
 @media (min-width: 720px) {
   :root {
     --container-pad: 24px;

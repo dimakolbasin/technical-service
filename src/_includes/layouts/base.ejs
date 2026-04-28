@@ -294,7 +294,7 @@
 									<input class="form__contact-method-input" type="checkbox" id="preferred-contact-footer-wh"
 										name="preferredContact[]" value="whatsapp">
 									<label class="form__contact-method" for="preferred-contact-footer-wh" title="WhatsApp">
-										<img class="button__icon" src="/assets/icons/social/wh.png" alt="WhatsApp icon" width="24"
+										<img class="button__icon" src="/assets/icons/social/wh-1.png" alt="WhatsApp icon" width="24"
 											height="24">
 									</label>
 									<input class="form__contact-method-input" type="checkbox" id="preferred-contact-footer-viber"
@@ -326,18 +326,15 @@
 		</footer>
 
 	<div class="cta-bar">
-		<a class="button button--primary" href="tel:<%= site.phone %>">
-			<%= lang.cta %>
+		<a class="button button--primary cta-bar__button" href="tel:<%= site.phone %>" aria-label="<%= lang.cta %>">
+			<img class="button__icon" src="/assets/icons/social/call.png" alt="" width="24" height="24">
 		</a>
-			<a class="button button--secondary" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>" target="_blank" rel="noopener">
-				<img class="button__icon" src="/assets/icons/social/wh.png"
-					alt="WhatsApp icon" width="24" height="24">
-			<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>
+			<a class="button button--secondary cta-bar__button" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>"
+				target="_blank" rel="noopener" aria-label="<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>">
+				<img class="button__icon" src="/assets/icons/social/wh-1.png" alt="" width="24" height="24">
 		</a>
-		<a class="button button--ghost" href="<%= site.viber %>" target="_blank" rel="noopener">
-			<img class="button__icon" src="/assets/icons/social/viber.png"
-				alt="Viber icon" width="24" height="24">
-			Viber
+		<a class="button button--ghost cta-bar__button" href="<%= site.viber %>" target="_blank" rel="noopener" aria-label="Viber">
+			<img class="button__icon" src="/assets/icons/social/viber.png" alt="" width="24" height="24">
 		</a>
 	</div>
 	<script>
