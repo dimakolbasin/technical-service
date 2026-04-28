@@ -17,7 +17,7 @@
       <div class="grid grid--2">
         <% page.sections.forEach((block) => { %>
           <div class="card">
-            <h3 class="card__title"><%= block.title %></h3>
+            <h2 class="card__title"><%= block.title %></h2>
             <% if (block.lead) { %>
               <p class="card__text"><%= block.lead %></p>
             <% } %>
@@ -134,7 +134,7 @@
   <section class="section section--surface">
     <div class="container">
       <div class="cta-section">
-        <h3 class="card__title"><%= page.cta.title %></h3>
+        <h2 class="card__title"><%= page.cta.title %></h2>
         <p class="card__text"><%= page.cta.text %></p>
         <div class="section__actions">
           <a class="button button--primary" href="tel:<%= site.phone %>">
