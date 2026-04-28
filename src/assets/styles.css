@@ -494,17 +494,8 @@ button {
   -webkit-backdrop-filter: blur(12px);
 }
 
-.site-nav__toggle {
-  padding: 8px var(--container-pad);
-  cursor: pointer;
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: var(--c-text);
-}
-
 .site-nav__panel {
-  padding: 0 var(--container-pad) 10px;
-  display: none;
+  padding: 8px var(--container-pad) 10px;
 }
 
 .site-nav__list {
@@ -535,14 +526,6 @@ button {
   color: var(--c-primary-hover);
   font-weight: 700;
   background: var(--c-primary-soft);
-}
-
-.site-nav[open] .site-nav__panel {
-  display: block;
-}
-
-.site-nav summary::-webkit-details-marker {
-  display: none;
 }
 
 .hero {

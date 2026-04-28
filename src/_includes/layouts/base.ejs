@@ -29,7 +29,8 @@
 	<link rel="preload" href="/assets/styles.css" as="style">
 	<link rel="stylesheet" href="/assets/styles.css">
 	<% if (pageKey === "home") { %>
-		<link rel="preload" href="/assets/images/hero-appliances.webp" as="image" type="image/webp" fetchpriority="high">
+		<link rel="preload" href="/assets/images/hero-appliances-mobile.webp" as="image" type="image/webp" media="(max-width: 719px)" fetchpriority="high">
+		<link rel="preload" href="/assets/images/hero-appliances-desktop.webp" as="image" type="image/webp" media="(min-width: 720px)" fetchpriority="high">
 	<% } %>
     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" fetchpriority="low">
@@ -207,22 +208,19 @@
 		</div>
 	</header>
 
-	<details class="site-nav" open>
-		<summary class="site-nav__toggle">
-			<%= lang.menu %>
-		</summary>
-			<nav class="container site-nav__panel" aria-label="<%= lang.navLabel %>">
-				<ul class="site-nav__list">
-					<% lang.nav.forEach((item) => {
-						const navActive = item.key === pageKey ? " site-nav__link--active" : "";
-						%>
-					<li><a class="site-nav__link<%= navActive %>" href="<%= lang.paths[item.key] %>">
-							<%= item.label %>
-						</a></li>
-					<% }); %>
+	<div class="site-nav">
+		<nav class="container site-nav__panel" aria-label="<%= lang.navLabel %>">
+			<ul class="site-nav__list">
+				<% lang.nav.forEach((item) => {
+					const navActive = item.key === pageKey ? " site-nav__link--active" : "";
+					%>
+				<li><a class="site-nav__link<%= navActive %>" href="<%= lang.paths[item.key] %>">
+						<%= item.label %>
+					</a></li>
+				<% }); %>
 			</ul>
 		</nav>
-	</details>
+	</div>
 
 	<main class="main">
 		<%- content %>
