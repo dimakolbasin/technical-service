@@ -19,6 +19,7 @@
         "ac-cleaning": "/services/ac-cleaning/",
         "prices": "/prices/",
         "contacts": "/contacts/",
+        "privacy": "/privacy/",
         "washing-machine-not-draining": "/articles/washing-machine-not-draining/",
         "dishwasher-not-draining": "/articles/dishwasher-not-draining/",
         "oven-not-heating": "/articles/oven-not-heating/",
@@ -1420,6 +1421,44 @@
             ]
           }
         },
+        "privacy": {
+          "title": "Privacy Policy | Tech Fix",
+          "lead": "На этой странице описано, какие данные сайт может собирать, как используется Google Analytics и зачем нужна аналитика.",
+          "heading": "Privacy Policy",
+          "sections": [
+            {
+              "title": "Использование Google Analytics",
+              "text": "На сайте используется Google Analytics, чтобы понимать, как посетители находят сайт, какие страницы открывают и как взаимодействуют с контентом. Google Analytics может использовать cookies и похожие технологии."
+            },
+            {
+              "title": "Какие данные собираются",
+              "items": [
+                "страницы, которые вы открываете, время посещения и примерная длительность сессии",
+                "источник перехода на сайт, например поиск, карта, социальная сеть или прямая ссылка",
+                "примерное местоположение на уровне города или региона",
+                "тип устройства, браузер, операционная система и язык браузера",
+                "технические события сайта, например клики по кнопкам связи или переходы между страницами"
+              ]
+            },
+            {
+              "title": "Зачем это нужно",
+              "items": [
+                "понимать, какие услуги и страницы наиболее полезны посетителям",
+                "улучшать структуру сайта, тексты и удобство навигации",
+                "находить технические проблемы и оценивать качество работы сайта",
+                "измерять эффективность рекламы и поискового продвижения"
+              ]
+            },
+            {
+              "title": "Личные данные",
+              "text": "Google Analytics не используется для намеренного сбора имени, телефона, адреса или текста сообщений. Если вы отправляете заявку через форму или мессенджер, эти данные используются только для связи с вами по вашему запросу."
+            },
+            {
+              "title": "Управление cookies",
+              "text": "Вы можете ограничить или удалить cookies в настройках браузера. После отключения cookies часть аналитики может работать неполно, но основные страницы сайта останутся доступны."
+            }
+          ]
+        },
         "contacts": {
           "title": "Контакты | Tech Fix",
           "lead": "Свяжитесь с нами удобным способом. Выезд по Батуми. Диагностика на месте. Цена согласуется до ремонта. Гарантия на выполненные работы.",
@@ -2017,6 +2056,7 @@
         "ac-cleaning": "/en/services/ac-cleaning/",
         "prices": "/en/prices/",
         "contacts": "/en/contacts/",
+        "privacy": "/en/privacy/",
         "washing-machine-not-draining": "/en/articles/washing-machine-not-draining/",
         "dishwasher-not-draining": "/en/articles/dishwasher-not-draining/",
         "oven-not-heating": "/en/articles/oven-not-heating/",
@@ -3416,6 +3456,44 @@
             ]
           }
         },
+        "privacy": {
+          "title": "Privacy Policy | Tech Fix",
+          "lead": "This page explains what data the site may collect, how Google Analytics is used, and why analytics are needed.",
+          "heading": "Privacy Policy",
+          "sections": [
+            {
+              "title": "Use of Google Analytics",
+              "text": "This site uses Google Analytics to understand how visitors find the site, which pages they open, and how they interact with the content. Google Analytics may use cookies and similar technologies."
+            },
+            {
+              "title": "What data is collected",
+              "items": [
+                "pages you open, visit time, and approximate session duration",
+                "traffic source, such as search, maps, social networks, or a direct link",
+                "approximate location at city or region level",
+                "device type, browser, operating system, and browser language",
+                "technical site events, such as contact button clicks or page navigation"
+              ]
+            },
+            {
+              "title": "Why this is needed",
+              "items": [
+                "to understand which services and pages are most useful to visitors",
+                "to improve site structure, content, and navigation",
+                "to find technical issues and assess site performance",
+                "to measure the effectiveness of ads and search promotion"
+              ]
+            },
+            {
+              "title": "Personal data",
+              "text": "Google Analytics is not used to intentionally collect your name, phone number, address, or message text. If you send a request through a form or messenger, this data is used only to contact you about your request."
+            },
+            {
+              "title": "Managing cookies",
+              "text": "You can limit or delete cookies in your browser settings. If cookies are disabled, some analytics may be incomplete, but the main site pages will remain available."
+            }
+          ]
+        },
         "contacts": {
           "title": "Contacts | Tech Fix",
           "lead": "Reach us in the most convenient way. On-site service in Batumi. Diagnostics at your location. Price agreed before repair.",
@@ -4013,6 +4091,7 @@
         "ac-cleaning": "/ka/services/ac-cleaning/",
         "prices": "/ka/prices/",
         "contacts": "/ka/contacts/",
+        "privacy": "/ka/privacy/",
         "washing-machine-not-draining": "/ka/articles/washing-machine-not-draining/",
         "dishwasher-not-draining": "/ka/articles/dishwasher-not-draining/",
         "oven-not-heating": "/ka/articles/oven-not-heating/",
@@ -5411,6 +5490,44 @@
               }
             ]
           }
+        },
+        "privacy": {
+          "title": "Privacy Policy | Tech Fix",
+          "lead": "ამ გვერდზე აღწერილია, რა მონაცემებს შეიძლება აგროვებდეს საიტი, როგორ გამოიყენება Google Analytics და რისთვის არის საჭირო ანალიტიკა.",
+          "heading": "Privacy Policy",
+          "sections": [
+            {
+              "title": "Google Analytics-ის გამოყენება",
+              "text": "საიტი იყენებს Google Analytics-ს, რათა გავიგოთ, როგორ პოულობენ მომხმარებლები საიტს, რომელ გვერდებს ხსნიან და როგორ ურთიერთობენ კონტენტთან. Google Analytics შეიძლება იყენებდეს cookies-ს და მსგავს ტექნოლოგიებს."
+            },
+            {
+              "title": "რა მონაცემები გროვდება",
+              "items": [
+                "რომელ გვერდებს ხსნით, ვიზიტის დრო და სესიის დაახლოებით ხანგრძლივობა",
+                "საიტზე გადმოსვლის წყარო, მაგალითად ძებნა, რუკა, სოციალური ქსელი ან პირდაპირი ბმული",
+                "დაახლოებით მდებარეობა ქალაქის ან რეგიონის დონეზე",
+                "მოწყობილობის ტიპი, ბრაუზერი, ოპერაციული სისტემა და ბრაუზერის ენა",
+                "საიტის ტექნიკური მოვლენები, მაგალითად საკონტაქტო ღილაკებზე დაჭერა ან გვერდებს შორის გადასვლა"
+              ]
+            },
+            {
+              "title": "რისთვის გვჭირდება ეს",
+              "items": [
+                "გავიგოთ, რომელი სერვისები და გვერდებია ყველაზე სასარგებლო მომხმარებლებისთვის",
+                "გავაუმჯობესოთ საიტის სტრუქტურა, ტექსტები და ნავიგაცია",
+                "ვიპოვოთ ტექნიკური პრობლემები და შევაფასოთ საიტის მუშაობა",
+                "შევაფასოთ რეკლამისა და საძიებო ოპტიმიზაციის ეფექტურობა"
+              ]
+            },
+            {
+              "title": "პირადი მონაცემები",
+              "text": "Google Analytics არ გამოიყენება სახელის, ტელეფონის, მისამართის ან შეტყობინების ტექსტის შეგნებულად შესაგროვებლად. თუ აგზავნით მოთხოვნას ფორმით ან მესენჯერით, ეს მონაცემები გამოიყენება მხოლოდ თქვენთან დასაკავშირებლად."
+            },
+            {
+              "title": "Cookies-ის მართვა",
+              "text": "თქვენ შეგიძლიათ შეზღუდოთ ან წაშალოთ cookies ბრაუზერის პარამეტრებიდან. cookies-ის გამორთვის შემდეგ ანალიტიკის ნაწილი შეიძლება არასრული იყოს, მაგრამ საიტის ძირითადი გვერდები ხელმისაწვდომი დარჩება."
+            }
+          ]
         },
         "contacts": {
           "title": "კონტაქტი | Tech Fix",

@@ -2,6 +2,15 @@
 <html lang="<%= lang.code %>">
 
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YNHFGRED9Z"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-YNHFGRED9Z');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
@@ -372,12 +381,17 @@
 				<% } %>
 			</div>
 			<div class="footer-bottom">
+				<%
+				const privacyPath = (lang.paths && lang.paths.privacy) || "/privacy/";
+				const privacyLabel = lang.pages && lang.pages.privacy ? lang.pages.privacy.heading : "Privacy Policy";
+				%>
 				<p>
 					<%= footer.legalLine %>
 				</p>
 				<div class="footer-bottom__links">
 					<a href="mailto:<%= site.email %>"><%= site.email %></a>
 					<span aria-hidden="true">/</span>
+					<a href="<%= privacyPath %>"><%= privacyLabel %></a>
 					<a href="/">Русский</a>
 					<a href="/ka/">ქართული</a>
 					<a href="/en/">English</a>
@@ -385,6 +399,12 @@
 			</div>
 		</div>
 	</footer>
+
+	<input class="cookie-notice__toggle" type="checkbox" id="cookie-notice-toggle" tabindex="-1">
+	<label class="cookie-notice" for="cookie-notice-toggle" role="note" aria-label="Закрыть уведомление о cookies">
+		<span>Мы используем cookies для аналитики и улучшения сайта</span>
+		<span class="cookie-notice__close" aria-hidden="true">×</span>
+	</label>
 
 	<div class="cta-bar">
 		<a class="button button--primary cta-bar__button" href="tel:<%= site.phone %>" aria-label="<%= lang.cta %>">

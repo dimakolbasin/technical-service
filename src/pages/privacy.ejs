@@ -1,0 +1,40 @@
+<% const privacyPage = lang.pages.privacy; %>
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title">
+        <%= privacyPage.heading %>
+      </h1>
+      <p class="section__lead">
+        <%= privacyPage.lead %>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container legal-page">
+    <% privacyPage.sections.forEach((section) => { %>
+      <section class="legal-page__section">
+        <h2 class="legal-page__title">
+          <%= section.title %>
+        </h2>
+        <% if (section.text) { %>
+          <p>
+            <%= section.text %>
+          </p>
+        <% } %>
+        <% if (section.items) { %>
+          <ul class="legal-page__list">
+            <% section.items.forEach((item) => { %>
+              <li>
+                <%= item %>
+              </li>
+            <% }); %>
+          </ul>
+        <% } %>
+      </section>
+    <% }); %>
+  </div>
+</section>
