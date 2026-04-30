@@ -9,6 +9,10 @@
       "langLabel": "Сменить язык",
       "hours": "Ежедневно 9:00–20:00",
       "cta": "Позвонить",
+      "cookieNotice": {
+        "text": "Мы используем cookies для улучшения сайта",
+        "closeLabel": "Закрыть уведомление о cookies"
+      },
       "paths": {
         "home": "/",
         "services": "/services/",
@@ -3885,6 +3889,10 @@
       "langLabel": "Change language",
       "hours": "Daily 9:00–20:00",
       "cta": "Call now",
+      "cookieNotice": {
+        "text": "We use cookies to improve the site",
+        "closeLabel": "Close cookie notice"
+      },
       "paths": {
         "home": "/en/",
         "services": "/en/services/",
@@ -7761,6 +7769,10 @@
       "langLabel": "ენის შეცვლა",
       "hours": "ყოველდღე 9:00–20:00",
       "cta": "დარეკეთ",
+      "cookieNotice": {
+        "text": "ვიყენებთ cookies-ს საიტის გასაუმჯობესებლად",
+        "closeLabel": "დახურეთ cookies-ის შეტყობინება"
+      },
       "paths": {
         "home": "/ka/",
         "services": "/ka/services/",
