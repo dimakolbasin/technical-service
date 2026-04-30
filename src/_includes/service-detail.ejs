@@ -119,7 +119,7 @@
               <p class="card__text"><%= item.text %></p>
             <% } %>
             <a class="card__link" href="<%= lang.paths[item.key] %>" data-ga-content-type="related_link" data-ga-destination-key="<%= item.key %>" data-ga-location="page_related">
-              <%= item.linkLabel || page.related.linkLabel || lang.home?.guides?.linkLabel || "Подробнее" %>
+              <%= item.linkLabel || page.related.linkLabel || lang.home?.guides?.linkLabel || lang.common.moreDetails %>
             </a>
           </article>
         <% }) %>

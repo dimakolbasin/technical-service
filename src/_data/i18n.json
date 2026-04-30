@@ -13,6 +13,10 @@
         "text": "Мы используем cookies для улучшения сайта",
         "closeLabel": "Закрыть уведомление о cookies"
       },
+      "common": {
+        "important": "Важно",
+        "moreDetails": "Подробнее"
+      },
       "paths": {
         "home": "/",
         "services": "/services/",
@@ -372,6 +376,8 @@
         "reviews": {
           "title": "Отзывы клиентов",
           "lead": "Пять отзывов от клиентов о качестве ремонта.",
+          "avatarAlt": "Фото клиента {name}",
+          "ratingLabel": "Рейтинг 5 из 5",
           "items": [
             {
               "name": "Юлия Ф.",
@@ -2797,9 +2803,10 @@
           }
         },
         "privacy": {
-          "title": "Privacy Policy | Tech Fix",
+          "title": "Политика конфиденциальности | Tech Fix",
           "lead": "На этой странице описано, какие данные сайт может собирать, как используется Google Analytics и зачем нужна аналитика.",
-          "heading": "Privacy Policy",
+          "heading": "Политика конфиденциальности",
+          "linkLabel": "Приватность",
           "sections": [
             {
               "title": "Использование Google Analytics",
@@ -3893,6 +3900,10 @@
         "text": "We use cookies to improve the site",
         "closeLabel": "Close cookie notice"
       },
+      "common": {
+        "important": "Important",
+        "moreDetails": "Details"
+      },
       "paths": {
         "home": "/en/",
         "services": "/en/services/",
@@ -4253,6 +4264,8 @@
         "reviews": {
           "title": "Customer Reviews",
           "lead": "Five client reviews about the quality of the repair.",
+          "avatarAlt": "Photo of client {name}",
+          "ratingLabel": "Rating 5 out of 5",
           "items": [
             {
               "name": "Julia F.",
@@ -6680,6 +6693,7 @@
           "title": "Privacy Policy | Tech Fix",
           "lead": "This page explains what data the site may collect, how Google Analytics is used, and why analytics are needed.",
           "heading": "Privacy Policy",
+          "linkLabel": "Privacy",
           "sections": [
             {
               "title": "Use of Google Analytics",
@@ -7773,6 +7787,10 @@
         "text": "ვიყენებთ cookies-ს საიტის გასაუმჯობესებლად",
         "closeLabel": "დახურეთ cookies-ის შეტყობინება"
       },
+      "common": {
+        "important": "მნიშვნელოვანია",
+        "moreDetails": "დეტალურად"
+      },
       "paths": {
         "home": "/ka/",
         "services": "/ka/services/",
@@ -8133,6 +8151,8 @@
         "reviews": {
           "title": "მომხმარებელთა გამოხმაურება",
           "lead": "ხუთი მომხმარებლის გამოხმაურება შეკეთების ხარისხზე.",
+          "avatarAlt": "მომხმარებლის ფოტო: {name}",
+          "ratingLabel": "შეფასება 5-დან 5",
           "items": [
             {
               "name": "იულია ფ.",
@@ -10557,9 +10577,10 @@
           }
         },
         "privacy": {
-          "title": "Privacy Policy | Tech Fix",
+          "title": "კონფიდენციალურობის პოლიტიკა | Tech Fix",
           "lead": "ამ გვერდზე აღწერილია, რა მონაცემებს შეიძლება აგროვებდეს საიტი, როგორ გამოიყენება Google Analytics და რისთვის არის საჭირო ანალიტიკა.",
-          "heading": "Privacy Policy",
+          "heading": "კონფიდენციალურობის პოლიტიკა",
+          "linkLabel": "კონფიდენციალურობა",
           "sections": [
             {
               "title": "Google Analytics-ის გამოყენება",

@@ -325,12 +325,12 @@
                               <article class="card review-card">
                                 <div class="review-card__head">
                                   <img class="review-card__avatar" src="/assets/users/user-<%= index + 1 %>.png"
-                                    alt="Фото клиента <%= item.name %>" width="48" height="48" loading="lazy">
+                                    alt="<%= lang.home.reviews.avatarAlt.replace('{name}', item.name) %>" width="48" height="48" loading="lazy">
                                   <div>
                                     <p class="review-card__name">
                                       <%= item.name %>
                                     </p>
-                                    <p class="review-card__stars" aria-label="Рейтинг 5 из 5">★★★★★</p>
+                                    <p class="review-card__stars" aria-label="<%= lang.home.reviews.ratingLabel %>">★★★★★</p>
                                   </div>
                                 </div>
                                 <p class="review-card__text">

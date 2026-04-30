@@ -186,7 +186,7 @@ const trackingPageType = !pageKey
 	<header class="site-header">
 		<div class="container site-header__row">
 			<a class="site-header__brand" href="<%= lang.paths.home %>">
-				<img src="/assets/icons/icon-tools.png" alt="Tech Fix Logo" class="site-header__logo" width="32"
+				<img src="/assets/icons/icon-tools.png" alt="" class="site-header__logo" width="32"
 					height="32">
 				<span>
 					<%= site.name %>
@@ -261,8 +261,10 @@ const trackingPageType = !pageKey
 		const footerHours = footerItem("hours").value || "";
 		const footerAreas = footerItem("area").value || footer.areas || "";
 		const waNumber = site.phone.replace(/[^0-9]/g, "");
+		const hideFooterHero = pageKey === "privacy";
 		%>
 		<div class="container">
+			<% if (!hideFooterHero) { %>
 			<div class="footer-hero">
 				<div class="footer-hero__content">
 					<p class="footer-eyebrow">
@@ -402,21 +404,31 @@ const trackingPageType = !pageKey
 					</div>
 				<% } %>
 			</div>
+			<% } %>
 			<div class="footer-bottom">
 				<%
 				const privacyPath = (lang.paths && lang.paths.privacy) || "/privacy/";
-				const privacyLabel = lang.pages && lang.pages.privacy ? lang.pages.privacy.heading : "Privacy Policy";
+				const privacyLabel = lang.pages.privacy.linkLabel;
+				const footerLangs = ["ru", "ka", "en"]
+					.map((code) => i18n.languages.find((locale) => locale.code === code))
+					.filter(Boolean);
 				%>
 				<p>
 					<%= footer.legalLine %>
 				</p>
-				<div class="footer-bottom__links">
+				<div class="footer-bottom__meta">
 					<a href="mailto:<%= site.email %>" data-ga-contact-method="email" data-ga-location="footer_legal"><%= site.email %></a>
 					<span aria-hidden="true">/</span>
 					<a href="<%= privacyPath %>"><%= privacyLabel %></a>
-					<a href="/" data-lang="ru" data-ga-language-switch="footer">Русский</a>
-					<a href="/ka/" data-lang="ka" data-ga-language-switch="footer">ქართული</a>
-					<a href="/en/" data-lang="en" data-ga-language-switch="footer">English</a>
+				</div>
+				<div class="footer-bottom__langs" aria-label="<%= lang.langLabel %>">
+					<% footerLangs.forEach((locale) => {
+						const targetKey = pageKey || "home";
+						const href = (locale.paths && locale.paths[targetKey]) || locale.paths.home;
+						const activeClass = locale.code === lang.code ? " site-header__lang--active" : "";
+						%>
+						<a class="site-header__lang<%= activeClass %>" href="<%= href %>" data-lang="<%= locale.code %>" data-ga-language-switch="footer"><%= locale.labelShort %></a>
+					<% }); %>
 				</div>
 			</div>
 		</div>

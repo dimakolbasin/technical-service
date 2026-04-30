@@ -1311,15 +1311,29 @@ a.search-phrases__chip:hover {
   margin: 0;
 }
 
-.footer-bottom__links {
+.footer-bottom__meta,
+.footer-bottom__langs {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
   align-items: center;
 }
 
-.footer-bottom__links a {
+.footer-bottom__meta {
+  gap: 10px 14px;
+  color: var(--c-muted);
+}
+
+.footer-bottom__meta a {
+  color: var(--c-muted-strong);
   font-weight: 600;
+}
+
+.footer-bottom__meta a:hover {
+  color: var(--c-primary-hover);
+}
+
+.footer-bottom__langs {
+  gap: 6px;
 }
 
 .legal-page {
