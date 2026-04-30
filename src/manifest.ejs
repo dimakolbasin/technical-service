@@ -3,17 +3,39 @@ permalink: manifest.json
 eleventyExcludeFromCollections: true
 ---
 {
-"name": "<%= site.name %>",
-    "short_name": "<%= site.name %>",
-        "start_url": "/",
-        "display": "standalone",
-        "background_color": "#f6f9fb",
-        "theme_color": "#147d8f",
-"icons": [
-        {
-        "src": "/assets/icons/icon-tools.png",
-        "sizes": "64x64",
-        "type": "image/png"
-        }
-        ]
-        }
+  "id": "/",
+  "name": "<%= site.name %>",
+  "short_name": "<%= site.name %>",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f9fb",
+  "theme_color": "#f6f9fb",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/images/hero-appliances-desktop.webp",
+      "sizes": "754x380",
+      "type": "image/webp",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/assets/images/hero-appliances-mobile.webp",
+      "sizes": "848x427",
+      "type": "image/webp"
+    }
+  ]
+}
