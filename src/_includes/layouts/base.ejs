@@ -32,7 +32,7 @@
 		<link rel="preload" href="/assets/images/hero-appliances-mobile.webp" as="image" type="image/webp" media="(max-width: 719px)" fetchpriority="high">
 		<link rel="preload" href="/assets/images/hero-appliances-desktop.webp" as="image" type="image/webp" media="(min-width: 720px)" fetchpriority="high">
 	<% } %>
-    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+	<link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" fetchpriority="low">
 	<link rel="icon" href="/assets/icons/icon-tools.png" type="image/png" fetchpriority="low">
 	<link rel="apple-touch-icon" href="/assets/icons/icon-tools.png" fetchpriority="low">
@@ -436,11 +436,10 @@ const trackingPageType = !pageKey
 	<% } %>
 
 	<% const cookiePrivacyPath = lang.paths.privacy; %>
-	<input class="cookie-notice__toggle" type="checkbox" id="cookie-notice-toggle" tabindex="-1">
-	<label class="cookie-notice" for="cookie-notice-toggle" role="note" aria-label="<%= lang.cookieNotice.closeLabel %>" data-cookie-notice>
+	<div class="cookie-notice" role="note" aria-label="<%= lang.cookieNotice.closeLabel %>" data-cookie-notice>
 		<span><%= lang.cookieNotice.textBefore %><a href="<%= cookiePrivacyPath %>"><%= lang.cookieNotice.linkText %></a><%= lang.cookieNotice.textAfter %></span>
 		<span class="cookie-notice__close" aria-hidden="true">×</span>
-	</label>
+	</div>
 
 	<div class="cta-bar">
 		<a class="button button--primary cta-bar__button" href="tel:<%= site.phone %>" aria-label="<%= lang.cta %>" data-ga-contact-method="call" data-ga-location="cta_bar">
@@ -457,19 +456,15 @@ const trackingPageType = !pageKey
 			<img class="button__icon" src="/assets/icons/social/tg.png" alt="" width="24" height="24">
 		</a>
 	</div>
-	<script src="/assets/analytics.js"></script>
+	<script src="/assets/analytics.js" defer></script>
 	<script>
 		(function () {
 			const cookieNoticeStorageKey = "cookie_notice_closed";
 			const cookieNotice = document.querySelector("[data-cookie-notice]");
-			const cookieNoticeToggle = document.getElementById("cookie-notice-toggle");
 
 			const hideCookieNotice = () => {
 				if (cookieNotice) {
 					cookieNotice.classList.add("cookie-notice--hidden");
-				}
-				if (cookieNoticeToggle) {
-					cookieNoticeToggle.checked = true;
 				}
 			};
 

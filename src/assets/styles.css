@@ -1375,14 +1375,6 @@ a.search-phrases__chip:hover {
   margin-top: 6px;
 }
 
-.cookie-notice__toggle {
-  position: fixed;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .cookie-notice {
   position: fixed;
   left: var(--container-pad);
@@ -1409,7 +1401,6 @@ a.search-phrases__chip:hover {
   -webkit-backdrop-filter: blur(12px);
 }
 
-.cookie-notice__toggle:checked + .cookie-notice,
 .cookie-notice--hidden {
   display: none;
 }
