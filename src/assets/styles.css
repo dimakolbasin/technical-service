@@ -1409,13 +1409,23 @@ a.search-phrases__chip:hover {
   -webkit-backdrop-filter: blur(12px);
 }
 
-.cookie-notice__toggle:checked + .cookie-notice {
+.cookie-notice__toggle:checked + .cookie-notice,
+.cookie-notice--hidden {
   display: none;
 }
 
 .cookie-notice:hover {
   border-color: var(--c-border-strong);
   color: var(--c-text);
+}
+
+.cookie-notice a {
+  color: inherit;
+  font-weight: 700;
+}
+
+.cookie-notice a:hover {
+  color: var(--c-primary-hover);
 }
 
 .cookie-notice__close {

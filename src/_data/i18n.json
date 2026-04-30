@@ -10,7 +10,9 @@
       "hours": "Ежедневно 9:00–20:00",
       "cta": "Позвонить",
       "cookieNotice": {
-        "text": "Мы используем cookies для улучшения сайта",
+        "textBefore": "Мы используем ",
+        "linkText": "cookies",
+        "textAfter": " для улучшения сайта",
         "closeLabel": "Закрыть уведомление о cookies"
       },
       "common": {
@@ -2804,40 +2806,51 @@
         },
         "privacy": {
           "title": "Политика конфиденциальности | Tech Fix",
-          "lead": "На этой странице описано, какие данные сайт может собирать, как используется Google Analytics и зачем нужна аналитика.",
+          "lead": "На этой странице описано, какие данные сайт может обрабатывать, зачем это нужно и как вы можете управлять своими данными.",
           "heading": "Политика конфиденциальности",
           "linkLabel": "Приватность",
           "sections": [
             {
-              "title": "Использование Google Analytics",
-              "text": "На сайте используется Google Analytics, чтобы понимать, как посетители находят сайт, какие страницы открывают и как взаимодействуют с контентом. Google Analytics может использовать cookies и похожие технологии."
+              "title": "Общие положения",
+              "text": "Сайт может использовать технические и аналитические данные, чтобы обеспечивать работу страниц, понимать, как посетители используют сайт, и улучшать содержание без лишнего вмешательства в личную жизнь."
             },
             {
-              "title": "Какие данные собираются",
+              "title": "Какие данные могут обрабатываться",
               "items": [
                 "страницы, которые вы открываете, время посещения и примерная длительность сессии",
                 "источник перехода на сайт, например поиск, карта, социальная сеть или прямая ссылка",
                 "примерное местоположение на уровне города или региона",
                 "тип устройства, браузер, операционная система и язык браузера",
-                "технические события сайта, например клики по кнопкам связи или переходы между страницами"
+                "технические события сайта, например клики по кнопкам связи или переходы между страницами",
+                "данные, которые вы сами отправляете через форму, телефон, email или мессенджер"
               ]
             },
             {
-              "title": "Зачем это нужно",
+              "title": "Зачем данные обрабатываются",
               "items": [
-                "понимать, какие услуги и страницы наиболее полезны посетителям",
+                "обеспечивать стабильную работу сайта и его основных страниц",
+                "понимать, какие услуги и материалы наиболее полезны посетителям",
                 "улучшать структуру сайта, тексты и удобство навигации",
                 "находить технические проблемы и оценивать качество работы сайта",
-                "измерять эффективность рекламы и поискового продвижения"
+                "отвечать на заявки и сообщения, которые вы отправляете",
+                "предотвращать злоупотребления и защищать сайт от технических сбоев"
               ]
             },
             {
-              "title": "Личные данные",
-              "text": "Google Analytics не используется для намеренного сбора имени, телефона, адреса или текста сообщений. Если вы отправляете заявку через форму или мессенджер, эти данные используются только для связи с вами по вашему запросу."
+              "title": "Заявки и контактные данные",
+              "text": "Если вы отправляете заявку, звоните, пишете на email или в мессенджер, указанные вами данные используются для ответа на запрос, согласования работ и связи по вашему обращению."
             },
             {
-              "title": "Управление cookies",
-              "text": "Вы можете ограничить или удалить cookies в настройках браузера. После отключения cookies часть аналитики может работать неполно, но основные страницы сайта останутся доступны."
+              "title": "Cookies и техническое хранение",
+              "text": "Сайт может использовать cookies и похожие технические механизмы для работы страниц, сохранения базовых настроек и оценки удобства сайта. Вы можете ограничить или удалить cookies в настройках браузера; основные страницы останутся доступны, но отдельные функции измерения или предпочтений могут работать ограниченно."
+            },
+            {
+              "title": "Защита и срок хранения",
+              "text": "Данные обрабатываются только в объеме, необходимом для указанных целей, и хранятся не дольше, чем требуется для обработки запроса, поддержки работы сайта, соблюдения законных интересов или выполнения требований закона."
+            },
+            {
+              "title": "Ваши права и контакт",
+              "text": "Вы можете запросить информацию о ваших данных, попросить исправить, удалить или прекратить обработку данных, когда это применимо по закону. Для таких запросов используйте email, указанный на сайте."
             }
           ]
         },
@@ -3897,7 +3910,9 @@
       "hours": "Daily 9:00–20:00",
       "cta": "Call now",
       "cookieNotice": {
-        "text": "We use cookies to improve the site",
+        "textBefore": "We use ",
+        "linkText": "cookies",
+        "textAfter": " to improve the site",
         "closeLabel": "Close cookie notice"
       },
       "common": {
@@ -6691,40 +6706,51 @@
         },
         "privacy": {
           "title": "Privacy Policy | Tech Fix",
-          "lead": "This page explains what data the site may collect, how Google Analytics is used, and why analytics are needed.",
+          "lead": "This page explains what data the site may process, why it is needed, and how you can manage your data.",
           "heading": "Privacy Policy",
           "linkLabel": "Privacy",
           "sections": [
             {
-              "title": "Use of Google Analytics",
-              "text": "This site uses Google Analytics to understand how visitors find the site, which pages they open, and how they interact with the content. Google Analytics may use cookies and similar technologies."
+              "title": "Overview",
+              "text": "The site may use technical and analytics data to keep pages working, understand how visitors use the site, and improve content without unnecessary impact on privacy."
             },
             {
-              "title": "What data is collected",
+              "title": "What data may be processed",
               "items": [
                 "pages you open, visit time, and approximate session duration",
                 "traffic source, such as search, maps, social networks, or a direct link",
                 "approximate location at city or region level",
                 "device type, browser, operating system, and browser language",
-                "technical site events, such as contact button clicks or page navigation"
+                "technical site events, such as contact button clicks or page navigation",
+                "data you choose to send through a form, phone call, email, or messenger"
               ]
             },
             {
-              "title": "Why this is needed",
+              "title": "Why data is processed",
               "items": [
-                "to understand which services and pages are most useful to visitors",
+                "to keep the site and its main pages working reliably",
+                "to understand which services and materials are most useful to visitors",
                 "to improve site structure, content, and navigation",
                 "to find technical issues and assess site performance",
-                "to measure the effectiveness of ads and search promotion"
+                "to respond to requests and messages you send",
+                "to prevent misuse and protect the site from technical failures"
               ]
             },
             {
-              "title": "Personal data",
-              "text": "Google Analytics is not used to intentionally collect your name, phone number, address, or message text. If you send a request through a form or messenger, this data is used only to contact you about your request."
+              "title": "Contact requests",
+              "text": "If you submit a request, call, write by email, or send a messenger message, the data you provide is used to respond to the request, agree on service details, and communicate with you about your inquiry."
             },
             {
-              "title": "Managing cookies",
-              "text": "You can limit or delete cookies in your browser settings. If cookies are disabled, some analytics may be incomplete, but the main site pages will remain available."
+              "title": "Cookies and technical storage",
+              "text": "The site may use cookies and similar technical mechanisms to operate pages, remember basic preferences, and assess site usability. You can limit or delete cookies in your browser settings; the main pages will remain available, but some measurement or preference features may be limited."
+            },
+            {
+              "title": "Data protection and retention",
+              "text": "Data is processed only to the extent needed for the stated purposes and is kept no longer than necessary to handle a request, support site operation, protect legitimate interests, or meet legal requirements."
+            },
+            {
+              "title": "Your rights and contact",
+              "text": "You may request information about your data, ask to correct it, delete it, or stop processing where applicable by law. Use the email listed on the site for these requests."
             }
           ]
         },
@@ -7784,7 +7810,9 @@
       "hours": "ყოველდღე 9:00–20:00",
       "cta": "დარეკეთ",
       "cookieNotice": {
-        "text": "ვიყენებთ cookies-ს საიტის გასაუმჯობესებლად",
+        "textBefore": "ვიყენებთ ",
+        "linkText": "cookies",
+        "textAfter": "-ს საიტის გასაუმჯობესებლად",
         "closeLabel": "დახურეთ cookies-ის შეტყობინება"
       },
       "common": {
@@ -10578,40 +10606,51 @@
         },
         "privacy": {
           "title": "კონფიდენციალურობის პოლიტიკა | Tech Fix",
-          "lead": "ამ გვერდზე აღწერილია, რა მონაცემებს შეიძლება აგროვებდეს საიტი, როგორ გამოიყენება Google Analytics და რისთვის არის საჭირო ანალიტიკა.",
+          "lead": "ამ გვერდზე აღწერილია, რა მონაცემებს შეიძლება ამუშავებდეს საიტი, რატომ არის ეს საჭირო და როგორ შეგიძლიათ მართოთ თქვენი მონაცემები.",
           "heading": "კონფიდენციალურობის პოლიტიკა",
           "linkLabel": "კონფიდენციალურობა",
           "sections": [
             {
-              "title": "Google Analytics-ის გამოყენება",
-              "text": "საიტი იყენებს Google Analytics-ს, რათა გავიგოთ, როგორ პოულობენ მომხმარებლები საიტს, რომელ გვერდებს ხსნიან და როგორ ურთიერთობენ კონტენტთან. Google Analytics შეიძლება იყენებდეს cookies-ს და მსგავს ტექნოლოგიებს."
+              "title": "ზოგადი დებულებები",
+              "text": "საიტმა შეიძლება გამოიყენოს ტექნიკური და ანალიტიკური მონაცემები გვერდების მუშაობის უზრუნველსაყოფად, იმის გასაგებად, როგორ იყენებენ ვიზიტორები საიტს, და კონტენტის გასაუმჯობესებლად პირად ცხოვრებაში ზედმეტი ჩარევის გარეშე."
             },
             {
-              "title": "რა მონაცემები გროვდება",
+              "title": "რა მონაცემები შეიძლება დამუშავდეს",
               "items": [
                 "რომელ გვერდებს ხსნით, ვიზიტის დრო და სესიის დაახლოებით ხანგრძლივობა",
                 "საიტზე გადმოსვლის წყარო, მაგალითად ძებნა, რუკა, სოციალური ქსელი ან პირდაპირი ბმული",
                 "დაახლოებით მდებარეობა ქალაქის ან რეგიონის დონეზე",
                 "მოწყობილობის ტიპი, ბრაუზერი, ოპერაციული სისტემა და ბრაუზერის ენა",
-                "საიტის ტექნიკური მოვლენები, მაგალითად საკონტაქტო ღილაკებზე დაჭერა ან გვერდებს შორის გადასვლა"
+                "საიტის ტექნიკური მოვლენები, მაგალითად საკონტაქტო ღილაკებზე დაჭერა ან გვერდებს შორის გადასვლა",
+                "მონაცემები, რომლებსაც თავად აგზავნით ფორმით, ტელეფონით, email-ით ან მესენჯერით"
               ]
             },
             {
-              "title": "რისთვის გვჭირდება ეს",
+              "title": "რატომ მუშავდება მონაცემები",
               "items": [
-                "გავიგოთ, რომელი სერვისები და გვერდებია ყველაზე სასარგებლო მომხმარებლებისთვის",
+                "საიტისა და მისი ძირითადი გვერდების სტაბილური მუშაობის უზრუნველსაყოფად",
+                "გავიგოთ, რომელი სერვისები და მასალებია ყველაზე სასარგებლო ვიზიტორებისთვის",
                 "გავაუმჯობესოთ საიტის სტრუქტურა, ტექსტები და ნავიგაცია",
                 "ვიპოვოთ ტექნიკური პრობლემები და შევაფასოთ საიტის მუშაობა",
-                "შევაფასოთ რეკლამისა და საძიებო ოპტიმიზაციის ეფექტურობა"
+                "ვუპასუხოთ თქვენს მოთხოვნებსა და შეტყობინებებს",
+                "თავიდან ავიცილოთ ბოროტად გამოყენება და დავიცვათ საიტი ტექნიკური შეფერხებებისგან"
               ]
             },
             {
-              "title": "პირადი მონაცემები",
-              "text": "Google Analytics არ გამოიყენება სახელის, ტელეფონის, მისამართის ან შეტყობინების ტექსტის შეგნებულად შესაგროვებლად. თუ აგზავნით მოთხოვნას ფორმით ან მესენჯერით, ეს მონაცემები გამოიყენება მხოლოდ თქვენთან დასაკავშირებლად."
+              "title": "საკონტაქტო მოთხოვნები",
+              "text": "თუ აგზავნით მოთხოვნას, რეკავთ, წერთ email-ზე ან მესენჯერში, თქვენ მიერ მითითებული მონაცემები გამოიყენება მოთხოვნაზე პასუხისთვის, მომსახურების დეტალების შესათანხმებლად და თქვენს მიმართვასთან დაკავშირებით კომუნიკაციისთვის."
             },
             {
-              "title": "Cookies-ის მართვა",
-              "text": "თქვენ შეგიძლიათ შეზღუდოთ ან წაშალოთ cookies ბრაუზერის პარამეტრებიდან. cookies-ის გამორთვის შემდეგ ანალიტიკის ნაწილი შეიძლება არასრული იყოს, მაგრამ საიტის ძირითადი გვერდები ხელმისაწვდომი დარჩება."
+              "title": "Cookies და ტექნიკური შენახვა",
+              "text": "საიტმა შეიძლება გამოიყენოს cookies და მსგავსი ტექნიკური მექანიზმები გვერდების მუშაობისთვის, ძირითადი პარამეტრების დასამახსოვრებლად და საიტის მოხერხებულობის შესაფასებლად. შეგიძლიათ შეზღუდოთ ან წაშალოთ cookies ბრაუზერის პარამეტრებიდან; ძირითადი გვერდები ხელმისაწვდომი დარჩება, მაგრამ გაზომვის ან პარამეტრების ზოგიერთი ფუნქცია შეიძლება შეზღუდულად იმუშაოს."
+            },
+            {
+              "title": "მონაცემების დაცვა და შენახვის ვადა",
+              "text": "მონაცემები მუშავდება მხოლოდ იმ მოცულობით, რაც საჭიროა მითითებული მიზნებისთვის, და ინახება არა უმეტეს იმ ვადისა, რაც საჭიროა მოთხოვნის დასამუშავებლად, საიტის მუშაობის მხარდასაჭერად, კანონიერი ინტერესების დასაცავად ან კანონის მოთხოვნების შესასრულებლად."
+            },
+            {
+              "title": "თქვენი უფლებები და კონტაქტი",
+              "text": "შეგიძლიათ მოითხოვოთ ინფორმაცია თქვენი მონაცემების შესახებ, მოითხოვოთ მათი გასწორება, წაშლა ან დამუშავების შეწყვეტა, როდესაც ეს კანონით გამოიყენება. ასეთი მოთხოვნებისთვის გამოიყენეთ საიტზე მითითებული email."
             }
           ]
         },

@@ -435,9 +435,10 @@ const trackingPageType = !pageKey
 	</footer>
 	<% } %>
 
+	<% const cookiePrivacyPath = lang.paths.privacy; %>
 	<input class="cookie-notice__toggle" type="checkbox" id="cookie-notice-toggle" tabindex="-1">
-	<label class="cookie-notice" for="cookie-notice-toggle" role="note" aria-label="<%= lang.cookieNotice.closeLabel %>">
-		<span><%= lang.cookieNotice.text %></span>
+	<label class="cookie-notice" for="cookie-notice-toggle" role="note" aria-label="<%= lang.cookieNotice.closeLabel %>" data-cookie-notice>
+		<span><%= lang.cookieNotice.textBefore %><a href="<%= cookiePrivacyPath %>"><%= lang.cookieNotice.linkText %></a><%= lang.cookieNotice.textAfter %></span>
 		<span class="cookie-notice__close" aria-hidden="true">×</span>
 	</label>
 
@@ -459,6 +460,39 @@ const trackingPageType = !pageKey
 	<script src="/assets/analytics.js"></script>
 	<script>
 		(function () {
+			const cookieNoticeStorageKey = "cookie_notice_closed";
+			const cookieNotice = document.querySelector("[data-cookie-notice]");
+			const cookieNoticeToggle = document.getElementById("cookie-notice-toggle");
+
+			const hideCookieNotice = () => {
+				if (cookieNotice) {
+					cookieNotice.classList.add("cookie-notice--hidden");
+				}
+				if (cookieNoticeToggle) {
+					cookieNoticeToggle.checked = true;
+				}
+			};
+
+			try {
+				if (window.sessionStorage.getItem(cookieNoticeStorageKey) === "true") {
+					hideCookieNotice();
+				}
+			} catch (error) {}
+
+			if (cookieNotice) {
+				cookieNotice.addEventListener("click", (event) => {
+					if (event.target.closest("a")) {
+						return;
+					}
+
+					try {
+						window.sessionStorage.setItem(cookieNoticeStorageKey, "true");
+					} catch (error) {}
+
+					hideCookieNotice();
+				});
+			}
+
 			const setPrefLang = (code) => {
 				document.cookie =
 					"preferred_lang=" +
