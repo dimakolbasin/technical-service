@@ -211,6 +211,7 @@ const trackingPageType = !pageKey
 					<%= lang.hours %>
 				</span>
 			</div>
+				<% if (typeof hideLanguageSelector === "undefined" || !hideLanguageSelector) { %>
 				<div class="site-header__langs" aria-label="<%= lang.langLabel %>">
 					<%
 					const headerLangs = ["ru", "ka", "en"]
@@ -224,10 +225,11 @@ const trackingPageType = !pageKey
 					<a class="site-header__lang<%= activeClass %>" href="<%= href %>" data-lang="<%= locale.code %>" data-ga-language-switch="header">
 						<%= locale.labelShort %>
 					</a>
-					<% }); %>
+						<% }); %>
+				</div>
+				<% } %>
 			</div>
-		</div>
-	</header>
+		</header>
 
 	<div class="site-nav">
 		<nav class="container site-nav__panel" aria-label="<%= lang.navLabel %>">
@@ -322,7 +324,7 @@ const trackingPageType = !pageKey
 							</div>
 						<% } %>
 					</div>
-				</div>
+					</div>
 				<% if (lang.home && lang.home.contact) { %>
 					<div class="footer-form-panel">
 						<h2 class="footer-form-panel__title">
