@@ -247,6 +247,7 @@ const trackingPageType = !pageKey
 		<%- content %>
 	</main>
 
+	<% if (typeof hideFooter === "undefined" || !hideFooter) { %>
 	<footer class="site-footer">
 		<%
 		const footer = lang.footer || {};
@@ -418,6 +419,7 @@ const trackingPageType = !pageKey
 			</div>
 		</div>
 	</footer>
+	<% } %>
 
 	<input class="cookie-notice__toggle" type="checkbox" id="cookie-notice-toggle" tabindex="-1">
 	<label class="cookie-notice" for="cookie-notice-toggle" role="note" aria-label="<%= lang.cookieNotice.closeLabel %>">
