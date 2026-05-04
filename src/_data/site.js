@@ -14,6 +14,7 @@ const address = {
 const googleMaps = process.env.SITE_GOOGLE_MAP;
 const yandexMaps = process.env.SITE_YANDEX_MAP;
 const priceRange = process.env.SITE_PRICE_RANGE;
+const gaMeasurementId = process.env.GA4_MEASUREMENT_ID || "";
 
 module.exports = {
     name: process.env.SITE_NAME,
@@ -27,5 +28,6 @@ module.exports = {
     address,
     googleMaps,
     yandexMaps,
-    priceRange
+    priceRange,
+    gaMeasurementId
 };
