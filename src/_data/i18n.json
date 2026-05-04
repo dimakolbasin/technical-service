@@ -407,6 +407,31 @@
           "title": "Часто ищут",
           "groups": [
             {
+              "title": "Ремонт техники",
+              "items": [
+                {
+                  "text": "ремонт бытовой техники в Батуми",
+                  "key": "services"
+                },
+                {
+                  "text": "ремонт техники в Батуми",
+                  "key": "services"
+                },
+                {
+                  "text": "ремонт бытовой техники",
+                  "key": "services"
+                },
+                {
+                  "text": "мастер по ремонту бытовой техники",
+                  "key": "services"
+                },
+                {
+                  "text": "выездной ремонт техники",
+                  "key": "services"
+                }
+              ]
+            },
+            {
               "title": "Стиральные машины",
               "items": [
                 {
@@ -427,6 +452,22 @@
                 },
                 {
                   "text": "ремонт стиральной машинки",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "ремонт стиральной машины",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "мастер по стиральным машинам",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "починить стиральную машину",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "проблемы со стиральной машиной",
                   "key": "washing-machines"
                 },
                 {
@@ -452,6 +493,10 @@
                 },
                 {
                   "text": "ремонт посудомоек в Батуми",
+                  "key": "dishwashers"
+                },
+                {
+                  "text": "ремонт посудомоечных машин",
                   "key": "dishwashers"
                 },
                 {
@@ -489,6 +534,10 @@
                 },
                 {
                   "text": "ремонт холодильников в Батуми",
+                  "key": "refrigerators"
+                },
+                {
+                  "text": "ремонт холодильников",
                   "key": "refrigerators"
                 },
                 {
@@ -563,6 +612,22 @@
                 },
                 {
                   "text": "ремонт котлов в Батуми",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "ремонт газовых котлов",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "ремонт газовых котлов в Батуми",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "ремонт газового котла рядом",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "мастер по газовым котлам рядом",
                   "key": "gas-boilers"
                 },
                 {
@@ -681,6 +746,10 @@
                   "key": "hobs"
                 },
                 {
+                  "text": "ремонт плиты",
+                  "key": "hobs"
+                },
+                {
                   "text": "мастер по плитам",
                   "key": "hobs"
                 },
@@ -711,14 +780,14 @@
         "linkLabel": "Подробнее",
         "items": [
           {
-            "key": "refrigerators",
-            "title": "Холодильники",
-            "text": "Не морозит, течёт вода, шумит компрессор."
-          },
-          {
             "key": "washing-machines",
             "title": "Стиральные машины",
             "text": "Не сливает, не отжимает, шумит или течёт."
+          },
+          {
+            "key": "refrigerators",
+            "title": "Холодильники",
+            "text": "Не морозит, течёт вода, шумит компрессор."
           },
           {
             "key": "dishwashers",
@@ -885,6 +954,31 @@
             "title": "Часто ищут",
             "groups": [
               {
+                "title": "Ремонт техники",
+                "items": [
+                  {
+                    "text": "ремонт бытовой техники в Батуми",
+                    "key": "services"
+                  },
+                  {
+                    "text": "ремонт техники в Батуми",
+                    "key": "services"
+                  },
+                  {
+                    "text": "ремонт бытовой техники",
+                    "key": "services"
+                  },
+                  {
+                    "text": "мастер по ремонту бытовой техники",
+                    "key": "services"
+                  },
+                  {
+                    "text": "выездной ремонт техники",
+                    "key": "services"
+                  }
+                ]
+              },
+              {
                 "title": "Стиральные машины",
                 "items": [
                   {
@@ -905,6 +999,22 @@
                   },
                   {
                     "text": "ремонт стиральной машинки",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "ремонт стиральной машины",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "мастер по стиральным машинам",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "починить стиральную машину",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "проблемы со стиральной машиной",
                     "key": "washing-machines"
                   },
                   {
@@ -930,6 +1040,10 @@
                   },
                   {
                     "text": "ремонт посудомоек в Батуми",
+                    "key": "dishwashers"
+                  },
+                  {
+                    "text": "ремонт посудомоечных машин",
                     "key": "dishwashers"
                   },
                   {
@@ -967,6 +1081,10 @@
                   },
                   {
                     "text": "ремонт холодильников в Батуми",
+                    "key": "refrigerators"
+                  },
+                  {
+                    "text": "ремонт холодильников",
                     "key": "refrigerators"
                   },
                   {
@@ -1041,6 +1159,22 @@
                   },
                   {
                     "text": "ремонт котлов в Батуми",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "ремонт газовых котлов",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "ремонт газовых котлов в Батуми",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "ремонт газового котла рядом",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "мастер по газовым котлам рядом",
                     "key": "gas-boilers"
                   },
                   {
@@ -1156,6 +1290,10 @@
                   },
                   {
                     "text": "ремонт плиты в Батуми",
+                    "key": "hobs"
+                  },
+                  {
+                    "text": "ремонт плиты",
                     "key": "hobs"
                   },
                   {
@@ -1363,6 +1501,18 @@
                 "text": "ремонт стиральной машинки"
               },
               {
+                "text": "ремонт стиральной машины"
+              },
+              {
+                "text": "мастер по стиральным машинам"
+              },
+              {
+                "text": "починить стиральную машину"
+              },
+              {
+                "text": "проблемы со стиральной машиной"
+              },
+              {
                 "text": "стиралка не сливает"
               },
               {
@@ -1520,6 +1670,9 @@
                 "text": "ремонт посудомоек в Батуми"
               },
               {
+                "text": "ремонт посудомоечных машин"
+              },
+              {
                 "text": "мастер по посудомойкам"
               },
               {
@@ -1674,6 +1827,9 @@
               },
               {
                 "text": "ремонт плиты в Батуми"
+              },
+              {
+                "text": "ремонт плиты"
               },
               {
                 "text": "мастер по плитам"
@@ -2506,6 +2662,31 @@
             "title": "Часто ищут",
             "groups": [
               {
+                "title": "Ремонт техники",
+                "items": [
+                  {
+                    "text": "ремонт бытовой техники в Батуми",
+                    "key": "services"
+                  },
+                  {
+                    "text": "ремонт техники в Батуми",
+                    "key": "services"
+                  },
+                  {
+                    "text": "ремонт бытовой техники",
+                    "key": "services"
+                  },
+                  {
+                    "text": "мастер по ремонту бытовой техники",
+                    "key": "services"
+                  },
+                  {
+                    "text": "выездной ремонт техники",
+                    "key": "services"
+                  }
+                ]
+              },
+              {
                 "title": "Стиральные машины",
                 "items": [
                   {
@@ -2526,6 +2707,22 @@
                   },
                   {
                     "text": "ремонт стиральной машинки",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "ремонт стиральной машины",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "мастер по стиральным машинам",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "починить стиральную машину",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "проблемы со стиральной машиной",
                     "key": "washing-machines"
                   },
                   {
@@ -2551,6 +2748,10 @@
                   },
                   {
                     "text": "ремонт посудомоек в Батуми",
+                    "key": "dishwashers"
+                  },
+                  {
+                    "text": "ремонт посудомоечных машин",
                     "key": "dishwashers"
                   },
                   {
@@ -2588,6 +2789,10 @@
                   },
                   {
                     "text": "ремонт холодильников в Батуми",
+                    "key": "refrigerators"
+                  },
+                  {
+                    "text": "ремонт холодильников",
                     "key": "refrigerators"
                   },
                   {
@@ -2662,6 +2867,22 @@
                   },
                   {
                     "text": "ремонт котлов в Батуми",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "ремонт газовых котлов",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "ремонт газовых котлов в Батуми",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "ремонт газового котла рядом",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "мастер по газовым котлам рядом",
                     "key": "gas-boilers"
                   },
                   {
@@ -2777,6 +2998,10 @@
                   },
                   {
                     "text": "ремонт плиты в Батуми",
+                    "key": "hobs"
+                  },
+                  {
+                    "text": "ремонт плиты",
                     "key": "hobs"
                   },
                   {
@@ -3546,6 +3771,9 @@
                 "text": "ремонт холодильников в Батуми"
               },
               {
+                "text": "ремонт холодильников"
+              },
+              {
                 "text": "мастер по холодильникам"
               },
               {
@@ -3864,6 +4092,18 @@
               },
               {
                 "text": "ремонт котлов в Батуми"
+              },
+              {
+                "text": "ремонт газовых котлов"
+              },
+              {
+                "text": "ремонт газовых котлов в Батуми"
+              },
+              {
+                "text": "ремонт газового котла рядом"
+              },
+              {
+                "text": "мастер по газовым котлам рядом"
               },
               {
                 "text": "мастер по газовым котлам"
@@ -4308,6 +4548,31 @@
           "title": "Common searches",
           "groups": [
             {
+              "title": "Appliance repair",
+              "items": [
+                {
+                  "text": "home appliance repair in Batumi",
+                  "key": "services"
+                },
+                {
+                  "text": "appliance repair in Batumi",
+                  "key": "services"
+                },
+                {
+                  "text": "home appliance repair",
+                  "key": "services"
+                },
+                {
+                  "text": "appliance repair technician",
+                  "key": "services"
+                },
+                {
+                  "text": "on-site appliance repair",
+                  "key": "services"
+                }
+              ]
+            },
+            {
               "title": "Washing machines",
               "items": [
                 {
@@ -4316,6 +4581,22 @@
                 },
                 {
                   "text": "washing machine repair in Batumi",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "washing machine repair",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "washing machine repair service",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "washing machine problems",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "washing machine technician near me",
                   "key": "washing-machines"
                 },
                 {
@@ -4349,6 +4630,10 @@
               "items": [
                 {
                   "text": "dishwasher repair in Batumi",
+                  "key": "dishwashers"
+                },
+                {
+                  "text": "dishwasher repair",
                   "key": "dishwashers"
                 },
                 {
@@ -4390,6 +4675,10 @@
                 },
                 {
                   "text": "refrigerator repair in Batumi",
+                  "key": "refrigerators"
+                },
+                {
+                  "text": "refrigerator repair",
                   "key": "refrigerators"
                 },
                 {
@@ -4464,6 +4753,22 @@
                 },
                 {
                   "text": "boiler repair in Batumi",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "boiler repair near me",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "boiler repairs near me",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "gas boiler repairs in Batumi",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "gas boiler repairs",
                   "key": "gas-boilers"
                 },
                 {
@@ -4582,6 +4887,10 @@
                   "key": "hobs"
                 },
                 {
+                  "text": "stove repair",
+                  "key": "hobs"
+                },
+                {
                   "text": "gas cooktop repair",
                   "key": "hobs"
                 },
@@ -4612,14 +4921,14 @@
         "linkLabel": "Details",
         "items": [
           {
-            "key": "refrigerators",
-            "title": "Refrigerators",
-            "text": "Not cooling, water leaks, compressor noise."
-          },
-          {
             "key": "washing-machines",
             "title": "Washing machines",
             "text": "No drain, no spin, noise or leaks."
+          },
+          {
+            "key": "refrigerators",
+            "title": "Refrigerators",
+            "text": "Not cooling, water leaks, compressor noise."
           },
           {
             "key": "dishwashers",
@@ -4786,6 +5095,31 @@
             "title": "Common searches",
             "groups": [
               {
+                "title": "Appliance repair",
+                "items": [
+                  {
+                    "text": "home appliance repair in Batumi",
+                    "key": "services"
+                  },
+                  {
+                    "text": "appliance repair in Batumi",
+                    "key": "services"
+                  },
+                  {
+                    "text": "home appliance repair",
+                    "key": "services"
+                  },
+                  {
+                    "text": "appliance repair technician",
+                    "key": "services"
+                  },
+                  {
+                    "text": "on-site appliance repair",
+                    "key": "services"
+                  }
+                ]
+              },
+              {
                 "title": "Washing machines",
                 "items": [
                   {
@@ -4794,6 +5128,22 @@
                   },
                   {
                     "text": "washing machine repair in Batumi",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "washing machine repair",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "washing machine repair service",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "washing machine problems",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "washing machine technician near me",
                     "key": "washing-machines"
                   },
                   {
@@ -4827,6 +5177,10 @@
                 "items": [
                   {
                     "text": "dishwasher repair in Batumi",
+                    "key": "dishwashers"
+                  },
+                  {
+                    "text": "dishwasher repair",
                     "key": "dishwashers"
                   },
                   {
@@ -4868,6 +5222,10 @@
                   },
                   {
                     "text": "refrigerator repair in Batumi",
+                    "key": "refrigerators"
+                  },
+                  {
+                    "text": "refrigerator repair",
                     "key": "refrigerators"
                   },
                   {
@@ -4942,6 +5300,22 @@
                   },
                   {
                     "text": "boiler repair in Batumi",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "boiler repair near me",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "boiler repairs near me",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "gas boiler repairs in Batumi",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "gas boiler repairs",
                     "key": "gas-boilers"
                   },
                   {
@@ -5057,6 +5431,10 @@
                   },
                   {
                     "text": "stove repair in Batumi",
+                    "key": "hobs"
+                  },
+                  {
+                    "text": "stove repair",
                     "key": "hobs"
                   },
                   {
@@ -5255,6 +5633,18 @@
                 "text": "washing machine repair in Batumi"
               },
               {
+                "text": "washing machine repair"
+              },
+              {
+                "text": "washing machine repair service"
+              },
+              {
+                "text": "washing machine problems"
+              },
+              {
+                "text": "washing machine technician near me"
+              },
+              {
                 "text": "washing machine technician"
               },
               {
@@ -5418,6 +5808,9 @@
                 "text": "dishwasher repair in Batumi"
               },
               {
+                "text": "dishwasher repair"
+              },
+              {
                 "text": "dishwasher technician"
               },
               {
@@ -5575,6 +5968,9 @@
               },
               {
                 "text": "stove repair in Batumi"
+              },
+              {
+                "text": "stove repair"
               },
               {
                 "text": "gas cooktop repair"
@@ -6406,6 +6802,31 @@
             "title": "Common searches",
             "groups": [
               {
+                "title": "Appliance repair",
+                "items": [
+                  {
+                    "text": "home appliance repair in Batumi",
+                    "key": "services"
+                  },
+                  {
+                    "text": "appliance repair in Batumi",
+                    "key": "services"
+                  },
+                  {
+                    "text": "home appliance repair",
+                    "key": "services"
+                  },
+                  {
+                    "text": "appliance repair technician",
+                    "key": "services"
+                  },
+                  {
+                    "text": "on-site appliance repair",
+                    "key": "services"
+                  }
+                ]
+              },
+              {
                 "title": "Washing machines",
                 "items": [
                   {
@@ -6414,6 +6835,22 @@
                   },
                   {
                     "text": "washing machine repair in Batumi",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "washing machine repair",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "washing machine repair service",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "washing machine problems",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "washing machine technician near me",
                     "key": "washing-machines"
                   },
                   {
@@ -6447,6 +6884,10 @@
                 "items": [
                   {
                     "text": "dishwasher repair in Batumi",
+                    "key": "dishwashers"
+                  },
+                  {
+                    "text": "dishwasher repair",
                     "key": "dishwashers"
                   },
                   {
@@ -6488,6 +6929,10 @@
                   },
                   {
                     "text": "refrigerator repair in Batumi",
+                    "key": "refrigerators"
+                  },
+                  {
+                    "text": "refrigerator repair",
                     "key": "refrigerators"
                   },
                   {
@@ -6562,6 +7007,22 @@
                   },
                   {
                     "text": "boiler repair in Batumi",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "boiler repair near me",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "boiler repairs near me",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "gas boiler repairs in Batumi",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "gas boiler repairs",
                     "key": "gas-boilers"
                   },
                   {
@@ -6677,6 +7138,10 @@
                   },
                   {
                     "text": "stove repair in Batumi",
+                    "key": "hobs"
+                  },
+                  {
+                    "text": "stove repair",
                     "key": "hobs"
                   },
                   {
@@ -7446,6 +7911,9 @@
                 "text": "refrigerator repair in Batumi"
               },
               {
+                "text": "refrigerator repair"
+              },
+              {
                 "text": "fridge technician"
               },
               {
@@ -7764,6 +8232,18 @@
               },
               {
                 "text": "boiler repair in Batumi"
+              },
+              {
+                "text": "boiler repair near me"
+              },
+              {
+                "text": "boiler repairs near me"
+              },
+              {
+                "text": "gas boiler repairs in Batumi"
+              },
+              {
+                "text": "gas boiler repairs"
               },
               {
                 "text": "gas boiler technician"
@@ -8208,10 +8688,51 @@
           "title": "ხშირად ეძებენ",
           "groups": [
             {
+              "title": "ტექნიკის შეკეთება",
+              "items": [
+                {
+                  "text": "საოჯახო ტექნიკის შეკეთება ბათუმში",
+                  "key": "services"
+                },
+                {
+                  "text": "ტექნიკის შეკეთება ბათუმში",
+                  "key": "services"
+                },
+                {
+                  "text": "საოჯახო ტექნიკის შეკეთება",
+                  "key": "services"
+                },
+                {
+                  "text": "ტექნიკის ხელოსანი",
+                  "key": "services"
+                },
+                {
+                  "text": "ადგილზე ტექნიკის შეკეთება",
+                  "key": "services"
+                }
+              ]
+            },
+            {
               "title": "სარეცხი მანქანები",
               "items": [
                 {
                   "text": "სარეცხი მანქანის რემონტი ბათუმში",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "სარეცხი მანქანის რემონტი",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "სარეცხი მანქანის პრობლემები",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "სარეცხი მანქანის შეკეთება ბათუმში",
+                  "key": "washing-machines"
+                },
+                {
+                  "text": "სარეცხი მანქანის ხელოსანი ბათუმში",
                   "key": "washing-machines"
                 },
                 {
@@ -8252,6 +8773,10 @@
                   "key": "dishwashers"
                 },
                 {
+                  "text": "ჭურჭლის სარეცხი მანქანის შეკეთება ბათუმში",
+                  "key": "dishwashers"
+                },
+                {
                   "text": "ჭურჭლის სარეცხის შეკეთება",
                   "key": "dishwashers"
                 },
@@ -8286,6 +8811,10 @@
               "items": [
                 {
                   "text": "მაცივრის რემონტი ბათუმში",
+                  "key": "refrigerators"
+                },
+                {
+                  "text": "მაცივრების რემონტი",
                   "key": "refrigerators"
                 },
                 {
@@ -8367,11 +8896,27 @@
                   "key": "gas-boilers"
                 },
                 {
+                  "text": "გაზის ქვაბების რემონტი ბათუმში",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "გაზის ქვაბების რემონტი",
+                  "key": "gas-boilers"
+                },
+                {
                   "text": "გაზის ქვაბის ხელოსანი",
                   "key": "gas-boilers"
                 },
                 {
                   "text": "გაზის ქვაბის შეკეთება",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "ქვაბის შეკეთება ახლოს",
+                  "key": "gas-boilers"
+                },
+                {
+                  "text": "გაზის ქვაბის ხელოსანი ახლოს",
                   "key": "gas-boilers"
                 },
                 {
@@ -8478,6 +9023,10 @@
                   "key": "hobs"
                 },
                 {
+                  "text": "ქურის შეკეთება",
+                  "key": "hobs"
+                },
+                {
                   "text": "გაზქურის რემონტი",
                   "key": "hobs"
                 },
@@ -8512,14 +9061,14 @@
         "linkLabel": "დეტალურად",
         "items": [
           {
-            "key": "refrigerators",
-            "title": "მაცივრები",
-            "text": "არ აცივებს, წყალი ჟონავს, კომპრესორი ხმაურობს."
-          },
-          {
             "key": "washing-machines",
             "title": "სარეცხი მანქანები",
             "text": "არ უშვებს წყალს, არ წურავს, ხმაურობს ან ჟონავს."
+          },
+          {
+            "key": "refrigerators",
+            "title": "მაცივრები",
+            "text": "არ აცივებს, წყალი ჟონავს, კომპრესორი ხმაურობს."
           },
           {
             "key": "dishwashers",
@@ -8686,10 +9235,51 @@
             "title": "ხშირად ეძებენ",
             "groups": [
               {
+                "title": "ტექნიკის შეკეთება",
+                "items": [
+                  {
+                    "text": "საოჯახო ტექნიკის შეკეთება ბათუმში",
+                    "key": "services"
+                  },
+                  {
+                    "text": "ტექნიკის შეკეთება ბათუმში",
+                    "key": "services"
+                  },
+                  {
+                    "text": "საოჯახო ტექნიკის შეკეთება",
+                    "key": "services"
+                  },
+                  {
+                    "text": "ტექნიკის ხელოსანი",
+                    "key": "services"
+                  },
+                  {
+                    "text": "ადგილზე ტექნიკის შეკეთება",
+                    "key": "services"
+                  }
+                ]
+              },
+              {
                 "title": "სარეცხი მანქანები",
                 "items": [
                   {
                     "text": "სარეცხი მანქანის რემონტი ბათუმში",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "სარეცხი მანქანის რემონტი",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "სარეცხი მანქანის პრობლემები",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "სარეცხი მანქანის შეკეთება ბათუმში",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "სარეცხი მანქანის ხელოსანი ბათუმში",
                     "key": "washing-machines"
                   },
                   {
@@ -8730,6 +9320,10 @@
                     "key": "dishwashers"
                   },
                   {
+                    "text": "ჭურჭლის სარეცხი მანქანის შეკეთება ბათუმში",
+                    "key": "dishwashers"
+                  },
+                  {
                     "text": "ჭურჭლის სარეცხის შეკეთება",
                     "key": "dishwashers"
                   },
@@ -8764,6 +9358,10 @@
                 "items": [
                   {
                     "text": "მაცივრის რემონტი ბათუმში",
+                    "key": "refrigerators"
+                  },
+                  {
+                    "text": "მაცივრების რემონტი",
                     "key": "refrigerators"
                   },
                   {
@@ -8845,11 +9443,27 @@
                     "key": "gas-boilers"
                   },
                   {
+                    "text": "გაზის ქვაბების რემონტი ბათუმში",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "გაზის ქვაბების რემონტი",
+                    "key": "gas-boilers"
+                  },
+                  {
                     "text": "გაზის ქვაბის ხელოსანი",
                     "key": "gas-boilers"
                   },
                   {
                     "text": "გაზის ქვაბის შეკეთება",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "ქვაბის შეკეთება ახლოს",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "გაზის ქვაბის ხელოსანი ახლოს",
                     "key": "gas-boilers"
                   },
                   {
@@ -8953,6 +9567,10 @@
                   },
                   {
                     "text": "ქურის შეკეთება ბათუმში",
+                    "key": "hobs"
+                  },
+                  {
+                    "text": "ქურის შეკეთება",
                     "key": "hobs"
                   },
                   {
@@ -9152,6 +9770,18 @@
                 "text": "სარეცხი მანქანის რემონტი ბათუმში"
               },
               {
+                "text": "სარეცხი მანქანის რემონტი"
+              },
+              {
+                "text": "სარეცხი მანქანის პრობლემები"
+              },
+              {
+                "text": "სარეცხი მანქანის შეკეთება ბათუმში"
+              },
+              {
+                "text": "სარეცხი მანქანის ხელოსანი ბათუმში"
+              },
+              {
                 "text": "სარეცხი მანქანის შეკეთება"
               },
               {
@@ -9318,6 +9948,9 @@
                 "text": "ჭურჭლის სარეცხი მანქანის რემონტი ბათუმში"
               },
               {
+                "text": "ჭურჭლის სარეცხი მანქანის შეკეთება ბათუმში"
+              },
+              {
                 "text": "ჭურჭლის სარეცხის შეკეთება"
               },
               {
@@ -9472,6 +10105,9 @@
               },
               {
                 "text": "ქურის შეკეთება ბათუმში"
+              },
+              {
+                "text": "ქურის შეკეთება"
               },
               {
                 "text": "გაზქურის რემონტი"
@@ -10306,10 +10942,51 @@
             "title": "ხშირად ეძებენ",
             "groups": [
               {
+                "title": "ტექნიკის შეკეთება",
+                "items": [
+                  {
+                    "text": "საოჯახო ტექნიკის შეკეთება ბათუმში",
+                    "key": "services"
+                  },
+                  {
+                    "text": "ტექნიკის შეკეთება ბათუმში",
+                    "key": "services"
+                  },
+                  {
+                    "text": "საოჯახო ტექნიკის შეკეთება",
+                    "key": "services"
+                  },
+                  {
+                    "text": "ტექნიკის ხელოსანი",
+                    "key": "services"
+                  },
+                  {
+                    "text": "ადგილზე ტექნიკის შეკეთება",
+                    "key": "services"
+                  }
+                ]
+              },
+              {
                 "title": "სარეცხი მანქანები",
                 "items": [
                   {
                     "text": "სარეცხი მანქანის რემონტი ბათუმში",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "სარეცხი მანქანის რემონტი",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "სარეცხი მანქანის პრობლემები",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "სარეცხი მანქანის შეკეთება ბათუმში",
+                    "key": "washing-machines"
+                  },
+                  {
+                    "text": "სარეცხი მანქანის ხელოსანი ბათუმში",
                     "key": "washing-machines"
                   },
                   {
@@ -10350,6 +11027,10 @@
                     "key": "dishwashers"
                   },
                   {
+                    "text": "ჭურჭლის სარეცხი მანქანის შეკეთება ბათუმში",
+                    "key": "dishwashers"
+                  },
+                  {
                     "text": "ჭურჭლის სარეცხის შეკეთება",
                     "key": "dishwashers"
                   },
@@ -10384,6 +11065,10 @@
                 "items": [
                   {
                     "text": "მაცივრის რემონტი ბათუმში",
+                    "key": "refrigerators"
+                  },
+                  {
+                    "text": "მაცივრების რემონტი",
                     "key": "refrigerators"
                   },
                   {
@@ -10465,11 +11150,27 @@
                     "key": "gas-boilers"
                   },
                   {
+                    "text": "გაზის ქვაბების რემონტი ბათუმში",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "გაზის ქვაბების რემონტი",
+                    "key": "gas-boilers"
+                  },
+                  {
                     "text": "გაზის ქვაბის ხელოსანი",
                     "key": "gas-boilers"
                   },
                   {
                     "text": "გაზის ქვაბის შეკეთება",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "ქვაბის შეკეთება ახლოს",
+                    "key": "gas-boilers"
+                  },
+                  {
+                    "text": "გაზის ქვაბის ხელოსანი ახლოს",
                     "key": "gas-boilers"
                   },
                   {
@@ -10573,6 +11274,10 @@
                   },
                   {
                     "text": "ქურის შეკეთება ბათუმში",
+                    "key": "hobs"
+                  },
+                  {
+                    "text": "ქურის შეკეთება",
                     "key": "hobs"
                   },
                   {
@@ -11343,6 +12048,9 @@
                 "text": "მაცივრის რემონტი ბათუმში"
               },
               {
+                "text": "მაცივრების რემონტი"
+              },
+              {
                 "text": "მაცივრის შეკეთება"
               },
               {
@@ -11666,10 +12374,22 @@
                 "text": "ქვაბის რემონტი ბათუმში"
               },
               {
+                "text": "გაზის ქვაბების რემონტი ბათუმში"
+              },
+              {
+                "text": "გაზის ქვაბების რემონტი"
+              },
+              {
                 "text": "გაზის ქვაბის ხელოსანი"
               },
               {
                 "text": "გაზის ქვაბის შეკეთება"
+              },
+              {
+                "text": "ქვაბის შეკეთება ახლოს"
+              },
+              {
+                "text": "გაზის ქვაბის ხელოსანი ახლოს"
               },
               {
                 "text": "გაზის ქვაბის მომსახურება"
