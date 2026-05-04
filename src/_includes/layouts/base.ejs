@@ -207,7 +207,7 @@ const trackingPageType = !pageKey
 			</nav>
 			<div class="site-header__contact">
 				<a class="site-header__phone" href="tel:<%= site.phone %>" data-ga-contact-method="call" data-ga-location="header_phone">
-                    591 17 23 29
+					<%= (site.phone || "").replace(/[^0-9]/g, "").replace(/^995(\d{3})(\d{2})(\d{2})(\d{2})$/, "$1 $2 $3 $4") %>
 				</a>
 				<span>
 					<%= lang.hours %>

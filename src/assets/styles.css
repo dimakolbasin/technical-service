@@ -1272,6 +1272,8 @@ a.search-phrases__chip:hover {
   color: var(--c-text);
   font-weight: 600;
   text-decoration: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .footer-contact-item a:hover {
