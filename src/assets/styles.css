@@ -906,8 +906,25 @@ a.search-phrases__chip:hover {
 }
 
 .faq__summary {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
   cursor: pointer;
   font-weight: 700;
+  list-style: none;
+}
+
+.faq__summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq__summary::before {
+  content: "►";
+  flex: 0 0 auto;
+}
+
+.faq[open] .faq__summary::before {
+  transform: rotate(90deg);
 }
 
 .faq__content {
