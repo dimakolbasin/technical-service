@@ -1482,6 +1482,17 @@ a.search-phrases__chip:hover {
   flex: 0 0 48px;
 }
 
+.cta-dock {
+  display: none;
+}
+
+.cta-dock__button {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  flex: 0 0 48px;
+}
+
 @media (max-width: 719px) {
   .section {
     padding-top: 0;
@@ -1645,6 +1656,24 @@ a.search-phrases__chip:hover {
 
   .cta-bar {
     display: none;
+  }
+
+  .cta-dock {
+    position: fixed;
+    top: 50%;
+    right: 16px;
+    z-index: 110;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid rgba(217, 226, 236, 0.9);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: var(--shadow-soft);
+    transform: translateY(-50%);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
   }
 
   .cookie-notice {

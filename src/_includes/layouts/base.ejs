@@ -458,6 +458,21 @@ const trackingPageType = !pageKey
 			<img class="button__icon" src="/assets/icons/social/tg.png" alt="" width="24" height="24">
 		</a>
 	</div>
+	<div class="cta-dock" aria-label="<%= lang.cta %>">
+		<a class="button button--primary cta-dock__button" href="tel:<%= site.phone %>" aria-label="<%= lang.cta %>" title="<%= lang.cta %>" data-ga-contact-method="call" data-ga-location="cta_dock">
+			<img class="button__icon" src="/assets/icons/social/call.png" alt="" width="24" height="24">
+		</a>
+		<a class="button button--ghost cta-dock__button" href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>"
+			target="_blank" rel="noopener" aria-label="<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>" title="<%= lang.ctaMessage || lang.home?.ctaSecondary || 'WhatsApp' %>" data-ga-contact-method="whatsapp" data-ga-location="cta_dock">
+			<img class="button__icon" src="/assets/icons/social/wh-1.png" alt="" width="24" height="24">
+		</a>
+		<a class="button button--ghost cta-dock__button" href="<%= site.viber %>" target="_blank" rel="noopener" aria-label="Viber" title="Viber" data-ga-contact-method="viber" data-ga-location="cta_dock">
+			<img class="button__icon" src="/assets/icons/social/viber.png" alt="" width="24" height="24">
+		</a>
+		<a class="button button--ghost cta-dock__button" href="<%= site.telegram %>" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram" data-ga-contact-method="telegram" data-ga-location="cta_dock">
+			<img class="button__icon" src="/assets/icons/social/tg.png" alt="" width="24" height="24">
+		</a>
+	</div>
 	<script src="/assets/analytics.js" defer></script>
 	<script>
 		(function () {
