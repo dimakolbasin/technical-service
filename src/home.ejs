@@ -313,9 +313,17 @@
               </section>
               <% } %>
 
-                <% const reviewsTitle=lang.home.reviews?.title || "" ; const reviewsLead=lang.home.reviews?.lead
-                      || "" ; const reviewItems=lang.home.reviews?.items?.length ? lang.home.reviews.items.slice(0, 5) :
-                      []; %>
+                <%
+                const reviewsTitle=lang.home.reviews?.title || "" ;
+                const reviewsLead=lang.home.reviews?.lead || "" ;
+                const leaveReviewUrl = site.trustFacts?.reviewSource || site.googleBusinessProfile || site.googleMaps || "";
+                const reviewItems=lang.home.reviews?.items?.length
+                  ? lang.home.reviews.items
+                    .filter((item) => item.name && item.text)
+                    .slice(0, 5)
+                  : [];
+                %>
+                <% if (reviewsTitle && reviewItems.length) { %>
                       <section class="section section--surface">
                         <div class="container">
                           <div class="section__header">
@@ -336,18 +344,32 @@
                                     <p class="review-card__name">
                                       <%= item.name %>
                                     </p>
-                                    <p class="review-card__stars" aria-label="<%= lang.home.reviews.ratingLabel %>">★★★★★</p>
+                                    <% const reviewRating = item.rating || 5; %>
+                                    <p class="review-card__stars" aria-label="<%= lang.home.reviews.ratingLabel %>">
+                                      <%= "★★★★★".slice(0, reviewRating) %>
+                                    </p>
                                   </div>
                                 </div>
                                 <p class="review-card__text">
                                   <%= item.text %>
                                 </p>
+                                <% if (item.sourceName) { %>
+                                  <p class="review-card__source"><%= item.sourceName %></p>
+                                <% } %>
                               </article>
                               <% }) %>
+                              <% if (leaveReviewUrl) { %>
+                                <article class="card review-card review-card--cta">
+                                  <a class="button button--primary" href="<%= leaveReviewUrl %>" target="_blank" rel="noopener" data-ga-content-type="review_link" data-ga-location="home_reviews">
+                                    <%= lang.home.reviews.leaveReviewLabel || "Leave a review" %>
+                                  </a>
+                                </article>
+                              <% } %>
                           </div>
                         </div>
 
                       </section>
+                      <% } %>
 
                       <% if (lang.home.faq && lang.home.faq.items && lang.home.faq.items.length) { %>
                         <section class="section">

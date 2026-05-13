@@ -940,6 +940,94 @@ a.search-phrases__chip:hover {
   flex-wrap: wrap;
 }
 
+.contact-layout {
+  display: grid;
+  gap: 18px;
+}
+
+.contact-nap,
+.contact-map,
+.contact-trust {
+  min-width: 0;
+}
+
+.map-embed {
+  overflow: hidden;
+  margin-top: 14px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-sm);
+  background: var(--c-surface-subtle);
+  aspect-ratio: 4 / 3;
+}
+
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.fact-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.fact {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-sm);
+  background: var(--c-surface-subtle);
+}
+
+.fact strong {
+  color: var(--c-text);
+}
+
+.fact span,
+.fact a {
+  color: var(--c-muted);
+}
+
+.section__meta {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  color: var(--c-muted);
+  font-size: 0.95rem;
+}
+
+.review-card__source {
+  margin-top: auto;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: var(--c-text);
+}
+
+.job-photo {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  background: var(--c-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.job-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.job-photo figcaption {
+  padding: 12px 14px;
+  color: var(--c-muted);
+  font-size: 0.92rem;
+}
+
 .form {
   display: grid;
   gap: 12px;
@@ -1064,6 +1152,13 @@ a.search-phrases__chip:hover {
 
 .review-card {
   border-left: 0;
+}
+
+.review-card--cta {
+  align-items: center;
+  justify-content: center;
+  min-height: 170px;
+  text-align: center;
 }
 
 .review-card__head {
@@ -1602,6 +1697,14 @@ a.search-phrases__chip:hover {
 
   .grid--2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-layout {
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  }
+
+  .contact-trust {
+    grid-column: 1 / -1;
   }
 
   .service-standard {

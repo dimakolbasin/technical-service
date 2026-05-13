@@ -46,28 +46,40 @@
 		<link rel="alternate" hreflang="x-default" href="<%= site.baseUrl + i18n.languages[0].paths[pageKey] %>">
 	<% } %>
 	<% if (pageKey) { %>
+		<% const ogLocaleMap = { ru: "ru_RU", en: "en_US", ka: "ka_GE" }; %>
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="<%= site.baseUrl + lang.paths[pageKey] %>">
 		<meta property="og:title" content="<%= title %>">
 		<meta property="og:description" content="<%= description %>">
 		<meta property="og:site_name" content="<%= site.name %>">
-		<meta property="og:locale" content="<%= lang.code %>">
+		<meta property="og:locale" content="<%= ogLocaleMap[lang.code] || lang.code %>">
 		<meta property="og:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="<%= title %>">
+		<meta name="twitter:description" content="<%= description %>">
+		<meta name="twitter:image" content="<%= site.baseUrl %>/assets/icons/meta-pic.webp">
 	<% } %>
 	<% if (pageKey) { %>
 		<%
 		const pageUrl = site.baseUrl + lang.paths[pageKey];
+		const homeUrl = site.baseUrl + lang.paths.home;
+		const currentPage = pageKey === "home" ? null : (lang.pages && lang.pages[pageKey] ? lang.pages[pageKey] : null);
 		const waNumber = site.phone.replace(/[^0-9]/g, "");
 		const address = site.address || {};
 		const addressLocality = address.locality || "Batumi";
 		const addressCountry = address.country || "GE";
 		const areaServed = Array.isArray(lang.areasList) && lang.areasList.length ? lang.areasList : "Batumi";
-		const hasMap = [site.googleMaps, site.yandexMaps].filter(Boolean);
+		const hasMap = [site.googleMaps].filter(Boolean);
 		const priceRange = site.priceRange || "GEL 20+";
-		const sameAs = [site.telegram, `https://wa.me/${waNumber}`, site.facebook].filter(Boolean);
+		const sameAs = [site.telegram, `https://wa.me/${waNumber}`, site.facebook, site.googleMaps, site.googleBusinessProfile].filter(Boolean);
+		const localBusinessId = `${site.baseUrl}/#localbusiness`;
+		const servicePageKeys = ["washing-machines", "dishwashers", "hobs", "ovens", "ac-cleaning", "refrigerators", "dryers", "gas-boilers"];
+		const articlePageKeys = ["washing-machine-not-draining", "dishwasher-not-draining", "oven-not-heating", "hob-not-turning-on", "ac-not-cooling", "ac-cleaning-importance", "refrigerator-not-cooling", "dryer-not-drying", "gas-boiler-not-igniting"];
+		const isServicePage = servicePageKeys.includes(pageKey);
+		const isArticlePage = articlePageKeys.includes(pageKey);
 		const pageFaq = pageKey === "home"
 			? (lang.home && lang.home.faq ? lang.home.faq : null)
-			: (lang.pages && lang.pages[pageKey] ? lang.pages[pageKey].faq : null);
+			: (currentPage ? currentPage.faq : null);
 		const faqSchema = pageFaq && Array.isArray(pageFaq.items) && pageFaq.items.length
 			? {
 				"@context": "https://schema.org",
@@ -82,14 +94,59 @@
 				}))
 			}
 			: null;
+		const toOffer = (item) => {
+			const schemaPrice = item && item.schemaPrice;
+			if (!schemaPrice || typeof schemaPrice.minPrice === "undefined") return null;
+			const currency = schemaPrice.currency || "GEL";
+			const priceSpecification = {
+				"@type": "PriceSpecification",
+				"priceCurrency": currency,
+				"minPrice": schemaPrice.minPrice
+			};
+			if (typeof schemaPrice.maxPrice !== "undefined") {
+				priceSpecification.maxPrice = schemaPrice.maxPrice;
+			}
+			return {
+				"@type": "Offer",
+				"name": item.label,
+				"url": pageUrl,
+				"priceCurrency": currency,
+				"price": schemaPrice.price || schemaPrice.minPrice,
+				"priceSpecification": priceSpecification,
+				"availability": "https://schema.org/InStock"
+			};
+		};
+		const collectOffers = (node) => {
+			const offers = [];
+			if (!node) return offers;
+			if (Array.isArray(node.items)) {
+				node.items.forEach((item) => {
+					const offer = toOffer(item);
+					if (offer) offers.push(offer);
+				});
+			}
+			if (Array.isArray(node.groups)) {
+				node.groups.forEach((group) => {
+					offers.push(...collectOffers(group));
+				});
+			}
+			return offers;
+		};
+		const pageOffers = [
+			...collectOffers(currentPage && currentPage.price),
+			...(currentPage && Array.isArray(currentPage.sections)
+				? currentPage.sections.flatMap((section) => collectOffers(section))
+				: [])
+		];
 
 		const localBusiness = {
 			"@context": "https://schema.org",
 			"@type": "LocalBusiness",
+			"@id": localBusinessId,
 			"name": site.name,
-			"url": pageUrl,
+			"url": homeUrl,
 			"telephone": site.phone,
-			"description": description,
+			"description": lang.home?.metaDescription || description,
 			"image": `${site.baseUrl}/assets/icons/meta-pic.webp`,
 			"address": {
 				"@type": "PostalAddress",
@@ -113,8 +170,6 @@
 			"sameAs": sameAs
 		};
 
-		const servicePageKeys = ["washing-machines", "dishwashers", "hobs", "ovens", "ac-cleaning", "refrigerators", "dryers", "gas-boilers"];
-		const isServicePage = servicePageKeys.includes(pageKey);
 		const serviceSchema = isServicePage
 			? {
 				"@context": "https://schema.org",
@@ -123,13 +178,45 @@
 				"serviceType": title,
 				"provider": {
 					"@type": "LocalBusiness",
-					"name": site.name,
-					"telephone": site.phone,
-					"url": site.baseUrl
+					"@id": localBusinessId,
+					"name": site.name
 				},
 				"areaServed": areaServed,
 				"url": pageUrl,
-				"description": description
+				"description": description,
+				"offers": pageOffers.length ? pageOffers : undefined
+			}
+			: null;
+		const articleSchema = isArticlePage
+			? {
+				"@context": "https://schema.org",
+				"@type": "Article",
+				"mainEntityOfPage": pageUrl,
+				"headline": currentPage?.heading || title,
+				"description": description,
+				"datePublished": currentPage?.datePublished,
+				"dateModified": currentPage?.dateModified,
+				"inLanguage": lang.code,
+				"image": `${site.baseUrl}/assets/icons/meta-pic.webp`,
+				"author": {
+					"@type": "Organization",
+					"@id": localBusinessId,
+					"name": site.name
+				},
+				"publisher": {
+					"@type": "Organization",
+					"@id": localBusinessId,
+					"name": site.name
+				}
+			}
+			: null;
+		const offerCatalogSchema = !isServicePage && pageOffers.length
+			? {
+				"@context": "https://schema.org",
+				"@type": "OfferCatalog",
+				"name": title,
+				"url": pageUrl,
+				"itemListElement": pageOffers
 			}
 			: null;
 
@@ -161,6 +248,12 @@
 		<% if (serviceSchema) { %>
 			<script type="application/ld+json"><%- JSON.stringify(serviceSchema) %></script>
 		<% } %>
+		<% if (articleSchema) { %>
+			<script type="application/ld+json"><%- JSON.stringify(articleSchema) %></script>
+		<% } %>
+		<% if (offerCatalogSchema) { %>
+			<script type="application/ld+json"><%- JSON.stringify(offerCatalogSchema) %></script>
+		<% } %>
 		<% if (faqSchema) { %>
 			<script type="application/ld+json"><%- JSON.stringify(faqSchema) %></script>
 		<% } %>
@@ -169,7 +262,7 @@
 
 <%
 const trackingServicePageKeys = ["washing-machines", "dishwashers", "hobs", "ovens", "ac-cleaning", "refrigerators", "dryers", "gas-boilers"];
-const trackingArticlePageKeys = ["washing-machine-not-draining", "dishwasher-not-draining", "oven-not-heating", "hob-not-turning-on", "ac-not-cooling", "ac-cleaning-importance"];
+const trackingArticlePageKeys = ["washing-machine-not-draining", "dishwasher-not-draining", "oven-not-heating", "hob-not-turning-on", "ac-not-cooling", "ac-cleaning-importance", "refrigerator-not-cooling", "dryer-not-drying", "gas-boiler-not-igniting"];
 const trackingPageType = !pageKey
 	? "error"
 	: trackingServicePageKeys.includes(pageKey)

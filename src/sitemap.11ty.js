@@ -1,31 +1,10 @@
 const buildUrls = (site, languages) => {
   const urls = new Set();
-
-  const pageKeys = [
-    "services",
-    "prices",
-    "contacts",
-    "about",
-    "washing-machines",
-    "dishwashers",
-    "hobs",
-    "ovens",
-    "ac-cleaning",
-    "refrigerators",
-    "dryers",
-    "gas-boilers",
-    "washing-machine-not-draining",
-    "dishwasher-not-draining",
-    "oven-not-heating",
-    "hob-not-turning-on",
-    "ac-not-cooling",
-    "ac-cleaning-importance",
-  ];
+  const excludedKeys = new Set(["privacy"]);
 
   languages.forEach((lang) => {
-    urls.add(site.baseUrl + lang.paths.home);
-    pageKeys.forEach((key) => {
-      if (lang.paths[key]) urls.add(site.baseUrl + lang.paths[key]);
+    Object.entries(lang.paths || {}).forEach(([key, path]) => {
+      if (!excludedKeys.has(key) && path) urls.add(site.baseUrl + path);
     });
   });
 

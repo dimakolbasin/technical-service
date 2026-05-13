@@ -7,6 +7,24 @@
       <p class="section__lead">
         <%= page.lead %>
       </p>
+      <% if (page.datePublished || page.dateModified) { %>
+        <%
+        const dateLabels = {
+          ru: { published: "Опубликовано", modified: "Обновлено" },
+          en: { published: "Published", modified: "Updated" },
+          ka: { published: "გამოქვეყნდა", modified: "განახლდა" }
+        };
+        const currentDateLabels = dateLabels[lang.code] || dateLabels.en;
+        %>
+        <p class="section__meta">
+          <% if (page.datePublished) { %>
+            <span><%= currentDateLabels.published %>: <time datetime="<%= page.datePublished %>"><%= page.datePublished %></time></span>
+          <% } %>
+          <% if (page.dateModified) { %>
+            <span><%= currentDateLabels.modified %>: <time datetime="<%= page.dateModified %>"><%= page.dateModified %></time></span>
+          <% } %>
+        </p>
+      <% } %>
     </div>
   </div>
 </section>
@@ -29,6 +47,135 @@
               </ul>
             <% } %>
           </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+<% } %>
+
+<% if (page.diagnosisSteps && page.diagnosisSteps.items && page.diagnosisSteps.items.length) { %>
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= page.diagnosisSteps.title %></h2>
+        <% if (page.diagnosisSteps.lead) { %>
+          <p class="section__lead"><%= page.diagnosisSteps.lead %></p>
+        <% } %>
+      </div>
+      <div class="steps steps--compact">
+        <% page.diagnosisSteps.items.forEach((item, index) => { %>
+          <div class="steps__item">
+            <div class="steps__index"><%= index + 1 %></div>
+            <p class="steps__text"><%= item %></p>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+<% } %>
+
+<% if ((page.brandsHandled && page.brandsHandled.items && page.brandsHandled.items.length) || (page.trustSignals && page.trustSignals.items && page.trustSignals.items.length)) { %>
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--2">
+        <% if (page.brandsHandled && page.brandsHandled.items && page.brandsHandled.items.length) { %>
+          <div class="card">
+            <h2 class="card__title"><%= page.brandsHandled.title %></h2>
+            <% if (page.brandsHandled.lead) { %>
+              <p class="card__text"><%= page.brandsHandled.lead %></p>
+            <% } %>
+            <div class="badge-row">
+              <% page.brandsHandled.items.forEach((brand) => { %>
+                <span class="badge badge--outline"><%= brand %></span>
+              <% }); %>
+            </div>
+          </div>
+        <% } %>
+
+        <% if (page.trustSignals && page.trustSignals.items && page.trustSignals.items.length) { %>
+          <div class="card card--elevated">
+            <h2 class="card__title"><%= page.trustSignals.title %></h2>
+            <% if (page.trustSignals.lead) { %>
+              <p class="card__text"><%= page.trustSignals.lead %></p>
+            <% } %>
+            <ul class="list">
+              <% page.trustSignals.items.forEach((item) => { %>
+                <li class="list__item">• <span><%= item %></span></li>
+              <% }); %>
+            </ul>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </section>
+<% } %>
+
+<% if (page.caseStudies && page.caseStudies.items && page.caseStudies.items.length) { %>
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= page.caseStudies.title %></h2>
+        <% if (page.caseStudies.lead) { %>
+          <p class="section__lead"><%= page.caseStudies.lead %></p>
+        <% } %>
+      </div>
+      <div class="grid grid--3">
+        <% page.caseStudies.items.forEach((item) => { %>
+          <article class="card case-card">
+            <h3 class="card__title"><%= item.title %></h3>
+            <% if (item.appliance) { %>
+              <p class="card__text"><strong><%= page.caseStudies.applianceLabel || "Appliance" %>:</strong> <%= item.appliance %></p>
+            <% } %>
+            <% if (item.symptom) { %>
+              <p class="card__text"><strong><%= page.caseStudies.symptomLabel %>:</strong> <%= item.symptom %></p>
+            <% } %>
+            <% if (item.diagnosis) { %>
+              <p class="card__text"><strong><%= page.caseStudies.diagnosisLabel || page.caseStudies.fixLabel %>:</strong> <%= item.diagnosis %></p>
+            <% } %>
+            <% if (item.workDone) { %>
+              <p class="card__text"><strong><%= page.caseStudies.workDoneLabel || page.caseStudies.fixLabel %>:</strong> <%= item.workDone %></p>
+            <% } %>
+            <% if (item.result) { %>
+              <p class="card__text"><strong><%= page.caseStudies.resultLabel || "Result" %>:</strong> <%= item.result %></p>
+            <% } %>
+            <% if (item.time) { %>
+              <p class="card__text"><strong><%= page.caseStudies.timeLabel || "Time" %>:</strong> <%= item.time %></p>
+            <% } %>
+            <% if (item.priceHint) { %>
+              <p class="card__text"><strong><%= page.caseStudies.priceHintLabel || "Price" %>:</strong> <%= item.priceHint %></p>
+            <% } %>
+            <% if (item.fix) { %>
+              <p class="card__text"><strong><%= page.caseStudies.fixLabel %>:</strong> <%= item.fix %></p>
+            <% } %>
+            <% if (item.area) { %>
+              <p class="card__text"><strong><%= page.caseStudies.areaLabel %>:</strong> <%= item.area %></p>
+            <% } %>
+          </article>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+<% } %>
+
+<% if (page.photos && page.photos.items && page.photos.items.length) { %>
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title"><%= page.photos.title %></h2>
+        <% if (page.photos.lead) { %>
+          <p class="section__lead"><%= page.photos.lead %></p>
+        <% } %>
+      </div>
+      <div class="grid grid--3">
+        <% page.photos.items.forEach((item) => { %>
+          <% if (item.src && item.alt) { %>
+            <figure class="job-photo">
+              <img src="<%= item.src %>" alt="<%= item.alt %>" loading="lazy" width="<%= item.width || 640 %>" height="<%= item.height || 480 %>">
+              <% if (item.caption) { %>
+                <figcaption><%= item.caption %></figcaption>
+              <% } %>
+            </figure>
+          <% } %>
         <% }); %>
       </div>
     </div>

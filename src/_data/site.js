@@ -12,9 +12,15 @@ const address = {
 };
 
 const googleMaps = process.env.SITE_GOOGLE_MAP;
-const yandexMaps = process.env.SITE_YANDEX_MAP;
+const googleMapsEmbed = process.env.SITE_GOOGLE_MAP_EMBED;
+const googleBusinessProfile = process.env.SITE_GOOGLE_BUSINESS_PROFILE;
 const priceRange = process.env.SITE_PRICE_RANGE;
 const gaMeasurementId = process.env.GA4_MEASUREMENT_ID || "";
+const trustFacts = {
+    yearsInBusiness: process.env.SITE_YEARS_IN_BUSINESS,
+    completedRepairs: process.env.SITE_COMPLETED_REPAIRS,
+    reviewSource: process.env.SITE_REVIEW_SOURCE_URL
+};
 
 module.exports = {
     name: process.env.SITE_NAME,
@@ -27,7 +33,9 @@ module.exports = {
     web3formsAccessKey: process.env.WEB3FORMS_ACCESS_KEY,
     address,
     googleMaps,
-    yandexMaps,
+    googleMapsEmbed,
+    googleBusinessProfile,
     priceRange,
+    trustFacts,
     gaMeasurementId
 };
