@@ -17,7 +17,7 @@ const googleMapEmbed = site.googleMapsEmbed || "";
 const envTrustFacts = [
   site.trustFacts?.yearsInBusiness ? { label: contactPage.trustLabels?.years || "Years in business", value: site.trustFacts.yearsInBusiness } : null,
   site.trustFacts?.completedRepairs ? { label: contactPage.trustLabels?.repairs || "Completed repairs", value: site.trustFacts.completedRepairs } : null,
-  site.trustFacts?.reviewSource ? { label: contactPage.trustLabels?.reviews || "Verified reviews", value: contactPage.trustLabels?.reviewsLink || "Review source", href: site.trustFacts.reviewSource } : null
+  site.trustFacts?.reviewSource ? { label: contactPage.trustLabels?.reviews || "Verified reviews", value: contactPage.trustLabels?.reviewsLink || "Review source", href: site.googleMaps } : null
 ].filter(Boolean);
 const trustSignals = [
   ...(Array.isArray(contactPage.trustSignals) ? contactPage.trustSignals : []),
