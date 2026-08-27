@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { loadLanguages } from "../lib/content";
+import { LocaleCode } from "../lib/analytics";
+
+const ROBOTS_404 = "noindex, nofollow, noarchive";
+
+const english = (await loadLanguages()).find(
+  (language) => language.code === LocaleCode.En,
+)!;
+const language = {
+  ...english,
+  langLabel: "English" as const,
+  navLabel: "Navigation" as const,
+  hours: "09:00 - 20:00" as const,
+  cta: "Call Now" as const,
+  paths: { ...english.paths, home: "/" as const },
+  nav: english.nav.filter((item) => item.key === "home"),
+};
+---
+
+<BaseLayout
+  language={language}
+  pageKey={false}
+  title="404 - Page Not Found"
+  description="Page not found"
+  robots={ROBOTS_404}
+  hideFooter
+  hideLanguageSelector
+>
+  <section
+    class="section section--surface"
+    style="min-height: 60vh; display: flex; align-items: center; text-align: center;"
+  >
+    <div class="container">
+      <div
+        class="section__header"
+        style="margin-left: auto; margin-right: auto;"
+      >
+        <h1
+          class="section__title"
+          style="font-size: 3rem; color: var(--c-primary);"
+        >
+          404
+        </h1>
+        <p class="section__lead">
+          Страница не найдена / გვერდი არ მოიძებნა / Page not found
+        </p>
+      </div>
+      <div class="section__actions" style="justify-content: center;">
+        <a class="button button--primary" href="/">🏠 Home</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

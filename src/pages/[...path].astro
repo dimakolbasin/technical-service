@@ -1,0 +1,84 @@
+---
+import ContactsPage from "../components/pages/contacts/ContactsPage.astro";
+import HomePage from "../components/pages/home/HomePage.astro";
+import PricesPage from "../components/pages/prices/PricesPage.astro";
+import PrivacyPage from "../components/pages/privacy/PrivacyPage.astro";
+import ServiceDetail from "../components/pages/services/ServiceDetail.astro";
+import ServicesPage from "../components/pages/services/ServicesPage.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  getPage,
+  getStaticPages,
+  type Language,
+  type RouteKey,
+} from "../lib/content";
+import { trimSlashes } from "../lib/page";
+import { isDetailRoute } from "../lib/routes";
+import { site } from "../lib/site";
+
+const ROBOTS_INDEX_FOLLOW = "index, follow";
+const ROBOTS_NOINDEX_FOLLOW = "noindex, follow";
+
+export async function getStaticPaths() {
+  return (await getStaticPages()).map(({ language, pageKey, path }) => ({
+    params: {
+      path: path === "/" ? undefined : trimSlashes(path),
+    },
+    props: { language, pageKey },
+  }));
+}
+
+interface Props {
+  language: Language;
+  pageKey: RouteKey;
+}
+const { language, pageKey } = Astro.props;
+const page = pageKey === "home" ? null : getPage(language, pageKey);
+const detailPage = isDetailRoute(pageKey) ? getPage(language, pageKey) : null;
+const title = pageKey === "home" ? language.home.metaTitle : page!.title;
+const description =
+  pageKey === "home"
+    ? language.home.metaDescription
+    : page!.description || page!.lead;
+const robots =
+  pageKey === "privacy" ? ROBOTS_NOINDEX_FOLLOW : ROBOTS_INDEX_FOLLOW;
+---
+
+<BaseLayout
+  language={language}
+  pageKey={pageKey}
+  title={title}
+  description={description}
+  robots={robots}
+>
+  {pageKey === "home" && <HomePage language={language} site={site} />}
+  {
+    pageKey === "services" && (
+      <ServicesPage language={language} page={getPage(language, "services")} />
+    )
+  }
+  {
+    pageKey === "prices" && (
+      <PricesPage
+        language={language}
+        page={getPage(language, "prices")}
+        site={site}
+      />
+    )
+  }
+  {
+    pageKey === "contacts" && (
+      <ContactsPage
+        language={language}
+        page={getPage(language, "contacts")}
+        site={site}
+      />
+    )
+  }
+  {pageKey === "privacy" && <PrivacyPage page={getPage(language, "privacy")} />}
+  {
+    detailPage && (
+      <ServiceDetail language={language} page={detailPage} site={site} />
+    )
+  }
+</BaseLayout>

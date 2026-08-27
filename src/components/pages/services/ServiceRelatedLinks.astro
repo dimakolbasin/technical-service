@@ -1,0 +1,45 @@
+---
+import { ContentType, ga, TrackingLocation } from "../../../lib/analytics";
+import type { Language } from "../../../lib/content";
+import type { ServiceDetailContent } from "../../../lib/content/types";
+
+interface Props {
+  related: NonNullable<ServiceDetailContent["related"]>;
+  paths: Language["paths"];
+}
+
+const { related, paths } = Astro.props;
+---
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{related.title}</h2>
+      {related.lead && <p class="section__lead">{related.lead}</p>}
+    </div>
+    <div class="grid grid--3">
+      {
+        related.items.map((item) => {
+          const destination = item.key;
+          return (
+            <article class="card">
+              <h3 class="card__title">{item.title}</h3>
+              {item.text && <p class="card__text">{item.text}</p>}
+              <a
+                class="card__link"
+                href={paths[destination]}
+                {...ga.content(
+                  ContentType.RelatedLink,
+                  TrackingLocation.PageRelated,
+                  destination,
+                )}
+              >
+                {item.linkLabel || related.linkLabel}
+              </a>
+            </article>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

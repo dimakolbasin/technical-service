@@ -1,0 +1,123 @@
+---
+import {
+  ContactMethod,
+  ContentType,
+  ga,
+  TrackingLocation,
+} from "../../../lib/analytics";
+import type { HomeContent } from "../../../lib/content/types";
+
+interface Props {
+  standard: NonNullable<HomeContent["serviceStandard"]>;
+  phone: string;
+  callLabel: string;
+  contactsPath: string;
+  contactsLabel: string;
+}
+
+const MAX_VISIBLE_FACTS = 3;
+const TRAILING_COLON_PATTERN = /:$/;
+
+const { standard, phone, callLabel, contactsPath, contactsLabel } = Astro.props;
+const content = standard.content;
+const sections = content?.sections ?? [];
+const facts = sections.flatMap((section) =>
+  section.list?.[0] ? [{ group: section.title, text: section.list[0] }] : [],
+);
+
+if (sections[1]?.list?.[1]) {
+  facts.push({ group: sections[1].title, text: sections[1].list[1] });
+}
+
+const visibleFacts = facts.slice(0, MAX_VISIBLE_FACTS);
+---
+
+{
+  content && (
+    <section class="section section--surface section--service-standard">
+      <div class="container">
+        <div class="service-standard">
+          <div class="service-standard__media" aria-hidden="true">
+            <picture>
+              <>
+                <source
+                  srcset="/assets/images/service-work-1-mobile.webp"
+                  media="(max-width: 719px)"
+                  type="image/webp"
+                />
+                <img
+                  class="service-standard__photo service-standard__photo--main"
+                  src="/assets/images/service-work-1.webp"
+                  alt=""
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                />
+              </>
+            </picture>
+            <picture>
+              <>
+                <source
+                  srcset="/assets/images/service-work-2-mobile.webp"
+                  media="(max-width: 719px)"
+                  type="image/webp"
+                />
+                <img
+                  class="service-standard__photo service-standard__photo--detail"
+                  src="/assets/images/service-work-2.webp"
+                  alt=""
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                />
+              </>
+            </picture>
+          </div>
+          <div class="service-standard__content">
+            <>
+              <p class="service-standard__eyebrow">{standard.title}</p>
+              <h2 class="section__title">{content.subtitle}</h2>
+              <p class="section__lead">{standard.lead}</p>
+              <p class="service-standard__intro">{content.intro}</p>
+            </>
+            {visibleFacts.length > 0 && (
+              <div class="service-standard__facts">
+                {visibleFacts.map((fact) => (
+                  <article class="service-standard__fact">
+                    <span class="service-standard__fact-label">
+                      {fact.group.replace(TRAILING_COLON_PATTERN, "")}
+                    </span>
+                    <p set:html={fact.text} />
+                  </article>
+                ))}
+              </div>
+            )}
+            <div class="section__actions">
+              <a
+                class="button button--primary"
+                href={`tel:${phone}`}
+                {...ga.contact(
+                  ContactMethod.Call,
+                  TrackingLocation.HomeServiceStandard,
+                )}
+              >
+                {callLabel}
+              </a>
+              <a
+                class="button button--ghost"
+                href={contactsPath}
+                {...ga.content(
+                  ContentType.SectionCta,
+                  TrackingLocation.HomeServiceStandard,
+                  "contacts",
+                )}
+              >
+                {contactsLabel}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

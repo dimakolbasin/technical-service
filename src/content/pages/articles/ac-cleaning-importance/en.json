@@ -1,0 +1,188 @@
+{
+  "title": "Why regular AC cleaning matters in Batumi",
+  "lead": "Humid seaside climate clogs filters faster, weakens cooling, and increases energy use. On-site service in Batumi.",
+  "heading": "AC cleaning in Batumi: why and how often",
+  "sections": [
+    {
+      "title": "Why seaside climate speeds up buildup",
+      "items": [
+        "High humidity accelerates buildup and odors.",
+        "Salt and dust settle on filters and the coil.",
+        "Heavy summer use increases condensate."
+      ]
+    },
+    {
+      "title": "Benefits of regular cleaning",
+      "items": [
+        "Stable cooling without overheating.",
+        "Fewer odors.",
+        "Lower energy use and reduced compressor load.",
+        "Longer equipment life."
+      ]
+    },
+    {
+      "title": "How often to clean",
+      "items": [
+        "Filters — every 1–2 months in season.",
+        "Full service — 1–2 times a year.",
+        "If cooling is weak or there is odor — earlier."
+      ]
+    },
+    {
+      "title": "When to stop using the appliance",
+      "items": [
+        "Plan cleaning before peak summer.",
+        "Do not wait for strong odor or leakage.",
+        "Check filters more often near the sea."
+      ]
+    },
+    {
+      "title": "What to prepare before contacting us",
+      "items": [
+        "Cleaning frequency depends on humidity, usage, rental turnover and drainage condition."
+      ]
+    },
+    {
+      "title": "Common user mistakes",
+      "items": [
+        "The first mistake is to wait until odor becomes permanent. The appliance keeps working under load while the cause remains.",
+        "The second mistake is to install wet filters right after washing. It can make the component harder to inspect and complicate diagnostics.",
+        "The third mistake is to spray household chemicals onto the board or motor. Before any check, power, water/gas and workspace safety matter."
+      ]
+    },
+    {
+      "title": "What not to do",
+      "items": [
+        "Do not open closed assemblies if you do not know where the fasteners, sensors and wires are located.",
+        "Do not buy a part based only on forum advice: similar symptoms often have different causes.",
+        "Do not hide previous DIY attempts from the technician: it saves time and reduces repeat mistakes."
+      ]
+    },
+    {
+      "title": "When to call a technician urgently",
+      "items": [
+        "Call a technician sooner if water comes from the unit or mold smell is strong. In this situation it is better to stop the appliance and not wait for another cycle.",
+        "Urgent service is especially important in upper-floor apartments and kitchens with tight built-in furniture.",
+        "Batumi humidity also matters: after a leak or condensate, contacts oxidize faster."
+      ]
+    },
+    {
+      "title": "DIY repair risks",
+      "items": [
+        "The main DIY risk is that dirt can move deeper into the fan and drain. After that, repair can cost more than the first diagnostic visit.",
+        "Built-in appliances add risk: cabinet fronts, hoses, cables or nearby kitchen modules can be damaged.",
+        "The safe minimum before a visit is to disconnect power, close water or gas if needed, and clear access to the appliance."
+      ]
+    },
+    {
+      "title": "What to prepare before the technician arrives",
+      "items": [
+        "Clear access to the room: remove mats, baskets, dishes or food near the appliance so the technician can inspect the air conditioner without unnecessary furniture work.",
+        "Write down the model and approximate age. If there is an error on the display, take a photo before switching the appliance off; it helps connect the symptom to a specific component.",
+        "Explain when the issue appeared: after moving, voltage drop, cleaning, leakage, long idle period or a normal cycle. These details often shorten diagnostics.",
+        "For built-in appliances, check whether doors, kickboards or side panels can be opened. In Batumi seaside apartments, tight kitchen layouts often affect repair time."
+      ]
+    },
+    {
+      "title": "How on-site diagnostics usually works",
+      "items": [
+        "Diagnostics starts with safe checks: power, connection, visible water traces, overheating signs or mechanical damage. Internal assemblies are checked only after that.",
+        "For cleaning, the technician checks the filters, evaporator, fan wheel and drain. The sequence goes from simple to complex to avoid replacing working parts.",
+        "When the cause is found, the technician shows the failed part or test result, explains repair options and agrees the price before the main work starts.",
+        "At the end, a short test is needed: program start, heating, draining, cooling or ignition. Without this test it is hard to confirm that the issue is fixed."
+      ]
+    },
+    {
+      "title": "What affects the final cost",
+      "items": [
+        "The price depends not only on the fault name, but also on model, access to the component, condition of fasteners, moisture traces and whether a spare part is needed.",
+        "For apartments in the center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio, on-site diagnostics is often easier than moving the appliance.",
+        "If the repair is not worth it after inspection, the technician should say so before any part is purchased. This matters for older appliances and rare models.",
+        "Prices on the page give a realistic range, but the final cost is fixed only after checking the exact appliance and agreeing the work scope."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Price guide",
+    "items": [
+      {
+        "label": "Basic cleaning",
+        "value": "from 70 GEL",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 70
+        }
+      },
+      {
+        "label": "Full cleaning",
+        "value": "from 100 GEL",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 100
+        }
+      },
+      {
+        "label": "Antibacterial treatment",
+        "value": "from 120 GEL",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 120
+        }
+      }
+    ],
+    "note": "Cost depends on condition and access."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Can I clean it myself?",
+        "answer": "You can rinse filters, but full cleaning is best done by a technician."
+      },
+      {
+        "question": "What happens if I skip cleaning?",
+        "answer": "Cooling weakens, energy use goes up, and odors appear."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need AC cleaning?",
+    "text": "We can schedule a convenient time in Batumi.",
+    "button": "Call now"
+  },
+  "related": {
+    "title": "Related services",
+    "items": [
+      {
+        "key": "ac-cleaning",
+        "title": "Air conditioner cleaning",
+        "text": "Service and disinfection."
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Transparent pricing and terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Open",
+    "lead": "Useful guides, prices and contact options for this service."
+  },
+  "description": "Humid seaside climate clogs filters faster, weakens cooling, and increases energy use. On-site service in Batumi.",
+  "diagnosisSteps": {
+    "title": "Diagnostic workflow",
+    "lead": "How to separate a safe check from a technician-level fault.",
+    "items": [
+      "Cleaning frequency depends on humidity, usage, rental turnover and drainage condition.",
+      "Plan cleaning before peak summer.",
+      "Do not wait for strong odor or leakage.",
+      "Check filters more often near the sea."
+    ]
+  },
+  "datePublished": "2026-05-12",
+  "dateModified": "2026-05-13"
+}

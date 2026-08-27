@@ -1,0 +1,1322 @@
+{
+  "title": "ბატუმში ტექნიკის შეკეთების ფასები | Tech Fix",
+  "lead": "გამჭვირვალე ფასები საოჯახო ტექნიკის შეკეთებაზე ბათუმში. დიაგნოსტიკა, გამოძახება, ფასის შეთანხმება და გარანტია.",
+  "heading": "საოჯახო ტექნიკის შეკეთების ფასები ბათუმში",
+  "sections": [
+    {
+      "title": "ფასების მაგალითები",
+      "lead": "საბოლოო ფასი დამოკიდებულია მოდელსა და დეტალებზე.",
+      "items": [
+        {
+          "label": "დიაგნოსტიკა (რემონტზე უარის შემთხვევაში)",
+          "value": "20 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 20
+          }
+        },
+        {
+          "label": "კონდიციონერის მომსახურება",
+          "value": "70 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 70
+          }
+        },
+        {
+          "label": "სარეცხი და ჭურჭლის სარეცხი მანქანის რემონტი",
+          "value": "80 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80
+          }
+        },
+        {
+          "label": "გაზის / ელექტრო ქურის რემონტი",
+          "value": "90 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 90
+          }
+        },
+        {
+          "label": "ღუმელის რემონტი",
+          "value": "80 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80
+          }
+        },
+        {
+          "label": "მაცივრის რემონტი",
+          "value": "40 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 40
+          }
+        },
+        {
+          "label": "საშრობი მანქანის რემონტი",
+          "value": "50 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 50
+          }
+        },
+        {
+          "label": "გაზის ქვაბის რემონტი და მომსახურება",
+          "value": "40 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 40
+          }
+        }
+      ]
+    },
+    {
+      "title": "კონდიციონერები",
+      "items": [
+        {
+          "label": "შიდა ბლოკის ფილტრების წმენდა",
+          "value": "80-100 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80,
+            "maxPrice": 100
+          }
+        },
+        {
+          "label": "სრული კომპლექსური წმენდა (შიდა ბლოკი + დრენაჟი + ფილტრები)",
+          "value": "100-200 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 100,
+            "maxPrice": 200
+          }
+        },
+        {
+          "label": "ანტიბაქტერიული დამუშავება (დეზინფექცია)",
+          "value": "120 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 120
+          }
+        },
+        {
+          "label": "დრენაჟის სისტემის გამორეცხვა",
+          "value": "90 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 90
+          }
+        },
+        {
+          "label": "ვენტილატორისა და გარე კორპუსის წმენდა",
+          "value": "110 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 110
+          }
+        },
+        {
+          "label": "მარტივი ნაწილობრივი წმენდა",
+          "value": "60 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 60
+          }
+        }
+      ],
+      "note": "საბოლოო ღირებულება დამოკიდებულია მოდელზე, დეტალებთან წვდომასა და სათადარიგო ნაწილების ფასზე."
+    },
+    {
+      "title": "სარეცხი მანქანები",
+      "groups": [
+        {
+          "title": "მექანიკა",
+          "items": [
+            {
+              "label": "საკისრების შეცვლა",
+              "value": "300–450 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 300,
+                "maxPrice": 450
+              }
+            },
+            {
+              "label": "ამორტიზატორების შეცვლა",
+              "value": "100–150 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "ბარაბნის ჯვარის შეცვლა",
+              "value": "80–100 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "ლუქის მანჟეტის შეცვლა",
+              "value": "100–130 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 130
+              }
+            }
+          ]
+        },
+        {
+          "title": "წყლის ჩაშვება / აღება",
+          "items": [
+            {
+              "label": "სადრენაჟე ტუმბოს შეცვლა",
+              "value": "90–120 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 90,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "სადრენაჟე სისტემის წმენდა",
+              "value": "70 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 70
+              }
+            },
+            {
+              "label": "შემშვები სარქვლის შეცვლა",
+              "value": "120 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 120
+              }
+            },
+            {
+              "label": "გაჭედვის აღმოფხვრა",
+              "value": "50 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50
+              }
+            }
+          ]
+        },
+        {
+          "title": "ელექტროობა და მართვა",
+          "items": [
+            {
+              "label": "TEN-ის შეცვლა",
+              "value": "90–120 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 90,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "მართვის მოდულის შეკეთება / შეცვლა",
+              "value": "150–250 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "სენსორების შეცვლა (დონე, ტემპერატურა)",
+              "value": "60–80 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 80
+              }
+            },
+            {
+              "label": "დისპლეის შეცდომების აღმოფხვრა",
+              "value": "60–80 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "სხვა",
+          "items": [
+            {
+              "label": "გაჟონვის აღმოფხვრა",
+              "value": "60–100 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "ღვედის შეცვლა",
+              "value": "80–100 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "უცხო ხმები და ვიბრაცია",
+              "value": "60–90 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            }
+          ]
+        }
+      ],
+      "note": "საბოლოო ღირებულება დამოკიდებულია მოდელზე, დეტალებთან წვდომასა და სათადარიგო ნაწილების ფასზე."
+    },
+    {
+      "title": "ჭურჭლის სარეცხი მანქანები",
+      "groups": [
+        {
+          "title": "წყალი და დრენაჟი",
+          "items": [
+            {
+              "label": "ცირკულაციის ტუმბოს შეცვლა",
+              "value": "300–480 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 300,
+                "maxPrice": 480
+              }
+            },
+            {
+              "label": "სადრენაჟე ტუმბოს შეცვლა",
+              "value": "150–200 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "ფილტრებისა და სისტემის წმენდა",
+              "value": "100 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100
+              }
+            },
+            {
+              "label": "გაჟონვის აღმოფხვრა",
+              "value": "100–150 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            }
+          ]
+        },
+        {
+          "title": "გაცხელება და ელექტროობა",
+          "items": [
+            {
+              "label": "TEN-ის შეცვლა",
+              "value": "170–250 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 170,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "სენსორების შეცვლა",
+              "value": "140–200 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "მართვის მოდულის შეკეთება",
+              "value": "180–300 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 180,
+                "maxPrice": 300
+              }
+            }
+          ]
+        },
+        {
+          "title": "მექანიკა",
+          "items": [
+            {
+              "label": "კარის რეზინების შეცვლა",
+              "value": "140–200 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "კარის საკეტის შეკეთება / შეცვლა",
+              "value": "140–200 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "გამფრქვევების პრობლემების აღმოფხვრა",
+              "value": "140–200 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            }
+          ]
+        }
+      ],
+      "note": "საბოლოო ღირებულება დამოკიდებულია მოდელზე, დეტალებთან წვდომასა და სათადარიგო ნაწილების ფასზე."
+    },
+    {
+      "title": "ქურები და ზედაპირები",
+      "groups": [
+        {
+          "title": "გაზის",
+          "items": [
+            {
+              "label": "ფორსუნკების შეცვლა",
+              "value": "50–80 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            },
+            {
+              "label": "ელექტრო ანთების ბლოკის შეცვლა",
+              "value": "130–150 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 130,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "გაზის გაჟონვის აღმოფხვრა",
+              "value": "60–100 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "ალის რეგულირება",
+              "value": "50–80 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "ელექტრო",
+          "items": [
+            {
+              "label": "კონფორის შეცვლა",
+              "value": "100–180 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "სენსორული პანელის შეკეთება",
+              "value": "150–250 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "მართვის ბლოკის შეცვლა",
+              "value": "270–330 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 270,
+                "maxPrice": 330
+              }
+            },
+            {
+              "label": "შეცდომების აღმოფხვრა",
+              "value": "60–80 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 80
+              }
+            }
+          ]
+        }
+      ],
+      "note": "საბოლოო ღირებულება დამოკიდებულია მოდელზე, დეტალებთან წვდომასა და სათადარიგო ნაწილების ფასზე."
+    },
+    {
+      "title": "ღუმელები",
+      "items": [
+        {
+          "label": "TEN-ის შეცვლა (ზედა/ქვედა/გრილი)",
+          "value": "130–150 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 130,
+            "maxPrice": 150
+          }
+        },
+        {
+          "label": "კონვექციის ვენტილატორის შეცვლა",
+          "value": "130–150 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 130,
+            "maxPrice": 150
+          }
+        },
+        {
+          "label": "მართვის დაფის შეკეთება",
+          "value": "150–170 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 150,
+            "maxPrice": 170
+          }
+        },
+        {
+          "label": "თერმოსტატის შეცვლა",
+          "value": "100–150 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 100,
+            "maxPrice": 150
+          }
+        },
+        {
+          "label": "არათანაბარი გაცხელება",
+          "value": "80–120 ₾-დან",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80,
+            "maxPrice": 120
+          }
+        }
+      ],
+      "note": "საბოლოო ღირებულება დამოკიდებულია მოდელზე, დეტალებთან წვდომასა და სათადარიგო ნაწილების ფასზე."
+    },
+    {
+      "title": "მაცივრები",
+      "groups": [
+        {
+          "title": "მექანიკა და გაგრილების სისტემა",
+          "items": [
+            {
+              "label": "ფრეონის შევსება (მაცივარაგენტი)",
+              "value": "80–120 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "ფრეონის გაჟონვის აღმოფხვრა + შევსება",
+              "value": "120–180 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 120,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "კომპრესორის (ძრავის) შეცვლა",
+              "value": "150–250 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "კარის რეზინის შეცვლა",
+              "value": "45–70 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 45,
+                "maxPrice": 70
+              }
+            },
+            {
+              "label": "დრენაჟის სისტემის წმენდა (წყალი კამერაში)",
+              "value": "40–60 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 60
+              }
+            }
+          ]
+        },
+        {
+          "title": "ელექტროობა და მართვა",
+          "items": [
+            {
+              "label": "თერმორეგულატორის შეცვლა",
+              "value": "45–70 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 45,
+                "maxPrice": 70
+              }
+            },
+            {
+              "label": "გამშვები რელეს შეცვლა",
+              "value": "45–60 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 45,
+                "maxPrice": 60
+              }
+            },
+            {
+              "label": "No Frost ვენტილატორის შეცვლა",
+              "value": "60–90 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            },
+            {
+              "label": "მართვის მოდულის შეკეთება ან შეცვლა",
+              "value": "100–180 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "ტემპერატურის სენსორების შეცვლა (No Frost)",
+              "value": "50–80 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            },
+            {
+              "label": "გალღობის TEN-ის შეცვლა",
+              "value": "70–100 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 70,
+                "maxPrice": 100
+              }
+            }
+          ]
+        }
+      ],
+      "note": "საბოლოო ღირებულება დამოკიდებულია მოდელზე, დეტალებთან წვდომასა და სათადარიგო ნაწილების ფასზე."
+    },
+    {
+      "title": "საშრობი მანქანები",
+      "groups": [
+        {
+          "title": "მექანიკა და ამძრავი",
+          "items": [
+            {
+              "label": "ამძრავი ღვედის შეცვლა",
+              "value": "80–120 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "ბარაბნის საყრდენი როლიკების ან საკისრების შეცვლა",
+              "value": "100–180 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "ჰაერის ვენტილატორის შეცვლა",
+              "value": "100–150 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "კარის საკეტის ან ანჯამების შეცვლა",
+              "value": "60–90 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            }
+          ]
+        },
+        {
+          "title": "გაცხელება და ელექტრონიკა",
+          "items": [
+            {
+              "label": "TEN-ის შეცვლა",
+              "value": "130–200 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 130,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "მართვის მოდულის შეკეთება ან შეცვლა",
+              "value": "150–250 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "სენსორების შეცვლა (ტემპერატურა, ტენიანობა)",
+              "value": "60–90 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            }
+          ]
+        },
+        {
+          "title": "წმენდა და დრენაჟი",
+          "items": [
+            {
+              "label": "სადრენაჟე ტუმბოს შეცვლა",
+              "value": "90–130 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 90,
+                "maxPrice": 130
+              }
+            },
+            {
+              "label": "კომპლექსური წმენდა (ჰაერსადინარები, ბუსუსის ფილტრები, კონდენსატორი)",
+              "value": "80–120 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "დრენაჟის სისტემის გაჭედვის აღმოფხვრა",
+              "value": "50–70 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 70
+              }
+            }
+          ]
+        },
+        {
+          "title": "სხვა",
+          "items": [
+            {
+              "label": "უცხო ხმებისა და ვიბრაციის აღმოფხვრა",
+              "value": "60–100 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 100
+              }
+            }
+          ]
+        }
+      ],
+      "note": "საბოლოო ღირებულება დამოკიდებულია მოდელზე, დეტალებთან წვდომასა და სათადარიგო ნაწილების ფასზე."
+    },
+    {
+      "title": "გაზის ქვაბები",
+      "groups": [
+        {
+          "title": "სენსორები და ელექტრონიკა",
+          "items": [
+            {
+              "label": "ტემპერატურის სენსორის შეცვლა",
+              "value": "40–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 60
+              }
+            },
+            {
+              "label": "ელექტრო დაფის შეცვლა",
+              "value": "50–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 60
+              }
+            },
+            {
+              "label": "წევის გადაბრუნების სენსორის შეცვლა",
+              "value": "40–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 60
+              }
+            }
+          ]
+        },
+        {
+          "title": "სანთურა და ანთება",
+          "items": [
+            {
+              "label": "ელექტროდის შეცვლა სანთურის მოხსნის გარეშე",
+              "value": "40–50 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 50
+              }
+            },
+            {
+              "label": "ელექტროდის შეცვლა სანთურის მოხსნით",
+              "value": "40–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "სანთურის შეცვლა",
+              "value": "50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "თბომცვლელი და ჰიდრავლიკა",
+          "items": [
+            {
+              "label": "პირველადი თბომცვლელის შეცვლა",
+              "value": "120–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 120,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "მეორადი თბომცვლელის შეცვლა",
+              "value": "80–120 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "ცირკულაციის ტუმბოს შეცვლა",
+              "value": "80–120 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "გაჟონვის აღმოფხვრა / შუასადებების შეცვლა",
+              "value": "50–80 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "მომსახურება",
+          "items": [
+            {
+              "label": "კომპლექსური წმენდა და ტექნიკური მომსახურება",
+              "value": "80–120 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "თბომცვლელის გამორეცხვა ნადებისგან",
+              "value": "100–150 ₾-დან",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            }
+          ]
+        }
+      ],
+      "note": "საბოლოო ღირებულება დამოკიდებულია მოდელზე, დეტალებთან წვდომასა და სათადარიგო ნაწილების ფასზე."
+    }
+  ],
+  "importantNotes": [
+    "საბოლოო ღირებულება — დიაგნოსტიკის შემდეგ.",
+    "სათადარიგო ნაწილები იხდება ცალკე.",
+    "გარანტია ვრცელდება სამუშაოზე და დეტალებზე.",
+    "რემონტის დრო — 30 წუთიდან."
+  ],
+  "contactCard": {
+    "title": "ჩემი კონტაქტები",
+    "items": [
+      {
+        "label": "ტელეფონი",
+        "type": "phone"
+      },
+      {
+        "label": "Telegram",
+        "type": "telegram"
+      },
+      {
+        "label": "WhatsApp",
+        "value": "დაწერე",
+        "type": "whatsapp"
+      },
+      {
+        "label": "Viber",
+        "value": "დაწერე",
+        "type": "viber"
+      },
+      {
+        "label": "Facebook",
+        "type": "facebook"
+      },
+      {
+        "label": "Email",
+        "type": "email"
+      }
+    ]
+  },
+  "searchPhrases": {
+    "title": "ხშირად ეძებენ",
+    "groups": [
+      {
+        "title": "ტექნიკის შეკეთება",
+        "items": [
+          {
+            "text": "საოჯახო ტექნიკის შეკეთება ბათუმში",
+            "key": "services"
+          },
+          {
+            "text": "ტექნიკის შეკეთება ბათუმში",
+            "key": "services"
+          },
+          {
+            "text": "საოჯახო ტექნიკის შეკეთება",
+            "key": "services"
+          },
+          {
+            "text": "ტექნიკის ხელოსანი",
+            "key": "services"
+          },
+          {
+            "text": "ადგილზე ტექნიკის შეკეთება",
+            "key": "services"
+          }
+        ]
+      },
+      {
+        "title": "სარეცხი მანქანები",
+        "items": [
+          {
+            "text": "სარეცხი მანქანის რემონტი ბათუმში",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანის რემონტი",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანის პრობლემები",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანის შეკეთება ბათუმში",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანის ხელოსანი ბათუმში",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანის შეკეთება",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანის ხელოსანი",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანის გამოძახებით შეკეთება",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანა წყალს არ ცლის",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანა არ წურავს",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანა ჟონავს",
+            "key": "washing-machines"
+          },
+          {
+            "text": "სარეცხი მანქანა ხმაურობს",
+            "key": "washing-machines"
+          }
+        ]
+      },
+      {
+        "title": "ჭურჭლის სარეცხი მანქანები",
+        "items": [
+          {
+            "text": "ჭურჭლის სარეცხი მანქანის რემონტი ბათუმში",
+            "key": "dishwashers"
+          },
+          {
+            "text": "ჭურჭლის სარეცხი მანქანის შეკეთება ბათუმში",
+            "key": "dishwashers"
+          },
+          {
+            "text": "ჭურჭლის სარეცხის შეკეთება",
+            "key": "dishwashers"
+          },
+          {
+            "text": "ჭურჭლის სარეცხი მანქანის ხელოსანი",
+            "key": "dishwashers"
+          },
+          {
+            "text": "ჭურჭლის სარეცხი არ ცლის წყალს",
+            "key": "dishwashers"
+          },
+          {
+            "text": "ჭურჭლის სარეცხი ჟონავს",
+            "key": "dishwashers"
+          },
+          {
+            "text": "ჭურჭლის სარეცხი ცუდად რეცხავს",
+            "key": "dishwashers"
+          },
+          {
+            "text": "ჭურჭლის სარეცხი არ აცხელებს",
+            "key": "dishwashers"
+          },
+          {
+            "text": "ჭურჭლის სარეცხის გამოძახებით შეკეთება",
+            "key": "dishwashers"
+          }
+        ]
+      },
+      {
+        "title": "მაცივრები",
+        "items": [
+          {
+            "text": "მაცივრის რემონტი ბათუმში",
+            "key": "refrigerators"
+          },
+          {
+            "text": "მაცივრების რემონტი",
+            "key": "refrigerators"
+          },
+          {
+            "text": "მაცივრის შეკეთება",
+            "key": "refrigerators"
+          },
+          {
+            "text": "მაცივრის ხელოსანი",
+            "key": "refrigerators"
+          },
+          {
+            "text": "მაცივრის გამოძახებით შეკეთება",
+            "key": "refrigerators"
+          },
+          {
+            "text": "მაცივარი არ აცივებს",
+            "key": "refrigerators"
+          },
+          {
+            "text": "მაცივარი ჟონავს",
+            "key": "refrigerators"
+          },
+          {
+            "text": "No Frost მაცივრის რემონტი",
+            "key": "refrigerators"
+          },
+          {
+            "text": "საყინულე არ ყინავს",
+            "key": "refrigerators"
+          }
+        ]
+      },
+      {
+        "title": "კონდიციონერები",
+        "items": [
+          {
+            "text": "კონდიციონერის წმენდა ბათუმში",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "კონდიციონერის გაწმენდა",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "კონდერის წმენდა",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "კონდიციონერის მომსახურება",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "კონდიციონერის ხელოსანი",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "კონდიციონერი ცუდად აცივებს",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "კონდიციონერიდან წყალი ჟონავს",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "კონდიციონერის გამოძახებით წმენდა",
+            "key": "ac-cleaning"
+          }
+        ]
+      },
+      {
+        "title": "გაზის ქვაბები",
+        "items": [
+          {
+            "text": "გაზის ქვაბის რემონტი ბათუმში",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "ქვაბის რემონტი ბათუმში",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "გაზის ქვაბების რემონტი ბათუმში",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "გაზის ქვაბების რემონტი",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "გაზის ქვაბის ხელოსანი",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "გაზის ქვაბის შეკეთება",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "ქვაბის შეკეთება ახლოს",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "გაზის ქვაბის ხელოსანი ახლოს",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "გაზის ქვაბის მომსახურება",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "ქვაბი არ ინთება",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "ქვაბი წყალს ცუდად აცხელებს",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "ქვაბში წნევა ეცემა",
+            "key": "gas-boilers"
+          }
+        ]
+      },
+      {
+        "title": "საშრობი მანქანები",
+        "items": [
+          {
+            "text": "საშრობი მანქანის რემონტი ბათუმში",
+            "key": "dryers"
+          },
+          {
+            "text": "საშრობის შეკეთება",
+            "key": "dryers"
+          },
+          {
+            "text": "საშრობი მანქანის ხელოსანი",
+            "key": "dryers"
+          },
+          {
+            "text": "საშრობი მანქანის გამოძახებით შეკეთება",
+            "key": "dryers"
+          },
+          {
+            "text": "საშრობი არ აშრობს",
+            "key": "dryers"
+          },
+          {
+            "text": "საშრობი არ ცხელდება",
+            "key": "dryers"
+          },
+          {
+            "text": "საშრობი ხმაურობს",
+            "key": "dryers"
+          },
+          {
+            "text": "საშრობი კონდენსატს არ ცლის",
+            "key": "dryers"
+          }
+        ]
+      },
+      {
+        "title": "ღუმელები",
+        "items": [
+          {
+            "text": "ღუმელის რემონტი ბათუმში",
+            "key": "ovens"
+          },
+          {
+            "text": "ღუმელის შეკეთება",
+            "key": "ovens"
+          },
+          {
+            "text": "ჩაშენებული ღუმელის რემონტი",
+            "key": "ovens"
+          },
+          {
+            "text": "ღუმელის ხელოსანი",
+            "key": "ovens"
+          },
+          {
+            "text": "ღუმელი არ თბება",
+            "key": "ovens"
+          },
+          {
+            "text": "ღუმელი ცუდად აცხობს",
+            "key": "ovens"
+          },
+          {
+            "text": "ღუმელი ტემპერატურას ვერ იჭერს",
+            "key": "ovens"
+          },
+          {
+            "text": "ელექტრო ღუმელის რემონტი",
+            "key": "ovens"
+          }
+        ]
+      },
+      {
+        "title": "ქურის ზედაპირები",
+        "items": [
+          {
+            "text": "ქურის ზედაპირის რემონტი ბათუმში",
+            "key": "hobs"
+          },
+          {
+            "text": "ქურის შეკეთება ბათუმში",
+            "key": "hobs"
+          },
+          {
+            "text": "ქურის შეკეთება",
+            "key": "hobs"
+          },
+          {
+            "text": "გაზქურის რემონტი",
+            "key": "hobs"
+          },
+          {
+            "text": "ელექტრო ქურის რემონტი",
+            "key": "hobs"
+          },
+          {
+            "text": "ქურის ხელოსანი",
+            "key": "hobs"
+          },
+          {
+            "text": "კონფორი არ ინთება",
+            "key": "hobs"
+          },
+          {
+            "text": "ქურის ზედაპირი არ ირთვება",
+            "key": "hobs"
+          },
+          {
+            "text": "სენსორული პანელი არ მუშაობს",
+            "key": "hobs"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "ბატუმში საოჯახო ტექნიკის შეკეთების ფასები: დიაგნოსტიკა, გამოძახება, სარეცხი მანქანები, მაცივრები, ჭურჭლის სარეცხები, ღუმელები, კონდიციონერები და ქვაბები."
+}

@@ -1,0 +1,1323 @@
+{
+  "title": "Цены на ремонт бытовой техники в Батуми | Tech Fix",
+  "lead": "Прозрачные цены на ремонт бытовой техники в Батуми. Диагностика, выезд, согласование стоимости до ремонта и гарантия.",
+  "heading": "Цены на ремонт бытовой техники в Батуми",
+  "sections": [
+    {
+      "title": "Примерные цены",
+      "lead": "Окончательная стоимость зависит от модели и деталей.",
+      "items": [
+        {
+          "label": "Диагностика (при отказе от ремонта)",
+          "value": "20 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 20
+          }
+        },
+        {
+          "label": "Обслуживание кондиционера",
+          "value": "от 70 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 70
+          }
+        },
+        {
+          "label": "Ремонт стиральной и посудомоечной машины",
+          "value": "от 80 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80
+          }
+        },
+        {
+          "label": "Ремонт варочной плиты (газовой / электрической)",
+          "value": "от 90 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 90
+          }
+        },
+        {
+          "label": "Ремонт духового шкафа",
+          "value": "от 80 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80
+          }
+        },
+        {
+          "label": "Ремонт холодильника",
+          "value": "от 40 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 40
+          }
+        },
+        {
+          "label": "Ремонт сушильной машины",
+          "value": "от 50 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 50
+          }
+        },
+        {
+          "label": "Ремонт и обслуживание газового котла",
+          "value": "от 40 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 40
+          }
+        }
+      ]
+    },
+    {
+      "title": "Кондиционеры",
+      "items": [
+        {
+          "label": "Чистка фильтров внутреннего блока",
+          "value": "80-100 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80,
+            "maxPrice": 100
+          }
+        },
+        {
+          "label": "Комплексная полная чистка (внутренний блок + дренаж + фильтры)",
+          "value": "100-200 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 100,
+            "maxPrice": 200
+          }
+        },
+        {
+          "label": "Антибактериальная обработка (дезинфекция)",
+          "value": "120 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 120
+          }
+        },
+        {
+          "label": "Промывание дренажной системы",
+          "value": "90 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 90
+          }
+        },
+        {
+          "label": "Чистка вентилятора и внешнего корпуса",
+          "value": "110 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 110
+          }
+        },
+        {
+          "label": "Простая частичная чистка",
+          "value": "60 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 60
+          }
+        }
+      ],
+      "note": "Точная стоимость зависит от модели, доступа к узлам и стоимости деталей."
+    },
+    {
+      "title": "Стиральные машины",
+      "groups": [
+        {
+          "title": "Механика",
+          "items": [
+            {
+              "label": "Замена подшипников",
+              "value": "от 300–450 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 300,
+                "maxPrice": 450
+              }
+            },
+            {
+              "label": "Замена амортизаторов",
+              "value": "от 100–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "Замена крестовины",
+              "value": "от 80–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "Замена манжеты люка",
+              "value": "от 100–130 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 130
+              }
+            }
+          ]
+        },
+        {
+          "title": "Слив / набор воды",
+          "items": [
+            {
+              "label": "Замена сливного насоса",
+              "value": "от 90–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 90,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Чистка сливной системы",
+              "value": "70 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 70
+              }
+            },
+            {
+              "label": "Замена заливного клапана",
+              "value": "от 120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 120
+              }
+            },
+            {
+              "label": "Устранение засора",
+              "value": "50 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50
+              }
+            }
+          ]
+        },
+        {
+          "title": "Электрика и управление",
+          "items": [
+            {
+              "label": "Замена ТЭНа",
+              "value": "от 90–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 90,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Ремонт / замена модуля управления",
+              "value": "от 150–250 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "Замена датчиков (уровня, температуры)",
+              "value": "от 60–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 80
+              }
+            },
+            {
+              "label": "Устранение ошибок на дисплее",
+              "value": "от 60–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "Прочее",
+          "items": [
+            {
+              "label": "Устранение протечек",
+              "value": "от 60–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "Замена ремня",
+              "value": "от 80–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "Посторонние шумы, вибрации",
+              "value": "от 60–90 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            }
+          ]
+        }
+      ],
+      "note": "Точная стоимость зависит от модели, доступа к узлам и стоимости деталей."
+    },
+    {
+      "title": "Посудомоечные машины",
+      "groups": [
+        {
+          "title": "Вода и слив",
+          "items": [
+            {
+              "label": "Замена циркуляционного насоса",
+              "value": "от 300–480 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 300,
+                "maxPrice": 480
+              }
+            },
+            {
+              "label": "Замена сливного насоса",
+              "value": "от 150–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "Чистка фильтров и системы",
+              "value": "от 100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100
+              }
+            },
+            {
+              "label": "Устранение протечек",
+              "value": "от 100–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            }
+          ]
+        },
+        {
+          "title": "Нагрев и электрика",
+          "items": [
+            {
+              "label": "Замена ТЭНа",
+              "value": "от 170–250 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 170,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "Замена датчиков",
+              "value": "от 140–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "Ремонт модуля управления",
+              "value": "от 180–300 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 180,
+                "maxPrice": 300
+              }
+            }
+          ]
+        },
+        {
+          "title": "Механика",
+          "items": [
+            {
+              "label": "Замена уплотнителей двери",
+              "value": "от 140–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "Ремонт / замена замка двери",
+              "value": "от 140–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "Устранение проблем с распылителями",
+              "value": "от 140–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            }
+          ]
+        }
+      ],
+      "note": "Точная стоимость зависит от модели, доступа к узлам и стоимости деталей."
+    },
+    {
+      "title": "Варочные панели",
+      "groups": [
+        {
+          "title": "Газовые",
+          "items": [
+            {
+              "label": "Замена форсунок",
+              "value": "от 50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            },
+            {
+              "label": "Замена блока электроподжига",
+              "value": "от 130–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 130,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "Устранение утечки газа",
+              "value": "от 60–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "Регулировка пламени",
+              "value": "от 50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "Электрические",
+          "items": [
+            {
+              "label": "Замена конфорки",
+              "value": "от 100–180 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "Ремонт сенсорной панели",
+              "value": "от 150–250 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "Замена блока управления",
+              "value": "от 270–330 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 270,
+                "maxPrice": 330
+              }
+            },
+            {
+              "label": "Устранение ошибок",
+              "value": "от 60–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 80
+              }
+            }
+          ]
+        }
+      ],
+      "note": "Точная стоимость зависит от модели, доступа к узлам и стоимости деталей."
+    },
+    {
+      "title": "Духовые шкафы",
+      "items": [
+        {
+          "label": "Замена ТЭНа (верх/низ/гриль)",
+          "value": "от 130–150 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 130,
+            "maxPrice": 150
+          }
+        },
+        {
+          "label": "Замена вентилятора конвекции",
+          "value": "от 130–150 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 130,
+            "maxPrice": 150
+          }
+        },
+        {
+          "label": "Ремонт платы управления",
+          "value": "от 150–170 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 150,
+            "maxPrice": 170
+          }
+        },
+        {
+          "label": "Замена термостата",
+          "value": "от 100–150 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 100,
+            "maxPrice": 150
+          }
+        },
+        {
+          "label": "Неравномерный нагрев",
+          "value": "от 80–120 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80,
+            "maxPrice": 120
+          }
+        }
+      ],
+      "note": "Точная стоимость зависит от модели, доступа к узлам и стоимости деталей."
+    },
+    {
+      "title": "Холодильники",
+      "groups": [
+        {
+          "title": "Механика и охлаждающая система",
+          "items": [
+            {
+              "label": "Заправка фреоном (хладагентом)",
+              "value": "от 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Устранение утечки фреона + заправка",
+              "value": "от 120–180 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 120,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "Замена компрессора (мотора)",
+              "value": "от 150–250 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "Замена уплотнительной резинки двери",
+              "value": "от 45–70 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 45,
+                "maxPrice": 70
+              }
+            },
+            {
+              "label": "Чистка дренажной системы (устранение воды в камере)",
+              "value": "от 40–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 60
+              }
+            }
+          ]
+        },
+        {
+          "title": "Электрика и управление",
+          "items": [
+            {
+              "label": "Замена терморегулятора (термостата)",
+              "value": "от 45–70 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 45,
+                "maxPrice": 70
+              }
+            },
+            {
+              "label": "Замена пускозащитного реле",
+              "value": "от 45–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 45,
+                "maxPrice": 60
+              }
+            },
+            {
+              "label": "Замена вентилятора обдува (система No Frost)",
+              "value": "от 60–90 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            },
+            {
+              "label": "Ремонт или замена модуля управления (электронной платы)",
+              "value": "от 100–180 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "Замена датчиков температуры (No Frost)",
+              "value": "от 50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            },
+            {
+              "label": "Замена ТЭНа оттайки",
+              "value": "от 70–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 70,
+                "maxPrice": 100
+              }
+            }
+          ]
+        }
+      ],
+      "note": "Точная стоимость зависит от модели, доступа к узлам и стоимости деталей."
+    },
+    {
+      "title": "Сушильные машины",
+      "groups": [
+        {
+          "title": "Механика и привод",
+          "items": [
+            {
+              "label": "Замена ремня привода",
+              "value": "от 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Замена опорных роликов или подшипников барабана",
+              "value": "от 100–180 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "Замена вентилятора обдува",
+              "value": "от 100–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "Замена замка или петель дверцы",
+              "value": "от 60–90 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            }
+          ]
+        },
+        {
+          "title": "Нагрев и электроника",
+          "items": [
+            {
+              "label": "Замена ТЭНа (нагревательного элемента)",
+              "value": "от 130–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 130,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "Ремонт или замена модуля управления",
+              "value": "от 150–250 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "Замена датчиков (температуры, влажности)",
+              "value": "от 60–90 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            }
+          ]
+        },
+        {
+          "title": "Очистка и слив",
+          "items": [
+            {
+              "label": "Замена сливного насоса (помпы)",
+              "value": "от 90–130 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 90,
+                "maxPrice": 130
+              }
+            },
+            {
+              "label": "Комплексная чистка (воздуховодов, ворсовых фильтров, конденсатора)",
+              "value": "от 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Устранение засора дренажной системы",
+              "value": "от 50–70 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 70
+              }
+            }
+          ]
+        },
+        {
+          "title": "Прочее",
+          "items": [
+            {
+              "label": "Устранение посторонних шумов и вибраций",
+              "value": "от 60–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 100
+              }
+            }
+          ]
+        }
+      ],
+      "note": "Точная стоимость зависит от модели, доступа к узлам и стоимости деталей."
+    },
+    {
+      "title": "Газовые котлы",
+      "groups": [
+        {
+          "title": "Датчики и электроника",
+          "items": [
+            {
+              "label": "Замена датчика температуры",
+              "value": "40–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 60
+              }
+            },
+            {
+              "label": "Замена электрической платы",
+              "value": "50–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 60
+              }
+            },
+            {
+              "label": "Замена датчика опрокидывания тяги",
+              "value": "40–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 60
+              }
+            }
+          ]
+        },
+        {
+          "title": "Горелка и розжиг",
+          "items": [
+            {
+              "label": "Замена электрода без монтажа горелки",
+              "value": "40–50 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 50
+              }
+            },
+            {
+              "label": "Замена электрода с монтажом горелки",
+              "value": "40–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "Замена горелки",
+              "value": "50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "Теплообменник и гидравлика",
+          "items": [
+            {
+              "label": "Замена первичного теплообменника",
+              "value": "120–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 120,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "Замена вторичного теплообменника",
+              "value": "от 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Замена циркуляционного насоса",
+              "value": "от 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Устранение течи / замена прокладок",
+              "value": "от 50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "Обслуживание",
+          "items": [
+            {
+              "label": "Комплексная чистка и техническое обслуживание (ТО)",
+              "value": "от 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Промывка теплообменника (от накипи)",
+              "value": "от 100–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            }
+          ]
+        }
+      ],
+      "note": "Точная стоимость зависит от модели, доступа к узлам и стоимости деталей."
+    }
+  ],
+  "importantNotes": [
+    "Окончательная стоимость определяется после диагностики.",
+    "Запчасти оплачиваются отдельно.",
+    "Гарантия на работу и запчасти.",
+    "Срок ремонта — от 30 минут."
+  ],
+  "contactCard": {
+    "title": "Мои контакты",
+    "items": [
+      {
+        "label": "Телефон",
+        "type": "phone"
+      },
+      {
+        "label": "Telegram",
+        "value": "@MasterBatumi_Maksim",
+        "type": "telegram"
+      },
+      {
+        "label": "WhatsApp",
+        "value": "Написать",
+        "type": "whatsapp"
+      },
+      {
+        "label": "Viber",
+        "value": "Написать",
+        "type": "viber"
+      },
+      {
+        "label": "Facebook",
+        "type": "facebook"
+      },
+      {
+        "label": "Email",
+        "type": "email"
+      }
+    ]
+  },
+  "searchPhrases": {
+    "title": "Часто ищут",
+    "groups": [
+      {
+        "title": "Ремонт техники",
+        "items": [
+          {
+            "text": "ремонт бытовой техники в Батуми",
+            "key": "services"
+          },
+          {
+            "text": "ремонт техники в Батуми",
+            "key": "services"
+          },
+          {
+            "text": "ремонт бытовой техники",
+            "key": "services"
+          },
+          {
+            "text": "мастер по ремонту бытовой техники",
+            "key": "services"
+          },
+          {
+            "text": "выездной ремонт техники",
+            "key": "services"
+          }
+        ]
+      },
+      {
+        "title": "Стиральные машины",
+        "items": [
+          {
+            "text": "ремонт стиралки в Батуми",
+            "key": "washing-machines"
+          },
+          {
+            "text": "ремонт стиралок в Батуми",
+            "key": "washing-machines"
+          },
+          {
+            "text": "мастер по стиралкам",
+            "key": "washing-machines"
+          },
+          {
+            "text": "починить стиралку",
+            "key": "washing-machines"
+          },
+          {
+            "text": "ремонт стиральной машинки",
+            "key": "washing-machines"
+          },
+          {
+            "text": "ремонт стиральной машины",
+            "key": "washing-machines"
+          },
+          {
+            "text": "мастер по стиральным машинам",
+            "key": "washing-machines"
+          },
+          {
+            "text": "починить стиральную машину",
+            "key": "washing-machines"
+          },
+          {
+            "text": "проблемы со стиральной машиной",
+            "key": "washing-machines"
+          },
+          {
+            "text": "стиралка не сливает",
+            "key": "washing-machines"
+          },
+          {
+            "text": "стиралка не отжимает",
+            "key": "washing-machines"
+          },
+          {
+            "text": "стиралка течет",
+            "key": "washing-machines"
+          }
+        ]
+      },
+      {
+        "title": "Посудомоечные машины",
+        "items": [
+          {
+            "text": "ремонт посудомойки в Батуми",
+            "key": "dishwashers"
+          },
+          {
+            "text": "ремонт посудомоек в Батуми",
+            "key": "dishwashers"
+          },
+          {
+            "text": "ремонт посудомоечных машин",
+            "key": "dishwashers"
+          },
+          {
+            "text": "мастер по посудомойкам",
+            "key": "dishwashers"
+          },
+          {
+            "text": "починить посудомойку",
+            "key": "dishwashers"
+          },
+          {
+            "text": "посудомойка не сливает",
+            "key": "dishwashers"
+          },
+          {
+            "text": "посудомойка течет",
+            "key": "dishwashers"
+          },
+          {
+            "text": "посудомойка плохо моет",
+            "key": "dishwashers"
+          },
+          {
+            "text": "посудомойка не греет воду",
+            "key": "dishwashers"
+          }
+        ]
+      },
+      {
+        "title": "Холодильники",
+        "items": [
+          {
+            "text": "ремонт холодильника в Батуми",
+            "key": "refrigerators"
+          },
+          {
+            "text": "ремонт холодильников в Батуми",
+            "key": "refrigerators"
+          },
+          {
+            "text": "ремонт холодильников",
+            "key": "refrigerators"
+          },
+          {
+            "text": "мастер по холодильникам",
+            "key": "refrigerators"
+          },
+          {
+            "text": "починить холодильник",
+            "key": "refrigerators"
+          },
+          {
+            "text": "починить холодос",
+            "key": "refrigerators"
+          },
+          {
+            "text": "холодильник не морозит",
+            "key": "refrigerators"
+          },
+          {
+            "text": "холодильник течет",
+            "key": "refrigerators"
+          },
+          {
+            "text": "ремонт No Frost",
+            "key": "refrigerators"
+          }
+        ]
+      },
+      {
+        "title": "Кондиционеры",
+        "items": [
+          {
+            "text": "чистка кондиционера в Батуми",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "чистка кондера в Батуми",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "чистка кондеров",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "обслуживание кондера",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "мастер по кондиционерам",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "почистить кондиционер",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "кондер плохо охлаждает",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "кондиционер течет",
+            "key": "ac-cleaning"
+          }
+        ]
+      },
+      {
+        "title": "Газовые котлы",
+        "items": [
+          {
+            "text": "ремонт газового котла в Батуми",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "ремонт котлов в Батуми",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "ремонт газовых котлов",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "ремонт газовых котлов в Батуми",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "ремонт газового котла рядом",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "мастер по газовым котлам рядом",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "мастер по газовым котлам",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "починить газовый котел",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "обслуживание газового котла",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "котел не зажигается",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "котел плохо греет воду",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "котел падает давление",
+            "key": "gas-boilers"
+          }
+        ]
+      },
+      {
+        "title": "Сушильные машины",
+        "items": [
+          {
+            "text": "ремонт сушильной машины в Батуми",
+            "key": "dryers"
+          },
+          {
+            "text": "ремонт сушилок в Батуми",
+            "key": "dryers"
+          },
+          {
+            "text": "мастер по сушилкам",
+            "key": "dryers"
+          },
+          {
+            "text": "починить сушилку",
+            "key": "dryers"
+          },
+          {
+            "text": "сушилка не сушит",
+            "key": "dryers"
+          },
+          {
+            "text": "сушилка шумит",
+            "key": "dryers"
+          },
+          {
+            "text": "сушилка не греет",
+            "key": "dryers"
+          },
+          {
+            "text": "сушилка не сливает конденсат",
+            "key": "dryers"
+          }
+        ]
+      },
+      {
+        "title": "Духовки",
+        "items": [
+          {
+            "text": "ремонт духовки в Батуми",
+            "key": "ovens"
+          },
+          {
+            "text": "ремонт духовок в Батуми",
+            "key": "ovens"
+          },
+          {
+            "text": "ремонт духового шкафа",
+            "key": "ovens"
+          },
+          {
+            "text": "мастер по духовкам",
+            "key": "ovens"
+          },
+          {
+            "text": "починить духовку",
+            "key": "ovens"
+          },
+          {
+            "text": "духовка не греет",
+            "key": "ovens"
+          },
+          {
+            "text": "духовка плохо печет",
+            "key": "ovens"
+          },
+          {
+            "text": "духовка не держит температуру",
+            "key": "ovens"
+          }
+        ]
+      },
+      {
+        "title": "Плиты и панели",
+        "items": [
+          {
+            "text": "ремонт варочной панели в Батуми",
+            "key": "hobs"
+          },
+          {
+            "text": "ремонт варочных панелей",
+            "key": "hobs"
+          },
+          {
+            "text": "ремонт плиты в Батуми",
+            "key": "hobs"
+          },
+          {
+            "text": "ремонт плиты",
+            "key": "hobs"
+          },
+          {
+            "text": "мастер по плитам",
+            "key": "hobs"
+          },
+          {
+            "text": "починить варочную поверхность",
+            "key": "hobs"
+          },
+          {
+            "text": "конфорка не зажигается",
+            "key": "hobs"
+          },
+          {
+            "text": "плита не включается",
+            "key": "hobs"
+          },
+          {
+            "text": "сенсорная панель не работает",
+            "key": "hobs"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Цены на ремонт бытовой техники в Батуми: диагностика, выезд, ремонт стиральных машин, холодильников, посудомоек, духовок, кондиционеров и котлов."
+}

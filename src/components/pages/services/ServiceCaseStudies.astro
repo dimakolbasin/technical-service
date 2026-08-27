@@ -1,0 +1,72 @@
+---
+import type { ServiceDetailContent } from "../../../lib/content/types";
+
+interface Props {
+  caseStudies: NonNullable<ServiceDetailContent["caseStudies"]>;
+}
+
+const { caseStudies } = Astro.props;
+---
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{caseStudies.title}</h2>
+      {caseStudies.lead && <p class="section__lead">{caseStudies.lead}</p>}
+    </div>
+    <div class="grid grid--3">
+      {
+        caseStudies.items.map((item) => (
+          <article class="card case-card">
+            <h3 class="card__title">{item.title}</h3>
+            {item.appliance && (
+              <p class="card__text">
+                <strong>{caseStudies.applianceLabel}:</strong> {item.appliance}
+              </p>
+            )}
+            {item.symptom && (
+              <p class="card__text">
+                <strong>{caseStudies.symptomLabel}:</strong> {item.symptom}
+              </p>
+            )}
+            {item.diagnosis && (
+              <p class="card__text">
+                <strong>{caseStudies.diagnosisLabel}:</strong> {item.diagnosis}
+              </p>
+            )}
+            {item.workDone && (
+              <p class="card__text">
+                <strong>{caseStudies.workDoneLabel}:</strong> {item.workDone}
+              </p>
+            )}
+            {item.result && (
+              <p class="card__text">
+                <strong>{caseStudies.resultLabel}:</strong> {item.result}
+              </p>
+            )}
+            {item.time && (
+              <p class="card__text">
+                <strong>{caseStudies.timeLabel}:</strong> {item.time}
+              </p>
+            )}
+            {item.priceHint && (
+              <p class="card__text">
+                <strong>{caseStudies.priceHintLabel}:</strong> {item.priceHint}
+              </p>
+            )}
+            {item.fix && (
+              <p class="card__text">
+                <strong>{caseStudies.fixLabel}:</strong> {item.fix}
+              </p>
+            )}
+            {item.area && (
+              <p class="card__text">
+                <strong>{caseStudies.areaLabel}:</strong> {item.area}
+              </p>
+            )}
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,137 @@
+{
+  "code": "ka",
+  "label": "ქართული",
+  "labelShort": "GE",
+  "menu": "მენიუ",
+  "navLabel": "მთავარი ნავიგაცია",
+  "langLabel": "ენის შეცვლა",
+  "hours": "ყოველდღე 9:00–20:00",
+  "cta": "დარეკეთ",
+  "cookieNotice": {
+    "textBefore": "ვიყენებთ ",
+    "linkText": "cookies",
+    "textAfter": "-ს საიტის გასაუმჯობესებლად",
+    "closeLabel": "დახურეთ cookies-ის შეტყობინება"
+  },
+  "common": {
+    "important": "მნიშვნელოვანია",
+    "moreDetails": "დეტალურად"
+  },
+  "paths": {
+    "home": "/ka/",
+    "services": "/ka/services/",
+    "washing-machines": "/ka/services/washing-machines/",
+    "dishwashers": "/ka/services/dishwashers/",
+    "hobs": "/ka/services/hobs/",
+    "ovens": "/ka/services/ovens/",
+    "ac-cleaning": "/ka/services/ac-cleaning/",
+    "refrigerators": "/ka/services/refrigerators/",
+    "dryers": "/ka/services/dryers/",
+    "gas-boilers": "/ka/services/gas-boilers/",
+    "prices": "/ka/prices/",
+    "contacts": "/ka/contacts/",
+    "privacy": "/ka/privacy/",
+    "washing-machine-not-draining": "/ka/articles/washing-machine-not-draining/",
+    "dishwasher-not-draining": "/ka/articles/dishwasher-not-draining/",
+    "oven-not-heating": "/ka/articles/oven-not-heating/",
+    "hob-not-turning-on": "/ka/articles/hob-not-turning-on/",
+    "ac-not-cooling": "/ka/articles/ac-not-cooling/",
+    "ac-cleaning-importance": "/ka/articles/ac-cleaning-importance/",
+    "refrigerator-not-cooling": "/ka/articles/refrigerator-not-cooling/",
+    "dryer-not-drying": "/ka/articles/dryer-not-drying/",
+    "gas-boiler-not-igniting": "/ka/articles/gas-boiler-not-igniting/"
+  },
+  "nav": [
+    {
+      "key": "home",
+      "label": "მთავარი"
+    },
+    {
+      "key": "services",
+      "label": "სერვისები"
+    },
+    {
+      "key": "prices",
+      "label": "ფასები"
+    },
+    {
+      "key": "contacts",
+      "label": "კონტაქტი"
+    }
+  ],
+  "footer": {
+    "eyebrow": "ადგილზე მომსახურება ბათუმში",
+    "ctaTitle": "დატოვეთ განაცხადი შეკეთებაზე",
+    "ctaLead": "აღწერეთ ტექნიკა და პრობლემა — დაგიკავშირდებით, შევათანხმებთ მოსახერხებელ დროს და გეტყვით შემდეგ ნაბიჯს.",
+    "contactsTitle": "კონტაქტი",
+    "areasTitle": "მომსახურების ზონა",
+    "hoursTitle": "საათი",
+    "langsTitle": "ენები",
+    "phoneLabel": "ტელეფონი",
+    "emailLabel": "ფოსტა",
+    "callLabel": "დარეკვა",
+    "messageLabel": "მოწერა",
+    "formTitle": "სწრაფი განაცხადი",
+    "areas": "ბათუმი: ძველი ბათუმი, რუსთაველი, ხიმშიაშვილი, ბაგრატიონი, აღმაშენებელი, ჯავახიშვილი, თამარი, ბონი-გოროდოკი",
+    "legalLine": "საყოფაცხოვრებო ტექნიკის შეკეთება ბათუმში ადგილზე დიაგნოსტიკით."
+  },
+  "serviceFocus": {
+    "title": "პოპულარული მომსახურებები",
+    "lead": "ეძებთ კონკრეტულ მომსახურებას? აირჩიეთ ტექნიკის ტიპი.",
+    "linkLabel": "დეტალურად",
+    "items": [
+      {
+        "key": "washing-machines",
+        "title": "სარეცხი მანქანები",
+        "text": "არ უშვებს წყალს, არ წურავს, ხმაურობს ან ჟონავს."
+      },
+      {
+        "key": "refrigerators",
+        "title": "მაცივრები",
+        "text": "არ აცივებს, წყალი ჟონავს, კომპრესორი ხმაურობს."
+      },
+      {
+        "key": "dishwashers",
+        "title": "ჭურჭლის სარეცხი მანქანები",
+        "text": "ცუდად რეცხავს, არ აცხელებს, წყალი რჩება ან ჟონავს."
+      },
+      {
+        "key": "ovens",
+        "title": "ღუმელები",
+        "text": "არ აცხელებს, ტემპერატურას არ ინარჩუნებს, აჩვენებს შეცდომებს."
+      },
+      {
+        "key": "hobs",
+        "title": "ქურები და ზედაპირები",
+        "text": "გაზის და ელექტრო ზედაპირები, კონფორები და სენსორები."
+      },
+      {
+        "key": "ac-cleaning",
+        "title": "კონდიციონერები",
+        "text": "წმენდა, დრენაჟი, სუნი და სუსტი გაგრილება."
+      },
+      {
+        "key": "dryers",
+        "title": "საშრობი მანქანები",
+        "text": "არ აშრობს, ხმაურობს, კონდენსატს არ უშვებს."
+      },
+      {
+        "key": "gas-boilers",
+        "title": "გაზის ქვაბები",
+        "text": "სენსორები, ანთება, თბომცვლელი და მომსახურება."
+      }
+    ]
+  },
+  "rootButtonClass": "button--secondary",
+  "ctaMessage": "WhatsApp",
+  "areasList": [
+    "ძველი ბათუმი",
+    "რუსთაველი",
+    "ხიმშიაშვილი",
+    "ბაგრატიონი",
+    "აღმაშენებელი",
+    "ჯავახიშვილი",
+    "თამარი",
+    "ბონი-გოროდოკი"
+  ]
+}

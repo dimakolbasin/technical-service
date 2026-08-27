@@ -1,0 +1,500 @@
+{
+  "title": "Home appliance repair in Batumi | services and pricing",
+  "lead": "Home appliance repair in Batumi: washers, dishwashers, refrigerators, AC units, ovens, cooktops, dryers and gas boilers.",
+  "heading": "All appliance repair services in Batumi with prices",
+  "sections": [
+    {
+      "title": "Refrigerators",
+      "items": [
+        "Not cooling, water leaks, compressor noise.",
+        "Diagnostics, repair and price approval before work."
+      ]
+    },
+    {
+      "title": "Washing machines",
+      "items": [
+        "No drain, no spin, noise or leaks.",
+        "Diagnostics, repair and price approval before work."
+      ]
+    },
+    {
+      "title": "Dishwashers",
+      "items": [
+        "Poor washing, no heating, standing water or leaks.",
+        "Diagnostics, repair and price approval before work."
+      ]
+    },
+    {
+      "title": "Ovens",
+      "items": [
+        "No heat, unstable temperature, errors.",
+        "Diagnostics, repair and price approval before work."
+      ]
+    },
+    {
+      "title": "Cooktops",
+      "items": [
+        "Gas and electric hobs, burners and touch controls.",
+        "Diagnostics, repair and price approval before work."
+      ]
+    },
+    {
+      "title": "Air conditioners",
+      "items": [
+        "Cleaning, drainage, odors and weak cooling.",
+        "Diagnostics, repair and price approval before work."
+      ]
+    },
+    {
+      "title": "Dryers",
+      "items": [
+        "No drying, noise, drain or condensate issues.",
+        "Diagnostics, repair and price approval before work."
+      ]
+    },
+    {
+      "title": "Gas boilers",
+      "items": [
+        "Sensors, ignition, heat exchanger and maintenance.",
+        "Diagnostics, repair and price approval before work."
+      ]
+    }
+  ],
+  "areaNote": "Service areas in Batumi: Old Batumi, Rustaveli, Khimshiashvili, Bagrationi, Aghmashenebeli, Javakhishvili, Tamar, Boni-Gorodok.",
+  "brands": {
+    "title": "Brands we repair",
+    "lead": "We work with most common appliance brands.",
+    "items": [
+      "LG",
+      "Samsung",
+      "Bosch",
+      "Siemens",
+      "Electrolux",
+      "Beko",
+      "Whirlpool",
+      "Indesit",
+      "Ariston",
+      "Candy",
+      "Gorenje",
+      "Miele",
+      "Haier",
+      "Hotpoint",
+      "Zanussi",
+      "AEG",
+      "Panasonic",
+      "Sharp",
+      "Hisense",
+      "Atlant",
+      "Vestel",
+      "Toshiba"
+    ]
+  },
+  "guides": {
+    "title": "Helpful guides",
+    "lead": "Quick tips before calling a technician.",
+    "linkLabel": "Read",
+    "items": [
+      {
+        "title": "Washing machine not draining",
+        "text": "Causes, quick checks, and when to call a technician.",
+        "key": "washing-machine-not-draining"
+      },
+      {
+        "title": "Dishwasher not draining",
+        "text": "Common reasons and repair options.",
+        "key": "dishwasher-not-draining"
+      },
+      {
+        "title": "Oven not heating",
+        "text": "Typical causes and what to do next.",
+        "key": "oven-not-heating"
+      },
+      {
+        "title": "Cooktop not turning on",
+        "text": "Common causes and repair options.",
+        "key": "hob-not-turning-on"
+      },
+      {
+        "title": "Air conditioner not cooling",
+        "text": "When cleaning or service is needed.",
+        "key": "ac-not-cooling"
+      },
+      {
+        "title": "Why AC cleaning matters",
+        "text": "Climate impact and service frequency.",
+        "key": "ac-cleaning-importance"
+      }
+    ]
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "groups": [
+      {
+        "title": "Appliance repair",
+        "items": [
+          {
+            "text": "home appliance repair in Batumi",
+            "key": "services"
+          },
+          {
+            "text": "appliance repair in Batumi",
+            "key": "services"
+          },
+          {
+            "text": "home appliance repair",
+            "key": "services"
+          },
+          {
+            "text": "appliance repair technician",
+            "key": "services"
+          },
+          {
+            "text": "on-site appliance repair",
+            "key": "services"
+          }
+        ]
+      },
+      {
+        "title": "Washing machines",
+        "items": [
+          {
+            "text": "washer repair in Batumi",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine repair in Batumi",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine repair",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine repair service",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine problems",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine technician near me",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine technician",
+            "key": "washing-machines"
+          },
+          {
+            "text": "fix a washer",
+            "key": "washing-machines"
+          },
+          {
+            "text": "fix a washing machine",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washer not draining",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washer not spinning",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine leaking",
+            "key": "washing-machines"
+          }
+        ]
+      },
+      {
+        "title": "Dishwashers",
+        "items": [
+          {
+            "text": "dishwasher repair in Batumi",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher repair",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher technician",
+            "key": "dishwashers"
+          },
+          {
+            "text": "fix a dishwasher",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher not draining",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher leaking",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher not washing",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher not heating",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher smells bad",
+            "key": "dishwashers"
+          }
+        ]
+      },
+      {
+        "title": "Refrigerators",
+        "items": [
+          {
+            "text": "fridge repair in Batumi",
+            "key": "refrigerators"
+          },
+          {
+            "text": "refrigerator repair in Batumi",
+            "key": "refrigerators"
+          },
+          {
+            "text": "refrigerator repair",
+            "key": "refrigerators"
+          },
+          {
+            "text": "fridge technician",
+            "key": "refrigerators"
+          },
+          {
+            "text": "fix a fridge",
+            "key": "refrigerators"
+          },
+          {
+            "text": "refrigerator not cooling",
+            "key": "refrigerators"
+          },
+          {
+            "text": "fridge leaking water",
+            "key": "refrigerators"
+          },
+          {
+            "text": "No Frost repair",
+            "key": "refrigerators"
+          },
+          {
+            "text": "freezer not freezing",
+            "key": "refrigerators"
+          }
+        ]
+      },
+      {
+        "title": "Air conditioners",
+        "items": [
+          {
+            "text": "AC cleaning in Batumi",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "air conditioner cleaning in Batumi",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "aircon cleaning",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "AC service in Batumi",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "AC technician",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "clean an air conditioner",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "AC not cooling",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "air conditioner leaking water",
+            "key": "ac-cleaning"
+          }
+        ]
+      },
+      {
+        "title": "Gas boilers",
+        "items": [
+          {
+            "text": "gas boiler repair in Batumi",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler repair in Batumi",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler repair near me",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler repairs near me",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "gas boiler repairs in Batumi",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "gas boiler repairs",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "gas boiler technician",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "fix a gas boiler",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "gas boiler maintenance",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler not igniting",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler not heating water",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler pressure dropping",
+            "key": "gas-boilers"
+          }
+        ]
+      },
+      {
+        "title": "Dryers",
+        "items": [
+          {
+            "text": "dryer repair in Batumi",
+            "key": "dryers"
+          },
+          {
+            "text": "tumble dryer repair",
+            "key": "dryers"
+          },
+          {
+            "text": "dryer technician",
+            "key": "dryers"
+          },
+          {
+            "text": "fix a dryer",
+            "key": "dryers"
+          },
+          {
+            "text": "dryer not drying",
+            "key": "dryers"
+          },
+          {
+            "text": "dryer not heating",
+            "key": "dryers"
+          },
+          {
+            "text": "dryer making noise",
+            "key": "dryers"
+          },
+          {
+            "text": "dryer not draining condensation",
+            "key": "dryers"
+          }
+        ]
+      },
+      {
+        "title": "Ovens",
+        "items": [
+          {
+            "text": "oven repair in Batumi",
+            "key": "ovens"
+          },
+          {
+            "text": "built-in oven repair",
+            "key": "ovens"
+          },
+          {
+            "text": "oven technician",
+            "key": "ovens"
+          },
+          {
+            "text": "fix an oven",
+            "key": "ovens"
+          },
+          {
+            "text": "oven not heating",
+            "key": "ovens"
+          },
+          {
+            "text": "oven not baking evenly",
+            "key": "ovens"
+          },
+          {
+            "text": "oven temperature problem",
+            "key": "ovens"
+          },
+          {
+            "text": "electric oven repair",
+            "key": "ovens"
+          }
+        ]
+      },
+      {
+        "title": "Hobs and cooktops",
+        "items": [
+          {
+            "text": "cooktop repair in Batumi",
+            "key": "hobs"
+          },
+          {
+            "text": "hob repair in Batumi",
+            "key": "hobs"
+          },
+          {
+            "text": "stove repair in Batumi",
+            "key": "hobs"
+          },
+          {
+            "text": "stove repair",
+            "key": "hobs"
+          },
+          {
+            "text": "gas cooktop repair",
+            "key": "hobs"
+          },
+          {
+            "text": "electric hob repair",
+            "key": "hobs"
+          },
+          {
+            "text": "burner not igniting",
+            "key": "hobs"
+          },
+          {
+            "text": "cooktop not turning on",
+            "key": "hobs"
+          },
+          {
+            "text": "touch panel not working",
+            "key": "hobs"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Home appliance repair services in Batumi: washing machines, refrigerators, dishwashers, ovens, cooktops, AC cleaning, dryers and gas boilers."
+}

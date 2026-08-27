@@ -1,0 +1,337 @@
+---
+import SearchPhrases from "../../shared/SearchPhrases.astro";
+import ServiceCaseStudies from "./ServiceCaseStudies.astro";
+import ServiceRelatedLinks from "./ServiceRelatedLinks.astro";
+import {
+  ContactMethod,
+  FaqScope,
+  ga,
+  TrackingLocation,
+} from "../../../lib/analytics";
+import type { Language } from "../../../lib/content";
+import type { ServiceDetailContent } from "../../../lib/content/types";
+import type { SiteConfig } from "../../../lib/site";
+import { whatsappNumber } from "../../../lib/site";
+import { LocaleCode } from "../../../lib/analytics/enums";
+
+interface Props {
+  page: ServiceDetailContent;
+  language: Language;
+  site: SiteConfig;
+}
+
+const DEFAULT_PHOTO_WIDTH = 640;
+const DEFAULT_PHOTO_HEIGHT = 480;
+
+const DATE_LABELS = {
+  [LocaleCode.Ru]: { published: "Опубликовано", modified: "Обновлено" },
+  [LocaleCode.En]: { published: "Published", modified: "Updated" },
+  [LocaleCode.Ka]: { published: "გამოქვეყნდა", modified: "განახლდა" },
+} as const;
+
+const { page, language, site } = Astro.props;
+const currentDateLabels =
+  DATE_LABELS[language.code as keyof typeof DATE_LABELS];
+const caseStudies = page.caseStudies;
+const related = page.related;
+---
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title">{page.heading}</h1>
+      <p class="section__lead">{page.lead}</p>
+      {
+        (page.datePublished || page.dateModified) && (
+          <p class="section__meta">
+            {page.datePublished && (
+              <span>
+                {currentDateLabels.published}:{" "}
+                <time datetime={page.datePublished}>{page.datePublished}</time>
+              </span>
+            )}
+            {page.dateModified && (
+              <span>
+                {currentDateLabels.modified}:{" "}
+                <time datetime={page.dateModified}>{page.dateModified}</time>
+              </span>
+            )}
+          </p>
+        )
+      }
+    </div>
+  </div>
+</section>
+
+{
+  page.sections?.length && (
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2">
+          {page.sections.map((block) => (
+            <div class="card">
+              <h2 class="card__title">{block.title}</h2>
+              {block.lead && <p class="card__text">{block.lead}</p>}
+              {block.items && (
+                <ul class="list">
+                  {block.items.map((item: string) => (
+                    <li class="list__item">
+                      • <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  page.diagnosisSteps?.items?.length && (
+    <section class="section section--surface">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">{page.diagnosisSteps.title}</h2>
+          {page.diagnosisSteps.lead && (
+            <p class="section__lead">{page.diagnosisSteps.lead}</p>
+          )}
+        </div>
+        <div class="steps steps--compact">
+          {page.diagnosisSteps.items.map((item: string, index: number) => (
+            <div class="steps__item">
+              <div class="steps__index">{index + 1}</div>
+              <p class="steps__text">{item}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  (page.brandsHandled?.items?.length || page.trustSignals?.items?.length) && (
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2">
+          {page.brandsHandled?.items?.length && (
+            <div class="card">
+              <h2 class="card__title">{page.brandsHandled.title}</h2>
+              {page.brandsHandled.lead && (
+                <p class="card__text">{page.brandsHandled.lead}</p>
+              )}
+              <div class="badge-row">
+                {page.brandsHandled.items.map((brand: string) => (
+                  <span class="badge badge--outline">{brand}</span>
+                ))}
+              </div>
+            </div>
+          )}
+          {page.trustSignals?.items?.length && (
+            <div class="card card--elevated">
+              <h2 class="card__title">{page.trustSignals.title}</h2>
+              {page.trustSignals.lead && (
+                <p class="card__text">{page.trustSignals.lead}</p>
+              )}
+              <ul class="list">
+                {page.trustSignals.items.map((item: string) => (
+                  <li class="list__item">
+                    • <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{caseStudies?.items?.length && <ServiceCaseStudies caseStudies={caseStudies} />}
+
+{
+  page.photos?.items?.length && (
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">{page.photos.title}</h2>
+          {page.photos.lead && <p class="section__lead">{page.photos.lead}</p>}
+        </div>
+        <div class="grid grid--3">
+          {page.photos.items
+            .filter((item) => item.src && item.alt)
+            .map((item) => (
+              <figure class="job-photo">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  loading="lazy"
+                  width={item.width || DEFAULT_PHOTO_WIDTH}
+                  height={item.height || DEFAULT_PHOTO_HEIGHT}
+                />
+                {item.caption && <figcaption>{item.caption}</figcaption>}
+              </figure>
+            ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  (page.price?.items?.length || page.price?.groups?.length) && (
+    <section class="section section--surface" id="price">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">{page.price.title}</h2>
+          {page.price.lead && <p class="section__lead">{page.price.lead}</p>}
+        </div>
+        {page.price.items?.length && (
+          <ul class="price-list">
+            {page.price.items.map((item) => (
+              <li class="price-list__item">
+                <strong>{item.label}</strong>
+                <span>{item.value}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+        {page.price.groups?.length && (
+          <div class="price-groups">
+            {page.price.groups.map((group) => (
+              <section class="price-group">
+                <h3 class="price-group__title">{group.title}</h3>
+                {group.lead && <p class="card__text">{group.lead}</p>}
+                <ul class="price-list">
+                  {group.items.map((item) => (
+                    <li class="price-list__item">
+                      <strong>{item.label}</strong>
+                      <span>{item.value}</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
+        )}
+        {page.price.note && (
+          <div class="card card--elevated">
+            <p class="card__text">{page.price.note}</p>
+          </div>
+        )}
+      </div>
+    </section>
+  )
+}
+
+{
+  page.faq?.items?.length && (
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">{page.faq.title}</h2>
+          {page.faq.lead && <p class="section__lead">{page.faq.lead}</p>}
+        </div>
+        {page.faq.items.map((item, index) => (
+          <details class="faq" {...ga.faq(FaqScope.Page, index + 1)}>
+            <summary class="faq__summary">{item.question}</summary>
+            <div class="faq__content">{item.answer}</div>
+          </details>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+{
+  related?.items?.length && (
+    <ServiceRelatedLinks related={related} paths={language.paths} />
+  )
+}
+
+<SearchPhrases
+  searchPhrases={page.searchPhrases}
+  language={language}
+  linkItems
+/>
+
+{
+  page.cta && (
+    <section class="section section--surface">
+      <div class="container">
+        <div class="cta-section">
+          <>
+            <h2 class="card__title">{page.cta.title}</h2>
+            <p class="card__text">{page.cta.text}</p>
+          </>
+          <div class="section__actions">
+            <a
+              class="button button--primary"
+              href={`tel:${site.phone}`}
+              {...ga.contact(ContactMethod.Call, TrackingLocation.PageCta)}
+            >
+              {page.cta.button}
+            </a>
+            <a
+              class="button button--ghost"
+              href={`https://wa.me/${whatsappNumber}`}
+              target="_blank"
+              rel="noopener"
+              {...ga.contact(ContactMethod.WhatsApp, TrackingLocation.PageCta)}
+            >
+              <img
+                class="button__icon"
+                src="/assets/icons/social/wh-1.png"
+                alt="WhatsApp icon"
+                width="24"
+                height="24"
+              />
+              {language.ctaMessage}
+            </a>
+            <a
+              class="button button--ghost"
+              href={site.viber}
+              target="_blank"
+              rel="noopener"
+              {...ga.contact(ContactMethod.Viber, TrackingLocation.PageCta)}
+            >
+              <img
+                class="button__icon"
+                src="/assets/icons/social/viber.png"
+                alt="Viber icon"
+                width="24"
+                height="24"
+              />
+              Viber
+            </a>
+            {site.telegram && (
+              <a
+                class="button button--ghost"
+                href={site.telegram}
+                target="_blank"
+                rel="noopener"
+                {...ga.contact(
+                  ContactMethod.Telegram,
+                  TrackingLocation.PageCta,
+                )}
+              >
+                <img
+                  class="button__icon"
+                  src="/assets/icons/social/tg.png"
+                  alt="Telegram icon"
+                  width="24"
+                  height="24"
+                />
+                Telegram
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

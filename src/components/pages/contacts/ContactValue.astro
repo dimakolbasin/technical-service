@@ -1,0 +1,71 @@
+---
+import type { SiteConfig } from "../../../lib/site";
+import { whatsappNumber } from "../../../lib/site";
+import type { ContactItem } from "../../../lib/content/types";
+import { ContactMethod, ga, TrackingLocation } from "../../../lib/analytics";
+
+interface Props {
+  item: ContactItem;
+  site: SiteConfig;
+  location: TrackingLocation.ContactsCards | TrackingLocation.PricesContactCard;
+}
+
+const TRACKING_METHOD_BY_TYPE: Partial<Record<string, ContactMethod>> = {
+  phone: ContactMethod.Call,
+  telegram: ContactMethod.Telegram,
+  whatsapp: ContactMethod.WhatsApp,
+  viber: ContactMethod.Viber,
+  facebook: ContactMethod.Facebook,
+  email: ContactMethod.Email,
+};
+
+const EXTERNAL_CONTACT_TYPES = [
+  "telegram",
+  "whatsapp",
+  "viber",
+  "facebook",
+] as const;
+
+const { item, site, location } = Astro.props;
+const type = item.type;
+const value = item.value;
+const defaultHrefByType: Record<string, string> = {
+  phone: site.phone,
+  telegram: site.telegram,
+  whatsapp: `https://wa.me/${whatsappNumber}`,
+  viber: site.viber,
+  facebook: site.facebook,
+  email: site.email,
+};
+const href = item.href ?? defaultHrefByType[type];
+const label =
+  value ??
+  (type === "phone" || type === "whatsapp" || type === "viber"
+    ? site.phone
+    : href);
+const trackingMethod = TRACKING_METHOD_BY_TYPE[type];
+const external =
+  href?.startsWith("http") ||
+  (EXTERNAL_CONTACT_TYPES as readonly string[]).includes(type);
+---
+
+{
+  href ? (
+    <a
+      href={
+        type === "phone"
+          ? `tel:${site.phone}`
+          : type === "email"
+            ? `mailto:${value ?? site.email}`
+            : href
+      }
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener" : undefined}
+      {...(trackingMethod ? ga.contact(trackingMethod, location) : {})}
+    >
+      {label}
+    </a>
+  ) : (
+    <span>{value}</span>
+  )
+}

@@ -1,0 +1,385 @@
+{
+  "title": "Dryer repair in Batumi | on-site service and warranty",
+  "lead": "Dryer repair in Batumi: heating, drive, sensors, condensation drain and full cleaning.",
+  "heading": "Dryer repair in Batumi",
+  "sections": [
+    {
+      "title": "Common issues",
+      "items": [
+        "No drying or long drying cycles.",
+        "Noise and vibration.",
+        "Condensate does not drain.",
+        "Temperature or humidity sensor errors.",
+        "On-site visits are available in Batumi city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio; exact timing depends on address and technician load."
+      ]
+    },
+    {
+      "title": "What we do",
+      "items": [
+        "Belt, roller, bearing and fan replacement.",
+        "Heating and control module repair.",
+        "Air duct, filter and condenser cleaning.",
+        "Drainage blockage removal."
+      ]
+    },
+    {
+      "title": "Timing and warranty",
+      "items": [
+        "On-site diagnostics in Batumi.",
+        "The job is approved before repair.",
+        "Warranty for completed work."
+      ]
+    },
+    {
+      "title": "Example jobs",
+      "items": [
+        "Full dryer cleaning.",
+        "Heating element replacement.",
+        "Noise and vibration repair."
+      ]
+    },
+    {
+      "title": "Why the dryer does not dry well",
+      "items": [
+        "Clogging, wear or dirt in working parts.",
+        "Sensor, pump, heating, cooling or control-board failure.",
+        "Installation issues, overload, humidity or limited access to the appliance.",
+        "The exact cause is confirmed by on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Why the dryer fails",
+      "items": [
+        "The fault is narrowed down by symptom instead of replacing parts blindly.",
+        "Lint filters, condenser, ducts, humidity sensor, heater/heat pump, rollers, belt and condensate pump are checked separately.",
+        "Humidity, heavy use and access conditions in Batumi can make the symptom appear faster.",
+        "The exact cause is confirmed during on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Local Batumi conditions",
+      "items": [
+        "We confirm model, access and symptom before the visit.",
+        "Service covers central Batumi, Khimshiashvili, New Boulevard, Boni, Airport area and Angisa.",
+        "A heat and airflow test confirms the result."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Detailed price table",
+    "groups": [
+      {
+        "title": "Mechanical and drive",
+        "items": [
+          {
+            "label": "Drive belt replacement",
+            "value": "from 80–120 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 80,
+              "maxPrice": 120
+            }
+          },
+          {
+            "label": "Drum support roller or bearing replacement",
+            "value": "from 100–180 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 100,
+              "maxPrice": 180
+            }
+          },
+          {
+            "label": "Blower fan replacement",
+            "value": "from 100–150 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 100,
+              "maxPrice": 150
+            }
+          },
+          {
+            "label": "Door lock or hinge replacement",
+            "value": "from 60–90 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 60,
+              "maxPrice": 90
+            }
+          }
+        ]
+      },
+      {
+        "title": "Heating and electronics",
+        "items": [
+          {
+            "label": "Heating element replacement",
+            "value": "from 130–200 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 130,
+              "maxPrice": 200
+            }
+          },
+          {
+            "label": "Control module repair or replacement",
+            "value": "from 150–250 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 150,
+              "maxPrice": 250
+            }
+          },
+          {
+            "label": "Sensor replacement (temperature, humidity)",
+            "value": "from 60–90 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 60,
+              "maxPrice": 90
+            }
+          }
+        ]
+      },
+      {
+        "title": "Cleaning and drain",
+        "items": [
+          {
+            "label": "Drain pump replacement",
+            "value": "from 90–130 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 90,
+              "maxPrice": 130
+            }
+          },
+          {
+            "label": "Full cleaning (air ducts, lint filters, condenser)",
+            "value": "from 80–120 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 80,
+              "maxPrice": 120
+            }
+          },
+          {
+            "label": "Drainage blockage removal",
+            "value": "from 50–70 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 50,
+              "maxPrice": 70
+            }
+          }
+        ]
+      },
+      {
+        "title": "Other",
+        "items": [
+          {
+            "label": "Noise and vibration repair",
+            "value": "from 60–100 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 60,
+              "maxPrice": 100
+            }
+          }
+        ]
+      }
+    ],
+    "note": "The final cost depends on the model, access to parts and spare part pricing."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Why does drying take much longer?",
+        "answer": "Blocked filters/condenser, weak heating or humidity sensor faults are common causes. Common service areas include the city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio."
+      },
+      {
+        "question": "Is cleaning enough?",
+        "answer": "It can be if airflow is blocked; internal ducts, fan and sensors still need checking when errors persist."
+      },
+      {
+        "question": "Is lint inside a dryer risky?",
+        "answer": "Yes. Excess lint restricts airflow and can increase overheating risk."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need dryer repair?",
+    "text": "Describe the issue and we will schedule diagnostics and confirm the cost.",
+    "button": "Call"
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "items": [
+      {
+        "text": "dryer repair in Batumi"
+      },
+      {
+        "text": "tumble dryer repair"
+      },
+      {
+        "text": "dryer technician"
+      },
+      {
+        "text": "fix a dryer"
+      },
+      {
+        "text": "dryer not drying"
+      },
+      {
+        "text": "dryer not heating"
+      },
+      {
+        "text": "dryer making noise"
+      },
+      {
+        "text": "dryer not draining condensation"
+      }
+    ]
+  },
+  "description": "Dryer repair in Batumi: slow drying, no heat, noise, condensate drainage, sensor faults and full cleaning.",
+  "diagnosisSteps": {
+    "title": "How diagnostics works",
+    "lead": "A service-specific check sequence for this appliance.",
+    "items": [
+      "Confirm the symptom, model and visible error code.",
+      "Lint filters, condenser, ducts, humidity sensor, heater/heat pump, rollers, belt and condensate pump are checked separately.",
+      "Agree the repair scope and parts before work starts.",
+      "A heat and airflow test confirms the result."
+    ]
+  },
+  "brandsHandled": {
+    "title": "Brands and models",
+    "lead": "We work with common appliance brands. Exact repair options depend on the model and parts availability.",
+    "items": ["Bosch", "Siemens", "LG", "Samsung", "Beko", "Electrolux", "Whirlpool"]
+  },
+  "trustSignals": {
+    "title": "Verifiable service terms",
+    "lead": "Only details the customer can see before or during the repair.",
+    "items": [
+      "Lint and airflow are checked before replacing heating parts.",
+      "Overheating risk is explained when filters or ducts are blocked.",
+      "Drying result is checked with heat and airflow, not only by powering on."
+    ]
+  },
+  "caseStudies": {
+    "title": "Diagnostic scenarios in Batumi",
+    "lead": "These are service-specific repair scenarios, not invented statistics or dated jobs.",
+    "applianceLabel": "Appliance",
+    "symptomLabel": "Symptom",
+    "diagnosisLabel": "Diagnostics",
+    "workDoneLabel": "What we do",
+    "resultLabel": "Check result",
+    "areaLabel": "Area",
+    "items": [
+      {
+        "title": "Scenario 1",
+        "appliance": "dryer",
+        "symptom": "Repeated dryer fault that needs targeted diagnostics.",
+        "diagnosis": "Lint filters, condenser, ducts, humidity sensor, heater/heat pump, rollers, belt and condensate pump are checked separately.",
+        "workDone": "Clean, adjust or replace the confirmed failed part after approval.",
+        "result": "A heat and airflow test confirms the result.",
+        "area": "New Boulevard / Angisa",
+        "time": "1-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 2",
+        "appliance": "dryer",
+        "symptom": "Unstable dryer operation after active use.",
+        "diagnosis": "Lint filters, condenser, ducts, humidity sensor, heater/heat pump, rollers, belt and condensate pump are checked separately.",
+        "workDone": "Remove blockage/wear cause or agree part replacement after testing.",
+        "result": "A heat and airflow test confirms the result.",
+        "area": "Center / Boni",
+        "time": "1.5-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 3",
+        "appliance": "Bosch dryer",
+        "symptom": "Laundry stays damp after the program",
+        "diagnosis": "We check filters, condenser, humidity sensors and airflow.",
+        "workDone": "Clean lint areas and test heating.",
+        "result": "Drying becomes more stable on the test run.",
+        "time": "1.5-2 hours",
+        "priceHint": "from 80 GEL",
+        "area": "Boni"
+      },
+      {
+        "title": "Scenario 4",
+        "appliance": "Samsung dryer",
+        "symptom": "Condensate does not go to the tank",
+        "diagnosis": "We check condensate pump, hose and float sensor.",
+        "workDone": "Clean the channel or approve pump replacement.",
+        "result": "The tank fills without a drain error.",
+        "time": "1-2 hours",
+        "priceHint": "after diagnostics",
+        "area": "New Boulevard"
+      },
+      {
+        "title": "Scenario 5",
+        "appliance": "LG dryer",
+        "symptom": "Noise when the drum rotates",
+        "diagnosis": "We check rollers, belt and foreign objects.",
+        "workDone": "Remove objects and inspect roller and belt wear.",
+        "result": "The drum runs smoother and quieter.",
+        "time": "1.5 hours",
+        "priceHint": "from 70 GEL",
+        "area": "Batumi city center"
+      }
+    ],
+    "timeLabel": "Time",
+    "priceHintLabel": "Price guide"
+  },
+  "related": {
+    "title": "Related pages",
+    "lead": "Useful guides, prices and contact options for this service.",
+    "items": [
+      {
+        "key": "dryer-not-drying",
+        "title": "Dryer not drying in Batumi",
+        "text": "Why a dryer takes too long or leaves laundry damp: filters, condenser, heating, humidity sensors and condensate drainage.",
+        "linkLabel": "Open"
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Price list and diagnostic terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Open"
+  },
+  "photos": {
+    "title": "Job photos",
+    "lead": "Typical on-site work scenes: diagnostics, access to components, and careful testing after repair.",
+    "items": [
+      {
+        "src": "/assets/images/jobs/dryer-repair-batumi-1.jpg",
+        "alt": "Dryer repair in Batumi, Boni district",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/dryer-repair-batumi-2.jpg",
+        "alt": "Dryer filter and condenser cleaning in Batumi",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/dryer-repair-batumi-3.jpg",
+        "alt": "Lint filter diagnostics for a dryer in Batumi",
+        "width": 640,
+        "height": 480
+      }
+    ]
+  }
+}

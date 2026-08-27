@@ -1,0 +1,351 @@
+{
+  "title": "Cooktop Repair in Batumi | Gas & Electric",
+  "lead": "Cooktop, hob and stove repair in Batumi: gas and electric surfaces, burners, sensors and power faults.",
+  "heading": "Cooktop repair in Batumi",
+  "sections": [
+    {
+      "title": "Common issues",
+      "items": [
+        "Burner not heating or heating weakly.",
+        "Panel not powering on.",
+        "Sensor or indicator errors.",
+        "Gas smell or unstable flame.",
+        "On-site visits are available in Batumi city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio; exact timing depends on address and technician load."
+      ]
+    },
+    {
+      "title": "What we do",
+      "items": [
+        "Diagnostics and safety check.",
+        "Cooktop, module, and sensor repair/replacement.",
+        "Gas control tuning and leak fixes.",
+        "Testing after repair."
+      ]
+    },
+    {
+      "title": "Timing & warranty",
+      "items": [
+        "Most jobs take 1–2 hours.",
+        "Warranty on work and parts.",
+        "Service across Batumi."
+      ]
+    },
+    {
+      "title": "Case examples",
+      "items": [
+        "Electric hob element replacement.",
+        "Gas control adjustment and thermocouple replacement.",
+        "Touch control panel repair."
+      ]
+    },
+    {
+      "title": "Why the cooktop does not work",
+      "items": [
+        "Clogging, wear or dirt in working parts.",
+        "Sensor, pump, heating, cooling or control-board failure.",
+        "Installation issues, overload, humidity or limited access to the appliance.",
+        "The exact cause is confirmed by on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Why the cooktop fails",
+      "items": [
+        "The fault is narrowed down by symptom instead of replacing parts blindly.",
+        "Power, lock mode, sensor controls, burners, ignition parts, nozzles and gas safety symptoms are separated by appliance type.",
+        "Humidity, heavy use and access conditions in Batumi can make the symptom appear faster.",
+        "The exact cause is confirmed during on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Local Batumi conditions",
+      "items": [
+        "We confirm model, access and symptom before the visit.",
+        "Service covers central Batumi, Khimshiashvili, New Boulevard, Boni, Airport area and Angisa.",
+        "Each burner or heating zone is tested after repair."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Detailed price table",
+    "groups": [
+      {
+        "title": "Gas cooktops",
+        "items": [
+          {
+            "label": "Nozzle replacement",
+            "value": "from 50–80 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 50,
+              "maxPrice": 80
+            }
+          },
+          {
+            "label": "Ignition unit replacement",
+            "value": "from 130–150 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 130,
+              "maxPrice": 150
+            }
+          },
+          {
+            "label": "Gas leak repair",
+            "value": "from 60–100 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 60,
+              "maxPrice": 100
+            }
+          },
+          {
+            "label": "Flame adjustment",
+            "value": "from 50–80 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 50,
+              "maxPrice": 80
+            }
+          }
+        ]
+      },
+      {
+        "title": "Electric cooktops",
+        "items": [
+          {
+            "label": "Burner replacement",
+            "value": "from 100–180 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 100,
+              "maxPrice": 180
+            }
+          },
+          {
+            "label": "Touch panel repair",
+            "value": "from 150–250 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 150,
+              "maxPrice": 250
+            }
+          },
+          {
+            "label": "Control unit replacement",
+            "value": "from 270–330 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 270,
+              "maxPrice": 330
+            }
+          },
+          {
+            "label": "Error troubleshooting",
+            "value": "from 60–80 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 60,
+              "maxPrice": 80
+            }
+          }
+        ]
+      }
+    ],
+    "note": "The final cost depends on the model, access to parts and spare part pricing."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "What should I do if I smell gas?",
+        "answer": "Shut off gas, ventilate, and call emergency gas service before normal repair. Common service areas include the city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio."
+      },
+      {
+        "question": "Why does a touch hob beep and not respond?",
+        "answer": "Moisture, lock mode, sensor contamination or control-board fault are common causes."
+      },
+      {
+        "question": "Can I use a cracked glass hob?",
+        "answer": "No. Moisture and electric shock risk make it unsafe."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need cooktop repair?",
+    "text": "Describe the issue and we will estimate time and cost.",
+    "button": "Call now"
+  },
+  "related": {
+    "title": "Related guides",
+    "lead": "Short articles with causes, symptoms, and tips.",
+    "items": [
+      {
+        "title": "Cooktop not turning on",
+        "text": "Causes and repair options.",
+        "key": "hob-not-turning-on",
+        "linkLabel": "Read"
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Price list and diagnostic terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Read"
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "items": [
+      {
+        "text": "cooktop repair in Batumi"
+      },
+      {
+        "text": "hob repair in Batumi"
+      },
+      {
+        "text": "stove repair in Batumi"
+      },
+      {
+        "text": "stove repair"
+      },
+      {
+        "text": "gas cooktop repair"
+      },
+      {
+        "text": "electric hob repair"
+      },
+      {
+        "text": "burner not igniting"
+      },
+      {
+        "text": "cooktop not turning on"
+      },
+      {
+        "text": "touch panel not working"
+      }
+    ]
+  },
+  "description": "Cooktop and hob repair in Batumi: gas and electric burners, ignition, touch controls, power faults and error codes.",
+  "diagnosisSteps": {
+    "title": "How diagnostics works",
+    "lead": "A service-specific check sequence for this appliance.",
+    "items": [
+      "Confirm the symptom, model and visible error code.",
+      "Power, lock mode, sensor controls, burners, ignition parts, nozzles and gas safety symptoms are separated by appliance type.",
+      "Agree the repair scope and parts before work starts.",
+      "Each burner or heating zone is tested after repair."
+    ]
+  },
+  "brandsHandled": {
+    "title": "Brands and models",
+    "lead": "We work with common appliance brands. Exact repair options depend on the model and parts availability.",
+    "items": ["Bosch", "Electrolux", "Gorenje", "Beko", "Ariston", "Zanussi", "Samsung"]
+  },
+  "trustSignals": {
+    "title": "Verifiable service terms",
+    "lead": "Only details the customer can see before or during the repair.",
+    "items": [
+      "Gas smell is handled as a safety issue before any normal repair.",
+      "Electric and gas faults are diagnosed separately, not under one generic price.",
+      "Every burner or heating zone is tested after the repair."
+    ]
+  },
+  "caseStudies": {
+    "title": "Diagnostic scenarios in Batumi",
+    "lead": "These are service-specific repair scenarios, not invented statistics or dated jobs.",
+    "applianceLabel": "Appliance",
+    "symptomLabel": "Symptom",
+    "diagnosisLabel": "Diagnostics",
+    "workDoneLabel": "What we do",
+    "resultLabel": "Check result",
+    "areaLabel": "Area",
+    "items": [
+      {
+        "title": "Scenario 1",
+        "appliance": "cooktop",
+        "symptom": "Repeated cooktop fault that needs targeted diagnostics.",
+        "diagnosis": "Power, lock mode, sensor controls, burners, ignition parts, nozzles and gas safety symptoms are separated by appliance type.",
+        "workDone": "Clean, adjust or replace the confirmed failed part after approval.",
+        "result": "Each burner or heating zone is tested after repair.",
+        "area": "Center / Boni",
+        "time": "1-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 2",
+        "appliance": "cooktop",
+        "symptom": "Unstable cooktop operation after active use.",
+        "diagnosis": "Power, lock mode, sensor controls, burners, ignition parts, nozzles and gas safety symptoms are separated by appliance type.",
+        "workDone": "Remove blockage/wear cause or agree part replacement after testing.",
+        "result": "Each burner or heating zone is tested after repair.",
+        "area": "New Boulevard / Airport area",
+        "time": "1.5-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 3",
+        "appliance": "Bosch gas hob",
+        "symptom": "Burner clicks but does not ignite",
+        "diagnosis": "We check the ignition electrode, wiring and moisture near the burner.",
+        "workDone": "Clean the electrode, adjust the gap and test spark.",
+        "result": "The burner ignites steadily.",
+        "time": "1 hour",
+        "priceHint": "from 60 GEL",
+        "area": "Khimshiashvili"
+      },
+      {
+        "title": "Scenario 4",
+        "appliance": "Electrolux electric hob",
+        "symptom": "Touch zone does not respond",
+        "diagnosis": "We check power, lock mode, moisture and the control board.",
+        "workDone": "Dry and clean the panel or approve module diagnostics.",
+        "result": "The hob responds to controls after testing.",
+        "time": "1-1.5 hours",
+        "priceHint": "after diagnostics",
+        "area": "New Boulevard"
+      },
+      {
+        "title": "Scenario 5",
+        "appliance": "Beko gas stove",
+        "symptom": "Knob sticks and flame does not hold",
+        "diagnosis": "We check knob movement, thermocouple and safe gas operation.",
+        "workDone": "Clean the assembly and test flame holding.",
+        "result": "The flame stays on after thermocouple warm-up.",
+        "time": "1.5 hours",
+        "priceHint": "from 70 GEL",
+        "area": "Boni"
+      }
+    ],
+    "timeLabel": "Time",
+    "priceHintLabel": "Price guide"
+  },
+  "photos": {
+    "title": "Job photos",
+    "lead": "Typical on-site work scenes: diagnostics, access to components, and careful testing after repair.",
+    "items": [
+      {
+        "src": "/assets/images/jobs/hob-repair-batumi-1.jpg",
+        "alt": "Gas hob repair in Batumi, Khimshiashvili district",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/hob-repair-batumi-2.jpg",
+        "alt": "Cooktop ignition check in Batumi, New Boulevard",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/hob-repair-batumi-3.jpg",
+        "alt": "Gas burner and knob diagnostics in Batumi",
+        "width": 640,
+        "height": 480
+      }
+    ]
+  }
+}

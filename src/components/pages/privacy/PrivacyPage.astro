@@ -1,0 +1,36 @@
+---
+import type { PrivacyPageContent } from "../../../lib/content/types";
+interface Props {
+  page: PrivacyPageContent;
+}
+const { page } = Astro.props;
+---
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title">{page.heading}</h1><p class="section__lead">
+        {page.lead}
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container legal-page">
+    {
+      page.sections.map((section) => (
+        <section class="legal-page__section">
+          <h2 class="legal-page__title">{section.title}</h2>
+          {section.text && <p>{section.text}</p>}
+          {section.items && (
+            <ul class="legal-page__list">
+              {section.items.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          )}
+        </section>
+      ))
+    }
+  </div>
+</section>

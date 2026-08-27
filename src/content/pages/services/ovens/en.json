@@ -1,0 +1,311 @@
+{
+  "title": "Oven Repair in Batumi | On-site Service",
+  "lead": "Oven and built-in oven repair in Batumi: heating, temperature, switches, sensors and on-site diagnostics.",
+  "heading": "Oven repair in Batumi",
+  "sections": [
+    {
+      "title": "Common issues",
+      "items": [
+        "Not heating or not turning on.",
+        "Unstable temperature.",
+        "Convection not working.",
+        "Thermostat or sensor errors.",
+        "On-site visits are available in Batumi city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio; exact timing depends on address and technician load."
+      ]
+    },
+    {
+      "title": "What we do",
+      "items": [
+        "Diagnostics and price approval.",
+        "Heater, thermostat, sensor replacement.",
+        "Control and wiring repair.",
+        "Testing after repair."
+      ]
+    },
+    {
+      "title": "Timing & warranty",
+      "items": [
+        "Most jobs take 1–2 hours.",
+        "Warranty on work and parts.",
+        "Service across Batumi."
+      ]
+    },
+    {
+      "title": "Case examples",
+      "items": [
+        "Heating element replacement and power diagnostics.",
+        "Thermostat and sensor repair.",
+        "Convection fan repair."
+      ]
+    },
+    {
+      "title": "Common oven heating issues",
+      "items": [
+        "Clogging, wear or dirt in working parts.",
+        "Sensor, pump, heating, cooling or control-board failure.",
+        "Installation issues, overload, humidity or limited access to the appliance.",
+        "The exact cause is confirmed by on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Why the oven fails",
+      "items": [
+        "The fault is narrowed down by symptom instead of replacing parts blindly.",
+        "Heating elements, thermostat, temperature sensor, mode switch, wiring and fan are checked separately.",
+        "Humidity, heavy use and access conditions in Batumi can make the symptom appear faster.",
+        "The exact cause is confirmed during on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Local Batumi conditions",
+      "items": [
+        "We confirm model, access and symptom before the visit.",
+        "Service covers central Batumi, Khimshiashvili, New Boulevard, Boni, Airport area and Angisa.",
+        "The failed heating mode is tested after repair."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Detailed price table",
+    "items": [
+      {
+        "label": "Heating element replacement (top/bottom/grill)",
+        "value": "from 130–150 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 130,
+          "maxPrice": 150
+        }
+      },
+      {
+        "label": "Convection fan replacement",
+        "value": "from 130–150 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 130,
+          "maxPrice": 150
+        }
+      },
+      {
+        "label": "Control board repair",
+        "value": "from 150–170 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 150,
+          "maxPrice": 170
+        }
+      },
+      {
+        "label": "Thermostat replacement",
+        "value": "from 100–150 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 100,
+          "maxPrice": 150
+        }
+      },
+      {
+        "label": "Uneven heating repair",
+        "value": "from 80–120 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 80,
+          "maxPrice": 120
+        }
+      }
+    ],
+    "note": "The final cost depends on the model, access to parts and spare part pricing."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Why is the light on but there is no heat?",
+        "answer": "Power may reach the oven while the heating element, selector, sensor or wiring has failed. Common service areas include the city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio."
+      },
+      {
+        "question": "Is it dangerous if the breaker trips?",
+        "answer": "Yes. Do not keep testing it before wiring and heating circuits are checked."
+      },
+      {
+        "question": "Can a built-in oven be repaired on site?",
+        "answer": "Usually yes, if the oven can be safely removed and the part is available."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need oven repair?",
+    "text": "Tell us the issue and we will suggest a solution.",
+    "button": "Call now"
+  },
+  "related": {
+    "title": "Related guides",
+    "lead": "Short articles with causes, symptoms, and tips.",
+    "items": [
+      {
+        "title": "Oven not heating",
+        "text": "Typical problems and fixes.",
+        "key": "oven-not-heating",
+        "linkLabel": "Read"
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Price list and diagnostic terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Read"
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "items": [
+      {
+        "text": "oven repair in Batumi"
+      },
+      {
+        "text": "built-in oven repair"
+      },
+      {
+        "text": "oven technician"
+      },
+      {
+        "text": "fix an oven"
+      },
+      {
+        "text": "oven not heating"
+      },
+      {
+        "text": "oven not baking evenly"
+      },
+      {
+        "text": "oven temperature problem"
+      },
+      {
+        "text": "electric oven repair"
+      }
+    ]
+  },
+  "description": "Oven repair in Batumi: no heat, unstable temperature, tripping breaker, fan, thermostat, heating element and control faults.",
+  "diagnosisSteps": {
+    "title": "How diagnostics works",
+    "lead": "A service-specific check sequence for this appliance.",
+    "items": [
+      "Confirm the symptom, model and visible error code.",
+      "Heating elements, thermostat, temperature sensor, mode switch, wiring and fan are checked separately.",
+      "Agree the repair scope and parts before work starts.",
+      "The failed heating mode is tested after repair."
+    ]
+  },
+  "brandsHandled": {
+    "title": "Brands and models",
+    "lead": "We work with common appliance brands. Exact repair options depend on the model and parts availability.",
+    "items": ["Bosch", "Electrolux", "Gorenje", "Beko", "Ariston", "Zanussi", "Samsung"]
+  },
+  "trustSignals": {
+    "title": "Verifiable service terms",
+    "lead": "Only details the customer can see before or during the repair.",
+    "items": [
+      "The failed mode is identified before replacing a heating element.",
+      "Wiring and overheated terminals are checked when the breaker trips.",
+      "Built-in removal is agreed before the cabinet is touched."
+    ]
+  },
+  "caseStudies": {
+    "title": "Diagnostic scenarios in Batumi",
+    "lead": "These are service-specific repair scenarios, not invented statistics or dated jobs.",
+    "applianceLabel": "Appliance",
+    "symptomLabel": "Symptom",
+    "diagnosisLabel": "Diagnostics",
+    "workDoneLabel": "What we do",
+    "resultLabel": "Check result",
+    "areaLabel": "Area",
+    "items": [
+      {
+        "title": "Scenario 1",
+        "appliance": "oven",
+        "symptom": "Repeated oven fault that needs targeted diagnostics.",
+        "diagnosis": "Heating elements, thermostat, temperature sensor, mode switch, wiring and fan are checked separately.",
+        "workDone": "Clean, adjust or replace the confirmed failed part after approval.",
+        "result": "The failed heating mode is tested after repair.",
+        "area": "Khimshiashvili / New Boulevard",
+        "time": "1-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 2",
+        "appliance": "oven",
+        "symptom": "Unstable oven operation after active use.",
+        "diagnosis": "Heating elements, thermostat, temperature sensor, mode switch, wiring and fan are checked separately.",
+        "workDone": "Remove blockage/wear cause or agree part replacement after testing.",
+        "result": "The failed heating mode is tested after repair.",
+        "area": "Center / Angisa",
+        "time": "1.5-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 3",
+        "appliance": "Bosch built-in oven",
+        "symptom": "Bottom heats, top does not",
+        "diagnosis": "We test the upper element, mode switch and wiring.",
+        "workDone": "Replace the element or restore the contact after approval.",
+        "result": "The oven reaches temperature evenly.",
+        "time": "1.5-2 hours",
+        "priceHint": "from 90 GEL",
+        "area": "Batumi city center"
+      },
+      {
+        "title": "Scenario 4",
+        "appliance": "Electrolux oven",
+        "symptom": "Temperature is higher than selected",
+        "diagnosis": "We check thermostat, sensor and actual heat with a thermometer.",
+        "workDone": "Adjust or replace the faulty element after approval.",
+        "result": "Temperature stays closer to the selected mode.",
+        "time": "1-1.5 hours",
+        "priceHint": "after diagnostics",
+        "area": "Khimshiashvili"
+      },
+      {
+        "title": "Scenario 5",
+        "appliance": "Gefest gas oven",
+        "symptom": "Flame goes out after releasing the knob",
+        "diagnosis": "We check the thermocouple and gas safety circuit.",
+        "workDone": "Clean the contact area and test flame holding.",
+        "result": "The oven runs without repeated shutdown.",
+        "time": "1.5 hours",
+        "priceHint": "from 80 GEL",
+        "area": "Gonio"
+      }
+    ],
+    "timeLabel": "Time",
+    "priceHintLabel": "Price guide"
+  },
+  "photos": {
+    "title": "Job photos",
+    "lead": "Typical on-site work scenes: diagnostics, access to components, and careful testing after repair.",
+    "items": [
+      {
+        "src": "/assets/images/jobs/oven-repair-batumi-1.jpg",
+        "alt": "Built-in oven repair in Batumi, Boni district",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/oven-repair-batumi-2.jpg",
+        "alt": "Oven heating element check in Batumi city center",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/oven-repair-batumi-3.jpg",
+        "alt": "Built-in oven wiring diagnostics in Batumi",
+        "width": 640,
+        "height": 480
+      }
+    ]
+  }
+}

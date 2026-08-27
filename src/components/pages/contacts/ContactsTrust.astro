@@ -1,0 +1,34 @@
+---
+import type { TrustSignal } from "../../../lib/content/types";
+
+interface Props {
+  title: string;
+  signals: TrustSignal[];
+}
+
+const { title, signals } = Astro.props;
+---
+
+{
+  signals.length > 0 && (
+    <section class="card contact-trust" aria-labelledby="contact-trust-title">
+      <h2 class="card__title" id="contact-trust-title">
+        {title}
+      </h2>
+      <div class="fact-grid">
+        {signals.map((item) => (
+          <article class="fact">
+            <strong>{item.label}</strong>
+            {item.href ? (
+              <a href={item.href} target="_blank" rel="noopener">
+                {item.value}
+              </a>
+            ) : (
+              <span>{item.value !== undefined ? item.value : item.text}</span>
+            )}
+          </article>
+        ))}
+      </div>
+    </section>
+  )
+}

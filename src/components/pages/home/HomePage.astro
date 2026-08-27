@@ -1,0 +1,375 @@
+---
+import HomeReviews from "./HomeReviews.astro";
+import HomeServiceStandard from "./HomeServiceStandard.astro";
+import type { Language } from "../../../lib/content";
+import {
+  ContactMethod,
+  ContentType,
+  FaqScope,
+  ga,
+  TrackingLocation,
+} from "../../../lib/analytics";
+import type { SiteConfig } from "../../../lib/site";
+import { whatsappNumber } from "../../../lib/site";
+
+interface Props {
+  language: Language;
+  site: SiteConfig;
+}
+
+const DEFAULT_SERVICE_ICON = "/assets/icons/icon-tools.png";
+
+const { language, site } = Astro.props;
+const home = language.home as typeof language.home & { areaNote?: string };
+
+const serviceStandard = home.serviceStandard;
+const guides = home.guides;
+const reviews = home.reviews;
+const leaveReviewUrl =
+  site.trustFacts.reviewSource || site.googleBusinessProfile || site.googleMaps;
+const contactsLabel = language.nav.find(
+  (item) => item.key === "contacts",
+)!.label;
+---
+
+<section class="section hero section--surface">
+  <div class="container hero__layout">
+    <div class="hero__content">
+      <h1 class="hero__title">{home.title}</h1>
+      <p class="hero__lead">{home.lead}</p>
+      {home.areaNote && <p class="hero__lead">{home.areaNote}</p>}
+      {
+        home.chips && (
+          <div class="hero__chips">
+            {home.chips.map((chip: string) => (
+              <span class="badge badge--outline">{chip}</span>
+            ))}
+          </div>
+        )
+      }
+      <div class="hero__actions">
+        <a
+          class="button button--primary"
+          href={`tel:${site.phone}`}
+          {...ga.contact(ContactMethod.Call, TrackingLocation.HomeHero)}
+          >{home.ctaPrimary}</a
+        >
+        <a
+          class="button button--ghost"
+          href={`https://wa.me/${whatsappNumber}`}
+          target="_blank"
+          rel="noopener"
+          {...ga.contact(ContactMethod.WhatsApp, TrackingLocation.HomeHero)}
+          ><img
+            class="button__icon"
+            src="/assets/icons/social/wh-1.png"
+            alt="WhatsApp icon"
+            width="24"
+            height="24"
+          />{language.ctaMessage}</a
+        >
+        <a
+          class="button button--ghost"
+          href={site.viber}
+          target="_blank"
+          rel="noopener"
+          {...ga.contact(ContactMethod.Viber, TrackingLocation.HomeHero)}
+          ><img
+            class="button__icon"
+            src="/assets/icons/social/viber.png"
+            alt="Viber icon"
+            width="24"
+            height="24"
+          />Viber</a
+        >
+        <a
+          class="button button--ghost"
+          href={site.telegram}
+          target="_blank"
+          rel="noopener"
+          {...ga.contact(ContactMethod.Telegram, TrackingLocation.HomeHero)}
+          ><img
+            class="button__icon"
+            src="/assets/icons/social/tg.png"
+            alt="Telegram icon"
+            width="24"
+            height="24"
+          />Telegram</a
+        >
+        {
+          site.facebook && (
+            <a
+              class="button button--ghost"
+              href={site.facebook}
+              target="_blank"
+              rel="noopener"
+              {...ga.contact(ContactMethod.Facebook, TrackingLocation.HomeHero)}
+            >
+              <img
+                class="button__icon"
+                src="/assets/icons/social/fb.png"
+                alt="Facebook icon"
+                width="24"
+                height="24"
+              />
+              Facebook
+            </a>
+          )
+        }
+      </div>
+      {home.heroNote && <p class="hero__note">{home.heroNote}</p>}
+    </div>
+    <figure class="hero__media" aria-hidden="true">
+      <picture
+        ><source
+          srcset="/assets/images/hero-appliances-desktop.webp"
+          media="(min-width: 720px)"
+          type="image/webp"
+        /><img
+          src="/assets/images/hero-appliances-mobile.webp"
+          alt=""
+          width="1767"
+          height="890"
+          fetchpriority="high"
+        /></picture
+      >
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{home.services.title}</h2><p
+        class="section__lead"
+      >
+        {home.services.lead}
+      </p>
+      {
+        home.services.ctaToPrices && (
+          <div class="section__actions">
+            <a
+              class="button button--ghost"
+              href={language.paths.prices}
+              {...ga.content(
+                ContentType.SectionCta,
+                TrackingLocation.HomeServices,
+                "prices",
+              )}
+            >
+              {home.services.ctaToPrices}
+            </a>
+          </div>
+        )
+      }
+    </div>
+    <div class="grid grid--3 service-grid">
+      {
+        home.services.items.map((item) => {
+          const iconSrc = item.serviceIcon
+            ? `/assets/icons/services/${item.serviceIcon}`
+            : item.icon
+              ? `/assets/icons/${item.icon}`
+              : DEFAULT_SERVICE_ICON;
+          const serviceHref =
+            item.linkKey && language.paths[item.linkKey]
+              ? `${language.paths[item.linkKey]}#price`
+              : language.paths[home.services.linkKey];
+          return (
+            <article
+              class:list={[
+                "card",
+                "service-card",
+                { "card--elevated": item.highlight },
+              ]}
+            >
+              <span class="card__icon" aria-hidden="true">
+                <img
+                  src={iconSrc}
+                  alt={`${item.title} icon`}
+                  width="24"
+                  height="24"
+                />
+              </span>
+              <>
+                <h3 class="card__title">{item.title}</h3>
+                <p class="card__text">{item.text}</p>
+              </>
+              <a
+                class="card__link"
+                href={serviceHref}
+                style="margin-top: 16px; display: inline-block;"
+                {...ga.content(
+                  ContentType.ServiceCard,
+                  TrackingLocation.HomeServices,
+                  item.linkKey || home.services.linkKey,
+                )}
+              >
+                {home.services.linkLabel} {item.title}
+              </a>
+            </article>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
+
+{
+  home.brands && (
+    <section class="section section--brands">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">{home.brands.title}</h2>
+          {home.brands.lead && <p class="section__lead">{home.brands.lead}</p>}
+        </div>
+        <div class="badge-row">
+          {home.brands.items.map((brand: string) => (
+            <span class="badge badge--outline">{brand}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<section class="section section--surface section--benefits">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{home.benefits.title}</h2><p
+        class="section__lead"
+      >
+        {home.benefits.lead}
+      </p>
+    </div>
+    <div class="grid grid--3">
+      {
+        home.benefits.items.map((item) => (
+          <div class="card benefit-card">
+            <>
+              <h3 class="card__title">{item.title}</h3>
+              <p class="card__text">{item.text}</p>
+            </>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section section--steps">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{home.steps.title}</h2><p
+        class="section__lead"
+      >
+        {home.steps.lead}
+      </p>
+    </div>
+    <div class="steps">
+      {
+        home.steps.items.map((item: string, index: number) => (
+          <div class="steps__item">
+            <>
+              <div class="steps__index">{index + 1}</div>
+              <p class="steps__text">{item}</p>
+            </>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+{
+  guides && (
+    <section class="section section--surface">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">{guides.title}</h2>
+          {guides.lead && <p class="section__lead">{guides.lead}</p>}
+        </div>
+        <div class="grid grid--3">
+          {guides.items.map((item) => (
+            <article class="card guide-card">
+              <h3 class="card__title">{item.title}</h3>
+              {item.text && <p class="card__text">{item.text}</p>}
+              <a
+                class="card__link"
+                href={language.paths[item.key]}
+                {...ga.content(
+                  ContentType.GuideCard,
+                  TrackingLocation.HomeGuides,
+                  item.key,
+                )}
+              >
+                {item.linkLabel || guides.linkLabel} — {item.title}
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<section class="section section--surface section--prices" id="prices">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{home.prices.title}</h2><p
+        class="section__lead"
+      >
+        {home.prices.lead}
+      </p>
+    </div>
+    <div class="price-panel">
+      <ul class="price-list">
+        {
+          home.prices.items.map((item) => (
+            <li class="price-list__item">
+              <>
+                <strong>{item.label}</strong>
+                <span>{item.value}</span>
+              </>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+{
+  serviceStandard && (
+    <HomeServiceStandard
+      standard={serviceStandard}
+      phone={site.phone}
+      callLabel={home.ctaPrimary}
+      contactsPath={language.paths.contacts}
+      contactsLabel={contactsLabel}
+    />
+  )
+}
+
+{reviews && <HomeReviews reviews={reviews} leaveReviewUrl={leaveReviewUrl} />}
+
+{
+  home.faq?.items?.length && (
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <>
+            <h2 class="section__title">{home.faq.title}</h2>
+            <p class="section__lead">{home.faq.lead}</p>
+          </>
+        </div>
+        {home.faq.items.map((item, index) => (
+          <details class="faq" {...ga.faq(FaqScope.Home, index + 1)}>
+            <summary class="faq__summary">{item.question}</summary>
+            <div class="faq__content">{item.answer}</div>
+          </details>
+        ))}
+      </div>
+    </section>
+  )
+}

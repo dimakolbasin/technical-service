@@ -1,0 +1,322 @@
+{
+  "title": "Air Conditioner Cleaning in Batumi | Service & Disinfection",
+  "lead": "Air conditioner and AC cleaning in Batumi: odor removal, drain cleaning and restoring normal cooling.",
+  "heading": "Air conditioner cleaning in Batumi",
+  "sections": [
+    {
+      "title": "When cleaning is needed",
+      "items": [
+        "Bad smell appears.",
+        "Weak cooling.",
+        "Water leaks.",
+        "Increased noise.",
+        "On-site visits are available in Batumi city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio; exact timing depends on address and technician load."
+      ]
+    },
+    {
+      "title": "What the service includes",
+      "items": [
+        "Filter and indoor unit cleaning.",
+        "Drain flushing.",
+        "Antibacterial treatment.",
+        "Function check and recommendations."
+      ]
+    },
+    {
+      "title": "Timing & warranty",
+      "items": [
+        "Cleaning usually takes 1–2 hours.",
+        "Care recommendations provided.",
+        "Service across Batumi."
+      ]
+    },
+    {
+      "title": "Case examples",
+      "items": [
+        "Full indoor unit and drain cleaning.",
+        "Odor removal and antibacterial treatment.",
+        "Cooling restoration after service."
+      ]
+    },
+    {
+      "title": "Why AC units get dirty fast",
+      "items": [
+        "Clogging, wear or dirt in working parts.",
+        "Sensor, pump, heating, cooling or control-board failure.",
+        "Installation issues, overload, humidity or limited access to the appliance.",
+        "The exact cause is confirmed by on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Why the air conditioner fails",
+      "items": [
+        "The fault is narrowed down by symptom instead of replacing parts blindly.",
+        "Filters, evaporator, blower wheel, drain and outdoor-unit symptoms are checked before calling it cleaning-only work.",
+        "Humidity, heavy use and access conditions in Batumi can make the symptom appear faster.",
+        "The exact cause is confirmed during on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Local Batumi conditions",
+      "items": [
+        "We confirm model, access and symptom before the visit.",
+        "Service covers central Batumi, Khimshiashvili, New Boulevard, Boni, Airport area and Angisa.",
+        "Airflow, condensate drain and cooling are tested after service."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Detailed price table",
+    "items": [
+      {
+        "label": "Indoor unit filter cleaning",
+        "value": "80-100 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 80,
+          "maxPrice": 100
+        }
+      },
+      {
+        "label": "Full cleaning package (indoor unit + drain + filters)",
+        "value": "100-200 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 100,
+          "maxPrice": 200
+        }
+      },
+      {
+        "label": "Antibacterial treatment (disinfection)",
+        "value": "120 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 120
+        }
+      },
+      {
+        "label": "Drainage system flushing",
+        "value": "90 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 90
+        }
+      },
+      {
+        "label": "Fan and outer casing cleaning",
+        "value": "110 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 110
+        }
+      },
+      {
+        "label": "Basic partial cleaning",
+        "value": "60 ₾",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 60
+        }
+      }
+    ],
+    "note": "The final cost depends on the model, access to parts and spare part pricing."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "How do I know the AC needs cleaning?",
+        "answer": "Odor, weak airflow, water dripping and noisy fan are common signs. Common service areas include the city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio."
+      },
+      {
+        "question": "Will cleaning fix weak cooling?",
+        "answer": "Yes if dirt is the cause; no if there is leak, board error or outdoor-unit fault."
+      },
+      {
+        "question": "How often should AC be cleaned in Batumi?",
+        "answer": "Usually before summer, more often in seaside or rental apartments."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need air conditioner cleaning?",
+    "text": "We will schedule a convenient time and come to you.",
+    "button": "Call now"
+  },
+  "related": {
+    "title": "Related guides",
+    "lead": "Short articles with causes, symptoms, and tips.",
+    "items": [
+      {
+        "title": "Air conditioner not cooling",
+        "text": "Weak cooling causes.",
+        "key": "ac-not-cooling",
+        "linkLabel": "Read"
+      },
+      {
+        "title": "Why AC cleaning matters",
+        "text": "Humid climate and service frequency.",
+        "key": "ac-cleaning-importance",
+        "linkLabel": "Read"
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Price list and diagnostic terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Read"
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "items": [
+      {
+        "text": "AC cleaning in Batumi"
+      },
+      {
+        "text": "air conditioner cleaning in Batumi"
+      },
+      {
+        "text": "aircon cleaning"
+      },
+      {
+        "text": "AC service in Batumi"
+      },
+      {
+        "text": "AC technician"
+      },
+      {
+        "text": "clean an air conditioner"
+      },
+      {
+        "text": "AC not cooling"
+      },
+      {
+        "text": "air conditioner leaking water"
+      }
+    ]
+  },
+  "description": "AC cleaning in Batumi: filters, evaporator, drainage, odor, weak cooling and preventive service for the humid seaside climate.",
+  "diagnosisSteps": {
+    "title": "How diagnostics works",
+    "lead": "A service-specific check sequence for this appliance.",
+    "items": [
+      "Confirm the symptom, model and visible error code.",
+      "Filters, evaporator, blower wheel, drain and outdoor-unit symptoms are checked before calling it cleaning-only work.",
+      "Agree the repair scope and parts before work starts.",
+      "Airflow, condensate drain and cooling are tested after service."
+    ]
+  },
+  "brandsHandled": {
+    "title": "Brands and models",
+    "lead": "We work with common appliance brands. Exact repair options depend on the model and parts availability.",
+    "items": ["LG", "Samsung", "Midea", "Gree", "Haier", "Toshiba", "Panasonic"]
+  },
+  "trustSignals": {
+    "title": "Verifiable service terms",
+    "lead": "Only details the customer can see before or during the repair.",
+    "items": [
+      "Cleaning is not presented as a repair if the fault is refrigerant, board or outdoor-unit related.",
+      "Drain and airflow are tested after cleaning.",
+      "Access, height and dirt level are confirmed before the final price."
+    ]
+  },
+  "caseStudies": {
+    "title": "Diagnostic scenarios in Batumi",
+    "lead": "These are service-specific repair scenarios, not invented statistics or dated jobs.",
+    "applianceLabel": "Appliance",
+    "symptomLabel": "Symptom",
+    "diagnosisLabel": "Diagnostics",
+    "workDoneLabel": "What we do",
+    "resultLabel": "Check result",
+    "areaLabel": "Area",
+    "items": [
+      {
+        "title": "Scenario 1",
+        "appliance": "air conditioner",
+        "symptom": "Repeated air conditioner fault that needs targeted diagnostics.",
+        "diagnosis": "Filters, evaporator, blower wheel, drain and outdoor-unit symptoms are checked before calling it cleaning-only work.",
+        "workDone": "Clean, adjust or replace the confirmed failed part after approval.",
+        "result": "Airflow, condensate drain and cooling are tested after service.",
+        "area": "New Boulevard / Khimshiashvili",
+        "time": "1-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 2",
+        "appliance": "air conditioner",
+        "symptom": "Unstable air conditioner operation after active use.",
+        "diagnosis": "Filters, evaporator, blower wheel, drain and outdoor-unit symptoms are checked before calling it cleaning-only work.",
+        "workDone": "Remove blockage/wear cause or agree part replacement after testing.",
+        "result": "Airflow, condensate drain and cooling are tested after service.",
+        "area": "Center / Angisa",
+        "time": "1.5-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 3",
+        "appliance": "Gree wall split AC",
+        "symptom": "Weak air flow",
+        "diagnosis": "We inspect filters, evaporator and indoor fan wheel.",
+        "workDone": "Remove and wash filters, clean accessible dirty areas.",
+        "result": "Airflow becomes noticeably stronger.",
+        "time": "1-1.5 hours",
+        "priceHint": "from 70 GEL",
+        "area": "New Boulevard"
+      },
+      {
+        "title": "Scenario 4",
+        "appliance": "Midea AC",
+        "symptom": "Damp smell after startup",
+        "diagnosis": "We check drainage, evaporator and mold traces on filters.",
+        "workDone": "Clean and treat accessible surfaces.",
+        "result": "The smell reduces after drying and test run.",
+        "time": "1.5 hours",
+        "priceHint": "from 80 GEL",
+        "area": "Boni"
+      },
+      {
+        "title": "Scenario 5",
+        "appliance": "Samsung split system",
+        "symptom": "Water drips from indoor unit",
+        "diagnosis": "We check drain slope, clogged pipe and tray contamination.",
+        "workDone": "Clear drainage, wash the tray and test cooling.",
+        "result": "Condensate leaves through the drain without dripping.",
+        "time": "1-2 hours",
+        "priceHint": "after drain check",
+        "area": "Airport area"
+      }
+    ],
+    "timeLabel": "Time",
+    "priceHintLabel": "Price guide"
+  },
+  "photos": {
+    "title": "Job photos",
+    "lead": "Typical on-site work scenes: diagnostics, access to components, and careful testing after repair.",
+    "items": [
+      {
+        "src": "/assets/images/jobs/ac-cleaning-batumi-1.jpg",
+        "alt": "Air conditioner cleaning in Batumi, Khimshiashvili district",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/ac-cleaning-batumi-2.jpg",
+        "alt": "Split AC filter washing in Batumi, New Boulevard",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/ac-cleaning-batumi-3.jpg",
+        "alt": "Dirty and clean AC filter comparison in Batumi",
+        "width": 640,
+        "height": 480
+      }
+    ]
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "title": "Gas boiler repair and maintenance in Batumi",
+  "lead": "Gas boiler repair and maintenance in Batumi: ignition, sensors, burner, heat exchanger, pump and diagnostics.",
+  "heading": "Gas boiler repair and maintenance in Batumi",
+  "sections": [
+    {
+      "title": "Common issues",
+      "items": [
+        "Boiler does not start or shuts off.",
+        "Sensor and board errors.",
+        "Weak hot water or heating.",
+        "Leaks and pressure drops.",
+        "On-site visits are available in Batumi city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio; exact timing depends on address and technician load."
+      ]
+    },
+    {
+      "title": "What we do",
+      "items": [
+        "Sensor, board, electrode and burner replacement.",
+        "Heat exchanger flushing and maintenance.",
+        "Circulation pump and gasket replacement.",
+        "Boiler safety diagnostics."
+      ]
+    },
+    {
+      "title": "Timing and warranty",
+      "items": [
+        "On-site diagnostics in Batumi.",
+        "The price is agreed before repair.",
+        "Careful work with gas equipment."
+      ]
+    },
+    {
+      "title": "Example jobs",
+      "items": [
+        "Full technical maintenance.",
+        "Temperature sensor replacement.",
+        "Heat exchanger descaling flush."
+      ]
+    },
+    {
+      "title": "Gas boiler failure causes",
+      "items": [
+        "Clogging, wear or dirt in working parts.",
+        "Sensor, pump, heating, cooling or control-board failure.",
+        "Installation issues, overload, humidity or limited access to the appliance.",
+        "The exact cause is confirmed by on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Why the gas boiler fails",
+      "items": [
+        "The fault is narrowed down by symptom instead of replacing parts blindly.",
+        "Error code, pressure, ignition electrode, burner, draft sensor, pump and heat exchanger are checked with safety first.",
+        "Humidity, heavy use and access conditions in Batumi can make the symptom appear faster.",
+        "The exact cause is confirmed during on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Local Batumi conditions",
+      "items": [
+        "We confirm model, access and symptom before the visit.",
+        "Service covers central Batumi, Khimshiashvili, New Boulevard, Boni, Airport area and Angisa.",
+        "Start-up, hot water and pressure stability are tested after service."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Detailed price table",
+    "groups": [
+      {
+        "title": "Sensors and electronics",
+        "items": [
+          {
+            "label": "Temperature sensor replacement",
+            "value": "40–60 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 40,
+              "maxPrice": 60
+            }
+          },
+          {
+            "label": "Electronic board replacement",
+            "value": "50–60 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 50,
+              "maxPrice": 60
+            }
+          },
+          {
+            "label": "Draft safety sensor replacement",
+            "value": "40–60 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 40,
+              "maxPrice": 60
+            }
+          }
+        ]
+      },
+      {
+        "title": "Burner and ignition",
+        "items": [
+          {
+            "label": "Electrode replacement without burner removal",
+            "value": "40–50 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 40,
+              "maxPrice": 50
+            }
+          },
+          {
+            "label": "Electrode replacement with burner removal",
+            "value": "40–100 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 40,
+              "maxPrice": 100
+            }
+          },
+          {
+            "label": "Burner replacement",
+            "value": "50–80 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 50,
+              "maxPrice": 80
+            }
+          }
+        ]
+      },
+      {
+        "title": "Heat exchanger and hydraulics",
+        "items": [
+          {
+            "label": "Primary heat exchanger replacement",
+            "value": "120–150 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 120,
+              "maxPrice": 150
+            }
+          },
+          {
+            "label": "Secondary heat exchanger replacement",
+            "value": "from 80–120 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 80,
+              "maxPrice": 120
+            }
+          },
+          {
+            "label": "Circulation pump replacement",
+            "value": "from 80–120 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 80,
+              "maxPrice": 120
+            }
+          },
+          {
+            "label": "Leak repair / gasket replacement",
+            "value": "from 50–80 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 50,
+              "maxPrice": 80
+            }
+          }
+        ]
+      },
+      {
+        "title": "Maintenance",
+        "items": [
+          {
+            "label": "Full cleaning and technical maintenance",
+            "value": "from 80–120 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 80,
+              "maxPrice": 120
+            }
+          },
+          {
+            "label": "Heat exchanger descaling flush",
+            "value": "from 100–150 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 100,
+              "maxPrice": 150
+            }
+          }
+        ]
+      }
+    ],
+    "note": "The final cost depends on the model, access to parts and spare part pricing."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "What if I smell gas?",
+        "answer": "Shut off gas, ventilate, and call emergency gas service. Common service areas include the city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio."
+      },
+      {
+        "question": "Why does boiler pressure drop?",
+        "answer": "Leaks, air in the system, expansion vessel or valve faults can cause it."
+      },
+      {
+        "question": "Is boiler maintenance needed?",
+        "answer": "Yes. Burner, heat exchanger, pump and sensors should be checked to reduce seasonal failures."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need gas boiler service?",
+    "text": "Describe the symptoms and we will suggest the next step and price range.",
+    "button": "Call"
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "items": [
+      {
+        "text": "gas boiler repair in Batumi"
+      },
+      {
+        "text": "boiler repair in Batumi"
+      },
+      {
+        "text": "boiler repair near me"
+      },
+      {
+        "text": "boiler repairs near me"
+      },
+      {
+        "text": "gas boiler repairs in Batumi"
+      },
+      {
+        "text": "gas boiler repairs"
+      },
+      {
+        "text": "gas boiler technician"
+      },
+      {
+        "text": "fix a gas boiler"
+      },
+      {
+        "text": "gas boiler maintenance"
+      },
+      {
+        "text": "boiler not igniting"
+      },
+      {
+        "text": "boiler not heating water"
+      },
+      {
+        "text": "boiler pressure dropping"
+      }
+    ]
+  },
+  "description": "Gas boiler repair and maintenance in Batumi: no ignition, flame failure, weak hot water, pressure drops, sensors, pump and heat exchanger.",
+  "diagnosisSteps": {
+    "title": "How diagnostics works",
+    "lead": "A service-specific check sequence for this appliance.",
+    "items": [
+      "Confirm the symptom, model and visible error code.",
+      "Error code, pressure, ignition electrode, burner, draft sensor, pump and heat exchanger are checked with safety first.",
+      "Agree the repair scope and parts before work starts.",
+      "Start-up, hot water and pressure stability are tested after service."
+    ]
+  },
+  "brandsHandled": {
+    "title": "Brands and models",
+    "lead": "We work with common appliance brands. Exact repair options depend on the model and parts availability.",
+    "items": ["Ariston", "Baxi", "Bosch", "Vaillant", "Immergas", "Beretta", "Ferroli"]
+  },
+  "trustSignals": {
+    "title": "Verifiable service terms",
+    "lead": "Only details the customer can see before or during the repair.",
+    "items": [
+      "Gas odor is treated as an emergency safety issue, not as a normal repair lead.",
+      "If a licensed gas utility is required, the customer is told directly.",
+      "Startup, hot water and pressure stability are checked after service."
+    ]
+  },
+  "caseStudies": {
+    "title": "Diagnostic scenarios in Batumi",
+    "lead": "These are service-specific repair scenarios, not invented statistics or dated jobs.",
+    "applianceLabel": "Appliance",
+    "symptomLabel": "Symptom",
+    "diagnosisLabel": "Diagnostics",
+    "workDoneLabel": "What we do",
+    "resultLabel": "Check result",
+    "areaLabel": "Area",
+    "items": [
+      {
+        "title": "Scenario 1",
+        "appliance": "gas boiler",
+        "symptom": "Repeated gas boiler fault that needs targeted diagnostics.",
+        "diagnosis": "Error code, pressure, ignition electrode, burner, draft sensor, pump and heat exchanger are checked with safety first.",
+        "workDone": "Clean, adjust or replace the confirmed failed part after approval.",
+        "result": "Start-up, hot water and pressure stability are tested after service.",
+        "area": "Center / Khimshiashvili",
+        "time": "1-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 2",
+        "appliance": "gas boiler",
+        "symptom": "Unstable gas boiler operation after active use.",
+        "diagnosis": "Error code, pressure, ignition electrode, burner, draft sensor, pump and heat exchanger are checked with safety first.",
+        "workDone": "Remove blockage/wear cause or agree part replacement after testing.",
+        "result": "Start-up, hot water and pressure stability are tested after service.",
+        "area": "Boni / Airport area",
+        "time": "1.5-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 3",
+        "appliance": "Ariston gas boiler",
+        "symptom": "No ignition and no hot water",
+        "diagnosis": "We check pressure, ignition electrode, draft and display error.",
+        "workDone": "Clean the electrode, test sensors and start safely.",
+        "result": "The boiler starts without repeated error.",
+        "time": "1-2 hours",
+        "priceHint": "after diagnostics",
+        "area": "Khimshiashvili"
+      },
+      {
+        "title": "Scenario 4",
+        "appliance": "Baxi gas boiler",
+        "symptom": "System pressure drops",
+        "diagnosis": "We check the circuit, expansion vessel and visible joints.",
+        "workDone": "Recharge the vessel or identify the leak point for repair approval.",
+        "result": "Pressure holds during the test run.",
+        "time": "1.5-2 hours",
+        "priceHint": "from 80 GEL",
+        "area": "New Boulevard"
+      },
+      {
+        "title": "Scenario 5",
+        "appliance": "Immergas boiler",
+        "symptom": "Hot water temperature jumps",
+        "diagnosis": "We check flow sensor, heat exchanger and flame stability.",
+        "workDone": "Clean accessible parts or approve heat exchanger service.",
+        "result": "Water temperature becomes steadier.",
+        "time": "1.5 hours",
+        "priceHint": "after inspection",
+        "area": "Boni"
+      }
+    ],
+    "timeLabel": "Time",
+    "priceHintLabel": "Price guide"
+  },
+  "related": {
+    "title": "Related pages",
+    "lead": "Useful guides, prices and contact options for this service.",
+    "items": [
+      {
+        "key": "gas-boiler-not-igniting",
+        "title": "Gas boiler not igniting in Batumi",
+        "text": "What to check when a gas boiler does not start: pressure, ignition, sensors, draft, burner, board and safety before calling a technician.",
+        "linkLabel": "Open"
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Price list and diagnostic terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Open"
+  },
+  "photos": {
+    "title": "Job photos",
+    "lead": "Typical on-site work scenes: diagnostics, access to components, and careful testing after repair.",
+    "items": [
+      {
+        "src": "/assets/images/jobs/gas-boiler-repair-batumi-1.jpg",
+        "alt": "Gas boiler repair in Batumi, New Boulevard",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/gas-boiler-repair-batumi-2.jpg",
+        "alt": "Gas boiler sensor check in Batumi, Khimshiashvili",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/gas-boiler-repair-batumi-3.jpg",
+        "alt": "Wall-mounted gas boiler diagnostics in Batumi",
+        "width": 640,
+        "height": 480
+      }
+    ]
+  }
+}

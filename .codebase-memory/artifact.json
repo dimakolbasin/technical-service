@@ -1,0 +1,11 @@
+{
+    "schema_version": 2,
+    "commit": "2365c6d4078c36c87b2e422ce2113ce39574f2d6",
+    "indexed_at": "2026-08-27T06:08:15Z",
+    "project": "Users-d.kolbasin-Desktop-sub-technical-service",
+    "nodes": 3036,
+    "edges": 3240,
+    "original_size": 4259840,
+    "compressed_size": 356404,
+    "compression_level": 3
+}

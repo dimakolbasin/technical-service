@@ -2,22 +2,34 @@
   "name": "technical-service",
   "private": true,
   "version": "0.1.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
-    "clean": "rimraf dist",
-    "build": "npm run clean && eleventy",
-    "watch": "eleventy --watch",
-    "serve": "node ./node_modules/live-server/live-server.js dist --watch=dist",
-    "dev": "npm run clean && concurrently -k -n ELEVENTY,SERVER \"npm:watch\" \"wait-on dist/index.html && npm run serve\"",
+    "build": "astro build && node scripts/minify-css.mjs",
+    "check": "astro check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "verify": "node scripts/compare-builds.mjs --verify-snapshot tests/eleventy-semantic-baseline.json dist && node scripts/verify-build.mjs",
+    "test": "npm run format:check && npm run check && npm run build && npm run verify",
+    "test:e2e": "npm run build && playwright test",
+    "serve": "astro preview",
+    "dev": "astro dev",
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "concurrently": "^8.2.2",
-    "dotenv": "^17.2.3",
+    "@astrojs/check": "^0.9.10",
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^24.10.0",
+    "astro": "^7.2.7",
+    "esbuild": "0.28.2",
     "husky": "^9.1.0",
-    "live-server": "^1.2.2",
-    "rimraf": "^5.0.5",
-    "wait-on": "^7.2.0"
+    "prettier": "^3.9.6",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^6.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "zod": "^4.4.3"
+  }
 }

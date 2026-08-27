@@ -1,0 +1,430 @@
+{
+  "title": "Washing Machine Repair in Batumi | On-site Service",
+  "lead": "Washing machine and washer repair in Batumi: on-site diagnostics, clear pricing and repair of key components.",
+  "heading": "Washing machine repair in Batumi",
+  "sections": [
+    {
+      "title": "Common issues",
+      "items": [
+        "Not draining or not spinning.",
+        "No heating / heater error.",
+        "Noise, vibration, or leaks.",
+        "Won't start / control board errors.",
+        "On-site visits are available in Batumi city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio; exact timing depends on address and technician load."
+      ]
+    },
+    {
+      "title": "What we do",
+      "items": [
+        "Diagnostics and price approval.",
+        "Pump, heater, seal, belt, bearings replacement.",
+        "Control board repair/replacement.",
+        "Testing after repair."
+      ]
+    },
+    {
+      "title": "Timing & warranty",
+      "items": [
+        "Most jobs take 1–2 hours.",
+        "Warranty on work and parts.",
+        "On-site visit across Batumi."
+      ]
+    },
+    {
+      "title": "Case examples",
+      "items": [
+        "Drain pump replacement and system cleaning.",
+        "Bearing and door seal replacement.",
+        "Control board repair after power surge."
+      ]
+    },
+    {
+      "title": "Washing machine failure causes",
+      "items": [
+        "Clogging, wear or dirt in working parts.",
+        "Sensor, pump, heating, cooling or control-board failure.",
+        "Installation issues, overload, humidity or limited access to the appliance.",
+        "The exact cause is confirmed by on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Why the washing machine fails",
+      "items": [
+        "The fault is narrowed down by symptom instead of replacing parts blindly.",
+        "Drain filter, pump, bearings, shock absorbers, heater and water-level sensor are checked separately.",
+        "Humidity, heavy use and access conditions in Batumi can make the symptom appear faster.",
+        "The exact cause is confirmed during on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Local Batumi conditions",
+      "items": [
+        "We confirm model, access and symptom before the visit.",
+        "Service covers central Batumi, Khimshiashvili, New Boulevard, Boni, Airport area and Angisa.",
+        "A test cycle must confirm drain, spin and leak-free operation."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Detailed price table",
+    "groups": [
+      {
+        "title": "Mechanical parts",
+        "items": [
+          {
+            "label": "Bearing replacement",
+            "value": "from 300–450 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 300,
+              "maxPrice": 450
+            }
+          },
+          {
+            "label": "Shock absorber replacement",
+            "value": "from 100–150 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 100,
+              "maxPrice": 150
+            }
+          },
+          {
+            "label": "Drum spider replacement",
+            "value": "from 80–100 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 80,
+              "maxPrice": 100
+            }
+          },
+          {
+            "label": "Door gasket replacement",
+            "value": "from 100–130 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 100,
+              "maxPrice": 130
+            }
+          }
+        ]
+      },
+      {
+        "title": "Drain / water intake",
+        "items": [
+          {
+            "label": "Drain pump replacement",
+            "value": "from 90–120 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 90,
+              "maxPrice": 120
+            }
+          },
+          {
+            "label": "Drain system cleaning",
+            "value": "70 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 70
+            }
+          },
+          {
+            "label": "Inlet valve replacement",
+            "value": "from 120 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 120
+            }
+          },
+          {
+            "label": "Blockage removal",
+            "value": "50 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 50
+            }
+          }
+        ]
+      },
+      {
+        "title": "Electrical and control",
+        "items": [
+          {
+            "label": "Heating element replacement",
+            "value": "from 90–120 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 90,
+              "maxPrice": 120
+            }
+          },
+          {
+            "label": "Control module repair / replacement",
+            "value": "from 150–250 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 150,
+              "maxPrice": 250
+            }
+          },
+          {
+            "label": "Sensor replacement (level, temperature)",
+            "value": "from 60–80 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 60,
+              "maxPrice": 80
+            }
+          },
+          {
+            "label": "Display error troubleshooting",
+            "value": "from 60–80 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 60,
+              "maxPrice": 80
+            }
+          }
+        ]
+      },
+      {
+        "title": "Other",
+        "items": [
+          {
+            "label": "Leak repair",
+            "value": "from 60–100 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 60,
+              "maxPrice": 100
+            }
+          },
+          {
+            "label": "Belt replacement",
+            "value": "from 80–100 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 80,
+              "maxPrice": 100
+            }
+          },
+          {
+            "label": "Noise and vibration repair",
+            "value": "from 60–90 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 60,
+              "maxPrice": 90
+            }
+          }
+        ]
+      }
+    ],
+    "note": "The final cost depends on the model, access to parts and spare part pricing."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Why does the washer stop before spin?",
+        "answer": "Usually because water has not drained, the load is unbalanced, or a pump/sensor fault stops the program. Common service areas include the city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio."
+      },
+      {
+        "question": "Can I clean the filter myself?",
+        "answer": "Yes, if water is drained and the filter opens normally. Stop if it is stuck or leaking."
+      },
+      {
+        "question": "When is bearing repair not worth it?",
+        "answer": "When the tub is sealed or corrosion is severe, the economics should be checked first."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need washing machine repair?",
+    "text": "Describe the issue — we will estimate time and cost.",
+    "button": "Call now"
+  },
+  "related": {
+    "title": "Related guides",
+    "lead": "Short articles with causes, symptoms, and tips.",
+    "items": [
+      {
+        "title": "Washing machine not draining",
+        "text": "Causes and quick checks.",
+        "key": "washing-machine-not-draining",
+        "linkLabel": "Read"
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Price list and diagnostic terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Read"
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "items": [
+      {
+        "text": "washer repair in Batumi"
+      },
+      {
+        "text": "washing machine repair in Batumi"
+      },
+      {
+        "text": "washing machine repair"
+      },
+      {
+        "text": "washing machine repair service"
+      },
+      {
+        "text": "washing machine problems"
+      },
+      {
+        "text": "washing machine technician near me"
+      },
+      {
+        "text": "washing machine technician"
+      },
+      {
+        "text": "fix a washer"
+      },
+      {
+        "text": "fix a washing machine"
+      },
+      {
+        "text": "washer not draining"
+      },
+      {
+        "text": "washer not spinning"
+      },
+      {
+        "text": "washing machine leaking"
+      }
+    ]
+  },
+  "description": "Washing machine repair in Batumi: drainage, spin, leaks, noise, bearings, pump, heater and control module. On-site diagnostics and clear pricing.",
+  "diagnosisSteps": {
+    "title": "How diagnostics works",
+    "lead": "A service-specific check sequence for this appliance.",
+    "items": [
+      "Confirm the symptom, model and visible error code.",
+      "Drain filter, pump, bearings, shock absorbers, heater and water-level sensor are checked separately.",
+      "Agree the repair scope and parts before work starts.",
+      "A test cycle must confirm drain, spin and leak-free operation."
+    ]
+  },
+  "brandsHandled": {
+    "title": "Brands and models",
+    "lead": "We work with common appliance brands. Exact repair options depend on the model and parts availability.",
+    "items": ["LG", "Samsung", "Bosch", "Beko", "Indesit", "Whirlpool", "Ariston", "Candy"]
+  },
+  "trustSignals": {
+    "title": "Verifiable service terms",
+    "lead": "Only details the customer can see before or during the repair.",
+    "items": [
+      "The drain, spin and leak test is visible before the visit is closed.",
+      "Bearing, pump, heater and module work are priced as separate repair paths.",
+      "Removed or failed parts are shown when replacement is needed."
+    ]
+  },
+  "caseStudies": {
+    "title": "Diagnostic scenarios in Batumi",
+    "lead": "These are service-specific repair scenarios, not invented statistics or dated jobs.",
+    "applianceLabel": "Appliance",
+    "symptomLabel": "Symptom",
+    "diagnosisLabel": "Diagnostics",
+    "workDoneLabel": "What we do",
+    "resultLabel": "Check result",
+    "areaLabel": "Area",
+    "items": [
+      {
+        "title": "Scenario 1",
+        "appliance": "washing machine",
+        "symptom": "Repeated washing machine fault that needs targeted diagnostics.",
+        "diagnosis": "Drain filter, pump, bearings, shock absorbers, heater and water-level sensor are checked separately.",
+        "workDone": "Clean, adjust or replace the confirmed failed part after approval.",
+        "result": "A test cycle must confirm drain, spin and leak-free operation.",
+        "area": "Khimshiashvili / New Boulevard",
+        "time": "1-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 2",
+        "appliance": "washing machine",
+        "symptom": "Unstable washing machine operation after active use.",
+        "diagnosis": "Drain filter, pump, bearings, shock absorbers, heater and water-level sensor are checked separately.",
+        "workDone": "Remove blockage/wear cause or agree part replacement after testing.",
+        "result": "A test cycle must confirm drain, spin and leak-free operation.",
+        "area": "Center / Boni",
+        "time": "1.5-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 3",
+        "appliance": "Bosch washing machine",
+        "symptom": "Water stays in the drum after washing",
+        "diagnosis": "We check the pump, filter, drain hose and pressure signal.",
+        "workDone": "Clean the drain path or replace the pump after approval.",
+        "result": "The washer drains and unlocks normally on a short test.",
+        "time": "1-1.5 hours",
+        "priceHint": "from 70 GEL",
+        "area": "New Boulevard"
+      },
+      {
+        "title": "Scenario 4",
+        "appliance": "LG front-load washer",
+        "symptom": "Heavy shaking during spin",
+        "diagnosis": "We check shock absorbers, leveling and drum movement.",
+        "workDone": "Level the washer or replace worn dampers after approval.",
+        "result": "Spin cycle runs with less vibration.",
+        "time": "1.5-2 hours",
+        "priceHint": "after component check",
+        "area": "Boni"
+      },
+      {
+        "title": "Scenario 5",
+        "appliance": "Samsung washer",
+        "symptom": "Water does not heat and cycles take too long",
+        "diagnosis": "We test the heater, temperature sensor and wiring.",
+        "workDone": "Replace the heater or repair the contact after approval.",
+        "result": "The program reaches heat and completes normally.",
+        "time": "1.5 hours",
+        "priceHint": "from 90 GEL",
+        "area": "Gonio"
+      }
+    ],
+    "timeLabel": "Time",
+    "priceHintLabel": "Price guide"
+  },
+  "photos": {
+    "title": "Job photos",
+    "lead": "Typical on-site work scenes: diagnostics, access to components, and careful testing after repair.",
+    "items": [
+      {
+        "src": "/assets/images/jobs/washing-machine-repair-batumi-1.jpg",
+        "alt": "Bosch washing machine repair in Batumi, Khimshiashvili district",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/washing-machine-repair-batumi-2.jpg",
+        "alt": "Washing machine drain filter check in Batumi, New Boulevard",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/washing-machine-repair-batumi-3.jpg",
+        "alt": "Washer drum and lower panel diagnostics in Batumi",
+        "width": 640,
+        "height": 480
+      }
+    ]
+  }
+}
