@@ -1,0 +1,162 @@
+---
+import ContactValue from "../contacts/ContactValue.astro";
+import { ContentType, ga, TrackingLocation } from "../../../lib/analytics";
+import type { Language, RouteKey } from "../../../lib/content";
+import type { PricesPageContent } from "../../../lib/content/types";
+import type { SiteConfig } from "../../../lib/site";
+interface Props {
+  language: Language;
+  page: PricesPageContent;
+  site: SiteConfig;
+}
+const { language, page, site } = Astro.props;
+---
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title">{page.heading}</h1><p class="section__lead">
+        {page.lead}
+      </p>
+    </div>
+  </div>
+</section>
+
+{
+  page.sections?.length ? (
+    page.sections.map((section) => (
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">{section.title}</h2>
+            {section.lead && <p class="section__lead">{section.lead}</p>}
+          </div>
+          {section.items && (
+            <ul class="price-list">
+              {section.items.map((item) => (
+                <li class="price-list__item">
+                  <strong>{item.label}</strong>
+                  <span>{item.value}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+          {section.groups && (
+            <div class="grid grid--2">
+              {section.groups.map((group) => (
+                <div class="card">
+                  <h3 class="card__title">{group.title}</h3>
+                  {group.lead && <p class="card__text">{group.lead}</p>}
+                  <ul class="price-list">
+                    {group.items.map((item) => (
+                      <li class="price-list__item">
+                        <strong>{item.label}</strong>
+                        <span>{item.value}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
+          {section.note && (
+            <div class="card card--elevated">
+              <p class="card__text">{section.note}</p>
+            </div>
+          )}
+        </div>
+      </section>
+    ))
+  ) : (
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <p class="card__text">{page.lead}</p>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  language.serviceFocus && (
+    <section class="section section--surface">
+      <div class="container">
+        <>
+          <div class="section__header">
+            <>
+              <h2 class="section__title">{language.serviceFocus.title}</h2>
+              <p class="section__lead">{language.serviceFocus.lead}</p>
+            </>
+          </div>
+          <div class="grid grid--3">
+            {language.serviceFocus.items.map((item) => (
+              <article class="card">
+                <h3 class="card__title">{item.title}</h3>
+                {item.text && <p class="card__text">{item.text}</p>}
+                <a
+                  class="card__link"
+                  href={language.paths[item.key as RouteKey]}
+                  {...ga.content(
+                    ContentType.ServiceFocusCard,
+                    TrackingLocation.PricesServiceFocus,
+                    item.key as RouteKey,
+                  )}
+                >
+                  {language.serviceFocus.linkLabel} — {item.title}
+                </a>
+              </article>
+            ))}
+          </div>
+        </>
+      </div>
+    </section>
+  )
+}
+
+{
+  page.importantNotes?.length && (
+    <section class="section section--surface">
+      <div class="container">
+        <div class="card">
+          <>
+            <h3 class="card__title">{language.common.important}</h3>
+            <ul class="list">
+              {page.importantNotes.map((note: string) => (
+                <li class="list__item">
+                  • <span>{note}</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  page.contactCard && (
+    <section class="section">
+      <div class="container">
+        <div class="card card--elevated">
+          <>
+            <h3 class="card__title">{page.contactCard.title}</h3>
+            <ul class="list">
+              {page.contactCard.items.map((item) => (
+                <li class="list__item">
+                  <strong>{item.label}:</strong>{" "}
+                  <ContactValue
+                    item={item}
+                    site={site}
+                    location={TrackingLocation.PricesContactCard}
+                  />
+                </li>
+              ))}
+            </ul>
+          </>
+        </div>
+      </div>
+    </section>
+  )
+}

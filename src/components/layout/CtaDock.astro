@@ -1,0 +1,99 @@
+---
+import type { Language } from "../../lib/content";
+import { ContactMethod, ga, TrackingLocation } from "../../lib/analytics";
+import type { SiteConfig } from "../../lib/site";
+import { whatsappNumber } from "../../lib/site";
+
+interface Props {
+  language: Language;
+  site: SiteConfig;
+}
+
+const { language, site } = Astro.props;
+const messageLabel = language.ctaMessage;
+const links = [
+  {
+    method: ContactMethod.Call,
+    href: `tel:${site.phone}`,
+    label: language.cta,
+    icon: "call.png",
+    primary: true,
+  },
+  {
+    method: ContactMethod.WhatsApp,
+    href: `https://wa.me/${whatsappNumber}`,
+    label: messageLabel,
+    icon: "wh-1.png",
+    primary: false,
+  },
+  {
+    method: ContactMethod.Viber,
+    href: site.viber,
+    label: "Viber",
+    icon: "viber.png",
+    primary: false,
+  },
+  {
+    method: ContactMethod.Telegram,
+    href: site.telegram,
+    label: "Telegram",
+    icon: "tg.png",
+    primary: false,
+  },
+] as const;
+---
+
+<div class="cta-bar" role="region" aria-label={language.cta}>
+  {
+    links.map((link) => (
+      <a
+        class:list={[
+          "button",
+          link.primary ? "button--primary" : "button--ghost",
+          "cta-bar__button",
+        ]}
+        href={link.href}
+        target={link.method === ContactMethod.Call ? undefined : "_blank"}
+        rel={link.method === ContactMethod.Call ? undefined : "noopener"}
+        aria-label={link.label}
+        {...ga.contact(link.method, TrackingLocation.CtaBar)}
+      >
+        <img
+          class="button__icon"
+          src={`/assets/icons/social/${link.icon}`}
+          alt=""
+          width="24"
+          height="24"
+        />
+      </a>
+    ))
+  }
+</div>
+
+<div class="cta-dock" role="region" aria-label={language.cta}>
+  {
+    links.map((link) => (
+      <a
+        class:list={[
+          "button",
+          link.primary ? "button--primary" : "button--ghost",
+          "cta-dock__button",
+        ]}
+        href={link.href}
+        target={link.method === ContactMethod.Call ? undefined : "_blank"}
+        rel={link.method === ContactMethod.Call ? undefined : "noopener"}
+        aria-label={link.label}
+        title={link.label}
+        {...ga.contact(link.method, TrackingLocation.CtaDock)}
+      >
+        <img
+          class="button__icon"
+          src={`/assets/icons/social/${link.icon}`}
+          alt=""
+          width="24"
+          height="24"
+        />
+      </a>
+    ))
+  }
+</div>

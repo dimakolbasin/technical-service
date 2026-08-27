@@ -1,0 +1,76 @@
+---
+import type { Language } from "../../lib/content";
+import type { SearchPhrases } from "../../lib/content/types";
+import { ContentType, ga, TrackingLocation } from "../../lib/analytics";
+
+interface Props {
+  searchPhrases?: SearchPhrases;
+  language: Language;
+  linkItems?: boolean;
+}
+
+const { searchPhrases, language, linkItems = false } = Astro.props;
+const groups = Array.isArray(searchPhrases?.groups) ? searchPhrases.groups : [];
+const items = Array.isArray(searchPhrases?.items) ? searchPhrases.items : [];
+const visible = searchPhrases && (groups.length || items.length);
+---
+
+{
+  visible && (
+    <section class="section section--surface search-phrases">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">{searchPhrases.title}</h2>
+        </div>
+        {groups.length ? (
+          <div class="search-phrases__groups">
+            {groups.map((group) => (
+              <article class="search-phrases__group">
+                <h3 class="search-phrases__group-title">{group.title}</h3>
+                <div class="search-phrases__chips">
+                  {(group.items || []).map((item) =>
+                    linkItems && item.key && language.paths[item.key] ? (
+                      <a
+                        class="search-phrases__chip"
+                        href={language.paths[item.key]}
+                        {...ga.content(
+                          ContentType.SearchPhrase,
+                          TrackingLocation.PageSearchPhrases,
+                          item.key,
+                        )}
+                      >
+                        {item.text}
+                      </a>
+                    ) : (
+                      <span class="search-phrases__chip">{item.text}</span>
+                    ),
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div class="search-phrases__chips">
+            {items.map((item) =>
+              linkItems && item.key && language.paths[item.key] ? (
+                <a
+                  class="search-phrases__chip"
+                  href={language.paths[item.key]}
+                  {...ga.content(
+                    ContentType.SearchPhrase,
+                    TrackingLocation.PageSearchPhrases,
+                    item.key,
+                  )}
+                >
+                  {item.text}
+                </a>
+              ) : (
+                <span class="search-phrases__chip">{item.text}</span>
+              ),
+            )}
+          </div>
+        )}
+      </div>
+    </section>
+  )
+}

@@ -1,0 +1,184 @@
+{
+  "title": "Air conditioner not cooling | causes and service in Batumi",
+  "lead": "Why cooling is weak, what to check, and when to call a technician. On-site service in Batumi. Diagnostics at your location.",
+  "heading": "Air conditioner not cooling in Batumi",
+  "sections": [
+    {
+      "title": "Common causes",
+      "items": [
+        "Dirty filters or evaporator.",
+        "Low refrigerant (leak).",
+        "Fan or compressor issues.",
+        "Wrong mode or sensor errors."
+      ]
+    },
+    {
+      "title": "What you can check",
+      "items": [
+        "Clean the filters.",
+        "Check cooling mode and temperature.",
+        "Make sure the outdoor unit is not blocked."
+      ]
+    },
+    {
+      "title": "When to call a technician",
+      "items": [
+        "No improvement after cleaning.",
+        "Errors or leaks appear.",
+        "Strong noise, smell, or vibration."
+      ]
+    },
+    {
+      "title": "When to stop using the appliance",
+      "items": [
+        "Check Cool mode and visible filters.",
+        "Do not add refrigerant without diagnostics.",
+        "Tell us whether the indoor unit leaks water."
+      ]
+    },
+    {
+      "title": "What to prepare before contacting us",
+      "items": [
+        "We separate dirty filters/drainage from refrigerant leak, board error or outdoor-unit issues."
+      ]
+    },
+    {
+      "title": "Common user mistakes",
+      "items": [
+        "The first mistake is to set minimum temperature for hours immediately. The appliance keeps working under load while the cause remains.",
+        "The second mistake is to wash the indoor unit without protecting electronics. It can make the component harder to inspect and complicate diagnostics.",
+        "The third mistake is to add refrigerant without finding the reason. Before any check, power, water/gas and workspace safety matter."
+      ]
+    },
+    {
+      "title": "What not to do",
+      "items": [
+        "Do not open closed assemblies if you do not know where the fasteners, sensors and wires are located.",
+        "Do not buy a part based only on forum advice: similar symptoms often have different causes.",
+        "Do not hide previous DIY attempts from the technician: it saves time and reduces repeat mistakes."
+      ]
+    },
+    {
+      "title": "When to call a technician urgently",
+      "items": [
+        "Call a technician sooner if water drips from the unit or cracking sounds appear. In this situation it is better to stop the appliance and not wait for another cycle.",
+        "Urgent service is especially important in upper-floor apartments and kitchens with tight built-in furniture.",
+        "Batumi humidity also matters: after a leak or condensate, contacts oxidize faster."
+      ]
+    },
+    {
+      "title": "DIY repair risks",
+      "items": [
+        "The main DIY risk is that you can wet the wall, board and worsen a leak. After that, repair can cost more than the first diagnostic visit.",
+        "Built-in appliances add risk: cabinet fronts, hoses, cables or nearby kitchen modules can be damaged.",
+        "The safe minimum before a visit is to disconnect power, close water or gas if needed, and clear access to the appliance."
+      ]
+    },
+    {
+      "title": "What to prepare before the technician arrives",
+      "items": [
+        "Clear access to the room: remove mats, baskets, dishes or food near the appliance so the technician can inspect the air conditioner without unnecessary furniture work.",
+        "Write down the model and approximate age. If there is an error on the display, take a photo before switching the appliance off; it helps connect the symptom to a specific component.",
+        "Explain when the issue appeared: after moving, voltage drop, cleaning, leakage, long idle period or a normal cycle. These details often shorten diagnostics.",
+        "For built-in appliances, check whether doors, kickboards or side panels can be opened. In Batumi seaside apartments, tight kitchen layouts often affect repair time."
+      ]
+    },
+    {
+      "title": "How on-site diagnostics usually works",
+      "items": [
+        "Diagnostics starts with safe checks: power, connection, visible water traces, overheating signs or mechanical damage. Internal assemblies are checked only after that.",
+        "For cooling, the technician checks the filters, evaporator, fan, drain and system pressure. The sequence goes from simple to complex to avoid replacing working parts.",
+        "When the cause is found, the technician shows the failed part or test result, explains repair options and agrees the price before the main work starts.",
+        "At the end, a short test is needed: program start, heating, draining, cooling or ignition. Without this test it is hard to confirm that the issue is fixed."
+      ]
+    },
+    {
+      "title": "What affects the final cost",
+      "items": [
+        "The price depends not only on the fault name, but also on model, access to the component, condition of fasteners, moisture traces and whether a spare part is needed.",
+        "For apartments in the center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio, on-site diagnostics is often easier than moving the appliance.",
+        "If the repair is not worth it after inspection, the technician should say so before any part is purchased. This matters for older appliances and rare models.",
+        "Prices on the page give a realistic range, but the final cost is fixed only after checking the exact appliance and agreeing the work scope."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Price guide",
+    "items": [
+      {
+        "label": "Basic cleaning",
+        "value": "from 70 GEL",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 70
+        }
+      },
+      {
+        "label": "Full cleaning",
+        "value": "from 100 GEL",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 100
+        }
+      },
+      {
+        "label": "Leak diagnostics",
+        "value": "by agreement"
+      }
+    ],
+    "note": "Cost depends on condition and access."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "How often should I clean it?",
+        "answer": "Usually 1–2 times per year."
+      },
+      {
+        "question": "Can I just add refrigerant?",
+        "answer": "First the leak must be found and fixed."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need AC service?",
+    "text": "Describe the issue — we will suggest the next steps.",
+    "button": "Call now"
+  },
+  "related": {
+    "title": "Related services",
+    "items": [
+      {
+        "key": "ac-cleaning",
+        "title": "Air conditioner cleaning",
+        "text": "Service and disinfection."
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Pricing and service terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Open",
+    "lead": "Useful guides, prices and contact options for this service."
+  },
+  "description": "Why cooling is weak, what to check, and when to call a technician. On-site service in Batumi. Diagnostics at your location.",
+  "diagnosisSteps": {
+    "title": "Diagnostic workflow",
+    "lead": "How to separate a safe check from a technician-level fault.",
+    "items": [
+      "We separate dirty filters/drainage from refrigerant leak, board error or outdoor-unit issues.",
+      "Check Cool mode and visible filters.",
+      "Do not add refrigerant without diagnostics.",
+      "Tell us whether the indoor unit leaks water."
+    ]
+  },
+  "datePublished": "2026-05-12",
+  "dateModified": "2026-05-13"
+}

@@ -1,0 +1,1322 @@
+{
+  "title": "Appliance repair prices in Batumi | Tech Fix",
+  "lead": "Clear prices for home appliance repair in Batumi. Diagnostics, call-out, agreed cost before repair and warranty.",
+  "heading": "Appliance repair prices in Batumi",
+  "sections": [
+    {
+      "title": "Price examples",
+      "lead": "Final cost depends on model and spare parts.",
+      "items": [
+        {
+          "label": "Diagnostics (if repair is declined)",
+          "value": "20 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 20
+          }
+        },
+        {
+          "label": "Air conditioner service",
+          "value": "from 70 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 70
+          }
+        },
+        {
+          "label": "Washing machine and dishwasher repair",
+          "value": "from 80 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80
+          }
+        },
+        {
+          "label": "Gas / electric cooktop repair",
+          "value": "from 90 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 90
+          }
+        },
+        {
+          "label": "Oven repair",
+          "value": "from 80 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80
+          }
+        },
+        {
+          "label": "Refrigerator repair",
+          "value": "from 40 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 40
+          }
+        },
+        {
+          "label": "Dryer repair",
+          "value": "from 50 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 50
+          }
+        },
+        {
+          "label": "Gas boiler repair and maintenance",
+          "value": "from 40 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 40
+          }
+        }
+      ]
+    },
+    {
+      "title": "Air conditioners",
+      "items": [
+        {
+          "label": "Indoor unit filter cleaning",
+          "value": "80-100 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80,
+            "maxPrice": 100
+          }
+        },
+        {
+          "label": "Full cleaning package (indoor unit + drain + filters)",
+          "value": "100-200 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 100,
+            "maxPrice": 200
+          }
+        },
+        {
+          "label": "Antibacterial treatment (disinfection)",
+          "value": "120 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 120
+          }
+        },
+        {
+          "label": "Drainage system flushing",
+          "value": "90 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 90
+          }
+        },
+        {
+          "label": "Fan and outer casing cleaning",
+          "value": "110 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 110
+          }
+        },
+        {
+          "label": "Basic partial cleaning",
+          "value": "60 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 60
+          }
+        }
+      ],
+      "note": "The final cost depends on the model, access to parts and spare part pricing."
+    },
+    {
+      "title": "Washing machines",
+      "groups": [
+        {
+          "title": "Mechanical parts",
+          "items": [
+            {
+              "label": "Bearing replacement",
+              "value": "from 300–450 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 300,
+                "maxPrice": 450
+              }
+            },
+            {
+              "label": "Shock absorber replacement",
+              "value": "from 100–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "Drum spider replacement",
+              "value": "from 80–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "Door gasket replacement",
+              "value": "from 100–130 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 130
+              }
+            }
+          ]
+        },
+        {
+          "title": "Drain / water intake",
+          "items": [
+            {
+              "label": "Drain pump replacement",
+              "value": "from 90–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 90,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Drain system cleaning",
+              "value": "70 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 70
+              }
+            },
+            {
+              "label": "Inlet valve replacement",
+              "value": "from 120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 120
+              }
+            },
+            {
+              "label": "Blockage removal",
+              "value": "50 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50
+              }
+            }
+          ]
+        },
+        {
+          "title": "Electrical and control",
+          "items": [
+            {
+              "label": "Heating element replacement",
+              "value": "from 90–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 90,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Control module repair / replacement",
+              "value": "from 150–250 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "Sensor replacement (level, temperature)",
+              "value": "from 60–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 80
+              }
+            },
+            {
+              "label": "Display error troubleshooting",
+              "value": "from 60–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "Other",
+          "items": [
+            {
+              "label": "Leak repair",
+              "value": "from 60–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "Belt replacement",
+              "value": "from 80–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "Noise and vibration repair",
+              "value": "from 60–90 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            }
+          ]
+        }
+      ],
+      "note": "The final cost depends on the model, access to parts and spare part pricing."
+    },
+    {
+      "title": "Dishwashers",
+      "groups": [
+        {
+          "title": "Water and drain",
+          "items": [
+            {
+              "label": "Circulation pump replacement",
+              "value": "from 300–480 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 300,
+                "maxPrice": 480
+              }
+            },
+            {
+              "label": "Drain pump replacement",
+              "value": "from 150–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "Filter and system cleaning",
+              "value": "from 100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100
+              }
+            },
+            {
+              "label": "Leak repair",
+              "value": "from 100–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            }
+          ]
+        },
+        {
+          "title": "Heating and electrical",
+          "items": [
+            {
+              "label": "Heating element replacement",
+              "value": "from 170–250 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 170,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "Sensor replacement",
+              "value": "from 140–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "Control module repair",
+              "value": "from 180–300 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 180,
+                "maxPrice": 300
+              }
+            }
+          ]
+        },
+        {
+          "title": "Mechanical parts",
+          "items": [
+            {
+              "label": "Door seal replacement",
+              "value": "from 140–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "Door lock repair / replacement",
+              "value": "from 140–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "Sprayer issue repair",
+              "value": "from 140–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 140,
+                "maxPrice": 200
+              }
+            }
+          ]
+        }
+      ],
+      "note": "The final cost depends on the model, access to parts and spare part pricing."
+    },
+    {
+      "title": "Cooktops",
+      "groups": [
+        {
+          "title": "Gas cooktops",
+          "items": [
+            {
+              "label": "Nozzle replacement",
+              "value": "from 50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            },
+            {
+              "label": "Ignition unit replacement",
+              "value": "from 130–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 130,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "Gas leak repair",
+              "value": "from 60–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "Flame adjustment",
+              "value": "from 50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "Electric cooktops",
+          "items": [
+            {
+              "label": "Burner replacement",
+              "value": "from 100–180 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "Touch panel repair",
+              "value": "from 150–250 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "Control unit replacement",
+              "value": "from 270–330 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 270,
+                "maxPrice": 330
+              }
+            },
+            {
+              "label": "Error troubleshooting",
+              "value": "from 60–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 80
+              }
+            }
+          ]
+        }
+      ],
+      "note": "The final cost depends on the model, access to parts and spare part pricing."
+    },
+    {
+      "title": "Ovens",
+      "items": [
+        {
+          "label": "Heating element replacement (top/bottom/grill)",
+          "value": "from 130–150 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 130,
+            "maxPrice": 150
+          }
+        },
+        {
+          "label": "Convection fan replacement",
+          "value": "from 130–150 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 130,
+            "maxPrice": 150
+          }
+        },
+        {
+          "label": "Control board repair",
+          "value": "from 150–170 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 150,
+            "maxPrice": 170
+          }
+        },
+        {
+          "label": "Thermostat replacement",
+          "value": "from 100–150 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 100,
+            "maxPrice": 150
+          }
+        },
+        {
+          "label": "Uneven heating repair",
+          "value": "from 80–120 ₾",
+          "schemaPrice": {
+            "currency": "GEL",
+            "minPrice": 80,
+            "maxPrice": 120
+          }
+        }
+      ],
+      "note": "The final cost depends on the model, access to parts and spare part pricing."
+    },
+    {
+      "title": "Refrigerators",
+      "groups": [
+        {
+          "title": "Mechanical and cooling system",
+          "items": [
+            {
+              "label": "Freon refill (refrigerant)",
+              "value": "from 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Freon leak repair + refill",
+              "value": "from 120–180 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 120,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "Compressor (motor) replacement",
+              "value": "from 150–250 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "Door gasket replacement",
+              "value": "from 45–70 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 45,
+                "maxPrice": 70
+              }
+            },
+            {
+              "label": "Drainage system cleaning (water inside the chamber)",
+              "value": "from 40–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 60
+              }
+            }
+          ]
+        },
+        {
+          "title": "Electrical and control",
+          "items": [
+            {
+              "label": "Thermostat replacement",
+              "value": "from 45–70 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 45,
+                "maxPrice": 70
+              }
+            },
+            {
+              "label": "Start relay replacement",
+              "value": "from 45–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 45,
+                "maxPrice": 60
+              }
+            },
+            {
+              "label": "No Frost fan replacement",
+              "value": "from 60–90 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            },
+            {
+              "label": "Control module repair or replacement",
+              "value": "from 100–180 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "Temperature sensor replacement (No Frost)",
+              "value": "from 50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            },
+            {
+              "label": "Defrost heater replacement",
+              "value": "from 70–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 70,
+                "maxPrice": 100
+              }
+            }
+          ]
+        }
+      ],
+      "note": "The final cost depends on the model, access to parts and spare part pricing."
+    },
+    {
+      "title": "Dryers",
+      "groups": [
+        {
+          "title": "Mechanical and drive",
+          "items": [
+            {
+              "label": "Drive belt replacement",
+              "value": "from 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Drum support roller or bearing replacement",
+              "value": "from 100–180 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 180
+              }
+            },
+            {
+              "label": "Blower fan replacement",
+              "value": "from 100–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "Door lock or hinge replacement",
+              "value": "from 60–90 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            }
+          ]
+        },
+        {
+          "title": "Heating and electronics",
+          "items": [
+            {
+              "label": "Heating element replacement",
+              "value": "from 130–200 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 130,
+                "maxPrice": 200
+              }
+            },
+            {
+              "label": "Control module repair or replacement",
+              "value": "from 150–250 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 150,
+                "maxPrice": 250
+              }
+            },
+            {
+              "label": "Sensor replacement (temperature, humidity)",
+              "value": "from 60–90 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 90
+              }
+            }
+          ]
+        },
+        {
+          "title": "Cleaning and drain",
+          "items": [
+            {
+              "label": "Drain pump replacement",
+              "value": "from 90–130 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 90,
+                "maxPrice": 130
+              }
+            },
+            {
+              "label": "Full cleaning (air ducts, lint filters, condenser)",
+              "value": "from 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Drainage blockage removal",
+              "value": "from 50–70 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 70
+              }
+            }
+          ]
+        },
+        {
+          "title": "Other",
+          "items": [
+            {
+              "label": "Noise and vibration repair",
+              "value": "from 60–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 60,
+                "maxPrice": 100
+              }
+            }
+          ]
+        }
+      ],
+      "note": "The final cost depends on the model, access to parts and spare part pricing."
+    },
+    {
+      "title": "Gas boilers",
+      "groups": [
+        {
+          "title": "Sensors and electronics",
+          "items": [
+            {
+              "label": "Temperature sensor replacement",
+              "value": "40–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 60
+              }
+            },
+            {
+              "label": "Electronic board replacement",
+              "value": "50–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 60
+              }
+            },
+            {
+              "label": "Draft safety sensor replacement",
+              "value": "40–60 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 60
+              }
+            }
+          ]
+        },
+        {
+          "title": "Burner and ignition",
+          "items": [
+            {
+              "label": "Electrode replacement without burner removal",
+              "value": "40–50 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 50
+              }
+            },
+            {
+              "label": "Electrode replacement with burner removal",
+              "value": "40–100 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 40,
+                "maxPrice": 100
+              }
+            },
+            {
+              "label": "Burner replacement",
+              "value": "50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "Heat exchanger and hydraulics",
+          "items": [
+            {
+              "label": "Primary heat exchanger replacement",
+              "value": "120–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 120,
+                "maxPrice": 150
+              }
+            },
+            {
+              "label": "Secondary heat exchanger replacement",
+              "value": "from 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Circulation pump replacement",
+              "value": "from 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Leak repair / gasket replacement",
+              "value": "from 50–80 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 50,
+                "maxPrice": 80
+              }
+            }
+          ]
+        },
+        {
+          "title": "Maintenance",
+          "items": [
+            {
+              "label": "Full cleaning and technical maintenance",
+              "value": "from 80–120 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 80,
+                "maxPrice": 120
+              }
+            },
+            {
+              "label": "Heat exchanger descaling flush",
+              "value": "from 100–150 ₾",
+              "schemaPrice": {
+                "currency": "GEL",
+                "minPrice": 100,
+                "maxPrice": 150
+              }
+            }
+          ]
+        }
+      ],
+      "note": "The final cost depends on the model, access to parts and spare part pricing."
+    }
+  ],
+  "importantNotes": [
+    "Final cost is set after diagnostics.",
+    "Parts are paid separately.",
+    "Warranty covers labor and parts.",
+    "Repair time — from 30 minutes."
+  ],
+  "contactCard": {
+    "title": "My contacts",
+    "items": [
+      {
+        "label": "Phone",
+        "type": "phone"
+      },
+      {
+        "label": "Telegram",
+        "type": "telegram"
+      },
+      {
+        "label": "WhatsApp",
+        "value": "Message",
+        "type": "whatsapp"
+      },
+      {
+        "label": "Viber",
+        "value": "Message",
+        "type": "viber"
+      },
+      {
+        "label": "Facebook",
+        "type": "facebook"
+      },
+      {
+        "label": "Email",
+        "type": "email"
+      }
+    ]
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "groups": [
+      {
+        "title": "Appliance repair",
+        "items": [
+          {
+            "text": "home appliance repair in Batumi",
+            "key": "services"
+          },
+          {
+            "text": "appliance repair in Batumi",
+            "key": "services"
+          },
+          {
+            "text": "home appliance repair",
+            "key": "services"
+          },
+          {
+            "text": "appliance repair technician",
+            "key": "services"
+          },
+          {
+            "text": "on-site appliance repair",
+            "key": "services"
+          }
+        ]
+      },
+      {
+        "title": "Washing machines",
+        "items": [
+          {
+            "text": "washer repair in Batumi",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine repair in Batumi",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine repair",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine repair service",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine problems",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine technician near me",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine technician",
+            "key": "washing-machines"
+          },
+          {
+            "text": "fix a washer",
+            "key": "washing-machines"
+          },
+          {
+            "text": "fix a washing machine",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washer not draining",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washer not spinning",
+            "key": "washing-machines"
+          },
+          {
+            "text": "washing machine leaking",
+            "key": "washing-machines"
+          }
+        ]
+      },
+      {
+        "title": "Dishwashers",
+        "items": [
+          {
+            "text": "dishwasher repair in Batumi",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher repair",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher technician",
+            "key": "dishwashers"
+          },
+          {
+            "text": "fix a dishwasher",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher not draining",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher leaking",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher not washing",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher not heating",
+            "key": "dishwashers"
+          },
+          {
+            "text": "dishwasher smells bad",
+            "key": "dishwashers"
+          }
+        ]
+      },
+      {
+        "title": "Refrigerators",
+        "items": [
+          {
+            "text": "fridge repair in Batumi",
+            "key": "refrigerators"
+          },
+          {
+            "text": "refrigerator repair in Batumi",
+            "key": "refrigerators"
+          },
+          {
+            "text": "refrigerator repair",
+            "key": "refrigerators"
+          },
+          {
+            "text": "fridge technician",
+            "key": "refrigerators"
+          },
+          {
+            "text": "fix a fridge",
+            "key": "refrigerators"
+          },
+          {
+            "text": "refrigerator not cooling",
+            "key": "refrigerators"
+          },
+          {
+            "text": "fridge leaking water",
+            "key": "refrigerators"
+          },
+          {
+            "text": "No Frost repair",
+            "key": "refrigerators"
+          },
+          {
+            "text": "freezer not freezing",
+            "key": "refrigerators"
+          }
+        ]
+      },
+      {
+        "title": "Air conditioners",
+        "items": [
+          {
+            "text": "AC cleaning in Batumi",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "air conditioner cleaning in Batumi",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "aircon cleaning",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "AC service in Batumi",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "AC technician",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "clean an air conditioner",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "AC not cooling",
+            "key": "ac-cleaning"
+          },
+          {
+            "text": "air conditioner leaking water",
+            "key": "ac-cleaning"
+          }
+        ]
+      },
+      {
+        "title": "Gas boilers",
+        "items": [
+          {
+            "text": "gas boiler repair in Batumi",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler repair in Batumi",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler repair near me",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler repairs near me",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "gas boiler repairs in Batumi",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "gas boiler repairs",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "gas boiler technician",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "fix a gas boiler",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "gas boiler maintenance",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler not igniting",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler not heating water",
+            "key": "gas-boilers"
+          },
+          {
+            "text": "boiler pressure dropping",
+            "key": "gas-boilers"
+          }
+        ]
+      },
+      {
+        "title": "Dryers",
+        "items": [
+          {
+            "text": "dryer repair in Batumi",
+            "key": "dryers"
+          },
+          {
+            "text": "tumble dryer repair",
+            "key": "dryers"
+          },
+          {
+            "text": "dryer technician",
+            "key": "dryers"
+          },
+          {
+            "text": "fix a dryer",
+            "key": "dryers"
+          },
+          {
+            "text": "dryer not drying",
+            "key": "dryers"
+          },
+          {
+            "text": "dryer not heating",
+            "key": "dryers"
+          },
+          {
+            "text": "dryer making noise",
+            "key": "dryers"
+          },
+          {
+            "text": "dryer not draining condensation",
+            "key": "dryers"
+          }
+        ]
+      },
+      {
+        "title": "Ovens",
+        "items": [
+          {
+            "text": "oven repair in Batumi",
+            "key": "ovens"
+          },
+          {
+            "text": "built-in oven repair",
+            "key": "ovens"
+          },
+          {
+            "text": "oven technician",
+            "key": "ovens"
+          },
+          {
+            "text": "fix an oven",
+            "key": "ovens"
+          },
+          {
+            "text": "oven not heating",
+            "key": "ovens"
+          },
+          {
+            "text": "oven not baking evenly",
+            "key": "ovens"
+          },
+          {
+            "text": "oven temperature problem",
+            "key": "ovens"
+          },
+          {
+            "text": "electric oven repair",
+            "key": "ovens"
+          }
+        ]
+      },
+      {
+        "title": "Hobs and cooktops",
+        "items": [
+          {
+            "text": "cooktop repair in Batumi",
+            "key": "hobs"
+          },
+          {
+            "text": "hob repair in Batumi",
+            "key": "hobs"
+          },
+          {
+            "text": "stove repair in Batumi",
+            "key": "hobs"
+          },
+          {
+            "text": "stove repair",
+            "key": "hobs"
+          },
+          {
+            "text": "gas cooktop repair",
+            "key": "hobs"
+          },
+          {
+            "text": "electric hob repair",
+            "key": "hobs"
+          },
+          {
+            "text": "burner not igniting",
+            "key": "hobs"
+          },
+          {
+            "text": "cooktop not turning on",
+            "key": "hobs"
+          },
+          {
+            "text": "touch panel not working",
+            "key": "hobs"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Appliance repair prices in Batumi: diagnostics, call-out, washers, refrigerators, dishwashers, ovens, AC cleaning, dryers and gas boilers."
+}

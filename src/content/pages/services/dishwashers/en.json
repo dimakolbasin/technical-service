@@ -1,0 +1,373 @@
+{
+  "title": "Dishwasher Repair in Batumi | On-site Service",
+  "lead": "Dishwasher repair in Batumi: leaks, drainage issues, poor washing, heating faults and on-site diagnostics.",
+  "heading": "Dishwasher repair in Batumi",
+  "sections": [
+    {
+      "title": "Common issues",
+      "items": [
+        "Not washing or not drying.",
+        "No heating.",
+        "Water left inside / not draining.",
+        "Leaks or bad smell.",
+        "On-site visits are available in Batumi city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio; exact timing depends on address and technician load."
+      ]
+    },
+    {
+      "title": "What we do",
+      "items": [
+        "Filter and system cleaning.",
+        "Pump, heater, sensor repair/replacement.",
+        "Leak and blockage fixes.",
+        "Testing after repair."
+      ]
+    },
+    {
+      "title": "Timing & warranty",
+      "items": [
+        "Usually 1–2 hours on-site.",
+        "Warranty on work and parts.",
+        "Service across Batumi."
+      ]
+    },
+    {
+      "title": "Case examples",
+      "items": [
+        "Leak fix and seal replacement.",
+        "Filter cleaning and circulation pump replacement.",
+        "Heating and temperature sensor repair."
+      ]
+    },
+    {
+      "title": "Dishwasher failure causes",
+      "items": [
+        "Clogging, wear or dirt in working parts.",
+        "Sensor, pump, heating, cooling or control-board failure.",
+        "Installation issues, overload, humidity or limited access to the appliance.",
+        "The exact cause is confirmed by on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Why the dishwasher fails",
+      "items": [
+        "The fault is narrowed down by symptom instead of replacing parts blindly.",
+        "Filters, spray arms, drain pump, circulation pump, Aquastop, heater and seals are checked separately.",
+        "Humidity, heavy use and access conditions in Batumi can make the symptom appear faster.",
+        "The exact cause is confirmed during on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Local Batumi conditions",
+      "items": [
+        "We confirm model, access and symptom before the visit.",
+        "Service covers central Batumi, Khimshiashvili, New Boulevard, Boni, Airport area and Angisa.",
+        "A short wash cycle confirms drain, heating and leak-free operation."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Detailed price table",
+    "groups": [
+      {
+        "title": "Water and drain",
+        "items": [
+          {
+            "label": "Circulation pump replacement",
+            "value": "from 300–480 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 300,
+              "maxPrice": 480
+            }
+          },
+          {
+            "label": "Drain pump replacement",
+            "value": "from 150–200 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 150,
+              "maxPrice": 200
+            }
+          },
+          {
+            "label": "Filter and system cleaning",
+            "value": "from 100 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 100
+            }
+          },
+          {
+            "label": "Leak repair",
+            "value": "from 100–150 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 100,
+              "maxPrice": 150
+            }
+          }
+        ]
+      },
+      {
+        "title": "Heating and electrical",
+        "items": [
+          {
+            "label": "Heating element replacement",
+            "value": "from 170–250 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 170,
+              "maxPrice": 250
+            }
+          },
+          {
+            "label": "Sensor replacement",
+            "value": "from 140–200 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 140,
+              "maxPrice": 200
+            }
+          },
+          {
+            "label": "Control module repair",
+            "value": "from 180–300 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 180,
+              "maxPrice": 300
+            }
+          }
+        ]
+      },
+      {
+        "title": "Mechanical parts",
+        "items": [
+          {
+            "label": "Door seal replacement",
+            "value": "from 140–200 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 140,
+              "maxPrice": 200
+            }
+          },
+          {
+            "label": "Door lock repair / replacement",
+            "value": "from 140–200 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 140,
+              "maxPrice": 200
+            }
+          },
+          {
+            "label": "Sprayer issue repair",
+            "value": "from 140–200 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 140,
+              "maxPrice": 200
+            }
+          }
+        ]
+      }
+    ],
+    "note": "The final cost depends on the model, access to parts and spare part pricing."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Why is there water left inside?",
+        "answer": "Filter blockage, drain pump failure, hose position or kitchen siphon problems are common causes. Common service areas include the city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio."
+      },
+      {
+        "question": "Will descaler solve poor washing?",
+        "answer": "Only if scale is the cause; it will not fix circulation, heating or pump faults."
+      },
+      {
+        "question": "What should I do if it leaks?",
+        "answer": "Stop the cycle, shut off water if possible, and avoid restarting before diagnostics."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need dishwasher repair?",
+    "text": "Tell us the issue and we will estimate the price.",
+    "button": "Call now"
+  },
+  "related": {
+    "title": "Related guides",
+    "lead": "Short articles with causes, symptoms, and tips.",
+    "items": [
+      {
+        "title": "Dishwasher not draining",
+        "text": "Common reasons and diagnostics.",
+        "key": "dishwasher-not-draining",
+        "linkLabel": "Read"
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Price list and diagnostic terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Read"
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "items": [
+      {
+        "text": "dishwasher repair in Batumi"
+      },
+      {
+        "text": "dishwasher repair"
+      },
+      {
+        "text": "dishwasher technician"
+      },
+      {
+        "text": "fix a dishwasher"
+      },
+      {
+        "text": "dishwasher not draining"
+      },
+      {
+        "text": "dishwasher leaking"
+      },
+      {
+        "text": "dishwasher not washing"
+      },
+      {
+        "text": "dishwasher not heating"
+      },
+      {
+        "text": "dishwasher smells bad"
+      }
+    ]
+  },
+  "description": "Dishwasher repair in Batumi: not draining, not heating, poor washing, leaks, noise and error codes. On-site diagnostics and agreed repair cost.",
+  "diagnosisSteps": {
+    "title": "How diagnostics works",
+    "lead": "A service-specific check sequence for this appliance.",
+    "items": [
+      "Confirm the symptom, model and visible error code.",
+      "Filters, spray arms, drain pump, circulation pump, Aquastop, heater and seals are checked separately.",
+      "Agree the repair scope and parts before work starts.",
+      "A short wash cycle confirms drain, heating and leak-free operation."
+    ]
+  },
+  "brandsHandled": {
+    "title": "Brands and models",
+    "lead": "We work with common appliance brands. Exact repair options depend on the model and parts availability.",
+    "items": ["Bosch", "Siemens", "Beko", "Electrolux", "Whirlpool", "Indesit", "Midea"]
+  },
+  "trustSignals": {
+    "title": "Verifiable service terms",
+    "lead": "Only details the customer can see before or during the repair.",
+    "items": [
+      "Built-in machines are moved only after access and furniture risks are agreed.",
+      "Filter, siphon and pump causes are separated before parts are replaced.",
+      "A short cycle is used to confirm drain, heating and leak-free operation."
+    ]
+  },
+  "caseStudies": {
+    "title": "Diagnostic scenarios in Batumi",
+    "lead": "These are service-specific repair scenarios, not invented statistics or dated jobs.",
+    "applianceLabel": "Appliance",
+    "symptomLabel": "Symptom",
+    "diagnosisLabel": "Diagnostics",
+    "workDoneLabel": "What we do",
+    "resultLabel": "Check result",
+    "areaLabel": "Area",
+    "items": [
+      {
+        "title": "Scenario 1",
+        "appliance": "dishwasher",
+        "symptom": "Repeated dishwasher fault that needs targeted diagnostics.",
+        "diagnosis": "Filters, spray arms, drain pump, circulation pump, Aquastop, heater and seals are checked separately.",
+        "workDone": "Clean, adjust or replace the confirmed failed part after approval.",
+        "result": "A short wash cycle confirms drain, heating and leak-free operation.",
+        "area": "Center / Old Batumi",
+        "time": "1-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 2",
+        "appliance": "dishwasher",
+        "symptom": "Unstable dishwasher operation after active use.",
+        "diagnosis": "Filters, spray arms, drain pump, circulation pump, Aquastop, heater and seals are checked separately.",
+        "workDone": "Remove blockage/wear cause or agree part replacement after testing.",
+        "result": "A short wash cycle confirms drain, heating and leak-free operation.",
+        "area": "Khimshiashvili / New Boulevard",
+        "time": "1.5-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 3",
+        "appliance": "Bosch dishwasher",
+        "symptom": "Water remains at the bottom",
+        "diagnosis": "We check the filter, drain pump and non-return valve.",
+        "workDone": "Clean the drain path or approve pump replacement.",
+        "result": "Water leaves the chamber on the test cycle.",
+        "time": "1-2 hours",
+        "priceHint": "from 70 GEL",
+        "area": "Batumi city center"
+      },
+      {
+        "title": "Scenario 4",
+        "appliance": "Beko dishwasher",
+        "symptom": "Leak appears under the door",
+        "diagnosis": "We inspect the seal, spray arm and machine level.",
+        "workDone": "Clean the door edge, adjust fit or replace the seal.",
+        "result": "The leak does not repeat on a short program.",
+        "time": "1.5 hours",
+        "priceHint": "after inspection",
+        "area": "Khimshiashvili"
+      },
+      {
+        "title": "Scenario 5",
+        "appliance": "Samsung dishwasher",
+        "symptom": "Dishes come out dirty",
+        "diagnosis": "We check spray nozzles, circulation pump and heating.",
+        "workDone": "Clean spray arms and test water temperature and pressure.",
+        "result": "Washing becomes even without white residue.",
+        "time": "1-2 hours",
+        "priceHint": "from 80 GEL",
+        "area": "Airport area"
+      }
+    ],
+    "timeLabel": "Time",
+    "priceHintLabel": "Price guide"
+  },
+  "photos": {
+    "title": "Job photos",
+    "lead": "Typical on-site work scenes: diagnostics, access to components, and careful testing after repair.",
+    "items": [
+      {
+        "src": "/assets/images/jobs/dishwasher-repair-batumi-1.jpg",
+        "alt": "Dishwasher repair in Batumi, Boni district",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/dishwasher-repair-batumi-2.jpg",
+        "alt": "Dishwasher pump check in Batumi city center",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/dishwasher-repair-batumi-3.jpg",
+        "alt": "Lower dishwasher assembly diagnostics in Batumi",
+        "width": 640,
+        "height": 480
+      }
+    ]
+  }
+}

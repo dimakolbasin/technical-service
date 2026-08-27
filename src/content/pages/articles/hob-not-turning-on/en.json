@@ -1,0 +1,189 @@
+{
+  "title": "Cooktop not turning on | causes and repair in Batumi",
+  "lead": "Common reasons, quick checks, and when to call a technician in Batumi. On-site service in Batumi. Diagnostics at your location.",
+  "heading": "Cooktop not turning on in Batumi",
+  "sections": [
+    {
+      "title": "Common causes",
+      "items": [
+        "No power or breaker is off.",
+        "Control lock (Child Lock) is enabled.",
+        "Touch panel or control module failure.",
+        "Power unit or cable issue."
+      ]
+    },
+    {
+      "title": "What you can check",
+      "items": [
+        "Check the breaker and outlet.",
+        "Disable control lock (lock icon).",
+        "Wipe the touch panel from moisture and dirt.",
+        "Make sure the cooktop is not overheated."
+      ]
+    },
+    {
+      "title": "When to call a technician",
+      "items": [
+        "Panel does not respond after checks.",
+        "Errors appear or burning smell.",
+        "Cooktop turns off by itself."
+      ]
+    },
+    {
+      "title": "When to stop using the appliance",
+      "items": [
+        "If you smell gas, shut it off and ventilate.",
+        "Do not use a cracked glass hob.",
+        "Tell us whether at least one burner works."
+      ]
+    },
+    {
+      "title": "What to prepare before contacting us",
+      "items": [
+        "Electric hobs require power and sensor checks; gas hobs require ignition, nozzle and safety checks."
+      ]
+    },
+    {
+      "title": "Common user mistakes",
+      "items": [
+        "The first mistake is to dry the touch panel with a hot dryer too close. The appliance keeps working under load while the cause remains.",
+        "The second mistake is to keep clicking a gas burner when gas smell is present. It can make the component harder to inspect and complicate diagnostics.",
+        "The third mistake is to lift glass without support and experience. Before any check, power, water/gas and workspace safety matter."
+      ]
+    },
+    {
+      "title": "What not to do",
+      "items": [
+        "Do not open closed assemblies if you do not know where the fasteners, sensors and wires are located.",
+        "Do not buy a part based only on forum advice: similar symptoms often have different causes.",
+        "Do not hide previous DIY attempts from the technician: it saves time and reduces repeat mistakes."
+      ]
+    },
+    {
+      "title": "When to call a technician urgently",
+      "items": [
+        "Call a technician sooner if there is gas smell, sparking or breaker trips. In this situation it is better to stop the appliance and not wait for another cycle.",
+        "Urgent service is especially important in upper-floor apartments and kitchens with tight built-in furniture.",
+        "Batumi humidity also matters: after a leak or condensate, contacts oxidize faster."
+      ]
+    },
+    {
+      "title": "DIY repair risks",
+      "items": [
+        "The main DIY risk is that there is risk of gas leak and control module damage. After that, repair can cost more than the first diagnostic visit.",
+        "Built-in appliances add risk: cabinet fronts, hoses, cables or nearby kitchen modules can be damaged.",
+        "The safe minimum before a visit is to disconnect power, close water or gas if needed, and clear access to the appliance."
+      ]
+    },
+    {
+      "title": "What to prepare before the technician arrives",
+      "items": [
+        "Clear access to the worktop: remove mats, baskets, dishes or food near the appliance so the technician can inspect the hob without unnecessary furniture work.",
+        "Write down the model and approximate age. If there is an error on the display, take a photo before switching the appliance off; it helps connect the symptom to a specific component.",
+        "Explain when the issue appeared: after moving, voltage drop, cleaning, leakage, long idle period or a normal cycle. These details often shorten diagnostics.",
+        "For built-in appliances, check whether doors, kickboards or side panels can be opened. In Batumi seaside apartments, tight kitchen layouts often affect repair time."
+      ]
+    },
+    {
+      "title": "How on-site diagnostics usually works",
+      "items": [
+        "Diagnostics starts with safe checks: power, connection, visible water traces, overheating signs or mechanical damage. Internal assemblies are checked only after that.",
+        "For startup, the technician checks the power, ignition, touch panel and burners. The sequence goes from simple to complex to avoid replacing working parts.",
+        "When the cause is found, the technician shows the failed part or test result, explains repair options and agrees the price before the main work starts.",
+        "At the end, a short test is needed: program start, heating, draining, cooling or ignition. Without this test it is hard to confirm that the issue is fixed."
+      ]
+    },
+    {
+      "title": "What affects the final cost",
+      "items": [
+        "The price depends not only on the fault name, but also on model, access to the component, condition of fasteners, moisture traces and whether a spare part is needed.",
+        "For apartments in the center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio, on-site diagnostics is often easier than moving the appliance.",
+        "If the repair is not worth it after inspection, the technician should say so before any part is purchased. This matters for older appliances and rare models.",
+        "Prices on the page give a realistic range, but the final cost is fixed only after checking the exact appliance and agreeing the work scope."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Price guide",
+    "items": [
+      {
+        "label": "Diagnostics",
+        "value": "20 GEL",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 20
+        }
+      },
+      {
+        "label": "Cooktop repair",
+        "value": "from 90 GEL",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 90
+        }
+      },
+      {
+        "label": "Control repair",
+        "value": "from 150 GEL",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 150
+        }
+      }
+    ],
+    "note": "Final price after diagnostics."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Can I use it if one zone does not turn on?",
+        "answer": "Often it is a zone or module issue, diagnostics are recommended."
+      },
+      {
+        "question": "How long does repair take?",
+        "answer": "Typically 1–2 hours after diagnostics."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need cooktop repair?",
+    "text": "Describe the issue — we will suggest the best option and timing.",
+    "button": "Call now"
+  },
+  "related": {
+    "title": "Related services",
+    "items": [
+      {
+        "key": "hobs",
+        "title": "Cooktop repair",
+        "text": "Gas and electric cooktops."
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Transparent pricing and terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Open",
+    "lead": "Useful guides, prices and contact options for this service."
+  },
+  "description": "Common reasons, quick checks, and when to call a technician in Batumi. On-site service in Batumi. Diagnostics at your location.",
+  "diagnosisSteps": {
+    "title": "Diagnostic workflow",
+    "lead": "How to separate a safe check from a technician-level fault.",
+    "items": [
+      "Electric hobs require power and sensor checks; gas hobs require ignition, nozzle and safety checks.",
+      "If you smell gas, shut it off and ventilate.",
+      "Do not use a cracked glass hob.",
+      "Tell us whether at least one burner works."
+    ]
+  },
+  "datePublished": "2026-05-12",
+  "dateModified": "2026-05-13"
+}

@@ -1,0 +1,77 @@
+---
+import { ContentType, ga, TrackingLocation } from "../../../lib/analytics";
+import type { HomeContent } from "../../../lib/content/types";
+
+interface Props {
+  reviews: NonNullable<HomeContent["reviews"]>;
+  leaveReviewUrl: string;
+}
+
+const MAX_VISIBLE_REVIEWS = 5;
+const MAX_RATING_STARS = 5;
+const RATING_STARS = "★★★★★";
+const NAME_PLACEHOLDER = "{name}";
+
+const { reviews, leaveReviewUrl } = Astro.props;
+const reviewItems = reviews.items.slice(0, MAX_VISIBLE_REVIEWS);
+---
+
+{
+  reviewItems.length > 0 && (
+    <section class="section section--surface">
+      <div class="container">
+        <div class="section__header">
+          <>
+            <h2 class="section__title">{reviews.title}</h2>
+            <p class="section__lead">{reviews.lead}</p>
+          </>
+        </div>
+        <div class="grid grid--3">
+          {reviewItems.map((item, index) => (
+            <article class="card review-card">
+              <div class="review-card__head">
+                <img
+                  class="review-card__avatar"
+                  src={`/assets/users/user-${index + 1}.png`}
+                  alt={reviews.avatarAlt.replace(NAME_PLACEHOLDER, item.name)}
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+                <div>
+                  <p class="review-card__name">{item.name}</p>
+                  <p
+                    class="review-card__stars"
+                    aria-label={reviews.ratingLabel}
+                  >
+                    {RATING_STARS.slice(0, item.rating ?? MAX_RATING_STARS)}
+                  </p>
+                </div>
+              </div>
+              <p class="review-card__text">{item.text}</p>
+              {item.sourceName && (
+                <p class="review-card__source">{item.sourceName}</p>
+              )}
+            </article>
+          ))}
+          {leaveReviewUrl && (
+            <article class="card review-card review-card--cta">
+              <a
+                class="button button--primary"
+                href={leaveReviewUrl}
+                target="_blank"
+                rel="noopener"
+                {...ga.content(
+                  ContentType.ReviewLink,
+                  TrackingLocation.HomeReviews,
+                )}
+              >
+                {reviews.leaveReviewLabel}
+              </a>
+            </article>
+          )}
+        </div>
+      </div>
+    </section>
+  )
+}

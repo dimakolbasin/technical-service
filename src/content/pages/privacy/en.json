@@ -1,0 +1,51 @@
+{
+  "title": "Privacy Policy | Tech Fix",
+  "lead": "This page explains what data the site may process, why it is needed, and how you can manage your data.",
+  "heading": "Privacy Policy",
+  "linkLabel": "Privacy",
+  "sections": [
+    {
+      "title": "Overview",
+      "text": "The site may use technical and analytics data to keep pages working, understand how visitors use the site, and improve content without unnecessary impact on privacy."
+    },
+    {
+      "title": "What data may be processed",
+      "items": [
+        "pages you open, visit time, and approximate session duration",
+        "traffic source, such as search, maps, social networks, or a direct link",
+        "approximate location at city or region level",
+        "device type, browser, operating system, and browser language",
+        "technical site events, such as contact button clicks or page navigation",
+        "data you choose to send through a form, phone call, email, or messenger"
+      ]
+    },
+    {
+      "title": "Why data is processed",
+      "items": [
+        "to keep the site and its main pages working reliably",
+        "to understand which services and materials are most useful to visitors",
+        "to improve site structure, content, and navigation",
+        "to find technical issues and assess site performance",
+        "to respond to requests and messages you send",
+        "to prevent misuse and protect the site from technical failures"
+      ]
+    },
+    {
+      "title": "Contact requests",
+      "text": "If you submit a request, call, write by email, or send a messenger message, the data you provide is used to respond to the request, agree on service details, and communicate with you about your inquiry."
+    },
+    {
+      "title": "Cookies and technical storage",
+      "text": "The site may use cookies and similar technical mechanisms to operate pages, remember basic preferences, and assess site usability. You can limit or delete cookies in your browser settings; the main pages will remain available, but some measurement or preference features may be limited."
+    },
+    {
+      "title": "Data protection and retention",
+      "text": "Data is processed only to the extent needed for the stated purposes and is kept no longer than necessary to handle a request, support site operation, protect legitimate interests, or meet legal requirements."
+    },
+    {
+      "title": "Your rights and contact",
+      "text": "You may request information about your data, ask to correct it, delete it, or stop processing where applicable by law. Use the email listed on the site for these requests."
+    }
+  ],
+  "description": "This page explains what data the site may process, why it is needed, and how you can manage your data."
+}

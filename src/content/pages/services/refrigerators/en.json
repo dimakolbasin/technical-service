@@ -1,0 +1,378 @@
+{
+  "title": "Refrigerator repair in Batumi | on-site service and warranty",
+  "lead": "Refrigerator and fridge repair in Batumi: cooling, compressor, freon, No Frost, electronics and on-site diagnostics.",
+  "heading": "Refrigerator repair in Batumi",
+  "sections": [
+    {
+      "title": "Common issues",
+      "items": [
+        "Does not cool or overfreezes.",
+        "Water inside the chamber or under the fridge.",
+        "Compressor or fan noise.",
+        "No Frost and sensor errors.",
+        "On-site visits are available in Batumi city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio; exact timing depends on address and technician load."
+      ]
+    },
+    {
+      "title": "What we do",
+      "items": [
+        "Freon refill and leak repair.",
+        "Compressor, relay, fan and sensor replacement.",
+        "Drain cleaning and door gasket replacement.",
+        "Control module diagnostics."
+      ]
+    },
+    {
+      "title": "Timing and warranty",
+      "items": [
+        "Most jobs are done on site.",
+        "The cost is agreed after diagnostics.",
+        "Warranty for labor and installed parts."
+      ]
+    },
+    {
+      "title": "Example jobs",
+      "items": [
+        "Freon leak repair with refill.",
+        "Start relay replacement.",
+        "Drainage system cleaning."
+      ]
+    },
+    {
+      "title": "Refrigerator cooling failure causes",
+      "items": [
+        "Clogging, wear or dirt in working parts.",
+        "Sensor, pump, heating, cooling or control-board failure.",
+        "Installation issues, overload, humidity or limited access to the appliance.",
+        "The exact cause is confirmed by on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Why the refrigerator fails",
+      "items": [
+        "The fault is narrowed down by symptom instead of replacing parts blindly.",
+        "Door seal, drain, No Frost fan/defrost circuit, relay, compressor and refrigerant leak signs are checked separately.",
+        "Humidity, heavy use and access conditions in Batumi can make the symptom appear faster.",
+        "The exact cause is confirmed during on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Local Batumi conditions",
+      "items": [
+        "We confirm model, access and symptom before the visit.",
+        "Service covers central Batumi, Khimshiashvili, New Boulevard, Boni, Airport area and Angisa.",
+        "Cooling recovery is verified after the repair, not assumed immediately."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Detailed price table",
+    "groups": [
+      {
+        "title": "Mechanical and cooling system",
+        "items": [
+          {
+            "label": "Freon refill (refrigerant)",
+            "value": "from 80–120 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 80,
+              "maxPrice": 120
+            }
+          },
+          {
+            "label": "Freon leak repair + refill",
+            "value": "from 120–180 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 120,
+              "maxPrice": 180
+            }
+          },
+          {
+            "label": "Compressor (motor) replacement",
+            "value": "from 150–250 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 150,
+              "maxPrice": 250
+            }
+          },
+          {
+            "label": "Door gasket replacement",
+            "value": "from 45–70 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 45,
+              "maxPrice": 70
+            }
+          },
+          {
+            "label": "Drainage system cleaning (water inside the chamber)",
+            "value": "from 40–60 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 40,
+              "maxPrice": 60
+            }
+          }
+        ]
+      },
+      {
+        "title": "Electrical and control",
+        "items": [
+          {
+            "label": "Thermostat replacement",
+            "value": "from 45–70 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 45,
+              "maxPrice": 70
+            }
+          },
+          {
+            "label": "Start relay replacement",
+            "value": "from 45–60 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 45,
+              "maxPrice": 60
+            }
+          },
+          {
+            "label": "No Frost fan replacement",
+            "value": "from 60–90 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 60,
+              "maxPrice": 90
+            }
+          },
+          {
+            "label": "Control module repair or replacement",
+            "value": "from 100–180 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 100,
+              "maxPrice": 180
+            }
+          },
+          {
+            "label": "Temperature sensor replacement (No Frost)",
+            "value": "from 50–80 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 50,
+              "maxPrice": 80
+            }
+          },
+          {
+            "label": "Defrost heater replacement",
+            "value": "from 70–100 ₾",
+            "schemaPrice": {
+              "currency": "GEL",
+              "minPrice": 70,
+              "maxPrice": 100
+            }
+          }
+        ]
+      }
+    ],
+    "note": "The final cost depends on the model, access to parts and spare part pricing."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Does weak cooling always mean refrigerant refill?",
+        "answer": "No. Door seal, fan, defrost, relay, sensors and compressor are checked first. Common service areas include the city center, Khimshiashvili, New Boulevard, Boni, Airport area and Gonio."
+      },
+      {
+        "question": "Why does the fridge click but not start?",
+        "answer": "A relay, compressor or power fault can cause this symptom."
+      },
+      {
+        "question": "Can No Frost be repaired on site?",
+        "answer": "Most diagnostics and common part replacements can be done on site if access and parts allow it."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need refrigerator repair?",
+    "text": "Describe the issue and we will estimate the price and timing.",
+    "button": "Call"
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "items": [
+      {
+        "text": "fridge repair in Batumi"
+      },
+      {
+        "text": "refrigerator repair in Batumi"
+      },
+      {
+        "text": "refrigerator repair"
+      },
+      {
+        "text": "fridge technician"
+      },
+      {
+        "text": "fix a fridge"
+      },
+      {
+        "text": "refrigerator not cooling"
+      },
+      {
+        "text": "fridge leaking water"
+      },
+      {
+        "text": "No Frost repair"
+      },
+      {
+        "text": "freezer not freezing"
+      }
+    ]
+  },
+  "description": "Refrigerator repair in Batumi: not cooling, water leaks, noisy compressor, No Frost faults, refrigerant leaks and sensors. On-site diagnostics.",
+  "diagnosisSteps": {
+    "title": "How diagnostics works",
+    "lead": "A service-specific check sequence for this appliance.",
+    "items": [
+      "Confirm the symptom, model and visible error code.",
+      "Door seal, drain, No Frost fan/defrost circuit, relay, compressor and refrigerant leak signs are checked separately.",
+      "Agree the repair scope and parts before work starts.",
+      "Cooling recovery is verified after the repair, not assumed immediately."
+    ]
+  },
+  "brandsHandled": {
+    "title": "Brands and models",
+    "lead": "We work with common appliance brands. Exact repair options depend on the model and parts availability.",
+    "items": ["Samsung", "LG", "Bosch", "Liebherr", "Beko", "Indesit", "Atlant", "Haier"]
+  },
+  "trustSignals": {
+    "title": "Verifiable service terms",
+    "lead": "Only details the customer can see before or during the repair.",
+    "items": [
+      "Refrigerant is not added before checking leak signs and compressor behavior.",
+      "No Frost faults are separated from simple drain or seal issues.",
+      "Cooling recovery is checked after the repair because temperature does not normalize instantly."
+    ]
+  },
+  "caseStudies": {
+    "title": "Diagnostic scenarios in Batumi",
+    "lead": "These are service-specific repair scenarios, not invented statistics or dated jobs.",
+    "applianceLabel": "Appliance",
+    "symptomLabel": "Symptom",
+    "diagnosisLabel": "Diagnostics",
+    "workDoneLabel": "What we do",
+    "resultLabel": "Check result",
+    "areaLabel": "Area",
+    "items": [
+      {
+        "title": "Scenario 1",
+        "appliance": "refrigerator",
+        "symptom": "Repeated refrigerator fault that needs targeted diagnostics.",
+        "diagnosis": "Door seal, drain, No Frost fan/defrost circuit, relay, compressor and refrigerant leak signs are checked separately.",
+        "workDone": "Clean, adjust or replace the confirmed failed part after approval.",
+        "result": "Cooling recovery is verified after the repair, not assumed immediately.",
+        "area": "New Boulevard / Angisa",
+        "time": "1-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 2",
+        "appliance": "refrigerator",
+        "symptom": "Unstable refrigerator operation after active use.",
+        "diagnosis": "Door seal, drain, No Frost fan/defrost circuit, relay, compressor and refrigerant leak signs are checked separately.",
+        "workDone": "Remove blockage/wear cause or agree part replacement after testing.",
+        "result": "Cooling recovery is verified after the repair, not assumed immediately.",
+        "area": "Center / Boni",
+        "time": "1.5-2 hours",
+        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+      },
+      {
+        "title": "Scenario 3",
+        "appliance": "Samsung No Frost fridge",
+        "symptom": "Freezer works but fridge compartment is warm",
+        "diagnosis": "We check fan, damper and evaporator ice buildup.",
+        "workDone": "Defrost the assembly and test sensors and fan operation.",
+        "result": "Cold air reaches the fridge compartment again.",
+        "time": "1.5-2 hours",
+        "priceHint": "after diagnostics",
+        "area": "Khimshiashvili"
+      },
+      {
+        "title": "Scenario 4",
+        "appliance": "LG refrigerator",
+        "symptom": "Compressor starts and stops quickly",
+        "diagnosis": "We check start relay, power and compressor temperature.",
+        "workDone": "Replace relay or approve deeper compressor diagnostics.",
+        "result": "Startup becomes stable during the test cycle.",
+        "time": "1-2 hours",
+        "priceHint": "from 80 GEL",
+        "area": "Airport area"
+      },
+      {
+        "title": "Scenario 5",
+        "appliance": "Beko refrigerator",
+        "symptom": "Water collects under the drawers",
+        "diagnosis": "We check the drain hole and condensate channel.",
+        "workDone": "Clear the drain and explain simple prevention.",
+        "result": "Water goes to the evaporation tray.",
+        "time": "1 hour",
+        "priceHint": "from 60 GEL",
+        "area": "Gonio"
+      }
+    ],
+    "timeLabel": "Time",
+    "priceHintLabel": "Price guide"
+  },
+  "related": {
+    "title": "Related pages",
+    "lead": "Useful guides, prices and contact options for this service.",
+    "items": [
+      {
+        "key": "refrigerator-not-cooling",
+        "title": "Refrigerator not cooling in Batumi",
+        "text": "Common causes of weak refrigerator cooling in Batumi: door seal, drain, No Frost, compressor, refrigerant and sensors.",
+        "linkLabel": "Open"
+      },
+      {
+        "key": "prices",
+        "title": "Prices",
+        "text": "Price list and diagnostic terms."
+      },
+      {
+        "key": "contacts",
+        "title": "Contacts",
+        "text": "Phone, messengers and call-out area."
+      }
+    ],
+    "linkLabel": "Open"
+  },
+  "photos": {
+    "title": "Job photos",
+    "lead": "Typical on-site work scenes: diagnostics, access to components, and careful testing after repair.",
+    "items": [
+      {
+        "src": "/assets/images/jobs/refrigerator-repair-batumi-1.jpg",
+        "alt": "Refrigerator repair in Batumi, Airport district",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/refrigerator-repair-batumi-2.jpg",
+        "alt": "Fridge compressor diagnostics in Batumi, Gonio",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/images/jobs/refrigerator-repair-batumi-3.jpg",
+        "alt": "Back panel refrigerator check with multimeter in Batumi",
+        "width": 640,
+        "height": 480
+      }
+    ]
+  }
+}

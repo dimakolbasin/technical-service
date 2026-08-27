@@ -1,0 +1,111 @@
+---
+import type { Language, Locale, RouteKey } from "../../lib/content";
+import { getOrderedLanguages } from "../../lib/content";
+import { ContactMethod, ga, TrackingLocation } from "../../lib/analytics";
+import type { SiteConfig } from "../../lib/site";
+import { formatGeorgianPhone } from "../../lib/site";
+
+interface Props {
+  language: Language;
+  pageKey: RouteKey | false;
+  site: SiteConfig;
+  hideLanguageSelector?: boolean;
+}
+
+const DEFAULT_PAGE_KEY: RouteKey = "home";
+
+const { language, pageKey, site, hideLanguageSelector = false } = Astro.props;
+const targetKey = pageKey || DEFAULT_PAGE_KEY;
+const orderedLanguages = getOrderedLanguages();
+const formattedPhone = formatGeorgianPhone(site.phone);
+---
+
+<header class="site-header">
+  <div class="container site-header__row">
+    <a class="site-header__brand" href={language.paths.home}>
+      <img
+        src="/assets/icons/icon-tools.png"
+        alt=""
+        class="site-header__logo"
+        width="32"
+        height="32"
+      />
+      <span>{site.name}</span>
+    </a>
+    <nav class="site-header__nav" aria-label={language.navLabel}>
+      <ul class="site-header__nav-list">
+        {
+          language.nav.map((item) => (
+            <li>
+              <a
+                class:list={[
+                  "site-header__nav-link",
+                  { "site-header__nav-link--active": item.key === pageKey },
+                ]}
+                href={language.paths[item.key as RouteKey]}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <div class="site-header__contact">
+      <a
+        class="site-header__phone"
+        href={`tel:${site.phone}`}
+        {...ga.contact(ContactMethod.Call, TrackingLocation.HeaderPhone)}
+      >
+        {formattedPhone}
+      </a>
+      <span>{language.hours}</span>
+    </div>
+    {
+      !hideLanguageSelector && (
+        <div class="site-header__langs" aria-label={language.langLabel}>
+          {orderedLanguages.map((locale) => (
+            <a
+              class:list={[
+                "site-header__lang",
+                { "site-header__lang--active": locale.code === language.code },
+              ]}
+              href={locale.paths[targetKey]}
+              {...(locale.code === language.code
+                ? { "data-lang": locale.code }
+                : ga.language(
+                    language.code as Locale,
+                    locale.code as Locale,
+                    TrackingLocation.Header,
+                  ))}
+            >
+              {locale.labelShort}
+            </a>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</header>
+
+<div class="site-nav">
+  <nav class="container site-nav__panel" aria-label={language.navLabel}>
+    <ul class="site-nav__list">
+      {
+        language.nav.map((item) => (
+          <li>
+            <a
+              class:list={[
+                "site-nav__link",
+                { "site-nav__link--active": item.key === pageKey },
+              ]}
+              href={language.paths[item.key as RouteKey]}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</div>

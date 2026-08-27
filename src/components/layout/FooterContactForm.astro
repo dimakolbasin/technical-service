@@ -1,0 +1,142 @@
+---
+import { ContactMethod } from "../../lib/analytics";
+import type { HomeContent } from "../../lib/content/types";
+
+interface Props {
+  title: string;
+  lead: string;
+  form: HomeContent["contact"]["form"];
+  accessKey: string;
+  callLabel: string;
+}
+
+const CONTACT_METHODS = [
+  { id: "call", method: ContactMethod.Call, label: "Call", icon: "call.png" },
+  {
+    id: "tg",
+    method: ContactMethod.Telegram,
+    label: "Telegram",
+    icon: "tg.png",
+  },
+  {
+    id: "wh",
+    method: ContactMethod.WhatsApp,
+    label: "WhatsApp",
+    icon: "wh-1.png",
+  },
+  {
+    id: "viber",
+    method: ContactMethod.Viber,
+    label: "Viber",
+    icon: "viber.png",
+  },
+] as const;
+
+const { title, lead, form, accessKey, callLabel } = Astro.props;
+---
+
+<div class="footer-form-panel">
+  <h2 class="footer-form-panel__title">{title}</h2>
+  <p class="footer-form-panel__text">{lead}</p>
+  <form
+    class="form footer-form"
+    id="lead-form-footer"
+    name="lead-form-footer"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    autocomplete="off"
+  >
+    <input type="hidden" name="access_key" value={accessKey} />
+    <input
+      type="hidden"
+      name="subject"
+      value="New repair request from site footer"
+    />
+    <input type="hidden" name="from_name" value="Repair Service Request" />
+    <div class="form__row">
+      <label class="form__label" for="name-footer">{form.nameLabel}</label>
+      <input
+        autocomplete="off"
+        class="form__input"
+        type="text"
+        id="name-footer"
+        name="name"
+        placeholder={form.namePlaceholder}
+      />
+    </div>
+    <div class="form__row">
+      <label class="form__label" for="phone-footer">{form.phoneLabel}</label>
+      <div class="form__phone-group">
+        <input
+          autocomplete="off"
+          class="form__input form__input--phone"
+          type="number"
+          min="0"
+          id="phone-footer"
+          name="phone"
+          placeholder={form.phonePlaceholder}
+          inputmode="tel"
+          required
+        />
+        <div
+          class="form__contact-methods"
+          role="group"
+          aria-label={form.preferredContactLabel}
+        >
+          <span class="form__contact-methods-note">
+            {form.preferredContactLabel}
+          </span>
+          {
+            CONTACT_METHODS.map((item) => {
+              const label =
+                item.method === ContactMethod.Call ? callLabel : item.label;
+              return (
+                <>
+                  <input
+                    class="form__contact-method-input"
+                    type="checkbox"
+                    id={`preferred-contact-footer-${item.id}`}
+                    name="preferredContact[]"
+                    value={item.method}
+                    aria-label={label}
+                  />
+                  <label
+                    class="form__contact-method"
+                    for={`preferred-contact-footer-${item.id}`}
+                    title={label}
+                  >
+                    <span class="visually-hidden">{label}</span>
+                    <img
+                      class="button__icon"
+                      src={`/assets/icons/social/${item.icon}`}
+                      alt=""
+                      width="24"
+                      height="24"
+                    />
+                  </label>
+                </>
+              );
+            })
+          }
+        </div>
+      </div>
+    </div>
+    <div class="form__row">
+      <label class="form__label" for="message-footer">
+        {form.descriptionLabel}
+      </label>
+      <textarea
+        class="form__input"
+        id="message-footer"
+        name="message"
+        rows="3"
+        placeholder={form.descriptionPlaceholder}
+        autocomplete="off"
+        aria-autocomplete="none"></textarea>
+    </div>
+    <div class="form__actions">
+      <button class="button button--primary" type="submit">{form.submit}</button
+      >
+    </div>
+  </form>
+</div>

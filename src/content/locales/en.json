@@ -1,0 +1,137 @@
+{
+  "code": "en",
+  "label": "English",
+  "labelShort": "EN",
+  "menu": "Menu",
+  "navLabel": "Main navigation",
+  "langLabel": "Change language",
+  "hours": "Daily 9:00–20:00",
+  "cta": "Call now",
+  "cookieNotice": {
+    "textBefore": "We use ",
+    "linkText": "cookies",
+    "textAfter": " to improve the site",
+    "closeLabel": "Close cookie notice"
+  },
+  "common": {
+    "important": "Important",
+    "moreDetails": "Details"
+  },
+  "paths": {
+    "home": "/en/",
+    "services": "/en/services/",
+    "washing-machines": "/en/services/washing-machines/",
+    "dishwashers": "/en/services/dishwashers/",
+    "hobs": "/en/services/hobs/",
+    "ovens": "/en/services/ovens/",
+    "ac-cleaning": "/en/services/ac-cleaning/",
+    "refrigerators": "/en/services/refrigerators/",
+    "dryers": "/en/services/dryers/",
+    "gas-boilers": "/en/services/gas-boilers/",
+    "prices": "/en/prices/",
+    "contacts": "/en/contacts/",
+    "privacy": "/en/privacy/",
+    "washing-machine-not-draining": "/en/articles/washing-machine-not-draining/",
+    "dishwasher-not-draining": "/en/articles/dishwasher-not-draining/",
+    "oven-not-heating": "/en/articles/oven-not-heating/",
+    "hob-not-turning-on": "/en/articles/hob-not-turning-on/",
+    "ac-not-cooling": "/en/articles/ac-not-cooling/",
+    "ac-cleaning-importance": "/en/articles/ac-cleaning-importance/",
+    "refrigerator-not-cooling": "/en/articles/refrigerator-not-cooling/",
+    "dryer-not-drying": "/en/articles/dryer-not-drying/",
+    "gas-boiler-not-igniting": "/en/articles/gas-boiler-not-igniting/"
+  },
+  "nav": [
+    {
+      "key": "home",
+      "label": "Home"
+    },
+    {
+      "key": "services",
+      "label": "Services"
+    },
+    {
+      "key": "prices",
+      "label": "Prices"
+    },
+    {
+      "key": "contacts",
+      "label": "Contacts"
+    }
+  ],
+  "footer": {
+    "eyebrow": "Call-out service in Batumi",
+    "ctaTitle": "Request an appliance repair",
+    "ctaLead": "Describe the appliance and the issue — we will contact you, agree on a convenient time, and suggest the next step.",
+    "contactsTitle": "Contacts",
+    "areasTitle": "Service areas",
+    "hoursTitle": "Hours",
+    "langsTitle": "Languages",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "callLabel": "Call",
+    "messageLabel": "Message",
+    "formTitle": "Quick request",
+    "areas": "Batumi: Old Batumi, Rustaveli, Khimshiashvili, Bagrationi, Aghmashenebeli, Javakhishvili, Tamar, Boni-Gorodok",
+    "legalLine": "Home appliance repair in Batumi with on-site diagnostics."
+  },
+  "serviceFocus": {
+    "title": "Popular services",
+    "lead": "Looking for a specific service? Choose the appliance type.",
+    "linkLabel": "Details",
+    "items": [
+      {
+        "key": "washing-machines",
+        "title": "Washing machines",
+        "text": "No drain, no spin, noise or leaks."
+      },
+      {
+        "key": "refrigerators",
+        "title": "Refrigerators",
+        "text": "Not cooling, water leaks, compressor noise."
+      },
+      {
+        "key": "dishwashers",
+        "title": "Dishwashers",
+        "text": "Poor washing, no heating, standing water or leaks."
+      },
+      {
+        "key": "ovens",
+        "title": "Ovens",
+        "text": "No heat, unstable temperature, errors."
+      },
+      {
+        "key": "hobs",
+        "title": "Cooktops",
+        "text": "Gas and electric hobs, burners and touch controls."
+      },
+      {
+        "key": "ac-cleaning",
+        "title": "Air conditioners",
+        "text": "Cleaning, drainage, odors and weak cooling."
+      },
+      {
+        "key": "dryers",
+        "title": "Dryers",
+        "text": "No drying, noise, drain or condensate issues."
+      },
+      {
+        "key": "gas-boilers",
+        "title": "Gas boilers",
+        "text": "Sensors, ignition, heat exchanger and maintenance."
+      }
+    ]
+  },
+  "rootButtonClass": "button--ghost",
+  "ctaMessage": "WhatsApp",
+  "areasList": [
+    "Old Batumi",
+    "Rustaveli",
+    "Khimshiashvili",
+    "Bagrationi",
+    "Aghmashenebeli",
+    "Javakhishvili",
+    "Tamar",
+    "Boni-Gorodok"
+  ]
+}

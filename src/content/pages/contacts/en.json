@@ -1,0 +1,114 @@
+{
+  "title": "Contact appliance repair specialist in Batumi | Tech Fix",
+  "lead": "Reach us in the most convenient way. On-site service in Batumi. Diagnostics at your location. Price agreed before repair.",
+  "heading": "Contacts",
+  "cards": [
+    {
+      "title": "Main contacts",
+      "items": [
+        {
+          "label": "Phone",
+          "type": "phone"
+        },
+        {
+          "label": "Email",
+          "type": "email"
+        },
+        {
+          "label": "Telegram",
+          "type": "telegram"
+        },
+        {
+          "label": "WhatsApp",
+          "value": "Message",
+          "type": "whatsapp"
+        },
+        {
+          "label": "Viber",
+          "value": "Message",
+          "type": "viber"
+        },
+        {
+          "label": "Facebook",
+          "type": "facebook"
+        }
+      ]
+    },
+    {
+      "title": "Schedule & area",
+      "items": [
+        {
+          "label": "Hours",
+          "value": "9:00–20:00 daily",
+          "type": "hours"
+        },
+        {
+          "label": "Service area",
+          "value": "Batumi",
+          "type": "area"
+        }
+      ],
+      "note": "Call-out and diagnostics 20 GEL"
+    }
+  ],
+  "cta": {
+    "title": "Need a quick reply?",
+    "text": "Describe the issue and model — I'll give a price/time estimate right away.",
+    "button": "Message on Telegram"
+  },
+  "description": "Contact Tech Fix in Batumi: phone, messengers, email, working hours, address and service area for on-site appliance repair.",
+  "businessInfo": {
+    "title": "Tech Fix: contacts and service area",
+    "nameLabel": "Business",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "hoursLabel": "Hours",
+    "addressLabel": "Address",
+    "areaLabel": "Service area",
+    "area": "Batumi: city center, Khimshiashvili, New Boulevard, Boni, Airport area, Angisa, Gonio, Chakvi",
+    "hours": "9:00–20:00 daily",
+    "note": "On-site appliance repair in Batumi. Address, map and profile links are shown together so they are easy to check before contacting us."
+  },
+  "map": {
+    "title": "Map and profile",
+    "lead": "Open Tech Fix on Google Maps or in the business profile to check the address, route and reviews.",
+    "iframeTitle": "Tech Fix on Google Maps",
+    "googleLabel": "Open Google Maps",
+    "profileLabel": "Google business profile"
+  },
+  "trustTitle": "Why customers trust us",
+  "trustSignals": [
+    {
+      "label": "Call-out",
+      "value": "Across Batumi districts and nearby areas"
+    },
+    {
+      "label": "Pricing",
+      "value": "Repair cost is agreed after diagnostics before work starts"
+    },
+    {
+      "label": "Warranty",
+      "value": "Warranty terms are explained after diagnostics and repair"
+    }
+  ],
+  "trustLabels": {
+    "years": "Years in business",
+    "repairs": "Completed repairs",
+    "reviews": "Reviews",
+    "reviewsLink": "Review source"
+  },
+  "quickLinks": {
+    "title": "Quick links",
+    "lead": "Use these pages if you want to check the service or price first.",
+    "items": [
+      {
+        "key": "services",
+        "label": "All services"
+      },
+      {
+        "key": "prices",
+        "label": "Prices"
+      }
+    ]
+  }
+}

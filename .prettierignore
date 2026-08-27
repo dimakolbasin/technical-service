@@ -1,9 +1,9 @@
-/.idea/
-/AGENTS.md
 node_modules/
 dist/
-.cache/
 .astro/
+.codebase-memory/
+.serena/
+public/
 playwright-report/
 test-results/
-.DS_Store
+package-lock.json

@@ -1,0 +1,137 @@
+{
+  "code": "ru",
+  "label": "Русский",
+  "labelShort": "RU",
+  "menu": "Меню",
+  "navLabel": "Основная навигация",
+  "langLabel": "Сменить язык",
+  "hours": "Ежедневно 9:00–20:00",
+  "cta": "Позвонить",
+  "cookieNotice": {
+    "textBefore": "Мы используем ",
+    "linkText": "cookies",
+    "textAfter": " для улучшения сайта",
+    "closeLabel": "Закрыть уведомление о cookies"
+  },
+  "common": {
+    "important": "Важно",
+    "moreDetails": "Подробнее"
+  },
+  "paths": {
+    "home": "/",
+    "services": "/services/",
+    "washing-machines": "/services/washing-machines/",
+    "dishwashers": "/services/dishwashers/",
+    "hobs": "/services/hobs/",
+    "ovens": "/services/ovens/",
+    "ac-cleaning": "/services/ac-cleaning/",
+    "refrigerators": "/services/refrigerators/",
+    "dryers": "/services/dryers/",
+    "gas-boilers": "/services/gas-boilers/",
+    "prices": "/prices/",
+    "contacts": "/contacts/",
+    "privacy": "/privacy/",
+    "washing-machine-not-draining": "/articles/washing-machine-not-draining/",
+    "dishwasher-not-draining": "/articles/dishwasher-not-draining/",
+    "oven-not-heating": "/articles/oven-not-heating/",
+    "hob-not-turning-on": "/articles/hob-not-turning-on/",
+    "ac-not-cooling": "/articles/ac-not-cooling/",
+    "ac-cleaning-importance": "/articles/ac-cleaning-importance/",
+    "refrigerator-not-cooling": "/articles/refrigerator-not-cooling/",
+    "dryer-not-drying": "/articles/dryer-not-drying/",
+    "gas-boiler-not-igniting": "/articles/gas-boiler-not-igniting/"
+  },
+  "nav": [
+    {
+      "key": "home",
+      "label": "Главная"
+    },
+    {
+      "key": "services",
+      "label": "Услуги"
+    },
+    {
+      "key": "prices",
+      "label": "Цены"
+    },
+    {
+      "key": "contacts",
+      "label": "Контакты"
+    }
+  ],
+  "footer": {
+    "eyebrow": "Выездной сервис в Батуми",
+    "ctaTitle": "Оставьте заявку на ремонт",
+    "ctaLead": "Опишите технику и симптом поломки — мы свяжемся, согласуем удобное время и подскажем следующий шаг.",
+    "contactsTitle": "Контакты",
+    "areasTitle": "Обслуживаем районы",
+    "hoursTitle": "Часы",
+    "langsTitle": "Языки",
+    "phoneLabel": "Телефон",
+    "emailLabel": "Почта",
+    "callLabel": "Позвонить",
+    "messageLabel": "Написать",
+    "formTitle": "Быстрая заявка",
+    "areas": "Батуми: Старый Батуми, Руставели, Химшиашвили, Багратиони, Агмашенебели, Джавахишвили, Тамар, Бони-Городок",
+    "legalLine": "Ремонт бытовой техники в Батуми с диагностикой на месте."
+  },
+  "serviceFocus": {
+    "title": "Популярные услуги",
+    "lead": "Ищете конкретную услугу? Выберите нужный тип ремонта.",
+    "linkLabel": "Подробнее",
+    "items": [
+      {
+        "key": "washing-machines",
+        "title": "Стиральные машины",
+        "text": "Не сливает, не отжимает, шумит или течёт."
+      },
+      {
+        "key": "refrigerators",
+        "title": "Холодильники",
+        "text": "Не морозит, течёт вода, шумит компрессор."
+      },
+      {
+        "key": "dishwashers",
+        "title": "Посудомоечные машины",
+        "text": "Не моет, не греет, остаётся вода, протечки."
+      },
+      {
+        "key": "ovens",
+        "title": "Духовые шкафы",
+        "text": "Не греет, не держит температуру, ошибки."
+      },
+      {
+        "key": "hobs",
+        "title": "Варочные панели",
+        "text": "Газовые и электрические поверхности, конфорки и сенсоры."
+      },
+      {
+        "key": "ac-cleaning",
+        "title": "Кондиционеры",
+        "text": "Чистка, дренаж, запахи и слабое охлаждение."
+      },
+      {
+        "key": "dryers",
+        "title": "Сушильные машины",
+        "text": "Не сушит, шумит, не сливает конденсат."
+      },
+      {
+        "key": "gas-boilers",
+        "title": "Газовые котлы",
+        "text": "Датчики, розжиг, теплообменник и обслуживание."
+      }
+    ]
+  },
+  "rootButtonClass": "button--primary",
+  "ctaMessage": "WhatsApp",
+  "areasList": [
+    "Старый Батуми",
+    "Руставели",
+    "Химшиашвили",
+    "Багратиони",
+    "Агмашенебели",
+    "Джавахишвили",
+    "Тамар",
+    "Бони-Городок"
+  ]
+}

@@ -1,0 +1,53 @@
+---
+import { ContentType, ga, TrackingLocation } from "../../../lib/analytics";
+import type { ContactsPageContent } from "../../../lib/content/types";
+
+interface Props {
+  map: ContactsPageContent["map"];
+  embedUrl: string;
+  googleMapsUrl: string;
+  businessProfileUrl: string;
+}
+
+const { map, embedUrl, googleMapsUrl, businessProfileUrl } = Astro.props;
+const links = [
+  { label: map.googleLabel, href: googleMapsUrl },
+  { label: map.profileLabel, href: businessProfileUrl },
+].filter(
+  (link, index, items) =>
+    items.findIndex((candidate) => candidate.href === link.href) === index,
+);
+---
+
+<section class="card contact-map" aria-labelledby="contact-map-title">
+  <h2 class="card__title" id="contact-map-title">{map.title}</h2>
+  {map.lead && <p class="card__text">{map.lead}</p>}
+  {
+    embedUrl && (
+      <div class="map-embed">
+        <iframe
+          src={embedUrl}
+          title={map.iframeTitle}
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+        />
+      </div>
+    )
+  }
+  <div class="section__actions">
+    {
+      links.map((link) => (
+        <a
+          class="button button--ghost"
+          href={link.href}
+          target="_blank"
+          rel="noopener"
+          {...ga.content(ContentType.MapLink, TrackingLocation.ContactsMap)}
+        >
+          {link.label}
+        </a>
+      ))
+    }
+  </div>
+</section>

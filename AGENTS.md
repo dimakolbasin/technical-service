@@ -2,6 +2,14 @@
 
 Rules for any assistant working in this repository. They are session-agnostic.
 
+## Working style
+- Use Ponytail's simplest-working-solution rule for all code changes: reuse existing code and platform features before adding abstractions or dependencies.
+
+## Code intelligence
+- Use codebase-memory first for code discovery and architecture: `search_graph`, `trace_path`, `get_code_snippet`, then `query_graph` or `search_code` when needed.
+- Use Serena for symbol-level navigation and edits, reference-aware refactors, and project memory. Activate the current directory as the Serena project before using its tools.
+- Fall back to text search for literals, config, documentation, or when semantic tools do not return enough information.
+
 ## Context hygiene
 - Keep context tight: open only the files needed for the task.
 - Prefer source to build artifacts and caches; avoid deep link-chasing unless necessary.

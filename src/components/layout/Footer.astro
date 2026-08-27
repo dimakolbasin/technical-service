@@ -1,0 +1,237 @@
+---
+import FooterContactForm from "./FooterContactForm.astro";
+import type { Language, Locale, RouteKey } from "../../lib/content";
+import { getOrderedLanguages } from "../../lib/content";
+import { ContactMethod, ga, TrackingLocation } from "../../lib/analytics";
+import type { SiteConfig } from "../../lib/site";
+import { whatsappNumber } from "../../lib/site";
+
+interface Props {
+  language: Language;
+  pageKey: RouteKey | false;
+  site: SiteConfig;
+}
+
+const DEFAULT_PAGE_KEY: RouteKey = "home";
+
+const { language, pageKey, site } = Astro.props;
+const footer = language.footer;
+const footerContact = language.home.contact;
+const footerForm = footerContact.form;
+const footerContactItems = Array.isArray(footerContact.list)
+  ? footerContact.list
+  : [];
+const footerAddress = footerContactItems.find(
+  (item) => item.type === "address",
+);
+const footerHours = footerContactItems.find((item) => item.type === "hours");
+const footerAreas = footerContactItems.find((item) => item.type === "area");
+const hideFooterHero = pageKey === "privacy";
+const privacyPath = language.paths.privacy;
+const privacyLabel = language.pages.privacy.linkLabel;
+const targetKey = pageKey || DEFAULT_PAGE_KEY;
+const orderedLanguages = getOrderedLanguages();
+---
+
+<footer class="site-footer">
+  <div class="container">
+    {
+      !hideFooterHero && (
+        <div class="footer-hero">
+          <div class="footer-hero__content">
+            <p class="footer-eyebrow">{footer.eyebrow}</p>
+            <h2 class="footer-hero__title">{footer.ctaTitle}</h2>
+            <p class="footer-hero__lead">{footer.ctaLead}</p>
+            <div class="footer-actions">
+              <a
+                class="button button--primary"
+                href={`tel:${site.phone}`}
+                {...ga.contact(
+                  ContactMethod.Call,
+                  TrackingLocation.FooterActions,
+                )}
+              >
+                <img
+                  class="button__icon"
+                  src="/assets/icons/social/call.png"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                {footer.callLabel}
+              </a>
+              <a
+                class="button button--ghost"
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener"
+                {...ga.contact(
+                  ContactMethod.WhatsApp,
+                  TrackingLocation.FooterActions,
+                )}
+              >
+                <img
+                  class="button__icon"
+                  src="/assets/icons/social/wh-1.png"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                {footer.messageLabel}
+              </a>
+            </div>
+            <div class="footer-social" aria-label={footer.contactsTitle}>
+              <a
+                class="card__icon card__icon--social"
+                href={site.telegram}
+                target="_blank"
+                rel="noopener"
+                aria-label="Telegram"
+                {...ga.contact(
+                  ContactMethod.Telegram,
+                  TrackingLocation.FooterSocial,
+                )}
+              >
+                <img
+                  src="/assets/icons/social/tg.png"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+              </a>
+              <a
+                class="card__icon card__icon--social"
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp"
+                {...ga.contact(
+                  ContactMethod.WhatsApp,
+                  TrackingLocation.FooterSocial,
+                )}
+              >
+                <img
+                  src="/assets/icons/social/wh-1.png"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+              </a>
+              <a
+                class="card__icon card__icon--social"
+                href={site.viber}
+                target="_blank"
+                rel="noopener"
+                aria-label="Viber"
+                {...ga.contact(
+                  ContactMethod.Viber,
+                  TrackingLocation.FooterSocial,
+                )}
+              >
+                <img
+                  src="/assets/icons/social/viber.png"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+              </a>
+              {site.facebook && (
+                <a
+                  class="card__icon card__icon--social"
+                  href={site.facebook}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Facebook"
+                  {...ga.contact(
+                    ContactMethod.Facebook,
+                    TrackingLocation.FooterSocial,
+                  )}
+                >
+                  <img
+                    src="/assets/icons/social/fb.png"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              )}
+            </div>
+            <div class="footer-contact-grid">
+              <div class="footer-contact-item">
+                <span>{footer.phoneLabel}</span>
+                <a
+                  href={`tel:${site.phone}`}
+                  {...ga.contact(
+                    ContactMethod.Call,
+                    TrackingLocation.FooterContactGrid,
+                  )}
+                >
+                  {site.phone}
+                </a>
+              </div>
+              {footerHours?.value && (
+                <div class="footer-contact-item">
+                  <span>{footer.hoursTitle}</span>
+                  <p>{footerHours.value}</p>
+                </div>
+              )}
+              {footerAddress?.value && (
+                <div class="footer-contact-item">
+                  <span>{footerAddress.label}</span>
+                  <p>{footerAddress.value}</p>
+                </div>
+              )}
+              {footerAreas?.value && (
+                <div class="footer-contact-item footer-contact-item--wide">
+                  <span>{footer.areasTitle}</span>
+                  <p>{footerAreas.value}</p>
+                </div>
+              )}
+            </div>
+          </div>
+          <FooterContactForm
+            title={footer.formTitle}
+            lead={footerContact.lead}
+            form={footerForm}
+            accessKey={site.web3formsAccessKey}
+            callLabel={footer.callLabel}
+          />
+        </div>
+      )
+    }
+    <div class="footer-bottom">
+      <p>{footer.legalLine}</p>
+      <div class="footer-bottom__meta">
+        <a
+          href={`mailto:${site.email}`}
+          {...ga.contact(ContactMethod.Email, TrackingLocation.FooterLegal)}
+          >{site.email}</a
+        >
+        <span aria-hidden="true">/</span>
+        <a href={privacyPath}>{privacyLabel}</a>
+      </div>
+      <div class="footer-bottom__langs" aria-label={language.langLabel}>
+        {
+          orderedLanguages.map((locale) => (
+            <a
+              class:list={[
+                "site-header__lang",
+                { "site-header__lang--active": locale.code === language.code },
+              ]}
+              href={locale.paths[targetKey]}
+              {...(locale.code === language.code
+                ? { "data-lang": locale.code }
+                : ga.language(
+                    language.code as Locale,
+                    locale.code as Locale,
+                    TrackingLocation.Footer,
+                  ))}
+            >
+              {locale.labelShort}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</footer>

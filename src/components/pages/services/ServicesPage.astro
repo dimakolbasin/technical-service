@@ -1,0 +1,137 @@
+---
+import type { Language, RouteKey } from "../../../lib/content";
+import type { ServicesPageContent } from "../../../lib/content/types";
+import { ContentType, ga, TrackingLocation } from "../../../lib/analytics";
+interface Props {
+  language: Language;
+  page: ServicesPageContent;
+}
+const { language, page } = Astro.props;
+const guides = page.guides;
+---
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title">{page.heading}</h1><p class="section__lead">
+        {page.lead}
+      </p>{page.areaNote && <p class="section__lead">{page.areaNote}</p>}
+    </div>
+  </div>
+</section>
+
+{
+  language.serviceFocus && (
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <>
+            <h2 class="section__title">{language.serviceFocus.title}</h2>
+            <p class="section__lead">{language.serviceFocus.lead}</p>
+          </>
+        </div>
+        <div class="grid grid--3">
+          {language.serviceFocus.items.map((item) => (
+            <article class="card">
+              <h3 class="card__title">{item.title}</h3>
+              {item.text && <p class="card__text">{item.text}</p>}
+              <a
+                class="card__link"
+                href={language.paths[item.key as RouteKey]}
+                {...ga.content(
+                  ContentType.ServiceFocusCard,
+                  TrackingLocation.ServicesFocus,
+                  item.key as RouteKey,
+                )}
+              >
+                {language.serviceFocus.linkLabel} — {item.title}
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  page.sections && (
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2">
+          {page.sections.map((block) => (
+            <div class="card">
+              <h3 class="card__title">{block.title}</h3>
+              {block.lead && <p class="card__text">{block.lead}</p>}
+              {block.items && (
+                <ul class="list">
+                  {block.items.map((item) => (
+                    <li class="list__item">
+                      • <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  page.brands && (
+    <section class="section section--surface">
+      <div class="container">
+        <>
+          <div class="section__header">
+            <h2 class="section__title">{page.brands.title}</h2>
+            {page.brands.lead && (
+              <p class="section__lead">{page.brands.lead}</p>
+            )}
+          </div>
+          <div class="badge-row">
+            {page.brands.items.map((brand: string) => (
+              <span class="badge badge--outline">{brand}</span>
+            ))}
+          </div>
+        </>
+      </div>
+    </section>
+  )
+}
+
+{
+  guides && (
+    <section class="section">
+      <div class="container">
+        <>
+          <div class="section__header">
+            <h2 class="section__title">{guides.title}</h2>
+            {guides.lead && <p class="section__lead">{guides.lead}</p>}
+          </div>
+          <div class="grid grid--3">
+            {guides.items.map((item) => (
+              <article class="card">
+                <h3 class="card__title">{item.title}</h3>
+                {item.text && <p class="card__text">{item.text}</p>}
+                <a
+                  class="card__link"
+                  href={language.paths[item.key]}
+                  {...ga.content(
+                    ContentType.GuideCard,
+                    TrackingLocation.ServicesGuides,
+                    item.key,
+                  )}
+                >
+                  {item.linkLabel || guides.linkLabel}
+                </a>
+              </article>
+            ))}
+          </div>
+        </>
+      </div>
+    </section>
+  )
+}

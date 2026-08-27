@@ -1,0 +1,230 @@
+---
+import CtaDock from "../components/layout/CtaDock.astro";
+import Footer from "../components/layout/Footer.astro";
+import Header from "../components/layout/Header.astro";
+import {
+  getPage,
+  uiLanguages,
+  type Language,
+  type RouteKey,
+} from "../lib/content";
+import { buildSchemas, pageType } from "../lib/page";
+import { site } from "../lib/site";
+import { SITE_THEME_COLOR } from "../lib/site/constants";
+import { LocaleCode } from "../lib/analytics/enums";
+
+interface Props {
+  language: Language;
+  pageKey: RouteKey | false;
+  title: string;
+  description: string;
+  robots?: string;
+  hideFooter?: boolean;
+  hideLanguageSelector?: boolean;
+}
+
+const DEFAULT_ROBOTS = "index, follow";
+const DEFAULT_CANONICAL_PATH = "/";
+const META_IMAGE_PATH = "/assets/icons/meta-pic.webp";
+
+const OG_LOCALE_MAP: Record<string, string> = {
+  [LocaleCode.Ru]: "ru_RU",
+  [LocaleCode.En]: "en_US",
+  [LocaleCode.Ka]: "ka_GE",
+};
+
+const {
+  language,
+  pageKey,
+  title,
+  description,
+  robots = DEFAULT_ROBOTS,
+  hideFooter = false,
+  hideLanguageSelector = false,
+} = Astro.props;
+const page = pageKey && pageKey !== "home" ? getPage(language, pageKey) : null;
+const canonical = pageKey
+  ? site.baseUrl + language.paths[pageKey]
+  : site.baseUrl + DEFAULT_CANONICAL_PATH;
+const schemas = pageKey
+  ? buildSchemas({ language, pageKey, page, title, description, site })
+  : [];
+const analyticsBootstrap = `
+window.dataLayer = window.dataLayer || [];
+window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+window.gtag('js', new Date());
+window.gtag('config', ${JSON.stringify(site.gaMeasurementId)});
+`;
+---
+
+<!doctype html>
+<html lang={language.code}>
+  <head>
+    {
+      site.gaMeasurementId && (
+        <>
+          <script
+            is:inline
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${site.gaMeasurementId}`}
+          />
+          <script is:inline set:html={analyticsBootstrap} />
+        </>
+      )
+    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content={robots} />
+    <meta name="theme-color" content={SITE_THEME_COLOR} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      /></noscript
+    >
+    <link rel="preload" href="/assets/styles.css" as="style" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    {
+      pageKey === "home" && (
+        <>
+          <link
+            rel="preload"
+            href="/assets/images/hero-appliances-mobile.webp"
+            as="image"
+            type="image/webp"
+            media="(max-width: 719px)"
+            fetchpriority="high"
+          />
+          <link
+            rel="preload"
+            href="/assets/images/hero-appliances-desktop.webp"
+            as="image"
+            type="image/webp"
+            media="(min-width: 720px)"
+            fetchpriority="high"
+          />
+        </>
+      )
+    }
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
+    <link
+      rel="icon"
+      href="/favicon.ico"
+      type="image/x-icon"
+      fetchpriority="low"
+    />
+    <link
+      rel="icon"
+      href="/assets/icons/icon-tools.png"
+      type="image/png"
+      fetchpriority="low"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/assets/icons/icon-tools.png"
+      fetchpriority="low"
+    />
+    <link rel="canonical" href={canonical} />
+    {
+      pageKey &&
+        uiLanguages.map((locale) => (
+          <link
+            rel="alternate"
+            hreflang={locale.code}
+            href={site.baseUrl + locale.paths[pageKey]}
+          />
+        ))
+    }
+    {
+      pageKey && (
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href={site.baseUrl + uiLanguages[0].paths[pageKey]}
+        />
+      )
+    }
+    {
+      pageKey && (
+        <>
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={canonical} />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={description} />
+          <meta property="og:site_name" content={site.name} />
+          <meta
+            property="og:locale"
+            content={OG_LOCALE_MAP[language.code] || language.code}
+          />
+          <meta
+            property="og:image"
+            content={`${site.baseUrl}${META_IMAGE_PATH}`}
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={title} />
+          <meta name="twitter:description" content={description} />
+          <meta
+            name="twitter:image"
+            content={`${site.baseUrl}${META_IMAGE_PATH}`}
+          />
+        </>
+      )
+    }
+    {
+      schemas.map((schema) => (
+        <script
+          is:inline
+          type="application/ld+json"
+          set:html={JSON.stringify(schema)}
+        />
+      ))
+    }
+  </head>
+  <body
+    class:list={["page", pageKey === "home" ? "page--home" : "page--subpage"]}
+    data-page-key={pageKey || ""}
+    data-page-type={pageType(pageKey)}
+    data-page-language={language.code}
+    data-ga-tracking={pageKey ? "enabled" : "disabled"}
+  >
+    <Header
+      language={language}
+      pageKey={pageKey}
+      site={site}
+      hideLanguageSelector={hideLanguageSelector}
+    />
+    <main class="main"><slot /></main>
+    {
+      !hideFooter && (
+        <Footer language={language} pageKey={pageKey} site={site} />
+      )
+    }
+    <div
+      class="cookie-notice"
+      role="region"
+      aria-label={language.cookieNotice.closeLabel}
+      data-cookie-notice
+    >
+      <span
+        >{language.cookieNotice.textBefore}<a href={language.paths.privacy}
+          >{language.cookieNotice.linkText}</a
+        >{language.cookieNotice.textAfter}</span
+      >
+      <span class="cookie-notice__close" aria-hidden="true">×</span>
+    </div>
+    <CtaDock language={language} site={site} />
+    <script src="../scripts/analytics/index.ts"></script>
+    <script src="../scripts/ui.ts"></script>
+  </body>
+</html>

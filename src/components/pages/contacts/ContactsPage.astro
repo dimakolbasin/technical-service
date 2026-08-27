@@ -1,0 +1,298 @@
+---
+import ContactValue from "./ContactValue.astro";
+import ContactsMap from "./ContactsMap.astro";
+import ContactsTrust from "./ContactsTrust.astro";
+import {
+  ContactMethod,
+  ContentType,
+  ga,
+  TrackingLocation,
+} from "../../../lib/analytics";
+import type { Language } from "../../../lib/content";
+import type {
+  ContactCard,
+  ContactItem,
+  ContactsPageContent,
+  TrustSignal,
+} from "../../../lib/content/types";
+import type { SiteConfig } from "../../../lib/site";
+import { whatsappNumber } from "../../../lib/site";
+
+interface Props {
+  language: Language;
+  page: ContactsPageContent;
+  site: SiteConfig;
+}
+
+const LIST_SEPARATOR = ", ";
+
+const { language, page, site } = Astro.props;
+const contactCards: ContactCard[] = page.cards;
+const addressLine = [
+  site.address.street,
+  site.address.locality,
+  site.address.region,
+  site.address.postalCode,
+  site.address.country,
+]
+  .filter(Boolean)
+  .join(LIST_SEPARATOR);
+const serviceArea = page.businessInfo.area;
+const workHours = page.businessInfo.hours;
+const envTrustFacts = [
+  {
+    label: page.trustLabels.years,
+    value: site.trustFacts.yearsInBusiness,
+  },
+  {
+    label: page.trustLabels.repairs,
+    value: site.trustFacts.completedRepairs,
+  },
+  {
+    label: page.trustLabels.reviews,
+    value: page.trustLabels.reviewsLink,
+    href: site.googleMaps,
+  },
+];
+const trustSignals: TrustSignal[] = [
+  ...(Array.isArray(page.trustSignals) ? page.trustSignals : []),
+  ...envTrustFacts,
+];
+---
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title">{page.heading}</h1><p class="section__lead">
+        {page.lead}
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <section class="card contact-nap" aria-labelledby="contact-nap-title">
+        <h2 class="card__title" id="contact-nap-title">
+          {page.businessInfo.title}
+        </h2>
+        <ul class="list">
+          <li class="list__item">
+            <strong>{page.businessInfo.nameLabel}:</strong><span
+              >{site.name}</span
+            >
+          </li>
+          <li class="list__item">
+            <strong>{page.businessInfo.phoneLabel}:</strong><a
+              href={`tel:${site.phone}`}
+              {...ga.contact(ContactMethod.Call, TrackingLocation.ContactsNap)}
+              >{site.phone}</a
+            >
+          </li>
+          {
+            site.email && (
+              <li class="list__item">
+                <>
+                  <strong>{page.businessInfo.emailLabel}:</strong>
+                  <a
+                    href={`mailto:${site.email}`}
+                    {...ga.contact(
+                      ContactMethod.Email,
+                      TrackingLocation.ContactsNap,
+                    )}
+                  >
+                    {site.email}
+                  </a>
+                </>
+              </li>
+            )
+          }
+          {
+            workHours && (
+              <li class="list__item">
+                <>
+                  <strong>{page.businessInfo.hoursLabel}:</strong>
+                  <span>{workHours}</span>
+                </>
+              </li>
+            )
+          }
+          {
+            addressLine && (
+              <li class="list__item">
+                <>
+                  <strong>{page.businessInfo.addressLabel}:</strong>
+                  <span>{addressLine}</span>
+                </>
+              </li>
+            )
+          }
+          {
+            serviceArea && (
+              <li class="list__item">
+                <>
+                  <strong>{page.businessInfo.areaLabel}:</strong>
+                  <span>{serviceArea}</span>
+                </>
+              </li>
+            )
+          }
+        </ul>
+        {
+          page.businessInfo.note && (
+            <p class="card__text">{page.businessInfo.note}</p>
+          )
+        }
+      </section>
+
+      <ContactsMap
+        map={page.map}
+        embedUrl={site.googleMapsEmbed}
+        googleMapsUrl={site.googleMaps}
+        businessProfileUrl={site.googleBusinessProfile}
+      />
+      <ContactsTrust title={page.trustTitle} signals={trustSignals} />
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="container grid grid--2">
+    {
+      contactCards.map((card) => (
+        <div class="card">
+          {card.title && <h2 class="card__title">{card.title}</h2>}
+          <ul class="list">
+            {card.items.map((item: ContactItem) => (
+              <li class="list__item">
+                <strong>{item.label}:</strong>{" "}
+                <ContactValue
+                  item={item}
+                  site={site}
+                  location={TrackingLocation.ContactsCards}
+                />
+              </li>
+            ))}
+          </ul>
+          {card.note && <p class="card__text">{card.note}</p>}
+        </div>
+      ))
+    }
+    {
+      page.quickLinks?.items?.length && (
+        <div class="card card--elevated">
+          <h2 class="card__title">{page.quickLinks.title}</h2>
+          {page.quickLinks.lead && (
+            <p class="card__text">{page.quickLinks.lead}</p>
+          )}
+          <div class="section__actions">
+            {page.quickLinks.items.map((item) => (
+              <a
+                class="button button--ghost"
+                href={language.paths[item.key]}
+                {...ga.content(
+                  ContentType.ContactQuickLink,
+                  TrackingLocation.ContactsQuickLinks,
+                  item.key,
+                )}
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )
+    }
+    {
+      page.cta && (
+        <div class="card card--elevated">
+          <>
+            <h2 class="card__title">{language.home.contact.title}</h2>
+            <p class="card__text">{language.home.contact.lead}</p>
+            <div class="messenger-row">
+              <a
+                class="button button--secondary"
+                href={site.telegram}
+                target="_blank"
+                rel="noopener"
+                {...ga.contact(
+                  ContactMethod.Telegram,
+                  TrackingLocation.ContactsCta,
+                )}
+              >
+                <img
+                  class="button__icon"
+                  src="/assets/icons/social/tg.png"
+                  alt="Telegram icon"
+                  width="24"
+                  height="24"
+                />
+                Telegram
+              </a>
+              <a
+                class="button button--ghost"
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener"
+                {...ga.contact(
+                  ContactMethod.WhatsApp,
+                  TrackingLocation.ContactsCta,
+                )}
+              >
+                <img
+                  class="button__icon"
+                  src="/assets/icons/social/wh-1.png"
+                  alt="WhatsApp icon"
+                  width="24"
+                  height="24"
+                />
+                WhatsApp
+              </a>
+              <a
+                class="button button--ghost"
+                href={site.viber}
+                target="_blank"
+                rel="noopener"
+                {...ga.contact(
+                  ContactMethod.Viber,
+                  TrackingLocation.ContactsCta,
+                )}
+              >
+                <img
+                  class="button__icon"
+                  src="/assets/icons/social/viber.png"
+                  alt="Viber icon"
+                  width="24"
+                  height="24"
+                />
+                Viber
+              </a>
+              {site.facebook && (
+                <a
+                  class="button button--ghost"
+                  href={site.facebook}
+                  target="_blank"
+                  rel="noopener"
+                  {...ga.contact(
+                    ContactMethod.Facebook,
+                    TrackingLocation.ContactsCta,
+                  )}
+                >
+                  <img
+                    class="button__icon"
+                    src="/assets/icons/social/fb.png"
+                    alt="Facebook icon"
+                    width="24"
+                    height="24"
+                  />
+                  Facebook
+                </a>
+              )}
+            </div>
+          </>
+        </div>
+      )
+    }
+  </div>
+</section>
