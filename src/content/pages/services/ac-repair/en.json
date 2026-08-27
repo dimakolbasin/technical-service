@@ -1,0 +1,123 @@
+{
+  "title": "Air conditioner repair and maintenance in Batumi",
+  "description": "Air conditioner repair, diagnostics and maintenance in Batumi for weak cooling, leaks, noise, error codes, outdoor-unit and electrical faults.",
+  "heading": "Air conditioner repair in Batumi",
+  "lead": "Air conditioner repair and maintenance in Batumi: we diagnose the system on site, inspect its technical components, find the fault and agree the price before work begins.",
+  "sections": [
+    {
+      "title": "When repair is needed",
+      "items": [
+        "The air conditioner does not switch on or shows an error code.",
+        "The air stays warm after checking the mode and clean filters.",
+        "The outdoor unit does not start, makes unusual noise or switches off.",
+        "The indoor unit leaks, freezes or vibrates strongly."
+      ]
+    },
+    {
+      "title": "Diagnostics, repair and technical maintenance",
+      "items": [
+        "Power supply, connections, temperature sensors and control board.",
+        "Indoor and outdoor unit fans.",
+        "Drainage, icing and causes of water leakage.",
+        "Cooling circuit and signs of refrigerant leakage; refrigerant is added only after checking the cause."
+      ]
+    },
+    {
+      "title": "Repair or cleaning",
+      "items": [
+        "If dirty filters, the evaporator or drainage restrict operation, we recommend cleaning rather than repair.",
+        "If there is an error, leak, electrical fault, fan or outdoor-unit problem, cleaning alone is not enough.",
+        "The next step is chosen after diagnostics, without pre-selling unnecessary work."
+      ]
+    },
+    {
+      "title": "Call-out across Batumi",
+      "items": [
+        "We cover central Batumi, Khimshiashvili, New Boulevard, Boni, Airport, Angisa and Gonio areas.",
+        "Visit timing depends on the address, outdoor-unit access and current workload.",
+        "After repair we test startup, air temperature, noise and condensate drainage."
+      ]
+    }
+  ],
+  "diagnosisSteps": {
+    "title": "How air conditioner diagnostics works",
+    "lead": "We first separate dirt and incorrect settings from a technical fault.",
+    "items": [
+      "Confirm the symptom, model, error code and when the problem started.",
+      "Check the operating mode, airflow, temperature and condition of both units.",
+      "Inspect electrics, sensors, fans, drainage and cooling circuit as indicated by the symptom.",
+      "Explain the cause, available repair and price before work begins."
+    ]
+  },
+  "brandsHandled": {
+    "title": "Air conditioner brands",
+    "lead": "Repair availability depends on the model, fault and spare-parts availability.",
+    "items": ["LG", "Samsung", "Midea", "Gree", "Haier", "Toshiba", "Panasonic"]
+  },
+  "trustSignals": {
+    "title": "Clear repair terms",
+    "lead": "The customer knows the cause and price before approved work is carried out.",
+    "items": [
+      "We do not present routine cleaning as a repair.",
+      "We do not add refrigerant without checking why it was lost.",
+      "We do not replace parts before agreeing the cost.",
+      "If an on-site repair is not possible, we explain the next step."
+    ]
+  },
+  "faq": {
+    "title": "Air conditioner repair questions",
+    "items": [
+      {
+        "question": "Why does the air conditioner run but not cool?",
+        "answer": "Possible causes include dirt, an incorrect mode, icing, a fan or sensor fault, an outdoor-unit problem or a refrigerant leak. Diagnostics identifies the actual cause."
+      },
+      {
+        "question": "Does the air conditioner need refrigerant immediately?",
+        "answer": "No. Refrigerant is not consumed like fuel. If the level is low, the system should first be checked for a leak."
+      },
+      {
+        "question": "When is cleaning enough instead of repair?",
+        "answer": "Cleaning helps when dirty filters, evaporator, blower or drainage restrict airflow and cooling. Error codes, electrical and outdoor-unit faults need separate diagnostics."
+      }
+    ]
+  },
+  "related": {
+    "title": "Cleaning and useful guides",
+    "lead": "Separate pages cover preventive care and common air conditioner symptoms.",
+    "linkLabel": "Open",
+    "items": [
+      {
+        "key": "ac-cleaning",
+        "title": "Air conditioner cleaning in Batumi",
+        "text": "Preventive care, disinfection, filters and drainage."
+      },
+      {
+        "key": "ac-not-cooling",
+        "title": "Air conditioner is not cooling",
+        "text": "Safe checks and signs that a technician is needed."
+      },
+      {
+        "key": "prices",
+        "title": "Prices and diagnostics",
+        "text": "Call-out terms and price guidance."
+      }
+    ]
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "items": [
+      { "text": "air conditioner repair in Batumi" },
+      { "text": "air conditioning technician Batumi" },
+      { "text": "air conditioner diagnostics Batumi" },
+      { "text": "air conditioner maintenance Batumi" },
+      { "text": "air conditioner not cooling" },
+      { "text": "air conditioner not switching on" },
+      { "text": "split system repair" }
+    ]
+  },
+  "cta": {
+    "title": "Need air conditioner diagnostics?",
+    "text": "Describe the symptom and model, and we will arrange a call-out in Batumi.",
+    "button": "Call a technician"
+  }
+}

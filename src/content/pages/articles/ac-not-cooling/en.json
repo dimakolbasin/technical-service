@@ -150,6 +150,11 @@
     "title": "Related services",
     "items": [
       {
+        "key": "ac-repair",
+        "title": "Air conditioner repair",
+        "text": "Fault diagnostics and repair across Batumi."
+      },
+      {
         "key": "ac-cleaning",
         "title": "Air conditioner cleaning",
         "text": "Service and disinfection."

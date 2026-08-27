@@ -25,6 +25,7 @@
     "hobs": "/en/services/hobs/",
     "ovens": "/en/services/ovens/",
     "ac-cleaning": "/en/services/ac-cleaning/",
+    "ac-repair": "/en/services/ac-repair/",
     "refrigerators": "/en/services/refrigerators/",
     "dryers": "/en/services/dryers/",
     "gas-boilers": "/en/services/gas-boilers/",
@@ -107,8 +108,13 @@
       },
       {
         "key": "ac-cleaning",
-        "title": "Air conditioners",
+        "title": "Air conditioner cleaning",
         "text": "Cleaning, drainage, odors and weak cooling."
+      },
+      {
+        "key": "ac-repair",
+        "title": "Air conditioner repair",
+        "text": "Diagnostics, technical maintenance and fault repair."
       },
       {
         "key": "dryers",

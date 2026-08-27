@@ -11,6 +11,7 @@ export const routes = {
   hobs: { pageType: PageType.Service, component: "detail" },
   ovens: { pageType: PageType.Service, component: "detail" },
   "ac-cleaning": { pageType: PageType.Service, component: "detail" },
+  "ac-repair": { pageType: PageType.Service, component: "detail" },
   refrigerators: { pageType: PageType.Service, component: "detail" },
   dryers: { pageType: PageType.Service, component: "detail" },
   "gas-boilers": { pageType: PageType.Service, component: "detail" },

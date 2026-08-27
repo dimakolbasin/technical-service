@@ -34,6 +34,7 @@ async function capturedPayload(
 const archetypes = [
   ["home", "/"],
   ["service", "/services/washing-machines/"],
+  ["ac-repair", "/services/ac-repair/"],
   ["article", "/articles/washing-machine-not-draining/"],
   ["services", "/services/"],
   ["prices", "/prices/"],

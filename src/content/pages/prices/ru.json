@@ -87,11 +87,10 @@
         },
         {
           "label": "Комплексная полная чистка (внутренний блок + дренаж + фильтры)",
-          "value": "100-200 ₾",
+          "value": "130 ₾",
           "schemaPrice": {
             "currency": "GEL",
-            "minPrice": 100,
-            "maxPrice": 200
+            "minPrice": 130
           }
         },
         {

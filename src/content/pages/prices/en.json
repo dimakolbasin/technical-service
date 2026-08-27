@@ -87,11 +87,10 @@
         },
         {
           "label": "Full cleaning package (indoor unit + drain + filters)",
-          "value": "100-200 ₾",
+          "value": "130 ₾",
           "schemaPrice": {
             "currency": "GEL",
-            "minPrice": 100,
-            "maxPrice": 200
+            "minPrice": 130
           }
         },
         {

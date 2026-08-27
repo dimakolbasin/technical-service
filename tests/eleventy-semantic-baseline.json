@@ -25,6 +25,7 @@
     "en/prices/index.html",
     "en/privacy/index.html",
     "en/services/ac-cleaning/index.html",
+    "en/services/ac-repair/index.html",
     "en/services/dishwashers/index.html",
     "en/services/dryers/index.html",
     "en/services/gas-boilers/index.html",
@@ -48,6 +49,7 @@
     "ka/prices/index.html",
     "ka/privacy/index.html",
     "ka/services/ac-cleaning/index.html",
+    "ka/services/ac-repair/index.html",
     "ka/services/dishwashers/index.html",
     "ka/services/dryers/index.html",
     "ka/services/gas-boilers/index.html",
@@ -59,6 +61,7 @@
     "prices/index.html",
     "privacy/index.html",
     "services/ac-cleaning/index.html",
+    "services/ac-repair/index.html",
     "services/dishwashers/index.html",
     "services/dryers/index.html",
     "services/gas-boilers/index.html",
@@ -87,9 +90,9 @@
     },
     "articles/ac-not-cooling/index.html": {
       "metadata": "c5391f7a1b8f2fa5801d1d2c035614fa030353933fcbde93741e64d9bef62704",
-      "text": "46a68690008301d17db0c16fc97912c648b7cb70393e5a3d2bbc87a51550920b",
-      "dom": "12206f3f83b258c26f3f6a512593ca68cbc5c0b57c5eb4cfd4472b8729b67b7e",
-      "links": "d6f9719e818f4e993e662c16692e81692c08975ac715c0b8304d71601b4c170c",
+      "text": "fb8ba3916afc540d9b62e49655d25fd0ed0c4dfda1f702fd2fbc5962401816bb",
+      "dom": "9ea968a4e8b138f1a9877f09fa46bef9a17e47850ba26ae787883a482904e6f9",
+      "links": "b179d9a977716c1e0b3b0af00b52be080c0ca661b633a1014e21354cf9fd16b7",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
       "structuredData": "8c9bdbe49896bad04f9822e0a7c1e369fd77e376ecf993c0f6e99a81ce38fa88"
     },
@@ -167,9 +170,9 @@
     },
     "en/articles/ac-not-cooling/index.html": {
       "metadata": "08651569f53633b07e787354547e45d8c0f26894fdfa51f3e94a0d08f8074e2f",
-      "text": "6e31bbd10f1546dd9a2064139d9a74d0293db7902dac5de07e006dc6fb3175ad",
-      "dom": "092a11e670a59f9c29d01e5a54c771488e668d3b938c88d637f8cc69f2a2cdf1",
-      "links": "b86ed45fa89029cf1695ef12862c863edff1922aa925d0c5d215befc3ed96293",
+      "text": "54acd2b492b7ee71409dafccf9de9fb731850464110c248b2dfe07afc14b3700",
+      "dom": "f980ecb18b4972fd392216cd5907a5f9425890fdccef065d7977dd45e4328670",
+      "links": "08ef7a67e48afdd8af54e3c0733357dc3f885645283fade9b7a54bd023997504",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
       "structuredData": "7cc95a1f291b5386476b198ddc4e15fcdbd474ec355d6d3d1f8efe80b6c89339"
     },
@@ -247,11 +250,11 @@
     },
     "en/prices/index.html": {
       "metadata": "14ed0f07e856fbfd74c62260d98cebeb7f38ff436a01947905d8c871f102b5c0",
-      "text": "7fa3895b954542a89217f92a3efb5d7342320d3be32ffd23d32cf207e2ba17ba",
-      "dom": "d71e74788affe5d6841cd0829b20d85768b1c9763fd923c1dc0dae812171f1a2",
-      "links": "a53cf955a1c15deec1ee570595a39801f861e37a9e20472b95025a7ee2a03375",
+      "text": "1d9de705fc4f2d93ac842a2e85433eee691266c78adc7efc1bdf62cd1948bdcd",
+      "dom": "3b54048eecb2287a982fbe34e78c1c8ed87bbbd6e78874a0c8b839359cbc3e86",
+      "links": "ce4cce62d244a073c90b5cba3137361dbf1b7717a37f7817901fa9887987b346",
       "images": "6e8888141dc2cd1da15414679bbb5d2aed8653f1d2f9b28a061a08383ac5105f",
-      "structuredData": "f5b0df36e4c7c9cc23670b5c91661ec4d9ca9fd72a1c366894523021bf697617"
+      "structuredData": "1f1067f45b34c134c030efa1c7690de32b038ef8fab0b597411d763196255a1c"
     },
     "en/privacy/index.html": {
       "metadata": "eea99cfc9b83c7912404d8220c00c3b6cf5a210dcc0cdc6d95c0d6050b1ce646",
@@ -263,11 +266,19 @@
     },
     "en/services/ac-cleaning/index.html": {
       "metadata": "348a9d875b58b2175eec13f22eaebc1bc39e3a6445d8a31bce6cef288d8981c4",
-      "text": "48e315cb6388d0bfd3a2451fe50715a730f3f6db5fc8b004fb95158b84165d84",
-      "dom": "deee2990e28d371396ff682830005960da705c7a1a1d86f4326024f3cfcc1f79",
-      "links": "4bacf61d02e05ebb7f27280d338b879101caad9dd5a6fb480832d470e4107f9b",
+      "text": "c74c939676a64f31e11e995aed49bdc563981a466a3420dd03c19da0a728283b",
+      "dom": "4e14814a4350f1ac222c95968cd450bb67de1d47e7c942d7da40d37747263c86",
+      "links": "491c6568e796ae99a9b74c72ea1ed0afd8a6b8c3b91c1b1d516611218afe4bd0",
       "images": "9f084ba22019c3fffd6c081f0152eb75c426a1e7311212fc7aec7fbf4838351b",
-      "structuredData": "8045773bad98d21505ab623d1186e4b67daa729c457d96345fd5b75de2706471"
+      "structuredData": "b8f1ef83795c13617614792a63d04deb7d5aec0e674126e8873185e46690b420"
+    },
+    "en/services/ac-repair/index.html": {
+      "metadata": "8ac7da245da9ca9d7a60edc5c9ad48e8194ae5464be7174c4fbd3e367a3126a7",
+      "text": "1e511b279c0814f250595d2c4ddab4ff089d213f16fb681e850fb69555981349",
+      "dom": "7569fc0f8c8ac8ab25ae995d15fe5f5e441a7a71992db4cdcc773d902e273377",
+      "links": "7a9c3ef3eefaf04604e3937a4616efe65a9610887a8a14781c916b393bde9379",
+      "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
+      "structuredData": "10f359492301c1cce4d0e7c7d09ebdb44447a39b6a2147513c7a1b3f008f459e"
     },
     "en/services/dishwashers/index.html": {
       "metadata": "fdc721d0f9adcd2c3422df4208b9c0d3d20d30415e7af64b19ae617877101edc",
@@ -303,9 +314,9 @@
     },
     "en/services/index.html": {
       "metadata": "a29c43596849d8c297bff97b71f3e012b9070c5516a8441563e74c178a4c5799",
-      "text": "e37dc8ff7592b1a42df7a1d6e652ad4595b977a21890bae86dd2d5f38836c3ab",
-      "dom": "ecdb6c741462473d0bcd426a5a114be07eecd93d4ff1e0e82fd1937db807a92f",
-      "links": "3ab75fbc0ddd2834ef03268757daea5a6c5c4e48f9d9942d187b9d21d29e138d",
+      "text": "acba56d2eb0420a1a4f1497bbf06d8fb84b8bfe4df42ce6296b87a34125c6e3c",
+      "dom": "f2a6d7b366d2f0f219a5decd41556edd59d8ee0322c66ae8935b111b83369aff",
+      "links": "4e0b4548b81dc6f7ca3ed2a3bd2f5f607196b4f6df05b8736297038a47542efc",
       "images": "6e8888141dc2cd1da15414679bbb5d2aed8653f1d2f9b28a061a08383ac5105f",
       "structuredData": "5b21dc70f8390167c41209a7564305d8f5f22bead2172d1c48430e028a0dc658"
     },
@@ -351,9 +362,9 @@
     },
     "ka/articles/ac-not-cooling/index.html": {
       "metadata": "8956856adaf8e82dfff1b1f86e626201d629ea59ac153df007b9032ec0edac3b",
-      "text": "867ab2be81c5456229e10044a531fb561d256cf9fce7d19a8d81323707d714ec",
-      "dom": "1396666db4ade942b741ed8bc426acbc977560cecb6a6a68dc497e694a8bb422",
-      "links": "90cf727bf42275185a2c360014c76e899d4256e7f3ceea039f33c11299160dac",
+      "text": "311c0733de96ef2c71e0a137282e94d3531272ab7179d51046f5d8d9a1d3c381",
+      "dom": "e6609223aa2b4bfb2f599ec58d79950e766038aa93c269eb8f63981f798cd8cf",
+      "links": "4ea9fff1154186091507d1109cf72cbe34bb0a34e9d58c99debfcd22e9c4bdbe",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
       "structuredData": "ba935e6a1a4b04ff91dc41fccdbc09c91ef9da84b44ad683940bd38db7722791"
     },
@@ -431,11 +442,11 @@
     },
     "ka/prices/index.html": {
       "metadata": "5f8a2d5680cb95d94a8d5a92eea9e7c25675f7b1bae9bf0db2ff35c4826b4f07",
-      "text": "34a80a2b34da978ebf10d957e01695ec84b883ebcb145d7913582cbd77053f0f",
-      "dom": "a8ae4eb090ff9ceb399761a5df75a1264e8a02a05402b3168b884c44cafd4760",
-      "links": "6115fad34fdf9b602f89e16d770f7d0673e09fa81b5e8f0f3a3921eae69ed7b3",
+      "text": "a874e28cc33866fc7c7c9f0c0c65e83df86387360c6ce09c60c2339cbcf11ec6",
+      "dom": "5b2f1e752fdc6780117f0c3d0f1f4643931aaf20d913bc5add61b5c5f61085af",
+      "links": "7f72f623e4930c3615b09f7c3c3371f5a67d0821bc4bc4ed31d4475604b11d70",
       "images": "6e8888141dc2cd1da15414679bbb5d2aed8653f1d2f9b28a061a08383ac5105f",
-      "structuredData": "7406acc29a98dd85414f8b47efab1a0533fa4ff026aeccacf305655cf9451df6"
+      "structuredData": "10fdd316acb3c72835beb5023010e3bd41bb8ff9486688cc491e030fd17f952d"
     },
     "ka/privacy/index.html": {
       "metadata": "f3728eadb81957976bf34896158319378417227b7b3689d75a87440479bd80a8",
@@ -447,11 +458,19 @@
     },
     "ka/services/ac-cleaning/index.html": {
       "metadata": "c30b70598ff5527b061f80c0038e8a0bc864e940a85d7f47b6f0959afff9b66b",
-      "text": "35c2a4ca101eeca22b0d2aa54f1080302bd832478e2a6789ebbbae1f8656c382",
-      "dom": "14f7875b58e2a78a69a1a51bb4babfa6c71d1be5d9f227fedb19ee3b1d534c3c",
-      "links": "fee9cd68fa6b5d20bfe4f1bb70c8f554da2eaf92c0e9ae48e7cfe38d38035bc6",
+      "text": "5ef5ffcb8d187abcaee2ff036e1682a570e3ee7dd2bfdd02ab838114d9262917",
+      "dom": "6f5d89da77fda4b14f30bf47ffe4051311547bab599a143dcbb499f702a082f8",
+      "links": "7d9cf16bdc18d298278ced839d271fd248cf90c67687c475a10ea9273f0c806c",
       "images": "fd04ca22d8950d354e25c5f66837fe6bc7e21bee14bfd0a4aee8c2825f8e2852",
-      "structuredData": "3eb99eb52643b1c26251c00bf84d2a74ae76393888458ce85134639eb5d57fde"
+      "structuredData": "5cf29c71309a9eeb25cdb1a91d0d68f9bfb6f9d057dfdb206b68d7ef956f2e39"
+    },
+    "ka/services/ac-repair/index.html": {
+      "metadata": "0c7aebccc42f1ef3264e04b8efaa03ee8486a1f22630dc9bfdc67aae25d442e4",
+      "text": "e0ba6b215ac1360bdb70ffbfe64c575331caf42902b97178ea6be6af5c199200",
+      "dom": "ddce79639fb6a7bc32bb8955354e12e783e48872c87111b6828760120b5a38c4",
+      "links": "2961100cb5c82c1d7c7b69284e071a7612ed9a9da7615d364d7da272d78c4c34",
+      "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
+      "structuredData": "83424a5945754e8ab166dee5633e0253521f138c4d817edee783f36ccc357186"
     },
     "ka/services/dishwashers/index.html": {
       "metadata": "e51bd0c012fba67492691b930655ec3facfcde0f8cfc10a56ea537f6c5fccb1b",
@@ -487,9 +506,9 @@
     },
     "ka/services/index.html": {
       "metadata": "5f984c3a44d7120c168a656430924a85b07555ca78df0e121a9dc32a80c4304a",
-      "text": "a75ce0e90198ac9ea0ad55c8d635f2f39a7522477be62326a7a7b9f53e9bc1cc",
-      "dom": "369d16e44c93bf3e3097fcfca10c6defec3e52d097476bb87bd8187bf7d0f4d7",
-      "links": "08ec0d5b3b501128082223f0051f92e42102b98322114d747cc917a72944ed44",
+      "text": "7f394089ee4cc64b2f9b8d65fe744f8200b26c0e4d12d57242014adbda3396d0",
+      "dom": "2b9b5cfdee92362a48b1f018f641436f4147c2bc2c87c8510197cde0818563aa",
+      "links": "b69ecbe4532ad2b050d54034f6a542c696714b4e00b41b4ff51ee19d352d1440",
       "images": "6e8888141dc2cd1da15414679bbb5d2aed8653f1d2f9b28a061a08383ac5105f",
       "structuredData": "f2b60652785ff6a9970bf3ca423b52706d9ef1866d5e69d11035c2ea21209594"
     },
@@ -519,11 +538,11 @@
     },
     "prices/index.html": {
       "metadata": "c70897e833ef2bc95bd8588c1549e5ec86a18525d619a38c18b884b9e70c7ffc",
-      "text": "d9835550902cf1b7a4f32b32f5fc051515312388f771169d486f2defa83395e6",
-      "dom": "9a502c438435bcd01fcaa3b71d7d64ebe3d366170072b48580d81a561bda470f",
-      "links": "e1ac9c69125cfe5cfd9f9b42ef5f3652164533f90a255e90c648ba218b225446",
+      "text": "a93355d6b28936daad74da52b6d683b56dc09ef8a5571e0a165e39766edec4e0",
+      "dom": "07e5586bb100b831eb308e816defc5c0c0c336619b99e76a6778afa0ff7d5dc7",
+      "links": "ca324fd57c0e1935ac881e29e9b1ffb89c77d1ad727c9c506db8289406bb08d2",
       "images": "6e8888141dc2cd1da15414679bbb5d2aed8653f1d2f9b28a061a08383ac5105f",
-      "structuredData": "92d16fd77e56229186683a792c9fd15ea375f22052b349b378de01dce011dffd"
+      "structuredData": "597abd6279cc98dda4235034e85027a84d1bad853195ae75ed44e9294ba3b9b2"
     },
     "privacy/index.html": {
       "metadata": "ff41c4b400ba9432eec4411cd80b6d41905d351a20cb93bb398080722eec9b8e",
@@ -535,11 +554,19 @@
     },
     "services/ac-cleaning/index.html": {
       "metadata": "bcfb2b0bc2077ce13f9178637a960f871ffd8141c7f427ed4af75aa4c724d027",
-      "text": "ae82558d58f267c4c2213294770909d0b317bab65e4bfcdfe5695f572d58e340",
-      "dom": "0404dfa572ae31dfcde4392f7f79dc2ee3cc85e555c34636b86fb141ef82deb1",
-      "links": "8d8a5f0d481de4691d46176050e593faa4b8e75d002456916aee610673449dbc",
+      "text": "15ad91a099b52b5db7f29d488950c65f32dd2b93c2fc4034248930b8810f91eb",
+      "dom": "56c45364e955e8ddc1c718834a41b4e17807982022a671c918d635b93df5e8b6",
+      "links": "b6bc3e3557267db225e34c284cd56ae94a34ee59574de0c4f1428c6849b99404",
       "images": "50d626bd20a134b7da43c1090cccd9f9b180cd217d3e7855153ff9bbcd875aa4",
-      "structuredData": "b967cdd803a9fb0d7408e735088581687e7276375c7ee0eaae4974c2defed9d7"
+      "structuredData": "c6c291bbf77d55baf95cad10edf57ef1538b79c2aa33084bdfb8312f6af6689c"
+    },
+    "services/ac-repair/index.html": {
+      "metadata": "ff453c991e5cf3497ac46cd455392c4f0692b37f2ed00fcbee97895b5ca832e5",
+      "text": "5f9f81fc1e1b5cf12c195a9a8cf83dd9dc1aa5628d750e10bd19887bc562bbd4",
+      "dom": "4f7f3b4ddd10d3db53c8a3bd2999afb2ddab34a650353cb8b855fadd06d1ce30",
+      "links": "00da4437062488555a810b1cc4721528f5937dc80107e809e3bc1183766af1e1",
+      "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
+      "structuredData": "8bff80a3431637d084b2254142e433aa22bacd06aba099dbc3e417c564b07c2b"
     },
     "services/dishwashers/index.html": {
       "metadata": "d740cee4f369ab7d4fc6595c2d93b509553ec0694821de889dd57be536d6c546",
@@ -575,9 +602,9 @@
     },
     "services/index.html": {
       "metadata": "326d34e4ecf166bb6e87d72779bbbbb089ae55f01690761ea9c3cfa493ce68f6",
-      "text": "ec4ea796724bfcd4923cdef6b61c075271ce782297c0cd350faf8b7487d31e5f",
-      "dom": "9ab602a72e83c6397ae24364ad3371f8ed2238093b31bef13c1367021d1b767b",
-      "links": "f26b8488c20917e3e16caf38d1c2a7780fc4fd3bb2006c2921b458afab5719c2",
+      "text": "5c5cc1191994814e39b3fc2749fb08ef4990d865b9f6647e8c1900f32769d500",
+      "dom": "30584d560191e454c06f7c0cad7c4340213f22c0d44dc7f8eed6465eaf234d16",
+      "links": "33b10e2b8fa53630ee51ad65a4589f9fb1a2aa2d5fd07afdc078abaff1a947f2",
       "images": "6e8888141dc2cd1da15414679bbb5d2aed8653f1d2f9b28a061a08383ac5105f",
       "structuredData": "84ba956af4cfa191e589d3f9a62ecf6748b9265ccca3c846f8d2d72651e448a0"
     },

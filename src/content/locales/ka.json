@@ -25,6 +25,7 @@
     "hobs": "/ka/services/hobs/",
     "ovens": "/ka/services/ovens/",
     "ac-cleaning": "/ka/services/ac-cleaning/",
+    "ac-repair": "/ka/services/ac-repair/",
     "refrigerators": "/ka/services/refrigerators/",
     "dryers": "/ka/services/dryers/",
     "gas-boilers": "/ka/services/gas-boilers/",
@@ -107,8 +108,13 @@
       },
       {
         "key": "ac-cleaning",
-        "title": "კონდიციონერები",
+        "title": "კონდიციონერის წმენდა",
         "text": "წმენდა, დრენაჟი, სუნი და სუსტი გაგრილება."
+      },
+      {
+        "key": "ac-repair",
+        "title": "კონდიციონერის შეკეთება",
+        "text": "დიაგნოსტიკა, ტექნიკური მომსახურება და გაუმართაობის აღმოფხვრა."
       },
       {
         "key": "dryers",

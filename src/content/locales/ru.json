@@ -25,6 +25,7 @@
     "hobs": "/services/hobs/",
     "ovens": "/services/ovens/",
     "ac-cleaning": "/services/ac-cleaning/",
+    "ac-repair": "/services/ac-repair/",
     "refrigerators": "/services/refrigerators/",
     "dryers": "/services/dryers/",
     "gas-boilers": "/services/gas-boilers/",
@@ -107,8 +108,13 @@
       },
       {
         "key": "ac-cleaning",
-        "title": "Кондиционеры",
+        "title": "Чистка кондиционеров",
         "text": "Чистка, дренаж, запахи и слабое охлаждение."
+      },
+      {
+        "key": "ac-repair",
+        "title": "Ремонт кондиционеров",
+        "text": "Диагностика, техническое обслуживание и устранение неисправностей."
       },
       {
         "key": "dryers",

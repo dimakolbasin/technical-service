@@ -79,11 +79,10 @@
       },
       {
         "label": "Full cleaning package (indoor unit + drain + filters)",
-        "value": "100-200 ₾",
+        "value": "130 ₾",
         "schemaPrice": {
           "currency": "GEL",
-          "minPrice": 100,
-          "maxPrice": 200
+          "minPrice": 130
         }
       },
       {
@@ -147,6 +146,12 @@
     "title": "Related guides",
     "lead": "Short articles with causes, symptoms, and tips.",
     "items": [
+      {
+        "key": "ac-repair",
+        "title": "Air conditioner repair in Batumi",
+        "text": "Diagnostics for errors, leaks and unit faults.",
+        "linkLabel": "Open"
+      },
       {
         "title": "Air conditioner not cooling",
         "text": "Weak cooling causes.",
