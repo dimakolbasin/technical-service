@@ -79,6 +79,14 @@ window.gtag('config', ${JSON.stringify(site.gaMeasurementId)});
     <meta name="theme-color" content={SITE_THEME_COLOR} />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {
+      pageKey === "home" && (
+        <meta
+          name="facebook-domain-verification"
+          content="qite8o7j5k6n4rrtfjzfkuwkvmimg8"
+        />
+      )
+    }
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
