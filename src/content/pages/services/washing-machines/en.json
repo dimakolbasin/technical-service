@@ -256,6 +256,11 @@
         "linkLabel": "Read"
       },
       {
+        "key": "dishwashers",
+        "title": "Dishwasher repair",
+        "text": "Separate service: not draining, not heating, leaks — from 70 GEL."
+      },
+      {
         "key": "prices",
         "title": "Prices",
         "text": "Price list and diagnostic terms."

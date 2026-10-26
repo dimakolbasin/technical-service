@@ -1,5 +1,5 @@
 {
-  "title": "Dishwasher Repair in Batumi | On-site Service",
+  "title": "Dishwasher Repair in Batumi — prices from 70 GEL",
   "lead": "Dishwasher repair in Batumi: leaks, drainage issues, poor washing, heating faults and on-site diagnostics.",
   "heading": "Dishwasher repair in Batumi",
   "sections": [
@@ -189,6 +189,14 @@
       {
         "question": "What should I do if it leaks?",
         "answer": "Stop the cycle, shut off water if possible, and avoid restarting before diagnostics."
+      },
+      {
+        "question": "How much does dishwasher repair cost in Batumi?",
+        "answer": "Diagnostics is 20 GEL. Labor starts from 70 GEL: filter and drain-path cleaning, drain pump replacement from 150 GEL, heating element from 170 GEL (full price table above). The final cost is agreed before work starts."
+      },
+      {
+        "question": "Repair the dishwasher or buy a new one?",
+        "answer": "For machines under 7–8 years old, repair is usually cheaper than replacement: pump, heater or seal work costs far less than a new unit. After diagnostics the technician shows the faulty part and says honestly if repair is not worth it."
       }
     ]
   },
@@ -249,10 +257,19 @@
       },
       {
         "text": "dishwasher smells bad"
+      },
+      {
+        "text": "dishwasher repair cost Batumi"
+      },
+      {
+        "text": "dishwasher repair price"
+      },
+      {
+        "text": "dishwasher service Batumi"
       }
     ]
   },
-  "description": "Dishwasher repair in Batumi: not draining, not heating, poor washing, leaks, noise and error codes. On-site diagnostics and agreed repair cost.",
+  "description": "Dishwasher repair in Batumi: not draining, not heating, poor washing, leaks. Diagnostics 20 GEL, repair from 70 GEL, on-site visit and warranty.",
   "diagnosisSteps": {
     "title": "How diagnostics works",
     "lead": "A service-specific check sequence for this appliance.",

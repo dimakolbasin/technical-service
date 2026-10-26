@@ -1,7 +1,7 @@
 {
-  "title": "Gas boiler repair and maintenance in Batumi",
+  "title": "Gas boiler & water heater repair and maintenance in Batumi",
   "lead": "Gas boiler repair and maintenance in Batumi: ignition, sensors, burner, heat exchanger, pump and diagnostics.",
-  "heading": "Gas boiler repair and maintenance in Batumi",
+  "heading": "Gas boiler and water heater repair in Batumi",
   "sections": [
     {
       "title": "Common issues",
@@ -62,6 +62,15 @@
         "We confirm model, access and symptom before the visit.",
         "Service covers central Batumi, Khimshiashvili, New Boulevard, Boni, Airport area and Angisa.",
         "Start-up, hot water and pressure stability are tested after service."
+      ]
+    },
+    {
+      "title": "Gas water heaters (geysers) and tanks",
+      "items": [
+        "Gas geyser repair: no ignition, weak hot water flow, flame going out.",
+        "Geyser heat exchanger descaling and maintenance.",
+        "Electric water heater repair: heating element, magnesium anode, thermostat, gaskets.",
+        "Same on-site terms and warranty as for boilers; Batumi and Gonio coverage."
       ]
     }
   ],
@@ -213,6 +222,10 @@
       {
         "question": "Is boiler maintenance needed?",
         "answer": "Yes. Burner, heat exchanger, pump and sensors should be checked to reduce seasonal failures."
+      },
+      {
+        "question": "Boiler or water heater won't start at all — what to check?",
+        "answer": "Check mains power and the breaker, that gas and water valves are open, and system pressure (usually 1–1.5 bar). If power and gas are fine but the display is dead or the unit locks out, a site visit is needed: likely the board, ignition electrode or draft sensor."
       }
     ]
   },
@@ -259,10 +272,22 @@
       },
       {
         "text": "boiler pressure dropping"
+      },
+      {
+        "text": "gas water heater repair Batumi"
+      },
+      {
+        "text": "boiler servicing Batumi"
+      },
+      {
+        "text": "water heater repair Batumi"
+      },
+      {
+        "text": "boiler won't start"
       }
     ]
   },
-  "description": "Gas boiler repair and maintenance in Batumi: no ignition, flame failure, weak hot water, pressure drops, sensors, pump and heat exchanger.",
+  "description": "Gas boiler and water heater repair in Batumi: no ignition, won't start, flame failure, weak hot water, pressure drops. Sensors, burner, heat exchanger, gas water heaters.",
   "diagnosisSteps": {
     "title": "How diagnostics works",
     "lead": "A service-specific check sequence for this appliance.",

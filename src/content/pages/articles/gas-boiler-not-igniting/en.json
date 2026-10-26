@@ -1,8 +1,8 @@
 {
-  "title": "Gas boiler not igniting | causes and repair in Batumi",
+  "title": "Gas boiler not igniting or not starting | Batumi",
   "heading": "Gas boiler not igniting in Batumi",
   "lead": "What to check when a gas boiler does not start: pressure, ignition, sensors, draft, burner, board and safety before calling a technician.",
-  "description": "What to check when a gas boiler does not start: pressure, ignition, sensors, draft, burner, board and safety before calling a technician.",
+  "description": "What to check when a gas boiler is not igniting or won't start: pressure, ignition, burner, sensors, draft, board and safety before calling a technician.",
   "sections": [
     {
       "title": "Common causes",
@@ -141,6 +141,10 @@
       {
         "question": "Can I keep using the appliance?",
         "answer": "If the symptom affects safety, water, gas, heating or cooling, it is better to stop and request diagnostics."
+      },
+      {
+        "question": "The boiler won't start at all — what are the typical causes?",
+        "answer": "Most often: no mains power (breaker, plug, cord), a closed gas valve, low system pressure, or a faulty board/draft sensor. If basic checks don't help, book a diagnostic visit."
       }
     ]
   },
@@ -172,5 +176,5 @@
     "linkLabel": "Open"
   },
   "datePublished": "2026-05-12",
-  "dateModified": "2026-05-13"
+  "dateModified": "2026-10-26"
 }
