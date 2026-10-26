@@ -49,10 +49,11 @@ export const GET: APIRoute = async () => {
   const priceSuffix = (
     title: string | undefined,
     price: number | null,
-    tpl: RegExp,
+    hasPriceRe: RegExp,
+    tpl: string,
   ) =>
-    price && !tpl.test(String(title ?? ""))
-      ? tpl.source.replace("%d", String(price))
+    price && !hasPriceRe.test(String(title ?? ""))
+      ? tpl.replace("%d", String(price))
       : "";
 
   const ruServiceLines = routeKeys
@@ -63,7 +64,12 @@ export const GET: APIRoute = async () => {
     .map((key) => {
       const page = ruPages[key] ?? {};
       const price = minPrice(ruPages[key]);
-      const suffix = priceSuffix(page.title, price, / — цены от %d ₾/);
+      const suffix = priceSuffix(
+        page.title,
+        price,
+        /цен|₾/i,
+        " — цены от %d ₾",
+      );
       return `- ${page.title ?? key}${suffix} — ${site.baseUrl}${ru.paths[key]}`;
     });
 
@@ -75,7 +81,12 @@ export const GET: APIRoute = async () => {
     .map((key) => {
       const page = kaPages[key] ?? {};
       const price = minPrice(kaPages[key]) ?? minPrice(ruPages[key]);
-      const suffix = priceSuffix(page.title, price, / — ფასები %d ₾-დან/);
+      const suffix = priceSuffix(
+        page.title,
+        price,
+        /ფას|₾/i,
+        " — ფასები %d ₾-დან",
+      );
       return `- ${page.title ?? key}${suffix} — ${site.baseUrl}${ka?.paths[key] ?? ""}`;
     });
 
@@ -87,7 +98,12 @@ export const GET: APIRoute = async () => {
     .map((key) => {
       const page = enPages[key] ?? {};
       const price = minPrice(enPages[key]) ?? minPrice(ruPages[key]);
-      const suffix = priceSuffix(page.title, price, / — prices from %d GEL/);
+      const suffix = priceSuffix(
+        page.title,
+        price,
+        /price|GEL|from \d/i,
+        " — prices from %d GEL",
+      );
       return `- ${page.title ?? key}${suffix} — ${site.baseUrl}${en?.paths[key] ?? ""}`;
     });
 
