@@ -8,6 +8,8 @@ const EXCLUDED_KEYS = new Set<string>(["privacy"]);
 const AREA_LINE =
   "Центр / Старый Батуми, Химшиашвили, Новый бульвар, Бони, район Аэропорта, Гонио";
 
+type AnyPage = { title?: string; description?: string };
+
 function minPrice(page: unknown): number | null {
   const price = (page as { price?: { groups?: unknown[]; items?: unknown[] } })
     .price;
@@ -30,15 +32,30 @@ function minPrice(page: unknown): number | null {
 
 export const GET: APIRoute = async () => {
   const languages = await loadLanguages();
-  const ru = languages.find((l) => l.code === "ru") ?? languages[0];
-  const en = languages.find((l) => l.code === "en");
-  const ka = languages.find((l) => l.code === "ka");
-  const ruPages = ru.pages as Record<
-    string,
-    { title?: string; description?: string }
-  >;
+  const byCode = (code: string) => languages.find((l) => l.code === code);
+  const ru = byCode("ru") ?? languages[0];
+  const en = byCode("en");
+  const ka = byCode("ka");
+  const pagesOf = (lang: typeof ru | undefined) =>
+    (lang?.pages ?? {}) as Record<string, AnyPage>;
+  const ruPages = pagesOf(ru);
+  const enPages = pagesOf(en);
+  const kaPages = pagesOf(ka);
 
-  const serviceLines = routeKeys
+  const phone = `+995 ${formatGeorgianPhone(site.phone)}`;
+  const phoneDigits = site.phone.replace(/\D/g, "");
+
+  // цена уже в SEO-заголовке — не дублируем
+  const priceSuffix = (
+    title: string | undefined,
+    price: number | null,
+    tpl: RegExp,
+  ) =>
+    price && !tpl.test(String(title ?? ""))
+      ? tpl.source.replace("%d", String(price))
+      : "";
+
+  const ruServiceLines = routeKeys
     .filter(
       (key) =>
         routes[key].pageType === PageType.Service && !EXCLUDED_KEYS.has(key),
@@ -46,12 +63,32 @@ export const GET: APIRoute = async () => {
     .map((key) => {
       const page = ruPages[key] ?? {};
       const price = minPrice(ruPages[key]);
-      // title уже может содержать цену (SEO-заголовки) — не дублируем
-      const priceSuffix =
-        price && !/цен|₾|GEL/i.test(String(page.title ?? ""))
-          ? ` — цены от ${price} ₾`
-          : "";
-      return `- ${page.title ?? key}${priceSuffix} — ${site.baseUrl}${ru.paths[key]}`;
+      const suffix = priceSuffix(page.title, price, / — цены от %d ₾/);
+      return `- ${page.title ?? key}${suffix} — ${site.baseUrl}${ru.paths[key]}`;
+    });
+
+  const kaServiceLines = routeKeys
+    .filter(
+      (key) =>
+        routes[key].pageType === PageType.Service && !EXCLUDED_KEYS.has(key),
+    )
+    .map((key) => {
+      const page = kaPages[key] ?? {};
+      const price = minPrice(kaPages[key]) ?? minPrice(ruPages[key]);
+      const suffix = priceSuffix(page.title, price, / — ფასები %d ₾-დან/);
+      return `- ${page.title ?? key}${suffix} — ${site.baseUrl}${ka?.paths[key] ?? ""}`;
+    });
+
+  const enServiceLines = routeKeys
+    .filter(
+      (key) =>
+        routes[key].pageType === PageType.Service && !EXCLUDED_KEYS.has(key),
+    )
+    .map((key) => {
+      const page = enPages[key] ?? {};
+      const price = minPrice(enPages[key]) ?? minPrice(ruPages[key]);
+      const suffix = priceSuffix(page.title, price, / — prices from %d GEL/);
+      return `- ${page.title ?? key}${suffix} — ${site.baseUrl}${en?.paths[key] ?? ""}`;
     });
 
   const pageLines = routeKeys
@@ -71,7 +108,6 @@ export const GET: APIRoute = async () => {
       return `- ${site.baseUrl}${ru.paths[key]} — ${title}${page.description ? `. ${page.description}` : ""}${alt ? ` Другие языки: ${alt}` : ""}`;
     });
 
-  const phone = `+995 ${formatGeorgianPhone(site.phone)}`;
   const body = `# ${site.name} — ремонт бытовой техники в Батуми (Грузия)
 
 > Выездной мастер: стиральные, посудомоечные и сушильные машины, холодильники,
@@ -82,7 +118,7 @@ export const GET: APIRoute = async () => {
 
 ## Услуги (с ценами)
 
-${serviceLines.join("\n")}
+${ruServiceLines.join("\n")}
 
 ## Как понять, что пора звонить
 
@@ -95,14 +131,56 @@ ${serviceLines.join("\n")}
 
 ${AREA_LINE}. Работа за пределами города (Гонио) — по договорённости.
 
-## Контакты
+## ქართული (Georgian)
 
-- Телефон: ${phone}
-- WhatsApp: https://wa.me/${site.phone.replace(/\D/g, "")}
+> Tech Fix — საყოფაცხოვრებო ტექნიკის რემონტი ბათუმში. გასვლა ადგილზე:
+> სარეცხი და ჭურჭლის მანქანები, საშრობები, მაცივარები, ღუმელები, კონდიციონერები,
+> გაზის ქვაბები და კოლონკები. ყოველდღე 9:00–20:00. დიაგნოსტიკა 20 ₾,
+> რემონტი 70 ₾-დან, გარანტია. მომსახურების ზონა: ბათუმი და გონიო.
+> ტელეფონი: ${phone} (ზარი, WhatsApp, Viber, Telegram).
+
+### მომსახურება
+
+${kaServiceLines.join("\n")}
+
+### როდის დავურეკოთ ოსტატს
+
+- ჭურჭლის სარეცხი მანქანა არ ცლის წყალს, ჟონავს ან არ აცხელებს.
+- მაცივარი არ აციებს ან სუსტად აცივებს.
+- კონდიციონერი ცუდად აგრილებს, ჟონავს ან საჭიროებს გაწმენდას.
+- გაზის ქვაბი არ ირთვება, არ ინთება ან წნევა ეცემა.
+
+### გასვლის ზონა
+
+ბათუმი: ცენტრი, ხიმშიაშვილი, ახალი ბულვარი, ბონი, აეროპორტის ზონა; გონიო — შეთანხმებით.
+
+## English
+
+> Tech Fix is an on-home appliance repair service in Batumi, Georgia: washing
+> machines, dishwashers, dryers, refrigerators, ovens, hobs, air conditioners,
+> gas boilers and water heaters. Daily 9:00–20:00. Diagnostics 20 GEL, repair
+> from 70 GEL, warranty on parts and labor. Service area: Batumi districts + Gonio.
+> Phone: ${phone} (calls, WhatsApp, Viber, Telegram). We speak English.
+
+### Services
+
+${enServiceLines.join("\n")}
+
+### When to call
+
+- Washer or dishwasher not draining, leaking or not heating.
+- Refrigerator not cooling or cooling weakly.
+- Air conditioner cooling poorly, leaking or due for a cleaning.
+- Gas boiler or water heater won't start, won't ignite, locks out or loses pressure.
+
+## Контакты / Contacts
+
+- Телефон / Phone: ${phone}
+- WhatsApp: https://wa.me/${phoneDigits}
 - Telegram: ${site.telegram}
-- Сайт: ${site.baseUrl}
+- Сайт / Website: ${site.baseUrl}
 
-## Страницы
+## Страницы / Pages (RU · EN · KA)
 
 ${pageLines.join("\n")}
 `;
