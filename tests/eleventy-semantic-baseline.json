@@ -113,12 +113,12 @@
       "structuredData": "c48a057d154eb5796f0d68614a8794a6d34b650742a7d3e8466dbe9775a62287"
     },
     "articles/gas-boiler-not-igniting/index.html": {
-      "metadata": "769d2e9c1174f35375f5c75f8794fb3c6d10e291c9f5f7e24f3c9e30bba7d817",
-      "text": "7d184f0594393900d626a428480de73a3fdcd96e77f231bc21a3330712b8f565",
-      "dom": "3308edd3453984e34b262fa8e0f52a4630646fd8510c04a4a5e9a20356cb77f2",
+      "metadata": "abb31ccf8c9cc5ea46e870cbe87bb2b38f5e9cd5b36d191d3b3fdb508ad88c5e",
+      "text": "839158fcedcc34fc6507be442ec6f2d3fa92549639254dd999245cfa07bb84d0",
+      "dom": "d59bd4905063c136206b18bfd03822ef1bd407722468fb36191dcd2df6c3c1fd",
       "links": "72a8c7a9092779ec1bea0584935ffdf090f185136d1ab16f50709ee88e8a5013",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
-      "structuredData": "8076053f60f084fc60674f35e931d08f9cc6fcf5b5ca7ea07a9755b4a3d122b1"
+      "structuredData": "7868afdf18b95fbe6865b7ea8a2d5abc1298ea9e6fca6781966c34189c226e46"
     },
     "articles/hob-not-turning-on/index.html": {
       "metadata": "c1b5e7cc6eb38ac4c7aaaf6bf6f902eb35a45db0ec131ca914c9aef29f0f10f6",
@@ -137,12 +137,12 @@
       "structuredData": "243af506a644d1daa07ed105ef533170e80ff4dde78cfe64531b2cd397ef27ad"
     },
     "articles/refrigerator-not-cooling/index.html": {
-      "metadata": "d9770eb52fcfa3f2ed7c3f7b2a446f3fa4c5234a669b08835e95747076c1495d",
-      "text": "c86277a564789b3f1d4b682b859377bf7f4da9b1bc4bdfe2da0b32dc0c113b29",
+      "metadata": "adc83f21231115030101bea2054c7a2c912a05a47c7a4d6a055c3867111f64e1",
+      "text": "1898de994496cc7e1b38e7fa1ef4bd067e9b3248fe28b3afdb5fdf5127e962fb",
       "dom": "3308edd3453984e34b262fa8e0f52a4630646fd8510c04a4a5e9a20356cb77f2",
       "links": "bc669dec2c2b4fa7aef61d0e0acd947dad812bde67176e5188122e53fc913a6c",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
-      "structuredData": "d1249040da281d6d356c392c639eb500ef68ec5781d94d954768b3bd60d191d8"
+      "structuredData": "bcc9211006ef4ae3746a0c201463406fd6fb4c925d6656e9c0236ad9dbb159f8"
     },
     "articles/washing-machine-not-draining/index.html": {
       "metadata": "7bab4a99a1d734c6cdb18c327627a6d36b7bef7b0632b9591a025e5d44241f30",
@@ -193,12 +193,12 @@
       "structuredData": "f5ea81ee43fefcaa5e32f9f4e41603e4baa8555adbfa2da2f551c57b364cb49c"
     },
     "en/articles/gas-boiler-not-igniting/index.html": {
-      "metadata": "2d5396e6878ce1aeb151d75909b8d742c7ce0013ef505e0ca910020e34f49d1c",
-      "text": "1fbde30db7f9775dac084fd82ecbbfbd947edf38869f76b8aca9d28181a62f31",
-      "dom": "2ff0e7c7fabf5ad062f33b451020b3c38f45e84efa9932a832430d102ee0accd",
+      "metadata": "1ba617679c77f7aa507919c37da888c2326b56e0abc270acad398bf136849c50",
+      "text": "4c09b1c2af0129c47dd22de6fa1ddf1b26fb334cb6d531976436cb78fdbc00f5",
+      "dom": "df7edae3d30ebf0616b0195f3065b69c9aa80e31ce78a7066c8863227f9455e0",
       "links": "9bbf1bc5b3d867a6346abf64874ed9532ceca9c76a9442d173737212f48c8736",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
-      "structuredData": "727c95269fbc045f269b9cc664b229669a0b0afcc64bb535cab70d2d8079b4c5"
+      "structuredData": "088c28dfa6bb9c60b49f66fd6cf569aaec20beb97b9280892f0b922e9987923a"
     },
     "en/articles/hob-not-turning-on/index.html": {
       "metadata": "fe68a7c6a416e8064ba0148a956c231224662b96084e495a277df97ab4235f20",
@@ -218,11 +218,11 @@
     },
     "en/articles/refrigerator-not-cooling/index.html": {
       "metadata": "7d8afaab47281ea2acf57b427c9d2f9f414e242f05851be3e535c1f27c93d956",
-      "text": "cf2d39a6a4f0352b5a07cef8889ccab510ce711ec9efc43f6700d7c1a8163ccf",
+      "text": "aaf2935b3241ccf03f0317fe45b58612fd724fbeeca74603ce00621077912b3b",
       "dom": "2ff0e7c7fabf5ad062f33b451020b3c38f45e84efa9932a832430d102ee0accd",
       "links": "57f0f2adc4a63050d66282cc17288681c57937d1de44745064c5b39822e3b32d",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
-      "structuredData": "2daac68e1037b7f6551a4567a3c7a22e7b7beaf542b4d34696a225e7d1a45ce9"
+      "structuredData": "fbe9a79be0d2cbe21a03af8c97d891c144868f62a6ce548ed6adbb72a9321441"
     },
     "en/articles/washing-machine-not-draining/index.html": {
       "metadata": "0546b4c1cc8a9b48fdcaf87151203ee22ef85eb973b48465f68deb44160f28a7",
@@ -241,9 +241,9 @@
       "structuredData": "1406b28f9074d3fd692e91636bdce0941f2d0c3d146d087a9b2b7b2cc53a4ce8"
     },
     "en/index.html": {
-      "metadata": "92c8b0cd6a280002563933f85902bf10443c4fc05a53321b811beaa48615e01c",
-      "text": "2462567bce1943c9efddf8585d93311c6df9b26efa343d42124d132f0ca6ca34",
-      "dom": "fb65cdbc25ba309a1fe7f839f88dc6a817650205be3a490bdfb193d3a6df3482",
+      "metadata": "3bf3626dd27f39cdd468cee76fa913fa91c4ae94c61f4c78a5f69b2f50022975",
+      "text": "811b3904bc03f6175ff6f8a28ea9831aa1ff5207e3e7e0b2d997dfa96b9d17a8",
+      "dom": "ef97cbd3fa1b935ab326df3a503cae2cd68329eb8ac7113be3bbea728ca4802f",
       "links": "cea222b1b72a52f3de5b85a82f9e17ef2a6e5a229b7b75ef16128f3bf6278b6a",
       "images": "c14703f0f6a62f806b6bb8659b63bebfbd62e5f5501a4a83ef37abd073ca28d9",
       "structuredData": "4ff39eea16844e84b5b7aca24fae622dc0b85032778b6bee153b6f92ddf3621a"
@@ -281,12 +281,12 @@
       "structuredData": "10f359492301c1cce4d0e7c7d09ebdb44447a39b6a2147513c7a1b3f008f459e"
     },
     "en/services/dishwashers/index.html": {
-      "metadata": "fdc721d0f9adcd2c3422df4208b9c0d3d20d30415e7af64b19ae617877101edc",
-      "text": "592f1e3e1a8a5e342b74873f37cbc4444b19624615c83735bd477314997fb278",
-      "dom": "d8a0680c66bac13e5d479cad27ebbd4ebb5b57b52dff95cdd140278ed22825e5",
+      "metadata": "22f9af4364d80720b0b52e77fb9295f936d2da34e4787e59e5a5fb4ae5abcb31",
+      "text": "d6547d7da8545647781fb515322127d42820f4761089b76784c685991092efb9",
+      "dom": "134c564c30287154300fee0e10009a71580a3baa63bd9a581a0a21dd4c4b6d37",
       "links": "3823a86a25f94543ad39eb943254f85a72f96ac8bed42f03e67078b689c7cc80",
       "images": "0a506697ed5188fe517c9702a488c5e57b652a8a847d0c58e3325c7c147c07ee",
-      "structuredData": "c1ea6c40d742b282b4710c4d4783000798e2553ba565771d4d9f26379994bf82"
+      "structuredData": "3381cf7e7474ecece4e707be6bfa8a4187fbb60f7c601b3bc7ad78eea2dea912"
     },
     "en/services/dryers/index.html": {
       "metadata": "9de15bab4c681efdcd3eb1432f31b876f490921fd8a2cd1f808845fc2252b9a5",
@@ -297,12 +297,12 @@
       "structuredData": "9369d2b51bd8ecbe4eea5f22469fb162dc0346b0a674391448db44f8e806d930"
     },
     "en/services/gas-boilers/index.html": {
-      "metadata": "7f519f65138cd945b197baf76d82ee575198d9c0e2b7f8b0ace96061868bab9f",
-      "text": "4bc05e3841bad1681d284325ee2b67706a42e4693466d65b5fdf2a737ccd3331",
-      "dom": "56712f6340aa479ee0bbcfacbe23ad788a08385f9280872a0612857a3c016f1b",
+      "metadata": "ca687380b7254d12c547b05c74e54040725b9219296e809b576de17cc656bb32",
+      "text": "acbaf6fc6c42ef827087ceb2ebe5d7b9c5ea75c4f1dc1d883c55cd0b05985af0",
+      "dom": "e5bbcf6c0166cee294f3f513523347a8331728091b078b85cd9b7a0ac07da61e",
       "links": "3cba4a3065d482d1e72a6ce1f03308ec4c9fc2847a78e28212466881533111b2",
       "images": "416aa645e0e9691743f0ab1cf8463f95c9ff997d40563b8a984c4c7bf8dd0a62",
-      "structuredData": "cc59a78c20cf5a97502062dc6ff7bd5fd671b7d00ed430d91a922f40b00183bb"
+      "structuredData": "84e82a8ee8c192d4a16ad1ef634c8800a7d35ebfc563b5f08b3a5829ed47c340"
     },
     "en/services/hobs/index.html": {
       "metadata": "849abf059c3ae1080c689b9aa04cf2c53fdd187709fd95928680d4269d7a23fc",
@@ -330,24 +330,24 @@
     },
     "en/services/refrigerators/index.html": {
       "metadata": "7eea58a0ac26ea7e81ed65d00f3967b7adb70dd73e49141971b7dc0f451f41aa",
-      "text": "b32bd6c61404c767c1150d946a00e80ae136f632d419e50fa1faa5410e6a4935",
-      "dom": "30c6c7dde1cfaf25d020c258bbe51a4ef10f4db9a9925f432e4c81fcefc58ad7",
+      "text": "9b982daa1615cc589f5c1a7056a0c9dcfcefba457a08f576ce5dd3cb3b31a901",
+      "dom": "69e974d857ced231b3182e0d8e758fdea27bd09c7d6ab69f3b1b52d244e1443a",
       "links": "b0df1bf9fc64a7bddfaf06762ef02a69ab66cde03b4849798d46da1411ee8696",
       "images": "fff056cabf883fa5fa0a594d2445a8a2b319d45497852908b9dd1ce6d22160b4",
-      "structuredData": "986624135b5aaa6c632e6f8a546ce1f9809d39eb59df09d650a38bd2708fc679"
+      "structuredData": "85e2f285d7014ce733c5d33dbef273e18cd6b983e116a2824c307912a9ac385a"
     },
     "en/services/washing-machines/index.html": {
       "metadata": "34347271e9e474bd5360da9fb65098564baf7a2bcdb2a874bd0167bbb7ad7b9f",
-      "text": "78621cdc608d5beaa744af7a0a961eae175c9a3ccd74ac410229dc7c9045d279",
-      "dom": "15fa70a1ffec1352cfbc2b5d363894e6c64d14428373050fbff846401495e3ca",
-      "links": "daf34edc74bb606ef4bec75aa9ece65f5dafa8d0f4f1265262e329cff85dd7f8",
+      "text": "66e7554c0f6648c6267720aeace220e8897b1e8cafe72f4adcff6287f028f76e",
+      "dom": "065026b818bbf080a0e190d8b3c73a297167ad26a9bc2232a911d10ea66afe7c",
+      "links": "86a63347d62e9105e805b9afc4894fe5f592d2a51ee425bb052cfb34b66a7b84",
       "images": "3d41617daba506c19082eb1d6e25bdfc7b6303c533133589e409c1d391a61b79",
       "structuredData": "14188a801ac7b8167895f88b9dfe71e4461f66844d1e2da0616416793ccb37b2"
     },
     "index.html": {
-      "metadata": "8d4863b1c11e2590319e396f7c9883af59553e72c45343b1af3b10fe3c240ce4",
-      "text": "d1072d835d39102e60daadb13e47ff63bc75eda1d28deea34b6c076add73ddc7",
-      "dom": "51dbedab2b96641011b53743ec8fba862050fd822c518680fd259224bf0e2eb6",
+      "metadata": "85a4128b9ccd723231b95c46818a68c312cbc278010dd0a48b86b49630b2e3df",
+      "text": "9d28a686ece446799d98c9e889bc5edbd5fd93eb9931fcc0c21a37f57b6ece2a",
+      "dom": "0acf5b3fa1a693b6a685bf04fafe3a07614f4c7264baf7167be09a71e33561d9",
       "links": "b9dbdd92eab15b6d2930a74ad156509bc956e433fe8ba8c75a94d534b07357fa",
       "images": "00e1612d27f757c3c62c9a6b1aa6d3ba57767fd5c75c50942e110d6406b7f34c",
       "structuredData": "343bbe3ca4bc11fb695cebda42ea86371f4117ad4b382c41d5c7890b898cbeb5"
@@ -385,12 +385,12 @@
       "structuredData": "53d47433d35c3a90e82d7471f99cae62fd8b139c98495c61e30893a114b06f5d"
     },
     "ka/articles/gas-boiler-not-igniting/index.html": {
-      "metadata": "681c608a202b10252a86326c9f7bc00e21d585ed6a0971d94a519f5fa3dbfdf8",
-      "text": "d5e0e51adbee1d291dd0edcc6d5f9d89983c7c373e5b22210bfb9f891fcfd871",
-      "dom": "673d362d712390aabdb826ed413225a517a9999bf8d0613deff5d96d38f7200f",
+      "metadata": "cb839926b1afbce42ea6c347026f118aaaac2f8d416915013aee81826e8a6aca",
+      "text": "0e30c2c86fb0ec3c7e8f6e27a2cae74f184b41f95e0ab439776812b202469e4b",
+      "dom": "43cfb9b325f07fd1d4df12a1c46230e3dac4b3f71b1e277b5c7ee6f0128957a7",
       "links": "8b4d7930107e1b1e9bea91830c5500a0fec61db4e75792d537a174af8eca253e",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
-      "structuredData": "6407589cc3480f2637c09606e2dcfdb50fcb0ed98cf52bd2fc92494a486e3f96"
+      "structuredData": "5c7bd03c2a67705e3a354d50998c21cf738f0f3ad68defaaa4c3fe1e694f4ed1"
     },
     "ka/articles/hob-not-turning-on/index.html": {
       "metadata": "359717c1ed45121bd1b2307398adac07ccf3e299dfd8f6ed67dda7c8e04b887a",
@@ -409,12 +409,12 @@
       "structuredData": "57bc97780737bab56300c32c83409b055d5ead8f9e8f1d333afef0dbdcd4e5ae"
     },
     "ka/articles/refrigerator-not-cooling/index.html": {
-      "metadata": "2dbd3f196a1306cbf0dfa91e12351b678ec112f063f5490ee0fc4718dc6c425e",
-      "text": "b2d02a5dd8a0066584e339e7ff816a3c2022a9e40f76ac1c54c46599649afba1",
-      "dom": "673d362d712390aabdb826ed413225a517a9999bf8d0613deff5d96d38f7200f",
+      "metadata": "e50a48bb016513a1b60be533872e58125f19dcf3ab4758f8bf490d6a3ec06736",
+      "text": "7caa5415b77c21ea34efefbccde0edd6ad42ffe509670c8dbc2bea6833c72794",
+      "dom": "c1b660d1901237454d116600cc786cc577efef28138de86c23a61ec3736f6f0e",
       "links": "ca37a93504be392b1912fe58035e9330455aedac59104a66fabd00932e4f5cc2",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
-      "structuredData": "0507d93ca0b761628d17f5755b2abc5041ca85fc26dd19bbceb805a72958d2c4"
+      "structuredData": "2b001c81928ab45bbfb9f3cb46f4d5fc7384f8b9574098c28b9e82b48ee5129c"
     },
     "ka/articles/washing-machine-not-draining/index.html": {
       "metadata": "55439a773a67aa83d5c5290fb6f6a718d1b42ce773e02e8f0c011fc8983fa7fc",
@@ -433,9 +433,9 @@
       "structuredData": "74da076e88e47dc313d7737d4aaea8d3dd06d1b33af891c679a774c13e0eae26"
     },
     "ka/index.html": {
-      "metadata": "ca1014a394697f16b959eebfce8577b84f2eb6caff7b23c72f2e89224489103d",
-      "text": "83416c95e34cbb0cb40567ce310a5b04e43c272caae15c6a7114b1216f64f2e3",
-      "dom": "a9bf4bdf387e7552fc13f98fce7440c27326c66b16f2bcd0467b8dd23f5ed48c",
+      "metadata": "968bdf73faf59de91420d3641ededc141562c2c067f0c8b6738b1dd08a03d387",
+      "text": "e037abe606d9521f06c6ea910a59af5ce1989adadbc6b86ce25332050b5e17b1",
+      "dom": "125948eba7a9a4ca5841f6fe2ffdd6b12ac12845aaec687dadea362f835731e3",
       "links": "947aed53b913f0965fcd2e5c213dd7343725a6f67fdfb74f1b81b01cbe76ead2",
       "images": "fde056211c3361276e3a3b3baa530cf8676e2154785330795f2e498f394db6b9",
       "structuredData": "dfaf2391733361063954eb3e44fc3de33e8ddb21c3f00f1353a75076fd1107d9"
@@ -473,12 +473,12 @@
       "structuredData": "83424a5945754e8ab166dee5633e0253521f138c4d817edee783f36ccc357186"
     },
     "ka/services/dishwashers/index.html": {
-      "metadata": "e51bd0c012fba67492691b930655ec3facfcde0f8cfc10a56ea537f6c5fccb1b",
-      "text": "e7f529498e5880adf44e064cc5f8c0a412b8eb748bd20f264c20ca608e4cf01f",
-      "dom": "c87cb0786a0bd4a45581e577e320c223e288b276955a96f802799bdcaff93297",
+      "metadata": "fe9adc3fdc9012fdc2b4b82566d7da532fffdec2fc716d5274a79327cae5478a",
+      "text": "35215893966553d5b404c112d4cc0256c4dbe68940e3e3ebc814f9cc7adff021",
+      "dom": "9aee2f2bb3e1b9ab04de5c4392fdea1abf01a453426f652d2bbc9074a4cccfb2",
       "links": "b844efb5e61ca06f71867e98dcc422eebe5ebfc00e23ae371bbe94312af9f1d2",
       "images": "a8a5881f7b274908af961ce14091d3b1001caa0df847a42a05d586e4e2e605eb",
-      "structuredData": "7d87883050cdc223380759a9f78f3b45a805b3abdc6559d03074ca0bf007ea18"
+      "structuredData": "50f53c6158ceec0519fec6c352a8a5b027b57632ca6334edf525987d8ead6adf"
     },
     "ka/services/dryers/index.html": {
       "metadata": "9bead1b906863031af57e05fd4ca46cbf4c78d2a1cd729ce9df1376ed2dc7338",
@@ -489,12 +489,12 @@
       "structuredData": "bb8cde11a92bec95555fab5216eeeabd824563d4f6b185e918b387e84ecb86bb"
     },
     "ka/services/gas-boilers/index.html": {
-      "metadata": "15a69901fd9d9a7d061f783b40bd68269ec083ffbafb828b1bd5bcfce76a79a2",
-      "text": "da388d21a67fcd22eba41210255a2b4e66ead44e6eb7ef0854da502e0fbc3586",
-      "dom": "e0277f98e9f77abdafa42d62b1079d06f8f33d40ff85f281e291806108d0d9a8",
+      "metadata": "f73e19b86ce686cd38ce7af4516bc70fe3896edc639772ae2cdc533ffb81bc1f",
+      "text": "b17f8f4452f643c4b49d31af771c872cf5de4a4087ee54f7f3ea85ae7a8b4066",
+      "dom": "d9ca0d3a084349c006ed2a541818270594d6b7e56b18e8b0a11d2485b57e72a3",
       "links": "922d4347df2a54009ad9a0a6c4434faf554aa780af6b02414a580aaafb549647",
       "images": "787afb993c12d24a1b8666d90cb4cfe0ef69c126d036cf3ca1ed04554618efaf",
-      "structuredData": "88c67fe247b382d8f434bab1fde7c4edee88e043e6432076f5486ca5f28a3bb8"
+      "structuredData": "dcc49639d67bfa263bc3146965ce791ff640c209a2805f36737ea8fa8722351e"
     },
     "ka/services/hobs/index.html": {
       "metadata": "49ced1270330227d541356c34578ea3ad4c01cceb1c3e665c76944762890f4aa",
@@ -522,17 +522,17 @@
     },
     "ka/services/refrigerators/index.html": {
       "metadata": "3cb3f1dea5d8033987d62cda7fef40f82be9b94328287b93b76126a2fc3b5f78",
-      "text": "8d871555d77402d00bd88c8f54961fd53bcf743e14a5659985b0779402234fb0",
-      "dom": "b36b86981996a9bbd08e8cd0f3fe9e6c5669d6a12d86f085d01e39141b770482",
+      "text": "44f33176183c95a72e35c8dcb344f0c60ba4a42d247457e9b10fad1a129551ef",
+      "dom": "c81b090c84daa8071bc054bdf40d25377f41ace8176ecb0a4ad0ceb99e23610c",
       "links": "522550c67c7865d3eaee38f17f2a22ca2113a13f2ed59c44b912ff9bdf0e27be",
       "images": "2427f5b71a6030c880e5ad086582fb787d0ee52226d6090a8ebba1066ea3fa3e",
-      "structuredData": "d08556e0fe0bff6c075f85afe38785d0f821c6ccad21af52a85ee450577b6011"
+      "structuredData": "0d84d69c7f2530ac97e9d9b8353505ed63a37d6ea7f2c9b092724e5189a0c243"
     },
     "ka/services/washing-machines/index.html": {
       "metadata": "1623f0951943960c2972092e1e8a6f40db422009251a771d5c2c22cc5d577bed",
-      "text": "af2df07e52bfc47e17a0963f864fc1ec8cf1f99d5f549f95368417a62f02b864",
-      "dom": "5e9b8a43f530a75e2ab0d6b088730ba789a9427c714466958519b6d7951ffcbe",
-      "links": "7ad0604a62986306926b760b3eb5231e1478e4ee160fb3194acb1830369c4e11",
+      "text": "fab1403fe6e8753a937a7b03f80bae08141f5f8da7acb79c95d47b20e77f37da",
+      "dom": "5b82cfbd8d4a719528feece48dfd9e61674cae73441ef53d6fe307a8f2abf0b0",
+      "links": "632f620edbde13cd30b7f8ff51a6edbd4fdd52a05646602042b179bbe222b2bb",
       "images": "34d3c865e0e30bf681b934a1ae6268d38197deb47bb7c5f438c0d047b8b5c104",
       "structuredData": "17579fb746c854cacdd38eb8305bde78120fe73e070c1a5a94dd395c01717ef6"
     },
@@ -569,12 +569,12 @@
       "structuredData": "8bff80a3431637d084b2254142e433aa22bacd06aba099dbc3e417c564b07c2b"
     },
     "services/dishwashers/index.html": {
-      "metadata": "d740cee4f369ab7d4fc6595c2d93b509553ec0694821de889dd57be536d6c546",
-      "text": "46126617e816d6ca6c4b1d4e5f8352819a55ae8309d12dd57e71c731409b307b",
-      "dom": "c36c00b5d806a946dc72b765dd111ed3303df8aca524070b2bab6eeda0d74594",
+      "metadata": "022a6741833aeb1465a13068fdae2ecc802c2f30023942e82c94947a359c4b83",
+      "text": "3043c7e0e5f0b3873226e169e7fcd50fa0fed569b79608d9eb737aab3670ce7c",
+      "dom": "451a19798f0435ab7e827105a9f355ace63717b827828512a5f0f7db8cb47abf",
       "links": "49ee2cc0430f20eb7ad2b7d5524e098d3e6de2b55720855d63fbbcbd3c957da2",
       "images": "8c538689d3495412bf3a2f9187252ceb83ab796c298225e4a85eee1982312fca",
-      "structuredData": "2475ce823f6f09727bc7c6ba9484bc025c666e5edcb2f10cfbf864372af6d8ab"
+      "structuredData": "c0713b3ee15c3ead8b28eff1b5da2ab0968ebc78bab728eac7dfc6a943025648"
     },
     "services/dryers/index.html": {
       "metadata": "1aab881bba64bd81febcceb7e88e35f0e4b762637d04547251916cbb2284da1d",
@@ -585,12 +585,12 @@
       "structuredData": "606a8451fcab8c45043d4007b13bfe0ba1a566f50337ae766abe82636ea2c904"
     },
     "services/gas-boilers/index.html": {
-      "metadata": "459eb6278395c54687e49473136f476c38e6760bbf7ec46413bcb59bd54e3d85",
-      "text": "d0ed72563e3608e57efba324ed473db6d53a00113bfc74e0aa83882451e356bd",
-      "dom": "73085e68582595dc0b60b1ac03e9dcf56b545fd5213e21da81a1c02059c81f25",
+      "metadata": "1b245decbfc670aade5d06cc06f5e4266a706571983669c64165e454be694826",
+      "text": "593bf8f54bd2a6db2eb831043f07fa84c44d854540a59d7b2ce8e4d3bf03f25b",
+      "dom": "2c2ac5da54d9589462aee71a4713e511520f39244e428633456cbbdb51ac751a",
       "links": "faf2a732b0f51b470d12c5e9a8e91969abe999e2b6891b56d9a2a8645737eb7b",
       "images": "ce225c8d796d6ac8849ab5e5d9454b6b9214fbd255a7a3d49dbaa81041423465",
-      "structuredData": "b3d8581f6b990d2241a031b316cf1b1cb69402cb01262f33200eab773bee429c"
+      "structuredData": "75aa4c3969ceef5e98887d3165fe937daecbc7a58d6ba37735ab99e0653cbbe5"
     },
     "services/hobs/index.html": {
       "metadata": "fdd13fd898edd6cc98eb25662f5113e881f1bff177dfcf392216bb5cb27ce2e0",
@@ -618,17 +618,17 @@
     },
     "services/refrigerators/index.html": {
       "metadata": "2168291244c530f62c651b9db4412c3de9e3cc981c96dbef82f512a9b05e3739",
-      "text": "60e4afadf5c709ad37e23ada4a426dac512c9533c466fc37ec2cc80428c29e04",
-      "dom": "dcecde134dc6af99a2ac6264755b9cf02ff6acc27b84c70e7ecd76e89d3ef0d6",
+      "text": "cad4fc1e1d876e71b3749d085078dccde1c31ca3b891635eee590e80e88516ad",
+      "dom": "6151874b433d56608c43ae2a77b8b4b56629280f3230236ad9d0da50d55efddf",
       "links": "9cd6b0a4a4379ffecadd506f2e5ef58315ae60455a0aae6558371ff8be1c8734",
       "images": "54beb9966d382197c410eb52af5e4b4a525ab767ecc002924738af763f264f78",
-      "structuredData": "6db4f42e2dfe394d2c5fe18091ba5b57e623904bde807c136c990a302b6e6639"
+      "structuredData": "3c3d1f1af8cd4db9384432b8508eb5ce6374ff2279854ef2ee4ed56940e86748"
     },
     "services/washing-machines/index.html": {
       "metadata": "076f1572a77a5c98f5a142c979ed803d566bf54d9fcfaafe3cc78500d149672c",
-      "text": "ab8f5220f8631c81d210faa6fc1b490d1d67ff14e8ad16e2b6363a6edee2dff8",
-      "dom": "be2aa383420f61900c94e7ce41671bacb67d8332b982408772e4f574a3c77b19",
-      "links": "47dbe14e043edc03aed81864c65694f4f17ec9401c894067ab48facc305e63ab",
+      "text": "6fff235582ac97cb3f9c5ecebf7dab7835cf3d149311b509b9689448f962085d",
+      "dom": "a1fbd13c6d0887c717d504294f8f37eeee5f3fc68827a8563452ec6e69c2dfa5",
+      "links": "b2ca759976e530bc587dbd354b2b58bb90aa165401c6537c121628f65843697e",
       "images": "5eacf84759ab3434891ee8cef55761800e2fb2522f87a7d4235e55ac75acbae6",
       "structuredData": "bee9771fafae59579e4e55426093eb2eae174793b834a0bf94d46349cd959bfd"
     }
