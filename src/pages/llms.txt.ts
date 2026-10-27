@@ -16,15 +16,14 @@ type AnyPage = {
 
 // Канонический источник цен — раздел «Примерные цены» страницы /prices/.
 // Ключевые слова строки прайса -> ключ маршрута услуги.
-const PRICE_ROW_MAP: [RegExp, string][] = [
-  [/стиральной/i, "washing-machines"],
-  [/посудомоечной/i, "dishwashers"],
-  [/варочной/i, "hobs"],
-  [/духового/i, "ovens"],
-  [/холодильника/i, "refrigerators"],
-  [/сушильной/i, "dryers"],
-  [/котла/i, "gas-boilers"],
-  [/обслуживание кондиционера/i, "ac-repair"],
+const PRICE_ROW_MAP: [RegExp, string[]][] = [
+  [/стиральной|посудомоечной/i, ["washing-machines", "dishwashers"]],
+  [/варочной/i, ["hobs"]],
+  [/духового/i, ["ovens"]],
+  [/холодильника/i, ["refrigerators"]],
+  [/сушильной/i, ["dryers"]],
+  [/котла/i, ["gas-boilers"]],
+  [/обслуживание кондиционера/i, ["ac-repair"]],
 ];
 
 const SERVICE_DESC: Record<string, string> = {
@@ -54,24 +53,34 @@ export const GET: APIRoute = async () => {
   // источник, что видит человек. Никаких отдельных цифр в llms.txt.
   const priceRows: Record<string, string> = {};
   const pricesPage = ruPages["prices"];
-  const example = (pricesPage?.sections ?? []).find((s) =>
-    /примерн/i.test(s.title ?? ""),
-  );
+  const sections = pricesPage?.sections ?? [];
+  const example = sections.find((s) => /примерн/i.test(s.title ?? ""));
   for (const item of example?.items ?? []) {
     const it = item as { label?: string; value?: string };
     if (!it.label || !it.value) continue;
     if (/диагност/i.test(it.label)) continue; // диагностика идёт в шапку
-    for (const [re, key] of PRICE_ROW_MAP) {
+    for (const [re, keys] of PRICE_ROW_MAP) {
       if (re.test(it.label)) {
-        priceRows[key] = it.value;
+        for (const key of keys) priceRows[key] = it.value;
         break;
       }
     }
   }
-  // «Обслуживание кондиционера» — это чистка/ТО; у ремонта кондиционера цена
-  // после диагностики, отдельной строки в прайсе нет.
+  // У ремонта кондиционера цена после диагностики; у чистки — из секции
+  // «Кондиционеры»: частичная чистка 60 ₾ дешевле обслуживания от 70 ₾.
+  const acSection = sections.find((s) => /кондиционер/i.test(s.title ?? ""));
+  let partial = "";
+  for (const item of acSection?.items ?? []) {
+    const it = item as { label?: string; value?: string };
+    if (it.label && /частичная чистка/i.test(it.label) && it.value) {
+      partial = it.value;
+      break;
+    }
+  }
   if (priceRows["ac-repair"]) {
-    priceRows["ac-cleaning"] = priceRows["ac-repair"];
+    priceRows["ac-cleaning"] = partial
+      ? `частичная чистка от ${partial.replace(/^от /, "")}; обслуживание ${priceRows["ac-repair"]}`
+      : priceRows["ac-repair"];
     priceRows["ac-repair"] = "цена после диагностики";
   }
 
@@ -108,9 +117,10 @@ export const GET: APIRoute = async () => {
 > Выездной ремонт бытовой техники в Батуми и Гонио: стиральные и посудомоечные
 > машины, холодильники, сушильные машины, духовки, варочные панели, кондиционеры,
 > газовые котлы, колонки и водонагреватели. Ежедневно 9:00–20:00.
-> Диагностика 20 ₾ (при отказе от ремонта), ремонт от 40 ₾, окончательная
-> стоимость — после диагностики, запчасти оплачиваются отдельно, гарантия на
-> работу и запчасти. Зона выезда: ${AREA_LINE}.
+> Диагностика 20 ₾ (при отказе от ремонта). Цены зависят от типа техники:
+> отдельные виды работ — от 40 ₾; окончательная стоимость — после диагностики,
+> запчасти оплачиваются отдельно, гарантия на работу и запчасти.
+> Зона выезда: ${AREA_LINE}.
 > Телефон: ${phone} (звонки, WhatsApp, Viber, Telegram).
 > Обслуживаем на русском, английском и грузинском.
 
@@ -139,10 +149,11 @@ ${articleLines.join("\n")}
 ## ქართული
 
 > Tech Fix — საყოფაცხოვრებო ტექნიკის რემონტი ბათუმში და გონიოში.
-> ყოველდღე 9:00–20:00, დიაგნოსტიკა 20 ₾, რემონტი 40 ₾-დან, გარანტია.
+> ყოველდღე 9:00–20:00, დიაგნოსტიკა 20 ₾, გარანტია. ფასები — ფასების გვერდზე.
 > ტელეფონი: ${phone}.
 
 - [მომსახურება და ფასები](${u(ka!.paths["services"])})
+- [ჭურჭლის სარეცხი მანქანების რემონტი](${u(ka!.paths["dishwashers"])})
 - [მაცივარი არ აციებს — რემონტი](${u(ka!.paths["refrigerator-not-cooling"])})
 - [გაზის ქვაბი არ ინთება](${u(ka!.paths["gas-boiler-not-igniting"])})
 - [კონტაქტი](${u(ka!.paths["contacts"])})
@@ -150,9 +161,10 @@ ${articleLines.join("\n")}
 ## English
 
 > Tech Fix — on-site home appliance repair in Batumi, Georgia. Daily 9:00–20:00.
-> Diagnostics 20 GEL, repair from 40 GEL, warranty. Batumi + Gonio.
+> Diagnostics 20 GEL, warranty. Prices vary by appliance (from 40 GEL). Batumi + Gonio.
 
 - [Services & prices](${u(en!.paths["services"])})
+- [Dishwasher repair](${u(en!.paths["dishwashers"])})
 - [Gas boiler not igniting](${u(en!.paths["gas-boiler-not-igniting"])})
 - [Contacts](${u(en!.paths["contacts"])})
 
