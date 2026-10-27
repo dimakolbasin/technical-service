@@ -88,7 +88,9 @@ export const GET: APIRoute = async () => {
       // SEO-заголовки иногда содержат «— цены от N ₾»: срезаем, чтобы в
       // llms.txt не было двух разных цен в одной строке (канон — страница цен).
       const rawTitle = ruPages[key]?.title ?? key;
-      const title = rawTitle.replace(/\s*[—|–-]\s*цены[^|]*$/i, "").replace(/\s*\|\s*$/, "");
+      const title = rawTitle
+        .replace(/\s*[—|–-]\s*цены[^|]*$/i, "")
+        .replace(/\s*\|\s*$/, "");
       const desc = SERVICE_DESC[key] ?? "";
       const price = priceRows[key] ? `; цены: ${priceRows[key]}` : "";
       return `- [${title}](${u(ru.paths[key])}): ${desc}${price}`;
