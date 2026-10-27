@@ -149,7 +149,7 @@ ${articleLines.join("\n")}
 ## ქართული
 
 > Tech Fix — საყოფაცხოვრებო ტექნიკის რემონტი ბათუმში და გონიოში.
-> ყოველდღე 9:00–20:00, დიაგნოსტიკა 20 ₾, გარანტია. ფასები — ფასების გვერდზე.
+> ყოველდღე 9:00–20:00. დიაგნოსტიკა 20 ₾ (რემონტზე უარის შემთხვევაში). გარანტია. ფასები — ფასების გვერდზე.
 > ტელეფონი: ${phone}.
 
 - [მომსახურება და ფასები](${u(ka!.paths["services"])})
@@ -161,7 +161,7 @@ ${articleLines.join("\n")}
 ## English
 
 > Tech Fix — on-site home appliance repair in Batumi, Georgia. Daily 9:00–20:00.
-> Diagnostics 20 GEL, warranty. Prices vary by appliance (from 40 GEL). Batumi + Gonio.
+> Diagnostics 20 GEL (charged only if the repair is declined). Warranty. Prices vary by appliance (from 40 GEL). Batumi + Gonio.
 
 - [Services & prices](${u(en!.paths["services"])})
 - [Dishwasher repair](${u(en!.paths["dishwashers"])})
