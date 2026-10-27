@@ -8,27 +8,37 @@ const EXCLUDED_KEYS = new Set<string>(["privacy"]);
 const AREA_LINE =
   "Центр / Старый Батуми, Химшиашвили, Новый бульвар, Бони, район Аэропорта, Гонио";
 
-type AnyPage = { title?: string; description?: string };
+type AnyPage = {
+  title?: string;
+  description?: string;
+  sections?: { title?: string; items?: unknown[] }[];
+};
 
-function minPrice(page: unknown): number | null {
-  const price = (page as { price?: { groups?: unknown[]; items?: unknown[] } })
-    .price;
-  if (!price) return null;
-  const groups = Array.isArray(price.groups) ? price.groups : [];
-  const flat = Array.isArray(price.items) ? price.items : [];
-  const items = [
-    ...groups.flatMap((g) =>
-      Array.isArray((g as { items?: unknown[] }).items)
-        ? (g as { items: unknown[] }).items
-        : [],
-    ),
-    ...flat,
-  ] as { schemaPrice?: { minPrice?: number } }[];
-  const prices = items
-    .map((i) => i?.schemaPrice?.minPrice)
-    .filter((v): v is number => typeof v === "number");
-  return prices.length ? Math.min(...prices) : null;
-}
+// Канонический источник цен — раздел «Примерные цены» страницы /prices/.
+// Ключевые слова строки прайса -> ключ маршрута услуги.
+const PRICE_ROW_MAP: [RegExp, string][] = [
+  [/стиральной/i, "washing-machines"],
+  [/посудомоечной/i, "dishwashers"],
+  [/варочной/i, "hobs"],
+  [/духового/i, "ovens"],
+  [/холодильника/i, "refrigerators"],
+  [/сушильной/i, "dryers"],
+  [/котла/i, "gas-boilers"],
+  [/обслуживание кондиционера/i, "ac-repair"],
+];
+
+const SERVICE_DESC: Record<string, string> = {
+  "washing-machines": "слив, отжим, протечки, подшипники, модуль управления",
+  dishwashers: "не сливает, не греет, протечки, плохо моет",
+  hobs: "газовые и электрические конфорки, электроподжиг",
+  ovens: "нагрев, термостат, плата, вентилятор",
+  "ac-repair": "слабое охлаждение, протечки, заправка, электрика",
+  "ac-cleaning": "фильтры, дренаж, дезинфекция",
+  refrigerators: "не морозит, No Frost, компрессор, фреон",
+  dryers: "долго сушит, нагрев, конденсат",
+  "gas-boilers":
+    "не зажигается, давление, теплообменник, колонки и водонагреватели",
+};
 
 export const GET: APIRoute = async () => {
   const languages = await loadLanguages();
@@ -39,155 +49,110 @@ export const GET: APIRoute = async () => {
   const pagesOf = (lang: typeof ru | undefined) =>
     (lang?.pages ?? {}) as Record<string, AnyPage>;
   const ruPages = pagesOf(ru);
-  const enPages = pagesOf(en);
-  const kaPages = pagesOf(ka);
+
+  // Цены: берём строки из «Примерных цен» страницы /prices/ — тот же
+  // источник, что видит человек. Никаких отдельных цифр в llms.txt.
+  const priceRows: Record<string, string> = {};
+  const pricesPage = ruPages["prices"];
+  const example = (pricesPage?.sections ?? []).find((s) =>
+    /примерн/i.test(s.title ?? ""),
+  );
+  for (const item of example?.items ?? []) {
+    const it = item as { label?: string; value?: string };
+    if (!it.label || !it.value) continue;
+    if (/диагност/i.test(it.label)) continue; // диагностика идёт в шапку
+    for (const [re, key] of PRICE_ROW_MAP) {
+      if (re.test(it.label)) {
+        priceRows[key] = it.value;
+        break;
+      }
+    }
+  }
+  // «Обслуживание кондиционера» — это чистка/ТО; у ремонта кондиционера цена
+  // после диагностики, отдельной строки в прайсе нет.
+  if (priceRows["ac-repair"]) {
+    priceRows["ac-cleaning"] = priceRows["ac-repair"];
+    priceRows["ac-repair"] = "цена после диагностики";
+  }
 
   const phone = `+995 ${formatGeorgianPhone(site.phone)}`;
   const phoneDigits = site.phone.replace(/\D/g, "");
+  const u = (path: string) => site.baseUrl + path;
 
-  // цена уже в SEO-заголовке — не дублируем
-  const priceSuffix = (
-    title: string | undefined,
-    price: number | null,
-    hasPriceRe: RegExp,
-    tpl: string,
-  ) =>
-    price && !hasPriceRe.test(String(title ?? ""))
-      ? tpl.replace("%d", String(price))
-      : "";
-
-  const ruServiceLines = routeKeys
+  const serviceLines = routeKeys
     .filter(
       (key) =>
         routes[key].pageType === PageType.Service && !EXCLUDED_KEYS.has(key),
     )
     .map((key) => {
-      const page = ruPages[key] ?? {};
-      const price = minPrice(ruPages[key]);
-      const suffix = priceSuffix(
-        page.title,
-        price,
-        /цен|₾/i,
-        " — цены от %d ₾",
-      );
-      return `- ${page.title ?? key}${suffix} — ${site.baseUrl}${ru.paths[key]}`;
+      // SEO-заголовки иногда содержат «— цены от N ₾»: срезаем, чтобы в
+      // llms.txt не было двух разных цен в одной строке (канон — страница цен).
+      const rawTitle = ruPages[key]?.title ?? key;
+      const title = rawTitle.replace(/\s*[—|–-]\s*цены[^|]*$/i, "").replace(/\s*\|\s*$/, "");
+      const desc = SERVICE_DESC[key] ?? "";
+      const price = priceRows[key] ? `; цены: ${priceRows[key]}` : "";
+      return `- [${title}](${u(ru.paths[key])}): ${desc}${price}`;
     });
 
-  const kaServiceLines = routeKeys
-    .filter(
-      (key) =>
-        routes[key].pageType === PageType.Service && !EXCLUDED_KEYS.has(key),
-    )
+  const articleLines = routeKeys
+    .filter((key) => routes[key].pageType === PageType.Article)
     .map((key) => {
-      const page = kaPages[key] ?? {};
-      const price = minPrice(kaPages[key]) ?? minPrice(ruPages[key]);
-      const suffix = priceSuffix(
-        page.title,
-        price,
-        /ფას|₾/i,
-        " — ფასები %d ₾-დან",
-      );
-      return `- ${page.title ?? key}${suffix} — ${site.baseUrl}${ka?.paths[key] ?? ""}`;
-    });
-
-  const enServiceLines = routeKeys
-    .filter(
-      (key) =>
-        routes[key].pageType === PageType.Service && !EXCLUDED_KEYS.has(key),
-    )
-    .map((key) => {
-      const page = enPages[key] ?? {};
-      const price = minPrice(enPages[key]) ?? minPrice(ruPages[key]);
-      const suffix = priceSuffix(
-        page.title,
-        price,
-        /price|GEL|from \d/i,
-        " — prices from %d GEL",
-      );
-      return `- ${page.title ?? key}${suffix} — ${site.baseUrl}${en?.paths[key] ?? ""}`;
-    });
-
-  const pageLines = routeKeys
-    .filter((key) => !EXCLUDED_KEYS.has(key))
-    .map((key) => {
-      const page = ruPages[key] ?? {};
-      const title =
-        key === "home"
-          ? "Ремонт бытовой техники в Батуми | Tech Fix"
-          : (page.title ?? key);
-      const alt = [
-        en ? `${site.baseUrl}${en.paths[key]} (EN)` : null,
-        ka ? `${site.baseUrl}${ka.paths[key]} (KA)` : null,
-      ]
-        .filter(Boolean)
-        .join(", ");
-      return `- ${site.baseUrl}${ru.paths[key]} — ${title}${page.description ? `. ${page.description}` : ""}${alt ? ` Другие языки: ${alt}` : ""}`;
+      const d = (ruPages[key]?.description ?? "").split(/[.!?]/)[0];
+      return `- [${ruPages[key]?.title ?? key}](${u(ru.paths[key])}): ${d.toLowerCase()}.`;
     });
 
   const body = `# ${site.name} — ремонт бытовой техники в Батуми (Грузия)
 
-> Выездной мастер: стиральные, посудомоечные и сушильные машины, холодильники,
-> духовые шкафы, варочные панели, кондиционеры, газовые котлы, колонки и
-> водонагреватели. Ежедневно 9:00–20:00 без выходных. Диагностика 20 ₾,
-> ремонт от 70 ₾, гарантия на работы и запчасти. Зона выезда: ${AREA_LINE}.
-> Телефон: ${phone} (звонки, WhatsApp, Viber, Telegram). Языки: русский, английский, грузинский.
+> Выездной ремонт бытовой техники в Батуми и Гонио: стиральные и посудомоечные
+> машины, холодильники, сушильные машины, духовки, варочные панели, кондиционеры,
+> газовые котлы, колонки и водонагреватели. Ежедневно 9:00–20:00.
+> Диагностика 20 ₾ (при отказе от ремонта), ремонт от 40 ₾, окончательная
+> стоимость — после диагностики, запчасти оплачиваются отдельно, гарантия на
+> работу и запчасти. Зона выезда: ${AREA_LINE}.
+> Телефон: ${phone} (звонки, WhatsApp, Viber, Telegram).
+> Обслуживаем на русском, английском и грузинском.
 
-## Услуги (с ценами)
+## Основное
 
-${ruServiceLines.join("\n")}
+- [Главная](${u(ru.paths["home"])}): о сервисе, преимущества, зона выезда.
+- [Все услуги](${u(ru.paths["services"])}): полный перечень услуг.
+- [Цены](${u(ru.paths["prices"])}): актуальный прайс по всем видам работ.
+- [Контакты](${u(ru.paths["contacts"])}): телефон, мессенджеры, часы, адрес.
 
-## Как понять, что пора звонить
+## Услуги (рус)
 
-- Стиральная или посудомоечная машина не сливает воду, течёт или не греет.
+${serviceLines.join("\n")}
+
+## Типовые проблемы
+
+- Машина не сливает воду, течёт, не греет или плохо моет.
 - Холодильник не морозит или охлаждает слабо.
-- Кондиционер не охлаждает, течёт или требует чистки после сезона.
-- Газовый котёл или колонка не включается, не зажигается, тухнет или падает давление.
+- Кондиционер не охлаждает, течёт или давно не чистился.
+- Газовый котёл или колонка не включается, не зажигается, тухнет.
 
-## Зона выезда
+## Статьи
 
-${AREA_LINE}. Работа за пределами города (Гонио) — по договорённости.
+${articleLines.join("\n")}
 
-## ქართული (Georgian)
+## ქართული
 
-> Tech Fix — საყოფაცხოვრებო ტექნიკის რემონტი ბათუმში. გასვლა ადგილზე:
-> სარეცხი და ჭურჭლის მანქანები, საშრობები, მაცივარები, ღუმელები, კონდიციონერები,
-> გაზის ქვაბები და კოლონკები. ყოველდღე 9:00–20:00. დიაგნოსტიკა 20 ₾,
-> რემონტი 70 ₾-დან, გარანტია. მომსახურების ზონა: ბათუმი და გონიო.
-> ტელეფონი: ${phone} (ზარი, WhatsApp, Viber, Telegram).
+> Tech Fix — საყოფაცხოვრებო ტექნიკის რემონტი ბათუმში და გონიოში.
+> ყოველდღე 9:00–20:00, დიაგნოსტიკა 20 ₾, რემონტი 40 ₾-დან, გარანტია.
+> ტელეფონი: ${phone}.
 
-### მომსახურება
-
-${kaServiceLines.join("\n")}
-
-### როდის დავურეკოთ ოსტატს
-
-- ჭურჭლის სარეცხი მანქანა არ ცლის წყალს, ჟონავს ან არ აცხელებს.
-- მაცივარი არ აციებს ან სუსტად აცივებს.
-- კონდიციონერი ცუდად აგრილებს, ჟონავს ან საჭიროებს გაწმენდას.
-- გაზის ქვაბი არ ირთვება, არ ინთება ან წნევა ეცემა.
-
-### გასვლის ზონა
-
-ბათუმი: ცენტრი, ხიმშიაშვილი, ახალი ბულვარი, ბონი, აეროპორტის ზონა; გონიო — შეთანხმებით.
+- [მომსახურება და ფასები](${u(ka!.paths["services"])})
+- [მაცივარი არ აციებს — რემონტი](${u(ka!.paths["refrigerator-not-cooling"])})
+- [გაზის ქვაბი არ ინთება](${u(ka!.paths["gas-boiler-not-igniting"])})
+- [კონტაქტი](${u(ka!.paths["contacts"])})
 
 ## English
 
-> Tech Fix is an on-home appliance repair service in Batumi, Georgia: washing
-> machines, dishwashers, dryers, refrigerators, ovens, hobs, air conditioners,
-> gas boilers and water heaters. Daily 9:00–20:00. Diagnostics 20 GEL, repair
-> from 70 GEL, warranty on parts and labor. Service area: Batumi districts + Gonio.
-> Phone: ${phone} (calls, WhatsApp, Viber, Telegram). We speak English.
+> Tech Fix — on-site home appliance repair in Batumi, Georgia. Daily 9:00–20:00.
+> Diagnostics 20 GEL, repair from 40 GEL, warranty. Batumi + Gonio.
 
-### Services
-
-${enServiceLines.join("\n")}
-
-### When to call
-
-- Washer or dishwasher not draining, leaking or not heating.
-- Refrigerator not cooling or cooling weakly.
-- Air conditioner cooling poorly, leaking or due for a cleaning.
-- Gas boiler or water heater won't start, won't ignite, locks out or loses pressure.
+- [Services & prices](${u(en!.paths["services"])})
+- [Gas boiler not igniting](${u(en!.paths["gas-boiler-not-igniting"])})
+- [Contacts](${u(en!.paths["contacts"])})
 
 ## Контакты / Contacts
 
@@ -196,10 +161,12 @@ ${enServiceLines.join("\n")}
 - Telegram: ${site.telegram}
 - Сайт / Website: ${site.baseUrl}
 
-## Страницы / Pages (RU · EN · KA)
+## Языковые версии / Languages
 
-${pageLines.join("\n")}
+- [English — главная](${u(en!.paths["home"])})
+- [ქართული — მთავარი](${u(ka!.paths["home"])})
 `;
+
   return new Response(body, {
     headers: { "Content-Type": "text/plain; charset=utf-8" },
   });
