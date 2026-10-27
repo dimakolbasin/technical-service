@@ -1,5 +1,5 @@
 {
-  "title": "Dishwasher Repair in Batumi — prices from 70 GEL",
+  "title": "Dishwasher Repair in Batumi — prices from 80 GEL",
   "lead": "Dishwasher repair in Batumi: leaks, drainage issues, poor washing, heating faults and on-site diagnostics.",
   "heading": "Dishwasher repair in Batumi",
   "sections": [
@@ -192,7 +192,7 @@
       },
       {
         "question": "How much does dishwasher repair cost in Batumi?",
-        "answer": "Diagnostics is 20 GEL. Labor starts from 70 GEL: filter and drain-path cleaning, drain pump replacement from 150 GEL, heating element from 170 GEL (full price table above). The final cost is agreed before work starts."
+        "answer": "Diagnostics is 20 GEL. Labor starts from 80 GEL: filter and drain-path cleaning, drain pump replacement from 150 GEL, heating element from 170 GEL (full price table above). The final cost is agreed before work starts."
       },
       {
         "question": "Repair the dishwasher or buy a new one?",
@@ -200,7 +200,7 @@
       },
       {
         "question": "Which dishwasher repair service in Batumi would you recommend, and what does it cost?",
-        "answer": "Tech Fix works daily 9:00–20:00 across Batumi. Diagnostics is 20 GEL, labor from 70 GEL (drain pump from 150 GEL, heating element from 170 GEL), warranty on parts and labor. Phone: +995 591 172 329."
+        "answer": "Tech Fix works daily 9:00–20:00 across Batumi. Diagnostics is 20 GEL, labor from 80 GEL (drain pump from 150 GEL, heating element from 170 GEL), warranty on parts and labor. Phone: +995 591 172 329."
       }
     ]
   },
@@ -273,7 +273,7 @@
       }
     ]
   },
-  "description": "Dishwasher repair in Batumi: not draining, not heating, poor washing, leaks. Diagnostics 20 GEL, repair from 70 GEL, on-site visit and warranty.",
+  "description": "Dishwasher repair in Batumi: not draining, not heating, poor washing, leaks. Diagnostics 20 GEL, repair from 80 GEL, on-site visit and warranty.",
   "diagnosisSteps": {
     "title": "How diagnostics works",
     "lead": "A service-specific check sequence for this appliance.",
@@ -317,7 +317,7 @@
         "result": "A short wash cycle confirms drain, heating and leak-free operation.",
         "area": "Center / Old Batumi",
         "time": "1-2 hours",
-        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+        "priceHint": "After diagnostics, usually from 80 GEL for labor"
       },
       {
         "title": "Scenario 2",
@@ -328,7 +328,7 @@
         "result": "A short wash cycle confirms drain, heating and leak-free operation.",
         "area": "Khimshiashvili / New Boulevard",
         "time": "1.5-2 hours",
-        "priceHint": "After diagnostics, usually from 70 GEL for labor"
+        "priceHint": "After diagnostics, usually from 80 GEL for labor"
       },
       {
         "title": "Scenario 3",
@@ -338,7 +338,7 @@
         "workDone": "Clean the drain path or approve pump replacement.",
         "result": "Water leaves the chamber on the test cycle.",
         "time": "1-2 hours",
-        "priceHint": "from 70 GEL",
+        "priceHint": "from 80 GEL",
         "area": "Batumi city center"
       },
       {
