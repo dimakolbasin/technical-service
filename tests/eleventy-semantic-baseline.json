@@ -402,11 +402,11 @@
     },
     "ka/articles/oven-not-heating/index.html": {
       "metadata": "c85069058aff11a816ee02db5332f5a3d68a6bdc92453467501f0d159558cacd",
-      "text": "3876aa2fc396e2294160ca881af045ba6fdb0af86376a0cd0b109c0e946ba12a",
+      "text": "2079d13e525ae94b7b2a63e55b38aaeb6a54c63c02daa222a9cc44d077417f98",
       "dom": "1396666db4ade942b741ed8bc426acbc977560cecb6a6a68dc497e694a8bb422",
       "links": "0b320d5c5b6b7509a8232f1e5dd156e3a1e46ccf651054457c6e7212575ec944",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
-      "structuredData": "8f7753e74062be045700374b378aa4729b89f60fec44589e78fc77728e36e37d"
+      "structuredData": "5ddfe39bd8c33390a34b74d081e338042dab62e3cf8e06e7be230b916f1721f9"
     },
     "ka/articles/refrigerator-not-cooling/index.html": {
       "metadata": "e50a48bb016513a1b60be533872e58125f19dcf3ab4758f8bf490d6a3ec06736",
@@ -474,19 +474,19 @@
     },
     "ka/services/dishwashers/index.html": {
       "metadata": "2c4cca613d0cf22c66b4e9fce49449707740c2052e6f0055d0a390a936290f0f",
-      "text": "4462c08740e34b65146bb3070e7ce43dbdea1cbd0c3bf3c9b80d9bf963e93f15",
+      "text": "e84f096938cbe63ac5b98f37f4aba7734abc852f3b86d701987c01144e441a84",
       "dom": "9aee2f2bb3e1b9ab04de5c4392fdea1abf01a453426f652d2bbc9074a4cccfb2",
       "links": "b844efb5e61ca06f71867e98dcc422eebe5ebfc00e23ae371bbe94312af9f1d2",
       "images": "a8a5881f7b274908af961ce14091d3b1001caa0df847a42a05d586e4e2e605eb",
-      "structuredData": "fa19a0cc846cdbd270690b9a41ab68e077e9200f266f254b6dfa931b080e2bfa"
+      "structuredData": "45e72e93a1091affa6412117a81de45e294f0f64df02f50091ef2631cb750387"
     },
     "ka/services/dryers/index.html": {
       "metadata": "9bead1b906863031af57e05fd4ca46cbf4c78d2a1cd729ce9df1376ed2dc7338",
-      "text": "9b751e21f311eda9035d47f738a819bd9106fbeb3a6fdac70578f11c77427563",
+      "text": "4037b49f056d6c916fc39d9820d2dd5c173d66aa3481715c14b7f6f6d391cf74",
       "dom": "a8d0eaca7600c2e5258a83938d808f387788e1596ec318c9e140ef7eb1a783bb",
       "links": "478f90baa5447de66476063d174d394aac2a140f01e4005815500913ec626629",
       "images": "325345401f81daea4364baf06bb0dcdc17102f0ce9517f11f148a7bff6becf8b",
-      "structuredData": "820468b202986b8cb73c4e6b6852d3cacaf255a0210639f70450d97650f1767a"
+      "structuredData": "9cacab3ed7143b5674bc9c839439085255400c086afab8b50c5614c28ce09847"
     },
     "ka/services/gas-boilers/index.html": {
       "metadata": "bffb7ae482f8792a8ee8939a73fcad72b2eb9633a8651c35d67295dc42c1e3a1",
@@ -514,27 +514,27 @@
     },
     "ka/services/ovens/index.html": {
       "metadata": "63452733512e5438d4eccd55d644a3a41c4a23f3e7410bb00bbbe8a2a061a926",
-      "text": "5812772b0847aab7f66a965933461b0c428fcffbd248d98eddc0d5f8dd4939cf",
+      "text": "f5631aa13e07ff0306d5d437f75e4c227e3fc73f1dc5a4d07d73d7258bfdff34",
       "dom": "3bd5f089063110a825e08a29251e60dd9e97cbed6a5b4e171d1f0ab9cc15b031",
       "links": "4a4143f16f275848659653fbb4868833e4350950f5136ac1d46cd69d03d67d57",
       "images": "43e5d38b49b9910b5ec0ad25565011e201eb357a54d9b38796296afbfd94e248",
-      "structuredData": "400ec6f867cf29cb13ba5a913b40f977dcfbd9693fc37829e67e5e91a5c4e891"
+      "structuredData": "057870e2bc673392193c3bbbc660c845789e0d9c424aa16a645dd69cb7abfd2b"
     },
     "ka/services/refrigerators/index.html": {
       "metadata": "423a78f95c42a719092eb7af95851adbc7bcb5295b6d12fdc454009bcb0f716f",
-      "text": "234cd548e6d6251cb8177f5a8de558713a41cab4f70ffbb35ee360897cc35eda",
+      "text": "3cee65af87e01a319399b76ef044f477e53f828456443d4db373f3d88694a61c",
       "dom": "6672198a2a96f7c4ab3848f1683e892b1aceb69fc6311dbe7fce5529c6c334af",
       "links": "522550c67c7865d3eaee38f17f2a22ca2113a13f2ed59c44b912ff9bdf0e27be",
       "images": "2427f5b71a6030c880e5ad086582fb787d0ee52226d6090a8ebba1066ea3fa3e",
-      "structuredData": "e97489861f428edbc516c214689a850701b0ff9a66997b4ee8a1842e39f6848a"
+      "structuredData": "448123b4f34f7d902b6cb57e76f1b7a9002c6560f071f7109d051c719cf88e8b"
     },
     "ka/services/washing-machines/index.html": {
       "metadata": "3a37ce70a39f049c2eb05aeb97f1cc9c915824e73703514aeb418197dc8b7717",
-      "text": "3464bd551f8ab335278098813cb6c61a31838751ea14426d856c9735f940ddff",
+      "text": "cfc695cb37367e9d6c16b0f59b3396d0ac3391282ff2318a632c3561df328a8b",
       "dom": "8102d9c31d7a0bf220bfba3368006482a7f27199e271607fe43d6870de527333",
       "links": "632f620edbde13cd30b7f8ff51a6edbd4fdd52a05646602042b179bbe222b2bb",
       "images": "34d3c865e0e30bf681b934a1ae6268d38197deb47bb7c5f438c0d047b8b5c104",
-      "structuredData": "5763ef8c68bef72a909c3532f2d403139f1a6af9bc9fee442b87b5cd89a81a28"
+      "structuredData": "d265f74097cd0f887fac363208be650f80479252d4dff31cb2c5d6ddd6d54d25"
     },
     "prices/index.html": {
       "metadata": "c70897e833ef2bc95bd8588c1549e5ec86a18525d619a38c18b884b9e70c7ffc",
