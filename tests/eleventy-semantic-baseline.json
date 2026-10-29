@@ -274,11 +274,11 @@
     },
     "en/services/ac-repair/index.html": {
       "metadata": "8ac7da245da9ca9d7a60edc5c9ad48e8194ae5464be7174c4fbd3e367a3126a7",
-      "text": "1e511b279c0814f250595d2c4ddab4ff089d213f16fb681e850fb69555981349",
-      "dom": "7569fc0f8c8ac8ab25ae995d15fe5f5e441a7a71992db4cdcc773d902e273377",
+      "text": "f9505a9042cb760b54da43efcb2e2df7cfad0fb959a81c46095bd27dbc4e900b",
+      "dom": "bb79aec2dee45a0e5ace09cc9cc8aab258aeff3d2faad86d5d57ba75edc29cf0",
       "links": "7a9c3ef3eefaf04604e3937a4616efe65a9610887a8a14781c916b393bde9379",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
-      "structuredData": "10f359492301c1cce4d0e7c7d09ebdb44447a39b6a2147513c7a1b3f008f459e"
+      "structuredData": "e316797c75836d979364fc52f8fc15c9ce1036e11d05c95d8b9422e7e226fc63"
     },
     "en/services/dishwashers/index.html": {
       "metadata": "07fc8b60e4e9b8f9b7007d2d7a7d5fe38f61b00766efbcf8ce47695c57142ed0",
@@ -298,11 +298,11 @@
     },
     "en/services/gas-boilers/index.html": {
       "metadata": "ca687380b7254d12c547b05c74e54040725b9219296e809b576de17cc656bb32",
-      "text": "acbaf6fc6c42ef827087ceb2ebe5d7b9c5ea75c4f1dc1d883c55cd0b05985af0",
-      "dom": "e5bbcf6c0166cee294f3f513523347a8331728091b078b85cd9b7a0ac07da61e",
+      "text": "97c77b2b6afbf889d0df220e03743c98231f6ec40a7957312772f7a8bfaea648",
+      "dom": "ed7477454f610a5f55f5f2770baa3169170324f60e8bdda88b76b81ea18f72bc",
       "links": "3cba4a3065d482d1e72a6ce1f03308ec4c9fc2847a78e28212466881533111b2",
       "images": "416aa645e0e9691743f0ab1cf8463f95c9ff997d40563b8a984c4c7bf8dd0a62",
-      "structuredData": "84e82a8ee8c192d4a16ad1ef634c8800a7d35ebfc563b5f08b3a5829ed47c340"
+      "structuredData": "680e9afa6e2aaf5bdf9247857ba78eb07f8438656927228798ec01592c73015b"
     },
     "en/services/hobs/index.html": {
       "metadata": "849abf059c3ae1080c689b9aa04cf2c53fdd187709fd95928680d4269d7a23fc",
@@ -330,19 +330,19 @@
     },
     "en/services/refrigerators/index.html": {
       "metadata": "7eea58a0ac26ea7e81ed65d00f3967b7adb70dd73e49141971b7dc0f451f41aa",
-      "text": "9b982daa1615cc589f5c1a7056a0c9dcfcefba457a08f576ce5dd3cb3b31a901",
-      "dom": "69e974d857ced231b3182e0d8e758fdea27bd09c7d6ab69f3b1b52d244e1443a",
+      "text": "58a0b19a1f7947efe64c435c40282688e3b899f05054e96f008df8ce37f231bd",
+      "dom": "a4f59d7b0c148900c84fdda5b5ad6475737b7e825dc042cf74e320ba26d92130",
       "links": "b0df1bf9fc64a7bddfaf06762ef02a69ab66cde03b4849798d46da1411ee8696",
       "images": "fff056cabf883fa5fa0a594d2445a8a2b319d45497852908b9dd1ce6d22160b4",
-      "structuredData": "85e2f285d7014ce733c5d33dbef273e18cd6b983e116a2824c307912a9ac385a"
+      "structuredData": "49d069dfcac308fe81b1a11057baf79e7514b079caae96419a96f78c387b60b9"
     },
     "en/services/washing-machines/index.html": {
       "metadata": "34347271e9e474bd5360da9fb65098564baf7a2bcdb2a874bd0167bbb7ad7b9f",
-      "text": "66e7554c0f6648c6267720aeace220e8897b1e8cafe72f4adcff6287f028f76e",
-      "dom": "065026b818bbf080a0e190d8b3c73a297167ad26a9bc2232a911d10ea66afe7c",
+      "text": "a072806c6db7602d506a88fe4db0f4bbdc611f503e2cf7086ac273432452a6dd",
+      "dom": "2f8cab1bcf6f7cb9bf43116720c4780e9af24cac708823d5c354921e90a549a9",
       "links": "86a63347d62e9105e805b9afc4894fe5f592d2a51ee425bb052cfb34b66a7b84",
       "images": "3d41617daba506c19082eb1d6e25bdfc7b6303c533133589e409c1d391a61b79",
-      "structuredData": "14188a801ac7b8167895f88b9dfe71e4461f66844d1e2da0616416793ccb37b2"
+      "structuredData": "d7817323514f6664f23dd298542543997663c938f697c837c62bce406684b31f"
     },
     "index.html": {
       "metadata": "85a4128b9ccd723231b95c46818a68c312cbc278010dd0a48b86b49630b2e3df",
@@ -465,12 +465,12 @@
       "structuredData": "5cf29c71309a9eeb25cdb1a91d0d68f9bfb6f9d057dfdb206b68d7ef956f2e39"
     },
     "ka/services/ac-repair/index.html": {
-      "metadata": "0c7aebccc42f1ef3264e04b8efaa03ee8486a1f22630dc9bfdc67aae25d442e4",
-      "text": "e0ba6b215ac1360bdb70ffbfe64c575331caf42902b97178ea6be6af5c199200",
-      "dom": "ddce79639fb6a7bc32bb8955354e12e783e48872c87111b6828760120b5a38c4",
+      "metadata": "c838fc4ca06393f6d5439c10fbb46a4b2bad1cd73c3298dd528d3ae5f2a4938e",
+      "text": "f1caf3953982dca0bae3633d99401acfe8a043a91a207c181fc09fa54a7c2324",
+      "dom": "9ae517a631931faffd15a50685981651d7b74a3d3ce6aca4bdb0538ce0c42c63",
       "links": "2961100cb5c82c1d7c7b69284e071a7612ed9a9da7615d364d7da272d78c4c34",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
-      "structuredData": "83424a5945754e8ab166dee5633e0253521f138c4d817edee783f36ccc357186"
+      "structuredData": "2ce2f5c996849ddd0d60991dca88fa1f3e4b8dd037182253007eb72c2129a243"
     },
     "ka/services/dishwashers/index.html": {
       "metadata": "2c4cca613d0cf22c66b4e9fce49449707740c2052e6f0055d0a390a936290f0f",
@@ -489,20 +489,20 @@
       "structuredData": "bb8cde11a92bec95555fab5216eeeabd824563d4f6b185e918b387e84ecb86bb"
     },
     "ka/services/gas-boilers/index.html": {
-      "metadata": "f73e19b86ce686cd38ce7af4516bc70fe3896edc639772ae2cdc533ffb81bc1f",
-      "text": "b17f8f4452f643c4b49d31af771c872cf5de4a4087ee54f7f3ea85ae7a8b4066",
-      "dom": "d9ca0d3a084349c006ed2a541818270594d6b7e56b18e8b0a11d2485b57e72a3",
+      "metadata": "bffb7ae482f8792a8ee8939a73fcad72b2eb9633a8651c35d67295dc42c1e3a1",
+      "text": "746f4919fa011025c8fff2bef0c04c38818e391c4734f5924923ebaa3e58d82c",
+      "dom": "1096172fbd0a6a6a52727a5fe2456ac4cc0679f8062435ad6e80abe5de4aca28",
       "links": "922d4347df2a54009ad9a0a6c4434faf554aa780af6b02414a580aaafb549647",
       "images": "787afb993c12d24a1b8666d90cb4cfe0ef69c126d036cf3ca1ed04554618efaf",
-      "structuredData": "dcc49639d67bfa263bc3146965ce791ff640c209a2805f36737ea8fa8722351e"
+      "structuredData": "3c008155e0b3ce3da5d1d0b3c99afece115fb3b8897d2951cc1028967c9e189d"
     },
     "ka/services/hobs/index.html": {
-      "metadata": "49ced1270330227d541356c34578ea3ad4c01cceb1c3e665c76944762890f4aa",
-      "text": "b3d9347f794a40968a140431a4e15e558c561bd5470994055d0b43217c373b30",
-      "dom": "f455e0f7ff6073d4215508d4a530573f2f739e3e9d26b6030b812a8e718a56cd",
+      "metadata": "e6ce690bc1cac503b15e896d61d03ab8bedd048f6844868b18d18d2bd8e34426",
+      "text": "46c9ed13ddb19e465efa7c3647320baf73499cb1c6723be1da30affe3cbdc1d1",
+      "dom": "b99471467130330826d5a578d3eec4518a853e27ed00d4380c7af88b8560a401",
       "links": "a7ae9de0db8bcd79451306ede296a40acfe1b573d5a7f9122737fadb4aed078f",
       "images": "8c12e03acaf566c84cd09d2f7c8fd79185913b9703440b07b5f9b09a634d5864",
-      "structuredData": "f142b19866ac9535fc8831705da11f276e73b78ed414f0630b807300cfd47626"
+      "structuredData": "d6c1723802201a4c57065ea01e502dc70aca1800d00fb4e00b78d373e81355de"
     },
     "ka/services/index.html": {
       "metadata": "5f984c3a44d7120c168a656430924a85b07555ca78df0e121a9dc32a80c4304a",
@@ -521,20 +521,20 @@
       "structuredData": "9a3343e39d37f5cfedfdd94da5076505938b82bd51d9d07232727995579739f8"
     },
     "ka/services/refrigerators/index.html": {
-      "metadata": "3cb3f1dea5d8033987d62cda7fef40f82be9b94328287b93b76126a2fc3b5f78",
-      "text": "44f33176183c95a72e35c8dcb344f0c60ba4a42d247457e9b10fad1a129551ef",
-      "dom": "c81b090c84daa8071bc054bdf40d25377f41ace8176ecb0a4ad0ceb99e23610c",
+      "metadata": "423a78f95c42a719092eb7af95851adbc7bcb5295b6d12fdc454009bcb0f716f",
+      "text": "cefa85536d72ca80057d5b98d0ca6adf7daf2743083eb768a1adb57f8e14f2ff",
+      "dom": "6672198a2a96f7c4ab3848f1683e892b1aceb69fc6311dbe7fce5529c6c334af",
       "links": "522550c67c7865d3eaee38f17f2a22ca2113a13f2ed59c44b912ff9bdf0e27be",
       "images": "2427f5b71a6030c880e5ad086582fb787d0ee52226d6090a8ebba1066ea3fa3e",
-      "structuredData": "0d84d69c7f2530ac97e9d9b8353505ed63a37d6ea7f2c9b092724e5189a0c243"
+      "structuredData": "625cbd583fe71fe02eebed9389af3da5c87dd3d66d09aee524161f322d26bb23"
     },
     "ka/services/washing-machines/index.html": {
-      "metadata": "1623f0951943960c2972092e1e8a6f40db422009251a771d5c2c22cc5d577bed",
-      "text": "fab1403fe6e8753a937a7b03f80bae08141f5f8da7acb79c95d47b20e77f37da",
-      "dom": "5b82cfbd8d4a719528feece48dfd9e61674cae73441ef53d6fe307a8f2abf0b0",
+      "metadata": "3a37ce70a39f049c2eb05aeb97f1cc9c915824e73703514aeb418197dc8b7717",
+      "text": "8c43af7e11c5d3cb73bc495737dca51cfd7423245c0b2bf42a36085a56fd6ce8",
+      "dom": "560f884a5f9713eb7fa3072fd0632489ad59d013d4fb82040794ca1c95738843",
       "links": "632f620edbde13cd30b7f8ff51a6edbd4fdd52a05646602042b179bbe222b2bb",
       "images": "34d3c865e0e30bf681b934a1ae6268d38197deb47bb7c5f438c0d047b8b5c104",
-      "structuredData": "17579fb746c854cacdd38eb8305bde78120fe73e070c1a5a94dd395c01717ef6"
+      "structuredData": "08597190f14cf420323acd4d35245848a87ca574170f206d444320b79a455775"
     },
     "prices/index.html": {
       "metadata": "c70897e833ef2bc95bd8588c1549e5ec86a18525d619a38c18b884b9e70c7ffc",
@@ -562,11 +562,11 @@
     },
     "services/ac-repair/index.html": {
       "metadata": "ff453c991e5cf3497ac46cd455392c4f0692b37f2ed00fcbee97895b5ca832e5",
-      "text": "5f9f81fc1e1b5cf12c195a9a8cf83dd9dc1aa5628d750e10bd19887bc562bbd4",
-      "dom": "4f7f3b4ddd10d3db53c8a3bd2999afb2ddab34a650353cb8b855fadd06d1ce30",
+      "text": "5cf4c3919f866f583cb84edba54d16e6d17ce1475677a5fcacff27770605d0a5",
+      "dom": "0826516093b5d314cf16f31818c890c94d0fe7531e87ffe7998cacdbb264c9cf",
       "links": "00da4437062488555a810b1cc4721528f5937dc80107e809e3bc1183766af1e1",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
-      "structuredData": "8bff80a3431637d084b2254142e433aa22bacd06aba099dbc3e417c564b07c2b"
+      "structuredData": "438516d40a685fb4bf048e9780ffa4101db9c5b21666a868f86b4fb4316bcc6d"
     },
     "services/dishwashers/index.html": {
       "metadata": "fca349387449ba478b519aa777853c1430db9246e16f6d951a5b9b18a1d2a0da",
@@ -586,11 +586,11 @@
     },
     "services/gas-boilers/index.html": {
       "metadata": "1b245decbfc670aade5d06cc06f5e4266a706571983669c64165e454be694826",
-      "text": "593bf8f54bd2a6db2eb831043f07fa84c44d854540a59d7b2ce8e4d3bf03f25b",
-      "dom": "2c2ac5da54d9589462aee71a4713e511520f39244e428633456cbbdb51ac751a",
+      "text": "af36317a953af5490729171e60966a42e97f0d4e67dda2e0b67b8fbed89fcb2b",
+      "dom": "d1aa0b2c1f2f0a98c1bb1f816f865200bafb788e27b3453c3cf98b03eec83ee9",
       "links": "faf2a732b0f51b470d12c5e9a8e91969abe999e2b6891b56d9a2a8645737eb7b",
       "images": "ce225c8d796d6ac8849ab5e5d9454b6b9214fbd255a7a3d49dbaa81041423465",
-      "structuredData": "75aa4c3969ceef5e98887d3165fe937daecbc7a58d6ba37735ab99e0653cbbe5"
+      "structuredData": "bb6fe4ec7d77eef7c0deda68cc44fada02175be6754504a057eed5e2e76e98b4"
     },
     "services/hobs/index.html": {
       "metadata": "fdd13fd898edd6cc98eb25662f5113e881f1bff177dfcf392216bb5cb27ce2e0",
@@ -618,19 +618,19 @@
     },
     "services/refrigerators/index.html": {
       "metadata": "2168291244c530f62c651b9db4412c3de9e3cc981c96dbef82f512a9b05e3739",
-      "text": "cad4fc1e1d876e71b3749d085078dccde1c31ca3b891635eee590e80e88516ad",
-      "dom": "6151874b433d56608c43ae2a77b8b4b56629280f3230236ad9d0da50d55efddf",
+      "text": "401e16d74d9a616288cf00e9525ac26e9c19b3ac7a21f82c28e7b536914682fb",
+      "dom": "086f38ac44d566003535fe280add4e4c1f7e892525e913a12ce907873fcb84dd",
       "links": "9cd6b0a4a4379ffecadd506f2e5ef58315ae60455a0aae6558371ff8be1c8734",
       "images": "54beb9966d382197c410eb52af5e4b4a525ab767ecc002924738af763f264f78",
-      "structuredData": "3c3d1f1af8cd4db9384432b8508eb5ce6374ff2279854ef2ee4ed56940e86748"
+      "structuredData": "2d80954af4b3c656b9c032b4809273375e88d2d31a009a0501b9529bb4b5b74a"
     },
     "services/washing-machines/index.html": {
       "metadata": "076f1572a77a5c98f5a142c979ed803d566bf54d9fcfaafe3cc78500d149672c",
-      "text": "6fff235582ac97cb3f9c5ecebf7dab7835cf3d149311b509b9689448f962085d",
-      "dom": "a1fbd13c6d0887c717d504294f8f37eeee5f3fc68827a8563452ec6e69c2dfa5",
+      "text": "16c5a624f0295f8753ae82a0be0e7b56dd1d01fae82211a73ed8d3b42dfceff8",
+      "dom": "079e1a6715ab0c037b7f59908c8e7686d7d0f33f311f3859d26645b385047f3e",
       "links": "b2ca759976e530bc587dbd354b2b58bb90aa165401c6537c121628f65843697e",
       "images": "5eacf84759ab3434891ee8cef55761800e2fb2522f87a7d4235e55ac75acbae6",
-      "structuredData": "bee9771fafae59579e4e55426093eb2eae174793b834a0bf94d46349cd959bfd"
+      "structuredData": "ace8f13dd8ea277bf4c7d7c0652015065c1fe67df13f138dc3f0724fed165b02"
     }
   }
 }

@@ -112,7 +112,7 @@ export const GET: APIRoute = async () => {
       return `- [${ruPages[key]?.title ?? key}](${u(ru.paths[key])}): ${d.toLowerCase()}.`;
     });
 
-  const body = `# ${site.name} — ремонт бытовой техники в Батуми (Грузия)
+  const body = `# ${site.name} — вызов мастера по ремонту бытовой техники в Батуми (Грузия)
 
 > Выездной ремонт бытовой техники в Батуми и Гонио: стиральные и посудомоечные
 > машины, холодильники, сушильные машины, духовки, варочные панели, кондиционеры,
@@ -148,7 +148,8 @@ ${articleLines.join("\n")}
 
 ## ქართული
 
-> Tech Fix — საყოფაცხოვრებო ტექნიკის რემონტი ბათუმში და გონიოში.
+> Tech Fix — საყოფაცხოვრებო ტექნიკის რემონტი ბათუმში და გონიოში. ხელოსანი ბათუმში
+> გამოძახებით: სარეცხი და ჭურჭლის მანქანები, მაცივრები, კონდიციონერები, გაზის ქვაბები.
 > ყოველდღე 9:00–20:00. დიაგნოსტიკა 20 ₾ (რემონტზე უარის შემთხვევაში). გარანტია. ფასები — ფასების გვერდზე.
 > ტელეფონი: ${phone}.
 
@@ -160,7 +161,8 @@ ${articleLines.join("\n")}
 
 ## English
 
-> Tech Fix — on-site home appliance repair in Batumi, Georgia. Daily 9:00–20:00.
+> Tech Fix — on-site home appliance repair in Batumi, Georgia. Certified
+> technician, same-day visits. Daily 9:00–20:00.
 > Diagnostics 20 GEL (charged only if the repair is declined). Warranty. Prices vary by appliance (from 40 GEL). Batumi + Gonio.
 
 - [Services & prices](${u(en!.paths["services"])})
