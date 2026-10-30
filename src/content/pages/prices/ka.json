@@ -214,7 +214,7 @@
           "title": "ელექტროობა და მართვა",
           "items": [
             {
-              "label": "TEN-ის შეცვლა",
+              "label": "ტენის შეცვლა",
               "value": "90–120 ₾-დან",
               "schemaPrice": {
                 "currency": "GEL",
@@ -333,7 +333,7 @@
           "title": "გაცხელება და ელექტროობა",
           "items": [
             {
-              "label": "TEN-ის შეცვლა",
+              "label": "ტენის შეცვლა",
               "value": "170–250 ₾-დან",
               "schemaPrice": {
                 "currency": "GEL",
@@ -488,7 +488,7 @@
       "title": "ღუმელები",
       "items": [
         {
-          "label": "TEN-ის შეცვლა (ზედა/ქვედა/გრილი)",
+          "label": "ტენის შეცვლა (ზედა/ქვედა/გრილი)",
           "value": "130–150 ₾-დან",
           "schemaPrice": {
             "currency": "GEL",
@@ -637,7 +637,7 @@
               }
             },
             {
-              "label": "გალღობის TEN-ის შეცვლა",
+              "label": "გალღობის ტენის შეცვლა",
               "value": "70–100 ₾-დან",
               "schemaPrice": {
                 "currency": "GEL",
@@ -698,7 +698,7 @@
           "title": "გაცხელება და ელექტრონიკა",
           "items": [
             {
-              "label": "TEN-ის შეცვლა",
+              "label": "ტენის შეცვლა",
               "value": "130–200 ₾-დან",
               "schemaPrice": {
                 "currency": "GEL",
