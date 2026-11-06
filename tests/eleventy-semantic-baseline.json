@@ -301,9 +301,9 @@
     },
     "en/services/gas-boilers/index.html": {
       "metadata": "ca687380b7254d12c547b05c74e54040725b9219296e809b576de17cc656bb32",
-      "text": "97c77b2b6afbf889d0df220e03743c98231f6ec40a7957312772f7a8bfaea648",
-      "dom": "ed7477454f610a5f55f5f2770baa3169170324f60e8bdda88b76b81ea18f72bc",
-      "links": "3cba4a3065d482d1e72a6ce1f03308ec4c9fc2847a78e28212466881533111b2",
+      "text": "812e8cbfe350372fda365bd2ed9da14fda3d57c0a53909e1aedd3f53b6d5ee4e",
+      "dom": "33de3d55d183ddee766df7324181b97075a3a5969f5800bb194070a349e9b755",
+      "links": "3c09e30a6774f65da0bd876eae360140c23e970fb3b35b9d13b3f9596aebeef2",
       "images": "416aa645e0e9691743f0ab1cf8463f95c9ff997d40563b8a984c4c7bf8dd0a62",
       "structuredData": "680e9afa6e2aaf5bdf9247857ba78eb07f8438656927228798ec01592c73015b"
     },
@@ -317,9 +317,9 @@
     },
     "en/services/hobs/index.html": {
       "metadata": "849abf059c3ae1080c689b9aa04cf2c53fdd187709fd95928680d4269d7a23fc",
-      "text": "3438904e34de8f21796608d0c4e34b63a94e06b57f9e454286488ed79279dd97",
-      "dom": "d2cf7ea9758b1cba6a58595697894f4a5c9d3a3215a2dbcb6b889acb26d5531a",
-      "links": "d73c07906a0127fa4246af5351231c3f2a07264d811a7514c017c83bfd448d05",
+      "text": "aa3ce6b1a9f5953a24bbe45c18ccbe6ab4751b74c93f7d1fe62d7c8148138970",
+      "dom": "0c133a163cc627a28177a83c96cb79a659399f780a08647be1af9672a927fe9b",
+      "links": "23d64a5601a66f637cad45dbc20f7a08bb5409a1c1bf8f03e19321aec3eb69f3",
       "images": "168e32257841ab7f76684b2dbba11b1da6925d29f672ccf0f84ee88db030093d",
       "structuredData": "1e8d487fcfd6aea27102de917347e9a6c92142a7634d5a2a132224556e7051c2"
     },
@@ -501,9 +501,9 @@
     },
     "ka/services/gas-boilers/index.html": {
       "metadata": "bffb7ae482f8792a8ee8939a73fcad72b2eb9633a8651c35d67295dc42c1e3a1",
-      "text": "b21f1aeb974811c831ec9c21dda89cd226755cf3d4435b60b545a28412708e42",
-      "dom": "1096172fbd0a6a6a52727a5fe2456ac4cc0679f8062435ad6e80abe5de4aca28",
-      "links": "922d4347df2a54009ad9a0a6c4434faf554aa780af6b02414a580aaafb549647",
+      "text": "9f8a14774523a5f4967c1ec37c730d603fbdea6fd96d74aeea21c7b3e7096b3c",
+      "dom": "ec765aa1e39ded3887707773fd09a89fb4246a021c6e4cdb01fbce2fa7876d95",
+      "links": "98769b3ce2358bc54cf2d6ea59f77fc4270dd892f1810837f64c9ebfd5ccda02",
       "images": "787afb993c12d24a1b8666d90cb4cfe0ef69c126d036cf3ca1ed04554618efaf",
       "structuredData": "32caab67c4d75b9941f02943cb1502ee8233cd1899f7f79d4cdacc8aefbd4ff8"
     },
@@ -517,9 +517,9 @@
     },
     "ka/services/hobs/index.html": {
       "metadata": "e6ce690bc1cac503b15e896d61d03ab8bedd048f6844868b18d18d2bd8e34426",
-      "text": "3e53aa36d693302fd714b2b0fbce25f804a16810014cd1b5e88a0f5da3da243f",
-      "dom": "b99471467130330826d5a578d3eec4518a853e27ed00d4380c7af88b8560a401",
-      "links": "a7ae9de0db8bcd79451306ede296a40acfe1b573d5a7f9122737fadb4aed078f",
+      "text": "dbdb86db59cdfb8a860b09edfeb0ca1cd8eaa1eeaf72387ec2f6dabffecbfdb2",
+      "dom": "0d8f4320d5bf9833b4ddf9a69868783ae2648242183b88d21ffbaf731d40a0ef",
+      "links": "50b5f96f61ab232e7ef29e8f046dc1000bde9934508b7e16569e3249110b4f2d",
       "images": "8c12e03acaf566c84cd09d2f7c8fd79185913b9703440b07b5f9b09a634d5864",
       "structuredData": "98f98d94cb2c37a85ed79cbf0b4989c87dbbd5bd3bec97ce5d9a80da92ff4571"
     },
@@ -605,9 +605,9 @@
     },
     "services/gas-boilers/index.html": {
       "metadata": "1b245decbfc670aade5d06cc06f5e4266a706571983669c64165e454be694826",
-      "text": "af36317a953af5490729171e60966a42e97f0d4e67dda2e0b67b8fbed89fcb2b",
-      "dom": "d1aa0b2c1f2f0a98c1bb1f816f865200bafb788e27b3453c3cf98b03eec83ee9",
-      "links": "faf2a732b0f51b470d12c5e9a8e91969abe999e2b6891b56d9a2a8645737eb7b",
+      "text": "ba7c4ae42b313d8226736b21fcde35cdbfbd78d35e2c179c60de0d49c5b70101",
+      "dom": "3d0019924d68c8bd3753b118701ab8ab6ad8b4e8fdafa134cf005a8cc457ecd3",
+      "links": "9eda541c3b59be677a0e1e12661cef43f633bc6dcf0e19e532883b9b24a9402e",
       "images": "ce225c8d796d6ac8849ab5e5d9454b6b9214fbd255a7a3d49dbaa81041423465",
       "structuredData": "bb6fe4ec7d77eef7c0deda68cc44fada02175be6754504a057eed5e2e76e98b4"
     },
@@ -621,9 +621,9 @@
     },
     "services/hobs/index.html": {
       "metadata": "fdd13fd898edd6cc98eb25662f5113e881f1bff177dfcf392216bb5cb27ce2e0",
-      "text": "1d7fe88efa5429bfd465b4a1399d1efb549e99576ac47d79ad0214aa1254a4ec",
-      "dom": "dc7d39faca1adc40268f091a436f0c0e399b993f72ff8513224c6ede6ef0f9de",
-      "links": "1d2a67921efcecc71756e98cdf4141fb637da9714b59502806d645c845586148",
+      "text": "2c1c081d2b96351121b205f13fccef73aae4ae6167aa20b4cbfd940807f42b49",
+      "dom": "699b80aabdebd0aee35cb698ac2dfce69fe6e30fa9434c5ea8e65c0972e16947",
+      "links": "88568160272f92be01eb8389d322287668ba38f72bc1b25277336efa0ac37f2e",
       "images": "ef70566ebdd1396401e8003f10d15758ceb4ca1095c2da5c2de2254c5f36508a",
       "structuredData": "c4282c43c225d521453ee24be66d776b3b75d3ac9ed4794fd493acd6484f622d"
     },

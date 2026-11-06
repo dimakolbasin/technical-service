@@ -408,6 +408,12 @@
         "key": "contacts",
         "title": "Contacts",
         "text": "Phone, messengers and call-out area."
+      },
+      {
+        "key": "gas-to-electric",
+        "linkLabel": "Open",
+        "title": "Gas to electric conversion",
+        "text": "Gas panel removal and electric hob installation."
       }
     ],
     "linkLabel": "Open"
