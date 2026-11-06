@@ -6,6 +6,7 @@
     "articles/dishwasher-not-draining/index.html",
     "articles/dryer-not-drying/index.html",
     "articles/gas-boiler-not-igniting/index.html",
+    "articles/gas-to-electric-conversion/index.html",
     "articles/hob-not-turning-on/index.html",
     "articles/oven-not-heating/index.html",
     "articles/refrigerator-not-cooling/index.html",
@@ -16,6 +17,7 @@
     "en/articles/dishwasher-not-draining/index.html",
     "en/articles/dryer-not-drying/index.html",
     "en/articles/gas-boiler-not-igniting/index.html",
+    "en/articles/gas-to-electric-conversion/index.html",
     "en/articles/hob-not-turning-on/index.html",
     "en/articles/oven-not-heating/index.html",
     "en/articles/refrigerator-not-cooling/index.html",
@@ -41,6 +43,7 @@
     "ka/articles/dishwasher-not-draining/index.html",
     "ka/articles/dryer-not-drying/index.html",
     "ka/articles/gas-boiler-not-igniting/index.html",
+    "ka/articles/gas-to-electric-conversion/index.html",
     "ka/articles/hob-not-turning-on/index.html",
     "ka/articles/oven-not-heating/index.html",
     "ka/articles/refrigerator-not-cooling/index.html",
@@ -123,6 +126,14 @@
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
       "structuredData": "7868afdf18b95fbe6865b7ea8a2d5abc1298ea9e6fca6781966c34189c226e46"
     },
+    "articles/gas-to-electric-conversion/index.html": {
+      "metadata": "23d8f77fcd893f6aa0d500e753bdc99a3bd2bbede1b0578adca04ede801ebea7",
+      "text": "4d1be470862baec460ac0c575666cc53b9d119a38da0895100dbc4448741b7bc",
+      "dom": "2ff8062876f4a9de394df5d3e1ae9950f283c02a5666d99b1873f69806731497",
+      "links": "a81d9cca9af2748032401e6204c8b91a74720e77ec814cdb327d370e664b536b",
+      "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
+      "structuredData": "e22e69d45bb27f8df04ec6918e6123b6631531305ad5de0216a4844acbca27ce"
+    },
     "articles/hob-not-turning-on/index.html": {
       "metadata": "c1b5e7cc6eb38ac4c7aaaf6bf6f902eb35a45db0ec131ca914c9aef29f0f10f6",
       "text": "a2adeecd55d1f87577dd13ba662eabc23e2aebf22b247e5a04583a168c77e3cf",
@@ -202,6 +213,14 @@
       "links": "9bbf1bc5b3d867a6346abf64874ed9532ceca9c76a9442d173737212f48c8736",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
       "structuredData": "088c28dfa6bb9c60b49f66fd6cf569aaec20beb97b9280892f0b922e9987923a"
+    },
+    "en/articles/gas-to-electric-conversion/index.html": {
+      "metadata": "d817e1692f5d50e87987ee009465cf3b86c10ff62a4c0fbbac425e53f323ce56",
+      "text": "c47cf0881328ec4eae88547b43ccf3129d71d28af08fc7ac81cf0640ffe3a50f",
+      "dom": "74ddc4a0db764d21c2444bcf219992b1ecd1e7d01c1655504c1047f404482396",
+      "links": "e9d42c0501bab5341331555a69757593457b694177ea568159be9387b46656ba",
+      "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
+      "structuredData": "6303a4f7c25e6507b7430eb7cb6c69818e8bb2b7ffbf918f1478a01feaf1ed25"
     },
     "en/articles/hob-not-turning-on/index.html": {
       "metadata": "fe68a7c6a416e8064ba0148a956c231224662b96084e495a277df97ab4235f20",
@@ -402,6 +421,14 @@
       "links": "8b4d7930107e1b1e9bea91830c5500a0fec61db4e75792d537a174af8eca253e",
       "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
       "structuredData": "5c7bd03c2a67705e3a354d50998c21cf738f0f3ad68defaaa4c3fe1e694f4ed1"
+    },
+    "ka/articles/gas-to-electric-conversion/index.html": {
+      "metadata": "797bb55a648ce62dda4986d7fed4caf0e80ea9bfac13ce5018f1c1eac1e2558e",
+      "text": "06f562b5a4f32c1e58da941552938f1f2de7876fbd15b55f22cbdae703c6cb5a",
+      "dom": "2bc80d604e8558ab9a4a30fa73b3d656f31b5127f2bd553f49ecd1e6c68c1ede",
+      "links": "b56204e63bfc46515aad5f031f994879032c081bd718a1c73c3db5f046e774d9",
+      "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
+      "structuredData": "8b660e53371a94f3be3e87f76e11c511b3d723924f9825bf69211ff70bd58741"
     },
     "ka/articles/hob-not-turning-on/index.html": {
       "metadata": "359717c1ed45121bd1b2307398adac07ccf3e299dfd8f6ed67dda7c8e04b887a",
