@@ -1,0 +1,81 @@
+{
+ "generated": "2026-11-06",
+ "account": "act_2508526972912033",
+ "note": "KEEP = активные/на модерации (не трогаем). OLD/ARCHIVED = заархивировано. Картинки в images/.",
+ "campaigns": [
+  {
+   "id": "52528046742832",
+   "name": "TechFix Batumi — ქართული [meta_ka]",
+   "eff": "ACTIVE",
+   "ads": [
+    {
+     "name": "TechFix ka — ქართული (ka-led bilingual creative)",
+     "eff": "ACTIVE",
+     "imp": 12669,
+     "clicks": 138,
+     "spend": 29.62,
+     "dialogs": 0,
+     "img": "/home/ubuntu/ads-journal/state/ads-inventory-2026-11-06/images/KEEP_c52528046742832_ad52528046986432_orig.jpg",
+     "id": "52528046986432"
+    }
+   ]
+  },
+  {
+   "id": "6964012024628",
+   "name": "TechFix Batumi — промо (Батуми+25км) [ru+ka mixed]",
+   "eff": "ACTIVE",
+   "ads": [
+    {
+     "name": "TechFix Batumi - Ремонт бытовой техники / საყოფაცხოვრებო ტექნიკის შეკეთება",
+     "eff": "ACTIVE",
+     "imp": 9003,
+     "clicks": 183,
+     "spend": 16.98,
+     "dialogs": 0,
+     "img": "/home/ubuntu/ads-journal/state/ads-inventory-2026-11-06/images/KEEP_c6964012024628_ad6964012021428_orig.jpg",
+     "id": "6964012021428"
+    },
+    {
+     "name": "TechFix Batumi - Ремонт бытовой техники / საყოფაცხოვრებო ტექნიკის შეკეთება",
+     "eff": "ACTIVE",
+     "imp": 22205,
+     "clicks": 389,
+     "spend": 46.7,
+     "dialogs": 0,
+     "img": "/home/ubuntu/ads-journal/state/ads-inventory-2026-11-06/images/KEEP_c6964012024628_ad6964012022628_orig.jpg",
+     "id": "6964012022628"
+    },
+    {
+     "name": "TechFix Batumi - Ремонт бытовой техники / საყოფაცხოვრებო ტექნიკის შეკეთება",
+     "eff": "ACTIVE",
+     "imp": 7880,
+     "clicks": 124,
+     "spend": 16.73,
+     "dialogs": 0,
+     "img": "/home/ubuntu/ads-journal/state/ads-inventory-2026-11-06/images/KEEP_c6964012024628_ad6964012023428_orig.jpg",
+     "id": "6964012023428"
+    },
+    {
+     "name": "საყოფაცხოვრებო ტექნიკის შეკეთება TechFix Batumi - Ремонт бытовой техники",
+     "eff": "ACTIVE",
+     "imp": 106772,
+     "clicks": 1611,
+     "spend": 195.07,
+     "dialogs": 0,
+     "img": "/home/ubuntu/ads-journal/state/ads-inventory-2026-11-06/images/KEEP_c6964012024628_ad6964012021628_orig.jpg",
+     "id": "6964012021628"
+    },
+    {
+     "name": "TechFix Batumi - Ремонт бытовой техники / საყოფაცხოვრებო ტექნიკის შეკეთება",
+     "eff": "ACTIVE",
+     "imp": 84811,
+     "clicks": 1636,
+     "spend": 128.69,
+     "dialogs": 0,
+     "img": "/home/ubuntu/ads-journal/state/ads-inventory-2026-11-06/images/KEEP_c6964012024628_ad6964012022828_orig.jpg",
+     "id": "6964012022828"
+    }
+   ]
+  }
+ ]
+}
