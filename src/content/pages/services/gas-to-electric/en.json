@@ -133,6 +133,12 @@
         "title": "Pricing",
         "text": "Cost of works.",
         "linkLabel": "Open"
+      },
+      {
+        "key": "gas-to-electric-conversion",
+        "linkLabel": "Open",
+        "title": "Can you replace a gas hob with electric?",
+        "text": "Wiring, gas isolation, induction or classic — what to know."
       }
     ],
     "linkLabel": "Open"
