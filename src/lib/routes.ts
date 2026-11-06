@@ -15,6 +15,7 @@ export const routes = {
   refrigerators: { pageType: PageType.Service, component: "detail" },
   dryers: { pageType: PageType.Service, component: "detail" },
   "gas-boilers": { pageType: PageType.Service, component: "detail" },
+  "gas-to-electric": { pageType: PageType.Service, component: "detail" },
   "washing-machine-not-draining": {
     pageType: PageType.Article,
     component: "detail",

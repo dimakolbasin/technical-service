@@ -1,0 +1,163 @@
+{
+  "title": "Gas to Electric Hob Conversion in Batumi | Tech-Fix",
+  "heading": "Gas to Electric Hob Conversion in Batumi",
+  "lead": "Switch from gas to electric in one visit: gas panel removal, safe isolation, electric or induction hob installation and a wiring check. Batumi & Gonio.",
+  "description": "Gas to electric hob conversion in Batumi: removal, safe gas isolation, electric or induction hob installation and a wiring check. Inspection 20 GEL.",
+  "sections": [
+    {
+      "title": "How the conversion works",
+      "items": [
+        "Site visit and check: socket, cable cross-section and breaker — will your line handle the hob?",
+        "Gas isolation and removal of the old gas panel.",
+        "Tap sealed and joints leak-checked.",
+        "Electric or induction hob installed level.",
+        "Connection, test run and warranty on the install."
+      ]
+    },
+    {
+      "title": "What's included and what's not",
+      "items": [
+        "Included: removal of the gas panel, tap isolation, new hob installation, connection and check.",
+        "Not included: the hob itself (you buy it separately — we help pick a compatible model).",
+        "A new line from the board, if the existing one is weak — quoted separately on site.",
+        "Official shutoff and sealing of the branch by the gas utility — we help you file the request."
+      ]
+    },
+    {
+      "title": "Check your wiring before buying the hob",
+      "items": [
+        "Induction needs a dedicated line, a suitable breaker and the right cable cross-section.",
+        "We measure capacity and the line before you buy — don't overpay for a model your wiring can't run.",
+        "We'll advise whether induction or classic electric suits your setup."
+      ]
+    },
+    {
+      "title": "Gas safety and rules",
+      "items": [
+        "Supply is closed at the tap, joints sealed and leak-checked.",
+        "Official branch shutoff and sealing is done by the gas utility — we help you file the request.",
+        "You can keep your gas oven: we only isolate the hob branch."
+      ]
+    },
+    {
+      "title": "Induction or classic electric",
+      "items": [
+        "Induction is faster, more efficient and safer, but needs magnetic-base cookware.",
+        "Classic electric is cheaper and works with any pots.",
+        "We'll advise honestly for your wiring and budget."
+      ]
+    },
+    {
+      "title": "Timing",
+      "items": [
+        "Most conversions take 1–2 hours.",
+        "Complex cases (transit pipe, a new line from the board) are quoted on site.",
+        "We work in Batumi and Gonio; same-day visits when a slot is free."
+      ]
+    },
+    {
+      "title": "Local conditions in Batumi",
+      "items": [
+        "Humid climate and older housing stock: we check taps, joints and tightness.",
+        "If your line is fine, no new cable is needed — that keeps it cheaper.",
+        "Clear access to the hob and the meter before the visit — faster, with no extra dismantling."
+      ]
+    }
+  ],
+  "price": {
+    "title": "Pricing",
+    "items": [
+      {
+        "label": "Site visit & line check",
+        "value": "20 GEL",
+        "schemaPrice": {
+          "currency": "GEL",
+          "minPrice": 20
+        }
+      },
+      {
+        "label": "Gas panel removal with isolation",
+        "value": "after inspection"
+      },
+      {
+        "label": "Electric / induction hob installation",
+        "value": "after inspection"
+      }
+    ],
+    "note": "Final price after inspection, before work starts. You buy the hob separately — or we help pick a compatible model."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Do I need permission to disconnect the gas?",
+        "answer": "Official branch shutoff and sealing is done by the gas utility. We remove the panel and seal the tap, and help you file the request."
+      },
+      {
+        "question": "Will my wiring handle an induction hob?",
+        "answer": "We check capacity, cable and breaker before you buy. If the line is weak, we'll offer options."
+      },
+      {
+        "question": "How long does it take?",
+        "answer": "Usually 1–2 hours. A new dedicated line is quoted separately."
+      },
+      {
+        "question": "Can I keep the gas oven?",
+        "answer": "Yes. We only isolate the hob branch — the oven keeps working."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Switching from gas to electric?",
+    "text": "Describe your kitchen and hob — we'll schedule a visit and quote.",
+    "button": "Call"
+  },
+  "related": {
+    "title": "Related pages",
+    "lead": "Services and materials on the topic.",
+    "items": [
+      {
+        "key": "hobs",
+        "title": "Hob repair",
+        "text": "Gas and electric panels.",
+        "linkLabel": "Open"
+      },
+      {
+        "key": "gas-boilers",
+        "title": "Gas boilers & water heaters",
+        "text": "Repair and service.",
+        "linkLabel": "Open"
+      },
+      {
+        "key": "prices",
+        "title": "Pricing",
+        "text": "Cost of works.",
+        "linkLabel": "Open"
+      }
+    ],
+    "linkLabel": "Open"
+  },
+  "searchPhrases": {
+    "title": "Common searches",
+    "items": [
+      {
+        "text": "gas to electric hob conversion batumi"
+      },
+      {
+        "text": "induction hob installation batumi"
+      },
+      {
+        "text": "gas cooktop removal batumi"
+      },
+      {
+        "text": "electric hob installation georgia"
+      },
+      {
+        "text": "gas to electric cooktop switch"
+      },
+      {
+        "text": "electric hob installation batumi"
+      }
+    ]
+  }
+}

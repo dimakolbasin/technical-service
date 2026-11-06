@@ -29,6 +29,7 @@
     "refrigerators": "/services/refrigerators/",
     "dryers": "/services/dryers/",
     "gas-boilers": "/services/gas-boilers/",
+    "gas-to-electric": "/services/gas-to-electric/",
     "prices": "/prices/",
     "contacts": "/contacts/",
     "privacy": "/privacy/",

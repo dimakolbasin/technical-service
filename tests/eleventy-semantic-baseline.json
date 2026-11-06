@@ -29,6 +29,7 @@
     "en/services/dishwashers/index.html",
     "en/services/dryers/index.html",
     "en/services/gas-boilers/index.html",
+    "en/services/gas-to-electric/index.html",
     "en/services/hobs/index.html",
     "en/services/index.html",
     "en/services/ovens/index.html",
@@ -53,6 +54,7 @@
     "ka/services/dishwashers/index.html",
     "ka/services/dryers/index.html",
     "ka/services/gas-boilers/index.html",
+    "ka/services/gas-to-electric/index.html",
     "ka/services/hobs/index.html",
     "ka/services/index.html",
     "ka/services/ovens/index.html",
@@ -65,6 +67,7 @@
     "services/dishwashers/index.html",
     "services/dryers/index.html",
     "services/gas-boilers/index.html",
+    "services/gas-to-electric/index.html",
     "services/hobs/index.html",
     "services/index.html",
     "services/ovens/index.html",
@@ -304,6 +307,14 @@
       "images": "416aa645e0e9691743f0ab1cf8463f95c9ff997d40563b8a984c4c7bf8dd0a62",
       "structuredData": "680e9afa6e2aaf5bdf9247857ba78eb07f8438656927228798ec01592c73015b"
     },
+    "en/services/gas-to-electric/index.html": {
+      "metadata": "486760d663a4e457882fd6ec8e0d48dbfa603988fc6d51abb0e8b4bb4303a6fc",
+      "text": "d1623e60fc8fef1ee2073669bc41583d2fe0034496dda672bbd6673dff3c6191",
+      "dom": "4387ebb935d36d12593368bb95210a255e907cd03b35d4e83259558b8602dd9e",
+      "links": "61ce8a49068088775830662449abda75e028840a23dbcc9359d78634f66acf65",
+      "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
+      "structuredData": "966942b992f47d13451d0d3fb545bd34ec3edb2f7069fc10d768bf7a8082fc05"
+    },
     "en/services/hobs/index.html": {
       "metadata": "849abf059c3ae1080c689b9aa04cf2c53fdd187709fd95928680d4269d7a23fc",
       "text": "3438904e34de8f21796608d0c4e34b63a94e06b57f9e454286488ed79279dd97",
@@ -496,6 +507,14 @@
       "images": "787afb993c12d24a1b8666d90cb4cfe0ef69c126d036cf3ca1ed04554618efaf",
       "structuredData": "32caab67c4d75b9941f02943cb1502ee8233cd1899f7f79d4cdacc8aefbd4ff8"
     },
+    "ka/services/gas-to-electric/index.html": {
+      "metadata": "f4801635810f56c8e0ecf921169a1e5bbb7d95db4436a9ee25e6fab7d0dab23e",
+      "text": "5471412b8af51164d4b89b37842108b4e0e792989955a2676e9d5d635bbfd748",
+      "dom": "3cfd3c9077652084a562b00ff40f778fa6afd25ee09dae1a4e3afb72f6d0ef95",
+      "links": "4fa95ea9b8f30a3d8edf81861fffe08003bbe488ea9f8b4494507186e6b6db74",
+      "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
+      "structuredData": "6a871fd774f083db617de788691fcd96c3ae50e1435f386cf1b9d390ee65a86e"
+    },
     "ka/services/hobs/index.html": {
       "metadata": "e6ce690bc1cac503b15e896d61d03ab8bedd048f6844868b18d18d2bd8e34426",
       "text": "3e53aa36d693302fd714b2b0fbce25f804a16810014cd1b5e88a0f5da3da243f",
@@ -591,6 +610,14 @@
       "links": "faf2a732b0f51b470d12c5e9a8e91969abe999e2b6891b56d9a2a8645737eb7b",
       "images": "ce225c8d796d6ac8849ab5e5d9454b6b9214fbd255a7a3d49dbaa81041423465",
       "structuredData": "bb6fe4ec7d77eef7c0deda68cc44fada02175be6754504a057eed5e2e76e98b4"
+    },
+    "services/gas-to-electric/index.html": {
+      "metadata": "0b07cc3279f1025d440ab58354924d5dcd3034d7f4b7b00f2be60411109a730d",
+      "text": "7a7906d0b8c175662009cdcfcf5c8f516e6a8a305d9bbb74a14988f49bcd4194",
+      "dom": "63ee78579ab371ebe59d5ef8994dafd71da3e69d8a5a86b1a803f68d57c68d81",
+      "links": "2d9e73727b3c9617909553c0df8ba3c400898a5e36523d91213fe4e3afd66b75",
+      "images": "33f09706c06ba37210633cf32b8a0e64a719d4d6dee034a4fd8c5834ad13a010",
+      "structuredData": "0517e7ac285e3b9cf1def8b5b1612f3f10ccdde469ed5dcf7f1c16c8843803a5"
     },
     "services/hobs/index.html": {
       "metadata": "fdd13fd898edd6cc98eb25662f5113e881f1bff177dfcf392216bb5cb27ce2e0",
