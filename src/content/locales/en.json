@@ -84,6 +84,11 @@
     "linkLabel": "Details",
     "items": [
       {
+        "key": "gas-to-electric",
+        "title": "Gas to electric conversion",
+        "text": "Gas panel to induction in one visit."
+      },
+      {
         "key": "washing-machines",
         "title": "Washing machines",
         "text": "No drain, no spin, noise or leaks."

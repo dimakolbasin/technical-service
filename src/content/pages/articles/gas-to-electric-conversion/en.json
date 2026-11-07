@@ -31,6 +31,16 @@
       ]
     },
     {
+      "title": "Rules and regulations: what the law says (no panic)",
+      "items": [
+        "There is no outright ban on gas stoves in Georgian apartments — but gas equipment rules were tightened considerably after accidents in residential buildings (2019).",
+        "Key documents: the Law on Energy and Water Supply and building norms for gas supply (matsne.gov.ge) — the placement and servicing of gas appliances is strictly regulated.",
+        "New buildings and modern apart-complexes in Batumi are increasingly designed fully electric — kitchen gas is becoming a legacy of the old housing stock.",
+        "Gas lines in older buildings often go years without inspection: that is the main source of risk, not the stove itself.",
+        "Official shutoff and sealing of the branch goes through the gas supply company. We handle everything else: removal, electrics, induction installation."
+      ]
+    },
+    {
       "title": "Do you need the gas utility",
       "items": [
         "Official branch shutoff and sealing is done by the gas supply company.",
@@ -77,6 +87,10 @@
       {
         "question": "How long does it take?",
         "answer": "Usually 1–2 hours. A new dedicated line is quoted separately."
+      },
+      {
+        "question": "Are gas stoves banned in apartments in Georgia?",
+        "answer": "No outright ban. But the rules were tightened after the 2019 accidents, gas appliance servicing is strictly regulated, and new buildings are increasingly built fully electric. The branch shutoff is done officially, through the gas utility."
       }
     ]
   },
