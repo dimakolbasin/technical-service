@@ -1,6 +1,6 @@
 {
   "title": "Gas boiler & water heater repair and maintenance in Batumi",
-  "lead": "Gas boiler repair and maintenance in Batumi: ignition, sensors, burner, heat exchanger, pump and diagnostics.",
+  "lead": "Gas boiler repair and maintenance in Batumi: ignition, sensors, burner, heat exchanger, pump and diagnostics. We also do boiler hookup and preparation: electrics, pumps, getting the system ready for commissioning.",
   "heading": "Gas boiler and water heater repair in Batumi",
   "sections": [
     {
@@ -54,6 +54,15 @@
         "Error code, pressure, ignition electrode, burner, draft sensor, pump and heat exchanger are checked with safety first.",
         "Humidity, heavy use and access conditions in Batumi can make the symptom appear faster.",
         "The exact cause is confirmed during on-site diagnostics."
+      ]
+    },
+    {
+      "title": "Gas boiler installation and connection",
+      "items": [
+        "Wall-hung boiler: mounted on brackets by level, heating system piped in.",
+        "Electrics: stabiliser, a dedicated line, pumps and the expansion tank.",
+        "The gas supply company does the gas hookup and first lighting — we prepare and pressure-test the system before their visit.",
+        "After the gas crew: mode setup, a working check and a short briefing for the owner."
       ]
     },
     {
@@ -292,6 +301,12 @@
       },
       {
         "text": "boiler won't start"
+      },
+      {
+        "text": "gas boiler installation Batumi"
+      },
+      {
+        "text": "boiler connection"
       }
     ]
   },
