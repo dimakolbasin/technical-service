@@ -1,5 +1,13 @@
 # AGENTS
 
+## Session protocol — ПЕРЕД работой
+
+Это репо — часть системы Tech-Fix. Главные правила и текущий статус живут
+в мета-репо **~/Desktop/sub/tech-fix** (на VPS: ~/tech-fix):
+`git pull --ff-only` там и в журнале, прочитать tech-fix/STATE.md.
+Полный протокол: tech-fix/SESSION-PROTOCOL.md.
+
+
 Rules for any assistant working in this repository. They are session-agnostic.
 
 ## Working style
