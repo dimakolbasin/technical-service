@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+required_email="dimakolbasin98@gmail.com"
+current_email="$(git config user.email || true)"
+if [ "$current_email" != "$required_email" ]; then
+  echo "BLOCKED: commits allowed only from $required_email (got: unset)"
+  echo "Fix: git config user.email \"$required_email\""
+  exit 1
+fi
