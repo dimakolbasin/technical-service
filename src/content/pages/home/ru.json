@@ -15,13 +15,6 @@
     "linkKey": "services",
     "items": [
       {
-        "title": "Холодильники",
-        "text": "Не морозит, течёт вода, шумит компрессор.",
-        "icon": "icon-tools.png",
-        "linkKey": "refrigerators",
-        "highlight": true
-      },
-      {
         "title": "Стиральные машины",
         "text": "Не сливает, не отжимает, шумит или течёт.",
         "serviceIcon": "wash-machine.png",
@@ -56,6 +49,12 @@
         "text": "Не сушит, шумит, не сливает конденсат.",
         "icon": "icon-tools.png",
         "linkKey": "dryers"
+      },
+      {
+        "title": "Холодильники",
+        "text": "Не морозит, течёт вода, шумит компрессор.",
+        "icon": "icon-tools.png",
+        "linkKey": "refrigerators"
       },
       {
         "title": "Газовые котлы",

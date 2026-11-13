@@ -264,10 +264,10 @@
     },
     "en/index.html": {
       "metadata": "3bf3626dd27f39cdd468cee76fa913fa91c4ae94c61f4c78a5f69b2f50022975",
-      "text": "811b3904bc03f6175ff6f8a28ea9831aa1ff5207e3e7e0b2d997dfa96b9d17a8",
-      "dom": "ef97cbd3fa1b935ab326df3a503cae2cd68329eb8ac7113be3bbea728ca4802f",
-      "links": "cea222b1b72a52f3de5b85a82f9e17ef2a6e5a229b7b75ef16128f3bf6278b6a",
-      "images": "c14703f0f6a62f806b6bb8659b63bebfbd62e5f5501a4a83ef37abd073ca28d9",
+      "text": "94aff8b69b2c62179f6a00ae1d70767fd280dabaf7a6e88a3efd3925357a5619",
+      "dom": "d009d91d234740e98ebfdb76f32312d66caaf4a427988395d3c9746fb3b4717a",
+      "links": "c1e2c55eaffe62752d27dd622d38128d92256fa27ab2a7258cea5cb5450d7287",
+      "images": "47cf3b8b6ccb8e4781c586eb58d9d9910af816de9f8d9af272e9348cbb157797",
       "structuredData": "4ff39eea16844e84b5b7aca24fae622dc0b85032778b6bee153b6f92ddf3621a"
     },
     "en/prices/index.html": {
@@ -376,10 +376,10 @@
     },
     "index.html": {
       "metadata": "85a4128b9ccd723231b95c46818a68c312cbc278010dd0a48b86b49630b2e3df",
-      "text": "9d28a686ece446799d98c9e889bc5edbd5fd93eb9931fcc0c21a37f57b6ece2a",
-      "dom": "0acf5b3fa1a693b6a685bf04fafe3a07614f4c7264baf7167be09a71e33561d9",
-      "links": "b9dbdd92eab15b6d2930a74ad156509bc956e433fe8ba8c75a94d534b07357fa",
-      "images": "00e1612d27f757c3c62c9a6b1aa6d3ba57767fd5c75c50942e110d6406b7f34c",
+      "text": "44dcdba83ff47b1e89973b25d3869658222ff78742cba8ee74f5209f349745f9",
+      "dom": "c520a9c4bbdb3b7eed08cfd7e1efd7d35dc8e8bafeda0fc8a6ade2e0ccfe83e5",
+      "links": "088faafce7ac967f033806b7b498e1e12cf25d8cfb9304b1a1a57668fcb43fcc",
+      "images": "b4368c7d30be3ec865dede1b60fb804fe0af2693953f6d26f3a7326e328ace99",
       "structuredData": "343bbe3ca4bc11fb695cebda42ea86371f4117ad4b382c41d5c7890b898cbeb5"
     },
     "ka/articles/ac-cleaning-importance/index.html": {
@@ -472,10 +472,10 @@
     },
     "ka/index.html": {
       "metadata": "968bdf73faf59de91420d3641ededc141562c2c067f0c8b6738b1dd08a03d387",
-      "text": "e037abe606d9521f06c6ea910a59af5ce1989adadbc6b86ce25332050b5e17b1",
-      "dom": "125948eba7a9a4ca5841f6fe2ffdd6b12ac12845aaec687dadea362f835731e3",
-      "links": "947aed53b913f0965fcd2e5c213dd7343725a6f67fdfb74f1b81b01cbe76ead2",
-      "images": "fde056211c3361276e3a3b3baa530cf8676e2154785330795f2e498f394db6b9",
+      "text": "e7d602e0e5ed6e9623fd0e63875626793b41fcd4456e8926da814acf3f382384",
+      "dom": "a4cd76774f0f058bc887c9da616f726f27813d56ef761028a1bc7b9d67eb38ee",
+      "links": "f9a5c9a162d69c59a7881bcc34caf9fcff89098932459ad73dc0e9c833af68c9",
+      "images": "b99954b3f825c949280e284499f6dccc7fd1faf10402be2393e1f3f793f27049",
       "structuredData": "dfaf2391733361063954eb3e44fc3de33e8ddb21c3f00f1353a75076fd1107d9"
     },
     "ka/prices/index.html": {

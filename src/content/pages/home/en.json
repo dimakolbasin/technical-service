@@ -15,13 +15,6 @@
     "linkKey": "services",
     "items": [
       {
-        "title": "Refrigerators",
-        "text": "Not cooling, water leaks, compressor noise.",
-        "icon": "icon-tools.png",
-        "linkKey": "refrigerators",
-        "highlight": true
-      },
-      {
         "title": "Washing machines",
         "text": "No drain, no spin, noise or leaks.",
         "serviceIcon": "wash-machine.png",
@@ -56,6 +49,12 @@
         "text": "No drying, noise, drain or condensate issues.",
         "icon": "icon-tools.png",
         "linkKey": "dryers"
+      },
+      {
+        "title": "Refrigerators",
+        "text": "Not cooling, water leaks, compressor noise.",
+        "icon": "icon-tools.png",
+        "linkKey": "refrigerators"
       },
       {
         "title": "Gas boilers",
